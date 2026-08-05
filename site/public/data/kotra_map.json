@@ -1,0 +1,698 @@
+{
+ "total_companies": 9927,
+ "country_count": 84,
+ "mapped_country_count": 84,
+ "by_region": {
+  "아시아": 7261,
+  "북미": 1064,
+  "유럽": 1010,
+  "중남미": 268,
+  "중동": 214,
+  "대양주": 55,
+  "아프리카": 55
+ },
+ "by_type": {
+  "생산법인": 2816,
+  "서비스법인": 2179,
+  "지사/지점": 1853,
+  "판매법인": 1767,
+  "기타": 689,
+  "연락사무소": 333,
+  "기타법인": 290
+ },
+ "countries": [
+  {
+   "name": "베트남",
+   "iso2": "VN",
+   "lat": 14.06,
+   "lon": 108.28,
+   "count": 2602,
+   "region": "아시아"
+  },
+  {
+   "name": "중국",
+   "iso2": "CN",
+   "lat": 35.86,
+   "lon": 104.2,
+   "count": 2396,
+   "region": "아시아"
+  },
+  {
+   "name": "미국",
+   "iso2": "US",
+   "lat": 37.09,
+   "lon": -95.71,
+   "count": 932,
+   "region": "북미"
+  },
+  {
+   "name": "태국",
+   "iso2": "TH",
+   "lat": 15.87,
+   "lon": 100.99,
+   "count": 348,
+   "region": "아시아"
+  },
+  {
+   "name": "일본",
+   "iso2": "JP",
+   "lat": 36.2,
+   "lon": 138.25,
+   "count": 325,
+   "region": "아시아"
+  },
+  {
+   "name": "인도",
+   "iso2": "IN",
+   "lat": 20.59,
+   "lon": 78.96,
+   "count": 304,
+   "region": "아시아"
+  },
+  {
+   "name": "인도네시아",
+   "iso2": "ID",
+   "lat": -0.79,
+   "lon": 113.92,
+   "count": 272,
+   "region": "아시아"
+  },
+  {
+   "name": "말레이시아",
+   "iso2": "MY",
+   "lat": 4.21,
+   "lon": 101.98,
+   "count": 181,
+   "region": "아시아"
+  },
+  {
+   "name": "싱가포르",
+   "iso2": "SG",
+   "lat": 1.35,
+   "lon": 103.82,
+   "count": 177,
+   "region": "아시아"
+  },
+  {
+   "name": "필리핀",
+   "iso2": "PH",
+   "lat": 12.88,
+   "lon": 121.77,
+   "count": 158,
+   "region": "아시아"
+  },
+  {
+   "name": "독일",
+   "iso2": "DE",
+   "lat": 51.17,
+   "lon": 10.45,
+   "count": 151,
+   "region": "유럽"
+  },
+  {
+   "name": "폴란드",
+   "iso2": "PL",
+   "lat": 51.92,
+   "lon": 19.15,
+   "count": 140,
+   "region": "유럽"
+  },
+  {
+   "name": "캐나다",
+   "iso2": "CA",
+   "lat": 56.13,
+   "lon": -106.35,
+   "count": 132,
+   "region": "북미"
+  },
+  {
+   "name": "러시아연방",
+   "iso2": "RU",
+   "lat": 61.52,
+   "lon": 105.32,
+   "count": 130,
+   "region": "유럽"
+  },
+  {
+   "name": "캄보디아",
+   "iso2": "KH",
+   "lat": 12.57,
+   "lon": 104.99,
+   "count": 115,
+   "region": "아시아"
+  },
+  {
+   "name": "영국",
+   "iso2": "GB",
+   "lat": 55.38,
+   "lon": -3.44,
+   "count": 104,
+   "region": "유럽"
+  },
+  {
+   "name": "방글라데시",
+   "iso2": "BD",
+   "lat": 23.68,
+   "lon": 90.36,
+   "count": 101,
+   "region": "아시아"
+  },
+  {
+   "name": "멕시코",
+   "iso2": "MX",
+   "lat": 23.63,
+   "lon": -102.55,
+   "count": 92,
+   "region": "중남미"
+  },
+  {
+   "name": "헝가리",
+   "iso2": "HU",
+   "lat": 47.16,
+   "lon": 19.5,
+   "count": 89,
+   "region": "유럽"
+  },
+  {
+   "name": "아랍에미리트",
+   "iso2": "AE",
+   "lat": 23.42,
+   "lon": 53.85,
+   "count": 80,
+   "region": "중동"
+  },
+  {
+   "name": "네덜란드",
+   "iso2": "NL",
+   "lat": 52.13,
+   "lon": 5.29,
+   "count": 76,
+   "region": "유럽"
+  },
+  {
+   "name": "우즈베키스탄",
+   "iso2": "UZ",
+   "lat": 41.38,
+   "lon": 64.59,
+   "count": 76,
+   "region": "아시아"
+  },
+  {
+   "name": "브라질",
+   "iso2": "BR",
+   "lat": -14.24,
+   "lon": -51.93,
+   "count": 72,
+   "region": "중남미"
+  },
+  {
+   "name": "미얀마",
+   "iso2": "MM",
+   "lat": 21.91,
+   "lon": 95.96,
+   "count": 57,
+   "region": "아시아"
+  },
+  {
+   "name": "튀르키예",
+   "iso2": "TR",
+   "lat": 38.96,
+   "lon": 35.24,
+   "count": 56,
+   "region": "유럽"
+  },
+  {
+   "name": "카자흐스탄",
+   "iso2": "KZ",
+   "lat": 48.02,
+   "lon": 66.92,
+   "count": 53,
+   "region": "아시아"
+  },
+  {
+   "name": "사우디아라비아",
+   "iso2": "SA",
+   "lat": 23.89,
+   "lon": 45.08,
+   "count": 47,
+   "region": "중동"
+  },
+  {
+   "name": "호주",
+   "iso2": "AU",
+   "lat": -25.27,
+   "lon": 133.78,
+   "count": 45,
+   "region": "대양주"
+  },
+  {
+   "name": "몽골",
+   "iso2": "MN",
+   "lat": 46.86,
+   "lon": 103.85,
+   "count": 39,
+   "region": "아시아"
+  },
+  {
+   "name": "슬로바키아",
+   "iso2": "SK",
+   "lat": 48.67,
+   "lon": 19.7,
+   "count": 37,
+   "region": "유럽"
+  },
+  {
+   "name": "이집트",
+   "iso2": "EG",
+   "lat": 26.82,
+   "lon": 30.8,
+   "count": 34,
+   "region": "중동"
+  },
+  {
+   "name": "프랑스",
+   "iso2": "FR",
+   "lat": 46.23,
+   "lon": 2.21,
+   "count": 34,
+   "region": "유럽"
+  },
+  {
+   "name": "체코",
+   "iso2": "CZ",
+   "lat": 49.82,
+   "lon": 15.47,
+   "count": 33,
+   "region": "유럽"
+  },
+  {
+   "name": "스페인",
+   "iso2": "ES",
+   "lat": 40.46,
+   "lon": -3.75,
+   "count": 32,
+   "region": "유럽"
+  },
+  {
+   "name": "라오스",
+   "iso2": "LA",
+   "lat": 19.86,
+   "lon": 102.5,
+   "count": 26,
+   "region": "아시아"
+  },
+  {
+   "name": "파나마",
+   "iso2": "PA",
+   "lat": 8.54,
+   "lon": -80.78,
+   "count": 24,
+   "region": "중남미"
+  },
+  {
+   "name": "이탈리아",
+   "iso2": "IT",
+   "lat": 41.87,
+   "lon": 12.57,
+   "count": 22,
+   "region": "유럽"
+  },
+  {
+   "name": "스리랑카",
+   "iso2": "LK",
+   "lat": 7.87,
+   "lon": 80.77,
+   "count": 20,
+   "region": "아시아"
+  },
+  {
+   "name": "스위스",
+   "iso2": "CH",
+   "lat": 46.82,
+   "lon": 8.23,
+   "count": 18,
+   "region": "유럽"
+  },
+  {
+   "name": "남아프리카공화국",
+   "iso2": "ZA",
+   "lat": -30.56,
+   "lon": 22.94,
+   "count": 18,
+   "region": "아프리카"
+  },
+  {
+   "name": "과테말라",
+   "iso2": "GT",
+   "lat": 15.78,
+   "lon": -90.23,
+   "count": 17,
+   "region": "중남미"
+  },
+  {
+   "name": "벨기에",
+   "iso2": "BE",
+   "lat": 50.5,
+   "lon": 4.47,
+   "count": 15,
+   "region": "유럽"
+  },
+  {
+   "name": "칠레",
+   "iso2": "CL",
+   "lat": -35.68,
+   "lon": -71.54,
+   "count": 15,
+   "region": "중남미"
+  },
+  {
+   "name": "페루",
+   "iso2": "PE",
+   "lat": -9.19,
+   "lon": -75.02,
+   "count": 14,
+   "region": "중남미"
+  },
+  {
+   "name": "알제리",
+   "iso2": "DZ",
+   "lat": 28.03,
+   "lon": 1.66,
+   "count": 12,
+   "region": "중동"
+  },
+  {
+   "name": "오스트리아",
+   "iso2": "AT",
+   "lat": 47.52,
+   "lon": 14.55,
+   "count": 11,
+   "region": "유럽"
+  },
+  {
+   "name": "콜롬비아",
+   "iso2": "CO",
+   "lat": 4.57,
+   "lon": -74.3,
+   "count": 11,
+   "region": "중남미"
+  },
+  {
+   "name": "스웨덴",
+   "iso2": "SE",
+   "lat": 60.13,
+   "lon": 18.64,
+   "count": 11,
+   "region": "유럽"
+  },
+  {
+   "name": "뉴질랜드",
+   "iso2": "NZ",
+   "lat": -40.9,
+   "lon": 174.89,
+   "count": 10,
+   "region": "대양주"
+  },
+  {
+   "name": "그리스",
+   "iso2": "GR",
+   "lat": 39.07,
+   "lon": 21.82,
+   "count": 10,
+   "region": "유럽"
+  },
+  {
+   "name": "아르헨티나",
+   "iso2": "AR",
+   "lat": -38.42,
+   "lon": -63.62,
+   "count": 9,
+   "region": "중남미"
+  },
+  {
+   "name": "탄자니아",
+   "iso2": "TZ",
+   "lat": -6.37,
+   "lon": 34.89,
+   "count": 9,
+   "region": "아프리카"
+  },
+  {
+   "name": "파키스탄",
+   "iso2": "PK",
+   "lat": 30.38,
+   "lon": 69.35,
+   "count": 8,
+   "region": "아시아"
+  },
+  {
+   "name": "케냐",
+   "iso2": "KE",
+   "lat": -0.02,
+   "lon": 37.91,
+   "count": 8,
+   "region": "아프리카"
+  },
+  {
+   "name": "쿠웨이트",
+   "iso2": "KW",
+   "lat": 29.31,
+   "lon": 47.48,
+   "count": 7,
+   "region": "중동"
+  },
+  {
+   "name": "요르단",
+   "iso2": "JO",
+   "lat": 30.59,
+   "lon": 36.24,
+   "count": 7,
+   "region": "중동"
+  },
+  {
+   "name": "오만",
+   "iso2": "OM",
+   "lat": 21.51,
+   "lon": 55.92,
+   "count": 7,
+   "region": "중동"
+  },
+  {
+   "name": "가나",
+   "iso2": "GH",
+   "lat": 7.95,
+   "lon": -1.02,
+   "count": 7,
+   "region": "아프리카"
+  },
+  {
+   "name": "이라크",
+   "iso2": "IQ",
+   "lat": 33.22,
+   "lon": 43.68,
+   "count": 6,
+   "region": "중동"
+  },
+  {
+   "name": "카타르",
+   "iso2": "QA",
+   "lat": 25.35,
+   "lon": 51.18,
+   "count": 6,
+   "region": "중동"
+  },
+  {
+   "name": "덴마크",
+   "iso2": "DK",
+   "lat": 56.26,
+   "lon": 9.5,
+   "count": 5,
+   "region": "유럽"
+  },
+  {
+   "name": "노르웨이",
+   "iso2": "NO",
+   "lat": 60.47,
+   "lon": 8.47,
+   "count": 5,
+   "region": "유럽"
+  },
+  {
+   "name": "나이지리아",
+   "iso2": "NG",
+   "lat": 9.08,
+   "lon": 8.68,
+   "count": 5,
+   "region": "아프리카"
+  },
+  {
+   "name": "모로코",
+   "iso2": "MA",
+   "lat": 31.79,
+   "lon": -7.09,
+   "count": 5,
+   "region": "중동"
+  },
+  {
+   "name": "불가리아",
+   "iso2": "BG",
+   "lat": 42.73,
+   "lon": 25.49,
+   "count": 5,
+   "region": "유럽"
+  },
+  {
+   "name": "에콰도르",
+   "iso2": "EC",
+   "lat": -1.83,
+   "lon": -78.18,
+   "count": 4,
+   "region": "중남미"
+  },
+  {
+   "name": "도미니카공화국",
+   "iso2": "DO",
+   "lat": 18.74,
+   "lon": -70.16,
+   "count": 4,
+   "region": "중남미"
+  },
+  {
+   "name": "루마니아",
+   "iso2": "RO",
+   "lat": 45.94,
+   "lon": 24.97,
+   "count": 4,
+   "region": "유럽"
+  },
+  {
+   "name": "핀란드",
+   "iso2": "FI",
+   "lat": 61.92,
+   "lon": 25.75,
+   "count": 4,
+   "region": "유럽"
+  },
+  {
+   "name": "우크라이나",
+   "iso2": "UA",
+   "lat": 48.38,
+   "lon": 31.17,
+   "count": 4,
+   "region": "유럽"
+  },
+  {
+   "name": "포르투갈",
+   "iso2": "PT",
+   "lat": 39.4,
+   "lon": -8.22,
+   "count": 4,
+   "region": "유럽"
+  },
+  {
+   "name": "파라과이",
+   "iso2": "PY",
+   "lat": -23.44,
+   "lon": -58.44,
+   "count": 4,
+   "region": "중남미"
+  },
+  {
+   "name": "모잠비크",
+   "iso2": "MZ",
+   "lat": -18.67,
+   "lon": 35.53,
+   "count": 3,
+   "region": "아프리카"
+  },
+  {
+   "name": "세르비아",
+   "iso2": "RS",
+   "lat": 44.02,
+   "lon": 21.01,
+   "count": 3,
+   "region": "유럽"
+  },
+  {
+   "name": "에티오피아",
+   "iso2": "ET",
+   "lat": 9.15,
+   "lon": 40.49,
+   "count": 3,
+   "region": "아프리카"
+  },
+  {
+   "name": "아제르바이잔",
+   "iso2": "AZ",
+   "lat": 40.14,
+   "lon": 47.58,
+   "count": 3,
+   "region": "아시아"
+  },
+  {
+   "name": "슬로베니아",
+   "iso2": "SI",
+   "lat": 46.15,
+   "lon": 14.99,
+   "count": 3,
+   "region": "유럽"
+  },
+  {
+   "name": "크로아티아",
+   "iso2": "HR",
+   "lat": 45.1,
+   "lon": 15.2,
+   "count": 3,
+   "region": "유럽"
+  },
+  {
+   "name": "이스라엘",
+   "iso2": "IL",
+   "lat": 31.05,
+   "lon": 34.85,
+   "count": 2,
+   "region": "중동"
+  },
+  {
+   "name": "아이티",
+   "iso2": "HT",
+   "lat": 18.97,
+   "lon": -72.29,
+   "count": 2,
+   "region": "중남미"
+  },
+  {
+   "name": "이란",
+   "iso2": "IR",
+   "lat": 32.43,
+   "lon": 53.69,
+   "count": 1,
+   "region": "중동"
+  },
+  {
+   "name": "세네갈",
+   "iso2": "SN",
+   "lat": 14.5,
+   "lon": -14.45,
+   "count": 1,
+   "region": "아프리카"
+  },
+  {
+   "name": "벨라루스",
+   "iso2": "BY",
+   "lat": 53.71,
+   "lon": 27.95,
+   "count": 1,
+   "region": "유럽"
+  },
+  {
+   "name": "코트디부아르",
+   "iso2": "CI",
+   "lat": 7.54,
+   "lon": -5.55,
+   "count": 1,
+   "region": "아프리카"
+  }
+ ],
+ "note": "국가 단위 발굴 결과에 연결되는 지원기관·법인 네트워크다. 기업 단위 매칭이 아니다."
+}

@@ -1,0 +1,362 @@
+{
+ "selection_rule": "사각지대 원본 목록 중 1위국=중국 · HHI ≥ 0.50 인 품목의 수입액 상위 10개",
+ "selection_note": "10개 모두 중국·RED인 것은 선정 기준(수입액 상위 + 중국 의존 우선)의 결과다.",
+ "alert_order": [
+  "수입물가지수 이상 감지(익월 초)",
+  "HHI 구조 확인(관세청, 익월 중순)",
+  "KOTRA 뉴스 정책 동향(실시간)",
+  "세 계층 임계값 초과 시 경보"
+ ],
+ "items": [
+  {
+   "hs4": "2841",
+   "name": "산화금속산염·과산화금속산염 (배터리·화학 소재)",
+   "hs4_name": "산화금속산염이나 과산화금속산염",
+   "detail": "기타",
+   "sector": "화학공업제품",
+   "hhi": 0.8941,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.9451,
+   "import_usd": 1050737927,
+   "country_count": 30,
+   "grade": "RED",
+   "ecos_item_name": "기초무기화합물",
+   "latest_mom": 3.174894,
+   "news_matched": 14,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 3.174894,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.8941,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 14,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "7210",
+   "name": "철강 평판압연제품 (도금·도포 강판)",
+   "hs4_name": "철이나 비합금강의 평판압연제품[폭이 600밀리미터 이상인 것으로서 클래드(clad)ㆍ도금ㆍ도포한 것으로 한정한다]",
+   "detail": "기타",
+   "sector": "철강 및 금속제품",
+   "hhi": 0.7851,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.8825,
+   "import_usd": 628454392,
+   "country_count": 38,
+   "grade": "RED",
+   "ecos_item_name": "표면처리강재",
+   "latest_mom": 2.487447,
+   "news_matched": 11,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 2.487447,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.7851,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 11,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "7228",
+   "name": "기타 합금강 봉 및 형강",
+   "hs4_name": "그 밖의 합금강의 그 밖의 봉, 그 밖의 합금강의 형강(形鋼), 합금강이나 비합금강의 중공(中空)드릴봉",
+   "detail": "그 밖의 봉[열간(熱間)압연ㆍ열간인발(熱間引拔)ㆍ압출보다 더 가공하지 않은 것으로 한정한다]",
+   "sector": "철강 및 금속제품",
+   "hhi": 0.6122,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.7676,
+   "import_usd": 271387736,
+   "country_count": 28,
+   "grade": "RED",
+   "ecos_item_name": "형강",
+   "latest_mom": 2.715333,
+   "news_matched": 11,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 2.715333,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.6122,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 11,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "7607",
+   "name": "알루미늄 박 (배터리 동박/알루미늄박)",
+   "hs4_name": "알루미늄의 박(箔)[인쇄한 것인지 또는 종이ㆍ판지ㆍ플라스틱이나 이와 유사한 보강재로 뒷면을 붙인 것인지에 상관없으며 그 두께(보강재의 두께는 제외한다)가 0.2밀리미터 이하인 것으로 한정한다]",
+   "detail": "뒷면을 붙인 것",
+   "sector": "철강 및 금속제품",
+   "hhi": 0.7477,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.8626,
+   "import_usd": 260097499,
+   "country_count": 42,
+   "grade": "RED",
+   "ecos_item_name": "알루미늄1차제품",
+   "latest_mom": 3.017629,
+   "news_matched": 10,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 3.017629,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.7477,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 10,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "7213",
+   "name": "철/비합금강 선재",
+   "hs4_name": "철이나 비합금강의 봉[열간(熱間)압연한 것으로서 불규칙적으로 감은 코일 모양인 것으로 한정한다]",
+   "detail": "기타[쾌삭강(快削鋼)의 것으로 한정한다]",
+   "sector": "철강 및 금속제품",
+   "hhi": 0.6242,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.7618,
+   "import_usd": 239602343,
+   "country_count": 10,
+   "grade": "RED",
+   "ecos_item_name": "철근및봉강",
+   "latest_mom": 2.437503,
+   "news_matched": 11,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 2.437503,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.6242,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 11,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "2811",
+   "name": "이산화규소",
+   "hs4_name": "그 밖의 무기산과 무기 비(非)금속 산화물",
+   "detail": "이산화규소",
+   "sector": "화학공업제품",
+   "hhi": 0.5391,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.7179,
+   "import_usd": 219624941,
+   "country_count": 42,
+   "grade": "RED",
+   "ecos_item_name": "기초무기화합물",
+   "latest_mom": 3.174894,
+   "news_matched": 4,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 3.174894,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.5391,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 4,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "2849",
+   "name": "탄화물 (탄화텅스텐·탄화실리콘 등)",
+   "hs4_name": "탄화물(화학적으로 단일한 것인지에 상관없다)",
+   "detail": "기타",
+   "sector": "화학공업제품",
+   "hhi": 0.7438,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.86,
+   "import_usd": 179350672,
+   "country_count": 22,
+   "grade": "RED",
+   "ecos_item_name": "기초무기화합물",
+   "latest_mom": 3.174894,
+   "news_matched": 7,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 3.174894,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.7438,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 7,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "2926",
+   "name": "니트릴관능화합물 (아크릴로니트릴 등)",
+   "hs4_name": "니트릴관능화합물",
+   "detail": "기타",
+   "sector": "화학공업제품",
+   "hhi": 0.5963,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.7542,
+   "import_usd": 174127186,
+   "country_count": 23,
+   "grade": "RED",
+   "ecos_item_name": "기타기초유기화합물",
+   "latest_mom": -21.489288,
+   "news_matched": 2,
+   "signals": {
+    "price": {
+     "triggered": false,
+     "value": -21.489288,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.5963,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 2,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": false
+  },
+  {
+   "hs4": "7209",
+   "name": "철/비합금강 냉간압연 평판제품",
+   "hs4_name": "철이나 비합금강의 평판압연제품[폭이 600밀리미터 이상인 것으로서 냉간압연(냉간환원)한 것으로 한정하고, 클래드(clad)ㆍ도금ㆍ도포한 것은 제외한다]",
+   "detail": "두께가 1밀리미터 초과 3밀리미터 미만인 것",
+   "sector": "철강 및 금속제품",
+   "hhi": 0.8515,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.9198,
+   "import_usd": 165767654,
+   "country_count": 18,
+   "grade": "RED",
+   "ecos_item_name": "냉간압연강재",
+   "latest_mom": 2.843535,
+   "news_matched": 11,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 2.843535,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.8515,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 11,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  },
+  {
+   "hs4": "6802",
+   "name": "가공용 석재 (대리석·설화석고 등)",
+   "hs4_name": "가공한 석비용ㆍ건축용 석재[슬레이트(slate)는 제외한다]와 이들의 제품(제6801호의 물품은 제외한다), 모자이크 큐브와 이와 유사한 것[천연 석재의 것으로서 슬레이트(slate) 제품을 포함하며, 뒷면을 보강한 것인지에 상관없다], 인공적으로 착색한 천연 석재[슬레이트(slate)를 포함한다]의 알갱이ㆍ조각ㆍ가루",
+   "detail": "대리석ㆍ트래버틴(travertine)ㆍ설화석고(alabaster)",
+   "sector": "광산물",
+   "hhi": 0.8094,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.8988,
+   "import_usd": 158165320,
+   "country_count": 39,
+   "grade": "RED",
+   "ecos_item_name": "석제품",
+   "latest_mom": 1.853492,
+   "news_matched": 6,
+   "signals": {
+    "price": {
+     "triggered": true,
+     "value": 1.853492,
+     "label": "수입물가지수 전월대비"
+    },
+    "structure": {
+     "triggered": true,
+     "value": 0.8094,
+     "label": "HHI 구조 취약"
+    },
+    "news": {
+     "triggered": true,
+     "value": 6,
+     "label": "정책·규제 동향"
+    }
+   },
+   "alert": true
+  }
+ ]
+}

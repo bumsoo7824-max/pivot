@@ -1,0 +1,1629 @@
+{
+ "window_days": 90,
+ "total_collected": 884,
+ "supply_chain_matched": 60,
+ "date_range": [
+  "2026-05-07",
+  "2026-07-31"
+ ],
+ "by_country": {
+  "미국": 10,
+  "중국": 9,
+  "인도": 6,
+  "독일": 3,
+  "호주": 2,
+  "일본": 2,
+  "칠레": 2,
+  "브라질": 2,
+  "아랍에미리트": 2,
+  "탄자니아": 1,
+  "라오스": 1,
+  "캐나다": 1,
+  "벨기에": 1,
+  "인도네시아": 1,
+  "남아프리카공화국": 1,
+  "이라크": 1,
+  "체코": 1,
+  "프랑스": 1,
+  "폴란드": 1,
+  "쿠바": 1,
+  "멕시코": 1,
+  "베트남": 1,
+  "영국": 1,
+  "태국": 1,
+  "잠비아": 1,
+  "미얀마": 1,
+  "아르헨티나": 1,
+  "필리핀": 1,
+  "방글라데시": 1,
+  "콜롬비아": 1,
+  "쿠웨이트": 1
+ },
+ "news": [
+  {
+   "id": "n000",
+   "title": "미 에너지부 원전 공급망 대출 프로그램, 한국 기업 진출 기회는?",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242754",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-07-31",
+   "industry": "그리드(전력망·기자재)",
+   "hs_name": "",
+   "commodity": "",
+   "office": "시카고무역관",
+   "category": "투자진출"
+  },
+  {
+   "id": "n001",
+   "title": "탄자니아, 항만-철도 직결 물류망 구축으로 동아프리카 물류 허브 경쟁력 강화",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=243091",
+   "country": "탄자니아",
+   "region": "아프리카",
+   "date": "2026-07-30",
+   "industry": "유통/물류",
+   "hs_name": "",
+   "commodity": "",
+   "office": "다레살람무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n002",
+   "title": "中 배터리 소비세 조정 공고 발표, 리튬 배터리·태양광 전지 등에 소비세 단계적 부과 예정",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=243063",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-07-30",
+   "industry": "전자/전기",
+   "hs_name": "",
+   "commodity": "",
+   "office": "베이징무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n003",
+   "title": "인도, 新 FTA 통해 글로벌 공급망 허브 노린다…선진국 중심 통상전략 재편",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242669",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-07-24",
+   "industry": "기타",
+   "hs_name": "",
+   "commodity": "",
+   "office": "뉴델리무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n004",
+   "title": "라오스산 고추, 韓 농산물 공급망의 '새 카드'",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=243024",
+   "country": "라오스",
+   "region": "아시아",
+   "date": "2026-07-23",
+   "industry": "농림수산식품",
+   "hs_name": "070960,0710807000,090421,090422,2103901030,210390",
+   "commodity": "고추류[캡시컴(Capsicum)속]의 열매나 피멘타(Pimenta)속의 열매,고추류[캡시컴(Capsicum)속]의 열매나 피멘타(Pimenta)속의 열매,건조한 것(부수지도 잘게 부수지도 않은 것),부수거나 잘게 부순 것,고추장,기타",
+   "office": "비엔티안무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n005",
+   "title": "캐나다 ‘국가 식량안보 전략’ 발표…식량 공급망 내재화가 핵심",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242930",
+   "country": "캐나다",
+   "region": "북미",
+   "date": "2026-07-21",
+   "industry": "농림수산식품",
+   "hs_name": "",
+   "commodity": "",
+   "office": "토론토무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n006",
+   "title": "호주 홈배터리, 정부 리베이트 힘입어 성장세 지속",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242940",
+   "country": "호주",
+   "region": "대양주",
+   "date": "2026-07-21",
+   "industry": "광물/에너지,전자/전기,그리드(전력망·기자재)",
+   "hs_name": "850760,850440,854143",
+   "commodity": "리튬이온 축전지,정지형 변환기,광전지(모듈에 조립되었거나 패널로 구성된 것으로 한정한다)",
+   "office": "시드니무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n007",
+   "title": "미국 제조업의 새로운 원료 공급망, 농업에서 시작된다",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242923",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-07-20",
+   "industry": "농림수산식품,환경,산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "달라스무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n008",
+   "title": "에너지 안보와 원자재 주권 사이, 독일 공급망의 새로운 과제",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242894",
+   "country": "독일",
+   "region": "유럽",
+   "date": "2026-07-20",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "프랑크푸르트무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n009",
+   "title": "중국 핵심 광물 몰리브덴 분말, 2026년 시장 및 공급 동향",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242765",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-07-20",
+   "industry": "광물/에너지",
+   "hs_name": "810210",
+   "commodity": "가루",
+   "office": "톈진무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n010",
+   "title": "EU, 글로벌 철강 공급과잉 대응 신규 규제 본격 시행",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242874",
+   "country": "벨기에",
+   "region": "유럽",
+   "date": "2026-07-16",
+   "industry": "철강/금속",
+   "hs_name": "",
+   "commodity": "",
+   "office": "브뤼셀무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n011",
+   "title": "인도네시아 니켈 생산 쿼터(RKAB) 제도 개편과 글로벌 공급망 파급 효과",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242483",
+   "country": "인도네시아",
+   "region": "아시아",
+   "date": "2026-07-15",
+   "industry": "광물/에너지,철강/금속,건설/인프라/플랜트",
+   "hs_name": "",
+   "commodity": "",
+   "office": "수라바야무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n012",
+   "title": "남아공 철강제품 수입관세 인상 동향과 우리 기업 대응 시사점",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242572",
+   "country": "남아프리카공화국",
+   "region": "아프리카",
+   "date": "2026-07-09",
+   "industry": "철강/금속",
+   "hs_name": "",
+   "commodity": "",
+   "office": "요하네스버그무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n013",
+   "title": "이라크 품질마크 의무화 폐지 - 비관세장벽 해결 확인",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242317",
+   "country": "이라크",
+   "region": "중동",
+   "date": "2026-07-09",
+   "industry": "전자/전기",
+   "hs_name": "",
+   "commodity": "",
+   "office": "바그다드무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n014",
+   "title": "美 뉴욕∙뉴저지 항만청 450억 달러 투자, 교통 인프라 지형 바꾼다",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242672",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-07-08",
+   "industry": "건설/인프라/플랜트,유통/물류,산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "뉴욕무역관",
+   "category": "투자진출"
+  },
+  {
+   "id": "n015",
+   "title": "인도 전기차 산업 공급망 변화와 시사점",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242508",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-07-06",
+   "industry": "자동차/수송기기",
+   "hs_name": "",
+   "commodity": "",
+   "office": "첸나이무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n016",
+   "title": "AI 시대, 공급망 혁신의 중심에 선 중국",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242565",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-07-06",
+   "industry": "농림수산식품,생활소비재,산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "베이징무역관",
+   "category": "현장·인터뷰"
+  },
+  {
+   "id": "n017",
+   "title": "중국 섬서성 반도체 산업 동향 시안, 중국 서부 반도체 공급망의 핵심 거점",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242548",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-07-03",
+   "industry": "IT",
+   "hs_name": "854232",
+   "commodity": "메모리",
+   "office": "시안무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n018",
+   "title": "태양광 연계 넘어 전력망 인프라로…체코 ESS 시장 확대",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242256",
+   "country": "체코",
+   "region": "유럽",
+   "date": "2026-07-02",
+   "industry": "그리드(전력망·기자재)",
+   "hs_name": "850760",
+   "commodity": "리튬이온 축전지",
+   "office": "프라하무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n019",
+   "title": "향후 5년, 일본 휴머노이드 공급망 구축의 골든타임",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242408",
+   "country": "일본",
+   "region": "아시아",
+   "date": "2026-06-29",
+   "industry": "전자/전기,IT",
+   "hs_name": "",
+   "commodity": "",
+   "office": "나고야무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n020",
+   "title": "중국 2026 제14회 청두 외식 공급망 박람회 참관기",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242272",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-06-24",
+   "industry": "기타",
+   "hs_name": "",
+   "commodity": "",
+   "office": "청두무역관",
+   "category": "현장·인터뷰"
+  },
+  {
+   "id": "n021",
+   "title": "글로벌 섬유·패션 공급망이 한자리에, 2026 시드니 글로벌 소싱 엑스포 개최",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242301",
+   "country": "호주",
+   "region": "대양주",
+   "date": "2026-06-22",
+   "industry": "섬유/패션",
+   "hs_name": "",
+   "commodity": "",
+   "office": "시드니무역관",
+   "category": "포토뉴스"
+  },
+  {
+   "id": "n022",
+   "title": "프랑스 정부, 희토류 자립화 종합계획 발표",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242239",
+   "country": "프랑스",
+   "region": "유럽",
+   "date": "2026-06-19",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "파리무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n023",
+   "title": "첨단산업 공급망의 정맥, 텅스텐··· 중국 채굴 쿼터 축소로 가격 강세",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242143",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-06-17",
+   "industry": "광물/에너지",
+   "hs_name": "2825901020,2849909010",
+   "commodity": "산화텅스텐,탄화텅스텐",
+   "office": "베이징무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n024",
+   "title": "미래 광물 조달의 새 판을 짜다…독일의 핵심 원자재 공급망 다변화 전략",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242123",
+   "country": "독일",
+   "region": "유럽",
+   "date": "2026-06-17",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "함부르크무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n025",
+   "title": "유럽 구리 생산 거점 폴란드, 한국의 공급망 다변화 후보 될까",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242024",
+   "country": "폴란드",
+   "region": "유럽",
+   "date": "2026-06-17",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "바르샤바무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n026",
+   "title": "에너지봉쇄 전후 쿠바 경제동향 및 향후 전망",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242125",
+   "country": "쿠바",
+   "region": "중남미",
+   "date": "2026-06-12",
+   "industry": "산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "아바나무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n027",
+   "title": "일본 배터리 리사이클 투자 가속… 재생 니켈·코발트·리튬 수급, 동아시아 원료 시장 변수로",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241597",
+   "country": "일본",
+   "region": "아시아",
+   "date": "2026-06-09",
+   "industry": "광물/에너지",
+   "hs_name": "854810,2620,283691,283324,283329",
+   "commodity": "일차전지와 축전지의 웨이스트(waste)와 스크랩(scrap), 수명이 끝난 일차전지와 축전지,슬래그(slag), 회(灰), 잔재물(금속ㆍ비소나 이들의 화합물을 함유한 것으로 한정하며, 철강을 제조할 때 생기는 것은 제외한다),탄산리튬,황산니켈,기타",
+   "office": "도쿄무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n028",
+   "title": "인도, 한국산 DOTP·DEHCH에 세이프가드 권고…CEPA 무관세 혜택 사실상 종료 위기",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241881",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-06-09",
+   "industry": "화학",
+   "hs_name": "",
+   "commodity": "",
+   "office": "뉴델리무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n029",
+   "title": "멕시코 원유 공급망, 내수 정제 확대 정책으로 수출 축소로 재편",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241756",
+   "country": "멕시코",
+   "region": "중남미",
+   "date": "2026-06-09",
+   "industry": "광물/에너지",
+   "hs_name": "270900",
+   "commodity": "석유와 역청유(瀝靑油)(원유로 한정한다)",
+   "office": "멕시코시티무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n030",
+   "title": "바이오연료 'E10 RON95' 도입한 베트남, 핵심은 공급보다 시장 안착",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=242017",
+   "country": "베트남",
+   "region": "아시아",
+   "date": "2026-06-08",
+   "industry": "광물/에너지,화학",
+   "hs_name": "",
+   "commodity": "",
+   "office": "호치민무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n031",
+   "title": "중국 해외진출 3.0 시대, 공급망 재편 위한 현지화 투자로",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241969",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-06-05",
+   "industry": "기타",
+   "hs_name": "",
+   "commodity": "",
+   "office": "칭다오무역관",
+   "category": "현장·인터뷰"
+  },
+  {
+   "id": "n032",
+   "title": "영국 배터리 공급망 구조와 정책 방향",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241353",
+   "country": "영국",
+   "region": "유럽",
+   "date": "2026-06-04",
+   "industry": "광물/에너지,자동차/수송기기",
+   "hs_name": "8507602000",
+   "commodity": "전기차용",
+   "office": "런던무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n033",
+   "title": "잠든 핵심광물을 깨우다, 칠레 광산 찌꺼기 ‘광미’의 자원화",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241611",
+   "country": "칠레",
+   "region": "중남미",
+   "date": "2026-06-02",
+   "industry": "광물/에너지",
+   "hs_name": "2620",
+   "commodity": "슬래그(slag), 회(灰), 잔재물(금속ㆍ비소나 이들의 화합물을 함유한 것으로 한정하며, 철강을 제조할 때 생기는 것은 제외한다)",
+   "office": "산티아고무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n034",
+   "title": "인도, 핵심 광물 공급망 내재화 가속",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241895",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-06-02",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "뉴델리무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n035",
+   "title": "자립을 준비하는 브라질 농업: 비료 공급망 안정화 대책과 비전",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241485",
+   "country": "브라질",
+   "region": "중남미",
+   "date": "2026-06-01",
+   "industry": "농림수산식품,광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "상파울루무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n036",
+   "title": "태국 EV3.5 정책 본격화… 배터리·부품 공급망 재편 가속",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241836",
+   "country": "태국",
+   "region": "아시아",
+   "date": "2026-06-01",
+   "industry": "자동차/수송기기",
+   "hs_name": "",
+   "commodity": "",
+   "office": "방콕무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n037",
+   "title": "세계 최강 브라질 축산 제국을 지탱하는 사료와 동물의약품 공급망",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240685",
+   "country": "브라질",
+   "region": "중남미",
+   "date": "2026-06-01",
+   "industry": "농림수산식품",
+   "hs_name": "",
+   "commodity": "",
+   "office": "상파울루무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n038",
+   "title": "美 AI가 키운 구리 수요, 공급망은 따라갈 수 있을까",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240702",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-06-01",
+   "industry": "철강/금속",
+   "hs_name": "",
+   "commodity": "",
+   "office": "시카고무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n039",
+   "title": "잠비아, 핵심광물·광업 투자 확대 추진",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241562",
+   "country": "잠비아",
+   "region": "아프리카",
+   "date": "2026-05-29",
+   "industry": "농림수산식품,광물/에너지,건설/인프라/플랜트,유통/물류",
+   "hs_name": "",
+   "commodity": "",
+   "office": "요하네스버그무역관",
+   "category": "투자진출"
+  },
+  {
+   "id": "n040",
+   "title": "[기고] 미얀마 봉제산업, 글로벌 공급망 재편 속 다시 보는 투자 기회",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241414",
+   "country": "미얀마",
+   "region": "아시아",
+   "date": "2026-05-28",
+   "industry": "산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "양곤무역관",
+   "category": "외부전문가 기고"
+  },
+  {
+   "id": "n041",
+   "title": "아연(Zinc) 정광 수출 강국 미국, 한국의 공급선 다변화 기회 될까",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241538",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-27",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "로스앤젤레스무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n042",
+   "title": "공급망 충격과 CEPA 발효, UAE 알루미늄 공급망의 위기와 기회",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241461",
+   "country": "아랍에미리트",
+   "region": "중동",
+   "date": "2026-05-27",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "두바이무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n043",
+   "title": "미국 AI 반도체 제조 클러스터 확대… 테라팹이 보여준 공급망 재편",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241365",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-27",
+   "industry": "기계류,IT",
+   "hs_name": "8486",
+   "commodity": "반도체 보울(boule)이나 웨이퍼(wafer)ㆍ반도체 디바이스ㆍ전자집적회로ㆍ평판디스플레이의 제조에 전용되거나 주로 사용되는 기계와 기기, 이 류의 주 제11호다목에서 특정한 기계와 기기, 그 부분품과 부속품",
+   "office": "달라스무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n044",
+   "title": "[기고] 美 자동차 산업 EV에서 자율주행, SDV로 ② - 소프트웨어 전환과 공급망 기회",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241521",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-26",
+   "industry": "자동차/수송기기",
+   "hs_name": "",
+   "commodity": "",
+   "office": "디트로이트무역관",
+   "category": "외부전문가 기고"
+  },
+  {
+   "id": "n045",
+   "title": "인도, 금·은 수입관세 15%로 인상…외환방어와 귀금속 수입관리 강화",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241396",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-05-21",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "벵갈루루무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n046",
+   "title": "2026년 5월 샤오싱 국제 섬유 및 의류 공급망 박람회를 통해 본 중국 섬유패션 산업의 변화 흐름",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241283",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-05-18",
+   "industry": "섬유/패션",
+   "hs_name": "",
+   "commodity": "",
+   "office": "항저우무역관",
+   "category": "현장·인터뷰"
+  },
+  {
+   "id": "n047",
+   "title": "중국 원저우, 제조 공급망 기반 투자 거점으로 부상",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240970",
+   "country": "중국",
+   "region": "아시아",
+   "date": "2026-05-18",
+   "industry": "산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "항저우무역관",
+   "category": "투자진출"
+  },
+  {
+   "id": "n048",
+   "title": "글로벌 구리 판도 재편, 아르헨티나가 핵심 축으로 부상",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241023",
+   "country": "아르헨티나",
+   "region": "중남미",
+   "date": "2026-05-18",
+   "industry": "광물/에너지",
+   "hs_name": "7403",
+   "commodity": "정제한 구리와 구리합금(가공하지 않은 것으로 한정한다)",
+   "office": "부에노스아이레스무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n049",
+   "title": "독일 데이터센터 시장, AI 수요와 에너지 규제가 빚어낸 새로운 기회: EES 결합 모델 부상",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240995",
+   "country": "독일",
+   "region": "유럽",
+   "date": "2026-05-18",
+   "industry": "전자/전기,IT,그리드(전력망·기자재)",
+   "hs_name": "850760",
+   "commodity": "리튬이온 축전지",
+   "office": "뮌헨무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n050",
+   "title": "마르코스, 고유가 충격에 물가 방어 총력...식품 관세 인하·LPG·등유 소비세 한시 면제",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241053",
+   "country": "필리핀",
+   "region": "아시아",
+   "date": "2026-05-14",
+   "industry": "광물/에너지,산업일반",
+   "hs_name": "",
+   "commodity": "",
+   "office": "마닐라무역관",
+   "category": "통상·규제"
+  },
+  {
+   "id": "n051",
+   "title": "인도, 에너지 공급망 다변화로 리스크 대응 강화",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241009",
+   "country": "인도",
+   "region": "아시아",
+   "date": "2026-05-14",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "뉴델리무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n052",
+   "title": "방글라데시 가죽 산업, 글로벌 공급망 재편 속 유통 패러다임 전환",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240960",
+   "country": "방글라데시",
+   "region": "아시아",
+   "date": "2026-05-11",
+   "industry": "섬유/패션",
+   "hs_name": "340311,6403,4107",
+   "commodity": "방직용 재료ㆍ가죽ㆍ모피나 그 밖의 재료의 처리용 조제품,신발류[바깥 바닥을 고무ㆍ플라스틱ㆍ가죽ㆍ콤퍼지션 레더(composition leather)로 만들고, 갑피(甲皮)를 가죽으로 만든 것으로 한정한다],유연처리ㆍ크러스트 처리한 후 그 이상의 가공을 한 소(버팔로를 포함한다)나 마속(馬屬)동물의 가죽[파치먼트(parchment) 가공 가죽을 포함한다][털을 제거한 것으로 한정하고, 스플릿(split)한 것인지에 상관없으며 제4114호의 가죽은 제외한다]",
+   "office": "다카무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n053",
+   "title": "전환점 맞이한 미국 커피 공급망, ‘대체 커피’ 시장 확대",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241108",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-11",
+   "industry": "농림수산식품,생활소비재",
+   "hs_name": "",
+   "commodity": "",
+   "office": "디트로이트무역관",
+   "category": "트렌드"
+  },
+  {
+   "id": "n054",
+   "title": "베네수엘라 광업·에너지 부문 개방, 공급망 다변화 새 변수로",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241017",
+   "country": "콜롬비아",
+   "region": "중남미",
+   "date": "2026-05-11",
+   "industry": "광물/에너지,건설/인프라/플랜트",
+   "hs_name": "",
+   "commodity": "",
+   "office": "보고타무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n055",
+   "title": "고부가가치 공급망 거점으로 거듭나는 로드맵, 칠레 핵심광물 국가전략",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240971",
+   "country": "칠레",
+   "region": "중남미",
+   "date": "2026-05-11",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "산티아고무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n056",
+   "title": "중동 전쟁과 유럽 제트유 공급망 위기",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240959",
+   "country": "쿠웨이트",
+   "region": "중동",
+   "date": "2026-05-11",
+   "industry": "광물/에너지",
+   "hs_name": "",
+   "commodity": "",
+   "office": "쿠웨이트무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n057",
+   "title": "중동 전쟁으로 인한 호르무즈 봉쇄 장기화, 글로벌 원유 시장의 동향",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=240955",
+   "country": "아랍에미리트",
+   "region": "중동",
+   "date": "2026-05-11",
+   "industry": "광물/에너지,유통/물류",
+   "hs_name": "",
+   "commodity": "",
+   "office": "두바이무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n058",
+   "title": "LA 카운티, 저렴주택 공급 구조 바꾼다",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241024",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-07",
+   "industry": "건설/인프라/플랜트",
+   "hs_name": "",
+   "commodity": "",
+   "office": "로스앤젤레스무역관",
+   "category": "경제·무역"
+  },
+  {
+   "id": "n059",
+   "title": "[기고] 美 IEEPA 상호관세 환급, 지금은 ‘속도’와 ‘전략’이 중요",
+   "url": "https://dream.kotra.or.kr/user/extra/kotranews/bbs/linkView/jsp/Page.do?dataIdx=241052",
+   "country": "미국",
+   "region": "북미",
+   "date": "2026-05-07",
+   "industry": "기타",
+   "hs_name": "",
+   "commodity": "",
+   "office": "로스앤젤레스무역관",
+   "category": "외부전문가 기고"
+  }
+ ],
+ "item_matches": [
+  {
+   "hs4": "2841",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n002",
+     "keywords": [
+      "배터리",
+      "리튬",
+      "전지"
+     ],
+     "country_match": true,
+     "score": 4
+    },
+    {
+     "news_id": "n006",
+     "keywords": [
+      "배터리",
+      "리튬",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 3
+    },
+    {
+     "news_id": "n009",
+     "keywords": [
+      "몰리브덴",
+      "핵심 광물"
+     ],
+     "country_match": true,
+     "score": 3
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "배터리",
+      "리튬",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 3
+    },
+    {
+     "news_id": "n018",
+     "keywords": [
+      "리튬",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n023",
+     "keywords": [
+      "텅스텐"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n049",
+     "keywords": [
+      "리튬",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n022",
+     "keywords": [
+      "희토류"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n032",
+     "keywords": [
+      "배터리"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n034",
+     "keywords": [
+      "핵심 광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n036",
+     "keywords": [
+      "배터리"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n039",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n055",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 14,
+   "china_matched_count": 3
+  },
+  {
+   "hs4": "7210",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n010",
+     "keywords": [
+      "철강",
+      "공급과잉"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n012",
+     "keywords": [
+      "철강",
+      "관세"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n011",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n013",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n028",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n038",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n045",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n050",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n059",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 11,
+   "china_matched_count": 0
+  },
+  {
+   "hs4": "7228",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n012",
+     "keywords": [
+      "철강",
+      "관세"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n010",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n011",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n013",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n028",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n038",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n045",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n050",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n059",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 11,
+   "china_matched_count": 0
+  },
+  {
+   "hs4": "7607",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n002",
+     "keywords": [
+      "배터리",
+      "전지"
+     ],
+     "country_match": true,
+     "score": 3
+    },
+    {
+     "news_id": "n006",
+     "keywords": [
+      "배터리",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n020",
+     "keywords": [
+      "박"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "배터리",
+      "전지"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n046",
+     "keywords": [
+      "박"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n018",
+     "keywords": [
+      "전지"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n032",
+     "keywords": [
+      "배터리"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n036",
+     "keywords": [
+      "배터리"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n042",
+     "keywords": [
+      "알루미늄"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n049",
+     "keywords": [
+      "전지"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 10,
+   "china_matched_count": 3
+  },
+  {
+   "hs4": "7213",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n012",
+     "keywords": [
+      "철강",
+      "관세"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n010",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n011",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n013",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n028",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n038",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n045",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n050",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n059",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 11,
+   "china_matched_count": 0
+  },
+  {
+   "hs4": "2811",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n002",
+     "keywords": [
+      "태양광"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n017",
+     "keywords": [
+      "반도체"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n018",
+     "keywords": [
+      "태양광"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n043",
+     "keywords": [
+      "반도체"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 4,
+   "china_matched_count": 2
+  },
+  {
+   "hs4": "2849",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n023",
+     "keywords": [
+      "텅스텐",
+      "탄화"
+     ],
+     "country_match": true,
+     "score": 3
+    },
+    {
+     "news_id": "n009",
+     "keywords": [
+      "핵심 광물"
+     ],
+     "country_match": true,
+     "score": 2
+    },
+    {
+     "news_id": "n022",
+     "keywords": [
+      "희토류"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n034",
+     "keywords": [
+      "핵심 광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n039",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n055",
+     "keywords": [
+      "핵심광물"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 7,
+   "china_matched_count": 2
+  },
+  {
+   "hs4": "2926",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n028",
+     "keywords": [
+      "화학",
+      "DOTP",
+      "세이프가드"
+     ],
+     "country_match": false,
+     "score": 3
+    },
+    {
+     "news_id": "n030",
+     "keywords": [
+      "화학"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 2,
+   "china_matched_count": 0
+  },
+  {
+   "hs4": "7209",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n010",
+     "keywords": [
+      "철강",
+      "공급과잉"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n012",
+     "keywords": [
+      "철강",
+      "관세"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n011",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n013",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n027",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n028",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n033",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n038",
+     "keywords": [
+      "철강"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n045",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n050",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    },
+    {
+     "news_id": "n059",
+     "keywords": [
+      "관세"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 11,
+   "china_matched_count": 0
+  },
+  {
+   "hs4": "6802",
+   "top_country": "중국",
+   "matched": [
+    {
+     "news_id": "n011",
+     "keywords": [
+      "건설",
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n014",
+     "keywords": [
+      "건설",
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n039",
+     "keywords": [
+      "건설",
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n054",
+     "keywords": [
+      "건설",
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n058",
+     "keywords": [
+      "건설",
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 2
+    },
+    {
+     "news_id": "n018",
+     "keywords": [
+      "인프라"
+     ],
+     "country_match": false,
+     "score": 1
+    }
+   ],
+   "matched_count": 6,
+   "china_matched_count": 0
+  }
+ ],
+ "match_method": "품목별 키워드 사전 × (제목·업종·HS명·품목명) 문자열 매칭 + 1위국 일치 가점. 예측 모델이 아니다."
+}
