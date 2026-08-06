@@ -94,8 +94,8 @@ if mvp is None:
 
 mvp["hs4"] = mvp["hs4"].astype(str).str.zfill(4)
 
-GROUP_MAIN = "핵심 15"
-GROUP_REF = "MVP 10 (참고)"
+GROUP_MAIN = "MVP 10"
+GROUP_REF = "비철금속 15 (참고)"
 
 if overview is None:
     st.error("data/processed/items_overview.csv 가 없습니다. "
@@ -104,7 +104,7 @@ if overview is None:
 
 items = overview.copy()
 items["code"] = items["code"].astype(str)
-# code_level 에 맞춰 자릿수를 채운다 (핵심 15 는 HS6, MVP 10 은 HS4)
+# code_level 에 맞춰 자릿수를 채운다 (MVP 10 은 HS4, 비철금속 15 는 HS6)
 items["code"] = [c.zfill(6) if lv == "hs6" else c.zfill(4)
                  for c, lv in zip(items["code"], items["code_level"])]
 
@@ -113,11 +113,11 @@ items["code"] = [c.zfill(6) if lv == "hs6" else c.zfill(4)
 st.sidebar.title("🧭 Supply-Pivot")
 st.sidebar.caption("데이터로 발굴한 공급망 사각지대 → 대체 경로")
 
-# 기본 화면은 핵심 15 만 보여준다. 기존 MVP 10 은 참고용이라 체크해야 나온다.
+# 기본 화면은 MVP 10 만 보여준다. 비철금속 15 는 참고용이라 체크해야 나온다.
 show_ref = st.sidebar.toggle(
-    "MVP 10 (참고용) 함께 보기", value=False,
-    help="기존 화학·철강 10개 품목. 국가별 원자료가 없어 대체 공급국은 "
-         "UN Comtrade 확보 시에만 채워집니다.",
+    "비철금속 15 (참고용) 함께 보기", value=False,
+    help="관세청 국가별 원자료가 있는 HS6 15개 품목. 대체 공급국이 실측으로 "
+         "채워져 지원기관 연결까지 이어집니다.",
 )
 pool = items if show_ref else items[items["group"] == GROUP_MAIN]
 
@@ -137,7 +137,7 @@ st.sidebar.markdown(
 **데이터 현황**
 
 - 사각지대 {len(blind) if blind is not None else '—'}개 품목
-- 핵심 {int((items["group"] == GROUP_MAIN).sum())}개 · MVP 참고 {int((items["group"] == GROUP_REF).sum())}개
+- MVP {int((items["group"] == GROUP_MAIN).sum())}개 · 비철금속 참고 {int((items["group"] == GROUP_REF).sum())}개
 - 대체 공급국 {int((alt['status'] == 'ok').sum()) if alt is not None else '—'}행 (실측)
 - 지원기관 연결 {len(action) if action is not None else '—'}행
 - 공급망 뉴스 {len(news) if news is not None else '—'}건
@@ -216,13 +216,11 @@ else:
     if in_list:
         st.caption(f"선택한 품목({sel_code} → HS4 {sel_hs4})은 ★ 로 표시됩니다.")
     else:
-        # 핵심 15(비철금속)는 사각지대 목록(화학·철강 중심)과 교집합이 없다.
-        # 없는 점을 찍지 않고 그 사실을 그대로 적는다.
+        # 선택 품목이 사각지대 목록 밖이면 없는 점을 찍지 않고 그 사실을 적는다.
         st.info(
             f"선택한 품목 **{sel_code}(HS4 {sel_hs4})**는 이 사각지대 목록에 없습니다. "
-            "사각지대 256개는 step3_hhi_all(HS4 339개, 화학·철강 중심) 모집단에서 나온 목록이고, "
-            "핵심 15개 품목(비철금속 HS4 7403·7502·7601·7801·7901·8001)은 그 모집단에 "
-            "포함되지 않습니다. 위 산점도는 전체 분포 참고용으로만 보십시오."
+            "사각지대 256개는 step3_hhi_all(HS4 339개, 화학·철강 중심) 모집단에서 나온 목록입니다. "
+            "위 산점도는 전체 분포 참고용으로만 보십시오."
         )
 
 

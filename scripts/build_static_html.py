@@ -29,7 +29,8 @@ PROC = ROOT / "data" / "processed"
 OUT = ROOT / "site" / "index.html"
 
 GRADE_COLOR = {"RED": "#f0526d", "YELLOW": "#f5a524", "GREEN": "#3ecf8e"}
-GROUP_MAIN = "핵심 15"
+GROUP_MAIN = "MVP 10"
+GROUP_REF = "비철금속 15 (참고)"
 
 
 def read_csv(path: Path) -> pd.DataFrame | None:
@@ -84,7 +85,7 @@ def section_items(items: pd.DataFrame) -> str:
     note = esc(main["등급출처"].iat[0]) if len(main) else ""
     return f"""
     <section id="items">
-      <h2>핵심 {len(main)}개 품목</h2>
+      <h2>MVP {len(main)}개 품목</h2>
       <p class="hint">위험등급 출처 · {note} · 기준월 {esc(str(main['기준월'].iat[0]).split('.')[0]) if len(main) else ''}</p>
       <div class="grid">{''.join(cards)}</div>
     </section>"""
@@ -112,10 +113,10 @@ def section_blindspots(blind: pd.DataFrame, items: pd.DataFrame) -> tuple[str, g
 
     main_hs4 = {c[:4] for c in items.loc[items["group"] == GROUP_MAIN, "code"].astype(str)}
     overlap = sorted(main_hs4 & set(b["hs4"]))
-    note = (f"핵심 품목 중 이 목록에 포함된 HS4: {', '.join(overlap)}" if overlap else
-            "핵심 15개 품목(비철금속 HS4 " + "·".join(sorted(main_hs4)) + ")은 "
-            "이 사각지대 목록에 포함되지 않습니다. 사각지대 256개는 화학·철강 중심 "
-            "모집단(HS4 339개)에서 나온 목록이라, 위 산점도는 전체 분포 참고용입니다.")
+    note = (f"MVP {len(overlap)}개 품목이 이 사각지대 목록에 포함돼 있습니다: "
+            f"{', '.join(overlap)}" if overlap else
+            "MVP 품목(" + "·".join(sorted(main_hs4)) + ")은 이 사각지대 목록에 "
+            "포함되지 않습니다. 위 산점도는 전체 분포 참고용입니다.")
     return f"""
     <section id="blindspots">
       <h2>사각지대 스크리닝</h2>
@@ -130,7 +131,8 @@ def section_alt(items: pd.DataFrame, alt: pd.DataFrame, action: pd.DataFrame) ->
     main = items[items["group"] == GROUP_MAIN]
     blocks = []
     for r in main.itertuples():
-        rows = alt[alt["code"].astype(str).str.zfill(6) == str(r.code)]
+        code = str(r.code)
+        rows = alt[alt["code"].astype(str).str.zfill(len(code)) == code]
         ok = rows[rows["status"] == "ok"].sort_values("rank")
         if len(ok):
             lis = "".join(
@@ -142,7 +144,7 @@ def section_alt(items: pd.DataFrame, alt: pd.DataFrame, action: pd.DataFrame) ->
             reason = esc(rows["note"].iat[0]) if len(rows) else "산출 기록 없음"
             alt_html = f'<div class="na"><b>산출 불가</b><br>{reason}</div>'
 
-        arows = action[action["code"].astype(str).str.zfill(6) == str(r.code)]
+        arows = action[action["code"].astype(str).str.zfill(len(code)) == code]
         linked = arows[arows["smba_네트워크명"].notna()].sort_values("rank")
         if len(linked):
             lis = "".join(

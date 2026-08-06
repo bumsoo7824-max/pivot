@@ -6,15 +6,15 @@
     data/processed/alt_countries.csv    품목별 대체 공급국 상위 5
 
 품목 그룹
-  핵심 15 (기본)   risk_hs6.csv 의 HS6 15개. 관세청 국가별 원자료가 있어
-                   대체 공급국까지 실측으로 이어진다.
-  MVP 10 (참고)    기존 화학·철강 10개. 참고용으로만 남기고 기본 화면에는 띄우지 않는다.
-                   국가별 원자료가 없어 대체 공급국은 UN Comtrade 가 있어야 채워진다.
+  MVP 10 (기본)      mvp_10.csv 의 HS4 10개 (화학·철강). 기본 화면에 나온다.
+                     관세청 국가별 원자료가 없어 대체 공급국은 UN Comtrade 가 있어야 채워진다.
+  비철금속 15 (참고)  risk_hs6.csv 의 HS6 15개. 참고용으로만 남기고 기본 화면에는 띄우지 않는다.
+                     국가별 원자료가 있어 대체 공급국까지 실측으로 이어진다.
 
 대체 공급국
   (A) UN Comtrade  MVP 10 품목. COMTRADE_KEY 로 1회 호출한다.
                    pipeline_demo.py 의 로직(1위국 비중 70% 이상이면 그 위험국까지 제외)을 옮겼다.
-  (B) 관세청 원자료  핵심 15 품목. HS6 단위로 1위국을 제외한 수입액 상위 5개국을 계산한다.
+  (B) 관세청 원자료  비철금속 15 품목. HS6 단위로 1위국을 제외한 수입액 상위 5개국을 계산한다.
 
 (A)가 네트워크·키 문제로 실패하면 status="unavailable" 로 남긴다.
 없는 국가를 지어내거나 0을 채우지 않는다.
@@ -53,8 +53,8 @@ COMTRADE_BASE = "https://comtradeapi.un.org/data/v1/get/C/A/HS"
 TOP_N = 5
 RISK_SHARE_CUT = 0.70
 
-GROUP_MAIN = "핵심 15"
-GROUP_REF = "MVP 10 (참고)"
+GROUP_MAIN = "MVP 10"
+GROUP_REF = "비철금속 15 (참고)"
 
 COUNTRY_MAP_EN = {
     "중국": "China", "러시아": "Russian", "일본": "Japan", "미국": "USA",
@@ -92,7 +92,7 @@ def read_csv_fallback(path: Path) -> pd.DataFrame:
 
 # ───────────────────────────────────────────── 품목 목록
 def build_items_overview(mvp: pd.DataFrame) -> pd.DataFrame:
-    """핵심 15(HS6) + MVP 10(HS4) 를 같은 스키마로 합친다."""
+    """MVP 10(HS4, 기본) + 비철금속 15(HS6, 참고) 를 같은 스키마로 합친다."""
     r6 = read_csv_fallback(RAW / "risk_hs6.csv")
     r6["hs6"] = r6["hs6"].astype(str).str.zfill(6)
 
@@ -122,7 +122,7 @@ def build_items_overview(mvp: pd.DataFrame) -> pd.DataFrame:
             "위험등급": resolve_grade(s["등급"], s["HHI"], s["1위국비중"], s["단가_z"]),
             "등급출처": GRADE_SOURCE_LABEL,
             "기준월": str(s["ym"])[:6],
-            "group": GROUP_MAIN,
+            "group": GROUP_REF,
         })
 
     for t in mvp.itertuples():
@@ -132,7 +132,7 @@ def build_items_overview(mvp: pd.DataFrame) -> pd.DataFrame:
             "단가_z": None,  # MVP 10 은 월별 단가 원자료가 없어 가격 신호를 못 만든다
             "수입액합계": t.수입액합계, "수입국수": t.수입국수,
             "위험등급": resolve_grade(t.위험등급, t.HHI, t.위험국비중, None),
-            "등급출처": GRADE_SOURCE_LABEL, "기준월": None, "group": GROUP_REF,
+            "등급출처": GRADE_SOURCE_LABEL, "기준월": None, "group": GROUP_MAIN,
         })
     return pd.DataFrame(rows)
 
@@ -197,7 +197,7 @@ def build_comtrade_rows(mvp: pd.DataFrame, key: str) -> list[dict]:
 
 # ───────────────────────────────────────────── (B) 관세청 원자료 (HS6)
 def build_customs_rows(codes: list[str]) -> list[dict]:
-    """핵심 15 품목의 대체 공급국을 HS6 단위로 계산한다."""
+    """국가별 원자료가 있는 HS6 품목의 대체 공급국을 계산한다."""
     c = pq.read_table(RAW / "customs_item_country_root.parquet").to_pandas()
     c = c[c["impDlr"] > 0]
     c["hs6"] = c["hs6"].astype(str).str.zfill(6)
@@ -251,10 +251,10 @@ def main() -> None:
     if not RECALCULATED:
         print("  ※ 새 임계치 미확정 — 원자료 기존 등급을 그대로 사용 중")
 
-    main_codes = overview.loc[overview["group"] == GROUP_MAIN, "code"].tolist()
+    ref_codes = overview.loc[overview["group"] == GROUP_REF, "code"].tolist()
     rows: list[dict] = []
 
-    print("\n[A] UN Comtrade — MVP 10 (참고용)")
+    print("\n[A] UN Comtrade — MVP 10 (기본 그룹)")
     if args.skip_api:
         print("  --skip-api 지정 → 건너뜀")
     elif not key:
@@ -267,8 +267,8 @@ def main() -> None:
     else:
         rows += build_comtrade_rows(mvp, key)
 
-    print("\n[B] 관세청 국가별 원자료 — 핵심 15 (HS6 단위)")
-    rows += build_customs_rows(main_codes)
+    print("\n[B] 관세청 국가별 원자료 — 비철금속 15 참고 그룹 (HS6 단위)")
+    rows += build_customs_rows(ref_codes)
 
     df = pd.DataFrame(rows, columns=COLUMNS)
     df.to_csv(OUT / "alt_countries.csv", index=False, encoding="utf-8-sig")
