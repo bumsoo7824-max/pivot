@@ -18,6 +18,9 @@ __pycache__/
 *.pyc
 .venv/
 
+# --- 파이프라인 산출물 (재생성 가능, 소스 아님) ---
+data/processed/
+
 # --- os ---
 .DS_Store
 

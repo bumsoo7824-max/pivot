@@ -1,31 +1,31 @@
 {
  "status": "ok",
  "reason": null,
- "fetched_at": "2026-08-06T09:08:47.608745+00:00",
+ "fetched_at": "2026-08-06T12:18:40.781720+00:00",
  "items": [
   {
    "hs4": "2841",
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 6159056707
-    },
-    {
-     "country": null,
+     "country": "Japan",
      "export_usd": 2387070510
     },
     {
-     "country": null,
-     "export_usd": 309664344
-    },
-    {
-     "country": null,
+     "country": "USA",
      "export_usd": 134167171
     },
     {
-     "country": null,
+     "country": "Poland",
      "export_usd": 110617124
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 76965713
+    },
+    {
+     "country": "India",
+     "export_usd": 72545865
     }
    ]
   },
@@ -34,24 +34,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 17221062725
-    },
-    {
-     "country": null,
-     "export_usd": 6635446622
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 4035452781
     },
     {
-     "country": null,
+     "country": "Japan",
      "export_usd": 2325737581
     },
     {
-     "country": null,
+     "country": "Belgium",
      "export_usd": 2180350622
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 2119914507
+    },
+    {
+     "country": "France",
+     "export_usd": 2112286568
     }
    ]
   },
@@ -60,24 +60,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 2432172258
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 1326246592
     },
     {
-     "country": null,
+     "country": "Italy",
      "export_usd": 813563680
     },
     {
-     "country": null,
+     "country": "Japan",
      "export_usd": 761527354
     },
     {
-     "country": null,
+     "country": "USA",
      "export_usd": 718071726
+    },
+    {
+     "country": "Sweden",
+     "export_usd": 519961440
     }
    ]
   },
@@ -86,24 +86,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 5700240587
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 1689187839
     },
     {
-     "country": null,
+     "country": "Italy",
      "export_usd": 747195133
     },
     {
-     "country": null,
+     "country": "USA",
      "export_usd": 651623644
     },
     {
-     "country": null,
+     "country": "Japan",
      "export_usd": 556911258
+    },
+    {
+     "country": "Türkiye",
+     "export_usd": 542141077
     }
    ]
   },
@@ -112,24 +112,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 2553061498
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 1280788671
     },
     {
-     "country": null,
+     "country": "Malaysia",
      "export_usd": 836724789
     },
     {
-     "country": null,
+     "country": "Italy",
      "export_usd": 679094577
     },
     {
-     "country": null,
+     "country": "Japan",
      "export_usd": 575468207
+    },
+    {
+     "country": "Türkiye",
+     "export_usd": 560899744
     }
    ]
   },
@@ -138,24 +138,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 1496958803
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 700902804
     },
     {
-     "country": null,
+     "country": "USA",
      "export_usd": 425129082
     },
     {
-     "country": null,
+     "country": "Japan",
      "export_usd": 406563103
     },
     {
-     "country": null,
+     "country": "United Kingdom",
      "export_usd": 311159206
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 250868165
     }
    ]
   },
@@ -164,24 +164,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 643473398
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 133875083
     },
     {
-     "country": null,
+     "country": "USA",
      "export_usd": 77091252
     },
     {
-     "country": null,
+     "country": "Brazil",
      "export_usd": 61963752
     },
     {
-     "country": null,
+     "country": "South Africa",
      "export_usd": 61164599
+    },
+    {
+     "country": "Japan",
+     "export_usd": 51298978
     }
    ]
   },
@@ -190,24 +190,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 1160518551
-    },
-    {
-     "country": null,
+     "country": "Germany",
      "export_usd": 431642413
     },
     {
-     "country": null,
+     "country": "USA",
      "export_usd": 423239610
     },
     {
-     "country": null,
+     "country": "Other Asia, nes",
      "export_usd": 313297654
     },
     {
-     "country": null,
+     "country": "France",
      "export_usd": 288614526
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 198202315
     }
    ]
   },
@@ -216,24 +216,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 2965321023
-    },
-    {
-     "country": null,
-     "export_usd": 2445994460
-    },
-    {
-     "country": null,
+     "country": "Japan",
      "export_usd": 1095860368
     },
     {
-     "country": null,
+     "country": "Other Asia, nes",
      "export_usd": 837098441
     },
     {
-     "country": null,
+     "country": "Germany",
      "export_usd": 808553915
+    },
+    {
+     "country": "Belgium",
+     "export_usd": 762523651
+    },
+    {
+     "country": "USA",
+     "export_usd": 690884834
     }
    ]
   },
@@ -242,24 +242,24 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": null,
-     "export_usd": 3810500350
-    },
-    {
-     "country": null,
+     "country": "Italy",
      "export_usd": 1793273213
     },
     {
-     "country": null,
+     "country": "Türkiye",
      "export_usd": 1281986049
     },
     {
-     "country": null,
+     "country": "India",
      "export_usd": 1124072562
     },
     {
-     "country": null,
+     "country": "Brazil",
      "export_usd": 915339990
+    },
+    {
+     "country": "Egypt",
+     "export_usd": 457341009
     }
    ]
   }

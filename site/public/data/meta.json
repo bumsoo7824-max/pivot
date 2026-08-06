@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-06T09:08:47.626840+00:00",
+ "generated_at": "2026-08-06T12:18:40.807191+00:00",
  "layers": [
   {
    "tier": "베이스",
@@ -65,7 +65,7 @@
   "  → news.json (43.0 KB)",
   "  → kotra_map.json (11.5 KB)",
   "  → customs_alternatives.json (38.1 KB)",
-  "  → comtrade_alts.json (4.2 KB)",
+  "  → comtrade_alts.json (4.4 KB)",
   "  → notes.json (3.7 KB)"
  ]
 }

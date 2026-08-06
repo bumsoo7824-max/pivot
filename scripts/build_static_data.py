@@ -553,6 +553,20 @@ def build_comtrade(mvp: pd.DataFrame) -> dict:
     log("[7] UN Comtrade 대체 공급국")
     key = os.environ.get("COMTRADE_KEY", "").strip()
     cache = OUT / "comtrade_alts.json"
+
+    def cache_has_valid_names(payload: dict) -> bool:
+        """국가명(country)이 비어 있는 캐시(예: includeDesc 누락 버그로 만들어진 결과)는 신뢰하지 않는다."""
+        alts = [a for it in payload.get("items", []) for a in it.get("alternatives", [])]
+        return bool(alts) and all(a.get("country") for a in alts)
+
+    if cache.exists():
+        prev = json.loads(cache.read_text(encoding="utf-8"))
+        if prev.get("status") == "ok" and cache_has_valid_names(prev):
+            log("  캐시 존재 → 재호출하지 않는다.")
+            return prev
+        if prev.get("status") == "ok":
+            log("  캐시에 국가명이 비어 있음(과거 includeDesc 누락 버그) → 캐시를 버리고 재수집한다.")
+
     if not key:
         log("  COMTRADE_KEY 없음 → 이 단계를 건너뛴다. 화면에는 '산출 불가'로 표기된다.")
         return {
@@ -561,11 +575,6 @@ def build_comtrade(mvp: pd.DataFrame) -> dict:
             "fetched_at": None,
             "items": [],
         }
-    if cache.exists():
-        prev = json.loads(cache.read_text(encoding="utf-8"))
-        if prev.get("status") == "ok":
-            log("  캐시 존재 → 재호출하지 않는다.")
-            return prev
     try:
         import comtradeapicall  # noqa: F401
     except ImportError:
@@ -581,16 +590,20 @@ def build_comtrade(mvp: pd.DataFrame) -> dict:
                 period="2024", reporterCode=None, cmdCode=r.hs4, flowCode="X",
                 partnerCode="0", partner2Code=None, customsCode=None, motCode=None,
                 maxRecords=500, format_output="JSON", breakdownMode="classic",
+                includeDesc="true",  # 없으면 API가 reporterDesc(국가명)를 응답에서 뺀다
             )
             if df is None or len(df) == 0:
                 items.append({"hs4": r.hs4, "status": "empty", "alternatives": []})
                 continue
-            df = df[~df["reporterDesc"].isin(["World", "Rep. of Korea", "China"])]
+            # includeDesc 누락/버전 차이로 reporterDesc가 비어 있을 경우를 대비한 폴백
+            name_col = "reporterDesc" if "reporterDesc" in df.columns else "reporterISO"
+            df = df.dropna(subset=[name_col, "primaryValue"])
+            df = df[~df[name_col].isin(["World", "Rep. of Korea", "China"])]
             top = df.nlargest(5, "primaryValue")
             items.append({
                 "hs4": r.hs4, "status": "ok",
                 "alternatives": [
-                    {"country": t.reporterDesc, "export_usd": int(t.primaryValue)}
+                    {"country": getattr(t, name_col), "export_usd": int(t.primaryValue)}
                     for t in top.itertuples()
                 ],
             })
