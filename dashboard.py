@@ -1,0 +1,364 @@
+# -*- coding: utf-8 -*-
+"""Supply-Pivot 데모 대시보드 (Streamlit)
+
+실행:
+    streamlit run dashboard.py
+
+읽는 파일은 전부 사전 계산 산출물이다. 화면에서 외부 API 를 호출하지 않는다.
+  data/raw/mvp_10.csv                    MVP 10개 품목
+  data/raw/step4_blind_spots.csv         사각지대 256개 (단일 출처)
+  data/raw/kotra_news.parquet            KOTRA 해외시장뉴스
+  data/processed/alt_countries.csv       STEP 1 대체 공급국
+  data/processed/action_link.csv         STEP 2 지원기관 연결
+  data/processed/backtest_urea.csv       STEP 3 요소수 백테스트 시도 기록
+  data/processed/backtest_leadtime*.csv  STEP 3 실데이터 선행성 검증
+
+표기 원칙 — 데이터가 없는 칸에 0 을 넣지 않고 '산출 불가'로 적는다.
+"""
+from __future__ import annotations
+
+from pathlib import Path
+
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
+
+ROOT = Path(__file__).resolve().parent
+RAW = ROOT / "data" / "raw"
+PROC = ROOT / "data" / "processed"
+
+GRADE_COLOR = {"RED": "#f0526d", "YELLOW": "#f5a524", "GREEN": "#3ecf8e"}
+UREA_EVENT_YM = "202110"  # 2021 요소수 사태 발생 시점 (참고선)
+
+st.set_page_config(page_title="Supply-Pivot 대시보드", page_icon="🧭", layout="wide")
+
+
+# ────────────────────────────────────────────────────────────── 로더
+@st.cache_data
+def load_csv(path: Path) -> pd.DataFrame | None:
+    if not path.exists():
+        return None
+    for enc in ("utf-8-sig", "utf-8", "cp949"):
+        try:
+            return pd.read_csv(path, encoding=enc)
+        except UnicodeDecodeError:
+            continue
+    return None
+
+
+@st.cache_data
+def load_news() -> pd.DataFrame | None:
+    path = RAW / "kotra_news.parquet"
+    if not path.exists():
+        return None
+    import html
+    import re
+
+    df = pd.read_parquet(path)
+    df = df[df["공급망_관련"]].copy()
+    df["제목"] = df["newsTitl"].map(
+        lambda s: re.sub(r"\s+", " ", html.unescape(str(s))).strip()
+    )
+    return df
+
+
+def missing(label: str, path: Path) -> None:
+    st.warning(f"**산출 불가** — {label}\n\n`{path.relative_to(ROOT)}` 파일이 없습니다. "
+               f"해당 STEP 스크립트를 먼저 실행하세요.")
+
+
+mvp = load_csv(RAW / "mvp_10.csv")
+blind = load_csv(RAW / "step4_blind_spots.csv")
+alt = load_csv(PROC / "alt_countries.csv")
+action = load_csv(PROC / "action_link.csv")
+overview = load_csv(PROC / "items_overview.csv")
+urea = load_csv(PROC / "backtest_urea.csv")
+lead = load_csv(PROC / "backtest_leadtime.csv")
+lead_series = load_csv(PROC / "backtest_leadtime_series.csv")
+news = load_news()
+
+if mvp is None:
+    st.error("data/raw/mvp_10.csv 가 없습니다. 데이터를 먼저 배치하세요.")
+    st.stop()
+
+mvp["hs4"] = mvp["hs4"].astype(str).str.zfill(4)
+
+# 품목 목록은 두 그룹이다.
+#   MVP 10          — 사각지대 대표 품목. 대체 공급국은 Comtrade 가 있어야 채워진다.
+#   관세청 실측 보유 — 국가별 원자료가 있어 대체 공급국까지 실측으로 이어지는 품목.
+# 두 그룹을 모두 열어 둬야 STEP 1·2 산출물이 화면에서 실제로 확인된다.
+if overview is not None:
+    items = overview.copy()
+    items["hs4"] = items["hs4"].astype(str).str.zfill(4)
+else:
+    items = mvp.copy()
+    items["group"] = "MVP 10"
+
+
+# ────────────────────────────────────────────────────────────── 사이드바
+st.sidebar.title("🧭 Supply-Pivot")
+st.sidebar.caption("데이터로 발굴한 공급망 사각지대 → 대체 경로")
+
+groups = items["group"].unique().tolist()
+sel_group = st.sidebar.radio("품목 그룹", groups, index=0, help=
+    "MVP 10 = 사각지대 대표 품목 / 관세청 실측 보유 = 국가별 원자료로 "
+    "대체 공급국까지 실측 산출되는 품목")
+pool = items[items["group"] == sel_group]
+
+labels = {r.hs4: f"{r.hs4} · {r.품목명}" for r in pool.itertuples()}
+sel_hs4 = st.sidebar.selectbox(
+    "품목 선택", options=list(labels), format_func=lambda k: labels[k]
+)
+item = pool[pool["hs4"] == sel_hs4].iloc[0]
+
+st.sidebar.divider()
+st.sidebar.markdown(
+    f"""
+**데이터 현황**
+
+- 사각지대 {len(blind) if blind is not None else '—'}개 품목
+- MVP {len(mvp)}개 · 실측 보유 {int((items["group"] == "관세청 실측 보유").sum())}개
+- 대체 공급국 {int((alt['status'] == 'ok').sum()) if alt is not None else '—'}행 (실측)
+- 지원기관 연결 {len(action) if action is not None else '—'}행
+- 공급망 뉴스 {len(news) if news is not None else '—'}건
+"""
+)
+st.sidebar.divider()
+st.sidebar.caption(
+    "지표는 **월 단위 수입물가지수**이며 일일 가격이 아닙니다. "
+    "대체 공급은 **국가 단위 발굴 + 지원기관 연결**까지이고 기업 대 기업 매칭이 아닙니다. "
+    "예측이 아니라 확정 통계에 대한 진단·산출·경보입니다."
+)
+
+
+# ────────────────────────────────────────────────────────────── 헤더
+st.title("Supply-Pivot 데모 대시보드")
+st.caption(
+    "구조적 취약성은 관세청 통계로 깔고, 방아쇠는 수입물가지수와 정책 동향으로 당긴다."
+)
+
+grade = str(item["위험등급"])
+color = GRADE_COLOR.get(grade, "#94a3b8")
+
+st.markdown(f"### {item['품목명']}  <span style='color:{color}'>● {grade}</span>",
+            unsafe_allow_html=True)
+
+c1, c2, c3, c4 = st.columns(4)
+c1.metric("HHI (수입 집중도)", f"{item['HHI']:.4f}", help="1에 가까울수록 한 나라에 쏠림")
+c2.metric("1위국", str(item["1위국"]), f"비중 {item['1위국비중'] * 100:.1f}%",
+          delta_color="off")
+c3.metric("수입액", f"{item['수입액합계'] / 1e8:.1f}억 달러")
+c4.metric("수입 상대국 수", f"{int(item['수입국수'])}개국")
+
+st.markdown(
+    f"<div style='height:6px;background:{color};border-radius:3px;margin:4px 0 20px'></div>",
+    unsafe_allow_html=True,
+)
+
+
+# ────────────────────────────────────────────────────────────── 사각지대 산점도
+st.subheader("사각지대 스크리닝")
+if blind is None:
+    missing("사각지대 산점도", RAW / "step4_blind_spots.csv")
+else:
+    b = blind.copy()
+    b["hs4"] = b["hs4"].astype(str).str.zfill(4)
+    b["선택품목"] = (b["hs4"] == sel_hs4).map({True: "선택 품목", False: "그 외"})
+    fig = px.scatter(
+        b, x="HHI", y="1위국비중", color="위험등급",
+        color_discrete_map=GRADE_COLOR, symbol="선택품목",
+        symbol_map={"선택 품목": "star", "그 외": "circle"},
+        size=b["수입액합계"].clip(lower=1).pow(0.25),
+        hover_data={"hs4": True, "품목명": True, "1위국": True,
+                    "수입액합계": ":,.0f", "선택품목": False},
+        labels={"HHI": "HHI (수입 집중도)", "1위국비중": "1위국 비중"},
+        height=480,
+    )
+    fig.add_vline(x=0.25, line_dash="dash", line_color="#f0526d", opacity=0.5,
+                  annotation_text="참조선 HHI 0.25")
+    fig.add_hline(y=0.40, line_dash="dash", line_color="#f0526d", opacity=0.5,
+                  annotation_text="참조선 1위국 비중 0.40")
+    fig.update_layout(legend_title_text="", margin=dict(t=30, b=10))
+    st.plotly_chart(fig, use_container_width=True)
+    st.caption(
+        f"원본 목록 step4_blind_spots.csv {len(b)}행을 그대로 표시합니다. "
+        f"점선 두 개는 읽기 보조용 참조선이며 판정 기준이 아닙니다. "
+        f"선택한 품목({sel_hs4})은 ★ 로 표시됩니다."
+    )
+
+
+# ────────────────────────────────────── 대체 공급국 + 지원기관 연결
+left, right = st.columns(2)
+
+with left:
+    st.subheader("대체 공급국")
+    if alt is None:
+        missing("대체 공급국", PROC / "alt_countries.csv")
+    else:
+        rows = alt[alt["hs4"].astype(str).str.zfill(4) == sel_hs4]
+        ok = rows[rows["status"] == "ok"]
+        if len(ok):
+            st.success(f"**실측 데이터** · 출처 {ok['source'].iat[0]}")
+            for r in ok.sort_values("rank").itertuples():
+                st.markdown(
+                    f"**{int(r.rank)}. {r.alt_country}** — 비중 {r.share * 100:.1f}% "
+                    f"· ${r.value_usd:,.0f}"
+                )
+            st.caption(str(ok["note"].iat[0]))
+        elif len(rows):
+            st.warning(
+                f"**산출 불가** — {rows['note'].iat[0]}\n\n"
+                "값이 없으므로 0을 대입하지 않습니다. "
+                "`COMTRADE_KEY` 와 네트워크가 확보되면 "
+                "`python scripts/step1_alt_countries.py` 로 이 칸이 채워집니다."
+            )
+        else:
+            st.info("이 품목에 대한 대체 공급국 산출 기록이 없습니다.")
+
+with right:
+    st.subheader("지원기관 연결")
+    if action is None:
+        missing("지원기관 연결", PROC / "action_link.csv")
+    else:
+        rows = action[action["hs4"].astype(str).str.zfill(4) == sel_hs4]
+        linked = rows[rows["smba_네트워크명"].notna()]
+        if len(linked):
+            for r in linked.sort_values("rank").itertuples():
+                with st.expander(
+                    f"{r.alt_country} · {r.smba_네트워크명}"
+                    + (f" (KOTRA 법인 {int(r.kotra_해외법인수)}사)"
+                       if pd.notna(r.kotra_해외법인수) else "")
+                ):
+                    st.markdown(f"**권역** {r.smba_권역}")
+                    st.markdown(f"**지원형태** {r.smba_지원형태}")
+                    st.markdown(f"**지원업종** {r.smba_지원업종}")
+                    st.caption(str(r.smba_지원범위)[:300])
+            st.caption("국가 단위 접점입니다. 기업 대 기업 매칭이 아닙니다.")
+        elif len(rows):
+            st.warning(
+                "**산출 불가** — 이 품목의 대체 공급국에 대응하는 "
+                "중진공 해외전략네트워크 거점이 없습니다 (전체 11개 거점 / 9개국)."
+            )
+        else:
+            st.warning(
+                "**산출 불가** — 대체 공급국이 산출되지 않아 지원기관까지 이어지지 않습니다."
+            )
+
+
+# ────────────────────────────────────────────────────────────── 백테스트
+st.subheader("백테스트 — 경보의 선행성")
+
+if urea is not None and (urea["status"] == "unavailable").all():
+    st.error(
+        "**요소수(HS 2921/3102) 백테스트 산출 불가** — "
+        "제공된 원자료에 해당 HS 코드가 없고, 보유 기간(2023-01~2026-06)이 "
+        "2021년 요소수 사태 구간을 포함하지 않습니다. "
+        "없는 구간을 그려내지 않고 아래에 동일 로직의 실데이터 검증을 대신 싣습니다."
+    )
+    with st.expander("요소수 백테스트 시도 기록 (backtest_urea.csv)"):
+        st.dataframe(urea, use_container_width=True, hide_index=True)
+
+if lead is None or lead_series is None:
+    missing("백테스트", PROC / "backtest_leadtime.csv")
+else:
+    ok = lead[lead["status"] == "ok"]
+    detected = lead[lead["status"].isin(["ok", "급등 전 RED 없음 (미탐지)"])]
+    m1, m2, m3 = st.columns(3)
+    m1.metric("급등 발생 품목", f"{len(detected)}개")
+    m2.metric("사전 경보 성공", f"{len(ok)}개",
+              f"{len(ok) / len(detected) * 100:.0f}%" if len(detected) else None)
+    m3.metric("선행 개월 중앙값",
+              f"{ok['lead_months'].median():.1f}개월" if len(ok) else "산출 불가")
+
+    pick = st.selectbox(
+        "품목별 타임라인",
+        options=lead["hs6"].astype(str).tolist(),
+        format_func=lambda h: f"{h} · {lead.loc[lead['hs6'].astype(str) == h, '품목명'].iat[0]}",
+    )
+    s = lead_series[lead_series["hs6"].astype(str) == pick].sort_values("ym").copy()
+    # "202301" 이 202301 이라는 수로 해석되지 않도록 라벨을 만들고 범주축으로 고정한다
+    s["ym_str"] = s["ym"].astype(str).str.zfill(6)
+    s["ym_label"] = s["ym_str"].str[:4] + "." + s["ym_str"].str[4:]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=s["ym_label"], y=s["unit_price"], mode="lines+markers",
+        name="수입 단가 (USD/톤)", line=dict(color="#57a6ff", width=2),
+    ))
+    reds = s[s["grade_calc"] == "RED"]
+    if len(reds):
+        fig.add_trace(go.Scatter(
+            x=reds["ym_label"], y=reds["unit_price"], mode="markers",
+            name="RED 경보", marker=dict(color="#f0526d", size=11, symbol="triangle-up"),
+        ))
+    surges = s[s["surge"] == True]  # noqa: E712 — pandas 불리언 비교
+    if len(surges):
+        fig.add_trace(go.Scatter(
+            x=surges["ym_label"], y=surges["unit_price"], mode="markers",
+            name="급등 구간", marker=dict(color="#f5a524", size=13, symbol="x"),
+        ))
+    row = lead[lead["hs6"].astype(str) == pick].iloc[0]
+    if row["status"] == "ok":
+        alert_lbl = str(row["alert_ym"]).zfill(6)
+        alert_lbl = f"{alert_lbl[:4]}.{alert_lbl[4:]}"
+        surge_lbl = str(row["surge_ym"]).zfill(6)
+        surge_lbl = f"{surge_lbl[:4]}.{surge_lbl[4:]}"
+        fig.add_vline(x=alert_lbl, line_dash="dot", line_color="#f0526d",
+                      annotation_text=f"경보 {alert_lbl}")
+        fig.add_vline(x=surge_lbl, line_dash="dash", line_color="#f5a524",
+                      annotation_text=f"급등 {surge_lbl}")
+    # 요소수 사태 참고선 — 보유 데이터 범위 밖이라 실제로는 찍히지 않는다
+    if UREA_EVENT_YM in set(s["ym_str"]):
+        fig.add_vline(x=UREA_EVENT_YM, line_color="#94a3b8",
+                      annotation_text="2021 요소수 사태")
+    fig.update_layout(height=420, margin=dict(t=30, b=10),
+                      xaxis_title="관측월", yaxis_title="수입 단가 (USD/톤)",
+                      xaxis=dict(type="category", tickangle=-45, nticks=14))
+    st.plotly_chart(fig, use_container_width=True)
+
+    if row["status"] == "ok":
+        st.info(
+            f"**{row['품목명']}** — 경보 {row['alert_ym']} → 급등 {row['surge_ym']}, "
+            f"**{int(row['lead_months'])}개월 선행**. "
+            f"급등월 전월대비 {row['surge_mom']:+.1f}%."
+        )
+    else:
+        st.warning(f"**{row['품목명']}** — {row['status']}")
+
+    st.caption(
+        "경보(RED) = 구조 취약(HHI ≥ 0.50 이고 1위국 비중 ≥ 70%) **그리고** "
+        "초기 가격 신호(전월대비 ≥ 3% 또는 3개월 누적 ≥ 6%). "
+        "급등 = 3개월 누적 ≥ 20% 또는 전월대비 ≥ 10%. "
+        "2021 요소수 사태 수직선은 데이터 기간(2023-01~) 밖이라 표시되지 않습니다."
+    )
+    with st.expander("품목별 선행성 요약 (backtest_leadtime.csv)"):
+        st.dataframe(lead, use_container_width=True, hide_index=True)
+
+
+# ────────────────────────────────────────────────────────────── 뉴스
+st.subheader("뉴스 신호 — KOTRA 해외시장뉴스")
+if news is None:
+    missing("뉴스 신호", RAW / "kotra_news.parquet")
+else:
+    countries = ["전체"] + sorted(news["natn"].dropna().unique().tolist())
+    pick_c = st.selectbox("국가 필터", countries, index=0)
+    view = news if pick_c == "전체" else news[news["natn"] == pick_c]
+    st.caption(
+        f"최근 90일 수집분 중 공급망 관련 {len(news)}건 "
+        f"({news['othbcDt'].min()} ~ {news['othbcDt'].max()}) · 현재 표시 {len(view)}건"
+    )
+    st.dataframe(
+        view[["othbcDt", "natn", "indstCl", "제목", "kotraNewsUrl"]]
+        .rename(columns={"othbcDt": "일자", "natn": "국가",
+                         "indstCl": "산업", "kotraNewsUrl": "링크"})
+        .sort_values("일자", ascending=False),
+        use_container_width=True, hide_index=True,
+        column_config={"링크": st.column_config.LinkColumn("링크", display_text="열기")},
+    )
+
+st.divider()
+st.caption(
+    "전시용 데모입니다. 모든 수치는 사전 계산된 값이며 화면에서 외부 API를 호출하지 않습니다. "
+    "데이터가 없는 항목은 0이 아니라 '산출 불가'로 표기합니다."
+)
