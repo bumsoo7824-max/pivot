@@ -45,12 +45,34 @@ python scripts/build_static_data.py
 # 2) 사이트
 cd site
 npm install
-npm run dev      # 개발 서버
-npm run build    # 정적 내보내기 → site/out/
+npm run dev          # 개발 서버
+npm run build        # 도메인 루트용 내보내기 → site/out/
+npm run build:pages  # GitHub Pages용 내보내기 (basePath=/pivot + .nojekyll)
 ```
 
-`npm run build`는 `output: "export"` 설정으로 `site/out/`에 정적 파일을 만듭니다.
-Vercel에 그대로 배포하면 서버 런타임 없이 동작합니다.
+`output: "export"` 설정이라 서버 런타임 없이 정적 파일만 서빙하면 됩니다.
+
+### 배포 위치와 basePath
+
+프로젝트 페이지는 `https://<user>.github.io/<repo>/` 처럼 저장소명이 경로에 붙습니다.
+이 접두사를 빌드에 알려주지 않으면 CSS·JS·내부 링크가 전부 404가 되므로,
+`NEXT_PUBLIC_BASE_PATH` 환경변수로 주입합니다.
+
+| 배포 위치 | 명령 | basePath |
+|---|---|---|
+| 도메인 루트 (Vercel 등) | `npm run build` | 없음 |
+| GitHub Pages 프로젝트 페이지 | `npm run build:pages` | `/pivot` |
+
+**GitHub Pages 갱신 절차** — `gh-pages` 브랜치는 빌드 산출물만 담습니다.
+
+```bash
+python scripts/build_static_data.py     # 데이터가 바뀐 경우에만
+cd site && npm run build:pages
+# site/out/ 내용을 gh-pages 브랜치 루트에 덮어쓴 뒤 푸시
+```
+
+`.nojekyll`은 `build:pages`가 자동으로 넣습니다. 이 파일이 없으면 Jekyll이
+밑줄로 시작하는 `_next/` 디렉터리를 무시해 사이트가 통째로 깨집니다.
 
 ## API 키
 

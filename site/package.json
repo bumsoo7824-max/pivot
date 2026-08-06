@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:pages": "NEXT_PUBLIC_BASE_PATH=/pivot next build && touch out/.nojekyll"
   },
   "dependencies": {
     "next": "16.3.0",
