@@ -1,21 +1,23 @@
 # -*- coding: utf-8 -*-
-"""STEP 3 — 리스크 스코어 소급 계산(백테스트)
+"""STEP 3 — 과거 사태 소급 검증 (관세청 HHI 기반 구조 진단)
 
-요청은 "2021년 요소수 사태 6개월 전부터 소급"이었으나, 제공된 원자료에는
-요소수 계열(HS 2921 / 3102)이 한 건도 없고 기간도 202301~202606 이라
-2021년 구간 자체가 존재하지 않는다. 없는 데이터를 지어내지 않는다.
+소급 검증은 이 모듈이 담당한다. 관세청 원자료 42개월 구간에서 RED 경보가
+단가 급등보다 몇 개월 앞섰는지를 측정한다.
 
-그래서 두 개를 낸다.
-  (1) backtest_urea.csv     — 요소수 백테스트 시도 결과와 불가 사유를 기록한다.
-                              나중에 원자료가 들어오면 그대로 다시 돌리면 된다.
-  (2) backtest_leadtime.csv — 같은 스코어링 로직을 42개월 실측 데이터에 적용해
-                              "RED 경보가 단가 정점보다 몇 개월 앞섰는가"를 측정한다.
-                              사태 이름표가 없을 뿐, 선행성 검증 자체는 실데이터다.
+산출물
+  backtest_leadtime.csv        품목별 경보 → 급등 선행 개월
+  backtest_leadtime_series.csv 월별 등급·스코어 원본
 
-usage: python scripts/step3_backtest.py
+특정 품목의 사태 시점 소급이 가능한지 점검하려면 --probe 로 HS 코드를 넘긴다.
+보유 원자료에 그 코드와 기간이 있는지 확인해 backtest_probe.csv 로 남긴다.
+
+usage:
+    python scripts/step3_backtest.py
+    python scripts/step3_backtest.py --probe 2921 3102
 """
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
 import pandas as pd
@@ -29,11 +31,6 @@ OUT.mkdir(parents=True, exist_ok=True)
 RISK_MONTHLY = (RAW / "데이터셋 (primary key hscode 6자리)"
                 / "관세청_(품목별 국가별) 수출입실적 HHI, 물가변동률 계산"
                 / "risk_hs6_monthly.parquet")
-
-# 요소수 사태: 중국이 2021-10-15 요소 수출검사 의무화를 발표하며 촉발됐다.
-UREA_EVENT = "2021-10"
-UREA_HS = ["2921", "3102", "310210", "292111", "292119"]
-LOOKBACK_MONTHS = 6
 
 # 경보 규칙 — 프로젝트의 3계층 논리를 그대로 옮겼다.
 # 구조가 취약한 상태에서 '초기' 가격 신호가 잡힐 때만 RED 로 올린다.
@@ -87,29 +84,22 @@ def grade_of(structural: bool, early: bool) -> str:
     return "GREEN"
 
 
-def build_urea_record() -> pd.DataFrame:
-    """요소수 백테스트 가능 여부를 코드별로 남긴다."""
+def build_probe_record(codes: list[str]) -> pd.DataFrame:
+    """지정한 HS 코드를 보유 원자료에서 소급 검증할 수 있는지 점검한다."""
     customs = pq.read_table(RAW / "customs_item_country_root.parquet").to_pandas()
     monthly = pq.read_table(RISK_MONTHLY).to_pandas()
     have_codes = set(customs["hsCd"].astype(str)) | set(monthly["hs6"].astype(str))
     period = f"{customs['ym'].min()}~{customs['ym'].max()}"
-    window = f"2021-04~{UREA_EVENT} (사태 6개월 전 소급 구간)"
 
     rows = []
-    for code in UREA_HS:
+    for code in codes:
         matched = [c for c in have_codes if c.startswith(code)]
         rows.append({
             "hs_code": code,
-            "event": "2021 요소수 사태",
-            "event_month": UREA_EVENT,
-            "lookback_window": window,
             "matched_codes_in_data": ",".join(sorted(matched)) or None,
             "status": "ok" if matched else "unavailable",
-            "reason": None if matched else
-                      "원자료에 해당 HS 코드 없음 + 보유 기간(2023-01~2026-06)이 "
-                      "2021년 사태 구간을 포함하지 않음",
+            "reason": None if matched else "원자료에 해당 HS 코드 없음",
             "data_period_available": period,
-            "rows_in_2021": int((customs["ym"].astype(str).str[:4] == "2021").sum()),
         })
     return pd.DataFrame(rows)
 
@@ -173,14 +163,20 @@ def build_leadtime() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def main() -> None:
-    print("[1] 요소수 백테스트 가능 여부")
-    urea = build_urea_record()
-    urea.to_csv(OUT / "backtest_urea.csv", index=False, encoding="utf-8-sig")
-    for r in urea.itertuples():
-        print(f"  HS {r.hs_code}: {r.status}" + (f" — {r.reason}" if r.reason else ""))
-    print(f"  → data/processed/backtest_urea.csv ({len(urea)}행, 전부 unavailable)")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--probe", nargs="*", default=None,
+                    help="소급 검증 가능 여부를 점검할 HS 코드")
+    args = ap.parse_args()
 
-    print("\n[2] 동일 로직 실데이터 검증 — RED 전환 대비 단가 정점 선행")
+    if args.probe:
+        print("[0] 소급 검증 가능 여부 점검")
+        probe = build_probe_record(args.probe)
+        probe.to_csv(OUT / "backtest_probe.csv", index=False, encoding="utf-8-sig")
+        for r in probe.itertuples():
+            print(f"  HS {r.hs_code}: {r.status}" + (f" — {r.reason}" if r.reason else ""))
+        print(f"  → data/processed/backtest_probe.csv ({len(probe)}행)")
+
+    print("\n[1] 소급 검증 — RED 경보 대비 급등 선행 개월")
     series, summary = build_leadtime()
     series.to_csv(OUT / "backtest_leadtime_series.csv", index=False, encoding="utf-8-sig")
     summary.to_csv(OUT / "backtest_leadtime.csv", index=False, encoding="utf-8-sig")

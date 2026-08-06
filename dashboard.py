@@ -10,8 +10,8 @@
   data/raw/kotra_news.parquet            KOTRA 해외시장뉴스
   data/processed/alt_countries.csv       STEP 1 대체 공급국
   data/processed/action_link.csv         STEP 2 지원기관 연결
-  data/processed/backtest_urea.csv       STEP 3 요소수 백테스트 시도 기록
-  data/processed/backtest_leadtime*.csv  STEP 3 실데이터 선행성 검증
+  data/processed/backtest_leadtime*.csv  STEP 3 소급 검증 (42개월 리드타임)
+  data/news_signal_test.json             뉴스 신호 모듈 실시간 테스트 결과
 
 표기 원칙 — 데이터가 없는 칸에 0 을 넣지 않고 '산출 불가'로 적는다.
 """
@@ -29,7 +29,6 @@ RAW = ROOT / "data" / "raw"
 PROC = ROOT / "data" / "processed"
 
 GRADE_COLOR = {"RED": "#f0526d", "YELLOW": "#f5a524", "GREEN": "#3ecf8e"}
-UREA_EVENT_YM = "202110"  # 2021 요소수 사태 발생 시점 (참고선)
 
 st.set_page_config(page_title="Supply-Pivot 대시보드", page_icon="🧭", layout="wide")
 
@@ -63,6 +62,17 @@ def load_news() -> pd.DataFrame | None:
     return df
 
 
+@st.cache_data
+def load_news_signal_meta() -> dict | None:
+    """뉴스 신호 모듈의 역할·실시간 테스트 결과. 값은 모듈 검증 결과를 그대로 싣는다."""
+    import json
+
+    path = ROOT / "data" / "news_signal_test.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def missing(label: str, path: Path) -> None:
     st.warning(f"**산출 불가** — {label}\n\n`{path.relative_to(ROOT)}` 파일이 없습니다. "
                f"해당 STEP 스크립트를 먼저 실행하세요.")
@@ -73,10 +83,10 @@ blind = load_csv(RAW / "step4_blind_spots.csv")
 alt = load_csv(PROC / "alt_countries.csv")
 action = load_csv(PROC / "action_link.csv")
 overview = load_csv(PROC / "items_overview.csv")
-urea = load_csv(PROC / "backtest_urea.csv")
 lead = load_csv(PROC / "backtest_leadtime.csv")
 lead_series = load_csv(PROC / "backtest_leadtime_series.csv")
 news = load_news()
+news_meta = load_news_signal_meta()
 
 if mvp is None:
     st.error("data/raw/mvp_10.csv 가 없습니다. 데이터를 먼저 배치하세요.")
@@ -274,18 +284,12 @@ with right:
             )
 
 
-# ────────────────────────────────────────────────────────────── 백테스트
-st.subheader("백테스트 — 경보의 선행성")
-
-if urea is not None and (urea["status"] == "unavailable").all():
-    st.error(
-        "**요소수(HS 2921/3102) 백테스트 산출 불가** — "
-        "제공된 원자료에 해당 HS 코드가 없고, 보유 기간(2023-01~2026-06)이 "
-        "2021년 요소수 사태 구간을 포함하지 않습니다. "
-        "없는 구간을 그려내지 않고 아래에 동일 로직의 실데이터 검증을 대신 싣습니다."
-    )
-    with st.expander("요소수 백테스트 시도 기록 (backtest_urea.csv)"):
-        st.dataframe(urea, use_container_width=True, hide_index=True)
+# ──────────────────────────────────────────────── 과거 사태 소급 검증 (HHI)
+st.subheader("과거 사태 소급 검증 — 관세청 HHI 기반 구조 진단")
+st.caption(
+    "소급 검증은 관세청 HHI 기반 구조 진단이 담당합니다. "
+    "42개월 실측 구간에서 RED 경보가 단가 급등보다 얼마나 앞섰는지를 측정합니다."
+)
 
 if lead is None or lead_series is None:
     missing("백테스트", PROC / "backtest_leadtime.csv")
@@ -307,47 +311,47 @@ else:
     s = lead_series[lead_series["hs6"].astype(str) == pick].sort_values("ym").copy()
     # "202301" 이 202301 이라는 수로 해석되지 않도록 라벨을 만들고 범주축으로 고정한다
     s["ym_str"] = s["ym"].astype(str).str.zfill(6)
-    s["ym_label"] = s["ym_str"].str[:4] + "." + s["ym_str"].str[4:]
+    # 범주축에 수직선을 얹으면 눈금이 무너져 실제 날짜축을 쓴다.
+    s["x"] = pd.to_datetime(s["ym_str"], format="%Y%m")
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(
-        x=s["ym_label"], y=s["unit_price"], mode="lines+markers",
+        x=s["x"], y=s["unit_price"], mode="lines+markers",
         name="수입 단가 (USD/톤)", line=dict(color="#57a6ff", width=2),
     ))
     reds = s[s["grade_calc"] == "RED"]
     if len(reds):
         fig.add_trace(go.Scatter(
-            x=reds["ym_label"], y=reds["unit_price"], mode="markers",
+            x=reds["x"], y=reds["unit_price"], mode="markers",
             name="RED 경보", marker=dict(color="#f0526d", size=11, symbol="triangle-up"),
         ))
     surges = s[s["surge"] == True]  # noqa: E712 — pandas 불리언 비교
     if len(surges):
         fig.add_trace(go.Scatter(
-            x=surges["ym_label"], y=surges["unit_price"], mode="markers",
+            x=surges["x"], y=surges["unit_price"], mode="markers",
             name="급등 구간", marker=dict(color="#f5a524", size=13, symbol="x"),
         ))
     row = lead[lead["hs6"].astype(str) == pick].iloc[0]
     if row["status"] == "ok":
-        alert_lbl = str(row["alert_ym"]).zfill(6)
-        alert_lbl = f"{alert_lbl[:4]}.{alert_lbl[4:]}"
-        surge_lbl = str(row["surge_ym"]).zfill(6)
-        surge_lbl = f"{surge_lbl[:4]}.{surge_lbl[4:]}"
-        fig.add_vline(x=alert_lbl, line_dash="dot", line_color="#f0526d",
-                      annotation_text=f"경보 {alert_lbl}")
-        fig.add_vline(x=surge_lbl, line_dash="dash", line_color="#f5a524",
-                      annotation_text=f"급등 {surge_lbl}")
-    # 요소수 사태 참고선 — 보유 데이터 범위 밖이라 실제로는 찍히지 않는다
-    if UREA_EVENT_YM in set(s["ym_str"]):
-        fig.add_vline(x=UREA_EVENT_YM, line_color="#94a3b8",
-                      annotation_text="2021 요소수 사태")
-    fig.update_layout(height=420, margin=dict(t=30, b=10),
+        for col, color, label, y_pos in (("alert_ym", "#f0526d", "경보", 1.10),
+                                         ("surge_ym", "#f5a524", "급등", 1.02)):
+            raw = str(row[col]).split(".")[0].zfill(6)
+            x = pd.to_datetime(raw, format="%Y%m")
+            fig.add_shape(type="line", x0=x, x1=x, yref="paper", y0=0, y1=1,
+                          line=dict(color=color, dash="dot", width=1.5))
+            fig.add_annotation(x=x, yref="paper", y=y_pos, showarrow=False,
+                               text=f"{label} {raw[:4]}.{raw[4:]}",
+                               font=dict(color=color, size=11))
+    fig.update_layout(height=430, margin=dict(t=50, b=10),
                       xaxis_title="관측월", yaxis_title="수입 단가 (USD/톤)",
-                      xaxis=dict(type="category", tickangle=-45, nticks=14))
+                      xaxis=dict(type="date", tickformat="%Y.%m", dtick="M4",
+                                 tickangle=-45))
     st.plotly_chart(fig, use_container_width=True)
 
     if row["status"] == "ok":
         st.info(
-            f"**{row['품목명']}** — 경보 {row['alert_ym']} → 급등 {row['surge_ym']}, "
+            f"**{row['품목명']}** — 경보 {str(row['alert_ym']).split('.')[0]} → "
+            f"급등 {str(row['surge_ym']).split('.')[0]}, "
             f"**{int(row['lead_months'])}개월 선행**. "
             f"급등월 전월대비 {row['surge_mom']:+.1f}%."
         )
@@ -358,14 +362,26 @@ else:
         "경보(RED) = 구조 취약(HHI ≥ 0.50 이고 1위국 비중 ≥ 70%) **그리고** "
         "초기 가격 신호(전월대비 ≥ 3% 또는 3개월 누적 ≥ 6%). "
         "급등 = 3개월 누적 ≥ 20% 또는 전월대비 ≥ 10%. "
-        "2021 요소수 사태 수직선은 데이터 기간(2023-01~) 밖이라 표시되지 않습니다."
+        "검증 구간은 관세청 원자료 42개월(2023-01~2026-06)입니다."
     )
     with st.expander("품목별 선행성 요약 (backtest_leadtime.csv)"):
         st.dataframe(lead, use_container_width=True, hide_index=True)
 
 
-# ────────────────────────────────────────────────────────────── 뉴스
-st.subheader("뉴스 신호 — KOTRA 해외시장뉴스")
+# ────────────────────────────────────────────────────────────── 뉴스 신호
+st.subheader("뉴스 신호 — 실시간 정책·규제 동향 감지")
+
+if news_meta is not None:
+    st.caption(news_meta.get("role_note", ""))
+    rt = news_meta.get("realtime_test", {})
+    if rt:
+        srcs = " + ".join(f"{x['name']} {x['count']}건" for x in rt.get("sources", []))
+        st.success(
+            f"**{rt.get('label', '실시간 테스트')}: {rt.get('case', '')} 기준 "
+            f"{rt.get('result', '')}** ({srcs})"
+        )
+        st.caption(rt.get("provenance", ""))
+
 if news is None:
     missing("뉴스 신호", RAW / "kotra_news.parquet")
 else:
