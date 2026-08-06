@@ -1,16 +1,26 @@
 # -*- coding: utf-8 -*-
-"""STEP 1 — 대체 공급국 산출 → data/processed/alt_countries.csv
+"""STEP 1 — 품목 목록 + 대체 공급국 산출
 
-두 갈래로 채운다.
+산출물
+    data/processed/items_overview.csv   품목 목록 (핵심 15 + MVP 10 참고용)
+    data/processed/alt_countries.csv    품목별 대체 공급국 상위 5
 
-  (A) UN Comtrade  : mvp_10.csv 10개 품목. COMTRADE_KEY 로 1회 호출한다.
-                     pipeline_demo.py 의 대체공급국 로직(1위국 비중 70% 이상이면
-                     해당 위험국까지 제외)을 그대로 옮겼다.
-  (B) 관세청 원자료 : customs_item_country 에 국가별 실적이 들어 있는 HS4 10개.
-                     1위국을 제외한 수입액 상위 5개국을 직접 계산한다.
+품목 그룹
+  핵심 15 (기본)   risk_hs6.csv 의 HS6 15개. 관세청 국가별 원자료가 있어
+                   대체 공급국까지 실측으로 이어진다.
+  MVP 10 (참고)    기존 화학·철강 10개. 참고용으로만 남기고 기본 화면에는 띄우지 않는다.
+                   국가별 원자료가 없어 대체 공급국은 UN Comtrade 가 있어야 채워진다.
 
-(A)가 네트워크·키 문제로 실패하면 그 품목은 status="unavailable" 로 기록하고
-사유를 남긴다. 없는 국가를 지어내거나 0을 채우지 않는다.
+대체 공급국
+  (A) UN Comtrade  MVP 10 품목. COMTRADE_KEY 로 1회 호출한다.
+                   pipeline_demo.py 의 로직(1위국 비중 70% 이상이면 그 위험국까지 제외)을 옮겼다.
+  (B) 관세청 원자료  핵심 15 품목. HS6 단위로 1위국을 제외한 수입액 상위 5개국을 계산한다.
+
+(A)가 네트워크·키 문제로 실패하면 status="unavailable" 로 남긴다.
+없는 국가를 지어내거나 0을 채우지 않는다.
+
+위험등급은 scripts/grading.py 가 단일 출처다. 새 임계치가 확정되기 전에는
+원자료의 기존 등급을 그대로 쓴다.
 
 usage:
     python scripts/step1_alt_countries.py
@@ -27,23 +37,33 @@ from pathlib import Path
 import pandas as pd
 import pyarrow.parquet as pq
 
+sys.path.insert(0, str(Path(__file__).parent))
+from grading import GRADE_SOURCE_LABEL, RECALCULATED, resolve_grade  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "data" / "processed"
 OUT.mkdir(parents=True, exist_ok=True)
 
+RISK_MONTHLY = (RAW / "데이터셋 (primary key hscode 6자리)"
+                / "관세청_(품목별 국가별) 수출입실적 HHI, 물가변동률 계산"
+                / "risk_hs6_monthly.parquet")
+
 COMTRADE_BASE = "https://comtradeapi.un.org/data/v1/get/C/A/HS"
 TOP_N = 5
-RISK_SHARE_CUT = 0.70  # 1위국 비중이 이 이상이면 공급 차단을 전제로 그 나라를 제외한다
+RISK_SHARE_CUT = 0.70
 
-# 위험국 한글 → Comtrade 표기 키워드
+GROUP_MAIN = "핵심 15"
+GROUP_REF = "MVP 10 (참고)"
+
 COUNTRY_MAP_EN = {
     "중국": "China", "러시아": "Russian", "일본": "Japan", "미국": "USA",
     "호주": "Australia", "베트남": "Viet Nam", "인도": "India",
 }
 
+# 품목 키는 code / code_level 로 통일한다 (핵심 15 는 HS6, MVP 10 은 HS4).
 COLUMNS = [
-    "hs4", "품목명", "위험국", "위험국비중", "rank", "alt_country",
+    "code", "code_level", "품목명", "위험국", "위험국비중", "rank", "alt_country",
     "alt_country_en", "value_usd", "share", "source", "status", "note",
 ]
 
@@ -61,26 +81,76 @@ def load_env() -> None:
         os.environ.setdefault(k.strip(), v.strip())
 
 
+def read_csv_fallback(path: Path) -> pd.DataFrame:
+    for enc in ("utf-8", "utf-8-sig", "cp949"):
+        try:
+            return pd.read_csv(path, encoding=enc)
+        except UnicodeDecodeError:
+            continue
+    raise RuntimeError(f"인코딩 판별 실패: {path}")
+
+
+# ───────────────────────────────────────────── 품목 목록
+def build_items_overview(mvp: pd.DataFrame) -> pd.DataFrame:
+    """핵심 15(HS6) + MVP 10(HS4) 를 같은 스키마로 합친다."""
+    r6 = read_csv_fallback(RAW / "risk_hs6.csv")
+    r6["hs6"] = r6["hs6"].astype(str).str.zfill(6)
+
+    m = pq.read_table(RISK_MONTHLY).to_pandas()
+    m["hs6"] = m["hs6"].astype(str).str.zfill(6)
+    latest = m.sort_values("ym").groupby("hs6").tail(1).set_index("hs6")
+
+    c = pq.read_table(RAW / "customs_item_country_root.parquet").to_pandas()
+    c = c[c["impDlr"] > 0]
+    c["hs6"] = c["hs6"].astype(str).str.zfill(6)
+
+    rows = []
+    for hs6 in r6["hs6"]:
+        if hs6 not in latest.index:
+            print(f"  경고: {hs6} 가 월별 원자료에 없음 — 건너뜀")
+            continue
+        s = latest.loc[hs6]
+        d = c[c["hs6"] == hs6]
+        by_country = d.groupby("statCdCntnKor1")["impDlr"].sum()
+        rows.append({
+            "code": hs6, "code_level": "hs6", "품목명": s["품목명"],
+            "HHI": round(float(s["HHI"]), 4),
+            "1위국": s["1위국명"], "1위국비중": round(float(s["1위국비중"]), 4),
+            "단가_z": None if pd.isna(s["단가_z"]) else round(float(s["단가_z"]), 4),
+            "수입액합계": float(by_country.sum()) if len(by_country) else None,
+            "수입국수": int(len(by_country)) if len(by_country) else None,
+            "위험등급": resolve_grade(s["등급"], s["HHI"], s["1위국비중"], s["단가_z"]),
+            "등급출처": GRADE_SOURCE_LABEL,
+            "기준월": str(s["ym"])[:6],
+            "group": GROUP_MAIN,
+        })
+
+    for t in mvp.itertuples():
+        rows.append({
+            "code": t.hs4, "code_level": "hs4", "품목명": t.품목명,
+            "HHI": t.HHI, "1위국": t.위험국, "1위국비중": t.위험국비중,
+            "단가_z": None,  # MVP 10 은 월별 단가 원자료가 없어 가격 신호를 못 만든다
+            "수입액합계": t.수입액합계, "수입국수": t.수입국수,
+            "위험등급": resolve_grade(t.위험등급, t.HHI, t.위험국비중, None),
+            "등급출처": GRADE_SOURCE_LABEL, "기준월": None, "group": GROUP_REF,
+        })
+    return pd.DataFrame(rows)
+
+
 # ───────────────────────────────────────────── (A) UN Comtrade
-def fetch_comtrade(hs4: str, key: str) -> tuple[pd.DataFrame | None, str]:
-    """HS4 한 건의 세계 수출국 순위를 가져온다. (df, 사유) 를 돌려준다."""
+def fetch_comtrade(code: str, key: str) -> tuple[pd.DataFrame | None, str]:
     import requests
 
     params = {
-        "reporterCode": None, "period": "2024", "cmdCode": hs4,
-        "flowCode": "X", "partnerCode": "0", "maxRecords": 500,
-        "breakdownMode": "classic", "includeDesc": "true",
+        "period": "2024", "cmdCode": code, "flowCode": "X", "partnerCode": "0",
+        "maxRecords": 500, "breakdownMode": "classic", "includeDesc": "true",
     }
-    params = {k: v for k, v in params.items() if v is not None}
     try:
-        r = requests.get(
-            COMTRADE_BASE, params=params,
-            headers={"Ocp-Apim-Subscription-Key": key}, timeout=60,
-        )
+        r = requests.get(COMTRADE_BASE, params=params,
+                         headers={"Ocp-Apim-Subscription-Key": key}, timeout=60)
     except Exception as exc:
         detail = str(exc)
         if "403" in detail and "Tunnel" in detail:
-            # 이그레스 정책 차단. 키 문제가 아니라 호스트가 막힌 것이다.
             return None, "네트워크 정책 차단 — comtradeapi.un.org 접근 불가 (CONNECT 403)"
         return None, f"네트워크 실패: {type(exc).__name__}"
     if r.status_code == 401:
@@ -96,101 +166,68 @@ def fetch_comtrade(hs4: str, key: str) -> tuple[pd.DataFrame | None, str]:
 def build_comtrade_rows(mvp: pd.DataFrame, key: str) -> list[dict]:
     out: list[dict] = []
     for t in mvp.itertuples():
-        risk = t.위험국
-        risk_en = COUNTRY_MAP_EN.get(risk, risk)
+        risk, risk_en = t.위험국, COUNTRY_MAP_EN.get(t.위험국, t.위험국)
         df, reason = fetch_comtrade(t.hs4, key)
+        base = {"code": t.hs4, "code_level": "hs4", "품목명": t.품목명,
+                "위험국": risk, "위험국비중": t.위험국비중, "source": "UN Comtrade"}
 
         if df is None:
-            # 값이 없으면 '산출 불가'로 남긴다. 임의의 국가나 0을 넣지 않는다.
-            out.append({
-                "hs4": t.hs4, "품목명": t.품목명, "위험국": risk,
-                "위험국비중": t.위험국비중, "rank": None, "alt_country": None,
-                "alt_country_en": None, "value_usd": None, "share": None,
-                "source": "UN Comtrade", "status": "unavailable", "note": reason,
-            })
+            out.append({**{c: None for c in COLUMNS}, **base,
+                        "status": "unavailable", "note": reason})
             print(f"  {t.hs4} 산출 불가 — {reason}")
             continue
 
         name_col = "reporterDesc" if "reporterDesc" in df.columns else "reporterISO"
         df = df.dropna(subset=[name_col, "primaryValue"])
-        # World(합계)와 자국은 항상 제외, 1위국은 의존도 70% 이상일 때만 제외
         exclude = ["World", "Korea", "Rep. of Korea"]
         if float(t.위험국비중) >= RISK_SHARE_CUT:
             exclude.append(risk_en)
         df = df[~df[name_col].str.contains("|".join(exclude), case=False, na=False)]
         df = df.sort_values("primaryValue", ascending=False).head(TOP_N)
         total = df["primaryValue"].sum()
-
         for i, row in enumerate(df.itertuples(), start=1):
-            out.append({
-                "hs4": t.hs4, "품목명": t.품목명, "위험국": risk,
-                "위험국비중": t.위험국비중, "rank": i,
-                "alt_country": getattr(row, name_col),
-                "alt_country_en": getattr(row, name_col),
-                "value_usd": int(row.primaryValue),
-                "share": round(row.primaryValue / total, 6) if total else None,
-                "source": "UN Comtrade", "status": "ok", "note": "2024년 수출액 기준",
-            })
+            out.append({**base, "rank": i, "alt_country": getattr(row, name_col),
+                        "alt_country_en": getattr(row, name_col),
+                        "value_usd": int(row.primaryValue),
+                        "share": round(row.primaryValue / total, 6) if total else None,
+                        "status": "ok", "note": "2024년 수출액 기준"})
         print(f"  {t.hs4} 수집 완료 — 상위 {len(df)}개국")
     return out
 
 
-# ───────────────────────────────────────────── (B) 관세청 국가별 원자료
-def build_items_overview(mvp: pd.DataFrame) -> pd.DataFrame:
-    """MVP 10개와 관세청 실측 보유 10개를 같은 스키마로 합친 품목 목록."""
+# ───────────────────────────────────────────── (B) 관세청 원자료 (HS6)
+def build_customs_rows(codes: list[str]) -> list[dict]:
+    """핵심 15 품목의 대체 공급국을 HS6 단위로 계산한다."""
     c = pq.read_table(RAW / "customs_item_country_root.parquet").to_pandas()
     c = c[c["impDlr"] > 0]
-    names = (pq.read_table(RAW / "crosswalk_hs_temper.parquet").to_pandas()
-             .drop_duplicates("hs4").set_index("hs4")["세번4단위품명"])
-
-    rows = [{
-        "hs4": t.hs4, "품목명": t.품목명, "HHI": t.HHI, "1위국": t.위험국,
-        "1위국비중": t.위험국비중, "수입액합계": t.수입액합계, "수입국수": t.수입국수,
-        "위험등급": t.위험등급, "group": "MVP 10",
-    } for t in mvp.itertuples()]
-
-    for hs4, d in c.groupby("hs4"):
-        by_country = d.groupby("statCdCntnKor1")["impDlr"].sum().sort_values(ascending=False)
-        total = by_country.sum()
-        shares = by_country / total
-        hhi = float((shares ** 2).sum())
-        share1 = float(shares.iloc[0])
-        # 등급은 MVP 와 동일한 진단 규칙으로 매긴다 (예측이 아니라 구조 진단)
-        grade = ("RED" if hhi >= 0.50 and share1 >= 0.70
-                 else "YELLOW" if hhi >= 0.25 or share1 >= 0.40 else "GREEN")
-        rows.append({
-            "hs4": hs4, "품목명": names.get(hs4, "")[:40], "HHI": round(hhi, 4),
-            "1위국": by_country.index[0], "1위국비중": round(share1, 4),
-            "수입액합계": float(total), "수입국수": int(len(by_country)),
-            "위험등급": grade, "group": "관세청 실측 보유",
-        })
-    return pd.DataFrame(rows)
-
-
-def build_customs_rows() -> list[dict]:
-    """국가별 실적이 실제로 있는 HS4 에 대해 대체 공급국을 직접 계산한다."""
-    c = pq.read_table(RAW / "customs_item_country_root.parquet").to_pandas()
-    c = c[c["impDlr"] > 0]
-    names = (pq.read_table(RAW / "crosswalk_hs_temper.parquet").to_pandas()
-             .drop_duplicates("hs4").set_index("hs4")["세번4단위품명"])
+    c["hs6"] = c["hs6"].astype(str).str.zfill(6)
+    m = pq.read_table(RISK_MONTHLY).to_pandas()
+    m["hs6"] = m["hs6"].astype(str).str.zfill(6)
+    names = m.drop_duplicates("hs6").set_index("hs6")["품목명"]
 
     out: list[dict] = []
-    for hs4, d in c.groupby("hs4"):
+    for hs6 in codes:
+        d = c[c["hs6"] == hs6]
+        if d.empty:
+            out.append({**{k: None for k in COLUMNS}, "code": hs6, "code_level": "hs6",
+                        "품목명": names.get(hs6), "source": "관세청 국가별 원자료",
+                        "status": "unavailable", "note": "국가별 원자료에 실적 없음"})
+            print(f"  {hs6} 산출 불가 — 국가별 실적 없음")
+            continue
         by_country = d.groupby("statCdCntnKor1")["impDlr"].sum().sort_values(ascending=False)
         total = by_country.sum()
-        risk = by_country.index[0]
-        risk_share = by_country.iloc[0] / total
+        risk, risk_share = by_country.index[0], by_country.iloc[0] / total
         alts = by_country.iloc[1 : 1 + TOP_N]
         for i, (country, amt) in enumerate(alts.items(), start=1):
             out.append({
-                "hs4": hs4, "품목명": names.get(hs4, "")[:40], "위험국": risk,
-                "위험국비중": round(float(risk_share), 6), "rank": i,
+                "code": hs6, "code_level": "hs6", "품목명": names.get(hs6),
+                "위험국": risk, "위험국비중": round(float(risk_share), 6), "rank": i,
                 "alt_country": country, "alt_country_en": None,
                 "value_usd": int(amt), "share": round(float(amt / total), 6),
                 "source": "관세청 국가별 원자료", "status": "ok",
                 "note": f"{d['ym'].min()}~{d['ym'].max()} 수입액 합계 기준, 1위국 제외",
             })
-        print(f"  {hs4} 실측 산출 — 1위국 {risk}({risk_share:.1%}) 제외 상위 {len(alts)}개국")
+        print(f"  {hs6} 실측 산출 — 1위국 {risk}({risk_share:.1%}) 제외 상위 {len(alts)}개국")
     return out
 
 
@@ -202,39 +239,43 @@ def main() -> None:
     load_env()
     key = os.environ.get("COMTRADE_KEY", "").strip()
 
-    mvp = pd.read_csv(RAW / "mvp_10.csv")
+    mvp = read_csv_fallback(RAW / "mvp_10.csv")
     mvp["hs4"] = mvp["hs4"].astype(str).str.zfill(4)
     mvp = mvp.rename(columns={"1위국": "위험국", "1위국비중": "위험국비중"})
 
+    print(f"[0] 품목 목록  (등급 출처: {GRADE_SOURCE_LABEL})")
+    overview = build_items_overview(mvp)
+    overview.to_csv(OUT / "items_overview.csv", index=False, encoding="utf-8-sig")
+    print(f"  {overview['group'].value_counts().to_dict()}")
+    print(f"  등급 분포 {overview.groupby('group')['위험등급'].value_counts().to_dict()}")
+    if not RECALCULATED:
+        print("  ※ 새 임계치 미확정 — 원자료 기존 등급을 그대로 사용 중")
+
+    main_codes = overview.loc[overview["group"] == GROUP_MAIN, "code"].tolist()
     rows: list[dict] = []
 
-    print("[A] UN Comtrade — mvp_10.csv 10개 품목")
+    print("\n[A] UN Comtrade — MVP 10 (참고용)")
     if args.skip_api:
         print("  --skip-api 지정 → 건너뜀")
     elif not key:
         print("  COMTRADE_KEY 없음 → 건너뜀")
         for t in mvp.itertuples():
-            rows.append({**{c: None for c in COLUMNS}, "hs4": t.hs4, "품목명": t.품목명,
-                         "위험국": t.위험국, "위험국비중": t.위험국비중,
-                         "source": "UN Comtrade", "status": "unavailable",
-                         "note": "COMTRADE_KEY 미설정"})
+            rows.append({**{c: None for c in COLUMNS}, "code": t.hs4,
+                         "code_level": "hs4", "품목명": t.품목명, "위험국": t.위험국,
+                         "위험국비중": t.위험국비중, "source": "UN Comtrade",
+                         "status": "unavailable", "note": "COMTRADE_KEY 미설정"})
     else:
         rows += build_comtrade_rows(mvp, key)
 
-    print("\n[B] 관세청 국가별 원자료 — 실적 보유 HS4")
-    rows += build_customs_rows()
+    print("\n[B] 관세청 국가별 원자료 — 핵심 15 (HS6 단위)")
+    rows += build_customs_rows(main_codes)
 
     df = pd.DataFrame(rows, columns=COLUMNS)
-    path = OUT / "alt_countries.csv"
-    df.to_csv(path, index=False, encoding="utf-8-sig")
-
-    overview = build_items_overview(mvp)
-    overview.to_csv(OUT / "items_overview.csv", index=False, encoding="utf-8-sig")
-    print(f"\n→ data/processed/items_overview.csv ({len(overview)}행) "
-          f"{overview['group'].value_counts().to_dict()}")
+    df.to_csv(OUT / "alt_countries.csv", index=False, encoding="utf-8-sig")
 
     ok = df[df["status"] == "ok"]
-    print(f"\n→ {path.relative_to(ROOT)} ({len(df)}행)")
+    print(f"\n→ data/processed/items_overview.csv ({len(overview)}행)")
+    print(f"→ data/processed/alt_countries.csv ({len(df)}행)")
     print(f"   실측 확보 {len(ok)}행 / 산출 불가 {len(df) - len(ok)}행")
     print(f"   출처별 {df.groupby(['source', 'status']).size().to_dict()}")
     print(f"   생성 {datetime.now(timezone.utc).isoformat(timespec='seconds')}")

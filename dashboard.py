@@ -84,33 +84,42 @@ if mvp is None:
 
 mvp["hs4"] = mvp["hs4"].astype(str).str.zfill(4)
 
-# 품목 목록은 두 그룹이다.
-#   MVP 10          — 사각지대 대표 품목. 대체 공급국은 Comtrade 가 있어야 채워진다.
-#   관세청 실측 보유 — 국가별 원자료가 있어 대체 공급국까지 실측으로 이어지는 품목.
-# 두 그룹을 모두 열어 둬야 STEP 1·2 산출물이 화면에서 실제로 확인된다.
-if overview is not None:
-    items = overview.copy()
-    items["hs4"] = items["hs4"].astype(str).str.zfill(4)
-else:
-    items = mvp.copy()
-    items["group"] = "MVP 10"
+GROUP_MAIN = "핵심 15"
+GROUP_REF = "MVP 10 (참고)"
+
+if overview is None:
+    st.error("data/processed/items_overview.csv 가 없습니다. "
+             "`python scripts/step1_alt_countries.py` 를 먼저 실행하세요.")
+    st.stop()
+
+items = overview.copy()
+items["code"] = items["code"].astype(str)
+# code_level 에 맞춰 자릿수를 채운다 (핵심 15 는 HS6, MVP 10 은 HS4)
+items["code"] = [c.zfill(6) if lv == "hs6" else c.zfill(4)
+                 for c, lv in zip(items["code"], items["code_level"])]
 
 
 # ────────────────────────────────────────────────────────────── 사이드바
 st.sidebar.title("🧭 Supply-Pivot")
 st.sidebar.caption("데이터로 발굴한 공급망 사각지대 → 대체 경로")
 
-groups = items["group"].unique().tolist()
-sel_group = st.sidebar.radio("품목 그룹", groups, index=0, help=
-    "MVP 10 = 사각지대 대표 품목 / 관세청 실측 보유 = 국가별 원자료로 "
-    "대체 공급국까지 실측 산출되는 품목")
-pool = items[items["group"] == sel_group]
+# 기본 화면은 핵심 15 만 보여준다. 기존 MVP 10 은 참고용이라 체크해야 나온다.
+show_ref = st.sidebar.toggle(
+    "MVP 10 (참고용) 함께 보기", value=False,
+    help="기존 화학·철강 10개 품목. 국가별 원자료가 없어 대체 공급국은 "
+         "UN Comtrade 확보 시에만 채워집니다.",
+)
+pool = items if show_ref else items[items["group"] == GROUP_MAIN]
 
-labels = {r.hs4: f"{r.hs4} · {r.품목명}" for r in pool.itertuples()}
-sel_hs4 = st.sidebar.selectbox(
+labels = {
+    r.code: (f"{r.code} · {r.품목명}"
+             + (f"  [{GROUP_REF}]" if r.group == GROUP_REF else ""))
+    for r in pool.itertuples()
+}
+sel_code = st.sidebar.selectbox(
     "품목 선택", options=list(labels), format_func=lambda k: labels[k]
 )
-item = pool[pool["hs4"] == sel_hs4].iloc[0]
+item = pool[pool["code"] == sel_code].iloc[0]
 
 st.sidebar.divider()
 st.sidebar.markdown(
@@ -118,7 +127,7 @@ st.sidebar.markdown(
 **데이터 현황**
 
 - 사각지대 {len(blind) if blind is not None else '—'}개 품목
-- MVP {len(mvp)}개 · 실측 보유 {int((items["group"] == "관세청 실측 보유").sum())}개
+- 핵심 {int((items["group"] == GROUP_MAIN).sum())}개 · MVP 참고 {int((items["group"] == GROUP_REF).sum())}개
 - 대체 공급국 {int((alt['status'] == 'ok').sum()) if alt is not None else '—'}행 (실측)
 - 지원기관 연결 {len(action) if action is not None else '—'}행
 - 공급망 뉴스 {len(news) if news is not None else '—'}건
@@ -143,13 +152,19 @@ color = GRADE_COLOR.get(grade, "#94a3b8")
 
 st.markdown(f"### {item['품목명']}  <span style='color:{color}'>● {grade}</span>",
             unsafe_allow_html=True)
+if "등급출처" in item.index and pd.notna(item["등급출처"]):
+    st.caption(f"위험등급 출처 · {item['등급출처']}"
+               + (f" · 기준월 {str(item['기준월']).split('.')[0]}"
+                  if pd.notna(item.get("기준월")) else ""))
 
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("HHI (수입 집중도)", f"{item['HHI']:.4f}", help="1에 가까울수록 한 나라에 쏠림")
 c2.metric("1위국", str(item["1위국"]), f"비중 {item['1위국비중'] * 100:.1f}%",
           delta_color="off")
-c3.metric("수입액", f"{item['수입액합계'] / 1e8:.1f}억 달러")
-c4.metric("수입 상대국 수", f"{int(item['수입국수'])}개국")
+c3.metric("수입액", f"{item['수입액합계'] / 1e8:.1f}억 달러"
+          if pd.notna(item["수입액합계"]) else "산출 불가")
+c4.metric("수입 상대국 수", f"{int(item['수입국수'])}개국"
+          if pd.notna(item["수입국수"]) else "산출 불가")
 
 st.markdown(
     f"<div style='height:6px;background:{color};border-radius:3px;margin:4px 0 20px'></div>",
@@ -164,6 +179,8 @@ if blind is None:
 else:
     b = blind.copy()
     b["hs4"] = b["hs4"].astype(str).str.zfill(4)
+    # 사각지대 목록은 HS4 기준이라 HS6 선택 시 앞 4자리로 맞춘다
+    sel_hs4 = sel_code[:4]
     b["선택품목"] = (b["hs4"] == sel_hs4).map({True: "선택 품목", False: "그 외"})
     fig = px.scatter(
         b, x="HHI", y="1위국비중", color="위험등급",
@@ -181,11 +198,22 @@ else:
                   annotation_text="참조선 1위국 비중 0.40")
     fig.update_layout(legend_title_text="", margin=dict(t=30, b=10))
     st.plotly_chart(fig, use_container_width=True)
+    in_list = sel_hs4 in set(b["hs4"])
     st.caption(
         f"원본 목록 step4_blind_spots.csv {len(b)}행을 그대로 표시합니다. "
-        f"점선 두 개는 읽기 보조용 참조선이며 판정 기준이 아닙니다. "
-        f"선택한 품목({sel_hs4})은 ★ 로 표시됩니다."
+        f"점선 두 개는 읽기 보조용 참조선이며 판정 기준이 아닙니다."
     )
+    if in_list:
+        st.caption(f"선택한 품목({sel_code} → HS4 {sel_hs4})은 ★ 로 표시됩니다.")
+    else:
+        # 핵심 15(비철금속)는 사각지대 목록(화학·철강 중심)과 교집합이 없다.
+        # 없는 점을 찍지 않고 그 사실을 그대로 적는다.
+        st.info(
+            f"선택한 품목 **{sel_code}(HS4 {sel_hs4})**는 이 사각지대 목록에 없습니다. "
+            "사각지대 256개는 step3_hhi_all(HS4 339개, 화학·철강 중심) 모집단에서 나온 목록이고, "
+            "핵심 15개 품목(비철금속 HS4 7403·7502·7601·7801·7901·8001)은 그 모집단에 "
+            "포함되지 않습니다. 위 산점도는 전체 분포 참고용으로만 보십시오."
+        )
 
 
 # ────────────────────────────────────── 대체 공급국 + 지원기관 연결
@@ -196,7 +224,7 @@ with left:
     if alt is None:
         missing("대체 공급국", PROC / "alt_countries.csv")
     else:
-        rows = alt[alt["hs4"].astype(str).str.zfill(4) == sel_hs4]
+        rows = alt[alt["code"].astype(str).str.zfill(len(sel_code)) == sel_code]
         ok = rows[rows["status"] == "ok"]
         if len(ok):
             st.success(f"**실측 데이터** · 출처 {ok['source'].iat[0]}")
@@ -221,7 +249,7 @@ with right:
     if action is None:
         missing("지원기관 연결", PROC / "action_link.csv")
     else:
-        rows = action[action["hs4"].astype(str).str.zfill(4) == sel_hs4]
+        rows = action[action["code"].astype(str).str.zfill(len(sel_code)) == sel_code]
         linked = rows[rows["smba_네트워크명"].notna()]
         if len(linked):
             for r in linked.sort_values("rank").itertuples():

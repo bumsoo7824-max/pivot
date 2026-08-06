@@ -87,19 +87,19 @@ def main() -> None:
     )
 
     cols = [
-        "hs4", "품목명", "위험국", "위험국비중", "rank", "alt_country", "country_key",
+        "code", "code_level", "품목명", "위험국", "위험국비중", "rank", "alt_country", "country_key",
         "share", "value_usd", "source", "연결상태", "smba_권역", "smba_네트워크명",
         "smba_총괄", "smba_지원형태", "smba_지원업종", "smba_지원범위", "smba_강점",
         "kotra_해외법인수",
     ]
-    merged = merged[cols].sort_values(["hs4", "rank"])
+    merged = merged[cols].sort_values(["code", "rank"])
 
     path = OUT / "action_link.csv"
     merged.to_csv(path, index=False, encoding="utf-8-sig")
 
     linked = merged[merged["smba_네트워크명"].notna()]
     print(f"  결과 {len(merged)}행 (품목-대체국 조합)")
-    print(f"  중진공 거점으로 이어진 조합 {len(linked)}행 / {linked['hs4'].nunique()}개 품목 "
+    print(f"  중진공 거점으로 이어진 조합 {len(linked)}행 / {linked['code'].nunique()}개 품목 "
           f"/ {linked['country_key'].nunique()}개국")
     print(f"  연결된 국가: {sorted(linked['country_key'].unique())}")
     print(f"  거점 없는 국가: {sorted(set(merged['country_key']) - set(linked['country_key']))}")
