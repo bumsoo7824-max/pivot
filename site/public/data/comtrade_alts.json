@@ -1,6 +1,267 @@
 {
- "status": "unavailable",
- "reason": "COMTRADE_KEY 환경변수 미설정 — API 미호출",
- "fetched_at": null,
- "items": []
+ "status": "ok",
+ "reason": null,
+ "fetched_at": "2026-08-06T12:18:40.781720+00:00",
+ "items": [
+  {
+   "hs4": "2841",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Japan",
+     "export_usd": 2387070510
+    },
+    {
+     "country": "USA",
+     "export_usd": 134167171
+    },
+    {
+     "country": "Poland",
+     "export_usd": 110617124
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 76965713
+    },
+    {
+     "country": "India",
+     "export_usd": 72545865
+    }
+   ]
+  },
+  {
+   "hs4": "7210",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 4035452781
+    },
+    {
+     "country": "Japan",
+     "export_usd": 2325737581
+    },
+    {
+     "country": "Belgium",
+     "export_usd": 2180350622
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 2119914507
+    },
+    {
+     "country": "France",
+     "export_usd": 2112286568
+    }
+   ]
+  },
+  {
+   "hs4": "7228",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 1326246592
+    },
+    {
+     "country": "Italy",
+     "export_usd": 813563680
+    },
+    {
+     "country": "Japan",
+     "export_usd": 761527354
+    },
+    {
+     "country": "USA",
+     "export_usd": 718071726
+    },
+    {
+     "country": "Sweden",
+     "export_usd": 519961440
+    }
+   ]
+  },
+  {
+   "hs4": "7607",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 1689187839
+    },
+    {
+     "country": "Italy",
+     "export_usd": 747195133
+    },
+    {
+     "country": "USA",
+     "export_usd": 651623644
+    },
+    {
+     "country": "Japan",
+     "export_usd": 556911258
+    },
+    {
+     "country": "Türkiye",
+     "export_usd": 542141077
+    }
+   ]
+  },
+  {
+   "hs4": "7213",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 1280788671
+    },
+    {
+     "country": "Malaysia",
+     "export_usd": 836724789
+    },
+    {
+     "country": "Italy",
+     "export_usd": 679094577
+    },
+    {
+     "country": "Japan",
+     "export_usd": 575468207
+    },
+    {
+     "country": "Türkiye",
+     "export_usd": 560899744
+    }
+   ]
+  },
+  {
+   "hs4": "2811",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 700902804
+    },
+    {
+     "country": "USA",
+     "export_usd": 425129082
+    },
+    {
+     "country": "Japan",
+     "export_usd": 406563103
+    },
+    {
+     "country": "United Kingdom",
+     "export_usd": 311159206
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 250868165
+    }
+   ]
+  },
+  {
+   "hs4": "2849",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 133875083
+    },
+    {
+     "country": "USA",
+     "export_usd": 77091252
+    },
+    {
+     "country": "Brazil",
+     "export_usd": 61963752
+    },
+    {
+     "country": "South Africa",
+     "export_usd": 61164599
+    },
+    {
+     "country": "Japan",
+     "export_usd": 51298978
+    }
+   ]
+  },
+  {
+   "hs4": "2926",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Germany",
+     "export_usd": 431642413
+    },
+    {
+     "country": "USA",
+     "export_usd": 423239610
+    },
+    {
+     "country": "Other Asia, nes",
+     "export_usd": 313297654
+    },
+    {
+     "country": "France",
+     "export_usd": 288614526
+    },
+    {
+     "country": "Netherlands",
+     "export_usd": 198202315
+    }
+   ]
+  },
+  {
+   "hs4": "7209",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Japan",
+     "export_usd": 1095860368
+    },
+    {
+     "country": "Other Asia, nes",
+     "export_usd": 837098441
+    },
+    {
+     "country": "Germany",
+     "export_usd": 808553915
+    },
+    {
+     "country": "Belgium",
+     "export_usd": 762523651
+    },
+    {
+     "country": "USA",
+     "export_usd": 690884834
+    }
+   ]
+  },
+  {
+   "hs4": "6802",
+   "status": "ok",
+   "alternatives": [
+    {
+     "country": "Italy",
+     "export_usd": 1793273213
+    },
+    {
+     "country": "Türkiye",
+     "export_usd": 1281986049
+    },
+    {
+     "country": "India",
+     "export_usd": 1124072562
+    },
+    {
+     "country": "Brazil",
+     "export_usd": 915339990
+    },
+    {
+     "country": "Egypt",
+     "export_usd": 457341009
+    }
+   ]
+  }
+ ]
 }

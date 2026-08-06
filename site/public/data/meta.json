@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-06T11:38:32.386641+00:00",
+ "generated_at": "2026-08-06T12:18:40.807191+00:00",
  "layers": [
   {
    "tier": "베이스",
@@ -58,15 +58,14 @@
   "[6] 관세청 원자료 기반 대체 공급국 (HS4 10개)",
   "  10개 HS4 × 42개월 단가 시계열 + 대체 공급국 상위 5개 산출",
   "[7] UN Comtrade 대체 공급국",
-  "  캐시에 국가명이 비어 있음(과거 includeDesc 누락 버그) → 캐시를 버리고 재수집한다.",
-  "  COMTRADE_KEY 없음 → 이 단계를 건너뛴다. 화면에는 '산출 불가'로 표기된다.",
-  "  → blindspots.json (171.1 KB)",
-  "  → mvp10.json (9.9 KB)",
-  "  → import_price.json (35.6 KB)",
-  "  → news.json (41.4 KB)",
-  "  → kotra_map.json (10.9 KB)",
-  "  → customs_alternatives.json (36.1 KB)",
-  "  → comtrade_alts.json (0.1 KB)",
+  "  10개 품목 수집 완료 — 이후 런타임 재호출 없음",
+  "  → blindspots.json (176.8 KB)",
+  "  → mvp10.json (10.3 KB)",
+  "  → import_price.json (37.9 KB)",
+  "  → news.json (43.0 KB)",
+  "  → kotra_map.json (11.5 KB)",
+  "  → customs_alternatives.json (38.1 KB)",
+  "  → comtrade_alts.json (4.4 KB)",
   "  → notes.json (3.7 KB)"
  ]
 }
