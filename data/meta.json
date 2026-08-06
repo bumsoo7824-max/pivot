@@ -1,0 +1,71 @@
+{
+ "generated_at": "2026-08-06T12:18:40.807191+00:00",
+ "layers": [
+  {
+   "tier": "베이스",
+   "source": "관세청 수출입통계",
+   "role": "구조적 취약성 진단 (HHI, 의존도)",
+   "detail": "HS6 × 국가 42개월"
+  },
+  {
+   "tier": "선행①",
+   "source": "한국은행 ECOS 수입물가지수",
+   "role": "월 단위 지수, 관세청 통계 공표보다 선행",
+   "detail": "202501~202606 18개월"
+  },
+  {
+   "tier": "선행②",
+   "source": "KOTRA 해외시장뉴스",
+   "role": "실시간 정책·규제 동향",
+   "detail": "90일 884건 중 공급망 매칭 60건"
+  },
+  {
+   "tier": "실행",
+   "source": "UN Comtrade + KOTRA 해외법인",
+   "role": "대체 공급국 발굴 및 지원기관 연결",
+   "detail": "해외법인 9,927사 / 84개국"
+  }
+ ],
+ "build_log": [
+  "[1] 원자료 로딩",
+  "  step3_hhi_all: 339 HS4",
+  "  customs_item_country: 16128행, 42개월, HS4 10개",
+  "  ecos_import_price: 14850행, 202501~202606 (18개월)",
+  "  kotra_news: 884건 (공급망 매칭 60건)",
+  "  kotra_overseas: 9927사, 84개국",
+  "  read step4_blind_spots.csv (encoding=utf-8, rows=256)",
+  "  step4_blind_spots: 256행 (사각지대 원본)",
+  "  read mvp_10.csv (encoding=utf-8, rows=10)",
+  "  read bridge_hs_ksic.csv (encoding=utf-8, rows=390)",
+  "  read 한국산업기술기획평가원_소재부품장비 핵심전략기술 목록_20250610.csv (encoding=utf-8, rows=200)",
+  "  read 중소벤처기업진흥공단_해외 전략 네트워크 현황_20260713.csv (encoding=cp949, rows=11)",
+  "[2] 사각지대 로딩",
+  "  KSIC 업종 매핑(confidence≥0.9): 11/339 — 커버리지 부족",
+  "  신성질 중분류 업종 매핑: 339/339",
+  "  핵심전략기술 연계 추정(정부 관리 품목): 7건 — 목록 CSV에 HS 코드가 없어 키워드 매칭으로 표기용 플래그만 부여",
+  "  사각지대(원본 CSV): 256건 / 모집단 339건, 1위국=중국 149건 (58.2%)",
+  "  위험등급 분포: {'YELLOW': 160, 'RED': 96}",
+  "  참고: 임계 규칙 집합과의 차이 — 원본에만 0건, 규칙에만 0건 (판정에는 쓰지 않음)",
+  "  검증 OK: mvp_10.csv 10개 품목이 모두 사각지대 원본에 포함",
+  "  검증 OK: 재선별 MVP 10개 = mvp_10.csv (기준: 수입액 상위 + 중국 의존 우선)",
+  "[3] 수입물가지수 · 골든타임",
+  "  ECOS 원화기준 18개월 (202501~202606), 품목 계열 매핑 20건",
+  "  관세청 수입단가지수 겹침 구간: 18개월, 골든타임 10일",
+  "[4] KOTRA 해외시장뉴스",
+  "  공급망 매칭 뉴스 60건, 품목–뉴스 연결 87건 (중국 기사 9건)",
+  "[5] KOTRA 해외법인 국가별 집계",
+  "  84개국 / 9927사",
+  "[6] 관세청 원자료 기반 대체 공급국 (HS4 10개)",
+  "  10개 HS4 × 42개월 단가 시계열 + 대체 공급국 상위 5개 산출",
+  "[7] UN Comtrade 대체 공급국",
+  "  10개 품목 수집 완료 — 이후 런타임 재호출 없음",
+  "  → blindspots.json (176.8 KB)",
+  "  → mvp10.json (10.3 KB)",
+  "  → import_price.json (37.9 KB)",
+  "  → news.json (43.0 KB)",
+  "  → kotra_map.json (11.5 KB)",
+  "  → customs_alternatives.json (38.1 KB)",
+  "  → comtrade_alts.json (4.4 KB)",
+  "  → notes.json (3.7 KB)"
+ ]
+}
