@@ -4,18 +4,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // /data-notes 는 심사 질의 대비용 숨김 페이지라 내비게이션에 넣지 않는다.
+// Before/After·로드맵은 제작 배경 설명 자료라 하단 푸터로 옮기고, 여기는 실사용 화면만 남긴다.
 const LINKS = [
-  { href: "/", label: "인트로" },
-  { href: "/golden-time/", label: "골든타임" },
+  { href: "/", label: "홈" },
+  { href: "/items/", label: "품목 검색" },
+  { href: "/mvp10/", label: "경보 현황" },
   { href: "/blindspots/", label: "사각지대 스크리닝" },
   { href: "/top-country/", label: "1위국 분포" },
-  { href: "/mvp10/", label: "MVP 10" },
-  { href: "/items/", label: "품목 상세" },
-  { href: "/timeline/", label: "Before/After" },
-  { href: "/roadmap/", label: "로드맵" },
+  { href: "/golden-time/", label: "골든타임" },
 ];
 
-export default function Nav() {
+export default function Nav({ builtDate }: { builtDate: string }) {
   const path = usePathname();
   const active = (href: string) =>
     href === "/" ? path === "/" : path.startsWith(href.replace(/\/$/, ""));
@@ -45,7 +44,7 @@ export default function Nav() {
           ))}
         </nav>
         <span className="ml-auto hidden text-xs text-slate-500 lg:block">
-          전시용 정적 데모 · 사전 계산 데이터
+          데이터 기준 {builtDate}
         </span>
       </div>
     </header>

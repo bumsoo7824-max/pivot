@@ -215,6 +215,32 @@ export function allDetailHs4(): string[] {
   return [...mvp10.items.map((m) => m.hs4), ...customsAlternatives.items.map((c) => c.hs4)];
 }
 
+export type SearchableItem = {
+  hs4: string;
+  name: string;
+  grade: Grade | null;
+  topCountry: string;
+  hasAlert: boolean;
+};
+
+/** 검색·품목 목록에서 쓰는 전체 20개 품목 (MVP 10 + 관세청 원자료 보유 10, 중복 없음). */
+export const allItems: SearchableItem[] = [
+  ...mvp10.items.map((m) => ({
+    hs4: m.hs4,
+    name: m.name,
+    grade: m.grade,
+    topCountry: m.top_country,
+    hasAlert: m.alert,
+  })),
+  ...customsAlternatives.items.map((c) => ({
+    hs4: c.hs4,
+    name: c.name,
+    grade: c.latest_grade,
+    topCountry: c.top_country,
+    hasAlert: false,
+  })),
+];
+
 export function fmtUsd(v: number): string {
   if (v >= 1e9) return `${(v / 1e8).toFixed(0)}억 달러`;
   if (v >= 1e8) return `${(v / 1e8).toFixed(1)}억 달러`;

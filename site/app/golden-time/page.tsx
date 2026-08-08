@@ -1,6 +1,6 @@
 import GoldenTimeChart, { ReleaseCalendar } from "@/components/charts/GoldenTimeChart";
 import PriceSeriesChart from "@/components/charts/PriceSeriesChart";
-import { NextStep, PageHeader, Section, SourceTag, Stat } from "@/components/ui";
+import { PageHeader, Section, SourceTag, Stat } from "@/components/ui";
 import { fmtYm, importPrice } from "@/lib/data";
 
 export default function GoldenTimePage() {
@@ -16,7 +16,7 @@ export default function GoldenTimePage() {
   return (
     <>
       <PageHeader
-        step="1 / 8 · 골든타임"
+        step="방법론 · 골든타임"
         title="확정 통계를 기다리면 이미 늦다"
         lead={`같은 달의 수입 상황을 한국은행 수입물가지수로는 익월 +${ecos_days}일에, 관세청 수출입통계로는 익월 +${customs_days}일에 확인할 수 있다. 그 사이 ${golden_time_days}일이 먼저 움직일 수 있는 시간이다.`}
       />
@@ -95,8 +95,6 @@ export default function GoldenTimePage() {
           </div>
         </Section>
       </div>
-
-      <NextStep href="/blindspots/" label="2. 사각지대 스크리닝 — 그래서 어느 품목인가" />
     </>
   );
 }

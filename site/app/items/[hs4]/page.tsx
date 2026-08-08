@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ItemSearch from "@/components/ItemSearch";
 import KotraMap from "@/components/charts/KotraMap";
 import PriceSeriesChart from "@/components/charts/PriceSeriesChart";
 import UnitPriceChart from "@/components/charts/UnitPriceChart";
@@ -13,6 +14,7 @@ import {
 } from "@/components/ui";
 import {
   allDetailHs4,
+  allItems,
   comtrade,
   customsAlternatives,
   customsByHs4,
@@ -111,7 +113,7 @@ export default async function ItemDetailPage({
     <>
       <div className="mb-4 flex items-center gap-2 text-xs text-slate-500">
         <Link href="/items/" className="hover:text-pivot-500">
-          품목 상세
+          품목 검색
         </Link>
         <span>/</span>
         <span className="font-mono text-pivot-500">HS {hs4}</span>
@@ -130,6 +132,9 @@ export default async function ItemDetailPage({
               3계층 임계값 초과 — 경보
             </span>
           )}
+        </div>
+        <div className="mt-5 max-w-sm">
+          <ItemSearch items={allItems} placeholder="다른 품목 검색..." />
         </div>
       </PageHeader>
 
@@ -248,7 +253,11 @@ export default async function ItemDetailPage({
 
         <Section
           title="대체 공급국 — UN Comtrade"
-          hint="빌드 시 1회 호출해 캐싱하며 화면에서는 재호출하지 않는다."
+          hint={
+            comtrade.status === "ok" && comtrade.fetched_at
+              ? `최근 수집 ${comtrade.fetched_at.slice(0, 10)} 기준.`
+              : undefined
+          }
         >
           {comtrade.status === "ok" && comtradeItem?.alternatives.length ? (
             <ul className="space-y-2">
@@ -268,7 +277,7 @@ export default async function ItemDetailPage({
             </ul>
           ) : (
             <Unavailable
-              reason={`${comtrade.reason ?? "수집되지 않음"}. 키가 주입되면 빌드 단계에서 1회 수집해 이 자리를 채운다. 값이 없으므로 0을 대입하지 않는다.`}
+              reason={`${comtrade.reason ?? "수집되지 않음"}. 값이 없으므로 0을 대입하지 않는다.`}
             />
           )}
         </Section>

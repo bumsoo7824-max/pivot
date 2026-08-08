@@ -1,4 +1,4 @@
-import { NextStep, PageHeader, Section, SourceTag } from "@/components/ui";
+import { PageHeader, Section, SourceTag } from "@/components/ui";
 import { blindspots, importPrice, kotraMap, news } from "@/lib/data";
 
 type Row = {
@@ -51,7 +51,7 @@ export default function TimelinePage() {
   return (
     <>
       <PageHeader
-        step="6 / 8 · Before / After"
+        step="제작 배경 · Before / After"
         title="무엇이 어떻게 달라지는가"
         lead="각 단계마다 근거 데이터를 함께 적었습니다. 근거가 없는 개선은 표에 넣지 않았습니다."
       />
@@ -104,8 +104,6 @@ export default function TimelinePage() {
           </li>
         </ul>
       </Section>
-
-      <NextStep href="/roadmap/" label="7. 로드맵 — 지금 되는 것과 협의 중인 것" />
     </>
   );
 }

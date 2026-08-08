@@ -1,41 +1,29 @@
 import Link from "next/link";
+import ItemSearch from "@/components/ItemSearch";
 import LayerDiagram, { AlertFlow } from "@/components/LayerDiagram";
-import { NextStep, Section, SourceTag, Stat } from "@/components/ui";
-import { blindspots, importPrice, kotraMap, mvp10, news } from "@/lib/data";
+import { GradeBadge, Section, SourceTag, Stat } from "@/components/ui";
+import { allItems, blindspots, fmtPct, fmtUsd, importPrice, kotraMap, mvp10, news } from "@/lib/data";
 
-export default function IntroPage() {
+export default function HomePage() {
+  const alerts = mvp10.items.filter((i) => i.alert);
+
   return (
     <>
-      <section className="mb-12">
+      <section className="mb-8">
         <p className="kicker">Supply-Pivot</p>
         <h1 className="mt-3 max-w-4xl text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl sm:leading-[1.15]">
-          구조적 취약성은 <span className="text-slate-400">관세청 통계</span>로 깔고,
-          <br className="hidden sm:block" /> 방아쇠는{" "}
-          <span className="text-signal-amber">수입물가지수</span>와{" "}
-          <span className="text-signal-blue">정책 동향</span>으로 당긴다.
+          내 품목의 공급망, <span className="text-slate-400">지금</span> 위험한가.
         </h1>
         <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-400">
-          확정 통계는 정확하지만 늦게 옵니다. 빠른 지표는 이르지만 구조를 모릅니다. Supply-Pivot은
-          둘을 층으로 쌓아, 관세청 통계가 공표되기 전에 <b className="text-slate-200">어느 품목이
-          위험한지</b> 좁히고 <b className="text-slate-200">어디로 돌릴 수 있는지</b>까지 이어붙입니다.
+          HS 코드나 품목명을 입력하면 수입 집중도, 최신 물가 신호, 정책 동향, 대체 공급국까지
+          한 화면에서 확인합니다. 확정 통계가 공표되기 전에 먼저 움직이는 지표를 씁니다.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            href="/golden-time/"
-            className="rounded-lg bg-pivot-600 px-4 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-pivot-500"
-          >
-            골든타임부터 보기 →
-          </Link>
-          <Link
-            href="/mvp10/"
-            className="rounded-lg border border-white/15 px-4 py-2.5 text-sm font-medium text-slate-200 transition hover:bg-white/5"
-          >
-            MVP 10개 품목
-          </Link>
+        <div className="mt-6 max-w-xl">
+          <ItemSearch items={allItems} autoFocus />
         </div>
       </section>
 
-      <div className="mb-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Stat
           label="사각지대 품목"
           value={blindspots.blindspot_count}
@@ -62,52 +50,62 @@ export default function IntroPage() {
       </div>
 
       <Section
-        title="데이터 계층 구조"
-        hint="아래에서 위로 쌓입니다. 베이스가 구조를 정의하고, 선행 두 층이 시점을 앞당기고, 실행층이 대안을 제시합니다."
+        title={`지금 경보 상태인 품목 ${alerts.length}개`}
+        hint="물가·구조·정책 세 계층 임계값을 모두 넘어 경보가 발령된 품목입니다. 바로 상세로 이동해 대체 공급국까지 확인하세요."
         className="mb-6"
       >
-        <LayerDiagram />
-      </Section>
-
-      <Section
-        title="경보 발령 순서"
-        hint="한 층만으로는 경보를 내지 않습니다. 세 계층 임계값을 모두 넘을 때만 발령합니다."
-        className="mb-6"
-      >
-        <AlertFlow steps={mvp10.alert_order} />
+        {alerts.length > 0 ? (
+          <div className="grid gap-2 sm:grid-cols-2">
+            {alerts.map((item) => (
+              <Link
+                key={item.hs4}
+                href={`/items/${item.hs4}/`}
+                className="flex items-center gap-3 rounded-lg border border-signal-red/25 bg-signal-red/[0.05] px-3.5 py-3 transition hover:border-signal-red/50 hover:bg-signal-red/10"
+              >
+                <span className="font-mono text-xs text-signal-red">{item.hs4}</span>
+                <span className="line-clamp-1 flex-1 text-sm text-slate-200">{item.name}</span>
+                <span className="hidden font-mono text-xs text-slate-500 sm:inline">
+                  {item.top_country} {fmtPct(item.top_share, 0)}
+                </span>
+                <GradeBadge grade={item.grade} />
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-slate-400">현재 3계층 임계값을 동시에 넘긴 품목이 없습니다.</p>
+        )}
         <SourceTag>
           한국은행 ECOS 수입물가지수(월 단위, 익월 초 공표) · 관세청 수출입통계(익월 중순) · KOTRA
           해외시장뉴스(90일 {news.total_collected}건 중 공급망 매칭 {news.supply_chain_matched}건)
         </SourceTag>
       </Section>
 
-      <Section title="이 데모가 하는 일과 하지 않는 일">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-pivot-500">
-              한다
-            </p>
-            <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
-              <li>· 확정 통계로 품목별 수입 집중도(HHI)와 1위국 의존도를 <b>진단</b>한다</li>
-              <li>· 월 단위 수입물가지수 변동과 정책 동향을 겹쳐 <b>경보를 산출</b>한다</li>
-              <li>· 대체 공급 <b>국가</b>를 찾고 그 나라의 지원기관·법인 네트워크로 연결한다</li>
-            </ul>
-          </div>
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
-              하지 않는다
-            </p>
-            <ul className="space-y-2 text-sm leading-relaxed text-slate-400">
-              <li>· 가격을 <b>예측</b>하지 않는다 — 확정 통계에 대한 진단·산출·경보다</li>
-              <li>· 일일 가격을 다루지 않는다 — 지표는 <b>월 단위</b> 수입물가지수다</li>
-              <li>· 대체 <b>기업</b>을 매칭하지 않는다 — 국가 단위 발굴과 기관 연결까지다</li>
-              <li>· 데이터가 없는 칸에 0을 넣지 않는다 — <b>산출 불가</b>로 표기한다</li>
-            </ul>
-          </div>
-        </div>
+      <div className="mb-6 flex flex-wrap gap-3">
+        <Link
+          href="/items/"
+          className="rounded-lg bg-pivot-600 px-4 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-pivot-500"
+        >
+          전체 품목 목록 보기 →
+        </Link>
+        <Link
+          href="/blindspots/"
+          className="rounded-lg border border-white/15 px-4 py-2.5 text-sm font-medium text-slate-200 transition hover:bg-white/5"
+        >
+          사각지대 전체 스크리닝
+        </Link>
+      </div>
+
+      <Section
+        title="경보는 어떻게 산출되는가"
+        hint="한 층만으로는 경보를 내지 않습니다. 세 계층 임계값을 모두 넘을 때만 발령합니다. 자세한 근거는 골든타임 페이지에 있습니다."
+        className="mb-6"
+      >
+        <AlertFlow steps={mvp10.alert_order} />
       </Section>
 
-      <NextStep href="/golden-time/" label="1. 골든타임 — 선행지표가 벌어주는 시간" />
+      <Section title="데이터 계층 구조" hint="베이스가 구조를 정의하고, 선행 두 층이 시점을 앞당기고, 실행층이 대안을 제시합니다.">
+        <LayerDiagram />
+      </Section>
     </>
   );
 }
