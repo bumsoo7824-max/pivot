@@ -1,15 +1,20 @@
 import Link from "next/link";
+import ItemSearch from "@/components/ItemSearch";
 import { GradeBadge, PageHeader, Section, SourceTag } from "@/components/ui";
-import { blindspots, customsAlternatives, fmtPct, fmtUsd, mvp10 } from "@/lib/data";
+import { allItems, blindspots, customsAlternatives, fmtPct, fmtUsd, mvp10 } from "@/lib/data";
 
 export default function ItemsIndexPage() {
   return (
     <>
       <PageHeader
-        step="5 / 8 · 품목 상세"
-        title="품목 하나를 끝까지 따라간다"
-        lead="구조 진단 → 선행지표 → 정책 동향 → 대체 공급국 → 지원기관 연결까지 한 화면에서 이어집니다. 품목마다 확보된 원자료가 달라, 각 페이지는 가진 데이터만 보여주고 없는 항목은 '산출 불가'로 표기합니다."
-      />
+        step="품목 검색"
+        title="품목 검색"
+        lead="HS 코드나 품목명으로 검색하세요. 구조 진단, 선행지표, 정책 동향, 대체 공급국, 지원기관 연결까지 한 화면에서 확인합니다. 품목마다 확보된 원자료가 달라, 없는 항목은 '산출 불가'로 표기합니다."
+      >
+        <div className="mt-5 max-w-xl">
+          <ItemSearch items={allItems} />
+        </div>
+      </PageHeader>
 
       <Section
         title="MVP 10개 품목"

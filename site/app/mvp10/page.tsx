@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AlertFlow } from "@/components/LayerDiagram";
-import { GradeBadge, NextStep, PageHeader, Section, SourceTag, Stat } from "@/components/ui";
+import { GradeBadge, PageHeader, Section, SourceTag, Stat } from "@/components/ui";
 import { blindspots, fmtPct, fmtUsd, mvp10, type Signal } from "@/lib/data";
 
 function SignalDot({ signal }: { signal: Signal }) {
@@ -31,9 +31,9 @@ export default function Mvp10Page() {
   return (
     <>
       <PageHeader
-        step="4 / 8 · MVP 10개"
-        title="먼저 다룰 10개 품목"
-        lead="사각지대 전체를 한 번에 다루지 않는다. 파급이 큰 순서로 10개를 골라 파이프라인 전체를 끝까지 돌린다."
+        step="경보 현황"
+        title="추적 중인 10개 품목"
+        lead="사각지대 전체가 아니라, 파급이 큰 순서로 고른 10개 품목의 경보 상태를 상시 추적한다."
       />
 
       {/* 10개가 전부 중국·RED인 이유를 카드보다 먼저 설명한다. */}
@@ -137,8 +137,6 @@ export default function Mvp10Page() {
           관세청 수출입통계 HS4 집계 · 한국은행 수입물가지수 전월대비 · KOTRA 해외시장뉴스 매칭 건수
         </SourceTag>
       </div>
-
-      <NextStep href={`/items/${mvp10.items[0].hs4}/`} label="5. 품목 상세 — 한 품목을 끝까지" />
     </>
   );
 }

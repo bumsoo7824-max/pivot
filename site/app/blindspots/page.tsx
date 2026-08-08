@@ -1,5 +1,5 @@
 import BlindspotScatter from "@/components/charts/BlindspotScatter";
-import { NextStep, PageHeader, Section, SourceTag, Stat } from "@/components/ui";
+import { PageHeader, Section, SourceTag, Stat } from "@/components/ui";
 import { blindspots } from "@/lib/data";
 
 export default function BlindspotsPage() {
@@ -8,7 +8,7 @@ export default function BlindspotsPage() {
   return (
     <>
       <PageHeader
-        step="2 / 8 · 사각지대 스크리닝"
+        step="사각지대 스크리닝"
         title={`사각지대 ${blindspots.blindspot_count}개 품목`}
         lead={`수입 집중도(HHI)가 높거나 1위국 한 곳에 쏠려 관리 사각에 놓인 품목 목록입니다. 화면에 그리는 값은 원본 목록(${blindspots.source})을 그대로 싣고, 배경에는 비교를 위해 HS4 ${blindspots.universe_count}개 모집단을 함께 찍었습니다.`}
       />
@@ -104,8 +104,6 @@ export default function BlindspotsPage() {
           </div>
         </Section>
       </div>
-
-      <NextStep href="/top-country/" label="3. 1위국 분포 — 쏠림은 어디로 향하는가" />
     </>
   );
 }

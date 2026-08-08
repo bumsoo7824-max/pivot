@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import {
   CartesianGrid,
@@ -13,12 +14,18 @@ import {
   YAxis,
   ZAxis,
 } from "recharts";
-import { blindspots, fmtPct, fmtUsd, type BlindspotPoint } from "@/lib/data";
+import { allDetailHs4, blindspots, fmtPct, fmtUsd, type BlindspotPoint } from "@/lib/data";
 
 const SECTORS = Object.keys(blindspots.sector_counts);
+const HAS_DETAIL = new Set(allDetailHs4());
 
 export default function BlindspotScatter() {
+  const router = useRouter();
   const [sector, setSector] = useState<string>("전체");
+
+  const goToItem = (payload?: BlindspotPoint) => {
+    if (payload && HAS_DETAIL.has(payload.hs4)) router.push(`/items/${payload.hs4}/`);
+  };
 
   const points = useMemo(
     () =>
@@ -152,6 +159,11 @@ export default function BlindspotScatter() {
                           ? `사각지대 원본 목록 · 위험등급 ${p.grade ?? "미상"}`
                           : "사각지대 목록 밖"}
                     </p>
+                    {HAS_DETAIL.has(p.hs4) && (
+                      <p className="mt-1.5 text-[11px] font-medium text-pivot-500">
+                        클릭하면 품목 상세로 이동 →
+                      </p>
+                    )}
                   </div>
                 );
               }}
@@ -162,6 +174,8 @@ export default function BlindspotScatter() {
               fill="#2dd4bf"
               fillOpacity={0.75}
               isAnimationActive={false}
+              onClick={(d) => goToItem(d as unknown as BlindspotPoint)}
+              style={{ cursor: "pointer" }}
             >
               {blind.map((p) => (
                 <Cell
@@ -177,6 +191,8 @@ export default function BlindspotScatter() {
               fill="#4b5871"
               fillOpacity={0.5}
               isAnimationActive={false}
+              onClick={(d) => goToItem(d as unknown as BlindspotPoint)}
+              style={{ cursor: "pointer" }}
             />
             <Scatter
               name="정부 관리 품목 추정"
@@ -185,6 +201,8 @@ export default function BlindspotScatter() {
               fillOpacity={0.85}
               shape="cross"
               isAnimationActive={false}
+              onClick={(d) => goToItem(d as unknown as BlindspotPoint)}
+              style={{ cursor: "pointer" }}
             />
           </ScatterChart>
         </ResponsiveContainer>

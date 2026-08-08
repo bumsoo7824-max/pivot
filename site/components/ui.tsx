@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Grade } from "@/lib/data";
 
@@ -106,17 +105,5 @@ export function SourceTag({ children }: { children: ReactNode }) {
       <span className="text-slate-400">출처 · </span>
       {children}
     </p>
-  );
-}
-
-export function NextStep({ href, label }: { href: string; label: string }) {
-  return (
-    <Link
-      href={href}
-      className="mt-10 inline-flex items-center gap-2 rounded-lg border border-pivot-600/40 bg-pivot-600/10 px-4 py-2.5 text-sm font-medium text-pivot-500 transition hover:bg-pivot-600/20"
-    >
-      {label}
-      <span aria-hidden>→</span>
-    </Link>
   );
 }

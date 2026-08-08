@@ -23,6 +23,32 @@ export default function DataNotesPage() {
         기록한 값에서 그대로 가져온 것이며, 화면에서 다시 계산하지 않습니다.
       </div>
 
+      <Section title="다루는 범위와 다루지 않는 범위" className="mb-6">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-pivot-500">
+              한다
+            </p>
+            <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
+              <li>· 확정 통계로 품목별 수입 집중도(HHI)와 1위국 의존도를 <b>진단</b>한다</li>
+              <li>· 월 단위 수입물가지수 변동과 정책 동향을 겹쳐 <b>경보를 산출</b>한다</li>
+              <li>· 대체 공급 <b>국가</b>를 찾고 그 나라의 지원기관·법인 네트워크로 연결한다</li>
+            </ul>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+              하지 않는다
+            </p>
+            <ul className="space-y-2 text-sm leading-relaxed text-slate-400">
+              <li>· 가격을 <b>예측</b>하지 않는다 — 확정 통계에 대한 진단·산출·경보다</li>
+              <li>· 일일 가격을 다루지 않는다 — 지표는 <b>월 단위</b> 수입물가지수다</li>
+              <li>· 대체 <b>기업</b>을 매칭하지 않는다 — 국가 단위 발굴과 기관 연결까지다</li>
+              <li>· 데이터가 없는 칸에 0을 넣지 않는다 — <b>산출 불가</b>로 표기한다</li>
+            </ul>
+          </div>
+        </div>
+      </Section>
+
       <div className="mb-6 space-y-4">
         {notes.items.map((n, i) => (
           <Section key={n.key}>

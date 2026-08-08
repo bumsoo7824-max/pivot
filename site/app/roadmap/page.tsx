@@ -70,7 +70,7 @@ export default function RoadmapPage() {
   return (
     <>
       <PageHeader
-        step="7 / 8 · 로드맵"
+        step="제작 배경 · 로드맵"
         title="지금 되는 것과 아직 아닌 것"
         lead="되는 것처럼 보이게 쓰지 않았습니다. 협의 단계는 협의 단계로 적었습니다."
       />
