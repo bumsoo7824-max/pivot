@@ -56,7 +56,7 @@ export default function TopCountryPage() {
           <table className="w-full min-w-[640px] text-sm">
             <thead>
               <tr className="border-b border-white/10 text-left text-xs text-slate-500">
-                <th className="pb-2 pr-4 font-medium">HS4</th>
+                <th className="pb-2 pr-4 font-medium">HS 코드</th>
                 <th className="pb-2 pr-4 font-medium">품목</th>
                 <th className="pb-2 pr-4 text-right font-medium">HHI</th>
                 <th className="pb-2 pr-4 text-right font-medium">중국 비중</th>
@@ -68,7 +68,14 @@ export default function TopCountryPage() {
                 const linked = HAS_DETAIL.has(p.hs4);
                 const cells = (
                   <>
-                    <td className="py-2.5 pr-4 font-mono text-xs text-pivot-500">{p.hs4}</td>
+                    <td className="py-2.5 pr-4 font-mono text-xs text-pivot-500">
+                      {p.hs4}
+                      {p.code_level === "hs6" && (
+                        <span className="ml-1.5 rounded border border-white/10 px-1 py-0.5 text-[9px] text-slate-500">
+                          HS6
+                        </span>
+                      )}
+                    </td>
                     <td className="py-2.5 pr-4">
                       <span className="line-clamp-1">{p.name}</span>
                     </td>

@@ -6,6 +6,8 @@
   {
    "hs4": "2841",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -78,6 +80,8 @@
   {
    "hs4": "7210",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -151,11 +155,13 @@
   {
    "hs4": "7228",
    "status": "ok",
+   "kotra_match_type": "fallback",
+   "kotra_match_label": "fallback(가상 중분류 매칭)",
    "alternatives": [
     {
      "rank": 1,
      "country": "Japan",
-     "kotra_offices": 2,
+     "kotra_offices": 31,
      "kotra_companies": []
     },
     {
@@ -167,13 +173,13 @@
     {
      "rank": 3,
      "country": "USA",
-     "kotra_offices": 11,
+     "kotra_offices": 96,
      "kotra_companies": [
-      "현대제철 아메리카법인",
-      "휴스틸",
-      "아주베스틸",
-      "산동금속 미국 판매법인",
-      "일진제강 미주지사"
+      "현대중공업",
+      "한솔제지",
+      "코리아 텔레콤 아메리카",
+      "현대 이스트록 이큅먼트",
+      "LG 일렉트로닉스 모바일컴"
      ]
     },
     {
@@ -185,7 +191,7 @@
     {
      "rank": 5,
      "country": "Germany",
-     "kotra_offices": null,
+     "kotra_offices": 14,
      "kotra_companies": []
     },
     {
@@ -215,7 +221,7 @@
     {
      "rank": 10,
      "country": "United Kingdom",
-     "kotra_offices": 1,
+     "kotra_offices": 11,
      "kotra_companies": []
     }
    ]
@@ -223,6 +229,8 @@
   {
    "hs4": "7607",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -296,6 +304,8 @@
   {
    "hs4": "7213",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -369,6 +379,8 @@
   {
    "hs4": "2811",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -441,6 +453,8 @@
   {
    "hs4": "2849",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -513,6 +527,8 @@
   {
    "hs4": "2926",
    "status": "ok",
+   "kotra_match_type": "exact",
+   "kotra_match_label": "exact(키워드 정밀매칭)",
    "alternatives": [
     {
      "rank": 1,
@@ -585,17 +601,19 @@
   {
    "hs4": "7209",
    "status": "ok",
+   "kotra_match_type": "fallback",
+   "kotra_match_label": "fallback(가상 중분류 매칭)",
    "alternatives": [
     {
      "rank": 1,
      "country": "Japan",
-     "kotra_offices": null,
+     "kotra_offices": 24,
      "kotra_companies": []
     },
     {
      "rank": 2,
      "country": "USA",
-     "kotra_offices": 9,
+     "kotra_offices": 98,
      "kotra_companies": []
     },
     {
@@ -607,19 +625,19 @@
     {
      "rank": 4,
      "country": "India",
-     "kotra_offices": 5,
+     "kotra_offices": 35,
      "kotra_companies": []
     },
     {
      "rank": 5,
      "country": "Thailand",
-     "kotra_offices": 6,
+     "kotra_offices": 29,
      "kotra_companies": [
-      "실스틸",
-      "KG동부태국제철",
-      "동국제강 태국법인",
-      "신스틸 타일랜드",
-      "포스코TCS"
+      "타이 태성",
+      "한화엔엑스엠디(태국법인)",
+      "케이지프란다",
+      "성인전자",
+      "시암이화다이아몬드공구"
      ]
     },
     {
@@ -631,7 +649,7 @@
     {
      "rank": 7,
      "country": "Indonesia",
-     "kotra_offices": 1,
+     "kotra_offices": 32,
      "kotra_companies": []
     },
     {
@@ -657,23 +675,25 @@
   {
    "hs4": "6802",
    "status": "ok",
+   "kotra_match_type": "fallback",
+   "kotra_match_label": "fallback(가상 중분류 매칭)",
    "alternatives": [
     {
      "rank": 1,
      "country": "Viet Nam",
-     "kotra_offices": 14,
+     "kotra_offices": 275,
      "kotra_companies": [
-      "디에이치텍스타일",
-      "텍타일 인더스트리얼",
-      "키스톤 네트웍스",
-      "지알비나 텍스타일",
-      "국진 주식회사"
+      "포인트비나",
+      "트리스타 가먼트",
+      "두지 비나 (주)",
+      "디알비나",
+      "엘지전자"
      ]
     },
     {
      "rank": 2,
      "country": "Italy",
-     "kotra_offices": null,
+     "kotra_offices": 1,
      "kotra_companies": []
     },
     {
@@ -685,7 +705,7 @@
     {
      "rank": 4,
      "country": "India",
-     "kotra_offices": null,
+     "kotra_offices": 35,
      "kotra_companies": []
     },
     {

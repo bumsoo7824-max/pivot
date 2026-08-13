@@ -20,6 +20,8 @@ __pycache__/
 
 # --- 파이프라인 산출물 (재생성 가능, 소스 아님) ---
 data/processed/
+data/raw/google_news_cache.db
+data/raw/data/google_news.parquet
 
 # --- os ---
 .DS_Store

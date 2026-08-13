@@ -1,0 +1,57 @@
+{
+ "status": "unavailable",
+ "reason": "fetch_google_news.py 미실행 — google_news.parquet 없음",
+ "label": "실시간 탐지 — 교차검증 필요",
+ "item_matches": [
+  {
+   "hs4": "2841",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "7210",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "7228",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "7607",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "7213",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "2811",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "2849",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "2926",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "7209",
+   "google_news_hits": 0,
+   "matched": []
+  },
+  {
+   "hs4": "6802",
+   "google_news_hits": 0,
+   "matched": []
+  }
+ ]
+}

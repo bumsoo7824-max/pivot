@@ -130,7 +130,12 @@ export default function BlindspotScatter() {
                 if (!p) return null;
                 return (
                   <div className="max-w-xs rounded-lg border border-white/15 bg-ink-700/95 p-3 text-xs shadow-xl">
-                    <p className="font-mono text-[11px] text-pivot-500">HS {p.hs4}</p>
+                    <p className="font-mono text-[11px] text-pivot-500">
+                      {p.code_level === "hs6" ? "HS6" : "HS4"} {p.hs4}
+                      {p.code_level === "hs6" && (
+                        <span className="ml-1.5 text-slate-500">← HS4 {p.parent_hs4} 승격</span>
+                      )}
+                    </p>
                     <p className="mt-1 font-semibold leading-snug text-white">{p.name}</p>
                     <dl className="mt-2 space-y-0.5 text-slate-300">
                       <div className="flex justify-between gap-4">

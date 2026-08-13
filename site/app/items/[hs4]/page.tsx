@@ -21,6 +21,8 @@ import {
   fmtPct,
   fmtUsd,
   fmtYm,
+  googleNews,
+  googleNewsByHs4,
   importPrice,
   kotraMap,
   matchByHs4,
@@ -105,6 +107,8 @@ export default async function ItemDetailPage({
   }
 
   const comtradeItem = comtrade.items.find((i) => i.hs4 === hs4);
+  const googleMatch = googleNewsByHs4.get(hs4);
+  const googleNewsHits = googleMatch?.google_news_hits ?? 0;
 
   return (
     <>
@@ -219,6 +223,51 @@ export default async function ItemDetailPage({
         <SourceTag>KOTRA 해외시장뉴스 · {news.match_method}</SourceTag>
       </Section>
 
+      {/* ── 3-1. 실시간 탐지 (Google News, KOTRA와 완전히 별도 소스) */}
+      <Section
+        title="실시간 탐지 — Google News"
+        hint={
+          googleNews.status === "ok"
+            ? `KOTRA 해외시장뉴스와 별도 소스다. 커버리지는 넓지만 사람이 거르지 않은 원자료라 ${googleNewsHits}건 모두 교차검증이 필요하다.`
+            : undefined
+        }
+        className="mb-6"
+      >
+        {googleNews.status !== "ok" ? (
+          <Unavailable reason={googleNews.reason ?? "수집되지 않음"} />
+        ) : googleNewsHits > 0 ? (
+          <>
+            <ul className="space-y-2">
+              {googleMatch!.matched.slice(0, 10).map((m, i) => (
+                <li
+                  key={`${m.url}-${i}`}
+                  className="rounded-lg border border-amber-500/15 bg-amber-500/[0.04] px-3.5 py-3"
+                >
+                  <a
+                    href={m.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-slate-200 hover:text-pivot-500"
+                  >
+                    {m.title}
+                  </a>
+                  <div className="mt-1.5 flex flex-wrap items-center gap-2 text-[11px] text-slate-500">
+                    <span>{m.date}</span>
+                    {m.countries && <span className="chip border-white/10">{m.countries}</span>}
+                    {m.risk_direction && (
+                      <span className="chip border-amber-500/25 text-amber-400">{m.risk_direction}</span>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <SourceTag>Google News RSS · {googleNews.label} · KOTRA news_hits와 합산하지 않음</SourceTag>
+          </>
+        ) : (
+          <Unavailable reason="이 품목 키워드로 걸린 Google News 기사가 없다." />
+        )}
+      </Section>
+
       {/* ── 4. 실행 — 대체 공급국 + 지원기관 연결 */}
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
         <Section
@@ -256,6 +305,24 @@ export default async function ItemDetailPage({
               : undefined
           }
         >
+          {comtrade.status === "ok" && comtradeItem?.kotra_match_type && (
+            <div
+              className={`mb-3 flex items-center gap-2 rounded-lg border px-3 py-2 text-[11px] leading-relaxed ${
+                comtradeItem.kotra_match_type === "exact"
+                  ? "border-pivot-500/25 bg-pivot-600/10 text-pivot-500"
+                  : "border-amber-500/25 bg-amber-500/10 text-amber-400"
+              }`}
+            >
+              <span className="rounded border border-current px-1.5 py-0.5 font-mono uppercase">
+                {comtradeItem.kotra_match_type === "exact" ? "EXACT" : "FALLBACK"}
+              </span>
+              <span>
+                {comtradeItem.kotra_match_type === "exact"
+                  ? "품목 키워드로 KOTRA 현지법인을 정밀 매칭했다."
+                  : "품목 키워드로 매칭된 현지법인이 3개사 미만이라, 아래 KOTRA 현지법인 목록은 정밀 매칭이 아닌 제조업 대분류 기준 대체 표본이다 — 참고용으로만 볼 것."}
+              </span>
+            </div>
+          )}
           {comtrade.status === "ok" && comtradeItem?.alternatives.length ? (
             <ul className="space-y-2">
               {comtradeItem.alternatives.map((a) => (

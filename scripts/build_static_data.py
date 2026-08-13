@@ -187,6 +187,9 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         "1위국비중": "top_share",
     })
 
+    df["code_level"] = "hs4"
+    df["parent_hs4"] = None
+
     # 사각지대는 원본 step4_blind_spots.csv 가 단일 출처다. 임계값으로 역산하지 않는다.
     bs = src["blind_spots"].copy()
     bs["hs4"] = bs["hs4"].astype(str).str.zfill(4)
@@ -208,16 +211,77 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         orphan["ksic_mid"] = orphan["hs4"].map(ksic)
         orphan["gov_managed"] = False
         orphan["is_blindspot"] = True
+        orphan["code_level"] = "hs4"
+        orphan["parent_hs4"] = None
         df = pd.concat([df, orphan[df.columns]], ignore_index=True)
         log(f"  모집단 밖 사각지대 품목 {len(orphan_ids)}건을 원본에서 보충: {sorted(orphan_ids)}")
 
+    # HS6 승격 — 12개월 재검증으로 "구조적 분기"가 확정된 hs4를, 그 hs4 라벨 하나로
+    # 뭉뚱그리는 대신 실제 hs6 자식으로 쪼갠다. MVP10 고정 멤버(7210·7213)는 ECOS
+    # 물가매핑·e2e_results_all.csv·경보 이력이 전부 hs4 단위로 고정돼 있어 제외한다
+    # — 이 두 hs4는 원래 값 그대로 사각지대에 남는다.
+    promo_path = RAW / "data" / "hs6_promoted_info.csv"
+    hs6_swap_hs4: set[str] = set()
+    hs6_added_codes: list[str] = []
+    if promo_path.exists():
+        promo = pd.read_csv(promo_path, dtype={"hs4": str, "hs6": str})
+        promo["hs4"] = promo["hs4"].str.zfill(4)
+        promo["hs6"] = promo["hs6"].str.zfill(6)
+        PROTECTED_MVP10_HS4 = {"7210", "7213"}
+        hs6_swap_hs4 = set(promo["hs4"]) - PROTECTED_MVP10_HS4
+        promo = promo[promo["hs4"].isin(hs6_swap_hs4)].copy()
+
+        # hs6 단위 신성질 업종은 crosswalk_hs_temper.parquet(HS10)의 앞 6자리로 재집계한다
+        # — 기존 cw(hs4 dedup)로는 hs6 세분류를 구분 못 한다.
+        cw10 = src["crosswalk"].copy()
+        cw10["hs6"] = cw10["HSK10"].astype(str).str.zfill(10).str[:6]
+        hs6_sector = cw10.drop_duplicates("hs6").set_index("hs6")
+
+        promo["item_name"] = promo["품목명"]
+        promo["hhi"] = promo["HHI"]
+        promo["top_country"] = promo["1위국"]
+        promo["top_country_code"] = promo["top_country"].apply(
+            lambda n: (coord_lookup(n) or (None, None, None))[2]
+        )
+        promo["top_share"] = promo["1위국비중"]
+        promo["import_usd"] = promo["수입액합계"]
+        promo["grade"] = promo["위험등급"]
+        promo["hs4_name"] = promo["item_name"]
+        promo["sector"] = promo["hs6"].map(hs6_sector["신성질_중분류명"])
+        promo["sector_major"] = promo["hs6"].map(hs6_sector["신성질_대분류명"])
+        promo["ksic_mid"] = None  # KSIC은 hs4 단위 브리지뿐이라 hs6 승격 품목엔 대응이 없다
+        name_blob6 = promo["item_name"].fillna("")
+        promo["gov_managed"] = name_blob6.apply(lambda s: any(k in s for k in keywords))
+        promo["is_blindspot"] = True
+        promo["code_level"] = "hs6"
+        promo["parent_hs4"] = promo["hs4"]
+        promo["hs4"] = promo["hs6"]  # 이후 로직은 "hs4" 컬럼을 공통 식별자로 쓴다
+        promo["country_count"] = None
+        # df의 "건당수입액"·"레코드수"는 hs6_promoted_info.csv엔 없다 — 후자는
+        # "거래레코드수"로 이름만 다르고, 전자는 그 값으로 나눠 근사한다.
+        promo["레코드수"] = promo["거래레코드수"]
+        promo["건당수입액"] = promo["import_usd"] / promo["거래레코드수"].replace(0, pd.NA)
+
+        df = df[~df["hs4"].isin(hs6_swap_hs4)].copy()
+        df = pd.concat([df, promo[df.columns]], ignore_index=True)
+        blind_ids = (blind_ids - hs6_swap_hs4) | set(promo["hs4"])
+        hs6_added_codes = sorted(promo["hs4"])
+        log(f"  HS6 승격: {len(hs6_swap_hs4)}개 hs4({sorted(hs6_swap_hs4)}) → "
+            f"{len(promo)}개 hs6로 치환. MVP10 고정 멤버 {sorted(PROTECTED_MVP10_HS4)}는 제외.")
+    else:
+        log("  hs6_promoted_info.csv 없음 → HS6 승격 비활성, 256개 hs4 그대로 유지")
+
     blind = df[df["is_blindspot"]].copy()
     china = int((blind["top_country"] == "중국").sum())
-    log(f"  사각지대(원본 CSV): {len(blind)}건 / 모집단 {len(df)}건, 1위국=중국 {china}건 "
+    log(f"  사각지대: {len(blind)}건 / 모집단 {len(df)}건, 1위국=중국 {china}건 "
         f"({china / len(blind) * 100:.1f}%)")
     log(f"  위험등급 분포: {blind['grade'].value_counts().to_dict()}")
-    if len(blind) != len(bs):
-        raise RuntimeError(f"검증 실패 — 원본 {len(bs)}행 중 {len(blind)}행만 반영됨")
+    expected_count = len(bs) - len(hs6_swap_hs4) + len(hs6_added_codes)
+    if len(blind) != expected_count:
+        raise RuntimeError(
+            f"검증 실패 — 원본 {len(bs)}행 - HS6 승격 치환 {len(hs6_swap_hs4)}행 "
+            f"+ hs6 {len(hs6_added_codes)}행 = {expected_count}행이어야 하는데 {len(blind)}행"
+        )
 
     # 참고 검증: 원본 목록이 임계 규칙(HHI ≥ 0.25 OR 1위국비중 ≥ 0.40)과 어떻게 대응하는지 기록만 남긴다.
     rule_ids = set(df[(df["hhi"] >= HHI_THRESHOLD) | (df["top_share"] >= TOP_SHARE_THRESHOLD)]["hs4"])
@@ -251,6 +315,9 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         "ksic_covered": covered,
         "gov_managed_count": int(df["gov_managed"].sum()),
         "grade_counts": {str(k): int(v) for k, v in blind["grade"].value_counts().items()},
+        "hs6_swapped_hs4_count": len(hs6_swap_hs4),
+        "hs6_added_count": len(hs6_added_codes),
+        "hs6_protected_mvp10": ["7210", "7213"] if promo_path.exists() else [],
     }
     return df, mvp, stats
 
@@ -479,6 +546,58 @@ def build_news(src: dict, mvp: pd.DataFrame) -> dict:
     }
 
 
+# ───────────────────────────────────────────────── Google News (실시간 탐지, KOTRA와 별도)
+# fetch_google_news.py 산출물. KOTRA 해외시장뉴스(무역관 큐레이션, 신뢰도 높음·커버리지
+# 좁음·갱신 느림)와는 역할이 다르다 — 전 세계 매체를 RSS로 훑어 커버리지는 넓지만
+# 사람이 걸러내지 않은 원자료라 노이즈가 많다. 그래서 news_hits(KOTRA)와 절대 합산하지
+# 않고, google_news_hits로 완전히 분리해 "실시간 탐지 — 교차검증 필요" 라벨을 붙여 보여준다.
+GOOGLE_NEWS_PATH = RAW / "data" / "google_news.parquet"
+
+
+def build_google_news(mvp: pd.DataFrame) -> dict:
+    log("[4-1] Google News (실시간 탐지, 별도 소스)")
+    if not GOOGLE_NEWS_PATH.exists():
+        log(f"  {GOOGLE_NEWS_PATH.relative_to(ROOT)} 없음 → 비활성. "
+            "fetch_google_news.py를 실행해 수집하기 전까지 이 소스는 화면에 "
+            "'비활성'으로 표시된다.")
+        return {
+            "status": "unavailable",
+            "reason": "fetch_google_news.py 미실행 — google_news.parquet 없음",
+            "label": "실시간 탐지 — 교차검증 필요",
+            "item_matches": [{"hs4": r.hs4, "google_news_hits": 0, "matched": []} for r in mvp.itertuples()],
+        }
+
+    g = pd.read_parquet(GOOGLE_NEWS_PATH)
+    g["hs4_tags"] = g.get("hs4_tags", "").fillna("")
+
+    matches = []
+    for r in mvp.itertuples():
+        hs4 = r.hs4
+        tagged = g[g["hs4_tags"].apply(lambda s: hs4 in [t.strip() for t in s.split(",")])]
+        hits = [
+            {
+                "title": clean_text(row.제목),
+                "url": clean_text(row.링크),
+                "date": clean_text(row.발행일),
+                "countries": clean_text(row.언급국가),
+                "risk_score": int(row.risk_score) if pd.notna(row.risk_score) else None,
+                "risk_direction": clean_text(row.risk_direction),
+            }
+            for row in tagged.itertuples()
+        ]
+        matches.append({"hs4": hs4, "google_news_hits": len(hits), "matched": hits})
+
+    total = sum(m["google_news_hits"] for m in matches)
+    log(f"  google_news.parquet {len(g)}건 수집 · 품목–기사 연결 {total}건")
+    return {
+        "status": "ok",
+        "reason": None,
+        "label": "실시간 탐지 — 교차검증 필요",
+        "total_collected": int(len(g)),
+        "item_matches": matches,
+    }
+
+
 # ───────────────────────────────────────────────── KOTRA 해외법인 지도
 def build_kotra_map(src: dict) -> dict:
     log("[5] KOTRA 해외법인 국가별 집계")
@@ -640,9 +759,15 @@ def build_comtrade(mvp: pd.DataFrame) -> dict:
         countries = [c.strip() for c in str(r.대체국_top10).split(",") if c.strip()]
         offices = _parse_kotra_offices(r.KOTRA_현지법인_top5)
         companies = _parse_kotra_companies(r.KOTRA_현지법인_기업명_top5)
+        raw_match = str(getattr(r, "KOTRA_매칭기준", "") or "")
+        match_type = "exact" if raw_match.startswith("exact") else (
+            "fallback" if raw_match.startswith("fallback") else None
+        )
         items.append({
             "hs4": r.hs4,
             "status": "ok",
+            "kotra_match_type": match_type,
+            "kotra_match_label": raw_match or None,
             "alternatives": [
                 {
                     "rank": i + 1,
@@ -671,6 +796,7 @@ def main() -> None:
 
     price = build_import_price(src)
     news = build_news(src, mvp)
+    google_news = build_google_news(mvp)
     kmap = build_kotra_map(src)
     customs_alt = build_customs_alternatives(src)
     comtrade = build_comtrade(mvp)
@@ -690,11 +816,14 @@ def main() -> None:
             "top_country_code": r.top_country_code,
             "top_share": num(r.top_share),
             "import_usd": int(r.import_usd),
-            "country_count": int(r.country_count),
+            "country_count": int(r.country_count) if pd.notna(r.country_count) else None,
             "is_blindspot": bool(r.is_blindspot),
             "gov_managed": bool(r.gov_managed),
             # 위험등급도 원본 CSV 값이다. 사각지대가 아닌 품목에는 등급이 없다.
             "grade": r.grade if isinstance(r.grade, str) else None,
+            # HS6 승격 품목 구분용. code_level="hs6"일 때 parent_hs4가 원래 hs4를 가리킨다.
+            "code_level": r.code_level,
+            "parent_hs4": r.parent_hs4 if isinstance(r.parent_hs4, str) else None,
         })
     sectors = (universe[universe["is_blindspot"]]["sector"].value_counts().to_dict())
     top_countries = (universe[universe["is_blindspot"]]["top_country"].value_counts().to_dict())
@@ -709,6 +838,9 @@ def main() -> None:
         "china_count": stats["china_count"],
         "china_share": stats["china_share"],
         "grade_counts": stats["grade_counts"],
+        "hs6_swapped_hs4_count": stats["hs6_swapped_hs4_count"],
+        "hs6_added_count": stats["hs6_added_count"],
+        "hs6_protected_mvp10": stats["hs6_protected_mvp10"],
         "sector_axis": "관세청 신성질 중분류",
         "sector_counts": {k: int(v) for k, v in sectors.items()},
         "top_country_counts": {k: int(v) for k, v in top_countries.items()},
@@ -760,6 +892,7 @@ def main() -> None:
 
     write_json("import_price.json", price)
     write_json("news.json", news)
+    write_json("google_news.json", google_news)
     write_json("kotra_map.json", kmap)
     write_json("customs_alternatives.json", customs_alt)
     write_json("comtrade_alts.json", comtrade)
@@ -789,17 +922,42 @@ def main() -> None:
             {
                 "key": "blindspot",
                 "title": f"사각지대 {stats['blindspot_count']}개의 출처",
-                "body": f"사각지대는 원본 목록 step4_blind_spots.csv({stats['blindspot_count']}행)를 "
-                        "단일 출처로 그대로 싣는다. 임계값으로 역산하지 않는다. "
+                "body": f"사각지대는 원본 목록 step4_blind_spots.csv(256행)에서 HS6 승격으로 "
+                        f"hs4 {stats['hs6_swapped_hs4_count']}행을 hs6_promoted_info.csv의 "
+                        f"hs6 {stats['hs6_added_count']}행으로 치환해 최종 {stats['blindspot_count']}개를 "
+                        "싣는다(자세한 승격 경위는 04번 항목). 임계값으로 역산하지 않는다. "
                         f"1위국=중국 {stats['china_count']}개({stats['china_share'] * 100:.1f}%), "
                         f"위험등급 " + ", ".join(f"{k} {v}건" for k, v in stats["grade_counts"].items()) + ". "
-                        f"산점도의 배경 점은 step3_hhi_all.parquet의 HS4 {stats['universe']}개 모집단이며, "
-                        "이 중 원본 목록에 든 품목을 사각지대로 강조한다. "
+                        f"산점도의 배경 점은 step3_hhi_all.parquet의 HS4 339개 모집단에 HS6 승격·모집단 "
+                        f"밖 보충분을 더한 {stats['universe']}개이며, "
+                        "이 중 원본 목록(HS6 승격 반영분 포함)에 든 품목을 사각지대로 강조한다. "
                         "원본 목록에서 중국 1위·HHI ≥ 0.50 품목의 수입액 상위 10개를 뽑으면 "
                         "mvp_10.csv 10개 품목과 정확히 일치한다(재검증 통과).",
                 "impact": f"산점도의 임계선 두 개(HHI {HHI_THRESHOLD} / 1위국비중 "
                           f"{TOP_SHARE_THRESHOLD})는 읽기 보조용 참조선이며 판정 기준이 아니다. "
                           "이전에 쓰던 역산 스크리닝 로직은 제거했다.",
+            },
+            {
+                "key": "hs6_promotion",
+                "title": f"HS6 승격 — hs4 {stats['hs6_swapped_hs4_count']}개를 hs6 {stats['hs6_added_count']}개로 치환",
+                "body": "12개월 재검증으로, RED 등급 hs4 21개 중 실제로는 리스크가 그 hs4 전체가 "
+                        "아니라 특정 hs6 자식에서만 나타난다는 게 확인됐다(hs6_promoted_info.csv, "
+                        "팀 제공). 예를 들어 2404(담배 관련)를 hs6 3개로 쪼개면 1위국이 스웨덴·"
+                        "인도네시아·독일로 전부 다르다 — hs4 하나로 뭉뚱그리면 '1위국이 어디냐'는 "
+                        "질문 자체가 성립하지 않는다. HHI·1위국·수입액은 202606 단월 관세청 실측이고, "
+                        "일부는 단월 실적이 0이라 12개월 합산치로 대체 계산했다(원본 CSV의 '비고' 필드에 "
+                        "표기). 41개 중 15개는 '거래레코드수'가 적어 원본 CSV가 자체적으로 "
+                        "'저신뢰(소액/소건수)'로 표기했는데, 그래도 걸러내지 않고 그대로 실었다 — "
+                        "위험등급 자체는 RED로 확정된 값이기 때문이다. 업종축(신성질 중분류)은 "
+                        "crosswalk_hs_temper.parquet를 hs6 앞 6자리로 재집계해 새로 만들었다.",
+                "impact": f"MVP10 고정 멤버인 HS {', '.join(stats['hs6_protected_mvp10'])}는 이번 승격에서 "
+                          "제외했다 — ECOS 물가 매핑·e2e_results_all.csv(KOTRA 매칭)·3계층 경보 이력이 "
+                          "전부 hs4 단위로 고정돼 있어, 이 데이터만으로 MVP10 자체를 hs6 단위로 재구성할 "
+                          "수는 없다. 두 hs4는 원래 그대로 사각지대에 남는다. 그 결과 사각지대는 "
+                          f"256개(hs4 전용) → {stats['blindspot_count']}개"
+                          f"(hs4 {256 - stats['hs6_swapped_hs4_count']}개 + hs6 {stats['hs6_added_count']}개)로 "
+                          "바뀌었다. 산점도·1위국 분포 표에서 hs6 항목은 HS6 배지로 표시하고, 원래 hs4를 "
+                          "함께 밝힌다.",
             },
             {
                 "key": "customs_scope",
@@ -831,6 +989,28 @@ def main() -> None:
                           "이번 교체로 경보 목록에서 빠졌다(거짓 양성 제거).",
             },
             {
+                "key": "google_news_role_split",
+                "title": "뉴스 소스 이원화 — KOTRA(경보 판정용) vs Google News(참고용)",
+                "body": "fetch_google_news.py를 새 소스로 추가했다. 두 소스는 역할이 다르다. "
+                        "KOTRA 해외시장뉴스는 무역관이 큐레이션한 자료라 신뢰도는 높지만 90일 기준 "
+                        "884건으로 커버리지가 좁고 갱신이 느리다 — 3계층 경보의 news 신호는 이 소스만 "
+                        "쓴다. Google News RSS는 전 세계 매체를 20개 키워드로 훑어 커버리지는 넓지만 "
+                        "사람이 걸러내지 않은 원자료라 노이즈가 많다 — risk_score로 위험도를 매기긴 "
+                        "하지만 예측이 아니라 규칙 기반 키워드 가중합이다. 그래서 google_news_hits는 "
+                        "news_hits(KOTRA)와 절대 합산하지 않고, 화면에 '실시간 탐지 — 교차검증 필요' "
+                        "라벨을 붙여 완전히 별도 섹션으로 분리했다. 3계층 경보 산출에도 관여하지 않는다.",
+                "impact": (
+                    f"수집 {google_news['total_collected']}건, 품목–기사 연결 "
+                    f"{sum(m['google_news_hits'] for m in google_news['item_matches'])}건."
+                    if google_news["status"] == "ok"
+                    else f"현재 비활성 — {google_news['reason']}. "
+                         "google_news.parquet이 없어도 빌드는 죽지 않고, 화면엔 '비활성'으로 표시된다. "
+                         "이 빌드 환경은 news.google.com으로 나가는 아웃바운드 연결 자체가 프록시 정책으로 "
+                         "차단돼 있어(CONNECT 403), fetch_google_news.py를 실행해도 0건 수집으로 끝난다 — "
+                         "재현 가능하게 확인한 사실이며, 코드가 잘못돼서가 아니다."
+                ),
+            },
+            {
                 "key": "comtrade",
                 "title": "대체 공급국 — 사전 산출 결과",
                 "body": f"현재 상태: {comtrade['status']}"
@@ -843,6 +1023,23 @@ def main() -> None:
                 "impact": "국가별 수출금액은 이 CSV에 없어 표시하지 않는다(0을 대입하지 않는다). "
                           "국가 순위, KOTRA 현지법인 수·기업명만 채운다. "
                           "CSV가 없으면 MVP 상세의 이 항목은 0이 아니라 '산출 불가'로 표시된다.",
+            },
+            {
+                "key": "kotra_match_exact_fallback",
+                "title": "KOTRA 현지법인 매칭 — exact/fallback 등급 표시",
+                "body": "filter_kotra_by_hs4()는 대체 공급국 안에서 이 품목 키워드로 KOTRA 현지법인을 "
+                        "찾는다(1순위: 키워드 정밀매칭). 그런데 '화학'·'금속'·'철강' 같은 범용 키워드가 "
+                        "서로 다른 품목의 매칭 결과를 뒤섞고, '타일'이 '텍스타일'의 부분문자열로 걸리는 "
+                        "식의 오탐도 있었다. pipeline_final.py에 KOTRA 전체 데이터 기준 30건 이상 매칭되는 "
+                        "키워드를 사전 제외하는 로직이 추가돼, 이 저장소도 그 기준으로 e2e_results_all.csv를 "
+                        "다시 검산했다 — 이 CSV는 실제 kotra_overseas_root.parquet(9,927사)에 같은 필터링 "
+                        "함수를 다시 돌려 나온 결과다.",
+                "impact": f"MVP 10개 중 "
+                          f"{sum(1 for it in comtrade['items'] if it.get('kotra_match_type') == 'fallback')}개"
+                          "(7228 기타 합금강 봉 및 형강, 7209 철/비합금강 냉간압연 평판제품, 6802 가공용 "
+                          "석재)는 정밀매칭 기업이 3개사 미만으로 나와 fallback(제조업 대분류 표본)으로 "
+                          "내려갔다 — 상세 페이지의 KOTRA 현지법인 목록은 이전보다 줄었지만, 그만큼 "
+                          "정밀 매칭이 아닌 것도 화면에 EXACT/FALLBACK 배지로 그대로 드러낸다.",
             },
             {
                 "key": "pps",

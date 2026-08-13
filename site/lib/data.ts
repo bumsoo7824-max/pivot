@@ -2,6 +2,7 @@
 import blindspotsJson from "@data/blindspots.json";
 import comtradeJson from "@data/comtrade_alts.json";
 import customsAltJson from "@data/customs_alternatives.json";
+import googleNewsJson from "@data/google_news.json";
 import importPriceJson from "@data/import_price.json";
 import kotraMapJson from "@data/kotra_map.json";
 import metaJson from "@data/meta.json";
@@ -23,11 +24,15 @@ export type BlindspotPoint = {
   top_country_code: string;
   top_share: number;
   import_usd: number;
-  country_count: number;
+  country_count: number | null;
   is_blindspot: boolean;
   gov_managed: boolean;
   /** step4_blind_spots.csv 의 위험등급. 사각지대가 아닌 품목에는 등급이 없다. */
   grade: Grade | null;
+  /** hs6이면 hs4 필드에 6자리 코드가 들어간다 — HS6 승격 품목. */
+  code_level: "hs4" | "hs6";
+  /** code_level==="hs6"일 때만 채워지는 원래 hs4. */
+  parent_hs4: string | null;
 };
 
 export type Signal = { triggered: boolean; value: number | null; label: string };
@@ -102,6 +107,9 @@ export const blindspots = blindspotsJson as unknown as {
   china_count: number;
   china_share: number;
   grade_counts: Record<string, number>;
+  hs6_swapped_hs4_count: number;
+  hs6_added_count: number;
+  hs6_protected_mvp10: string[];
   sector_axis: string;
   sector_counts: Record<string, number>;
   top_country_counts: Record<string, number>;
@@ -192,11 +200,32 @@ export const comtrade = comtradeJson as unknown as {
   items: {
     hs4: string;
     status: string;
+    kotra_match_type: "exact" | "fallback" | null;
+    kotra_match_label: string | null;
     alternatives: {
       rank: number;
       country: string;
       kotra_offices: number | null;
       kotra_companies: string[];
+    }[];
+  }[];
+};
+
+export const googleNews = googleNewsJson as unknown as {
+  status: "ok" | "unavailable";
+  reason: string | null;
+  label: string;
+  total_collected?: number;
+  item_matches: {
+    hs4: string;
+    google_news_hits: number;
+    matched: {
+      title: string;
+      url: string;
+      date: string;
+      countries: string;
+      risk_score: number | null;
+      risk_direction: string;
     }[];
   }[];
 };
@@ -215,6 +244,7 @@ export const meta = metaJson as unknown as {
 // ─────────────────────────────────────────────────────────────── 헬퍼
 export const newsById = new Map(news.news.map((n) => [n.id, n]));
 export const matchByHs4 = new Map(news.item_matches.map((m) => [m.hs4, m]));
+export const googleNewsByHs4 = new Map(googleNews.item_matches.map((m) => [m.hs4, m]));
 export const priceByHs4 = new Map(importPrice.items.map((p) => [p.hs4, p]));
 export const mvpByHs4 = new Map(mvp10.items.map((m) => [m.hs4, m]));
 export const customsByHs4 = new Map(customsAlternatives.items.map((c) => [c.hs4, c]));
