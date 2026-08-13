@@ -640,9 +640,15 @@ def build_comtrade(mvp: pd.DataFrame) -> dict:
         countries = [c.strip() for c in str(r.대체국_top10).split(",") if c.strip()]
         offices = _parse_kotra_offices(r.KOTRA_현지법인_top5)
         companies = _parse_kotra_companies(r.KOTRA_현지법인_기업명_top5)
+        raw_match = str(getattr(r, "KOTRA_매칭기준", "") or "")
+        match_type = "exact" if raw_match.startswith("exact") else (
+            "fallback" if raw_match.startswith("fallback") else None
+        )
         items.append({
             "hs4": r.hs4,
             "status": "ok",
+            "kotra_match_type": match_type,
+            "kotra_match_label": raw_match or None,
             "alternatives": [
                 {
                     "rank": i + 1,
@@ -843,6 +849,23 @@ def main() -> None:
                 "impact": "국가별 수출금액은 이 CSV에 없어 표시하지 않는다(0을 대입하지 않는다). "
                           "국가 순위, KOTRA 현지법인 수·기업명만 채운다. "
                           "CSV가 없으면 MVP 상세의 이 항목은 0이 아니라 '산출 불가'로 표시된다.",
+            },
+            {
+                "key": "kotra_match_exact_fallback",
+                "title": "KOTRA 현지법인 매칭 — exact/fallback 등급 표시",
+                "body": "filter_kotra_by_hs4()는 대체 공급국 안에서 이 품목 키워드로 KOTRA 현지법인을 "
+                        "찾는다(1순위: 키워드 정밀매칭). 그런데 '화학'·'금속'·'철강' 같은 범용 키워드가 "
+                        "서로 다른 품목의 매칭 결과를 뒤섞고, '타일'이 '텍스타일'의 부분문자열로 걸리는 "
+                        "식의 오탐도 있었다. pipeline_final.py에 KOTRA 전체 데이터 기준 30건 이상 매칭되는 "
+                        "키워드를 사전 제외하는 로직이 추가돼, 이 저장소도 그 기준으로 e2e_results_all.csv를 "
+                        "다시 검산했다 — 이 CSV는 실제 kotra_overseas_root.parquet(9,927사)에 같은 필터링 "
+                        "함수를 다시 돌려 나온 결과다.",
+                "impact": f"MVP 10개 중 "
+                          f"{sum(1 for it in comtrade['items'] if it.get('kotra_match_type') == 'fallback')}개"
+                          "(7228 기타 합금강 봉 및 형강, 7209 철/비합금강 냉간압연 평판제품, 6802 가공용 "
+                          "석재)는 정밀매칭 기업이 3개사 미만으로 나와 fallback(제조업 대분류 표본)으로 "
+                          "내려갔다 — 상세 페이지의 KOTRA 현지법인 목록은 이전보다 줄었지만, 그만큼 "
+                          "정밀 매칭이 아닌 것도 화면에 EXACT/FALLBACK 배지로 그대로 드러낸다.",
             },
             {
                 "key": "pps",

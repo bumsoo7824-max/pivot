@@ -256,6 +256,24 @@ export default async function ItemDetailPage({
               : undefined
           }
         >
+          {comtrade.status === "ok" && comtradeItem?.kotra_match_type && (
+            <div
+              className={`mb-3 flex items-center gap-2 rounded-lg border px-3 py-2 text-[11px] leading-relaxed ${
+                comtradeItem.kotra_match_type === "exact"
+                  ? "border-pivot-500/25 bg-pivot-600/10 text-pivot-500"
+                  : "border-amber-500/25 bg-amber-500/10 text-amber-400"
+              }`}
+            >
+              <span className="rounded border border-current px-1.5 py-0.5 font-mono uppercase">
+                {comtradeItem.kotra_match_type === "exact" ? "EXACT" : "FALLBACK"}
+              </span>
+              <span>
+                {comtradeItem.kotra_match_type === "exact"
+                  ? "품목 키워드로 KOTRA 현지법인을 정밀 매칭했다."
+                  : "품목 키워드로 매칭된 현지법인이 3개사 미만이라, 아래 KOTRA 현지법인 목록은 정밀 매칭이 아닌 제조업 대분류 기준 대체 표본이다 — 참고용으로만 볼 것."}
+              </span>
+            </div>
+          )}
           {comtrade.status === "ok" && comtradeItem?.alternatives.length ? (
             <ul className="space-y-2">
               {comtradeItem.alternatives.map((a) => (

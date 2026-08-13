@@ -192,6 +192,8 @@ export const comtrade = comtradeJson as unknown as {
   items: {
     hs4: string;
     status: string;
+    kotra_match_type: "exact" | "fallback" | null;
+    kotra_match_label: string | null;
     alternatives: {
       rank: number;
       country: string;
