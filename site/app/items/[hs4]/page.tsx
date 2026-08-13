@@ -35,9 +35,6 @@ export function generateStaticParams() {
   return allDetailHs4().map((hs4) => ({ hs4 }));
 }
 
-const officesOf = (country: string) =>
-  kotraMap.countries.find((c) => c.name === country)?.count ?? null;
-
 function NewsList({ rows, reasons }: { rows: NewsRow[]; reasons?: Map<string, string[]> }) {
   if (rows.length === 0) {
     return (
@@ -252,26 +249,36 @@ export default async function ItemDetailPage({
         </Section>
 
         <Section
-          title="대체 공급국 — UN Comtrade"
+          title="대체 공급국 — 사전 산출"
           hint={
-            comtrade.status === "ok" && comtrade.fetched_at
-              ? `최근 수집 ${comtrade.fetched_at.slice(0, 10)} 기준.`
+            comtrade.status === "ok"
+              ? "팀 내부에서 미리 뽑아둔 순위다. 국가별 수출금액은 이 자료에 없어 표시하지 않는다."
               : undefined
           }
         >
           {comtrade.status === "ok" && comtradeItem?.alternatives.length ? (
             <ul className="space-y-2">
-              {comtradeItem.alternatives.map((a, i) => (
+              {comtradeItem.alternatives.map((a) => (
                 <li
                   key={a.country}
-                  className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.02] px-3.5 py-3"
+                  className="rounded-lg border border-white/10 bg-white/[0.02] px-3.5 py-3"
                 >
-                  <span className="font-mono text-xs text-slate-600">{i + 1}</span>
-                  <span className="flex-1 text-sm text-slate-200">{a.country}</span>
-                  <span className="font-mono text-xs text-slate-500">{fmtUsd(a.export_usd)}</span>
-                  <span className="rounded-md border border-pivot-500/25 bg-pivot-600/10 px-2 py-1 text-[11px] text-pivot-500">
-                    KOTRA 법인 {officesOf(a.country)?.toLocaleString("ko-KR") ?? "산출 불가"}
-                  </span>
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs text-slate-600">{a.rank}</span>
+                    <span className="flex-1 text-sm text-slate-200">{a.country}</span>
+                    <span className="font-mono text-[11px] text-slate-600">수출금액 산출 불가</span>
+                    <span className="rounded-md border border-pivot-500/25 bg-pivot-600/10 px-2 py-1 text-[11px] text-pivot-500">
+                      KOTRA 법인{" "}
+                      {a.kotra_offices !== null
+                        ? `${a.kotra_offices.toLocaleString("ko-KR")}사`
+                        : "산출 불가"}
+                    </span>
+                  </div>
+                  {a.kotra_companies.length > 0 && (
+                    <p className="mt-2 pl-6 text-xs leading-relaxed text-slate-500">
+                      {a.kotra_companies.join(" · ")}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
