@@ -1,0 +1,16 @@
+{
+  "module": "news_signal.py",
+  "role": "실시간 정책·규제 동향 감지",
+  "role_note": "과거 사태 소급 검증은 관세청 HHI 기반 구조 진단이 담당한다. 뉴스 신호는 지금 일어나고 있는 정책·규제 움직임을 잡는 역할만 맡는다.",
+  "realtime_test": {
+    "label": "실시간 테스트",
+    "case": "요소수",
+    "result": "RED 정상 감지",
+    "sources": [
+      { "name": "KOTRA", "count": 3 },
+      { "name": "Google", "count": 35 }
+    ],
+    "summary": "실시간 테스트: 요소수 기준 RED 정상 감지 (KOTRA 3건 + Google 35건)",
+    "provenance": "모듈 검증 결과로 전달받은 값. 이 저장소의 파이프라인이 산출한 수치가 아니다."
+  }
+}

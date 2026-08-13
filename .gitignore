@@ -25,3 +25,6 @@ data/raw/data/google_news.parquet
 
 # --- os ---
 .DS_Store
+
+# --- 대시보드 산출물 (스크립트로 재생성 가능) ---
+data/processed/
