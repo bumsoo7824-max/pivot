@@ -62,6 +62,12 @@ const ITEMS: { phase: string; title: string; status: Status; body: string }[] = 
     status: "discussing",
     body: `현재 국가별 원자료는 비철금속 HS4 10개 범위이고 나머지 품목은 집계 지표만 확보돼 있다. 원자료 범위를 넓히면 MVP 10개에도 실측 단가 시계열과 대체 공급국을 채울 수 있다.`,
   },
+  {
+    phase: "협의",
+    title: "뉴스 관련도 LLM 판정 (POC)",
+    status: "discussing",
+    body: "지금은 키워드 + 공급망_관련 규칙 매칭까지다. 매칭된 기사가 이 품목의 공급·가격·규제 리스크와 실제로 직결되는지는 제목을 사람이 훑어보는 것을 전제로 한다. Claude API로 이 판정을 자동화하는 예시 코드(news_relevance_llm_example.py)가 저장소에 참고용으로 있으나 API 비용이 발생해 MVP 단계 이후 정식 도입을 검토 중이며, 파이프라인에는 엮여 있지 않다.",
+  },
 ];
 
 export default function RoadmapPage() {

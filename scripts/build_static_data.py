@@ -374,17 +374,19 @@ def build_import_price(src: dict) -> dict:
 
 
 # ────────────────────────────────────────────────────────── KOTRA 뉴스
-NEWS_KEYWORDS = {
-    "2841": ["배터리", "리튬", "몰리브덴", "텅스텐", "희토류", "핵심 광물", "핵심광물", "전지"],
-    "2811": ["실리카", "규소", "반도체", "태양광", "무기산"],
-    "2849": ["텅스텐", "탄화", "초경", "희토류", "핵심 광물", "핵심광물"],
-    "2926": ["화학", "석유화학", "니트릴", "DOTP", "세이프가드"],
-    "7209": ["철강", "강판", "압연", "관세", "공급과잉"],
-    "7210": ["철강", "강판", "도금", "관세", "공급과잉"],
-    "7213": ["철강", "선재", "봉강", "관세"],
-    "7228": ["철강", "합금강", "형강", "관세"],
-    "7607": ["알루미늄", "배터리", "전지", "박"],
-    "6802": ["석재", "대리석", "건설", "인프라"],
+# 팀 검증(pipeline_final.py)을 거친 키워드 사전. MVP 10개만 채웠다 —
+# build_news()가 mvp.itertuples()만 순회해 이 10개 밖은 쓰이지 않는다.
+HS4_KEYWORD_MAP = {
+    "2811": ["규소", "silica", "silicon", "화학", "chemical"],
+    "2841": ["화학", "케미칼", "chemical", "소재", "배터리", "battery", "산화"],
+    "2849": ["탄화물", "carbide", "텅스텐", "tungsten", "소재"],
+    "2926": ["니트릴", "nitrile", "석유화학", "petrochemical", "화학"],
+    "6802": ["석재", "stone", "대리석", "marble", "건자재", "타일"],
+    "7209": ["냉연", "cold rolled", "철강", "steel", "코일"],
+    "7210": ["철강", "steel", "금속", "metal", "포스코", "posco", "현대제철", "강판"],
+    "7213": ["선재", "wire", "제강", "철강", "steel"],
+    "7228": ["합금", "alloy", "특수강", "metal", "steel", "특강"],
+    "7607": ["알루미늄", "aluminum", "aluminium", "동박", "foil", "박"],
 }
 
 
@@ -407,26 +409,53 @@ def build_news(src: dict, mvp: pd.DataFrame) -> dict:
             "commodity": clean_text(r.cmdltNmKorn),
             "office": clean_text(r.ovrofInfo),
             "category": clean_text(r.infoCl),
+            # hsCdNm 은 실제로는 콤마로 구분된 HS 코드 태그 목록이다("847950,853710,...").
+            # 태그 매칭(1순위)에 쓰고, hs_name 은 그 원문을 그대로 화면 표시용으로 남긴다.
+            "hs_codes_tagged": clean_text(r.hsCdNm),
         })
 
     matches = []
     for r in mvp.itertuples():
-        kws = NEWS_KEYWORDS[r.hs4]
+        hs4 = r.hs4
+        kws = HS4_KEYWORD_MAP.get(hs4, [])
         hits = []
+
+        # 1순위: hsCdNm에 이 HS4가 정확히 태깅된 기사. 가장 신뢰도가 높지만
+        # 태깅된 기사 자체가 드물어(공급망 매칭 60건 중 실제로 걸리는 경우는 극소수)
+        # 대부분은 2순위로 넘어간다.
         for row in rows:
-            blob = " ".join([row["title"], row["industry"], row["hs_name"], row["commodity"]])
-            matched = [k for k in kws if k in blob]
-            if not matched:
-                continue
-            hits.append({
-                "news_id": row["id"],
-                "keywords": matched,
-                "country_match": row["country"] == r.top_country,
-                "score": len(matched) + (1 if row["country"] == r.top_country else 0),
-            })
+            tagged = [c.strip() for c in row["hs_codes_tagged"].split(",") if c.strip()]
+            if any(c.startswith(hs4) for c in tagged):
+                hits.append({
+                    "news_id": row["id"],
+                    "keywords": ["HS 코드 태깅"],
+                    "country_match": row["country"] == r.top_country,
+                    "score": 100 + (1 if row["country"] == r.top_country else 0),
+                })
+
+        # 2순위(1순위가 비었을 때만): 제목·품목명(cmdltNmKorn)에 키워드가 걸리고
+        # 동시에 공급망_관련이 True인 기사만 채택한다(rows는 이미 그 조건으로
+        # 걸러져 있다). "배터리"·"화학" 같은 범용 단어 단독 매칭은 무관한 기사까지
+        # 잡는 오탐이 많아, 대분류(indstCl) 필드는 매칭에 쓰지 않는다.
+        if not hits:
+            # 한 글자 키워드("박" 등)는 빼고 매칭한다 — "박람회"처럼 무관한 단어
+            # 안에 우연히 포함되는 오탐이 나기 쉽다.
+            usable_kws = [k for k in kws if len(k) > 1]
+            for row in rows:
+                blob = f"{row['title']} {row['commodity']}".lower()
+                matched = [k for k in usable_kws if k.lower() in blob]
+                if not matched:
+                    continue
+                hits.append({
+                    "news_id": row["id"],
+                    "keywords": matched,
+                    "country_match": row["country"] == r.top_country,
+                    "score": len(matched) + (1 if row["country"] == r.top_country else 0),
+                })
+
         hits.sort(key=lambda h: -h["score"])
         matches.append({
-            "hs4": r.hs4,
+            "hs4": hs4,
             "top_country": r.top_country,
             "matched": hits,
             "matched_count": len(hits),
@@ -781,6 +810,25 @@ def main() -> None:
                 "impact": "MVP 10개의 42개월 단가 시계열은 '산출 불가'로 표기하고 "
                           "매핑된 ECOS 수입물가 계열을 대신 싣는다. 42개월 실측 시계열과 "
                           "국가별 대체 공급국은 원자료가 있는 비철금속 10개 품목에서 보여준다.",
+            },
+            {
+                "key": "news_match",
+                "title": "뉴스 매칭 로직 교체 — HS 코드 태깅 우선, 키워드는 AND 조건",
+                "body": "이전에는 저장소 자체 키워드 사전(NEWS_KEYWORDS)으로 제목·업종·HS품목명·상세품목명 "
+                        "네 필드를 통틀어 느슨하게 매칭했다. 그 결과 '건설'·'인프라' 같은 범용 키워드가 "
+                        "니켈 채굴 쿼터, 미국 항만 인프라 투자처럼 무관한 기사까지 6802(가공용 석재) 매칭으로 "
+                        "잡아냈다. 팀에서 검증한 pipeline_final.py 로직으로 교체했다 — 1순위는 hsCdNm에 이 "
+                        "HS4가 정확히 태깅된 기사, 2순위(1순위가 없을 때만)는 제목·품목명(cmdltNmKorn) 두 "
+                        "필드에서만 키워드가 걸리고 동시에 공급망_관련이 True인 기사만 채택한다. 업종 "
+                        "대분류 필드는 매칭에서 뺐고, 한 글자 키워드는 무관한 단어에 우연히 포함되는 오탐이 "
+                        "잦아 매칭에서 제외했다.",
+                "impact": f"품목–뉴스 연결이 87건에서 "
+                          f"{sum(m['matched_count'] for m in news['item_matches'])}건으로 줄었다. "
+                          f"{', '.join(m['hs4'] for m in news['item_matches'] if m['matched_count'] == 0) or '없음'}"
+                          "은 이 조건에서 매칭되는 기사가 없어 news_hits=0이다 — 데이터가 없는 게 아니라 "
+                          "공급망 매칭 60건 안에 해당 품목과 직결되는 기사가 실제로 없다는 뜻이다. "
+                          "2811·6802는 예전의 느슨한 매칭 때문에 3계층 경보에 잘못 포함돼 있었는데, "
+                          "이번 교체로 경보 목록에서 빠졌다(거짓 양성 제거).",
             },
             {
                 "key": "comtrade",
