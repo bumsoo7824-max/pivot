@@ -479,6 +479,58 @@ def build_news(src: dict, mvp: pd.DataFrame) -> dict:
     }
 
 
+# ───────────────────────────────────────────────── Google News (실시간 탐지, KOTRA와 별도)
+# fetch_google_news.py 산출물. KOTRA 해외시장뉴스(무역관 큐레이션, 신뢰도 높음·커버리지
+# 좁음·갱신 느림)와는 역할이 다르다 — 전 세계 매체를 RSS로 훑어 커버리지는 넓지만
+# 사람이 걸러내지 않은 원자료라 노이즈가 많다. 그래서 news_hits(KOTRA)와 절대 합산하지
+# 않고, google_news_hits로 완전히 분리해 "실시간 탐지 — 교차검증 필요" 라벨을 붙여 보여준다.
+GOOGLE_NEWS_PATH = RAW / "data" / "google_news.parquet"
+
+
+def build_google_news(mvp: pd.DataFrame) -> dict:
+    log("[4-1] Google News (실시간 탐지, 별도 소스)")
+    if not GOOGLE_NEWS_PATH.exists():
+        log(f"  {GOOGLE_NEWS_PATH.relative_to(ROOT)} 없음 → 비활성. "
+            "fetch_google_news.py를 실행해 수집하기 전까지 이 소스는 화면에 "
+            "'비활성'으로 표시된다.")
+        return {
+            "status": "unavailable",
+            "reason": "fetch_google_news.py 미실행 — google_news.parquet 없음",
+            "label": "실시간 탐지 — 교차검증 필요",
+            "item_matches": [{"hs4": r.hs4, "google_news_hits": 0, "matched": []} for r in mvp.itertuples()],
+        }
+
+    g = pd.read_parquet(GOOGLE_NEWS_PATH)
+    g["hs4_tags"] = g.get("hs4_tags", "").fillna("")
+
+    matches = []
+    for r in mvp.itertuples():
+        hs4 = r.hs4
+        tagged = g[g["hs4_tags"].apply(lambda s: hs4 in [t.strip() for t in s.split(",")])]
+        hits = [
+            {
+                "title": clean_text(row.제목),
+                "url": clean_text(row.링크),
+                "date": clean_text(row.발행일),
+                "countries": clean_text(row.언급국가),
+                "risk_score": int(row.risk_score) if pd.notna(row.risk_score) else None,
+                "risk_direction": clean_text(row.risk_direction),
+            }
+            for row in tagged.itertuples()
+        ]
+        matches.append({"hs4": hs4, "google_news_hits": len(hits), "matched": hits})
+
+    total = sum(m["google_news_hits"] for m in matches)
+    log(f"  google_news.parquet {len(g)}건 수집 · 품목–기사 연결 {total}건")
+    return {
+        "status": "ok",
+        "reason": None,
+        "label": "실시간 탐지 — 교차검증 필요",
+        "total_collected": int(len(g)),
+        "item_matches": matches,
+    }
+
+
 # ───────────────────────────────────────────────── KOTRA 해외법인 지도
 def build_kotra_map(src: dict) -> dict:
     log("[5] KOTRA 해외법인 국가별 집계")
@@ -677,6 +729,7 @@ def main() -> None:
 
     price = build_import_price(src)
     news = build_news(src, mvp)
+    google_news = build_google_news(mvp)
     kmap = build_kotra_map(src)
     customs_alt = build_customs_alternatives(src)
     comtrade = build_comtrade(mvp)
@@ -766,6 +819,7 @@ def main() -> None:
 
     write_json("import_price.json", price)
     write_json("news.json", news)
+    write_json("google_news.json", google_news)
     write_json("kotra_map.json", kmap)
     write_json("customs_alternatives.json", customs_alt)
     write_json("comtrade_alts.json", comtrade)
@@ -835,6 +889,28 @@ def main() -> None:
                           "공급망 매칭 60건 안에 해당 품목과 직결되는 기사가 실제로 없다는 뜻이다. "
                           "2811·6802는 예전의 느슨한 매칭 때문에 3계층 경보에 잘못 포함돼 있었는데, "
                           "이번 교체로 경보 목록에서 빠졌다(거짓 양성 제거).",
+            },
+            {
+                "key": "google_news_role_split",
+                "title": "뉴스 소스 이원화 — KOTRA(경보 판정용) vs Google News(참고용)",
+                "body": "fetch_google_news.py를 새 소스로 추가했다. 두 소스는 역할이 다르다. "
+                        "KOTRA 해외시장뉴스는 무역관이 큐레이션한 자료라 신뢰도는 높지만 90일 기준 "
+                        "884건으로 커버리지가 좁고 갱신이 느리다 — 3계층 경보의 news 신호는 이 소스만 "
+                        "쓴다. Google News RSS는 전 세계 매체를 20개 키워드로 훑어 커버리지는 넓지만 "
+                        "사람이 걸러내지 않은 원자료라 노이즈가 많다 — risk_score로 위험도를 매기긴 "
+                        "하지만 예측이 아니라 규칙 기반 키워드 가중합이다. 그래서 google_news_hits는 "
+                        "news_hits(KOTRA)와 절대 합산하지 않고, 화면에 '실시간 탐지 — 교차검증 필요' "
+                        "라벨을 붙여 완전히 별도 섹션으로 분리했다. 3계층 경보 산출에도 관여하지 않는다.",
+                "impact": (
+                    f"수집 {google_news['total_collected']}건, 품목–기사 연결 "
+                    f"{sum(m['google_news_hits'] for m in google_news['item_matches'])}건."
+                    if google_news["status"] == "ok"
+                    else f"현재 비활성 — {google_news['reason']}. "
+                         "google_news.parquet이 없어도 빌드는 죽지 않고, 화면엔 '비활성'으로 표시된다. "
+                         "이 빌드 환경은 news.google.com으로 나가는 아웃바운드 연결 자체가 프록시 정책으로 "
+                         "차단돼 있어(CONNECT 403), fetch_google_news.py를 실행해도 0건 수집으로 끝난다 — "
+                         "재현 가능하게 확인한 사실이며, 코드가 잘못돼서가 아니다."
+                ),
             },
             {
                 "key": "comtrade",

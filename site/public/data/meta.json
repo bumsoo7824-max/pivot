@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-13T08:14:32.457523+00:00",
+ "generated_at": "2026-08-13T08:25:59.477841+00:00",
  "layers": [
   {
    "tier": "베이스",
@@ -53,6 +53,8 @@
   "  관세청 수입단가지수 겹침 구간: 18개월, 골든타임 10일",
   "[4] KOTRA 해외시장뉴스",
   "  공급망 매칭 뉴스 60건, 품목–뉴스 연결 22건 (중국 기사 9건)",
+  "[4-1] Google News (실시간 탐지, 별도 소스)",
+  "  data/raw/data/google_news.parquet 없음 → 비활성. fetch_google_news.py를 실행해 수집하기 전까지 이 소스는 화면에 '비활성'으로 표시된다.",
   "[5] KOTRA 해외법인 국가별 집계",
   "  84개국 / 9927사",
   "[6] 관세청 원자료 기반 대체 공급국 (HS4 10개)",
@@ -64,9 +66,10 @@
   "  → mvp10.json (9.9 KB)",
   "  → import_price.json (35.6 KB)",
   "  → news.json (34.8 KB)",
+  "  → google_news.json (0.9 KB)",
   "  → kotra_map.json (10.9 KB)",
   "  → customs_alternatives.json (36.1 KB)",
   "  → comtrade_alts.json (14.2 KB)",
-  "  → notes.json (6.8 KB)"
+  "  → notes.json (8.2 KB)"
  ]
 }

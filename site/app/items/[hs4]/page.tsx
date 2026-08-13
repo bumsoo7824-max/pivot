@@ -21,6 +21,8 @@ import {
   fmtPct,
   fmtUsd,
   fmtYm,
+  googleNews,
+  googleNewsByHs4,
   importPrice,
   kotraMap,
   matchByHs4,
@@ -105,6 +107,8 @@ export default async function ItemDetailPage({
   }
 
   const comtradeItem = comtrade.items.find((i) => i.hs4 === hs4);
+  const googleMatch = googleNewsByHs4.get(hs4);
+  const googleNewsHits = googleMatch?.google_news_hits ?? 0;
 
   return (
     <>
@@ -217,6 +221,51 @@ export default async function ItemDetailPage({
       >
         <NewsList rows={related.slice(0, 10)} reasons={reasons} />
         <SourceTag>KOTRA 해외시장뉴스 · {news.match_method}</SourceTag>
+      </Section>
+
+      {/* ── 3-1. 실시간 탐지 (Google News, KOTRA와 완전히 별도 소스) */}
+      <Section
+        title="실시간 탐지 — Google News"
+        hint={
+          googleNews.status === "ok"
+            ? `KOTRA 해외시장뉴스와 별도 소스다. 커버리지는 넓지만 사람이 거르지 않은 원자료라 ${googleNewsHits}건 모두 교차검증이 필요하다.`
+            : undefined
+        }
+        className="mb-6"
+      >
+        {googleNews.status !== "ok" ? (
+          <Unavailable reason={googleNews.reason ?? "수집되지 않음"} />
+        ) : googleNewsHits > 0 ? (
+          <>
+            <ul className="space-y-2">
+              {googleMatch!.matched.slice(0, 10).map((m, i) => (
+                <li
+                  key={`${m.url}-${i}`}
+                  className="rounded-lg border border-amber-500/15 bg-amber-500/[0.04] px-3.5 py-3"
+                >
+                  <a
+                    href={m.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-slate-200 hover:text-pivot-500"
+                  >
+                    {m.title}
+                  </a>
+                  <div className="mt-1.5 flex flex-wrap items-center gap-2 text-[11px] text-slate-500">
+                    <span>{m.date}</span>
+                    {m.countries && <span className="chip border-white/10">{m.countries}</span>}
+                    {m.risk_direction && (
+                      <span className="chip border-amber-500/25 text-amber-400">{m.risk_direction}</span>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <SourceTag>Google News RSS · {googleNews.label} · KOTRA news_hits와 합산하지 않음</SourceTag>
+          </>
+        ) : (
+          <Unavailable reason="이 품목 키워드로 걸린 Google News 기사가 없다." />
+        )}
       </Section>
 
       {/* ── 4. 실행 — 대체 공급국 + 지원기관 연결 */}

@@ -2,6 +2,7 @@
 import blindspotsJson from "@data/blindspots.json";
 import comtradeJson from "@data/comtrade_alts.json";
 import customsAltJson from "@data/customs_alternatives.json";
+import googleNewsJson from "@data/google_news.json";
 import importPriceJson from "@data/import_price.json";
 import kotraMapJson from "@data/kotra_map.json";
 import metaJson from "@data/meta.json";
@@ -203,6 +204,25 @@ export const comtrade = comtradeJson as unknown as {
   }[];
 };
 
+export const googleNews = googleNewsJson as unknown as {
+  status: "ok" | "unavailable";
+  reason: string | null;
+  label: string;
+  total_collected?: number;
+  item_matches: {
+    hs4: string;
+    google_news_hits: number;
+    matched: {
+      title: string;
+      url: string;
+      date: string;
+      countries: string;
+      risk_score: number | null;
+      risk_direction: string;
+    }[];
+  }[];
+};
+
 export const notes = notesJson as unknown as {
   generated_at: string;
   items: { key: string; title: string; body: string; impact: string }[];
@@ -217,6 +237,7 @@ export const meta = metaJson as unknown as {
 // ─────────────────────────────────────────────────────────────── 헬퍼
 export const newsById = new Map(news.news.map((n) => [n.id, n]));
 export const matchByHs4 = new Map(news.item_matches.map((m) => [m.hs4, m]));
+export const googleNewsByHs4 = new Map(googleNews.item_matches.map((m) => [m.hs4, m]));
 export const priceByHs4 = new Map(importPrice.items.map((p) => [p.hs4, p]));
 export const mvpByHs4 = new Map(mvp10.items.map((m) => [m.hs4, m]));
 export const customsByHs4 = new Map(customsAlternatives.items.map((c) => [c.hs4, c]));
