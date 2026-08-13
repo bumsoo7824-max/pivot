@@ -6,7 +6,6 @@ data/raw/ 의 원자료를 읽어 site/public/data/*.json 을 만든다.
 
 usage:
     python scripts/build_static_data.py
-    COMTRADE_KEY=... python scripts/build_static_data.py   # 대체 공급국 1회 수집
 
 설계 원칙
   - 데이터가 없는 항목에 0을 대입하지 않는다. status="unavailable" 과 사유를 남긴다.
@@ -16,7 +15,6 @@ from __future__ import annotations
 
 import html
 import json
-import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -56,9 +54,14 @@ def log(msg: str) -> None:
 
 
 def read_csv_fallback(path: Path) -> pd.DataFrame:
-    """utf-8 → utf-8-sig → cp949 순으로 폴백해 읽는다."""
+    """utf-8-sig → utf-8 → cp949 순으로 폴백해 읽는다.
+
+    utf-8-sig 를 먼저 시도한다 — BOM 유무와 무관하게 안전하게 디코딩되며(BOM 없는
+    파일도 동일하게 읽힌다), 반대로 utf-8을 먼저 쓰면 BOM이 첫 컬럼명 앞에
+    "﻿"로 눌어붙어 컬럼을 못 찾는 문제가 생긴다.
+    """
     last = None
-    for enc in ("utf-8", "utf-8-sig", "cp949"):
+    for enc in ("utf-8-sig", "utf-8", "cp949"):
         try:
             df = pd.read_csv(path, encoding=enc)
             log(f"  read {path.name} (encoding={enc}, rows={len(df)})")
@@ -548,72 +551,87 @@ def build_customs_alternatives(src: dict) -> dict:
     }
 
 
-# ──────────────────────────────────────────────────── UN Comtrade (1회)
+# ──────────────────────────────────── 대체 공급국 (e2e_results_all.csv 사전 산출)
+# KOTRA_현지법인_top5 / _기업명_top5 컬럼은 국가명이 한글이고, 대체국_top10은
+# 영문이라 같은 국가를 서로 다른 표기로 들고 있다. 이 표에 등장하는 한글
+# 국가명만 옮겨 적었다 — 새 국가가 추가되면 이 사전도 함께 늘려야 한다.
+KOTRA_KR_TO_EN = {
+    "네덜란드": "Netherlands", "독일": "Germany", "말레이시아": "Malaysia",
+    "멕시코": "Mexico", "미국": "USA", "베트남": "Viet Nam", "영국": "United Kingdom",
+    "이탈리아": "Italy", "인도": "India", "인도네시아": "Indonesia", "일본": "Japan",
+    "태국": "Thailand", "폴란드": "Poland", "호주": "Australia",
+}
+
+
+def _parse_kotra_offices(cell: object) -> dict[str, int]:
+    """'미국(16); 인도(8)' → {"USA": 16, "India": 8} (영문 국가명 키로 정규화)."""
+    out: dict[str, int] = {}
+    if not isinstance(cell, str) or not cell.strip():
+        return out
+    for part in cell.split(";"):
+        m = re.match(r"(.+?)\((\d+)\)$", part.strip())
+        if not m:
+            continue
+        kr, count = m.group(1).strip(), int(m.group(2))
+        out[KOTRA_KR_TO_EN.get(kr, kr)] = count
+    return out
+
+
+def _parse_kotra_companies(cell: object) -> dict[str, list[str]]:
+    """'금호석유화학(말레이시아); 롯데케미칼 타이탄(말레이시아)' → {"Malaysia": [...]}."""
+    out: dict[str, list[str]] = {}
+    if not isinstance(cell, str) or not cell.strip():
+        return out
+    for part in cell.split(";"):
+        m = re.match(r"(.+)\(([^()]+)\)$", part.strip())
+        if not m:
+            continue
+        name, kr = m.group(1).strip(), m.group(2).strip()
+        out.setdefault(KOTRA_KR_TO_EN.get(kr, kr), []).append(name)
+    return out
+
+
 def build_comtrade(mvp: pd.DataFrame) -> dict:
-    log("[7] UN Comtrade 대체 공급국")
-    key = os.environ.get("COMTRADE_KEY", "").strip()
-    cache = OUT / "comtrade_alts.json"
-
-    def cache_has_valid_names(payload: dict) -> bool:
-        """국가명(country)이 비어 있는 캐시(예: includeDesc 누락 버그로 만들어진 결과)는 신뢰하지 않는다."""
-        alts = [a for it in payload.get("items", []) for a in it.get("alternatives", [])]
-        return bool(alts) and all(a.get("country") for a in alts)
-
-    if cache.exists():
-        prev = json.loads(cache.read_text(encoding="utf-8"))
-        if prev.get("status") == "ok" and cache_has_valid_names(prev):
-            log("  캐시 존재 → 재호출하지 않는다.")
-            return prev
-        if prev.get("status") == "ok":
-            log("  캐시에 국가명이 비어 있음(과거 includeDesc 누락 버그) → 캐시를 버리고 재수집한다.")
-
-    if not key:
-        log("  COMTRADE_KEY 없음 → 이 단계를 건너뛴다. 화면에는 '산출 불가'로 표기된다.")
+    log("[7] 대체 공급국 (팀 내부 사전 산출 결과)")
+    path = RAW / "e2e_results_all.csv"
+    if not path.exists():
+        log("  e2e_results_all.csv 없음 → 이 단계를 건너뛴다. 화면에는 '산출 불가'로 표기된다.")
         return {
             "status": "unavailable",
-            "reason": "COMTRADE_KEY 환경변수 미설정 — API 미호출",
-            "fetched_at": None,
+            "reason": "e2e_results_all.csv 미확보",
+            "source": None,
             "items": [],
         }
-    try:
-        import comtradeapicall  # noqa: F401
-    except ImportError:
-        log("  comtradeapicall 미설치 → 건너뛴다.")
-        return {"status": "unavailable", "reason": "comtradeapicall 패키지 미설치",
-                "fetched_at": None, "items": []}
+
+    df = read_csv_fallback(path)
+    df["hs4"] = df["hs4"].astype(str).str.zfill(4)
 
     items = []
-    try:
-        for r in mvp.itertuples():
-            df = comtradeapicall.getFinalData(
-                subscription_key=key, typeCode="C", freqCode="A", clCode="HS",
-                period="2024", reporterCode=None, cmdCode=r.hs4, flowCode="X",
-                partnerCode="0", partner2Code=None, customsCode=None, motCode=None,
-                maxRecords=500, format_output="JSON", breakdownMode="classic",
-                includeDesc="true",  # 없으면 API가 reporterDesc(국가명)를 응답에서 뺀다
-            )
-            if df is None or len(df) == 0:
-                items.append({"hs4": r.hs4, "status": "empty", "alternatives": []})
-                continue
-            # includeDesc 누락/버전 차이로 reporterDesc가 비어 있을 경우를 대비한 폴백
-            name_col = "reporterDesc" if "reporterDesc" in df.columns else "reporterISO"
-            df = df.dropna(subset=[name_col, "primaryValue"])
-            df = df[~df[name_col].isin(["World", "Rep. of Korea", "China"])]
-            top = df.nlargest(5, "primaryValue")
-            items.append({
-                "hs4": r.hs4, "status": "ok",
-                "alternatives": [
-                    {"country": getattr(t, name_col), "export_usd": int(t.primaryValue)}
-                    for t in top.itertuples()
-                ],
-            })
-        log(f"  {len(items)}개 품목 수집 완료 — 이후 런타임 재호출 없음")
-        return {"status": "ok", "reason": None,
-                "fetched_at": datetime.now(timezone.utc).isoformat(), "items": items}
-    except Exception as exc:  # 네트워크/쿼터 실패 시 사이트는 '산출 불가'로 간다
-        log(f"  수집 실패: {exc}")
-        return {"status": "unavailable", "reason": f"API 호출 실패: {exc}",
-                "fetched_at": None, "items": []}
+    for r in df.itertuples():
+        countries = [c.strip() for c in str(r.대체국_top10).split(",") if c.strip()]
+        offices = _parse_kotra_offices(r.KOTRA_현지법인_top5)
+        companies = _parse_kotra_companies(r.KOTRA_현지법인_기업명_top5)
+        items.append({
+            "hs4": r.hs4,
+            "status": "ok",
+            "alternatives": [
+                {
+                    "rank": i + 1,
+                    "country": c,
+                    # 이 CSV에는 국가별 수출금액이 없다. 0을 넣지 않고 null로 둔다.
+                    "kotra_offices": offices.get(c),
+                    "kotra_companies": companies.get(c, []),
+                }
+                for i, c in enumerate(countries)
+            ],
+        })
+    log(f"  {len(items)}개 품목 · e2e_results_all.csv 기반 (API 실호출 없음)")
+    return {
+        "status": "ok",
+        "reason": None,
+        "source": "e2e_results_all.csv — 팀 내부 사전 산출 결과. UN Comtrade API를 빌드·런타임 어디서도 호출하지 않는다.",
+        "items": items,
+    }
 
 
 # ───────────────────────────────────────────────────────────── 산출물
@@ -766,10 +784,17 @@ def main() -> None:
             },
             {
                 "key": "comtrade",
-                "title": "UN Comtrade 대체 공급국",
-                "body": f"현재 상태: {comtrade['status']} — {comtrade['reason'] or '정상 수집'}. "
-                        "키가 있으면 빌드 시 1회 호출해 캐싱하며 런타임에는 재호출하지 않는다.",
-                "impact": "미수집 시 MVP 상세의 Comtrade 항목은 0이 아니라 '산출 불가'로 표시된다.",
+                "title": "대체 공급국 — 사전 산출 결과",
+                "body": f"현재 상태: {comtrade['status']}"
+                        + (f" — {comtrade['source']}" if comtrade.get("source") else f" — {comtrade['reason'] or ''}")
+                        + ". UN Comtrade API를 실호출하던 이전 방식은 폐기했다 — "
+                          "COMTRADE_KEY가 매일 만료돼 빌드마다 키를 갱신해야 했고, "
+                          "이 환경에서는 comtradeapi.un.org 접속 자체가 막혀 있어 재현이 안 됐다. "
+                          "대신 e2e_results_all.csv(팀 내부에서 미리 뽑아둔 MVP 10개 품목의 대체 공급국 "
+                          "top10 + KOTRA 현지법인 매칭)를 빌드 시점에 읽어 그대로 정적으로 굳힌다.",
+                "impact": "국가별 수출금액은 이 CSV에 없어 표시하지 않는다(0을 대입하지 않는다). "
+                          "국가 순위, KOTRA 현지법인 수·기업명만 채운다. "
+                          "CSV가 없으면 MVP 상세의 이 항목은 0이 아니라 '산출 불가'로 표시된다.",
             },
             {
                 "key": "pps",
@@ -807,7 +832,7 @@ def main() -> None:
             {"tier": "선행②", "source": "KOTRA 해외시장뉴스",
              "role": "실시간 정책·규제 동향",
              "detail": f"90일 {news['total_collected']}건 중 공급망 매칭 {news['supply_chain_matched']}건"},
-            {"tier": "실행", "source": "UN Comtrade + KOTRA 해외법인",
+            {"tier": "실행", "source": "사전 산출 대체 공급국 + KOTRA 해외법인",
              "role": "대체 공급국 발굴 및 지원기관 연결",
              "detail": f"해외법인 {kmap['total_companies']:,}사 / {kmap['country_count']}개국"},
         ],

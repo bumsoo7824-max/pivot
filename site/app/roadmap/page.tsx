@@ -40,8 +40,8 @@ const ITEMS: { phase: string; title: string; status: Status; body: string }[] = 
     status: "partial",
     body:
       comtrade.status === "ok"
-        ? "UN Comtrade 수집분과 관세청 실측을 병행한다."
-        : `관세청 국가별 원자료가 확보된 품목에서는 실측으로 대체 공급국 상위 5개국을 산출한다. UN Comtrade 경로는 현재 ${comtrade.reason ?? "미수집"} 상태이며, 키가 주입되면 빌드 단계에서 1회 수집해 나머지 품목까지 채운다.`,
+        ? "관세청 국가별 원자료가 확보된 품목은 실측으로, MVP 10개 품목은 팀 내부 사전 산출 결과(e2e_results_all.csv)로 대체 공급국 상위 10개국을 채운다. 국가별 수출금액은 사전 산출 자료에 없어 순위만 제공한다."
+        : `관세청 국가별 원자료가 확보된 품목에서는 실측으로 대체 공급국 상위 5개국을 산출한다. MVP 10개 품목의 사전 산출 경로는 현재 ${comtrade.reason ?? "미확보"} 상태다.`,
   },
   {
     phase: "다음",

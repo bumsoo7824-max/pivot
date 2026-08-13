@@ -1,31 +1,77 @@
 {
  "status": "ok",
  "reason": null,
- "fetched_at": "2026-08-06T12:18:40.781720+00:00",
+ "source": "e2e_results_all.csv — 팀 내부 사전 산출 결과. UN Comtrade API를 빌드·런타임 어디서도 호출하지 않는다.",
  "items": [
   {
    "hs4": "2841",
    "status": "ok",
    "alternatives": [
     {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 2387070510
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "USA",
-     "export_usd": 134167171
-    },
-    {
+     "rank": 2,
      "country": "Poland",
-     "export_usd": 110617124
+     "kotra_offices": 2,
+     "kotra_companies": []
     },
     {
+     "rank": 3,
+     "country": "USA",
+     "kotra_offices": 16,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
      "country": "Netherlands",
-     "export_usd": 76965713
+     "kotra_offices": 1,
+     "kotra_companies": []
     },
     {
+     "rank": 5,
+     "country": "United Kingdom",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "Slovenia",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Sweden",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
      "country": "India",
-     "export_usd": 72545865
+     "kotra_offices": 8,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "Malaysia",
+     "kotra_offices": 7,
+     "kotra_companies": [
+      "금호석유화학",
+      "롯데케미칼 타이탄",
+      "롯데우베",
+      "한화케미칼말레이시아",
+      "LG화학 말레이시아 법인"
+     ]
+    },
+    {
+     "rank": 10,
+     "country": "Luxembourg",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -34,24 +80,71 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 4035452781
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 2325737581
+     "kotra_offices": 8,
+     "kotra_companies": []
     },
     {
+     "rank": 2,
+     "country": "USA",
+     "kotra_offices": 23,
+     "kotra_companies": []
+    },
+    {
+     "rank": 3,
+     "country": "Sweden",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "Austria",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 5,
      "country": "Belgium",
-     "export_usd": 2180350622
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "Netherlands",
-     "export_usd": 2119914507
+     "rank": 6,
+     "country": "Mexico",
+     "kotra_offices": 4,
+     "kotra_companies": []
     },
     {
-     "country": "France",
-     "export_usd": 2112286568
+     "rank": 7,
+     "country": "India",
+     "kotra_offices": 14,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Germany",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "Viet Nam",
+     "kotra_offices": 24,
+     "kotra_companies": [
+      "펠릭스 메탈 테크",
+      "포스코 건설 하노이지사"
+     ]
+    },
+    {
+     "rank": 10,
+     "country": "Australia",
+     "kotra_offices": null,
+     "kotra_companies": [
+      "포스코인터내셔널 시드니지사",
+      "포스코 호주법인",
+      "호주세넥스법인"
+     ]
     }
    ]
   },
@@ -60,24 +153,70 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 1326246592
-    },
-    {
-     "country": "Italy",
-     "export_usd": 813563680
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 761527354
+     "kotra_offices": 2,
+     "kotra_companies": []
     },
     {
-     "country": "USA",
-     "export_usd": 718071726
-    },
-    {
+     "rank": 2,
      "country": "Sweden",
-     "export_usd": 519961440
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 3,
+     "country": "USA",
+     "kotra_offices": 11,
+     "kotra_companies": [
+      "현대제철 아메리카법인",
+      "휴스틸",
+      "아주베스틸",
+      "산동금속 미국 판매법인",
+      "일진제강 미주지사"
+     ]
+    },
+    {
+     "rank": 4,
+     "country": "Austria",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 5,
+     "country": "Germany",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "France",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Italy",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Spain",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "Israel",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "United Kingdom",
+     "kotra_offices": 1,
+     "kotra_companies": []
     }
    ]
   },
@@ -86,24 +225,71 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 1689187839
-    },
-    {
-     "country": "Italy",
-     "export_usd": 747195133
-    },
-    {
-     "country": "USA",
-     "export_usd": 651623644
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 556911258
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "Türkiye",
-     "export_usd": 542141077
+     "rank": 2,
+     "country": "Thailand",
+     "kotra_offices": 1,
+     "kotra_companies": [
+      "그린칼톤박스"
+     ]
+    },
+    {
+     "rank": 3,
+     "country": "Germany",
+     "kotra_offices": 1,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "Viet Nam",
+     "kotra_offices": 5,
+     "kotra_companies": [
+      "알루코 그룹 현대 알루미늄 비나",
+      "에스코넥 박장 비나",
+      "동아알루미늄",
+      "알루미늄 한비엣"
+     ]
+    },
+    {
+     "rank": 5,
+     "country": "USA",
+     "kotra_offices": 1,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "Malaysia",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Austria",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Netherlands",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "France",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Philippines",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -112,24 +298,71 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 1280788671
-    },
-    {
-     "country": "Malaysia",
-     "export_usd": 836724789
-    },
-    {
-     "country": "Italy",
-     "export_usd": 679094577
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 575468207
+     "kotra_offices": 4,
+     "kotra_companies": []
     },
     {
-     "country": "Türkiye",
-     "export_usd": 560899744
+     "rank": 2,
+     "country": "Spain",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 3,
+     "country": "United Kingdom",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "Germany",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 5,
+     "country": "Malaysia",
+     "kotra_offices": 2,
+     "kotra_companies": [
+      "고려제강 말레이시아",
+      "삼화스틸"
+     ]
+    },
+    {
+     "rank": 6,
+     "country": "India",
+     "kotra_offices": 6,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "USA",
+     "kotra_offices": 14,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Viet Nam",
+     "kotra_offices": 10,
+     "kotra_companies": [
+      "대한강재",
+      "하노이 유스틸 (유)",
+      "주식회사 유진건철 베트남"
+     ]
+    },
+    {
+     "rank": 9,
+     "country": "Netherlands",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Saudi Arabia",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -138,24 +371,70 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 700902804
-    },
-    {
-     "country": "USA",
-     "export_usd": 425129082
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 406563103
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "United Kingdom",
-     "export_usd": 311159206
+     "rank": 2,
+     "country": "USA",
+     "kotra_offices": 18,
+     "kotra_companies": []
     },
     {
-     "country": "Netherlands",
-     "export_usd": 250868165
+     "rank": 3,
+     "country": "Germany",
+     "kotra_offices": 7,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "Malaysia",
+     "kotra_offices": 6,
+     "kotra_companies": [
+      "금호석유화학",
+      "롯데케미칼 타이탄",
+      "한화케미칼말레이시아",
+      "LG화학 말레이시아 법인",
+      "SK케미칼 말레이시아"
+     ]
+    },
+    {
+     "rank": 5,
+     "country": "Israel",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "France",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Mexico",
+     "kotra_offices": 2,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Jordan",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "India",
+     "kotra_offices": 8,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Singapore",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -164,24 +443,70 @@
    "status": "ok",
    "alternatives": [
     {
-     "country": "Germany",
-     "export_usd": 133875083
-    },
-    {
-     "country": "USA",
-     "export_usd": 77091252
-    },
-    {
-     "country": "Brazil",
-     "export_usd": 61963752
-    },
-    {
-     "country": "South Africa",
-     "export_usd": 61164599
-    },
-    {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 51298978
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 2,
+     "country": "Norway",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 3,
+     "country": "Austria",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "Viet Nam",
+     "kotra_offices": 3,
+     "kotra_companies": [
+      "효성 광남",
+      "성신소재",
+      "성신베트남"
+     ]
+    },
+    {
+     "rank": 5,
+     "country": "Germany",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "Canada",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "India",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "USA",
+     "kotra_offices": 1,
+     "kotra_companies": [
+      "디엔에이치 아메리카"
+     ]
+    },
+    {
+     "rank": 9,
+     "country": "France",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Russian Federation",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -190,24 +515,70 @@
    "status": "ok",
    "alternatives": [
     {
+     "rank": 1,
+     "country": "Japan",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 2,
      "country": "Germany",
-     "export_usd": 431642413
+     "kotra_offices": 6,
+     "kotra_companies": []
     },
     {
+     "rank": 3,
+     "country": "India",
+     "kotra_offices": 2,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
      "country": "USA",
-     "export_usd": 423239610
+     "kotra_offices": 8,
+     "kotra_companies": [
+      "미원화학",
+      "엘지 캠 라이프 사이언스 이노베이션 센터",
+      "동양제철화학",
+      "엘지화학 영업사무소",
+      "엘지 나노에이치투오"
+     ]
     },
     {
-     "country": "Other Asia, nes",
-     "export_usd": 313297654
-    },
-    {
-     "country": "France",
-     "export_usd": 288614526
-    },
-    {
+     "rank": 5,
      "country": "Netherlands",
-     "export_usd": 198202315
+     "kotra_offices": 1,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "Spain",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Italy",
+     "kotra_offices": 1,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Switzerland",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "France",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "United Kingdom",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -216,24 +587,70 @@
    "status": "ok",
    "alternatives": [
     {
+     "rank": 1,
      "country": "Japan",
-     "export_usd": 1095860368
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "Other Asia, nes",
-     "export_usd": 837098441
-    },
-    {
-     "country": "Germany",
-     "export_usd": 808553915
-    },
-    {
-     "country": "Belgium",
-     "export_usd": 762523651
-    },
-    {
+     "rank": 2,
      "country": "USA",
-     "export_usd": 690884834
+     "kotra_offices": 9,
+     "kotra_companies": []
+    },
+    {
+     "rank": 3,
+     "country": "Sweden",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "India",
+     "kotra_offices": 5,
+     "kotra_companies": []
+    },
+    {
+     "rank": 5,
+     "country": "Thailand",
+     "kotra_offices": 6,
+     "kotra_companies": [
+      "실스틸",
+      "KG동부태국제철",
+      "동국제강 태국법인",
+      "신스틸 타일랜드",
+      "포스코TCS"
+     ]
+    },
+    {
+     "rank": 6,
+     "country": "United Kingdom",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Indonesia",
+     "kotra_offices": 1,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Uzbekistan",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "Germany",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Austria",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   },
@@ -242,24 +659,70 @@
    "status": "ok",
    "alternatives": [
     {
+     "rank": 1,
+     "country": "Viet Nam",
+     "kotra_offices": 14,
+     "kotra_companies": [
+      "디에이치텍스타일",
+      "텍타일 인더스트리얼",
+      "키스톤 네트웍스",
+      "지알비나 텍스타일",
+      "국진 주식회사"
+     ]
+    },
+    {
+     "rank": 2,
      "country": "Italy",
-     "export_usd": 1793273213
+     "kotra_offices": null,
+     "kotra_companies": []
     },
     {
-     "country": "Türkiye",
-     "export_usd": 1281986049
-    },
-    {
-     "country": "India",
-     "export_usd": 1124072562
-    },
-    {
-     "country": "Brazil",
-     "export_usd": 915339990
-    },
-    {
+     "rank": 3,
      "country": "Egypt",
-     "export_usd": 457341009
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 4,
+     "country": "India",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 5,
+     "country": "Oman",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 6,
+     "country": "Pakistan",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 7,
+     "country": "Türkiye",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 8,
+     "country": "Greece",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 9,
+     "country": "Spain",
+     "kotra_offices": null,
+     "kotra_companies": []
+    },
+    {
+     "rank": 10,
+     "country": "Brazil",
+     "kotra_offices": null,
+     "kotra_companies": []
     }
    ]
   }

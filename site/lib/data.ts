@@ -188,8 +188,17 @@ export const customsAlternatives = customsAltJson as unknown as {
 export const comtrade = comtradeJson as unknown as {
   status: "ok" | "unavailable";
   reason: string | null;
-  fetched_at: string | null;
-  items: { hs4: string; status: string; alternatives: { country: string; export_usd: number }[] }[];
+  source: string | null;
+  items: {
+    hs4: string;
+    status: string;
+    alternatives: {
+      rank: number;
+      country: string;
+      kotra_offices: number | null;
+      kotra_companies: string[];
+    }[];
+  }[];
 };
 
 export const notes = notesJson as unknown as {

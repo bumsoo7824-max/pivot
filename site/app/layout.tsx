@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/roadmap/" className="hover:text-slate-300">
                 로드맵
               </Link>
-              <span>관세청 · 한국은행 ECOS · KOTRA · UN Comtrade</span>
+              <span>관세청 · 한국은행 ECOS · KOTRA</span>
             </div>
           </div>
         </footer>
