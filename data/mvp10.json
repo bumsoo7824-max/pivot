@@ -23,7 +23,7 @@
    "grade": "RED",
    "ecos_item_name": "기초무기화합물",
    "latest_mom": 3.174894,
-   "news_matched": 14,
+   "news_matched": 6,
    "signals": {
     "price": {
      "triggered": true,
@@ -37,7 +37,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 14,
+     "value": 6,
      "label": "정책·규제 동향"
     }
    },
@@ -58,7 +58,7 @@
    "grade": "RED",
    "ecos_item_name": "표면처리강재",
    "latest_mom": 2.487447,
-   "news_matched": 11,
+   "news_matched": 5,
    "signals": {
     "price": {
      "triggered": true,
@@ -72,7 +72,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 11,
+     "value": 5,
      "label": "정책·규제 동향"
     }
    },
@@ -93,7 +93,7 @@
    "grade": "RED",
    "ecos_item_name": "형강",
    "latest_mom": 2.715333,
-   "news_matched": 11,
+   "news_matched": 1,
    "signals": {
     "price": {
      "triggered": true,
@@ -107,7 +107,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 11,
+     "value": 1,
      "label": "정책·규제 동향"
     }
    },
@@ -128,7 +128,7 @@
    "grade": "RED",
    "ecos_item_name": "알루미늄1차제품",
    "latest_mom": 3.017629,
-   "news_matched": 10,
+   "news_matched": 1,
    "signals": {
     "price": {
      "triggered": true,
@@ -142,7 +142,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 10,
+     "value": 1,
      "label": "정책·규제 동향"
     }
    },
@@ -163,7 +163,7 @@
    "grade": "RED",
    "ecos_item_name": "철근및봉강",
    "latest_mom": 2.437503,
-   "news_matched": 11,
+   "news_matched": 4,
    "signals": {
     "price": {
      "triggered": true,
@@ -177,7 +177,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 11,
+     "value": 4,
      "label": "정책·규제 동향"
     }
    },
@@ -198,7 +198,7 @@
    "grade": "RED",
    "ecos_item_name": "기초무기화합물",
    "latest_mom": 3.174894,
-   "news_matched": 4,
+   "news_matched": 0,
    "signals": {
     "price": {
      "triggered": true,
@@ -211,12 +211,12 @@
      "label": "HHI 구조 취약"
     },
     "news": {
-     "triggered": true,
-     "value": 4,
+     "triggered": false,
+     "value": 0,
      "label": "정책·규제 동향"
     }
    },
-   "alert": true
+   "alert": false
   },
   {
    "hs4": "2849",
@@ -233,7 +233,7 @@
    "grade": "RED",
    "ecos_item_name": "기초무기화합물",
    "latest_mom": 3.174894,
-   "news_matched": 7,
+   "news_matched": 1,
    "signals": {
     "price": {
      "triggered": true,
@@ -247,7 +247,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 7,
+     "value": 1,
      "label": "정책·규제 동향"
     }
    },
@@ -268,7 +268,7 @@
    "grade": "RED",
    "ecos_item_name": "기타기초유기화합물",
    "latest_mom": -21.489288,
-   "news_matched": 2,
+   "news_matched": 0,
    "signals": {
     "price": {
      "triggered": false,
@@ -281,8 +281,8 @@
      "label": "HHI 구조 취약"
     },
     "news": {
-     "triggered": true,
-     "value": 2,
+     "triggered": false,
+     "value": 0,
      "label": "정책·규제 동향"
     }
    },
@@ -303,7 +303,7 @@
    "grade": "RED",
    "ecos_item_name": "냉간압연강재",
    "latest_mom": 2.843535,
-   "news_matched": 11,
+   "news_matched": 4,
    "signals": {
     "price": {
      "triggered": true,
@@ -317,7 +317,7 @@
     },
     "news": {
      "triggered": true,
-     "value": 11,
+     "value": 4,
      "label": "정책·규제 동향"
     }
    },
@@ -338,7 +338,7 @@
    "grade": "RED",
    "ecos_item_name": "석제품",
    "latest_mom": 1.853492,
-   "news_matched": 6,
+   "news_matched": 0,
    "signals": {
     "price": {
      "triggered": true,
@@ -351,12 +351,12 @@
      "label": "HHI 구조 취약"
     },
     "news": {
-     "triggered": true,
-     "value": 6,
+     "triggered": false,
+     "value": 0,
      "label": "정책·규제 동향"
     }
    },
-   "alert": true
+   "alert": false
   }
  ]
 }
