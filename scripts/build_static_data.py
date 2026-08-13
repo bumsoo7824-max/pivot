@@ -187,6 +187,9 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         "1위국비중": "top_share",
     })
 
+    df["code_level"] = "hs4"
+    df["parent_hs4"] = None
+
     # 사각지대는 원본 step4_blind_spots.csv 가 단일 출처다. 임계값으로 역산하지 않는다.
     bs = src["blind_spots"].copy()
     bs["hs4"] = bs["hs4"].astype(str).str.zfill(4)
@@ -208,16 +211,77 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         orphan["ksic_mid"] = orphan["hs4"].map(ksic)
         orphan["gov_managed"] = False
         orphan["is_blindspot"] = True
+        orphan["code_level"] = "hs4"
+        orphan["parent_hs4"] = None
         df = pd.concat([df, orphan[df.columns]], ignore_index=True)
         log(f"  모집단 밖 사각지대 품목 {len(orphan_ids)}건을 원본에서 보충: {sorted(orphan_ids)}")
 
+    # HS6 승격 — 12개월 재검증으로 "구조적 분기"가 확정된 hs4를, 그 hs4 라벨 하나로
+    # 뭉뚱그리는 대신 실제 hs6 자식으로 쪼갠다. MVP10 고정 멤버(7210·7213)는 ECOS
+    # 물가매핑·e2e_results_all.csv·경보 이력이 전부 hs4 단위로 고정돼 있어 제외한다
+    # — 이 두 hs4는 원래 값 그대로 사각지대에 남는다.
+    promo_path = RAW / "data" / "hs6_promoted_info.csv"
+    hs6_swap_hs4: set[str] = set()
+    hs6_added_codes: list[str] = []
+    if promo_path.exists():
+        promo = pd.read_csv(promo_path, dtype={"hs4": str, "hs6": str})
+        promo["hs4"] = promo["hs4"].str.zfill(4)
+        promo["hs6"] = promo["hs6"].str.zfill(6)
+        PROTECTED_MVP10_HS4 = {"7210", "7213"}
+        hs6_swap_hs4 = set(promo["hs4"]) - PROTECTED_MVP10_HS4
+        promo = promo[promo["hs4"].isin(hs6_swap_hs4)].copy()
+
+        # hs6 단위 신성질 업종은 crosswalk_hs_temper.parquet(HS10)의 앞 6자리로 재집계한다
+        # — 기존 cw(hs4 dedup)로는 hs6 세분류를 구분 못 한다.
+        cw10 = src["crosswalk"].copy()
+        cw10["hs6"] = cw10["HSK10"].astype(str).str.zfill(10).str[:6]
+        hs6_sector = cw10.drop_duplicates("hs6").set_index("hs6")
+
+        promo["item_name"] = promo["품목명"]
+        promo["hhi"] = promo["HHI"]
+        promo["top_country"] = promo["1위국"]
+        promo["top_country_code"] = promo["top_country"].apply(
+            lambda n: (coord_lookup(n) or (None, None, None))[2]
+        )
+        promo["top_share"] = promo["1위국비중"]
+        promo["import_usd"] = promo["수입액합계"]
+        promo["grade"] = promo["위험등급"]
+        promo["hs4_name"] = promo["item_name"]
+        promo["sector"] = promo["hs6"].map(hs6_sector["신성질_중분류명"])
+        promo["sector_major"] = promo["hs6"].map(hs6_sector["신성질_대분류명"])
+        promo["ksic_mid"] = None  # KSIC은 hs4 단위 브리지뿐이라 hs6 승격 품목엔 대응이 없다
+        name_blob6 = promo["item_name"].fillna("")
+        promo["gov_managed"] = name_blob6.apply(lambda s: any(k in s for k in keywords))
+        promo["is_blindspot"] = True
+        promo["code_level"] = "hs6"
+        promo["parent_hs4"] = promo["hs4"]
+        promo["hs4"] = promo["hs6"]  # 이후 로직은 "hs4" 컬럼을 공통 식별자로 쓴다
+        promo["country_count"] = None
+        # df의 "건당수입액"·"레코드수"는 hs6_promoted_info.csv엔 없다 — 후자는
+        # "거래레코드수"로 이름만 다르고, 전자는 그 값으로 나눠 근사한다.
+        promo["레코드수"] = promo["거래레코드수"]
+        promo["건당수입액"] = promo["import_usd"] / promo["거래레코드수"].replace(0, pd.NA)
+
+        df = df[~df["hs4"].isin(hs6_swap_hs4)].copy()
+        df = pd.concat([df, promo[df.columns]], ignore_index=True)
+        blind_ids = (blind_ids - hs6_swap_hs4) | set(promo["hs4"])
+        hs6_added_codes = sorted(promo["hs4"])
+        log(f"  HS6 승격: {len(hs6_swap_hs4)}개 hs4({sorted(hs6_swap_hs4)}) → "
+            f"{len(promo)}개 hs6로 치환. MVP10 고정 멤버 {sorted(PROTECTED_MVP10_HS4)}는 제외.")
+    else:
+        log("  hs6_promoted_info.csv 없음 → HS6 승격 비활성, 256개 hs4 그대로 유지")
+
     blind = df[df["is_blindspot"]].copy()
     china = int((blind["top_country"] == "중국").sum())
-    log(f"  사각지대(원본 CSV): {len(blind)}건 / 모집단 {len(df)}건, 1위국=중국 {china}건 "
+    log(f"  사각지대: {len(blind)}건 / 모집단 {len(df)}건, 1위국=중국 {china}건 "
         f"({china / len(blind) * 100:.1f}%)")
     log(f"  위험등급 분포: {blind['grade'].value_counts().to_dict()}")
-    if len(blind) != len(bs):
-        raise RuntimeError(f"검증 실패 — 원본 {len(bs)}행 중 {len(blind)}행만 반영됨")
+    expected_count = len(bs) - len(hs6_swap_hs4) + len(hs6_added_codes)
+    if len(blind) != expected_count:
+        raise RuntimeError(
+            f"검증 실패 — 원본 {len(bs)}행 - HS6 승격 치환 {len(hs6_swap_hs4)}행 "
+            f"+ hs6 {len(hs6_added_codes)}행 = {expected_count}행이어야 하는데 {len(blind)}행"
+        )
 
     # 참고 검증: 원본 목록이 임계 규칙(HHI ≥ 0.25 OR 1위국비중 ≥ 0.40)과 어떻게 대응하는지 기록만 남긴다.
     rule_ids = set(df[(df["hhi"] >= HHI_THRESHOLD) | (df["top_share"] >= TOP_SHARE_THRESHOLD)]["hs4"])
@@ -251,6 +315,9 @@ def build_blindspots(src: dict) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         "ksic_covered": covered,
         "gov_managed_count": int(df["gov_managed"].sum()),
         "grade_counts": {str(k): int(v) for k, v in blind["grade"].value_counts().items()},
+        "hs6_swapped_hs4_count": len(hs6_swap_hs4),
+        "hs6_added_count": len(hs6_added_codes),
+        "hs6_protected_mvp10": ["7210", "7213"] if promo_path.exists() else [],
     }
     return df, mvp, stats
 
@@ -749,11 +816,14 @@ def main() -> None:
             "top_country_code": r.top_country_code,
             "top_share": num(r.top_share),
             "import_usd": int(r.import_usd),
-            "country_count": int(r.country_count),
+            "country_count": int(r.country_count) if pd.notna(r.country_count) else None,
             "is_blindspot": bool(r.is_blindspot),
             "gov_managed": bool(r.gov_managed),
             # 위험등급도 원본 CSV 값이다. 사각지대가 아닌 품목에는 등급이 없다.
             "grade": r.grade if isinstance(r.grade, str) else None,
+            # HS6 승격 품목 구분용. code_level="hs6"일 때 parent_hs4가 원래 hs4를 가리킨다.
+            "code_level": r.code_level,
+            "parent_hs4": r.parent_hs4 if isinstance(r.parent_hs4, str) else None,
         })
     sectors = (universe[universe["is_blindspot"]]["sector"].value_counts().to_dict())
     top_countries = (universe[universe["is_blindspot"]]["top_country"].value_counts().to_dict())
@@ -768,6 +838,9 @@ def main() -> None:
         "china_count": stats["china_count"],
         "china_share": stats["china_share"],
         "grade_counts": stats["grade_counts"],
+        "hs6_swapped_hs4_count": stats["hs6_swapped_hs4_count"],
+        "hs6_added_count": stats["hs6_added_count"],
+        "hs6_protected_mvp10": stats["hs6_protected_mvp10"],
         "sector_axis": "관세청 신성질 중분류",
         "sector_counts": {k: int(v) for k, v in sectors.items()},
         "top_country_counts": {k: int(v) for k, v in top_countries.items()},
@@ -849,17 +922,42 @@ def main() -> None:
             {
                 "key": "blindspot",
                 "title": f"사각지대 {stats['blindspot_count']}개의 출처",
-                "body": f"사각지대는 원본 목록 step4_blind_spots.csv({stats['blindspot_count']}행)를 "
-                        "단일 출처로 그대로 싣는다. 임계값으로 역산하지 않는다. "
+                "body": f"사각지대는 원본 목록 step4_blind_spots.csv(256행)에서 HS6 승격으로 "
+                        f"hs4 {stats['hs6_swapped_hs4_count']}행을 hs6_promoted_info.csv의 "
+                        f"hs6 {stats['hs6_added_count']}행으로 치환해 최종 {stats['blindspot_count']}개를 "
+                        "싣는다(자세한 승격 경위는 04번 항목). 임계값으로 역산하지 않는다. "
                         f"1위국=중국 {stats['china_count']}개({stats['china_share'] * 100:.1f}%), "
                         f"위험등급 " + ", ".join(f"{k} {v}건" for k, v in stats["grade_counts"].items()) + ". "
-                        f"산점도의 배경 점은 step3_hhi_all.parquet의 HS4 {stats['universe']}개 모집단이며, "
-                        "이 중 원본 목록에 든 품목을 사각지대로 강조한다. "
+                        f"산점도의 배경 점은 step3_hhi_all.parquet의 HS4 339개 모집단에 HS6 승격·모집단 "
+                        f"밖 보충분을 더한 {stats['universe']}개이며, "
+                        "이 중 원본 목록(HS6 승격 반영분 포함)에 든 품목을 사각지대로 강조한다. "
                         "원본 목록에서 중국 1위·HHI ≥ 0.50 품목의 수입액 상위 10개를 뽑으면 "
                         "mvp_10.csv 10개 품목과 정확히 일치한다(재검증 통과).",
                 "impact": f"산점도의 임계선 두 개(HHI {HHI_THRESHOLD} / 1위국비중 "
                           f"{TOP_SHARE_THRESHOLD})는 읽기 보조용 참조선이며 판정 기준이 아니다. "
                           "이전에 쓰던 역산 스크리닝 로직은 제거했다.",
+            },
+            {
+                "key": "hs6_promotion",
+                "title": f"HS6 승격 — hs4 {stats['hs6_swapped_hs4_count']}개를 hs6 {stats['hs6_added_count']}개로 치환",
+                "body": "12개월 재검증으로, RED 등급 hs4 21개 중 실제로는 리스크가 그 hs4 전체가 "
+                        "아니라 특정 hs6 자식에서만 나타난다는 게 확인됐다(hs6_promoted_info.csv, "
+                        "팀 제공). 예를 들어 2404(담배 관련)를 hs6 3개로 쪼개면 1위국이 스웨덴·"
+                        "인도네시아·독일로 전부 다르다 — hs4 하나로 뭉뚱그리면 '1위국이 어디냐'는 "
+                        "질문 자체가 성립하지 않는다. HHI·1위국·수입액은 202606 단월 관세청 실측이고, "
+                        "일부는 단월 실적이 0이라 12개월 합산치로 대체 계산했다(원본 CSV의 '비고' 필드에 "
+                        "표기). 41개 중 15개는 '거래레코드수'가 적어 원본 CSV가 자체적으로 "
+                        "'저신뢰(소액/소건수)'로 표기했는데, 그래도 걸러내지 않고 그대로 실었다 — "
+                        "위험등급 자체는 RED로 확정된 값이기 때문이다. 업종축(신성질 중분류)은 "
+                        "crosswalk_hs_temper.parquet를 hs6 앞 6자리로 재집계해 새로 만들었다.",
+                "impact": f"MVP10 고정 멤버인 HS {', '.join(stats['hs6_protected_mvp10'])}는 이번 승격에서 "
+                          "제외했다 — ECOS 물가 매핑·e2e_results_all.csv(KOTRA 매칭)·3계층 경보 이력이 "
+                          "전부 hs4 단위로 고정돼 있어, 이 데이터만으로 MVP10 자체를 hs6 단위로 재구성할 "
+                          "수는 없다. 두 hs4는 원래 그대로 사각지대에 남는다. 그 결과 사각지대는 "
+                          f"256개(hs4 전용) → {stats['blindspot_count']}개"
+                          f"(hs4 {256 - stats['hs6_swapped_hs4_count']}개 + hs6 {stats['hs6_added_count']}개)로 "
+                          "바뀌었다. 산점도·1위국 분포 표에서 hs6 항목은 HS6 배지로 표시하고, 원래 hs4를 "
+                          "함께 밝힌다.",
             },
             {
                 "key": "customs_scope",

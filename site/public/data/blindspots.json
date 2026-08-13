@@ -5,53 +5,62 @@
   "top_share": 0.4,
   "note": "참조선 — 판정 기준이 아니라 읽기 보조선"
  },
- "universe_count": 339,
- "blindspot_count": 256,
- "china_count": 149,
- "china_share": 0.582,
+ "universe_count": 355,
+ "blindspot_count": 272,
+ "china_count": 150,
+ "china_share": 0.5515,
  "grade_counts": {
   "YELLOW": 160,
-  "RED": 96
+  "RED": 112
  },
+ "hs6_swapped_hs4_count": 19,
+ "hs6_added_count": 35,
+ "hs6_protected_mvp10": [
+  "7210",
+  "7213"
+ ],
  "sector_axis": "관세청 신성질 중분류",
  "sector_counts": {
-  "화학공업제품": 124,
-  "광산물": 76,
-  "철강 및 금속제품": 52,
+  "화학공업제품": 133,
+  "광산물": 81,
+  "철강 및 금속제품": 53,
   "기계류": 2,
-  "직접소비재": 1,
+  "직접소비재": 2,
   "동식물성 연·원료": 1
  },
  "top_country_counts": {
-  "중국": 149,
-  "일본": 31,
-  "미국": 21,
-  "호주": 8,
+  "중국": 150,
+  "일본": 30,
+  "미국": 23,
+  "인도네시아": 7,
   "베트남": 7,
-  "인도네시아": 5,
+  "호주": 6,
+  "독일": 6,
   "태국": 4,
+  "대만": 3,
   "멕시코": 3,
-  "말레이시아": 2,
+  "스웨덴": 3,
+  "프랑스": 2,
   "칠레": 2,
   "튀르키예": 2,
-  "대만": 2,
+  "스페인": 2,
   "인도": 2,
   "노르웨이": 2,
-  "스웨덴": 2,
+  "말레이시아": 2,
+  "싱가포르": 2,
+  "네덜란드": 2,
   "뉴 칼레도니아": 1,
-  "프랑스": 1,
-  "네덜란드": 1,
-  "캐나다": 1,
-  "스페인": 1,
   "몽골": 1,
   "러시아 연방": 1,
   "남아프리카공화국": 1,
   "벨기에": 1,
-  "독일": 1,
   "체코공화국": 1,
   "라트비아": 1,
   "페루": 1,
-  "싱가포르": 1
+  "브라질": 1,
+  "캐나다": 1,
+  "필리핀": 1,
+  "영국": 1
  },
  "points": [
   {
@@ -69,7 +78,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2704",
@@ -86,7 +97,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3807",
@@ -103,7 +116,9 @@
    "country_count": 3,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3827",
@@ -120,24 +135,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2404",
-   "name": "담배·재구성한 담배·니코틴이나 담배 대용물·니코틴 대용물을 함유한 물품(연소시키지 않고 흡입하도록 만들어진 ",
-   "detail": "기타",
-   "sector": "직접소비재",
-   "sector_major": "소비재",
-   "ksic_mid": null,
-   "hhi": 0.9048,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.9509,
-   "import_usd": 126070326,
-   "country_count": 29,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2813",
@@ -154,7 +154,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7907",
@@ -171,7 +173,9 @@
    "country_count": 37,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2503",
@@ -188,7 +192,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2841",
@@ -205,7 +211,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6910",
@@ -222,7 +230,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7007",
@@ -239,7 +249,9 @@
    "country_count": 48,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7209",
@@ -256,7 +268,9 @@
    "country_count": 18,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "8111",
@@ -273,7 +287,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7003",
@@ -290,7 +306,9 @@
    "country_count": 8,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "8007",
@@ -307,7 +325,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2604",
@@ -324,7 +344,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6901",
@@ -341,7 +363,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6802",
@@ -358,7 +382,9 @@
    "country_count": 39,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7226",
@@ -375,7 +401,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7210",
@@ -392,24 +420,9 @@
    "country_count": 38,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "7203",
-   "name": "철광석을 직접 환원하여 제조한 철제품과 그 밖의 해면질의 철제품[럼프(lump)ㆍ펠릿(pellet)이나 이와",
-   "detail": "기타",
-   "sector": "철강 및 금속제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.784,
-   "top_country": "말레이시아",
-   "top_country_code": "MY",
-   "top_share": 0.8828,
-   "import_usd": 12081480,
-   "country_count": 6,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "4004",
@@ -426,24 +439,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "7804",
-   "name": "납의 판ㆍ시트(sheet)ㆍ스트립ㆍ박(箔), 가루와 플레이크(flake)",
-   "detail": "시트(sheet)ㆍ스트립ㆍ박(箔)[두께(보강재의 두께는 제외한다)가 0.2밀리미터 이하인 것으로 한정한다]",
-   "sector": "철강 및 금속제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.7631,
-   "top_country": "호주",
-   "top_country_code": "AU",
-   "top_share": 0.8666,
-   "import_usd": 5792536,
-   "country_count": 9,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2706",
@@ -460,7 +458,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7402",
@@ -477,7 +477,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7607",
@@ -494,7 +496,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3826",
@@ -511,7 +515,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2849",
@@ -528,7 +534,9 @@
    "country_count": 22,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6810",
@@ -545,7 +553,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2832",
@@ -562,24 +572,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "3825",
-   "name": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.7246,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.8475,
-   "import_usd": 4062651,
-   "country_count": 10,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2806",
@@ -596,7 +591,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7325",
@@ -613,7 +610,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2809",
@@ -630,7 +629,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2829",
@@ -647,7 +648,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7004",
@@ -664,7 +667,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6914",
@@ -681,7 +686,9 @@
    "country_count": 41,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7227",
@@ -698,24 +705,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "7408",
-   "name": "구리의 선",
-   "detail": "기타",
-   "sector": "철강 및 금속제품",
-   "sector_major": "원자재",
-   "ksic_mid": "전기장비 제조업",
-   "hhi": 0.6917,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.8275,
-   "import_usd": 153047346,
-   "country_count": 28,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7107",
@@ -732,7 +724,9 @@
    "country_count": 7,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2820",
@@ -749,24 +743,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "6809",
-   "name": "플라스터(plaster) 제품이나 플라스터(plaster)를 기본 재료로 조합한 제품",
-   "detail": "그 밖의 제품",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.6689,
-   "top_country": "베트남",
-   "top_country_code": "VN",
-   "top_share": 0.8059,
-   "import_usd": 11653023,
-   "country_count": 18,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2927",
@@ -783,7 +762,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6801",
@@ -800,7 +781,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7217",
@@ -817,24 +800,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "7016",
-   "name": "압축하거나 주형한 유리로 만든 포장(鋪裝)용 블록ㆍ슬래브ㆍ벽돌ㆍ스퀘어(square)ㆍ타일과 그 밖의 제품[망",
-   "detail": "기타",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.6525,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.79,
-   "import_usd": 4134314,
-   "country_count": 15,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7215",
@@ -851,7 +819,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6814",
@@ -868,7 +838,9 @@
    "country_count": 18,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3702",
@@ -885,24 +857,9 @@
    "country_count": 16,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2708",
-   "name": "피치(pitch)와 피치코크스[콜타르(coal tar)나 그 밖의 광물성 타르에서 얻은 것으로 한정한다]",
-   "detail": "피치(pitch)",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.6369,
-   "top_country": "일본",
-   "top_country_code": "JP",
-   "top_share": 0.785,
-   "import_usd": 5737517,
-   "country_count": 6,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2519",
@@ -919,7 +876,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2805",
@@ -936,7 +895,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2528",
@@ -953,7 +914,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7213",
@@ -970,7 +933,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2835",
@@ -987,7 +952,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7228",
@@ -1004,7 +971,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2530",
@@ -1021,7 +990,9 @@
    "country_count": 36,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2938",
@@ -1038,24 +1009,9 @@
    "country_count": 27,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "3703",
-   "name": "사진 인화지ㆍ판지ㆍ직물(감광성이 있고 노광하지 않은 것으로 한정한다)",
-   "detail": "기타[천연색 사진용(폴리크롬)으로 한정한다]",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.6005,
-   "top_country": "네덜란드",
-   "top_country_code": "NL",
-   "top_share": 0.7482,
-   "import_usd": 2732835,
-   "country_count": 12,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2606",
@@ -1072,7 +1028,9 @@
    "country_count": 3,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2926",
@@ -1089,24 +1047,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "3104",
-   "name": "칼륨비료(광물성 비료나 화학비료로 한정한다)",
-   "detail": "염화칼륨",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5907,
-   "top_country": "캐나다",
-   "top_country_code": "CA",
-   "top_share": 0.7577,
-   "import_usd": 144421440,
-   "country_count": 20,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2914",
@@ -1123,41 +1066,9 @@
    "country_count": 32,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "3001",
-   "name": "장기(臟器) 요법용 선(腺)과 그 밖의 기관(건조한 것으로 한정하며, 가루로 된 것인지에 상관없다), 선(腺",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5833,
-   "top_country": "미국",
-   "top_country_code": "US",
-   "top_share": 0.7441,
-   "import_usd": 55023772,
-   "country_count": 67,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2917",
-   "name": "폴리카르복시산과 이들의 무수물(無水物)ㆍ할로겐화물ㆍ과산화물ㆍ과산화산, 이들의 할로겐화유도체ㆍ술폰화유도체ㆍ니트",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.578,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.7517,
-   "import_usd": 139960337,
-   "country_count": 37,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7301",
@@ -1174,7 +1085,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7501",
@@ -1191,7 +1104,9 @@
    "country_count": 13,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7014",
@@ -1208,24 +1123,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "3604",
-   "name": "불꽃제품ㆍ신호용 조명탄ㆍ레인로켓(rain rocket)ㆍ안개 신호용품과 그 밖의 화공품",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5666,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.7181,
-   "import_usd": 2456493,
-   "country_count": 9,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6905",
@@ -1242,24 +1142,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2707",
-   "name": "콜타르(coal tar)를 고온 증류하여 얻은 오일과 그 밖에 이와 유사한 물품[방향족(芳香族) 성분의 중량",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5589,
-   "top_country": "일본",
-   "top_country_code": "JP",
-   "top_share": 0.7404,
-   "import_usd": 275089053,
-   "country_count": 22,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7105",
@@ -1276,7 +1161,9 @@
    "country_count": 18,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7412",
@@ -1293,24 +1180,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "6813",
-   "name": "마찰 재료와 그 제품[예: 시트(sheet)ㆍ롤ㆍ스트립(strip)ㆍ세그먼트ㆍ디스크(disc)ㆍ와셔(wash",
-   "detail": "브레이크 라이닝(brake lining)과 패드",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5553,
-   "top_country": "미국",
-   "top_country_code": "US",
-   "top_share": 0.7314,
-   "import_usd": 13638504,
-   "country_count": 30,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "9406",
@@ -1327,7 +1199,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3918",
@@ -1344,7 +1218,9 @@
    "country_count": 34,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7214",
@@ -1361,7 +1237,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2518",
@@ -1378,24 +1256,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2839",
-   "name": "규산염과 상관습(商慣習)상의 알칼리금속의 규산염",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5413,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.7241,
-   "import_usd": 18780879,
-   "country_count": 20,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2811",
@@ -1412,7 +1275,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3405",
@@ -1429,7 +1294,9 @@
    "country_count": 34,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2919",
@@ -1446,7 +1313,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6906",
@@ -1463,7 +1332,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7806",
@@ -1480,7 +1351,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2521",
@@ -1497,24 +1370,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2912",
-   "name": "알데히드(그 밖의 산소관능 결합을 한 것인지에 상관없다), 알데히드의 환식중합체, 파라포름알데히드",
-   "detail": "기타",
-   "sector": "화학공업제품",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5235,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.7164,
-   "import_usd": 28492667,
-   "country_count": 32,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7802",
@@ -1531,24 +1389,9 @@
    "country_count": 2,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "7013",
-   "name": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018",
-   "detail": "기타",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5176,
-   "top_country": "중국",
-   "top_country_code": "CN",
-   "top_share": 0.712,
-   "import_usd": 65939563,
-   "country_count": 66,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2920",
@@ -1565,7 +1408,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7008",
@@ -1582,7 +1427,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3707",
@@ -1599,7 +1446,9 @@
    "country_count": 24,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3601",
@@ -1616,7 +1465,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6904",
@@ -1633,7 +1484,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2810",
@@ -1650,24 +1503,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
-  },
-  {
-   "hs4": "2601",
-   "name": "철광과 그 정광(精鑛)[배소(焙燒)한 황화철광을 포함한다]",
-   "detail": "응결시키지 않은 것",
-   "sector": "광산물",
-   "sector_major": "원자재",
-   "ksic_mid": null,
-   "hhi": 0.5001,
-   "top_country": "호주",
-   "top_country_code": "AU",
-   "top_share": 0.6815,
-   "import_usd": 3685007222,
-   "country_count": 13,
-   "is_blindspot": true,
-   "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3103",
@@ -1684,7 +1522,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "8549",
@@ -1701,7 +1541,9 @@
    "country_count": 63,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "RED"
+   "grade": "RED",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7207",
@@ -1718,7 +1560,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2823",
@@ -1735,7 +1579,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7606",
@@ -1752,7 +1598,9 @@
    "country_count": 45,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6907",
@@ -1769,7 +1617,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2517",
@@ -1786,7 +1636,9 @@
    "country_count": 22,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7306",
@@ -1803,7 +1655,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2611",
@@ -1820,7 +1674,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2507",
@@ -1837,7 +1693,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2909",
@@ -1854,7 +1712,9 @@
    "country_count": 40,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7201",
@@ -1871,7 +1731,9 @@
    "country_count": 5,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2924",
@@ -1888,7 +1750,9 @@
    "country_count": 39,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7010",
@@ -1905,7 +1769,9 @@
    "country_count": 50,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2713",
@@ -1922,7 +1788,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7009",
@@ -1939,7 +1807,9 @@
    "country_count": 51,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2816",
@@ -1956,7 +1826,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3813",
@@ -1973,7 +1845,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7224",
@@ -1990,7 +1864,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3908",
@@ -2007,7 +1883,9 @@
    "country_count": 34,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2615",
@@ -2024,7 +1902,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2828",
@@ -2041,7 +1921,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6902",
@@ -2058,7 +1940,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7208",
@@ -2075,7 +1959,9 @@
    "country_count": 25,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3705",
@@ -2092,7 +1978,9 @@
    "country_count": 22,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2520",
@@ -2109,7 +1997,9 @@
    "country_count": 19,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3208",
@@ -2126,7 +2016,9 @@
    "country_count": 43,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2715",
@@ -2143,7 +2035,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3701",
@@ -2160,7 +2054,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2902",
@@ -2177,7 +2073,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2826",
@@ -2194,7 +2092,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7216",
@@ -2211,7 +2111,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3801",
@@ -2228,7 +2130,9 @@
    "country_count": 34,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7411",
@@ -2245,7 +2149,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2801",
@@ -2262,7 +2168,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6808",
@@ -2279,7 +2187,9 @@
    "country_count": 13,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3603",
@@ -2296,7 +2206,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3817",
@@ -2313,7 +2225,9 @@
    "country_count": 8,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2501",
@@ -2330,7 +2244,9 @@
    "country_count": 61,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2845",
@@ -2347,7 +2263,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3823",
@@ -2364,7 +2282,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2932",
@@ -2381,7 +2301,9 @@
    "country_count": 44,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2526",
@@ -2398,7 +2320,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3812",
@@ -2415,7 +2339,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2911",
@@ -2432,7 +2358,9 @@
    "country_count": 16,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7211",
@@ -2449,7 +2377,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2903",
@@ -2466,7 +2396,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2916",
@@ -2483,7 +2415,9 @@
    "country_count": 40,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7608",
@@ -2500,7 +2434,9 @@
    "country_count": 31,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7229",
@@ -2517,7 +2453,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2840",
@@ -2534,7 +2472,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2529",
@@ -2551,7 +2491,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2525",
@@ -2568,7 +2510,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7304",
@@ -2585,7 +2529,9 @@
    "country_count": 46,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2941",
@@ -2602,7 +2548,9 @@
    "country_count": 31,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7504",
@@ -2619,7 +2567,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3909",
@@ -2636,7 +2586,9 @@
    "country_count": 42,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3806",
@@ -2653,7 +2605,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6911",
@@ -2670,7 +2624,9 @@
    "country_count": 54,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6811",
@@ -2687,7 +2643,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2818",
@@ -2704,7 +2662,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7409",
@@ -2721,7 +2681,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7018",
@@ -2738,7 +2700,9 @@
    "country_count": 37,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2850",
@@ -2755,7 +2719,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2915",
@@ -2772,7 +2738,9 @@
    "country_count": 49,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2814",
@@ -2789,7 +2757,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2853",
@@ -2806,7 +2776,9 @@
    "country_count": 32,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7307",
@@ -2823,7 +2795,9 @@
    "country_count": 64,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3105",
@@ -2840,7 +2814,9 @@
    "country_count": 43,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3816",
@@ -2857,7 +2833,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3921",
@@ -2874,7 +2852,9 @@
    "country_count": 50,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6913",
@@ -2891,7 +2871,9 @@
    "country_count": 44,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7302",
@@ -2908,7 +2890,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "4003",
@@ -2925,7 +2909,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2923",
@@ -2942,7 +2928,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2822",
@@ -2959,7 +2947,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2904",
@@ -2976,7 +2966,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2842",
@@ -2993,7 +2985,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2607",
@@ -3010,7 +3004,9 @@
    "country_count": 12,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7401",
@@ -3027,7 +3023,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "8113",
@@ -3044,7 +3042,9 @@
    "country_count": 22,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7326",
@@ -3061,7 +3061,9 @@
    "country_count": 103,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7212",
@@ -3078,7 +3080,9 @@
    "country_count": 24,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2940",
@@ -3095,7 +3099,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3206",
@@ -3112,7 +3118,9 @@
    "country_count": 38,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7019",
@@ -3129,7 +3137,9 @@
    "country_count": 49,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3910",
@@ -3146,7 +3156,9 @@
    "country_count": 36,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2922",
@@ -3163,7 +3175,9 @@
    "country_count": 45,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7221",
@@ -3180,7 +3194,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3907",
@@ -3197,7 +3213,9 @@
    "country_count": 60,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7305",
@@ -3214,7 +3232,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3207",
@@ -3231,7 +3251,9 @@
    "country_count": 37,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2614",
@@ -3248,7 +3270,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2843",
@@ -3265,7 +3289,9 @@
    "country_count": 25,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7204",
@@ -3282,7 +3308,9 @@
    "country_count": 56,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2523",
@@ -3299,7 +3327,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6903",
@@ -3316,7 +3346,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3803",
@@ -3333,7 +3365,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2837",
@@ -3350,7 +3384,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2513",
@@ -3367,7 +3403,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2918",
@@ -3384,7 +3422,9 @@
    "country_count": 38,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7225",
@@ -3401,7 +3441,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2703",
@@ -3418,7 +3460,9 @@
    "country_count": 16,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2812",
@@ -3435,7 +3479,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2942",
@@ -3452,7 +3498,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2522",
@@ -3469,7 +3517,9 @@
    "country_count": 11,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3903",
@@ -3486,7 +3536,9 @@
    "country_count": 44,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2933",
@@ -3503,7 +3555,9 @@
    "country_count": 52,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2936",
@@ -3520,7 +3574,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3602",
@@ -3537,7 +3593,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3919",
@@ -3554,7 +3612,9 @@
    "country_count": 74,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7011",
@@ -3571,7 +3631,9 @@
    "country_count": 10,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2817",
@@ -3588,7 +3650,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3205",
@@ -3605,7 +3669,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3916",
@@ -3622,7 +3688,9 @@
    "country_count": 35,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6912",
@@ -3639,7 +3707,9 @@
    "country_count": 59,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7508",
@@ -3656,7 +3726,9 @@
    "country_count": 37,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7020",
@@ -3673,7 +3745,9 @@
    "country_count": 45,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3506",
@@ -3690,7 +3764,9 @@
    "country_count": 56,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7001",
@@ -3707,7 +3783,9 @@
    "country_count": 6,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2935",
@@ -3724,7 +3802,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7006",
@@ -3741,7 +3821,9 @@
    "country_count": 23,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2505",
@@ -3758,7 +3840,9 @@
    "country_count": 28,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7223",
@@ -3775,7 +3859,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2508",
@@ -3792,7 +3878,9 @@
    "country_count": 39,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3904",
@@ -3809,7 +3897,9 @@
    "country_count": 36,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2831",
@@ -3826,7 +3916,9 @@
    "country_count": 9,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2512",
@@ -3843,7 +3935,9 @@
    "country_count": 14,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3920",
@@ -3860,7 +3954,9 @@
    "country_count": 65,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2921",
@@ -3877,7 +3973,9 @@
    "country_count": 41,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2928",
@@ -3894,7 +3992,9 @@
    "country_count": 25,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3913",
@@ -3911,7 +4011,9 @@
    "country_count": 41,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7108",
@@ -3928,7 +4030,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2930",
@@ -3945,7 +4049,9 @@
    "country_count": 34,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2929",
@@ -3962,7 +4068,9 @@
    "country_count": 26,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3505",
@@ -3979,7 +4087,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3821",
@@ -3996,7 +4106,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7506",
@@ -4013,7 +4125,9 @@
    "country_count": 16,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2827",
@@ -4030,7 +4144,9 @@
    "country_count": 38,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7507",
@@ -4047,7 +4163,9 @@
    "country_count": 22,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2910",
@@ -4064,7 +4182,9 @@
    "country_count": 20,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2834",
@@ -4081,7 +4201,9 @@
    "country_count": 29,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7005",
@@ -4098,7 +4220,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2901",
@@ -4115,7 +4239,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2934",
@@ -4132,7 +4258,9 @@
    "country_count": 103,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2613",
@@ -4149,7 +4277,9 @@
    "country_count": 17,
    "is_blindspot": true,
    "gov_managed": true,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7603",
@@ -4166,7 +4296,9 @@
    "country_count": 13,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7205",
@@ -4183,7 +4315,9 @@
    "country_count": 23,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3810",
@@ -4200,7 +4334,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3804",
@@ -4217,7 +4353,9 @@
    "country_count": 15,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7410",
@@ -4234,7 +4372,9 @@
    "country_count": 26,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2701",
@@ -4251,7 +4391,9 @@
    "country_count": 21,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2821",
@@ -4268,7 +4410,9 @@
    "country_count": 25,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2931",
@@ -4285,7 +4429,9 @@
    "country_count": 35,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3811",
@@ -4302,7 +4448,9 @@
    "country_count": 31,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6804",
@@ -4319,7 +4467,9 @@
    "country_count": 41,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2815",
@@ -4336,7 +4486,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2712",
@@ -4353,7 +4505,9 @@
    "country_count": 24,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3824",
@@ -4370,7 +4524,9 @@
    "country_count": 70,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2908",
@@ -4387,7 +4543,9 @@
    "country_count": 14,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3912",
@@ -4404,7 +4562,9 @@
    "country_count": 33,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3809",
@@ -4421,7 +4581,9 @@
    "country_count": 30,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2506",
@@ -4438,7 +4600,9 @@
    "country_count": 18,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7404",
@@ -4455,7 +4619,9 @@
    "country_count": 94,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3203",
@@ -4472,7 +4638,9 @@
    "country_count": 34,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2844",
@@ -4489,7 +4657,9 @@
    "country_count": 28,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3819",
@@ -4506,7 +4676,9 @@
    "country_count": 20,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2830",
@@ -4523,7 +4695,9 @@
    "country_count": 18,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2619",
@@ -4540,7 +4714,9 @@
    "country_count": 8,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7609",
@@ -4557,7 +4733,9 @@
    "country_count": 36,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3003",
@@ -4574,7 +4752,9 @@
    "country_count": 27,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2620",
@@ -4591,7 +4771,9 @@
    "country_count": 44,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2925",
@@ -4608,7 +4790,9 @@
    "country_count": 31,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6805",
@@ -4625,7 +4809,9 @@
    "country_count": 42,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2608",
@@ -4642,7 +4828,9 @@
    "country_count": 21,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3102",
@@ -4659,7 +4847,9 @@
    "country_count": 33,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2616",
@@ -4676,7 +4866,9 @@
    "country_count": 16,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3407",
@@ -4693,7 +4885,9 @@
    "country_count": 31,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6909",
@@ -4710,7 +4904,9 @@
    "country_count": 31,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3911",
@@ -4727,7 +4923,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2906",
@@ -4744,7 +4942,9 @@
    "country_count": 27,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7002",
@@ -4761,7 +4961,9 @@
    "country_count": 18,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7604",
@@ -4778,7 +4980,9 @@
    "country_count": 38,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6815",
@@ -4795,7 +4999,9 @@
    "country_count": 59,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7505",
@@ -4812,7 +5018,9 @@
    "country_count": 20,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7405",
@@ -4829,7 +5037,9 @@
    "country_count": 6,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3905",
@@ -4846,7 +5056,9 @@
    "country_count": 25,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3212",
@@ -4863,7 +5075,9 @@
    "country_count": 38,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7220",
@@ -4880,7 +5094,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2621",
@@ -4897,7 +5113,9 @@
    "country_count": 10,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2603",
@@ -4914,7 +5132,9 @@
    "country_count": 22,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3820",
@@ -4931,7 +5151,9 @@
    "country_count": 29,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3822",
@@ -4948,7 +5170,9 @@
    "country_count": 79,
    "is_blindspot": true,
    "gov_managed": false,
-   "grade": "YELLOW"
+   "grade": "YELLOW",
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "4002",
@@ -4965,7 +5189,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7905",
@@ -4982,7 +5208,9 @@
    "country_count": 12,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3402",
@@ -4999,7 +5227,9 @@
    "country_count": 58,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3814",
@@ -5016,7 +5246,9 @@
    "country_count": 37,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "6806",
@@ -5033,7 +5265,9 @@
    "country_count": 29,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3802",
@@ -5050,7 +5284,9 @@
    "country_count": 31,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3404",
@@ -5067,7 +5303,9 @@
    "country_count": 37,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3214",
@@ -5084,7 +5322,9 @@
    "country_count": 46,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3906",
@@ -5101,7 +5341,9 @@
    "country_count": 42,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7218",
@@ -5118,7 +5360,9 @@
    "country_count": 19,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2819",
@@ -5135,7 +5379,9 @@
    "country_count": 11,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3901",
@@ -5152,7 +5398,9 @@
    "country_count": 47,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3507",
@@ -5169,7 +5417,9 @@
    "country_count": 38,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7903",
@@ -5186,7 +5436,9 @@
    "country_count": 12,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3204",
@@ -5203,7 +5455,9 @@
    "country_count": 42,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7219",
@@ -5220,7 +5474,9 @@
    "country_count": 27,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2907",
@@ -5237,7 +5493,9 @@
    "country_count": 29,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7112",
@@ -5254,7 +5512,9 @@
    "country_count": 41,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3914",
@@ -5271,7 +5531,9 @@
    "country_count": 22,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2937",
@@ -5288,7 +5550,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7017",
@@ -5305,7 +5569,9 @@
    "country_count": 42,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2709",
@@ -5322,7 +5588,9 @@
    "country_count": 38,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2711",
@@ -5339,7 +5607,9 @@
    "country_count": 24,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3815",
@@ -5356,7 +5626,9 @@
    "country_count": 39,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7406",
@@ -5373,7 +5645,9 @@
    "country_count": 22,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3201",
@@ -5390,7 +5664,9 @@
    "country_count": 15,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3210",
@@ -5407,7 +5683,9 @@
    "country_count": 24,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7222",
@@ -5424,7 +5702,9 @@
    "country_count": 29,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3915",
@@ -5441,7 +5721,9 @@
    "country_count": 18,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3902",
@@ -5458,7 +5740,9 @@
    "country_count": 45,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3101",
@@ -5475,7 +5759,9 @@
    "country_count": 20,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2939",
@@ -5492,7 +5778,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3209",
@@ -5509,7 +5797,9 @@
    "country_count": 41,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7605",
@@ -5526,7 +5816,9 @@
    "country_count": 22,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2905",
@@ -5543,7 +5835,9 @@
    "country_count": 54,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3403",
@@ -5560,7 +5854,9 @@
    "country_count": 47,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3917",
@@ -5577,7 +5873,9 @@
    "country_count": 73,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3302",
@@ -5594,7 +5892,9 @@
    "country_count": 54,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7202",
@@ -5611,7 +5911,9 @@
    "country_count": 32,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7106",
@@ -5628,7 +5930,9 @@
    "country_count": 29,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3215",
@@ -5645,7 +5949,9 @@
    "country_count": 49,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7407",
@@ -5662,7 +5968,9 @@
    "country_count": 33,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2803",
@@ -5679,7 +5987,9 @@
    "country_count": 30,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3006",
@@ -5696,7 +6006,9 @@
    "country_count": 56,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3202",
@@ -5713,7 +6025,9 @@
    "country_count": 17,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3004",
@@ -5730,7 +6044,9 @@
    "country_count": 81,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3808",
@@ -5747,7 +6063,9 @@
    "country_count": 35,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "3002",
@@ -5764,7 +6082,9 @@
    "country_count": 88,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7503",
@@ -5781,7 +6101,9 @@
    "country_count": 21,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "7602",
@@ -5798,7 +6120,9 @@
    "country_count": 103,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
   },
   {
    "hs4": "2710",
@@ -5815,7 +6139,674 @@
    "country_count": 87,
    "is_blindspot": false,
    "gov_managed": false,
-   "grade": null
+   "grade": null,
+   "code_level": "hs4",
+   "parent_hs4": null
+  },
+  {
+   "hs4": "240411",
+   "name": "담배·재구성한 담배·니코틴이나 담배 대용물·니코틴 대용물을 함유한 물품(연소시키지 않고 흡입하도록 만들어진 ",
+   "detail": "담배·재구성한 담배·니코틴이나 담배 대용물·니코틴 대용물을 함유한 물품(연소시키지 않고 흡입하도록 만들어진 것으로 한정한다), 니코틴을 함유한 그 밖의 물품으로 인체 내에 니코틴을 흡수시키도록 만들어진 것 (담배나 재구성한 담배를 함유한 것)",
+   "sector": "직접소비재",
+   "sector_major": "소비재",
+   "ksic_mid": null,
+   "hhi": 0.860022,
+   "top_country": "인도네시아",
+   "top_country_code": "ID",
+   "top_share": 0.925842,
+   "import_usd": 261940,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2404"
+  },
+  {
+   "hs4": "240491",
+   "name": "경구(經口)용",
+   "detail": "경구(經口)용",
+   "sector": "직접소비재",
+   "sector_major": "소비재",
+   "ksic_mid": null,
+   "hhi": 0.724228,
+   "top_country": "스웨덴",
+   "top_country_code": "SE",
+   "top_share": 0.835448,
+   "import_usd": 974676,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2404"
+  },
+  {
+   "hs4": "240492",
+   "name": "피부 투여용",
+   "detail": "피부 투여용",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.999665,
+   "top_country": "독일",
+   "top_country_code": "DE",
+   "top_share": 0.999832,
+   "import_usd": 2280480,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2404"
+  },
+  {
+   "hs4": "260112",
+   "name": "적(赤)철광",
+   "detail": "적(赤)철광",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.645272,
+   "top_country": "브라질",
+   "top_country_code": "BR",
+   "top_share": 0.769547,
+   "import_usd": 52538890,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2601"
+  },
+  {
+   "hs4": "270710",
+   "name": "벤조올(벤젠)",
+   "detail": "벤조올(벤젠)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.906404,
+   "top_country": "인도네시아",
+   "top_country_code": "ID",
+   "top_share": 0.950779,
+   "import_usd": 3787740,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2707"
+  },
+  {
+   "hs4": "270799",
+   "name": "솔벤트 나프타(solvent naphtha)",
+   "detail": "솔벤트 나프타(solvent naphtha)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.536446,
+   "top_country": "말레이시아",
+   "top_country_code": "MY",
+   "top_share": 0.699738,
+   "import_usd": 4584794,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2707"
+  },
+  {
+   "hs4": "270791",
+   "name": "크레오소트(creosote)유",
+   "detail": "크레오소트(creosote)유",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 1.0,
+   "import_usd": 3541,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2707"
+  },
+  {
+   "hs4": "270810",
+   "name": "피치(pitch)",
+   "detail": "피치(pitch)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.982937,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.991394,
+   "import_usd": 72277,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2708"
+  },
+  {
+   "hs4": "283990",
+   "name": "규산지르코늄",
+   "detail": "규산지르코늄",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.239764,
+   "top_country": "네덜란드",
+   "top_country_code": "NL",
+   "top_share": 0.310006,
+   "import_usd": 735083,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2839"
+  },
+  {
+   "hs4": "291212",
+   "name": "에탄알(아세트알데히드)",
+   "detail": "에탄알(아세트알데히드)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.531538,
+   "top_country": "미국",
+   "top_country_code": "US",
+   "top_share": 0.625574,
+   "import_usd": 1306,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2912"
+  },
+  {
+   "hs4": "291732",
+   "name": "오르토프탈산 디-2-에틸헥실",
+   "detail": "오르토프탈산 디-2-에틸헥실",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.554238,
+   "top_country": "미국",
+   "top_country_code": "US",
+   "top_share": 0.722628,
+   "import_usd": 274,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2917"
+  },
+  {
+   "hs4": "291736",
+   "name": "테레프탈산",
+   "detail": "테레프탈산",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.964593,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.982075,
+   "import_usd": 19526,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2917"
+  },
+  {
+   "hs4": "291737",
+   "name": "테레프탈산디메틸",
+   "detail": "테레프탈산디메틸",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.922856,
+   "top_country": "네덜란드",
+   "top_country_code": "NL",
+   "top_share": 0.960061,
+   "import_usd": 1302,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "2917"
+  },
+  {
+   "hs4": "300120",
+   "name": "간장 추출물",
+   "detail": "간장 추출물",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.37766,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.46613,
+   "import_usd": 1018567,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3001"
+  },
+  {
+   "hs4": "310430",
+   "name": "칼륨비료(광물성 비료나 화학비료로 한정한다) (산화칼륨으로 계산한 칼륨분의 함유량이 전 중량의 100분의 5",
+   "detail": "칼륨비료(광물성 비료나 화학비료로 한정한다) (산화칼륨으로 계산한 칼륨분의 함유량이 전 중량의 100분의 52 이하인 것)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.46253,
+   "top_country": "대만",
+   "top_country_code": "TW",
+   "top_share": 0.50694,
+   "import_usd": 1329041,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3104"
+  },
+  {
+   "hs4": "310490",
+   "name": "칼륨비료(광물성 비료나 화학비료로 한정한다) (산화칼륨으로 계산한 칼륨분의 함유량이 전 중량의 100분의 3",
+   "detail": "칼륨비료(광물성 비료나 화학비료로 한정한다) (산화칼륨으로 계산한 칼륨분의 함유량이 전 중량의 100분의 30 이하인 것)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.52537,
+   "top_country": "캐나다",
+   "top_country_code": "CA",
+   "top_share": 0.612628,
+   "import_usd": 5274,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3104"
+  },
+  {
+   "hs4": "360490",
+   "name": "신호용 조명탄",
+   "detail": "신호용 조명탄",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.546003,
+   "top_country": "미국",
+   "top_country_code": "US",
+   "top_share": 0.678398,
+   "import_usd": 143808,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3604"
+  },
+  {
+   "hs4": "370310",
+   "name": "사진 인화지ㆍ판지ㆍ직물(감광성이 있고 노광하지 않은 것으로 한정한다) (롤 모양(폭이 610밀리미터를 초과하",
+   "detail": "사진 인화지ㆍ판지ㆍ직물(감광성이 있고 노광하지 않은 것으로 한정한다) (롤 모양(폭이 610밀리미터를 초과하는 것으로 한정한다))",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 1.0,
+   "import_usd": 31325,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3703"
+  },
+  {
+   "hs4": "370390",
+   "name": "사진 인화지ㆍ판지ㆍ직물(감광성이 있고 노광하지 않은 것으로 한정한다) (기타)",
+   "detail": "사진 인화지ㆍ판지ㆍ직물(감광성이 있고 노광하지 않은 것으로 한정한다) (기타)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.876093,
+   "top_country": "미국",
+   "top_country_code": "US",
+   "top_share": 0.934816,
+   "import_usd": 22751,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3703"
+  },
+  {
+   "hs4": "382561",
+   "name": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그",
+   "detail": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그 밖의 폐기물 (주로 유기성분을 함유하는 것)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "일본",
+   "top_country_code": "JP",
+   "top_share": 1.0,
+   "import_usd": 63757,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3825"
+  },
+  {
+   "hs4": "382569",
+   "name": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그",
+   "detail": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그 밖의 폐기물 (기타)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.828591,
+   "top_country": "필리핀",
+   "top_country_code": "PH",
+   "top_share": 0.905334,
+   "import_usd": 49310,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3825"
+  },
+  {
+   "hs4": "382541",
+   "name": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그",
+   "detail": "따로 분류되지 않은 화학공업이나 연관공업에 따른 잔재물, 생활폐기물, 하수 찌꺼기, 이 류의 주 제6호의 그 밖의 폐기물 (할로겐을 함유하는 것)",
+   "sector": "화학공업제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "싱가포르",
+   "top_country_code": "SG",
+   "top_share": 1.0,
+   "import_usd": 87836,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "3825"
+  },
+  {
+   "hs4": "680919",
+   "name": "플라스터(plaster) 제품이나 플라스터(plaster)를 기본 재료로 조합한 제품 (기타)",
+   "detail": "플라스터(plaster) 제품이나 플라스터(plaster)를 기본 재료로 조합한 제품 (기타)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.321123,
+   "top_country": "독일",
+   "top_country_code": "DE",
+   "top_share": 0.394731,
+   "import_usd": 131763,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "6809"
+  },
+  {
+   "hs4": "680990",
+   "name": "그 밖의 제품",
+   "detail": "그 밖의 제품",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.668298,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.810354,
+   "import_usd": 110221,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "6809"
+  },
+  {
+   "hs4": "681320",
+   "name": "마찰 재료와 그 제품[예: 시트(sheet)ㆍ롤ㆍ스트립(strip)ㆍ세그먼트ㆍ디스크(disc)ㆍ와셔(wash",
+   "detail": "마찰 재료와 그 제품[예: 시트(sheet)ㆍ롤ㆍ스트립(strip)ㆍ세그먼트ㆍ디스크(disc)ㆍ와셔(washer)ㆍ패드](장착되지 않은 것으로서 브레이크용ㆍ클러치용이나 이와 유사한 용도의 석면ㆍ그 밖의 광물성 재료ㆍ셀룰로오스를 기본 재료로 한 것으로 한정하며, 직물이나 그 밖의 재료와 결합한 것인지에 상관없다) (석면을 함유한 것)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 1.0,
+   "import_usd": 100,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "6813"
+  },
+  {
+   "hs4": "681381",
+   "name": "브레이크 라이닝(brake lining)과 패드",
+   "detail": "브레이크 라이닝(brake lining)과 패드",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.243314,
+   "top_country": "독일",
+   "top_country_code": "DE",
+   "top_share": 0.335688,
+   "import_usd": 517484,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "6813"
+  },
+  {
+   "hs4": "701322",
+   "name": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018",
+   "detail": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018호의 것은 제외한다) (납 크리스탈로 만든 것)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.79213,
+   "top_country": "독일",
+   "top_country_code": "DE",
+   "top_share": 0.888198,
+   "import_usd": 461842,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7013"
+  },
+  {
+   "hs4": "701333",
+   "name": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018",
+   "detail": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018호의 것은 제외한다) (납 크리스탈로 만든 것)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.647876,
+   "top_country": "프랑스",
+   "top_country_code": "FR",
+   "top_share": 0.796725,
+   "import_usd": 190181,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7013"
+  },
+  {
+   "hs4": "701341",
+   "name": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018",
+   "detail": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018호의 것은 제외한다) (납 크리스탈로 만든 것)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.44499,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.524325,
+   "import_usd": 5817,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7013"
+  },
+  {
+   "hs4": "701391",
+   "name": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018",
+   "detail": "유리제품(식탁용ㆍ주방용ㆍ화장실용ㆍ사무용ㆍ실내장식용이나 이와 유사한 용도로 한정하며, 제7010호나 제7018호의 것은 제외한다) (납 크리스탈로 만든 것)",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.481627,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 0.576715,
+   "import_usd": 162909,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7013"
+  },
+  {
+   "hs4": "701610",
+   "name": "압축하거나 주형한 유리로 만든 포장(鋪裝)용 블록ㆍ슬래브ㆍ벽돌ㆍ스퀘어(square)ㆍ타일과 그 밖의 제품[망",
+   "detail": "압축하거나 주형한 유리로 만든 포장(鋪裝)용 블록ㆍ슬래브ㆍ벽돌ㆍ스퀘어(square)ㆍ타일과 그 밖의 제품[망입(網入)한 것인지에 상관없으며 건축용이나 건설용으로 한정한다], 유리로 만든 입방체와 그 밖의 유리 세공품(뒷면을 보강한지에 상관없으며 모자이크용이나 이와 유사한 장식용으로 한정한다), 레드라이트(leaded light)와 이와 유사한 것, 블록(block)ㆍ패널(panel)ㆍ플레이트(plate)ㆍ쉘(shell)이나 이와 유사한 모양의 다공(多孔)유리나 다포(多泡)유리 (유리로 만든 입방체와 그 밖의 유리 세공품(뒷면을 보강한지에 상관없으며 모자이크용이나 이와 유사한 장식용으로 한정한다))",
+   "sector": "광산물",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.522562,
+   "top_country": "스페인",
+   "top_country_code": "ES",
+   "top_share": 0.684206,
+   "import_usd": 35767,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7016"
+  },
+  {
+   "hs4": "720310",
+   "name": "철광석을 직접 환원하여 제조한 철제품",
+   "detail": "철광석을 직접 환원하여 제조한 철제품",
+   "sector": "철강 및 금속제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "중국",
+   "top_country_code": "CN",
+   "top_share": 1.0,
+   "import_usd": 17262,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7203"
+  },
+  {
+   "hs4": "740811",
+   "name": "구리의 선 (횡단면의 최대치수가 6밀리미터를 초과하는 것)",
+   "detail": "구리의 선 (횡단면의 최대치수가 6밀리미터를 초과하는 것)",
+   "sector": "철강 및 금속제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.371304,
+   "top_country": "베트남",
+   "top_country_code": "VN",
+   "top_share": 0.482288,
+   "import_usd": 2297062,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7408"
+  },
+  {
+   "hs4": "780411",
+   "name": "시트(sheet)ㆍ스트립",
+   "detail": "시트(sheet)ㆍ스트립",
+   "sector": "철강 및 금속제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 0.854511,
+   "top_country": "독일",
+   "top_country_code": "DE",
+   "top_share": 0.922754,
+   "import_usd": 147295,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7804"
+  },
+  {
+   "hs4": "780419",
+   "name": "납의 판ㆍ시트(sheet)ㆍ스트립ㆍ박(箔), 가루와 플레이크(flake) (기타)",
+   "detail": "납의 판ㆍ시트(sheet)ㆍ스트립ㆍ박(箔), 가루와 플레이크(flake) (기타)",
+   "sector": "철강 및 금속제품",
+   "sector_major": "원자재",
+   "ksic_mid": null,
+   "hhi": 1.0,
+   "top_country": "영국",
+   "top_country_code": "GB",
+   "top_share": 1.0,
+   "import_usd": 3887,
+   "country_count": null,
+   "is_blindspot": true,
+   "gov_managed": false,
+   "grade": "RED",
+   "code_level": "hs6",
+   "parent_hs4": "7804"
   }
  ]
 }

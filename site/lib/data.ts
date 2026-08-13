@@ -24,11 +24,15 @@ export type BlindspotPoint = {
   top_country_code: string;
   top_share: number;
   import_usd: number;
-  country_count: number;
+  country_count: number | null;
   is_blindspot: boolean;
   gov_managed: boolean;
   /** step4_blind_spots.csv 의 위험등급. 사각지대가 아닌 품목에는 등급이 없다. */
   grade: Grade | null;
+  /** hs6이면 hs4 필드에 6자리 코드가 들어간다 — HS6 승격 품목. */
+  code_level: "hs4" | "hs6";
+  /** code_level==="hs6"일 때만 채워지는 원래 hs4. */
+  parent_hs4: string | null;
 };
 
 export type Signal = { triggered: boolean; value: number | null; label: string };
@@ -103,6 +107,9 @@ export const blindspots = blindspotsJson as unknown as {
   china_count: number;
   china_share: number;
   grade_counts: Record<string, number>;
+  hs6_swapped_hs4_count: number;
+  hs6_added_count: number;
+  hs6_protected_mvp10: string[];
   sector_axis: string;
   sector_counts: Record<string, number>;
   top_country_counts: Record<string, number>;

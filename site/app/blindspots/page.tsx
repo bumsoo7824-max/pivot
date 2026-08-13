@@ -10,7 +10,7 @@ export default function BlindspotsPage() {
       <PageHeader
         step="사각지대 스크리닝"
         title={`사각지대 ${blindspots.blindspot_count}개 품목`}
-        lead={`수입 집중도(HHI)가 높거나 1위국 한 곳에 쏠려 관리 사각에 놓인 품목 목록입니다. 화면에 그리는 값은 원본 목록(${blindspots.source})을 그대로 싣고, 배경에는 비교를 위해 HS4 ${blindspots.universe_count}개 모집단을 함께 찍었습니다.`}
+        lead={`수입 집중도(HHI)가 높거나 1위국 한 곳에 쏠려 관리 사각에 놓인 품목 목록입니다. 화면에 그리는 값은 원본 목록(${blindspots.source})을 그대로 싣고, 배경에는 비교를 위해 HS4·HS6 혼합 ${blindspots.universe_count}개 모집단을 함께 찍었습니다. hs6 배지가 붙은 ${blindspots.hs6_added_count}개는 12개월 재검증으로 구조적 분기가 확정돼 상위 hs4에서 쪼갠 품목입니다.`}
       />
 
       <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -46,9 +46,9 @@ export default function BlindspotsPage() {
       >
         <BlindspotScatter />
         <SourceTag>
-          관세청 수출입통계 HS4 집계 · 업종축은 {blindspots.sector_axis}(커버리지{" "}
-          {blindspots.universe_count}/{blindspots.universe_count}). HS–KSIC 브리지는 신뢰도 미달로
-          업종 판정에 쓰지 않았다 — 사유는 /data-notes 참조
+          관세청 수출입통계 HS4 집계(승격된 {blindspots.hs6_added_count}개는 HS6) · 업종축은{" "}
+          {blindspots.sector_axis}(커버리지 {blindspots.universe_count}/{blindspots.universe_count}).
+          HS–KSIC 브리지는 신뢰도 미달로 업종 판정에 쓰지 않았다 — 사유는 /data-notes 참조
         </SourceTag>
       </Section>
 
@@ -81,13 +81,14 @@ export default function BlindspotsPage() {
           <ol className="space-y-3 text-sm leading-relaxed text-slate-300">
             <li>
               <span className="mr-2 font-mono text-xs text-pivot-500">01</span>
-              사각지대 {blindspots.blindspot_count}개는{" "}
-              <b className="text-white">{blindspots.source}</b> 를 단일 출처로 그대로 싣는다.
-              HHI·1위국·위험등급 모두 원본 값이며 화면에서 다시 계산하지 않는다.
+              사각지대 {blindspots.blindspot_count}개 중 hs4 {256 - blindspots.hs6_swapped_hs4_count}
+              개는 <b className="text-white">{blindspots.source}</b>, hs6 {blindspots.hs6_added_count}
+              개는 hs6_promoted_info.csv를 단일 출처로 그대로 싣는다. HHI·1위국·위험등급 모두 원본
+              값이며 화면에서 다시 계산하지 않는다.
             </li>
             <li>
               <span className="mr-2 font-mono text-xs text-pivot-500">02</span>
-              배경의 회색 점은 관세청 수출입통계를 HS4로 집계한 모집단{" "}
+              배경의 회색 점은 관세청 수출입통계를 HS4(승격된 일부는 HS6)로 집계한 모집단{" "}
               {blindspots.universe_count}개 중 사각지대 목록에 들지 않은 품목이다. 목록의 위치를
               전체 분포 안에서 읽기 위한 비교 배경이다.
             </li>
@@ -96,6 +97,13 @@ export default function BlindspotsPage() {
               원본 목록에서 1위국이 중국이고 HHI ≥ 0.50 인 품목의 수입액 상위 10개를 뽑으면 사전에
               확정돼 있던 MVP 10개 목록과 <b className="text-white">정확히 일치</b>한다. 재검증을
               통과했다.
+            </li>
+            <li>
+              <span className="mr-2 font-mono text-xs text-pivot-500">04</span>
+              hs4 {blindspots.hs6_swapped_hs4_count}개는 12개월 재검증으로 리스크가 hs4 전체가
+              아니라 그 안의 특정 hs6에서만 나타나는 게 확인돼, hs6 {blindspots.hs6_added_count}개로
+              쪼개 실었다. MVP10 고정 멤버(HS {blindspots.hs6_protected_mvp10.join(", ")})는 물가·경보
+              이력이 hs4 단위로 고정돼 있어 이번 승격에서 제외했다 — 원래 hs4 그대로 남아 있다.
             </li>
           </ol>
           <div className="mt-4 rounded-lg border border-white/10 bg-white/[0.03] p-3 text-xs leading-relaxed text-slate-500">
