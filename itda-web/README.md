@@ -14,16 +14,21 @@
 npm install
 npm run dev          # http://localhost:3000
 npm run build         # 도메인 루트용 정적 내보내기 → out/
-npm run build:pages   # GitHub Pages용 내보내기 (basePath=/pivot) → out/
+npm run build:pages   # GitHub Pages용 내보내기 (basePath=/pivot/itda) → out/
 ```
 
 ## 배포 (GitHub Pages)
 
-저장소 루트의 `.github/workflows/deploy-itda.yml`이 `itda-web/`의 변경
-사항을 감지해 자동으로 빌드 후 GitHub Pages에 배포합니다. 처음 한 번은
-저장소 Settings → Pages → Source를 **GitHub Actions**로 지정해야 합니다.
+이 저장소의 GitHub Pages는 `gh-pages` 브랜치 배포 방식이며, 저장소 루트는
+이미 다른 프로젝트(`site/`, Supply-Pivot 데모)가 사용 중입니다. 그래서
+잇다 데모는 같은 `gh-pages` 브랜치의 `/itda` 하위 경로에만 배포하고, 나머지
+파일은 건드리지 않습니다(`peaceiris/actions-gh-pages`의 `destination_dir`
++ `keep_files: true`).
 
-배포 후 URL: `https://<github-user>.github.io/pivot/`
+저장소 루트의 `.github/workflows/deploy-itda.yml`이 `itda-web/`의 변경
+사항을 감지해 자동으로 빌드 후 배포합니다.
+
+배포 후 URL: `https://<github-user>.github.io/pivot/itda/`
 
 ## 데이터 출처 및 주의사항
 

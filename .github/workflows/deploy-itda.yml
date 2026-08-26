@@ -1,5 +1,9 @@
 name: Deploy 잇다(IT-DA) demo to GitHub Pages
 
+# 이 저장소의 GitHub Pages는 gh-pages 브랜치 배포 방식(다른 프로젝트 site/가
+# 저장소 루트를 이미 사용 중)이므로, 잇다 데모는 gh-pages 브랜치의 /itda
+# 하위 경로에만 배포하고 나머지 파일은 건드리지 않는다(keep_files: true).
+
 on:
   push:
     branches:
@@ -11,16 +15,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: gh-pages-deploy
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -34,17 +36,9 @@ jobs:
           cache-dependency-path: itda-web/package-lock.json
       - run: npm ci
       - run: npm run build:pages
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: itda-web/out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: itda-web/out
+          destination_dir: itda
+          keep_files: true
