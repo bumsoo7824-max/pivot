@@ -55,7 +55,14 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add pipeline_v2/discover.db data/workflow_raw/today_counts.json site/public/data/workflow.json
           git diff --cached --quiet || git commit -m "chore: 워크플로우 데이터 자동 갱신 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push
+          # 체크아웃 이후 사람이 직접 push해서 origin이 앞서 있을 수 있음 — rebase 후 재시도.
+          # (사람 커밋과 봇 커밋이 서로 다른 파일을 건드리는 한 충돌 없이 정리됨)
+          for i in 1 2 3 4 5; do
+            git push && break
+            echo "push 실패(원격이 앞서 있음) — pull --rebase 후 재시도 ($i/5)"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; break; }
+            sleep 3
+          done
 
       - name: Node 설치
         uses: actions/setup-node@v4
