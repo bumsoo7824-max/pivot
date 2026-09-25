@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/blindspots/", label: "사각지대 스크리닝" },
   { href: "/top-country/", label: "1위국 분포" },
   { href: "/golden-time/", label: "골든타임" },
+  { href: "/workflow/", label: "워크플로우(신규)" },
 ];
 
 export default function Nav({ builtDate }: { builtDate: string }) {

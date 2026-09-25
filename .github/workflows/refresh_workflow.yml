@@ -1,0 +1,78 @@
+name: 워크플로우 데이터 자동 수집·배포
+
+# 2026-09-25 세션에서 확정한 스케줄: 매일 09:00·17:00 KST 수집.
+# KST(UTC+9) 기준이라 UTC로는 00:00 / 08:00.
+# 이 workflow는 /workflow 페이지 전용(pipeline_v2/, data/workflow_raw/, site/public/data/workflow.json)만
+# 건드린다 — 기존 build_static_data.py 산출물(9개 JSON)은 이 workflow가 절대 건드리지 않는다.
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 09:00 KST
+    - cron: "0 8 * * *"   # 17:00 KST
+  workflow_dispatch: {}    # 수동 실행 버튼(Actions 탭)
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh-workflow
+  cancel-in-progress: false
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 뉴스 수집 (naver+google OR, 표준 라이브러리만 사용 — pip 설치 불필요)
+        env:
+          NAVER_ID: ${{ secrets.NAVER_ID }}
+          NAVER_SECRET: ${{ secrets.NAVER_SECRET }}
+          CONTACT: supply-pivot-bot
+        run: |
+          python pipeline_v2/discover_collect.py --days 1 --out-dir pipeline_v2
+
+      - name: 오늘 자 실측 카운터 집계
+        run: |
+          python pipeline_v2/aggregate_today.py --db pipeline_v2/discover.db
+
+      - name: workflow.json 재생성
+        run: |
+          python scripts/build_workflow_data.py
+
+      - name: 수집 DB·집계 결과 커밋 (다음 실행에서 이어서 누적되도록)
+        run: |
+          git config user.name "supply-pivot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pipeline_v2/discover.db data/workflow_raw/today_counts.json site/public/data/workflow.json
+          git diff --cached --quiet || git commit -m "chore: 워크플로우 데이터 자동 갱신 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
+
+      - name: Node 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: site/package-lock.json
+
+      - name: 사이트 빌드 (GitHub Pages, basePath=/pivot)
+        working-directory: site
+        run: |
+          npm ci
+          npm run build:pages
+
+      - name: GitHub Pages 배포
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site/out
+          publish_branch: gh-pages
