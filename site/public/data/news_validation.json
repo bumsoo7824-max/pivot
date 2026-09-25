@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-09-25",
+  "combine_rule": "가중치 없는 단순 OR 결합 (naver + google) — discover_collect.py DEFAULT_SRC 확정치",
+  "rounds": [
+    { "round": "3", "dataset": "held-out 15개(학습셋과 무관)", "recall": 47, "note": "과적합 확인(학습 86%→held-out 47%, 62%p 격차)" },
+    { "round": "4", "dataset": "held-out 15개(동일)", "recall": 87, "note": "행위어근+무역어 공존 규칙 도입 — 학습셋 86% 그대로 유지, 진짜 일반화 확인" },
+    { "round": "5", "dataset": "실 naver API, held-out 15개", "recall": 53, "note": "로컬 시뮬레이션(87%) 대비 실API 20%p+ 하락 — 반드시 실API로 재검증 필요" },
+    { "round": "7", "dataset": "실데이터 12개(기사0건 3개 제외)", "recall": 83, "note": "관세청 품목명 대량 반영(MATERIALS_TIER2 1078개 병합)" },
+    { "round": "8", "dataset": "동일 12개", "recall": 83, "note": "classify() 3단 상태(CANDIDATE) 도입 — 재현율은 그대로, 검토 물량 +25% 안전망 확보" },
+    { "round": "9", "dataset": "FR·SEC 실API, held-out 15개", "recall": 13, "note": "naver(83%) 대비 매우 낮음 — 소스 자체 구조적 한계, 채택 보류" },
+    { "round": "11", "dataset": "held-out 15개(유명 사건 세트)", "recall": 67, "note": "구글뉴스 추가 — naver 단독과 결합이 완전히 동일(개선폭 0%p, 구글이 naver의 부분집합)" },
+    { "round": "12", "dataset": "held-out 15개(구조적 RED 379 유니버스 안 '진짜 과녁')", "recall": 40, "note": "최초 실행치 — naver 33%, google 33%, 결합(OR) 40%" },
+    { "round": "12-정정", "dataset": "동일(ref_date 오류 2건 정정 후 최종)", "recall": 53, "note": "naver 47%, google 47%, 결합(OR) 53% — 이 페이지의 최종 확정치" }
+  ],
+  "round12_events": [
+    { "event": "F5-04 캐나다포타쉬_밴쿠버항만파업", "naver": false, "google": false, "combined": false, "note": "기사 1건뿐, CANDIDATE(품목어 없는 일반기사)" },
+    { "event": "F5-08 케무어스_대만TiO2공장폐쇄", "naver": false, "google": false, "combined": false, "note": "관련기사 0건" },
+    { "event": "G_CN_PHOSPHATE 중국DAP비료수출검사중단", "naver": true, "google": true, "combined": true, "note": "ref_date 정정 후 포착 — 기준일이 실제보다 약 23일 빨랐음" },
+    { "event": "F5-06 중국흑연수출통제", "naver": true, "google": true, "combined": true, "note": "" },
+    { "event": "F6-01 BASF프리포트폴리아미드불가항력", "naver": false, "google": false, "combined": false, "note": "관련기사 0건" },
+    { "event": "F4-01 BASF비타민AE불가항력", "naver": false, "google": false, "combined": false, "note": "관련기사 0건" },
+    { "event": "F2-09 기니보크사이트알루미나가격급등", "naver": false, "google": true, "combined": true, "note": "구글이 구제한 사례" },
+    { "event": "F5-05 캐나다BC항만봉쇄포타쉬", "naver": false, "google": false, "combined": false, "note": "무관 기사 1건뿐" },
+    { "event": "F9-07 바젤협약전자폐기물수출규제", "naver": false, "google": false, "combined": false, "note": "무관 기사 1건뿐" },
+    { "event": "F2-08 DRC코발트수출금지", "naver": true, "google": true, "combined": true, "note": "ref_date 정정 후 포착 — 기준일이 실제보다 약 10일 빨랐음" },
+    { "event": "G_TUNGSTEN_MOLY 중국텅스텐수출허가제", "naver": true, "google": true, "combined": true, "note": "" },
+    { "event": "F2-07 중국중희토류수출통제확대", "naver": true, "google": true, "combined": true, "note": "" },
+    { "event": "F8-02 한국중국산후판반덤핑관세", "naver": true, "google": false, "combined": true, "note": "naver만 잡은 사례" },
+    { "event": "F1-03 기니보크사이트채굴권취소", "naver": false, "google": false, "combined": false, "note": "진짜 키워드 갭 — \"박탈\" 표현이 사전에 없음" },
+    { "event": "F8-03 한국열연강판반덤핑관세", "naver": true, "google": true, "combined": true, "note": "" }
+  ],
+  "precision": { "naver": "58% (1312/2273)", "google": "54% (60/111)" },
+  "misses": [
+    { "cause": "구조적 보도 공백(니치 B2B 산업뉴스 — 국내 매체가 거의 안 다룸)", "count": 6, "examples": "캐나다포타쉬 파업/봉쇄 2건, 케무어스TiO2, BASF 2건, 바젤협약e-waste" },
+    { "cause": "진짜 키워드 갭(\"박탈\" 등 미등록 행위어)", "count": 1, "examples": "기니보크사이트채굴권취소(F1-03)" }
+  ],
+  "lessons": [
+    "같은 데이터로 사전을 넓히면 숫자는 좋아 보이지만 거짓 개선 — 라운드2(86%)→라운드3 held-out(47%)에서 확인. 항상 held-out으로 검증.",
+    "정확 문구 추가보다 구조적 규칙이 더 잘 일반화됨 — 행위어근+무역어 공존조건 하나로 47%→87%, 학습셋 성능은 그대로.",
+    "시뮬레이션과 실 API 결과는 다르다 — 87%(로컬)→53%(실데이터)에서 20%p+ 격차. 반드시 실 API로 재검증.",
+    "소스가 많다고 항상 좋은 건 아니다 — 유명 사건 세트(라운드11)에서는 결합 효과 0%p였지만, 진짜 과녁 사건(라운드12)에서는 +6%p 실익 확인.",
+    "미탐 원인은 하나가 아니다 — 창(window) 문제, 진짜 키워드 갭, 구조적 보도 공백, ref_date 추정 오류를 매번 구분해야 함.",
+    "'유명한 세계 뉴스'를 잡는 성능(67~83%)과 '우리 제품이 실제로 신경써야 할 사건'을 잡는 성능(47~53%)은 전혀 다른 숫자 — 발표에서 재현율을 말할 땐 반드시 어떤 사건 기준인지 명시."
+  ]
+}
