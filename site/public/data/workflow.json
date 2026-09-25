@@ -137,7 +137,38 @@
     "니치 B2B 산업뉴스 7건에 대한 별도 소스 카테고리 검토 여부 결정",
     "발표자료에 naver+google 결합·신호등 3단계 반영"
   ],
-  "generated_at": "2026-09-25T12:27:44+00:00",
+  "generated_at": "2026-09-25T12:54:58+00:00",
   "source": "supply_pivot_v2 세션(2026-09-25) — build_static_data.py(기존 9개 JSON)와 독립",
-  "live": null
+  "live": {
+    "as_of": "2026-09-25",
+    "generated_at": "2026-09-25T12:54:58+00:00",
+    "cumulative": {
+      "total_events": 349,
+      "total_relevant": 211,
+      "total_candidate": 95
+    },
+    "today": {
+      "new_events": 349,
+      "new_relevant": 211,
+      "new_candidate": 95
+    },
+    "last_runs": [
+      {
+        "run_at": "2026-09-25 12:54",
+        "source": "google",
+        "fetched": 193,
+        "new": 160,
+        "new_relevant": 59,
+        "err": null
+      },
+      {
+        "run_at": "2026-09-25 12:53",
+        "source": "naver",
+        "fetched": 278,
+        "new": 189,
+        "new_relevant": 152,
+        "err": null
+      }
+    ]
+  }
 }
