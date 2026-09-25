@@ -1,0 +1,174 @@
+{
+  "_note": "2026-09-25 세션(별도 분석 저장소 supply_pivot_v2)에서 확정된 뉴스 조기경보 워크플로우 원자료. 기존 사이트(272/355 기준, meta.json)와는 분리된 신규 페이지 전용 소스 — 기존 파일은 건드리지 않음. build_workflow_data.py가 이 파일을 읽어 site/public/data/workflow.json을 만든다.",
+  "as_of": "2026-09-25",
+  "steps": [
+    {
+      "id": 1,
+      "title": "사람이 매일 웹 훑기",
+      "tone": "gray",
+      "status": "done",
+      "summary": "사건명 메모(기준 목록) — 뉴스 자동 수집 전 1차 스크리닝",
+      "detail": null
+    },
+    {
+      "id": 2,
+      "title": "네이버+구글뉴스 검색 (OR 결합)",
+      "tone": "blue",
+      "status": "done",
+      "summary": "쿼리 124개 · 제목/URL/게재일만 저장 · 가중치 없음",
+      "detail": "held-out 재검증(구조적 RED 379개 유니버스 안 15개 사건)에서 naver·google이 서로 다른 사건을 잡는 상호보완 사례 확인 → 단순 OR 결합 확정(2026-09-25). naver 47%(7/15), google 47%(7/15), 결합 53%(8/15)."
+    },
+    {
+      "id": 3,
+      "title": "중복 묶기",
+      "tone": "blue",
+      "status": "done",
+      "summary": "같은 사건 기사(소스 간 포함) → 1건으로 묶음",
+      "detail": null
+    },
+    {
+      "id": 4,
+      "title": "사건 → HS6 · 국가 매핑",
+      "tone": "red",
+      "status": "partial",
+      "summary": "구조적 RED 379개 hs6 유니버스 정합성 감사 완료",
+      "detail": "전체 유니버스 1,109개 hs6(256 HS4) 중 379개만 파이프라인에 실제 연결됨. 552개는 TRASS 수집 자체가 안 되어 있고(공공데이터포털 nitemtrade로 보완 수집 중), 170개(52HS4 그룹)는 TRASS 수집은 됐지만 최종 리스크 테이블에는 아직 미반영, 8개는 15개월간 거래 자체가 없음."
+    },
+    {
+      "id": 5,
+      "title": "classify() 사전 판정 (자동)",
+      "tone": "red",
+      "status": "done",
+      "summary": "DISRUPT+MATERIALS 1,229개, 행위어근+무역어 공존 규칙",
+      "detail": "2026-09-25 확정 사전. MATERIALS_TIER2를 관세청 공식 품목명 기준 전체 유니버스(1,109개 hs6/256개 HS4)로 확장 완료."
+    },
+    {
+      "id": 6,
+      "title": "신호등 3단계",
+      "tone": "amber",
+      "status": "done",
+      "summary": "Yes(RELEVANT) / CANDIDATE / No(NONE)",
+      "detail": "CANDIDATE는 classify()가 설계상 의도한 절충안 구간(사건언어 O, 품목어 X) — LLM이 구조화 요약(관련여부/추정HS6/확신도/판단근거) 생성 후 사람이 최종 검토. Yes 판정도 자동 발행하지 않고 사람이 직접 확인 후 발행. 사람 검토 후 새 키워드 확인되면 discover_candidates.csv를 통해 ②·⑤ 사전으로 피드백."
+    },
+    {
+      "id": 7,
+      "title": "노출도(HHI·수입비중) 1차 심각도",
+      "tone": "green",
+      "status": "reference_only",
+      "summary": "2026-09-25 결정: 참고용 지표로 다운그레이드",
+      "detail": "HHI는 과거 세션 논문 검토에서 판정력이 크지 않다고 확인됨 — 핵심 판정은 사건 소급용 뉴스(②~⑥). 552개 사각지대의 HHI 전량 계산은 필수 아님, 시간이 오래 걸리면 건너뛰어도 됨."
+    },
+    {
+      "id": 8,
+      "title": "통관 스파이크 · 단가 · 물량",
+      "tone": "green",
+      "status": "reference_only",
+      "summary": "확인/심각도(소급용, 3~4개월 후 갱신)",
+      "detail": "신호등 판정 자체는 바꾸지 않음. 참고 지표."
+    },
+    {
+      "id": 9,
+      "title": "고객 노출 결합",
+      "tone": "red",
+      "status": "planned",
+      "summary": "고객 HS6 ∩ 공급국 ∩ 사건 영향국",
+      "detail": "유료 버전 범위. 379개 기준 데이터로 우선 시연."
+    },
+    {
+      "id": 10,
+      "title": "대체공급국 · 공급처 + 지원정책 연계",
+      "tone": "red",
+      "status": "planned",
+      "summary": "영향국 제외 · 정책은 유형표+자격 필터",
+      "detail": "대체공급처 단계 이전까지 데이터가 완비된 품목은 1,109개 중 379개(34%)뿐 — 552개는 추가 수집 진행 중."
+    }
+  ],
+  "recall_rounds": [
+    {
+      "round": "3",
+      "dataset": "held-out 15개(학습셋과 무관)",
+      "recall": 47,
+      "note": "과적합 확인(학습 86%→held-out 47%)"
+    },
+    {
+      "round": "4",
+      "dataset": "held-out 15개",
+      "recall": 87,
+      "note": "행위어근+무역어 공존 규칙 도입"
+    },
+    {
+      "round": "8",
+      "dataset": "실데이터 12개 사건",
+      "recall": 83,
+      "note": "classify() 3단 상태(CANDIDATE) 도입"
+    },
+    {
+      "round": "11",
+      "dataset": "held-out 15개(유명 사건 세트)",
+      "recall": 67,
+      "note": "구글뉴스 추가 — 결합 효과 0%p(같은 세트 안에서 naver의 부분집합)"
+    },
+    {
+      "round": "12",
+      "dataset": "held-out 15개(구조적 RED 379 유니버스 안, ref_date 정정 최종치)",
+      "recall": 53,
+      "note": "naver 47%, google 47%, 결합(OR) 53% — \"진짜 과녁\" 기준"
+    }
+  ],
+  "round12_misses": [
+    {
+      "cause": "구조적 보도 공백(니치 B2B 산업뉴스)",
+      "count": 6
+    },
+    {
+      "cause": "진짜 키워드 갭(\"박탈\" 등 미등록 행위어)",
+      "count": 1
+    }
+  ],
+  "operations": {
+    "schedule": "매일 09:00 · 17:00 수집, 09:00 사람 검토(전날 17:00분+당일 09:00분 포함), 확정 후 하루 유예 → 다음날 09:00 경보 발행",
+    "field_run_window": "2026-09-26 ~ 2026-09-29(발표 전)",
+    "niche_miss_policy": "니치 B2B 산업뉴스 미탐 7/15는 구조적 한계로 보고서에 기록하되 시각화에서는 제외"
+  },
+  "next_tasks": [
+    "CANDIDATE 검토 SOP 세부 확정(누가·몇 건)",
+    "discover_collect.py 실측 가동(09-26~09-29)으로 CANDIDATE 큐 실측 규모 확인",
+    "552개 사각지대 hs6 공공데이터포털(nitemtrade) 수집 완료",
+    "니치 B2B 산업뉴스 7건에 대한 별도 소스 카테고리 검토 여부 결정",
+    "발표자료에 naver+google 결합·신호등 3단계 반영"
+  ],
+  "generated_at": "2026-09-25T12:54:58+00:00",
+  "source": "supply_pivot_v2 세션(2026-09-25) — build_static_data.py(기존 9개 JSON)와 독립",
+  "live": {
+    "as_of": "2026-09-25",
+    "generated_at": "2026-09-25T12:54:58+00:00",
+    "cumulative": {
+      "total_events": 349,
+      "total_relevant": 211,
+      "total_candidate": 95
+    },
+    "today": {
+      "new_events": 349,
+      "new_relevant": 211,
+      "new_candidate": 95
+    },
+    "last_runs": [
+      {
+        "run_at": "2026-09-25 12:54",
+        "source": "google",
+        "fetched": 193,
+        "new": 160,
+        "new_relevant": 59,
+        "err": null
+      },
+      {
+        "run_at": "2026-09-25 12:53",
+        "source": "naver",
+        "fetched": 278,
+        "new": 189,
+        "new_relevant": 152,
+        "err": null
+      }
+    ]
+  }
+}
