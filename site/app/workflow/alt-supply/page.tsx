@@ -2,6 +2,22 @@ import Link from "next/link";
 import { PageHeader, Section, SourceTag, Stat } from "@/components/ui";
 import { coverageCounts } from "@/lib/coverage-data";
 import { workflow } from "@/lib/workflow-data";
+import kotraMap from "@data/kotra_map.json";
+import comtradeAlts from "@data/comtrade_alts.json";
+import customsAlternatives from "@data/customs_alternatives.json";
+import mvp10 from "@data/mvp10.json";
+
+function fmtUsd(n: number) {
+  if (n >= 1_000_000_000) return `$${(n / 1_000_000_000).toFixed(1)}B`;
+  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`;
+  if (n >= 1_000) return `$${(n / 1_000).toFixed(0)}K`;
+  return `$${n}`;
+}
+
+const mvp10Name = new Map(mvp10.items.map((i) => [i.hs4, i.name] as const));
+const topByRegion = Object.entries(kotraMap.by_region).sort((a, b) => b[1] - a[1]);
+const topByType = Object.entries(kotraMap.by_type).sort((a, b) => b[1] - a[1]);
+const topKotraCountries = [...kotraMap.countries].sort((a, b) => b.count - a.count).slice(0, 6);
 
 export default function AltSupplyPage() {
   const s9 = workflow.steps.find((s) => s.id === 9)!;
@@ -76,6 +92,89 @@ export default function AltSupplyPage() {
           </div>
         </div>
         <p className="mt-4 text-xs leading-relaxed text-slate-500">{s10.detail}</p>
+      </Section>
+
+      <Section title="KOTRA 해외 네트워크 (지원 인프라)" className="mb-6" hint="대체공급국 후보에 실제로 연락할 수 있는 창구 — 정부 지원정책 자체는 아직 별도 매칭 전">
+        <div className="mb-4 grid gap-3 sm:grid-cols-3">
+          <Stat label="총 법인·사무소" value={kotraMap.total_companies.toLocaleString("ko-KR")} tone="pivot" sub={`${kotraMap.country_count}개국 매핑`} />
+          <Stat label="상위 유형" value={topByType[0][0]} sub={`${topByType[0][1].toLocaleString("ko-KR")}개 · 2위 ${topByType[1][0]}(${topByType[1][1].toLocaleString("ko-KR")}개)`} />
+          <Stat label="상위 지역" value={topByRegion[0][0]} sub={`${topByRegion[0][1].toLocaleString("ko-KR")}개 · 2위 ${topByRegion[1][0]}(${topByRegion[1][1].toLocaleString("ko-KR")}개)`} />
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+          {topKotraCountries.map((c) => (
+            <div key={c.name} className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-2.5 text-center">
+              <p className="text-sm font-semibold text-white">{c.name}</p>
+              <p className="mt-0.5 font-mono text-xs text-pivot-500">{c.count.toLocaleString("ko-KR")}개</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-3 text-xs leading-relaxed text-slate-500">{kotraMap.note}</p>
+      </Section>
+
+      <Section
+        title="대체공급국 후보 — 지금 매칭돼 있는 범위"
+        className="mb-6"
+        hint="두 방법론이 서로 다른 10개 품목에 이미 적용돼 있다 — 넓히는 일이 남았지 처음 만드는 일이 아니다"
+      >
+        <p className="mb-3 text-sm font-semibold text-white">UN Comtrade 기반 (MVP10 · 1위국=중국·HHI≥0.5 상위 10개)</p>
+        <div className="overflow-x-auto rounded-lg border border-white/10">
+          <table className="w-full text-left text-xs">
+            <thead className="bg-ink-800 text-slate-500">
+              <tr>
+                <th className="px-3 py-2 font-medium">HS4</th>
+                <th className="px-3 py-2 font-medium">품목명</th>
+                <th className="px-3 py-2 font-medium">대체후보국 (상위 3)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comtradeAlts.items.map((it) => (
+                <tr key={it.hs4} className="border-t border-white/5">
+                  <td className="whitespace-nowrap px-3 py-2 font-mono text-pivot-500">{it.hs4}</td>
+                  <td className="max-w-[260px] truncate px-3 py-2 text-slate-200">{mvp10Name.get(it.hs4) ?? "-"}</td>
+                  <td className="px-3 py-2 text-slate-400">
+                    {it.alternatives.slice(0, 3).map((a) => (
+                      <span key={a.country} className="mr-2 whitespace-nowrap">
+                        {a.rank}. {a.country}
+                        {a.kotra_offices ? <span className="text-slate-600"> (KOTRA {a.kotra_offices}개)</span> : null}
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mb-3 mt-6 text-sm font-semibold text-white">관세청 수출입통계 기반 (별도 10개 품목)</p>
+        <div className="overflow-x-auto rounded-lg border border-white/10">
+          <table className="w-full text-left text-xs">
+            <thead className="bg-ink-800 text-slate-500">
+              <tr>
+                <th className="px-3 py-2 font-medium">HS4</th>
+                <th className="px-3 py-2 font-medium">품목명</th>
+                <th className="px-3 py-2 font-medium">1위국</th>
+                <th className="px-3 py-2 font-medium">12개월 수입액</th>
+              </tr>
+            </thead>
+            <tbody>
+              {customsAlternatives.items.map((it) => (
+                <tr key={it.hs4} className="border-t border-white/5">
+                  <td className="whitespace-nowrap px-3 py-2 font-mono text-pivot-500">{it.hs4}</td>
+                  <td className="max-w-[300px] truncate px-3 py-2 text-slate-200">{it.name}</td>
+                  <td className="whitespace-nowrap px-3 py-2 text-slate-400">
+                    {it.top_country} ({Math.round(it.top_share * 100)}%)
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 font-mono text-slate-300">{fmtUsd(it.import_usd)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          두 표는 서로 다른 10개 HS4에 대한 시연이다 — {customsAlternatives.method} 방법론과 UN
+          Comtrade 기반 매칭({comtradeAlts.source})을 각각 적용해봤고, 1,109개 유니버스 전체로
+          넓히는 건 아직이다.
+        </p>
       </Section>
 
       <Section title="현재 시연 범위와 남은 일">

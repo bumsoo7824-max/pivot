@@ -2,7 +2,9 @@
 // site/lib/data.ts(기존 272/355 사각지대 기준 9개 JSON)는 건드리지 않는다 — 이 파일은
 // hs6_universe.json 하나만 읽고, /workflow/coverage 페이지에서만 import된다.
 // 출처: hs6_universe_named.csv (2026-09-24 기준 관세청 HS6 유니버스 감사 결과) +
-// collect_gap552.py 실행 결과(2026-09-26, nitemtrade API, 12개월 수입액 집계, 543/552건 확보).
+// collect_gap552.py 실행 결과(2026-09-26, nitemtrade API, 12개월 수입액 집계, 543/552건 확보) +
+// blindspots.json(step4_blind_spots.csv, TRASS 기반 HS4 단위 리스크 테이블)에서 hs4 매칭으로
+// 끌어온 collected/collected_unintegrated 참고치(2026-09-26 병합).
 import universeJson from "@data/hs6_universe.json";
 
 export type CoverageStatus =
@@ -19,10 +21,19 @@ export type CoverageItem = {
   name: string;
   name_full: string;
   category: string;
+  // nitemtrade 12개월(2025.09~2026.08) HS6 단위 실측 — collected_partial(543개)에만 있음.
   import_usd_12m?: number;
   top_country?: string;
   top_country_share_pct?: number;
   n_country?: number;
+  // TRASS 기반 리스크 테이블(step4_blind_spots.csv, HS4 단위 집계) 참고치 —
+  // collected(379개)·collected_unintegrated(170개)에서 매핑되는 HS4가 있을 때만 붙는다.
+  // HS6별 실측이 아니라 "같은 HS4 안 형제 HS6가 함께 쓰는 HS4 집계값"이므로
+  // UI에서 반드시 nitemtrade HS6 실측과 구분해서 보여준다.
+  import_usd_hs4_ref?: number;
+  top_country_hs4_ref?: string;
+  top_share_hs4_ref?: number;
+  hhi_hs4_ref?: number;
 };
 
 export const universe = universeJson as unknown as CoverageItem[];
@@ -36,14 +47,14 @@ export const STATUS_META: Record<
     short: "확보 완료",
     cls: "border-signal-green/40 bg-signal-green/10 text-signal-green",
     dot: "bg-signal-green",
-    desc: "TRASS(bandtrass.or.kr) 15개월 수집 완료 — 노출도·통관 스파이크까지 전 단계 연결됨.",
+    desc: "TRASS(bandtrass.or.kr) 15개월 수집 완료 — 노출도·통관 스파이크까지 전 단계 연결됨. 표의 수입액·1위국은 같은 HS4의 리스크 테이블 집계치(HS4 참고).",
   },
   collected_unintegrated: {
     label: "수집 완료 · 미통합(52HS4군 170)",
     short: "미통합",
     cls: "border-signal-blue/40 bg-signal-blue/10 text-signal-blue",
     dot: "bg-signal-blue",
-    desc: "TRASS 수집 자체는 끝났지만 최종 리스크 테이블(대체공급국 매칭)에는 아직 반영되지 않음.",
+    desc: "TRASS 수집 자체는 끝났지만 최종 리스크 테이블(대체공급국 매칭)에는 아직 반영되지 않음. 표의 수입액·1위국은 같은 HS4의 리스크 테이블 집계치(HS4 참고).",
   },
   collected_partial: {
     label: "수입액·국가 확보(nitemtrade, 543)",

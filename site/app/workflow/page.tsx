@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { PageHeader, Section, Stat } from "@/components/ui";
-import { STATUS_META, TONE_DOT, TONE_RING, workflow } from "@/lib/workflow-data";
+import { workflow } from "@/lib/workflow-data";
+import { coverageCounts } from "@/lib/coverage-data";
 import RecallRoundsChart from "@/components/charts/RecallRoundsChart";
-import WorkflowDiagram from "@/components/charts/WorkflowDiagram";
 
 /**
  * 뉴스 조기경보 워크플로우(①~⑩) 허브 페이지.
@@ -14,10 +14,34 @@ import WorkflowDiagram from "@/components/charts/WorkflowDiagram";
 
 const SUBPAGES = [
   {
-    href: "/workflow/coverage/",
-    title: "품목 커버리지 검색",
-    desc: "HS4·HS6 1,109개 전체를 검색하고, 대체공급처 단계까지 데이터가 실제 연결됐는지 확인",
+    href: "/workflow/overview/",
+    title: "페이지1 · 전체 워크플로우",
+    desc: "①~⑩ 전체 흐름도와 10단계 상세를 한 화면에서 — 경보/참고지표/전환 3단계 구조",
     tone: "blue",
+  },
+  {
+    href: "/workflow/admin/",
+    title: "페이지3 · 관리자 UI",
+    desc: "수집→중복제거→URL 요약(AI)→매핑후보→classify() 판정을 거친 뉴스 이벤트 검토 큐",
+    tone: "amber",
+  },
+  {
+    href: "/workflow/coverage/",
+    title: "페이지4 · 품목 커버리지 검색",
+    desc: "HS4·HS6 1,109개 전체를 검색하고, 12개월 수입액·최대 공급국을 바로 확인",
+    tone: "blue",
+  },
+  {
+    href: "/workflow/paid-report/",
+    title: "페이지5 · 유료 리포트",
+    desc: "무료 MVP 이후 유료 버전에서 제공하는 리포트 구성과 발행 방식",
+    tone: "red",
+  },
+  {
+    href: "/workflow/alt-supply/",
+    title: "페이지6 · 대체공급처·지원정책",
+    desc: "고객 노출 결합, 영향국 제외 후보 추천, KOTRA·UN Comtrade 기반 대체국 후보 (유료 범위)",
+    tone: "red",
   },
   {
     href: "/workflow/news/",
@@ -31,12 +55,6 @@ const SUBPAGES = [
     desc: "classify() 판정 → 신호등 3단계 → 노출도(HHI)·통관 스파이크 심각도까지",
     tone: "green",
   },
-  {
-    href: "/workflow/alt-supply/",
-    title: "대체공급처·지원정책",
-    desc: "고객 노출 결합, 영향국 제외 후보 추천, KOTRA·지원정책 연계 (유료 범위)",
-    tone: "red",
-  },
 ] as const;
 
 const CARD_TONE: Record<string, string> = {
@@ -48,13 +66,17 @@ const CARD_TONE: Record<string, string> = {
 
 export default function WorkflowPage() {
   const last = workflow.recall_rounds[workflow.recall_rounds.length - 1];
+  const counts = coverageCounts();
+  const universeTotal =
+    counts.collected + counts.collected_unintegrated + counts.collected_partial + counts.pending + counts.no_trade;
+  const dataReadyPct = Math.round(((universeTotal - counts.pending - counts.no_trade) / universeTotal) * 100);
 
   return (
     <>
       <PageHeader
-        step="워크플로우"
-        title="뉴스 조기경보 파이프라인 (①~⑩)"
-        lead="사람이 웹을 훑는 단계부터 대체공급국 연계까지, 실제로 돌아가는 순서 그대로 보여준다. 신호등은 Yes/CANDIDATE/No 3단계다."
+        step="워크플로우 · 페이지 2"
+        title="뉴스 조기경보 워크플로우 (①~⑩)"
+        lead="사람이 웹을 훑는 단계부터 대체공급국 연계까지, 실제로 돌아가는 순서 그대로 보여준다. 신호등은 Yes/CANDIDATE/No 3단계다. 전체 흐름도·10단계 상세는 페이지 1(전체 워크플로우)로 옮겼다."
       >
         <p className="mt-3 max-w-3xl rounded-lg border border-signal-amber/30 bg-signal-amber/5 px-3.5 py-2.5 text-xs leading-relaxed text-signal-amber">
           이 페이지는 기존 사각지대 272개(/mvp10 등)와는 별도 검증 세트 기준입니다 — 아래 숫자와
@@ -62,9 +84,29 @@ export default function WorkflowPage() {
         </p>
       </PageHeader>
 
-      <Section title="전체 흐름도" className="mb-6" hint={`기준일 ${workflow.as_of}`}>
-        <WorkflowDiagram steps={workflow.steps} />
-      </Section>
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <Link
+          href="/workflow/admin/"
+          className="rounded-2xl border border-pivot-500/50 bg-gradient-to-br from-pivot-500/15 to-pivot-500/[0.02] p-5 transition hover:border-pivot-500/70 sm:col-span-2"
+        >
+          <p className="text-[11px] font-bold uppercase tracking-wide text-pivot-400">최우선 지표 · 결합 재현율 (naver OR google)</p>
+          <div className="mt-2 flex items-baseline gap-3">
+            <span className="font-mono text-5xl font-extrabold text-white">
+              {last.recall}
+              <span className="text-2xl text-pivot-400">%</span>
+            </span>
+            <span className="text-xs text-slate-400">held-out 15개 사건 감사({last.round}) 기준</span>
+          </div>
+          <p className="mt-2 text-[11px] text-pivot-400">관리자 UI에서 재현율 검토 근거 보기 →</p>
+        </Link>
+        <Stat label="품목 데이터 확보율" value={`${dataReadyPct}%`} tone="pivot" sub={`HS6 ${universeTotal}개 중 진짜 사각지대 ${counts.pending}개만 남음`} />
+        <Stat
+          label="오늘 신규 Yes"
+          value={workflow.live ? `${workflow.live.today.new_relevant} / ${workflow.live.today.new_events}건` : "-"}
+          tone="amber"
+          sub="CANDIDATE 검토대기는 관리자 UI에서 확인"
+        />
+      </div>
 
       <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {SUBPAGES.map((p) => (
@@ -100,6 +142,11 @@ export default function WorkflowPage() {
               sub="사람+LLM 검토 대기"
             />
           </div>
+          <p className="mt-3 text-xs text-slate-500">
+            <Link href="/workflow/admin/" className="text-pivot-500 hover:underline">
+              관리자 UI에서 검토 큐 보기 →
+            </Link>
+          </p>
         </Section>
       ) : (
         <Section title="뉴스 수집 현황 (②~⑥ 단계 전용)" className="mb-6">
@@ -111,44 +158,6 @@ export default function WorkflowPage() {
           </p>
         </Section>
       )}
-
-      <Section title="10단계 요약" className="mb-6" hint={`대제목만 표시 — 각 카드의 "자세히"를 눌러 펼치기`}>
-        <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {workflow.steps.map((s) => {
-            const meta = STATUS_META[s.status];
-            return (
-              <li
-                key={s.id}
-                className={`relative rounded-xl border ${TONE_RING[s.tone]} bg-ink-800/60 p-4`}
-              >
-                <div className="flex items-center gap-2">
-                  <span className={`h-2 w-2 rounded-full ${TONE_DOT[s.tone]}`} />
-                  <span className="font-mono text-[11px] text-slate-600">
-                    {String(s.id).padStart(2, "0")}
-                  </span>
-                  <span className={`chip ml-auto ${meta.cls}`}>{meta.label}</span>
-                </div>
-                <p className="mt-3 text-sm font-semibold leading-snug text-white">{s.title}</p>
-                {(s.summary || s.detail) && (
-                  <details className="group mt-1.5">
-                    <summary className="cursor-pointer list-none text-[11px] text-slate-600 hover:text-slate-400">
-                      자세히 <span className="inline-block transition-transform group-open:rotate-90">›</span>
-                    </summary>
-                    {s.summary && (
-                      <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{s.summary}</p>
-                    )}
-                    {s.detail && (
-                      <p className="mt-2 border-t border-white/10 pt-2 text-[11px] leading-relaxed text-slate-500">
-                        {s.detail}
-                      </p>
-                    )}
-                  </details>
-                )}
-              </li>
-            );
-          })}
-        </ol>
-      </Section>
 
       <div className="grid gap-6 lg:grid-cols-3">
         <Section title="라운드별 재현율 (이벤트 수준)" className="lg:col-span-2">

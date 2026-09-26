@@ -98,7 +98,7 @@ export default function CoverageSearch({ items }: { items: CoverageItem[] }) {
               <th className="px-3 py-2 font-medium">HS4</th>
               <th className="px-3 py-2 font-medium">품목명</th>
               <th className="px-3 py-2 font-medium">상태</th>
-              <th className="px-3 py-2 font-medium">12개월 수입액 · 최대 공급국</th>
+              <th className="px-3 py-2 font-medium">수입액 · 최대 공급국</th>
             </tr>
           </thead>
           <tbody>
@@ -118,9 +118,18 @@ export default function CoverageSearch({ items }: { items: CoverageItem[] }) {
                   <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-400">
                     {i.status === "collected_partial" ? (
                       <>
+                        <span className="mr-1 rounded bg-pivot-500/10 px-1 py-0.5 text-[9.5px] font-semibold text-pivot-500">HS6실측</span>
                         {fmtUsd(i.import_usd_12m)}
                         {i.top_country && (
                           <span className="text-slate-500"> · {i.top_country} {i.top_country_share_pct}%</span>
+                        )}
+                      </>
+                    ) : i.import_usd_hs4_ref ? (
+                      <>
+                        <span className="mr-1 rounded bg-white/10 px-1 py-0.5 text-[9.5px] font-semibold text-slate-300">HS4참고</span>
+                        {fmtUsd(i.import_usd_hs4_ref)}
+                        {i.top_country_hs4_ref && (
+                          <span className="text-slate-500"> · {i.top_country_hs4_ref} {i.top_share_hs4_ref}%</span>
                         )}
                       </>
                     ) : (

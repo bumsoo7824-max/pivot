@@ -14,10 +14,12 @@ export default function CoveragePage() {
       >
         <p className="mt-3 max-w-3xl rounded-lg border border-signal-amber/30 bg-signal-amber/5 px-3.5 py-2.5 text-xs leading-relaxed text-signal-amber">
           2026-09-26 nitemtrade 수집 완료: 원래 사각지대 552개 중 543개는 12개월 수입액·최대
-          공급국을 확보했습니다(&quot;수입액 확보&quot;). 다만 이건 TRASS의 15개월 다지표
-          시계열이 아니라 HHI·통관 스파이크 계산에는 아직 못 씁니다 — 대체공급국 후보 확인용
-          참고 데이터입니다. 실데이터가 없는 품목에 0이나 추정치를 채우지 않고 있는 그대로
-          표시합니다.
+          공급국을 확보했습니다(&quot;HS6실측&quot;). 다만 이건 TRASS의 15개월 다지표 시계열이
+          아니라 HHI·통관 스파이크 계산에는 아직 못 씁니다 — 대체공급국 후보 확인용 참고
+          데이터입니다. 확보완료(379)·미통합(170) 549개 중 513개는 같은 HS4를 쓰는 기존 리스크
+          테이블(TRASS)에서 수입액·1위국을 끌어와 &quot;HS4참고&quot;로 표시합니다 — 형제 HS6가
+          함께 쓰는 HS4 집계값이라 HS6별 실측과는 정밀도가 다릅니다. 실데이터가 없는 품목에
+          0이나 추정치를 채우지 않고 있는 그대로 표시합니다.
         </p>
       </PageHeader>
 
@@ -25,13 +27,13 @@ export default function CoveragePage() {
         <Stat
           label={STATUS_META.collected.short}
           value={counts.collected.toLocaleString("ko-KR")}
-          sub="TRASS 15개월 수집 완료, 전 단계 연결"
+          sub="TRASS 15개월 수집 완료, 전 단계 연결 · 수입액·1위국 HS4참고"
           tone="pivot"
         />
         <Stat
           label={STATUS_META.collected_unintegrated.short}
           value={counts.collected_unintegrated.toLocaleString("ko-KR")}
-          sub="52HS4군 — 수집됐지만 리스크 테이블 미반영"
+          sub="52HS4군 — 리스크 테이블 미반영 · 수입액·1위국 HS4참고"
         />
         <Stat
           label={STATUS_META.collected_partial.short}
@@ -79,13 +81,20 @@ export default function CoveragePage() {
             셋 다 다르다.
           </li>
           <li>
+            <b className="text-white">HS4참고 vs HS6실측 — 정밀도가 다르다.</b> 379+170개 중
+            513개는 같은 HS4를 쓰는 기존 리스크 테이블(TRASS)에서 수입액·1위국을 그대로 끌어온
+            것이라, 한 HS4 안 여러 HS6가 같은 값을 공유한다. 543개(nitemtrade)는 HS6 단위로 직접
+            조회한 실측값이라 더 정밀하다.
+          </li>
+          <li>
             <b className="text-white">8개는 구조적으로 제외.</b> 15개월간 수입 실적이 0인 품목은
             모집단 자체가 없어 계산 대상에서 뺀다.
           </li>
         </ul>
         <SourceTag>
           관세청 HS6 유니버스 감사(2026-09-24) · hs6_universe_named.csv · TRASS(bandtrass.or.kr) ·
-          공공데이터포털 nitemtrade(2026-09-26 수집, 계정 3개 분산 22,080콜)
+          step4_blind_spots.csv(HS4 리스크 테이블) · 공공데이터포털 nitemtrade(2026-09-26 수집,
+          계정 3개 분산 22,080콜)
         </SourceTag>
       </Section>
     </>
