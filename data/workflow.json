@@ -31,8 +31,8 @@
       "title": "사건 → HS6 · 국가 매핑",
       "tone": "red",
       "status": "partial",
-      "summary": "구조적 RED 379개 hs6 유니버스 정합성 감사 완료",
-      "detail": "전체 유니버스 1,109개 hs6(256 HS4) 중 379개만 파이프라인에 실제 연결됨. 552개는 TRASS 수집 자체가 안 되어 있고(공공데이터포털 nitemtrade로 보완 수집 중), 170개(52HS4 그룹)는 TRASS 수집은 됐지만 최종 리스크 테이블에는 아직 미반영, 8개는 15개월간 거래 자체가 없음."
+      "summary": "구조적 RED 379개 hs6 유니버스 정합성 감사 완료, 사각지대 552개 중 543개 nitemtrade 보완 수집",
+      "detail": "전체 유니버스 1,109개 hs6(256 HS4) 중 379개만 대체공급처까지 파이프라인에 실제 연결됨. 2026-09-26 nitemtrade API 보완 수집(계정 3개 분산 22,080콜)으로 원래 552개 사각지대 중 543개는 12개월(2025.09~2026.08) 수입액·최대 공급국을 확보했으나 아직 최종 리스크 테이블(HHI·대체공급국 매칭)에는 미반영 — 대체공급국 후보 확인용 참고 데이터. 9개는 nitemtrade로도 수입 미확인이라 여전히 진짜 사각지대. 170개(52HS4 그룹)는 TRASS 수집은 됐지만 최종 리스크 테이블에는 아직 미반영, 8개는 15개월간 거래 자체가 없음."
     },
     {
       "id": 5,
@@ -133,26 +133,43 @@
   "next_tasks": [
     "CANDIDATE 검토 SOP 세부 확정(누가·몇 건)",
     "discover_collect.py 실측 가동(09-26~09-29)으로 CANDIDATE 큐 실측 규모 확인",
-    "552개 사각지대 hs6 공공데이터포털(nitemtrade) 수집 완료",
+    "nitemtrade로 확보한 543개 수입액·공급국 데이터를 최종 리스크 테이블에 통합(HHI는 참고용이라 우선순위 낮음)",
+    "잔여 사각지대 9개 TRASS 등 다른 경로로 재확인",
     "니치 B2B 산업뉴스 7건에 대한 별도 소스 카테고리 검토 여부 결정",
     "발표자료에 naver+google 결합·신호등 3단계 반영"
   ],
-  "generated_at": "2026-09-26T03:36:23+00:00",
+  "generated_at": "2026-09-26T04:09:28+00:00",
   "source": "supply_pivot_v2 세션(2026-09-25) — build_static_data.py(기존 9개 JSON)와 독립",
   "live": {
     "as_of": "2026-09-26",
-    "generated_at": "2026-09-26T03:36:23+00:00",
+    "generated_at": "2026-09-26T04:09:28+00:00",
     "cumulative": {
-      "total_events": 706,
-      "total_relevant": 459,
-      "total_candidate": 135
+      "total_events": 724,
+      "total_relevant": 472,
+      "total_candidate": 136
     },
     "today": {
-      "new_events": 334,
-      "new_relevant": 233,
-      "new_candidate": 35
+      "new_events": 352,
+      "new_relevant": 246,
+      "new_candidate": 36
     },
     "last_runs": [
+      {
+        "run_at": "2026-09-26 04:09",
+        "source": "google",
+        "fetched": 178,
+        "new": 9,
+        "new_relevant": 5,
+        "err": null
+      },
+      {
+        "run_at": "2026-09-26 04:07",
+        "source": "naver",
+        "fetched": 303,
+        "new": 9,
+        "new_relevant": 8,
+        "err": null
+      },
       {
         "run_at": "2026-09-26 03:36",
         "source": "google",
@@ -175,22 +192,6 @@
         "fetched": 194,
         "new": 8,
         "new_relevant": 1,
-        "err": null
-      },
-      {
-        "run_at": "2026-09-25 14:16",
-        "source": "naver",
-        "fetched": 277,
-        "new": 15,
-        "new_relevant": 14,
-        "err": null
-      },
-      {
-        "run_at": "2026-09-25 12:54",
-        "source": "google",
-        "fetched": 193,
-        "new": 160,
-        "new_relevant": 59,
         "err": null
       }
     ]
