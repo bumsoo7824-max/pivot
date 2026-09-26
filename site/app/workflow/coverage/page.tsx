@@ -13,13 +13,15 @@ export default function CoveragePage() {
         lead={`관세청 HS6 전체 유니버스(HS4 ${hs4Count}개 · HS6 ${universe.length}개)를 검색하고, 품목별로 '대체공급처 단계까지 데이터가 실제로 연결돼 있는지'를 바로 확인합니다.`}
       >
         <p className="mt-3 max-w-3xl rounded-lg border border-signal-amber/30 bg-signal-amber/5 px-3.5 py-2.5 text-xs leading-relaxed text-signal-amber">
-          이 페이지는 기존 사각지대 272개(/items 등)와는 별도 검증 세트입니다 — 여기서 &quot;수집
-          예정&quot;으로 표시된 552개는 아직 TRASS급 원자료가 없고, 뉴스 조기경보(①~⑥)만 적용된
-          상태입니다. 실데이터가 없는 품목에 0이나 추정치를 채우지 않고 있는 그대로 표시합니다.
+          2026-09-26 nitemtrade 수집 완료: 원래 사각지대 552개 중 543개는 12개월 수입액·최대
+          공급국을 확보했습니다(&quot;수입액 확보&quot;). 다만 이건 TRASS의 15개월 다지표
+          시계열이 아니라 HHI·통관 스파이크 계산에는 아직 못 씁니다 — 대체공급국 후보 확인용
+          참고 데이터입니다. 실데이터가 없는 품목에 0이나 추정치를 채우지 않고 있는 그대로
+          표시합니다.
         </p>
       </PageHeader>
 
-      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         <Stat
           label={STATUS_META.collected.short}
           value={counts.collected.toLocaleString("ko-KR")}
@@ -32,10 +34,15 @@ export default function CoveragePage() {
           sub="52HS4군 — 수집됐지만 리스크 테이블 미반영"
         />
         <Stat
+          label={STATUS_META.collected_partial.short}
+          value={counts.collected_partial.toLocaleString("ko-KR")}
+          sub="nitemtrade 12개월 수입액·공급국 확보"
+        />
+        <Stat
           label={STATUS_META.pending.short}
           value={counts.pending.toLocaleString("ko-KR")}
-          sub="nitemtrade API로 보완 수집 중"
           tone="amber"
+          sub="nitemtrade에서도 12개월간 수입 미확인"
         />
         <Stat
           label={STATUS_META.no_trade.short}
@@ -55,14 +62,21 @@ export default function CoveragePage() {
       <Section title="이 데이터를 어떻게 읽는가">
         <ul className="space-y-3 text-sm leading-relaxed text-slate-300">
           <li>
-            <b className="text-white">&quot;수집 예정&quot;은 &quot;위험 없음&quot;이 아니다.</b> 552개
-            사각지대는 원자료가 아직 없어 HHI·대체공급국을 계산하지 못하는 것이지, 리스크가 낮다는
-            뜻이 아니다. 뉴스 조기경보(①~⑥)는 1,109개 전체에 이미 적용되고 있다.
+            <b className="text-white">&quot;수입액 확보&quot;는 &quot;완전한 데이터&quot;가 아니다.</b>{" "}
+            543개는 nitemtrade API로 12개월(2025.09~2026.08) 국가별 수입액·최대 공급국을 확보했지만,
+            TRASS처럼 월별 시계열은 아니라 HHI·통관 스파이크 계산에는 아직 못 쓴다. 대체공급국
+            후보를 빠르게 확인하는 용도로만 쓴다.
           </li>
           <li>
-            <b className="text-white">두 단계로 나뉜 &quot;수집 완료&quot;.</b> 기존 379개는 대체공급국
+            <b className="text-white">진짜 사각지대는 9개로 줄었다.</b> 552개 중 543개는 실데이터가
+            생겼고, 나머지 9개만 12개월간 40개 주요국 전체에서 수입 실적이 안 잡혀 여전히 수집
+            예정 상태다 — TRASS 등 다른 경로로 재확인이 필요하다.
+          </li>
+          <li>
+            <b className="text-white">세 단계로 나뉜 &quot;수집 완료&quot;.</b> 기존 379개는 대체공급국
             매칭까지 전 단계가 연결돼 있고, 52HS4군 170개는 TRASS 수집만 끝나고 최종 리스크
-            테이블 통합은 아직이다 — 같은 &quot;수집 완료&quot;라도 활용 가능한 범위가 다르다.
+            테이블 통합은 아직이며, 543개는 수입액·공급국만 확보된 상태다 — 활용 가능한 범위가
+            셋 다 다르다.
           </li>
           <li>
             <b className="text-white">8개는 구조적으로 제외.</b> 15개월간 수입 실적이 0인 품목은
@@ -71,7 +85,7 @@ export default function CoveragePage() {
         </ul>
         <SourceTag>
           관세청 HS6 유니버스 감사(2026-09-24) · hs6_universe_named.csv · TRASS(bandtrass.or.kr) ·
-          공공데이터포털 nitemtrade
+          공공데이터포털 nitemtrade(2026-09-26 수집, 계정 3개 분산 22,080콜)
         </SourceTag>
       </Section>
     </>

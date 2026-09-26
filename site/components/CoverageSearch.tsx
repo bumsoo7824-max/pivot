@@ -7,9 +7,17 @@ const FILTERS: { key: CoverageStatus | "all"; label: string }[] = [
   { key: "all", label: "전체" },
   { key: "collected", label: STATUS_META.collected.short },
   { key: "collected_unintegrated", label: STATUS_META.collected_unintegrated.short },
+  { key: "collected_partial", label: STATUS_META.collected_partial.short },
   { key: "pending", label: STATUS_META.pending.short },
   { key: "no_trade", label: STATUS_META.no_trade.short },
 ];
+
+function fmtUsd(n?: number) {
+  if (!n) return "-";
+  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`;
+  if (n >= 1_000) return `$${(n / 1_000).toFixed(0)}K`;
+  return `$${n}`;
+}
 
 const PAGE_SIZE = 80;
 
@@ -90,6 +98,7 @@ export default function CoverageSearch({ items }: { items: CoverageItem[] }) {
               <th className="px-3 py-2 font-medium">HS4</th>
               <th className="px-3 py-2 font-medium">품목명</th>
               <th className="px-3 py-2 font-medium">상태</th>
+              <th className="px-3 py-2 font-medium">12개월 수입액 · 최대 공급국</th>
             </tr>
           </thead>
           <tbody>
@@ -106,12 +115,24 @@ export default function CoverageSearch({ items }: { items: CoverageItem[] }) {
                       {meta.short}
                     </span>
                   </td>
+                  <td className="whitespace-nowrap px-3 py-2 text-xs text-slate-400">
+                    {i.status === "collected_partial" ? (
+                      <>
+                        {fmtUsd(i.import_usd_12m)}
+                        {i.top_country && (
+                          <span className="text-slate-500"> · {i.top_country} {i.top_country_share_pct}%</span>
+                        )}
+                      </>
+                    ) : (
+                      "-"
+                    )}
+                  </td>
                 </tr>
               );
             })}
             {visible.length === 0 && (
               <tr>
-                <td colSpan={4} className="px-3 py-6 text-center text-xs text-slate-500">
+                <td colSpan={5} className="px-3 py-6 text-center text-xs text-slate-500">
                   일치하는 품목이 없습니다.
                 </td>
               </tr>

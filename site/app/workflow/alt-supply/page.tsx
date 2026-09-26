@@ -7,11 +7,13 @@ export default function AltSupplyPage() {
   const s9 = workflow.steps.find((s) => s.id === 9)!;
   const s10 = workflow.steps.find((s) => s.id === 10)!;
   const counts = coverageCounts();
-  const readyPct = Math.round(
-    ((counts.collected + counts.collected_unintegrated) /
-      (counts.collected + counts.collected_unintegrated + counts.pending + counts.no_trade)) *
-      100
-  );
+  const universeTotal =
+    counts.collected +
+    counts.collected_unintegrated +
+    counts.collected_partial +
+    counts.pending +
+    counts.no_trade;
+  const readyPct = Math.round((counts.collected / universeTotal) * 100);
 
   return (
     <>
@@ -30,10 +32,15 @@ export default function AltSupplyPage() {
         </p>
       </PageHeader>
 
-      <div className="mb-6 grid gap-3 sm:grid-cols-3">
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Stat label="대체공급처까지 완비" value={`${counts.collected}개`} tone="pivot" sub="1,109개 중 — 379개 기준 우선 시연" />
         <Stat label="수집 완료·미통합" value={`${counts.collected_unintegrated}개`} sub="52HS4군 — 최종 테이블 반영 전" />
-        <Stat label="사각지대(수집 중)" value={`${counts.pending}개`} tone="amber" sub="nitemtrade 보완 수집 진행 중" />
+        <Stat
+          label="수입액·공급국만 확보"
+          value={`${counts.collected_partial}개`}
+          sub="nitemtrade 12개월 — 후보국 참고용, HHI 미계산"
+        />
+        <Stat label="진짜 사각지대" value={`${counts.pending}개`} tone="amber" sub="12개월간 수입 자체 미확인" />
       </div>
 
       <Section title={`⑨ ${s9.title}`} className="mb-6" hint="유료 버전 범위 — 고객 HS6 ∩ 공급국 ∩ 사건 영향국">
