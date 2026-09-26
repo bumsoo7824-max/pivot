@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { STATUS_META, type CoverageItem, type CoverageStatus } from "@/lib/coverage-data";
 
@@ -106,9 +107,17 @@ export default function CoverageSearch({ items }: { items: CoverageItem[] }) {
               const meta = STATUS_META[i.status];
               return (
                 <tr key={i.hs6} className="border-t border-white/5 hover:bg-white/[0.03]" title={i.name_full}>
-                  <td className="whitespace-nowrap px-3 py-2 font-mono text-xs text-pivot-500">{i.hs6}</td>
+                  <td className="whitespace-nowrap px-3 py-2">
+                    <Link href={`/workflow/coverage/${i.hs6}/`} className="font-mono text-xs text-pivot-500 hover:underline">
+                      {i.hs6}
+                    </Link>
+                  </td>
                   <td className="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-500">{i.hs4}</td>
-                  <td className="max-w-[420px] truncate px-3 py-2 text-slate-200">{i.name || i.category}</td>
+                  <td className="max-w-[420px] truncate px-3 py-2 text-slate-200">
+                    <Link href={`/workflow/coverage/${i.hs6}/`} className="hover:text-pivot-500 hover:underline">
+                      {i.name || i.category}
+                    </Link>
+                  </td>
                   <td className="whitespace-nowrap px-3 py-2">
                     <span className={`chip ${meta.cls}`}>
                       <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />

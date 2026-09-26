@@ -34,6 +34,10 @@ export type CoverageItem = {
   top_country_hs4_ref?: string;
   top_share_hs4_ref?: number;
   hhi_hs4_ref?: number;
+  country_count_hs4_ref?: number;
+  // nitemtrade 원자료(gap552_import_by_country.csv) 재집계 — collected_partial(543개)의
+  // 국가별 수입액 상위 5개국 실측 목록 (2026-09-27 추가, /workflow/coverage/[hs6] 상세 페이지 전용).
+  top5_countries?: { country: string; usd: number; share_pct: number }[];
 };
 
 export const universe = universeJson as unknown as CoverageItem[];
