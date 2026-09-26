@@ -509,7 +509,14 @@ def main():
             dz, ms, status = classify(it["title"], it.get("snippet", ""))
             if it.get("force_rel"): status = "RELEVANT"
             rel = int(status == "RELEVANT")
-            cur = con.execute("INSERT OR IGNORE INTO events_raw VALUES(?,?,?,?,?,?,?,?,?,NULL,?)", (it["source"], it["published"], it["title"], it["url"], it.get("snippet",""), ";".join(dz), ";".join(ms), rel, now, status))
+            # 2026-09-27: ai_status 등 5개 컬럼이 ALTER TABLE로 추가돼 테이블이 16컬럼이 됐는데,
+            # 예전처럼 컬럼명 없이 VALUES(...)만 쓰면 "16 columns but 11 values" 에러가 난다(실제
+            # GitHub Actions에서 이렇게 실패함) — 컬럼명을 명시해서 나머지(ai_*)는 NULL 기본값으로 둔다.
+            cur = con.execute(
+                "INSERT OR IGNORE INTO events_raw (source, published, title, url, snippet, disrupt, materials, relevant, first_seen, label, status) "
+                "VALUES(?,?,?,?,?,?,?,?,?,NULL,?)",
+                (it["source"], it["published"], it["title"], it["url"], it.get("snippet",""), ";".join(dz), ";".join(ms), rel, now, status),
+            )
             if cur.rowcount:
                 n_new += 1; n_rel += rel; n_cand += int(status == "CANDIDATE")
         if name == "naver":
