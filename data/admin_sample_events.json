@@ -1,0 +1,53 @@
+{
+  "note": "pipeline_v2/discover.db의 events_raw에서 그대로 가져온 실제 수집 기록(2026-09-25~26). materials가 비어 있으면 CANDIDATE라는 뜻이다. 2026-09-27 materials 사전에서 오탐 유발 항목('은'·'럼프') 제거 후 누적 724건 전체를 재분류(backfill)했다 — 아래 값은 수정 이후 기준.",
+  "events": [
+    {
+      "status": "RELEVANT",
+      "source": "NAVER",
+      "published": "2026-09-26 12:35",
+      "title": "포드 F-150, 또 생산차질…美디어본 공장 닷새 멈춘다",
+      "url": "https://n.news.naver.com/",
+      "disrupt": "공급 차질;화재",
+      "materials": "알루미늄"
+    },
+    {
+      "status": "RELEVANT",
+      "source": "GOOGLE",
+      "published": "2026-09-26 00:38",
+      "title": "\"판다는 귀엽지만 美가 필요한건 희토류\"…성과 못낸 美中정상회담",
+      "url": "https://news.google.com/",
+      "disrupt": "수출 제한",
+      "materials": "희토;희토류"
+    },
+    {
+      "status": "RELEVANT",
+      "source": "GOOGLE",
+      "published": "2026-09-25 01:30",
+      "title": "쏟아지는 중국산 저가 철강…관세장벽 높이는 韓 - 머니투데이",
+      "url": "https://news.google.com/",
+      "disrupt": "관세;수출통제",
+      "materials": "강판;높이;철강"
+    },
+    {
+      "status": "CANDIDATE",
+      "source": "GOOGLE",
+      "published": "2026-09-25 13:59",
+      "title": "美무역대표 \"中과 협상 진전…28일 구체적 결과 공개\" - 조선비즈",
+      "url": "https://news.google.com/",
+      "disrupt": "수출통제",
+      "materials": ""
+    },
+    {
+      "status": "CANDIDATE",
+      "source": "NAVER",
+      "published": "2026-09-26 20:55",
+      "title": "'호르무즈→트럼프 해협'…이란 제안 일축한 트럼프",
+      "url": "https://www.segye.com/newsView/20260926507040?OutUrl=naver",
+      "disrupt": "봉쇄",
+      "materials": "",
+      "fix_example": true
+    }
+  ],
+  "fix_example_note": "마지막 행은 사전 수정 전엔 RELEVANT였다 — 제목에 \"트럼프\"가 세 번 나와 materials='럼프'로 오매칭됐기 때문. '럼프' 삭제 후 재분류(backfill)하니 CANDIDATE로 정정됐다. discover.db 전체 재분류 결과: RELEVANT 618→451건, CANDIDATE 145→312건(167건 이동, 새로 NONE이 된 건은 0건).",
+  "new_risk_found": "이 수정 중 같은 종류의 오탐을 하나 더 발견했다 — 3번째 행 materials의 '높이'가 그 예로, \"관세장벽 높이는\"(동사 '높이다'의 활용형)에서 우연히 매칭된 것으로 보인다(사전엔 명사 '높이'로 등록). 이번엔 disrupt·다른 materials가 이미 있어 RELEVANT 판정 자체는 안 바뀌지만, 이런 항목이 단독으로 걸리면 또 오탐이 된다. MATERIALS_TIER2(사람 재검토 전 Kiwi 자동추출 초안, 원문 주석에 명시)를 전량 검토하기 전까지 계속 나올 수 있는 유형이라, 사전을 하나씩 더 손보기보다 아래 RELEVANT 표본 AI 팩트체크로 상시 잡아내는 쪽으로 결정했다."
+}
