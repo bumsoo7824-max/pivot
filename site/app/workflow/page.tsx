@@ -15,6 +15,7 @@ const SUBPAGES = [
   { href: "/workflow/coverage/", title: "③ 품목 커버리지 검색", desc: "HS6 1,109개 검색 · 수입액·공급국", tone: "blue" },
   { href: "/workflow/paid-report/", title: "④ 유료 리포트", desc: "유료 버전 리포트 구성", tone: "red" },
   { href: "/workflow/alt-supply/", title: "⑤ 대체공급처·지원정책", desc: "영향국 제외 후보 추천 (유료 범위)", tone: "red" },
+  { href: "/workflow/tech/", title: "⑥ 기술력", desc: "중복제거·매핑·판정·매칭엔진·신뢰도 가중치", tone: "green" },
 ] as const;
 
 const CARD_TONE: Record<string, string> = {
