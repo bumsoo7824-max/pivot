@@ -1,8 +1,728 @@
 {
  "as_of": "2026-09-29",
- "generated_at": "2026-09-29T07:56:34.879114+00:00",
- "count": 378,
+ "generated_at": "2026-09-29T13:54:17.556475+00:00",
+ "count": 482,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 22:40",
+   "title": "나스닥 다우지수 혼조세...급락했던 반도체 주 '반등'",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3708744",
+   "disrupt": "급락;반등;재개",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:34",
+   "title": "이란, 평화안 거부한 트럼프에 \"위협 땐 대응\"",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3436603",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:32",
+   "title": "美 증시, 국채 금리 쇼크에 7,200억 달러 '증발'...솔라나(SOL) 역습 이유...",
+   "url": "http://coinreaders.com/260706",
+   "disrupt": "봉쇄",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:21",
+   "title": "미국, 이란 '7일 계획' 거부…대화 기대감에 국제유가 상승폭 제한",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=312854",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:11",
+   "title": "이란 협상단장 “우리 안보 보장 안 되면 어떤 인프라도 안전 못 해”",
+   "url": "https://www.khan.co.kr/article/202609292111001",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:01",
+   "title": "꿈틀거리는 곡물값…내년 더 뛴다?",
+   "url": "https://www.mk.co.kr/article/12158196",
+   "disrupt": "수출 제한",
+   "materials": "비료;암모니아;원료;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 21:01",
+   "title": "전망 갈린 석화주, 세 갈래로 투자하라",
+   "url": "https://www.mk.co.kr/article/12158197",
+   "disrupt": "공급 차질",
+   "materials": "나프타;석유;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:56",
+   "title": "[뉴스하이킥] 김건 “이 대통령, 우크라이나와 물밑 대화 없이 ‘공개 ...",
+   "url": "https://n.news.naver.com/mnews/article/214/0001526410?sid=100",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:56",
+   "title": "인도, 심해 탐사정 60개·비축 650만t 추진",
+   "url": "https://www.tokenpost.kr/news/economy/415800",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:53",
+   "title": "이란 리알화, 달러당 250만 리알 넘어 또 최저치…이란 경제 안정성 급...",
+   "url": "https://www.newsis.com/view/NISX20260929_0003807809",
+   "disrupt": "제재;차단",
+   "materials": "공기;석유;항공기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:50",
+   "title": "\"핵 양보하면 경제 지원\"...\"초점은 호르무즈\"",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1538988",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:50",
+   "title": "이란, 호르무즈 봉쇄 약화…원유 수출 80% 회복",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1538979",
+   "disrupt": "봉쇄",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:46",
+   "title": "이란 지도부, 트럼프 향해 “끝까지 가보자”…역내 인프라 타격 경고",
+   "url": "https://www.dailian.co.kr/news/view/1695909/?sc=Naver",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:46",
+   "title": "[월드 e-브리핑] 엔비디아, 320조 원 자사주 매입…미 기업 최대치",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1538983",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:30",
+   "title": "‘이란·러우전쟁’ 모두 중간선거 전 답없다…유가·곡물가 비상",
+   "url": "https://biz.heraldcorp.com/article/10887933?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:28",
+   "title": "[국제칼럼]파병은 어쩔 수 없는 선택?",
+   "url": "https://www.khan.co.kr/article/202609292028005",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:13",
+   "title": "이란 “끝까지 가보자”…7일 계획 거부한 트럼프에 으름장",
+   "url": "https://www.sedaily.com/article/20096304?ref=naver",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:10",
+   "title": "[통일로에서] AI 대전환의 분수령, \"기술을 가진 나라 vs 기술을 지킬 수...",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=312167",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:05",
+   "title": "전쟁 7개월에 이란 민생 '휘청'…\"경제난이 외교 재개 압박\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6305204",
+   "disrupt": "봉쇄;재개",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 20:02",
+   "title": "[집중진단] 美 국채금리 5.2% 뚫렸다…증시, 더 버틸 힘 남았나?",
+   "url": "https://biz.sbs.co.kr/article_hub/20000337245?division=NAVER",
+   "disrupt": "",
+   "materials": "금;진단",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:59",
+   "title": "IEA, 회원국 전략비축유 방출 가능성 시사…\"필요시 조치\"",
+   "url": "https://www.mt.co.kr/world/2026/09/29/2026092919334992322",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:55",
+   "title": "[뉴스레터K] 조국혁신당 “추석 민심은 민주진영 ‘갈라치기’에 경고…...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8673935&ref=A",
+   "disrupt": "",
+   "materials": "장식",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:41",
+   "title": "이란 리알화, 달러당 244만 리알로 또 최저 기록…전쟁 계속으로 경제 ...",
+   "url": "https://www.newsis.com/view/NISX20260929_0003807763",
+   "disrupt": "제재;차단",
+   "materials": "공기;석유;항공기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:41",
+   "title": "7개월 전쟁·고사 작전에 치솟는 이란 물가…\"뇌물도 올랐다\"",
+   "url": "https://www.yna.co.kr/view/AKR20260929179800079?input=1195m",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:36",
+   "title": "['클릭' 증시] 미국·이란 갈등 유가·금리 급등...시장 공포 확대",
+   "url": "http://www.00news.co.kr/news/articleView.html?idxno=106867",
+   "disrupt": "급등;봉쇄;제재",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:26",
+   "title": "가스公, LNG캐나다 2단계 FID 확정… 북미 LNG 확보 본격화",
+   "url": "http://www.e-platform.net/news/articleView.html?idxno=105778",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:22",
+   "title": "쿡 美연준 이사 \"AI·고유가, 몇달간 인플레 압력 높인다\"...추가 금리인...",
+   "url": "https://www.betanews.net/article/view/beta202609290126",
+   "disrupt": "급등;재개",
+   "materials": "금;높이",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:20",
+   "title": "\"현대글로비스, 비계열·중장비 '더블 호재'에 올해 영업이익 2.2조 안착...",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301725",
+   "disrupt": "수출 제한",
+   "materials": "건설;광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:06",
+   "title": "치솟는 가스값에 놀란 유럽…\"전기로 데운다\" 판매 급증",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609290199&t=NN",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:06",
+   "title": "중국산 전기차, ‘트로이의 목마’ 될까…군 주요시설 출입 안보 논의 ...",
+   "url": "https://www.ekn.kr/web/view.php?key=20260929024040099",
+   "disrupt": "공급망 안전",
+   "materials": "차량",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:02",
+   "title": "호르무즈 막히자 LNG 조달지도 재편…아시아, 공급망 다변화 속도",
+   "url": "http://www.e-platform.net/news/articleView.html?idxno=105775",
+   "disrupt": "차단",
+   "materials": "부분;수송;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 19:01",
+   "title": "“한국엔 ‘천궁-Ⅱ’ 4조원 안 주더니”…이라크, 외국산 방공망 또 사...",
+   "url": "https://nownews.seoul.co.kr/news/newsView.php?id=20260929601023&wlog_tag3=naver",
+   "disrupt": "폐쇄",
+   "materials": "금;석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:57",
+   "title": "“핵 양보 땐 제재 완화”… 중재국 통한 물밑 협상 지속",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000018325&cp=nv",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:50",
+   "title": "중동 원유 수송 80% 회복… 유가 진정되나",
+   "url": "https://www.segye.com/newsView/20260929515867?OutUrl=naver",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:38",
+   "title": "이란, \"해협 개방 제안에 대한 미국 최종 답변 29일중 기대\"",
+   "url": "https://www.newsis.com/view/NISX20260929_0003807722",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:37",
+   "title": "이란 \"우리가 석유 못 팔면 아무도 못 팔아\"...대미 강경발언 쏟아내",
+   "url": "https://www.ytn.co.kr/_ln/0104_202609291837256042",
+   "disrupt": "재개",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:36",
+   "title": "李대통령 \"2028년 중순도 너무 늦다\"…광주 군공항 임시 이전 '단축' 재...",
+   "url": "https://www.newspim.com/news/view/20260929001148",
+   "disrupt": "공급 차질",
+   "materials": "반도체;유기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:30",
+   "title": "이란 협상단장 “안전 보장되지 않으면”…역내 인프라 타격 경고",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8673853&ref=A",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:30",
+   "title": "정부, 2035년 'SMR 선박' 건조 착수…K조선 \"이젠 실증·규제 싸움\"",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752182",
+   "disrupt": "공급망 안전",
+   "materials": "건조;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:27",
+   "title": "에너지 고공챙진에 히트펌프 '히트'…판매 11%↑",
+   "url": "https://biz.sbs.co.kr/article_hub/20000337379?division=NAVER",
+   "disrupt": "급등;폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:24",
+   "title": "순방 마친 이 대통령, '주거·일자리·서민금융 추진' 등 현안 집중",
+   "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2304123",
+   "disrupt": "공급 차질",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:21",
+   "title": "美 국채 30년물 금리 24년만에 최고",
+   "url": "https://www.fnnews.com/news/202609291819297502",
+   "disrupt": "공급 차질;재개",
+   "materials": "금;점화",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:20",
+   "title": "대우건설, 초대형 국책사업 따냈다… 용인 산단 1공구 수주",
+   "url": "https://www.fnnews.com/news/202609291818242404",
+   "disrupt": "공급 차질",
+   "materials": "건설;기와;반도체;조성",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:20",
+   "title": "이란 호르무즈 영향력 약화…중동 원유 수출 약 80% 회복",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/09/29/2026092990200.html",
+   "disrupt": "봉쇄",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:20",
+   "title": "[코인브리핑] 미 국채금리·국제유가 상승에도 비트코인 '강보합'",
+   "url": "https://www.asiatime.co.kr/article/20260929500380",
+   "disrupt": "공급 차질;재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:19",
+   "title": "이란, 트럼프에 강경 경고‥\"안보 보장 안 되면 어떤 인프라도 안전하지...",
+   "url": "https://imnews.imbc.com/news/2026/world/article/6854799_36925.html",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:16",
+   "title": "핵추진잠수함 특별법안 국무회의 의결…유류세 인하 연장",
+   "url": "https://www.idomin.com/news/articleView.html?idxno=2015906",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:15",
+   "title": "\"韓, 초격차 유지해야 우위 굳힌다… 정부 R&D 뒷받침 필수\" [반도체 호...",
+   "url": "https://www.fnnews.com/news/202609291813184630",
+   "disrupt": "수출통제",
+   "materials": "공정;반도체;받침;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:15",
+   "title": "이란 협상단장 \"안전 보장되지 않으면\"…역내 인프라 타격 경고",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008775359&plink=ORI&cooper=NAVER",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:13",
+   "title": "조선 수요에 후판값 상승… 철강사 실적 개선 기대",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=351012",
+   "disrupt": "수출 제한",
+   "materials": "강판;건설;철강;후판",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:07",
+   "title": "에너지값 뛰자 유럽서 뜨는 히트펌프…상반기 판매 11%↑",
+   "url": "https://www.yna.co.kr/view/AKR20260929166300098?input=1195m",
+   "disrupt": "급등;폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:06",
+   "title": "이란 외무장관 \"美에 호르무즈 해협 재개방 조건 전달 예정\"",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=90952",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:06",
+   "title": "이란 협상단장, 트럼프에 \"끝까지 가보자\"…군부도 맹비난",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20260929180537JlK",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:04",
+   "title": "2026년 네팔 화장품·퍼스널케어산업 정보",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=200&CONTENTS_NO=1&bbsGbn=403&bbsSn=403&pNttSn=244303",
+   "disrupt": "수출통제",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 18:01",
+   "title": "\"우리 석유 못 팔면 아무도 못 판다\"…이란, 美에 보복 경고",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000069621",
+   "disrupt": "재개",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:58",
+   "title": "이란 협상단장 \"안전 보장되지 않으면\"…역내 인프라 타격 경고",
+   "url": "https://biz.sbs.co.kr/article_hub/20000337373?division=NAVER",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:56",
+   "title": "세금은 465조로 늘었다, 연체는 9조 4천억으로 쌓였다",
+   "url": "https://newscham.net/articles/117246",
+   "disrupt": "",
+   "materials": "금;방향",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:54",
+   "title": "이란 협상단장 \"안전 보장되지 않으면\"…역내 인프라 타격 경고",
+   "url": "https://www.yna.co.kr/view/AKR20260929164300079?input=1195m",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:52",
+   "title": "중국 인공지능(AI) 칩 시장동향",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=190&CONTENTS_NO=2&bbsGbn=254&bbsSn=254&pNttSn=244304",
+   "disrupt": "수출통제",
+   "materials": "인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:50",
+   "title": "[시론담론] 미·중 '전술적 휴전'이 남긴 경고",
+   "url": "https://www.jemin.com/news/articleView.html?idxno=843573",
+   "disrupt": "수출통제;수출허가",
+   "materials": "광물;반도체;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:40",
+   "title": "미 “핵 없으면 합의 없어”…이란 “11월 전 해결 안될 듯” [美-이란 ...",
+   "url": "https://www.sedaily.com/article/20096198?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:35",
+   "title": "[완주·정읍·장수 24시] 유희태 완주군수 \"1조1000억 첨단 국책사업 유...",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=388643",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:28",
+   "title": "미-이란 전쟁 '10월의 시간표'가 중요한 이유",
+   "url": "https://weeklytrade.co.kr/news/view.html?section=1&category=136&item=&no=101564",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:28",
+   "title": "美국채 10년물 금리 2007년 이후, 30년물은 2002년 이후 '최고'",
+   "url": "http://www.newsfc.co.kr/news/articleView.html?idxno=81439",
+   "disrupt": "공급 차질;재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:22",
+   "title": "美 답변 기다리는 이란 \"우리가 석유 못 팔면 아무도 못 팔아\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6305017",
+   "disrupt": "재개",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:22",
+   "title": "외국인, 또 3조 매도 폭탄…코스피 '美 국채금리·유가' 부담 0.27%↓",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202609290047",
+   "disrupt": "재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:12",
+   "title": "차별화된 제조 역량과 AI 인프라… ‘에너지 플랫폼’ 기업 도약하는 L...",
+   "url": "https://www.dt.co.kr/article/12086489?ref=naver",
+   "disrupt": "공급 차질",
+   "materials": "니켈;망간;배터리;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:10",
+   "title": "트럼프 \"이란 '핵 양보' 시 제재 완화 보도는 가짜 뉴스\"",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=90939",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:10",
+   "title": "李대통령 \"핵잠·극초음속 미사일 속도 내야\"…'핵잠 특별법' 국무회의...",
+   "url": "https://www.newspim.com/news/view/20260929001084",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:09",
+   "title": "“서로 목줄 쥔 미묘한 균형” 中, 수입 리스트에 석탄 넣고 보잉·대두...",
+   "url": "https://www.joongang.co.kr/article/25465681",
+   "disrupt": "수출통제",
+   "materials": "광물;반도체;석탄;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:09",
+   "title": "‘역대급 배당’ 단타 성공? 삼전 쓸어담은 개미들, 계산기 두드려보니...",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/29/20260929500233?wlog_tag3=naver",
+   "disrupt": "급등;재개",
+   "materials": "계산;금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:04",
+   "title": "중동 석유 수출 80% 회복…호르무즈 해협 이란 장악력 약화했나",
+   "url": "https://www.mt.co.kr/world/2026/09/29/2026092916275575000",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:02",
+   "title": "코스피, 외국인 2.9조원 '팔자'에 6870선 하락···반도체주 선방",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=155129",
+   "disrupt": "재개",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:02",
+   "title": "미·이란 중재 협상 분수령...\"미국 측 최종 답변 기대\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202609291702404914",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:01",
+   "title": "日, 캐나다 LNG 생산 두 배 확대…중동 의존 낮추기 '속도'",
+   "url": "https://www.fnnews.com/news/202609291653233721",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:00",
+   "title": "'삼성전기+도레이 합작' 스템코, '1-메탈 CoF' 설비 중국 합작사에 이설",
+   "url": "https://zdnet.co.kr/view/?no=20260929164321",
+   "disrupt": "생산 중단",
+   "materials": "반도체;전자;전자부품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 17:00",
+   "title": "중동 불안에 다시 뜨는 항공화물⋯4분기 성수기 앞두고 운임 ‘들썩’",
+   "url": "https://www.etoday.co.kr/news/view/2630318",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:59",
+   "title": "1억달러→1조달러 눈앞…K-수출, 62년 만에 ‘1만배’ 도전",
+   "url": "https://biz.heraldcorp.com/article/10887976?ref=naver",
+   "disrupt": "공급 차질",
+   "materials": "리튬;배터리;석유;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:59",
+   "title": "이란이 띄운 '7일 계획' 공전…물밑 협상, 핵문제가 관건",
+   "url": "https://www.imaeil.com/page/view/2026092915324706286",
+   "disrupt": "재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:55",
+   "title": "李대통령 \"3대 메가프로젝트, 정주여건도 함께 조성해야…지역 성장 혜...",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=744362",
+   "disrupt": "공급 차질",
+   "materials": "반도체;조성",
+   "status": "RELEVANT"
+  },
   {
    "source": "NAVER",
    "published": "2026-09-29 16:48",
@@ -2129,9 +2849,27 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 06:15",
+   "title": "사우디 원유 수출 재개... ‘호르무즈 우회로’ 이스트-웨스트 파이프라인 복구 - 테크데일리",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzX2VpMWo5aGV5WTdyR1dfLWhmdDRtZWttTTFQT3N0UzB3bVZ0bG1vUXp1dVEtck5nOHRDZHV0cklJWUdROVo5RHVTQ0tNNi1QM3ZMaEZvQ0lzajE1TmNwTkpPeVFBeVd6aVM1b2stcUZuQdIBckFVX3lxTFBzX2VpMWo5aGV5WTdyR1dfLWhmdDRtZWttTTFQT3N0UzB3bVZ0bG1vUXp1dVEtck5nOHRDZHV0cklJWUdROVo5RHVTQ0tNNi1QM3ZMaEZvQ0lzajE1TmNwTkpPeVFBeVd6aVM1b2stcUZuQQ?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 06:14",
    "title": "사우디 송유관 복구·호르무즈 회복... 중동 원유수송 80% 반등 - hankookilbo.com",
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hempMWjEyWThsLUNIbkMzWlJOTV9HZmw2VVN5MlRhYUtXOUJrRjZIZG1SLWpCbTJ0RG1oQjRCRlpnTElBQmoxSm1Mc3RhY3ZwemltZTVEcWIxUktvUUxMSVVDejR4NW9DQm5YY2FR0gFzQVVfeXFMTUdYamZEVXpINExuRm5ZY19VRDNpcE92RXRFalhUSXAxdDhvaFRhdGp0TTZZcGZ5NjF5ZTdMRmJhN3VoYWpKam5CakVnOFhxVnFWSEVXNUsycnd5bHUtOWMwTC1NY1RTam1ZWEZabDRPU0dCdw?oc=5",
+   "disrupt": "반등",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 06:14",
+   "title": "사우디 송유관 복구·호르무즈 회복... 중동 원유수송 80% 반등 - 한국일보",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1HWGpmRFV6SDRMbkZuWWNfVUQzaXBPdkV0RWpYVElwMXQ4b2hUYXRqdE02WXBmeTYxeWU3TEZiYTd1aGFqSmpuQmpFZzhYcVZxVkhFVzVLMnJ3eWx1LTljMEwtTWNUU2ptWVhGWmw0T1NHQnfSAXNBVV95cUxNR1hqZkRVekg0TG5GblljX1VEM2lwT3ZFdEVqWFRJcDF0OG9oVGF0anRNNllwZnk2MXllN0xGYmE3dWhhakpqbkJqRWc4WHFWcVZIRVc1SzJyd3lsdS05YzBMLU1jVFNqbVlYRlpsNE9TR0J3?oc=5",
    "disrupt": "반등",
    "materials": "수송",
    "status": "RELEVANT"
@@ -2201,6 +2939,33 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 06:00",
+   "title": "이란, 호르무즈 봉쇄하려다 역풍…중동국 석유 수출 80% 회복 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9CdXFVSkFDQUphRDZFdVRHOFdrdXdnNGdkUTZzajRCcW96aTFnQkZaOWxGVlpKVzN4eS1aMU5IT1FjeUFjOXFSYjNQUQ?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 05:57",
+   "title": "이란, 호르무즈 봉쇄하려다 역풍…중동국 석유 수출 80% 회복 - 노컷뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHX2lfME9xeVNVLTc0NjV1ZENBU0hLY0pvTVhrbVNDRWVTLXFGR0s2X2oyN3R1WjRVci1kU0cyMl9UMzlBZTRSZDFaSk1lTUY3M2c?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 05:50",
+   "title": "[월드리뷰] 포르투갈 식민지 ‘모잠비크공화국’ - 서울일보",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEemJ4NHRwb2lPaExTY2YwVFFXc1FXeHh5Nm85cEEzNjd1dDlhY21vZmF2NEh4MFFVWGRzSWd5bkV1M2NodllaTThRRnZwMU5GS3lfdEhpa1NPcjFkNDV5cGhqMnlGM1g1WWhjOVdJNNIBb0FVX3lxTFBEemJ4NHRwb2lPaExTY2YwVFFXc1FXeHh5Nm85cEEzNjd1dDlhY21vZmF2NEh4MFFVWGRzSWd5bkV1M2NodllaTThRRnZwMU5GS3lfdEhpa1NPcjFkNDV5cGhqMnlGM1g1WWhjOVdJNA?oc=5",
+   "disrupt": "수출 제한",
+   "materials": "광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 05:44",
    "title": "“호르무즈 봉쇄 힘 빠졌다”…원유 수출 80% 회복에도 남은 위험 - v.daum.net",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MRjFjUFpLckhDVnRqeTRkVUl3SVJUVTBQZk1XOFlfTkhOZmhkRURGQmwyOEFoZUp4d0RNQkVCR1J5TjJTYThNUEhjOGxOREk?oc=5",
@@ -2213,6 +2978,15 @@
    "published": "2026-09-29 05:43",
    "title": "“호르무즈 봉쇄 힘 빠졌다”…원유 수출 80% 회복에도 남은 위험 - 동아일보",
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12czJ5cWkxUVhEWkxkVnFHcG9mcWRMd2ppQVVWNloybGEtS3YwQUxDX2R4RlZhSWhUdkRjQS1lNEp3bUhGNE53ZXNMdHdvaXpwS3R2Zm5tTGwyZmlNMmZ4UUt0aVFfUdIBZkFVX3lxTE12czJ5cWkxUVhEWkxkVnFHcG9mcWRMd2ppQVVWNloybGEtS3YwQUxDX2R4RlZhSWhUdkRjQS1lNEp3bUhGNE53ZXNMdHdvaXpwS3R2Zm5tTGwyZmlNMmZ4UUt0aVFfUQ?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 05:43",
+   "title": "“호르무즈 봉쇄 힘 빠졌다”…원유 수출 80% 회복에도 남은 위험 - 동아일보",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZeEYweDV0eDhLY1lHalh0cWk4eThrdjZCbWFsYVB5RmpmLVAzd2JncXJOVy1yZkl4Y2VnbkpaeXpfUmNvVG5CempyMmhmN25rai1qWDlyRkdydHBqLXRBN1EzUmZnbnlVdnpzSy1QNl9DR2fSAWZBVV95cUxNdnMyeXFpMVFYRFpMZFZxR3BvZnFkTHdqaUFVVjZaMmxhLUt2MEFMQ19keEZWYUloVHZEY0EtZTRKd21IRjROd2VzTHR3b2l6cEt0dmZubUxsMmZpTTJmeFFLdGlRX1E?oc=5",
    "disrupt": "봉쇄",
    "materials": "",
    "status": "CANDIDATE"
@@ -2291,6 +3065,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 05:08",
+   "title": "조기 경보, 발생원에서의 식품 관리. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NWi0zVW01TDRfT0hRemthTEMwemw3VUhTVG52U2FzX0NTbHhUVE9xa1RXdXh4TTlfZVZpdVlGLVJPanRUWnFGa3Nsa3JtbmxuWF83TnlERmNTdnBrX3NTaGJPRjZaMVZHcDF4MGU4VlpqRVU?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 05:05",
    "title": "OCI, 전북 반도체 특화단지 앵커기업 참여…반도체소재 사업 확대 - 메트로신문",
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xcTh4QVBWcF9UZkhwMEE4UXVZR3BVMTFKd3llX1laSkhLY29vbVVSY2FOOU1uSjhsVUxraU56dUZGVDV2NW5XOEpUZzBaYXdIZWs0X2UxNGQ3RkI2OGlPeQ?oc=5",
@@ -2345,6 +3128,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 04:44",
+   "title": "\"호르무즈 원유 수송 80% 회복…이란 봉쇄력 약화\" - goodnews1.com",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zRW5rVGJqaXFKZDV3a1E5ZXFveFgwTjNqNXdaazE1NXJFSHUyWEQtd0ZpS0VQZkRWUHBpVHNzOTZWeVlkZGJjeFBMYmI1RW5ham5mZkxVcnBZU2pCcndZVzZNODJKTzJtVXpSTw?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 04:43",
    "title": "미·이란, 중재국 통해 간접 협상 재개 - 천지일보",
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRQnJZemZSVXlGYlBnNE1JX2tacUhBc0IzVXBhS2ppTlFwVUlXcU9rWkZXOURPRlVsTjNHbC1odlVXdkNsNklfQ2hPRDZFTmtGcmJNWlU5OTRZMjg2ZkV0azlZeW9SYTN5TEE?oc=5",
@@ -2363,6 +3155,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 04:42",
+   "title": "서로 누가 먼저 지치나…美 '핵' vs. 이란 '호르무즈' - SBS Biz",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1UHBHeTRKQWJnUEdtMWNwS3JkamZVQkRINlhFYzd2NFdrYTRVb2VLOGtkdnhkUUgzSlo1VWtWbmlNTUFfTGNtOGlDSEhGalduYVZqeGd4bVDSAVhBVV95cUxQNVBwR3k0SkFiZ1BHbTFjcEtyZGpmVUJESDZYRWM3djRXa2E0VW9lSzhrZHZ4ZFFIM0paNVVrVm5pTU1BX0xjbThpQ0hIRmpXbmFWanhneG1Q?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 04:36",
    "title": "이란, 호르무즈 봉쇄력 약화...중동 원유 수출 거의 80% 회복 - YTN",
    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DVzl2a3ZZNXpJZ2I4eTZTOHhieWQ5LTg3YkRDaGlydThSQy1MblQ1VjY1NlhnNFZQM2x2d2RGTWx4TmZsQjAyMDZxaURoaXhTVk1aSkcwckJJWDU5V1E?oc=5",
@@ -2375,6 +3176,15 @@
    "published": "2026-09-29 04:33",
    "title": "호르무즈 석유 운송, 전쟁 이전 대비 약 80% 회복 추정 - v.daum.net",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYeXhwUkJtU2RwbDEwNXppZGhWLXg2QmFOcXVYNFpJR1ctODB1QlItQjEwSGN6SU9xZS1PWUNfMUlLSEJzaEFrSGh5aU9iVTg?oc=5",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 04:33",
+   "title": "호르무즈 석유 운송, 전쟁 이전 대비 약 80% 회복 추정 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA0TGI3YWtPUzVlU2hkSnBXZC1QR1ByMjMyZ0VPMDlYSjhtNjdzajR5R2hwcmV1TmZYa2U1TV9vSnJ4dXlnOG5IckVlQ2xFNXE4Zzdidw?oc=5",
    "disrupt": "",
    "materials": "석유",
    "status": "NONE"
@@ -2411,6 +3221,15 @@
    "published": "2026-09-29 04:21",
    "title": "이란의 호르무즈 봉쇄력 약화…중동 원유 수출 80% 회복 - 뉴시스",
    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81M215cGtKdGNrZy04bldXLWl3M3RCV1I3NnFfcmxyMTB6QTd1eWlwNGR1ckhYcldsR2Q5UW1Yd21lb2hPMnpZaVpnSXEwY1ctaWtQaEVHaHIzQUZtckJ3OHlRZ0FlcXgyakZ1R2NGMzh6YXZSbFB1S9IBeEFVX3lxTE81M215cGtKdGNrZy04bldXLWl3M3RCV1I3NnFfcmxyMTB6QTd1eWlwNGR1ckhYcldsR2Q5UW1Yd21lb2hPMnpZaVpnSXEwY1ctaWtQaEVHaHIzQUZtckJ3OHlRZ0FlcXgyakZ1R2NGMzh6YXZSbFB1Sw?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 04:21",
+   "title": "이란의 호르무즈 봉쇄력 약화…중동 원유 수출 80% 회복 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JSG5VX0liSHpTdEpPa0QxS3pkQV9kZ0Z3bDk2ai1NQzBkdFBtWnZZem9wejlqc1FHZTNTLVpoYmttdWxaZ0hnbm5RTHlsbnppYU5jM0swSHVHMkpnMFN3TtIBeEFVX3lxTE81M215cGtKdGNrZy04bldXLWl3M3RCV1I3NnFfcmxyMTB6QTd1eWlwNGR1ckhYcldsR2Q5UW1Yd21lb2hPMnpZaVpnSXEwY1ctaWtQaEVHaHIzQUZtckJ3OHlRZ0FlcXgyakZ1R2NGMzh6YXZSbFB1Sw?oc=5",
    "disrupt": "봉쇄",
    "materials": "",
    "status": "CANDIDATE"
@@ -2492,6 +3311,15 @@
    "published": "2026-09-29 03:14",
    "title": "미중 정상회담은 끝났지만 ‘완전한 합의’는 없었다 - 투데이타임즈",
    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15alYyQ25iN0JVR0ZpTGlkY2xWQ245NmVHNVhyM3VoR0EtN2Q0UmxSTWVncExfUy14QUl2VV9ScXE4QTJQdnJiNXRHb2JXU1hkQlE?oc=5",
+   "disrupt": "수출통제",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 03:14",
+   "title": "미중 정상회담은 끝났지만 ‘완전한 합의’는 없었다 - 대한청년일보",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE55YUwxNkZfSVk0ZE0ySFdOZ0VmSFRGMXVTaHhyMmRYeEZpRVdXT1dVUDVNNWs4TGR3Y2xHMGY1ZVQ0a2VBUGNHMVNLaWQwSFo3MkY2U01R?oc=5",
    "disrupt": "수출통제",
    "materials": "",
    "status": "CANDIDATE"
@@ -2651,6 +3479,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 02:23",
+   "title": "“트럼프가 걷어찬 평화안”…호르무즈 교착에 美 경기침체 경고등 [이슈+] - 에너지경제신문",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JZVVJRGtVc0E2UnJ3c19UWThtcnNXWGNTM0JYZ0FGV3VJZWF2TmQtQzRTOHBjbEFvQjV4N01TMDlCZTY0WkxGX2U3cWNhV2RfZnc3bWVqV0tsV3N4MS1WZXVR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 02:21",
    "title": "이란, 호르무즈 재개방 협상안 美에 재전달…핵 문제 논의는 거부 - bloomingbit.io",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ZRGVsbUFjai1iOFpJVXY1Y2tIOTZxUnRZNVN1ZDFnNGxhRHVvZGxDQmt6aXJ2RFh2OHNBbVpndS14YWJLeTlUd2xxU3FMcFZx?oc=5",
@@ -2759,6 +3596,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 01:48",
+   "title": "이란, 중재국 통해 미국에 ‘호르무즈 재개방 조건’ 재전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwYU1qamJGUjJqZF9KSU1DNWdTMVlib1REd2lBcGxybmVFVllZQmNfN1ktTlBiMzJ4Nk51SDVHVXZLVWNrVmc?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 01:39",
    "title": "미·중 정상회담, 합의보다 구조를 봐야 한다 - 교수신문",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05elVDZms0VFRzR2VLUnA5VThJSmp5dk9tMmVzT2l5VFRDcU84cVpqVEJHRmp6SDdxR01CVjUxZWRMU2lZQmhFRzBlZkVCU2xXZE1OdV9nSXFGYVo0VFJlUENiYUdQc00?oc=5",
@@ -2771,6 +3617,15 @@
    "published": "2026-09-29 01:37",
    "title": "OCI, 전북서 반도체 소부장 특화단지 앵커기업 참여 - 이투데이",
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnNFJ5UXFQVFZwRkpVR2kzWnpTeWxIdEg2Z0VxNURaTHB1MkxBbU9JUlZyTnZqcDVKeWMtR2Z4VVlzbmNTZUh6RzF3VkM5LTNwdXZpVUZWbG1TVlZvNThHeV9QV0JuOTUwTXVOVjdaOUktcHhS?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 01:37",
+   "title": "OCI, 전북 반도체 소재 특화단지 앵커기업 참여 - 연합뉴스 한민족센터",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DSTFEWUNnUHFTdTNBYmhfMXFmVnhNdEdUQkJCS1BSMEV2MVd0TEd3Vi1jUUY0QXcySVd6NkhlVTFjeHFLMzJXYUZlOUVUdWpIQTlOeGNNLXN1eXJoR1YwWlRMaDRlTzF6X3lVYVN1Skl4RGw3?oc=5",
    "disrupt": "생산 중단",
    "materials": "반도체",
    "status": "RELEVANT"
@@ -2792,6 +3647,15 @@
    "disrupt": "재개",
    "materials": "",
    "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 01:33",
+   "title": "이란 호르무즈 대치 속 미국 국채금리 또 상승… 코스피 하락 - 프레스뉴스",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE85dmluYmduU3otYjN5bzhFdURCbnA0elJwX0pjeEgxQ0x2YUFpY3B1RHQ4X2pHbW9tdjFFN01NYUJEM2N5MndPcnFvWEttVm4zZEVhc3J5a3FPd2FjY05ad0xVbGVCR25WYW52dXAyV01Zdw?oc=5",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
   },
   {
    "source": "GOOGLE",
@@ -2939,6 +3803,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 01:04",
+   "title": "OCI, 군산·익산 앵커기업으로…반도체 소재 사업 확대 나선다 - 데일리안",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQa0NVdzBsWHQ4UFhmcXZzeHF6a0c3QmtLZWFuOWRJQkpkNHcyQlFPTXdfZU1oNHNLblZSZ2RsOVZFLWllV25QNlF4SGs1OWpJaHU2c3FwU2pydVJuVGFlRWljdzhHSWNIbVdnZjRJU0laYVlXQ2h3UmFsVGJ4bTF2MERyRGFOUVNfb0hwT3Z4eTBSS2RPVHpUU2Y5YUg2TkZlUHVIbko5bklmVVNsR2U3U3ZuSXJkYU1Rd3VXX2xPaWVMdm5CM20zQTUwNmlWNlZYS1k1MzNJMGJIR2Y4SXNva3JWR0FGWFZRb2R0dDBOZUpiSUpfRzJ6czM3MFk2ekpiOHZwMU1yX0gwSHhCS1E?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 01:03",
    "title": "사우디, 홍해 원유수출 재개…'피격' 동서 송유관 복구 완료 - v.daum.net",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RVWptNDk5VTdhQ2syNEd0OUJXQTNBQXI2SDJvdFlwUUVyYy1feVZGY193QkRFUE9TTlc1NHg2NE9iSzVjSDFyMFF5TG5na2c?oc=5",
@@ -3028,6 +3901,15 @@
    "status": "CANDIDATE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:57",
+   "title": "이란, 호르무즈 재개방 조건 美에 재전달…핵 문제 양보 없다 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zNllXa3RfOUx3TW1fQWhVajQ0RFVlTTZBc2E0eXFjYlpQZ3RmSnJmb3JNTDRpUmhnb0ppZGJ5dTRaYTBjTkU5UElXVC1wZGxnYTVPcVRJbHIzZ9IBWEFVX3lxTFBzYkNRa2dLM04yU3VTSlVMb0FkQUYxeEljeXV3ck1kMkhRNFljem90RnRJaXdiNVZlOUljem1KODJhcGRYcEpCRnFqc0pFQnVvU2M5UDdaWl8?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-09-29 00:56",
    "title": "EU 가스 저장률 70.87%…미국산 LNG 유럽행 늘어",
@@ -3080,6 +3962,24 @@
    "disrupt": "재개",
    "materials": "",
    "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:49",
+   "title": "호르무즈 막혔는데 원유는 흐른다…위치신호 끈 ‘잠행 유조선’에 원유량 60% 회복 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBBNGt4SXZNakRRaXJrSEg1OVNDbmZHME5LN2QzQTZfVzZ5UHg1NWZLLU5MRWN4ZVZ5MnFQaE5wYk55bGtFSUJzNVpBYw?oc=5",
+   "disrupt": "",
+   "materials": "신호",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:49",
+   "title": "이란, 카타르 통해 미국에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9QOXFYdERtN2JXNVhWd012WVY2OUFFLTczRTJZd1JqZUIzLXhIYjRsdFhSMWtIdm1VRVRSbUk1T1ZzRURqeVE?oc=5",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
@@ -3254,6 +4154,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 00:22",
+   "title": "이란, 중재국 통해 美에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAzWV9sR2trLXBTaDZJNHRBaHdzeHV1RmNaYTJwQkVIeVFLckN5cFVGZVFpMW9rX3NEYVNzMFl0R0NiejU4T0E?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 00:21",
    "title": "코스피 0.66% 하락 출발…美·이란 호르무즈 재개방 로드맵 불발 | - news.einfomax.co.kr",
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XcDB2eDROMVMzaXJUc2MyV05mODJyUjhYaERwV2Exd3NRY1ltQUNUWlhwdnlFNDROVTBBQXpjck8xSk8yUEh6SFVfdTd3Sko5UWQzMFVVOVg0b29OS25QTFF2elozaTJmWUpKLVJzZUZJcjhN?oc=5",
@@ -3287,6 +4196,24 @@
    "disrupt": "",
    "materials": "수송",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:17",
+   "title": "이란, 중재국 통해 미국에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1b0c4RjBIQmxYdXFfaUtrcFhxRWF6TXBPUlQxU2FiYWdLRmlicndvZmxsZlpXVXNLOXpITThPdVJHRTlpZldFWXE1eUVnWXJVa3ZJMA?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:17",
+   "title": "이란, 중재국 통해 미국에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBkeUdwNDBIODRTckFZZ2FaOGVJT242R3FMTUs2OWUzUkNtZmo0R1o5QzJMM1hSbVdMcDZ2U09hTmxaX3FzRUE?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "GOOGLE",
@@ -3329,6 +4256,15 @@
    "published": "2026-09-29 00:12",
    "title": "이란, 중재국 통해 미국에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9QS1Y1UFJDcHpPVlVJRW5DdE5MMWRmTUpyQ2FwNFJoSHdxQjhraVR4YUJsQ2ZPakgyQm1TY1l3N1d6SktUa1E?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:12",
+   "title": "이란, 중재국 통해 미국에 호르무즈 재개방 조건 다시 전달 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51TFgtNDF4ZTN2NURQWHc5TXlwYUpFc3NWaUhBMy1nTWV6SGEteHJuNm9RQ01xcG5pelVEODZxczBMQU9Ec0xQZHZNcnBSSC1nYUlkRA?oc=5",
    "disrupt": "재개",
    "materials": "",
    "status": "CANDIDATE"
