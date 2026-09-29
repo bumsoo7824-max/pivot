@@ -4,9 +4,16 @@ import KotraMap from "@/components/charts/KotraMap";
 import { PageHeader, Section, SourceTag, Stat, Unavailable } from "@/components/ui";
 import { allDetailHs4, comtrade, customsAlternatives, fmtPct, fmtUsd } from "@/lib/data";
 import { STATUS_META, universe, type CoverageItem } from "@/lib/coverage-data";
+import policyMatchesJson from "@data/policy_matches.json";
 
 const byHs6 = new Map(universe.map((i) => [i.hs6, i]));
 const PILOT_HS4 = new Set(allDetailHs4());
+
+// 2026-09-28: K-Startup Open API(getAnnouncementInformation01/getBusinessInformation01)에서 가져온
+// 지원사업을 품목 키워드로 연결한 결과 — pipeline_v2/fetch_support_policies.py가 만든다. 아직 아무도
+// 실행 안 했으면 빈 객체({})라 모든 품목이 아래 일반 지원제도 목록으로 자연히 폴백된다.
+type PolicyMatch = { title: string; url: string; source: "ANNOUNCEMENT" | "BUSINESS"; matched_on: string[] };
+const policyMatches = policyMatchesJson as Record<string, PolicyMatch[]>;
 
 const SUPPORT_POLICIES = [
   {
@@ -74,14 +81,39 @@ export default async function Hs6DetailPage({ params }: { params: Promise<{ hs6:
   const comtradeItem = comtrade.items.find((i) => i.hs4 === item.hs4);
   const customsItem = customsAlternatives.items.find((i) => i.hs4 === item.hs4);
 
-  const hhi = item.hhi_hs4_ref;
   const topCountry = item.top_country ?? item.top_country_hs4_ref;
   const topSharePct = item.top_country_share_pct ?? item.top_share_hs4_ref;
   const importUsd = item.import_usd_12m ?? item.import_usd_hs4_ref;
+  const monthlyUsd = importUsd ? importUsd / 12 : undefined;
   const countryCount = item.n_country ?? item.country_count_hs4_ref;
 
   // 대체공급국 후보: nitemtrade 543개는 top5 국가 중 1위국 제외 상위4개국을 그대로 후보로 쓸 수 있다(실측).
   const nitemtradeAlts = item.top5_countries?.slice(1) ?? [];
+
+  // 2026-09-28: fetch_support_policies.py가 만든 K-Startup 실제 매칭 — 없으면 빈 배열이라 아래에서
+  // 일반 지원제도 목록(SUPPORT_POLICIES)으로 자연히 폴백된다.
+  const hs6PolicyMatches = policyMatches[item.hs6] ?? [];
+
+  // 2026-09-28 UI 개선: HHI가 없는 collected_partial(543개) 품목도 이미 top5_countries 실측이 있으니
+  // 그 상위 5개국 비중만으로 근사 HHI(Σ share²)를 계산해 보여준다 — 6위 이하 국가의 비중 제곱합이
+  // 빠져 있으므로 이 값은 실제 HHI의 "하한"이다(실제 HHI ≥ 이 값). 원본 HS4 리스크 테이블 HHI가 있으면
+  // 그걸 그대로 쓰고, 없을 때만 이 근사치로 대체한다 — 두 값을 섞어 쓰지 않는다.
+  const approxHhiFromTop5 =
+    item.hhi_hs4_ref === undefined && item.top5_countries && item.top5_countries.length > 0
+      ? item.top5_countries.reduce((sum, c) => sum + (c.share_pct / 100) ** 2, 0)
+      : undefined;
+  const hhi = item.hhi_hs4_ref ?? approxHhiFromTop5;
+
+  // 2026-09-28 UI 개선: 4번째 박스를 "수입 상대국 수"(정보량이 낮음) 대신 "대체 공급처 1위국"으로
+  // 바꾼다. 상대국 수는 버리지 않고 "수입 국가 구성" 섹션 힌트로 옮긴다.
+  const topAltCountry = pilotDetailAvailable
+    ? comtradeItem?.alternatives[0]?.country ?? customsItem?.alternatives[0]?.country
+    : nitemtradeAlts[0]?.country;
+  const topAltSub = pilotDetailAvailable
+    ? "관세청/UN Comtrade 사전 산출 1위 후보"
+    : nitemtradeAlts[0]
+    ? `nitemtrade 실측 2위국(비중 ${nitemtradeAlts[0].share_pct}%)`
+    : "데이터 없음";
 
   return (
     <>
@@ -109,7 +141,13 @@ export default async function Hs6DetailPage({ params }: { params: Promise<{ hs6:
         <Stat
           label="HHI (수입 집중도)"
           value={hhi !== undefined ? hhi.toFixed(4) : "산출 불가"}
-          sub={hhi !== undefined ? "1에 가까울수록 한 나라에 쏠림 · HS4 참고" : "355개 구조 HHI 계산 대상 밖"}
+          sub={
+            item.hhi_hs4_ref !== undefined
+              ? "1에 가까울수록 한 나라에 쏠림 · HS4 참고"
+              : approxHhiFromTop5 !== undefined
+              ? "상위 5개국 비중만으로 계산한 근사치 — 실제값은 이보다 큼(6위 이하 누락)"
+              : "355개 구조 HHI 계산 대상 밖"
+          }
         />
         <Stat
           label="1위국"
@@ -117,13 +155,29 @@ export default async function Hs6DetailPage({ params }: { params: Promise<{ hs6:
           sub={topSharePct !== undefined ? `비중 ${topSharePct}%` : "데이터 없음"}
           tone={topSharePct !== undefined && topSharePct >= 70 ? "red" : "amber"}
         />
-        <Stat label="수입액" value={importUsd ? fmtUsd(importUsd) : "산출 불가"} sub={item.import_usd_12m ? "nitemtrade 12개월 실측" : item.import_usd_hs4_ref ? "HS4 리스크 테이블 참고" : "데이터 없음"} />
-        <Stat label="수입 상대국 수" value={countryCount ? `${countryCount}개국` : "산출 불가"} sub="실적이 잡힌 국가 기준" />
+        <Stat
+          label="수입액 (연간)"
+          value={importUsd ? fmtUsd(importUsd) : "산출 불가"}
+          sub={
+            (item.import_usd_12m ? "nitemtrade 12개월 실측" : item.import_usd_hs4_ref ? "HS4 리스크 테이블 참고" : "데이터 없음") +
+            (monthlyUsd ? ` · 월평균 ${fmtUsd(monthlyUsd)}` : "")
+          }
+        />
+        <Stat label="대체 공급처 1위국" value={topAltCountry ?? "산출 불가"} sub={topAltCountry ? topAltSub : "데이터 없음"} />
       </div>
+      <p className="-mt-3 mb-6 text-[11px] leading-relaxed text-slate-500">
+        HHI = Σ(국가별 수입비중)² — 계산에 쓰인 국가별 비중 데이터는 아래 &quot;수입 국가 구성&quot;에서 확인할 수 있다.
+      </p>
 
       <Section
         title="수입 국가 구성"
-        hint={item.status === "collected_partial" ? "nitemtrade 12개월(2025.09~2026.08) 실측 — 상위 5개국" : undefined}
+        hint={
+          item.status === "collected_partial"
+            ? `nitemtrade 12개월(2025.09~2026.08) 실측 — 상위 5개국 · 전체 수입 상대국 ${countryCount ?? "?"}개국`
+            : countryCount
+            ? `수입 상대국 총 ${countryCount}개국(HS4 참고) — 상세 목록은 HS4 단위 집계라 HS6별로 못 나눔`
+            : undefined
+        }
         className="mb-6"
       >
         <CountryTable item={item} />
@@ -177,23 +231,49 @@ export default async function Hs6DetailPage({ params }: { params: Promise<{ hs6:
           )}
         </Section>
 
-        <Section title="지원정책 추천" hint="유료 버전에서 자격요건·품목 매칭 필터 제공 예정 — 아래는 공급망 전환에 쓸 수 있는 일반 지원제도 목록">
-          <ul className="space-y-2.5">
-            {SUPPORT_POLICIES.map((p) => (
-              <li key={p.title} className="rounded-lg border border-white/10 bg-white/[0.02] px-3.5 py-2.5">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
+        <Section
+          title="지원정책 추천"
+          hint={
+            hs6PolicyMatches.length > 0
+              ? "K-Startup 공고·사업 중 이 품목의 핵심 소재어로 연결된 실제 매칭 — 자격요건은 각 공고에서 직접 확인"
+              : "유료 버전에서 자격요건·품목 매칭 필터 제공 예정 — 아래는 공급망 전환에 쓸 수 있는 일반 지원제도 목록"
+          }
+        >
+          {hs6PolicyMatches.length > 0 ? (
+            <ul className="space-y-2.5">
+              {hs6PolicyMatches.map((p) => (
+                <li key={p.url} className="rounded-lg border border-pivot-500/25 bg-pivot-600/5 px-3.5 py-2.5">
+                  <div className="flex items-start justify-between gap-2">
                     <p className="text-sm font-medium text-slate-200">{p.title}</p>
-                    <p className="text-[11px] text-slate-500">{p.org}</p>
+                    <a href={p.url} target="_blank" rel="noreferrer noopener" className="shrink-0 text-[11px] text-pivot-500 hover:underline">
+                      바로가기 →
+                    </a>
                   </div>
-                  <a href={p.url} target="_blank" rel="noreferrer noopener" className="shrink-0 text-[11px] text-pivot-500 hover:underline">
-                    바로가기 →
-                  </a>
-                </div>
-                <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{p.desc}</p>
-              </li>
-            ))}
-          </ul>
+                  <p className="mt-1.5 text-[11px] text-slate-500">
+                    {p.source === "ANNOUNCEMENT" ? "K-Startup 지원사업 공고" : "K-Startup 통합공고 사업소개"} · &quot;{p.matched_on.join(", ")}&quot;
+                    키워드로 연결됨
+                  </p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul className="space-y-2.5">
+              {SUPPORT_POLICIES.map((p) => (
+                <li key={p.title} className="rounded-lg border border-white/10 bg-white/[0.02] px-3.5 py-2.5">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <p className="text-sm font-medium text-slate-200">{p.title}</p>
+                      <p className="text-[11px] text-slate-500">{p.org}</p>
+                    </div>
+                    <a href={p.url} target="_blank" rel="noreferrer noopener" className="shrink-0 text-[11px] text-pivot-500 hover:underline">
+                      바로가기 →
+                    </a>
+                  </div>
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{p.desc}</p>
+                </li>
+              ))}
+            </ul>
+          )}
         </Section>
       </div>
 
