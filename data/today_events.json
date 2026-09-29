@@ -1,8 +1,17 @@
 {
  "as_of": "2026-09-29",
- "generated_at": "2026-09-29T13:54:17.556475+00:00",
- "count": 482,
+ "generated_at": "2026-09-29T14:37:36.010062+00:00",
+ "count": 485,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 22:52",
+   "title": "9월 5주 주요 제조업 전망",
+   "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41564",
+   "disrupt": "수출 금지;수출 제한",
+   "materials": "금;부분;알루미늄;철강",
+   "status": "RELEVANT"
+  },
   {
    "source": "NAVER",
    "published": "2026-09-29 22:40",
@@ -2786,6 +2795,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 06:55",
+   "title": "젠슨 황 엔비디아 CEO “AI 안전 때문에 속도 늦추자는 건 잘못된 서사…개발 더 가속해야” - 중앙이코노미뉴스",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBV0xwVDFicEtNS2hsU1EyaXo3elkwX0xfVEZZaGR4ZlkwSEdXMHJhT0hSdlBvNmprSjE4ZG1VNzVNVGczOHZIUVJQWWhQX0l4aTQwUmZYejVsdjhaWXpoYUluQnBsWV92aWgzMjZ1c2NnUQ?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 06:46",
    "title": "이란, 호르무즈 개방 조건 재전달...美, 핵 합의 시 제재 완화 가능성 - 서울신문",
    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9oZllfSUhhdXVmTUxVd3VUd2c1bkxWT1ozNUFuQkIxVzdRaUltME1aanVoT2xUMDFfQWlvMUh4ODRhSzBQb0tvNGl0bWx2d0k1OFpxeVFKS0txZzNUUHBFWXc1VWJlZjRwdnhWeVEtQnRjN2hrcXFz?oc=5",
@@ -3392,6 +3410,15 @@
    "published": "2026-09-29 02:40",
    "title": "해상 SMR 선점전…규제·조선·금융 묶은 'K-문샷' 띄운다 - 뉴스토마토",
    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrZHVWcDctYWFuQlhtbkpDRzk2Vkp2d1k5bkRjVGpJcEVvNW9QcFIxNlJzUDY0VWtjTFBsU2tCclVUNW03YzhZNS1vQThxZUxySmE5N1hHVjB0aHN6RVVoNg?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 02:40",
+   "title": "해상 SMR 선점전…규제·조선·금융 묶은 'K-문샷' 띄운다 - 뉴스토마토",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ocUtiR3RNbXhlNV8wRDJGbEk4NFlfTXdOcGVBaS1qMVBzZjRNTmhnVTBVZHBDS2FDUjF6aVVmbkxvZWkyeFdYVExBMlpibTZTZEdSRFRWRUJCZXZfNzN0dg?oc=5",
    "disrupt": "공급망 안전",
    "materials": "금",
    "status": "RELEVANT"
