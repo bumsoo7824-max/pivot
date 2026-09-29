@@ -1,8 +1,98 @@
 {
  "as_of": "2026-09-29",
- "generated_at": "2026-09-29T07:45:29.108399+00:00",
- "count": 360,
+ "generated_at": "2026-09-29T07:56:34.879114+00:00",
+ "count": 378,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:48",
+   "title": "환경범죄의 '노앵설', AI위성이 온다",
+   "url": "https://www.sisaweek.com/news/articleView.html?idxno=238126",
+   "disrupt": "수출 금지;차단",
+   "materials": "광물;금;용해",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:46",
+   "title": "비트코인, 다시 상승했지만···10만달러 회복까진 '첩첩산중'",
+   "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424011",
+   "disrupt": "",
+   "materials": "수송;타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:40",
+   "title": "호르무즈에서 미국 해병대원 8명 부상 : 미국 국방부는 2주간 이란의 공...",
+   "url": "https://www.huffingtonpost.kr/article/260847",
+   "disrupt": "",
+   "materials": "용해",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:39",
+   "title": "[ETF 특징주] 비트코인 현물 ETF 10월 이후 최대 주간 순유입",
+   "url": "https://www.newspim.com/news/view/20260929001040",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:38",
+   "title": "한국형 핵잠수함 도입 본격화…특별법 국무회의 문턱 넘었다",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=312991",
+   "disrupt": "공급망 안전",
+   "materials": "무기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:22",
+   "title": "美·이란 싸움에 韓 금융비용도 '불똥' … 국고채 4% 넘어 대출금리까지...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/29/2026092900259.html",
+   "disrupt": "공급 차질;급등;재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:21",
+   "title": "호르무즈 파병 주춤하자 다자 기여 카드…정부, 佛 국제임무 참여 검토",
+   "url": "https://www.joongang.co.kr/article/25465666",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:17",
+   "title": "쇠고기 무관세·경유 수출금지·5천$…트럼프 물가대책 잇단 난항",
+   "url": "https://www.newsis.com/view/NISX20260929_0003806909",
+   "disrupt": "관세;수출금지",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:16",
+   "title": "코스피, 외인 매도에 6870선 약보합 마감",
+   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=665482",
+   "disrupt": "재개",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 16:16",
+   "title": "사우디, 드론 피격된 송유관 정상화...홍해 ·호르무즈 두 경로 수출",
+   "url": "https://www.delighti.co.kr/news/articleView.html?idxno=122547",
+   "disrupt": "",
+   "materials": "용해",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-09-29 16:12",
@@ -650,6 +740,15 @@
    "disrupt": "재개",
    "materials": "타르",
    "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-09-29 13:16",
+   "title": "이러다가 다 죽어...선거 앞둔 공화당, 트럼프 때문에 '골머리' [자막뉴...",
+   "url": "https://www.ytn.co.kr/_ln/0134_202609291316126671",
+   "disrupt": "관세",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "NAVER",
@@ -2111,6 +2210,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 05:43",
+   "title": "“호르무즈 봉쇄 힘 빠졌다”…원유 수출 80% 회복에도 남은 위험 - 동아일보",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12czJ5cWkxUVhEWkxkVnFHcG9mcWRMd2ppQVVWNloybGEtS3YwQUxDX2R4RlZhSWhUdkRjQS1lNEp3bUhGNE53ZXNMdHdvaXpwS3R2Zm5tTGwyZmlNMmZ4UUt0aVFfUdIBZkFVX3lxTE12czJ5cWkxUVhEWkxkVnFHcG9mcWRMd2ppQVVWNloybGEtS3YwQUxDX2R4RlZhSWhUdkRjQS1lNEp3bUhGNE53ZXNMdHdvaXpwS3R2Zm5tTGwyZmlNMmZ4UUt0aVFfUQ?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 05:36",
    "title": "호르무즈 원유 수출량 80% 회복…이란 봉쇄 전략 무력화 - 아시아투데이",
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13enl2YjVfY0VXQUU5d2c5M09ZM3BEVmZjY29hY1dyVjhpZE1tSVBLVjRHUDVPRVdSX09hX1ZDSVdUeVN2NHJicUFXSVNoS0FqaU9SZE5MSW9NUVVJY1o5VkFfRnAzRENLeUZUeGpn?oc=5",
@@ -2138,6 +2246,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 05:13",
+   "title": "\"40살 양반김, 바삭함 입고 세계로\" 동원F&B, 품질 혁신 승부수 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1MeTZxdjhEY1l1RjU5UzlYU19DWHAwUVB3NWZFMTdXSUZVYzBkamZWSG82Nm04eGNZMzJBeWlhMlItbnF5d3htdzBUYVdaXzByazYtWmlNLVpoaFNDRVFLNl9GSHRRLXBkbkctajU0YWNaSjZiNlUyddIBeEFVX3lxTE1MeTZxdjhEY1l1RjU5UzlYU19DWHAwUVB3NWZFMTdXSUZVYzBkamZWSG82Nm04eGNZMzJBeWlhMlItbnF5d3htdzBUYVdaXzByazYtWmlNLVpoaFNDRVFLNl9GSHRRLXBkbkctajU0YWNaSjZiNlUydQ?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 05:11",
    "title": "환대는 트럼프가, 실속은 시진핑이…희토류에 묶인 미국, 이란 7일안 퇴짜 - 데일리팝",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83M0FYeDFISzFTTVlvbXpYakljVnI3TTFJZ1ZPMUV6ZUZFNnRGWHItdWdvMjhlR2hKZW9jc1R0RVFtZzZUWXlpTVQxczEtRGU3djd1WmUzUkZUWV9Pc2hGRGNsQXpiTDVM?oc=5",
@@ -2153,6 +2270,15 @@
    "disrupt": "",
    "materials": "",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 05:11",
+   "title": "환대는 트럼프가, 실속은 시진핑이…희토류에 묶인 미국, 이란 7일안 퇴짜 - 데일리팝",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4teDlncEVnc3JBYVc5RmFHUUk5SklzNHRoRGp3T1JwX1o5SXlVbkdFSW81aktnWV9OdDQxMEY2UEg1STBmTWRFMEtUSHFQVkluelBaOG5VT2ZMUGJWZ3FhMmJJbVhMMjg0MXc?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
   },
   {
    "source": "NAVER",
@@ -2570,6 +2696,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 02:02",
+   "title": "이란 호르무즈 장악력 약화…원유 수송 크게 반등 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82NV9Ic1BHTmlvcWkzQU5yOENzZGNrS25tcjBkRVZDOXpFZS00UFZscXRaZEEzc2tRNzZDMmNxaldUdGNpNG1KVktYVDQzaUNLSGNiNjFiYzBYbUlfMkd1R0pWWGplV21aREYxZHJ3cGV3d0xXZTlxd9IBeEFVX3lxTE82NV9Ic1BHTmlvcWkzQU5yOENzZGNrS25tcjBkRVZDOXpFZS00UFZscXRaZEEzc2tRNzZDMmNxaldUdGNpNG1KVktYVDQzaUNLSGNiNjFiYzBYbUlfMkd1R0pWWGplV21aREYxZHJ3cGV3d0xXZTlxdw?oc=5",
+   "disrupt": "반등",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 02:01",
    "title": "이란, 카타르 통해 호르무즈 해협 재개방 조건 美에 재전달 - hankyung.com",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JdTNRRHV0ZzA2RDg1V21JaktnRUFYR0hhLXJDWk5vUjEyMzlRUXF1Z1czNWlZNFdEbUdwV1ZKTGZDRXpBYmtjQ0tlVllCUnFIT0NIaTY0NVlKUQ?oc=5",
@@ -2723,6 +2858,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-09-29 01:18",
+   "title": "OCI, 전북 반도체 초고순도 화학소재 특화단지 앵커기업 참여 - supple.kr",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5QmNfdE5KTXg4dDJQQ2tUY0ozRE1zX0R0NW81M0V2dnN1Sm1aLUJSR1ZUTU5LTnRuNDJTX0gzcGNyYWhfNG1tYmcta01nSWVqZEVZb1RFdlBUQ0ha?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-09-29 01:16",
    "title": "미국과 이란은 호르무즈 해협과 핵 문제에 대한 협상을 계속하고 있다. - Vietnam.vn",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRS1CMnc5Q1hHaEx3SWVPYWVnLXVzYmZMeDg1eWY5cmhYWWdaeHhodlZBcmVuVGg0S2drOXlPVHFPYXBZZWliYkd1aF95amx4YWNQV1FPT09RZTQ4ay1mSVptVk85SzRYUFBlRHg3WkVUVEt2YTZKQ1NOS1dHd1pqNWpvN3ZzUEFxNkdxcg?oc=5",
@@ -2810,6 +2954,15 @@
    "disrupt": "",
    "materials": "",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 01:00",
+   "title": "이란, 美에 호르무즈 재개방 조건 전달…\"화요일까지 답변 기대\" | - 연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXVTQ3UzRfMW8wcU1HMDZjaEplZEZtMFdvbUREcW1ua192ekZhSldLSXVDQ0RmVEFjTGpPZDVVTEFzQmZDdzJwTENpdGhwR0ZGME5CbDUyQkt2cEQ4RmZ2SzU5a3NkOTNHVnItMFZWQW5CcGhO?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "GOOGLE",
@@ -2918,6 +3071,15 @@
    "disrupt": "재개",
    "materials": "타르",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-09-29 00:49",
+   "title": "이란, 미국에 호르무즈 재개방 조건 다시 전달 - 국제신문",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeEVodGx0bTdsVHo3MXg0UmpEdzM5bEtZNHF0NnRUTjcwQTREWnJaYkNWeTFXcjI5ODlwa1Jjemw3U3pXbFFaUzlhelJPMk8wTUQ4eVR4YU5Rd2YtSGNVSE5KSDg4OTZKVkpHbHYwQVo3eWVPY3lZZDNZbnNxM1YtSU9lRXRhV2FUTUpz?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "GOOGLE",
