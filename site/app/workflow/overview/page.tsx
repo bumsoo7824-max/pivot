@@ -33,17 +33,16 @@ const PHASES = [
 export default function WorkflowOverviewPage() {
   return (
     <>
-      <PageHeader
-        step="워크플로우 · 페이지 1"
-        title="전체 워크플로우 (①~⑩)"
-        lead="뉴스 수집부터 대체공급처 연계까지 전체 10단계를 한 화면에서 본다. 실시간 재현율·수집 현황은 워크플로우 허브에, 관리자 검토 큐는 관리자 UI에 따로 있다."
-      >
+      <PageHeader step="워크플로우 · 페이지 1" title="전체 워크플로우 (①~⑩)">
         <div className="mt-3 flex flex-wrap gap-2 text-xs">
           <Link href="/workflow/" className="chip border-pivot-500/40 bg-pivot-500/10 text-pivot-500">
-            ← 워크플로우 허브(실시간 현황)
+            ← 워크플로우 허브
+          </Link>
+          <Link href="/workflow/coverage/" className="chip border-signal-blue/40 bg-signal-blue/10 text-signal-blue">
+            HS6 품목 유니버스 1,109개 →
           </Link>
           <Link href="/workflow/admin/" className="chip border-signal-amber/40 bg-signal-amber/10 text-signal-amber">
-            관리자 UI(뉴스 이벤트 검토) →
+            뉴스수집 워크플로우(관리자 UI) →
           </Link>
         </div>
       </PageHeader>
@@ -77,7 +76,13 @@ export default function WorkflowOverviewPage() {
                   </span>
                   <span className={`chip ml-auto ${meta.cls}`}>{meta.label}</span>
                 </div>
-                <p className="mt-3 text-sm font-semibold leading-snug text-white">{s.title}</p>
+                {s.id === 2 ? (
+                  <Link href="/workflow/admin/" className="mt-3 block text-sm font-semibold leading-snug text-white hover:text-pivot-400">
+                    {s.title} →
+                  </Link>
+                ) : (
+                  <p className="mt-3 text-sm font-semibold leading-snug text-white">{s.title}</p>
+                )}
                 {(s.summary || s.detail) && (
                   <details className="group mt-1.5">
                     <summary className="cursor-pointer list-none text-[11px] text-slate-600 hover:text-slate-400">

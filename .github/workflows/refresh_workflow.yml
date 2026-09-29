@@ -49,11 +49,15 @@ jobs:
         run: |
           python scripts/build_workflow_data.py
 
+      - name: 오늘 자 이벤트 원자료 내보내기 (관리자 UI 4box 클릭 연결용)
+        run: |
+          python pipeline_v2/export_today_events.py --db pipeline_v2/discover.db --out site/public/data/today_events.json
+
       - name: 수집 DB·집계 결과 커밋 (다음 실행에서 이어서 누적되도록)
         run: |
           git config user.name "supply-pivot-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add pipeline_v2/discover.db data/workflow_raw/today_counts.json site/public/data/workflow.json
+          git add pipeline_v2/discover.db data/workflow_raw/today_counts.json site/public/data/workflow.json site/public/data/today_events.json
           git diff --cached --quiet || git commit -m "chore: 워크플로우 데이터 자동 갱신 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           # 체크아웃 이후 사람이 직접 push해서 origin이 앞서 있을 수 있음 — rebase 후 재시도.
           # (사람 커밋과 봇 커밋이 서로 다른 파일을 건드리는 한 충돌 없이 정리됨)

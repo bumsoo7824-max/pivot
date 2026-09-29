@@ -36,7 +36,7 @@ export default function AltSupplyPage() {
       <PageHeader
         step="워크플로우 · 대체공급처·지원정책 (유료 범위)"
         title="영향국을 제외하고 후보를 추천한다"
-        lead="경보가 확정된 사건이 고객이 실제로 수입하는 품목·공급국과 겹치는지 확인하고, 영향국을 제외한 대체공급국과 지원정책을 연결한다. ⑨⑩은 유료 버전 범위이며, 현재 379개 기준 데이터로 시연한다."
+        lead="⑨⑩ 유료 범위 — 379개 기준 데이터로 시연."
       >
         <p className="mt-3 max-w-3xl rounded-lg border border-signal-red/30 bg-signal-red/5 px-3.5 py-2.5 text-xs leading-relaxed text-signal-red">
           이 단계는 MVP(무료 ①~⑧)에 포함되지 않는 유료 버전 범위입니다. 대체공급처 매칭까지
@@ -114,23 +114,24 @@ export default function AltSupplyPage() {
       <Section
         title="대체공급국 후보 — 지금 매칭돼 있는 범위"
         className="mb-6"
-        hint="두 방법론이 서로 다른 10개 품목에 이미 적용돼 있다 — 넓히는 일이 남았지 처음 만드는 일이 아니다"
+        hint="두 방법론을 합쳐 20개 품목에 이미 적용돼 있다 — 넓히는 일이 남았지 처음 만드는 일이 아니다"
       >
-        <p className="mb-3 text-sm font-semibold text-white">UN Comtrade 기반 (MVP10 · 1위국=중국·HHI≥0.5 상위 10개)</p>
         <div className="overflow-x-auto rounded-lg border border-white/10">
           <table className="w-full text-left text-xs">
             <thead className="bg-ink-800 text-slate-500">
               <tr>
                 <th className="px-3 py-2 font-medium">HS4</th>
                 <th className="px-3 py-2 font-medium">품목명</th>
-                <th className="px-3 py-2 font-medium">대체후보국 (상위 3)</th>
+                <th className="px-3 py-2 font-medium">방법론</th>
+                <th className="px-3 py-2 font-medium">대체후보국</th>
               </tr>
             </thead>
             <tbody>
               {comtradeAlts.items.map((it) => (
-                <tr key={it.hs4} className="border-t border-white/5">
+                <tr key={`comtrade-${it.hs4}`} className="border-t border-white/5">
                   <td className="whitespace-nowrap px-3 py-2 font-mono text-pivot-500">{it.hs4}</td>
-                  <td className="max-w-[260px] truncate px-3 py-2 text-slate-200">{mvp10Name.get(it.hs4) ?? "-"}</td>
+                  <td className="max-w-[220px] truncate px-3 py-2 text-slate-200">{mvp10Name.get(it.hs4) ?? "-"}</td>
+                  <td className="whitespace-nowrap px-3 py-2 text-slate-500">UN Comtrade</td>
                   <td className="px-3 py-2 text-slate-400">
                     {it.alternatives.slice(0, 3).map((a) => (
                       <span key={a.country} className="mr-2 whitespace-nowrap">
@@ -141,39 +142,22 @@ export default function AltSupplyPage() {
                   </td>
                 </tr>
               ))}
-            </tbody>
-          </table>
-        </div>
-
-        <p className="mb-3 mt-6 text-sm font-semibold text-white">관세청 수출입통계 기반 (별도 10개 품목)</p>
-        <div className="overflow-x-auto rounded-lg border border-white/10">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-ink-800 text-slate-500">
-              <tr>
-                <th className="px-3 py-2 font-medium">HS4</th>
-                <th className="px-3 py-2 font-medium">품목명</th>
-                <th className="px-3 py-2 font-medium">1위국</th>
-                <th className="px-3 py-2 font-medium">12개월 수입액</th>
-              </tr>
-            </thead>
-            <tbody>
               {customsAlternatives.items.map((it) => (
-                <tr key={it.hs4} className="border-t border-white/5">
+                <tr key={`customs-${it.hs4}`} className="border-t border-white/5">
                   <td className="whitespace-nowrap px-3 py-2 font-mono text-pivot-500">{it.hs4}</td>
-                  <td className="max-w-[300px] truncate px-3 py-2 text-slate-200">{it.name}</td>
+                  <td className="max-w-[220px] truncate px-3 py-2 text-slate-200">{it.name}</td>
+                  <td className="whitespace-nowrap px-3 py-2 text-slate-500">관세청 수출입통계</td>
                   <td className="whitespace-nowrap px-3 py-2 text-slate-400">
-                    {it.top_country} ({Math.round(it.top_share * 100)}%)
+                    1. {it.top_country} ({Math.round(it.top_share * 100)}%) · {fmtUsd(it.import_usd)}
                   </td>
-                  <td className="whitespace-nowrap px-3 py-2 font-mono text-slate-300">{fmtUsd(it.import_usd)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className="mt-3 text-xs leading-relaxed text-slate-500">
-          두 표는 서로 다른 10개 HS4에 대한 시연이다 — {customsAlternatives.method} 방법론과 UN
-          Comtrade 기반 매칭({comtradeAlts.source})을 각각 적용해봤고, 1,109개 유니버스 전체로
-          넓히는 건 아직이다.
+          UN Comtrade 기반({comtradeAlts.source})과 {customsAlternatives.method} 방법론을 각각 10개 HS4에
+          적용한 결과를 합쳤다 — 1,109개 유니버스 전체로 넓히는 건 아직.
         </p>
       </Section>
 
@@ -189,10 +173,10 @@ export default function AltSupplyPage() {
           </li>
           <li>
             <b className="text-white">HHI/노출도는 참고용.</b>{" "}
-            <Link href="/workflow/alerts/" className="text-pivot-500 hover:underline">
-              HHI 등급·경보 흐름
+            <Link href="/workflow/overview/" className="text-pivot-500 hover:underline">
+              전체 워크플로우
             </Link>
-            에서 다운그레이드 근거를 확인할 수 있다 — ⑨⑩ 매칭 자체는 HHI 값에 의존하지 않는다.
+            의 ⑦⑧ 카드에서 다운그레이드 근거를 확인할 수 있다 — ⑨⑩ 매칭 자체는 HHI 값에 의존하지 않는다.
           </li>
         </ul>
       </Section>
