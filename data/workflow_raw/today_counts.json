@@ -1,17 +1,33 @@
 {
-  "as_of": "2026-10-01",
-  "generated_at": "2026-10-01T15:04:44+00:00",
+  "as_of": "2026-10-02",
+  "generated_at": "2026-10-02T04:07:49+00:00",
   "cumulative": {
-    "total_events": 3626,
-    "total_relevant": 1749,
-    "total_candidate": 784
+    "total_events": 3918,
+    "total_relevant": 1909,
+    "total_candidate": 832
   },
   "today": {
-    "new_events": 482,
-    "new_relevant": 211,
-    "new_candidate": 52
+    "new_events": 292,
+    "new_relevant": 160,
+    "new_candidate": 48
   },
   "last_runs": [
+    {
+      "run_at": "2026-10-02 04:07",
+      "source": "google",
+      "fetched": 146,
+      "new": 124,
+      "new_relevant": 49,
+      "err": null
+    },
+    {
+      "run_at": "2026-10-02 04:06",
+      "source": "naver",
+      "fetched": 301,
+      "new": 168,
+      "new_relevant": 111,
+      "err": null
+    },
     {
       "run_at": "2026-10-01 15:04",
       "source": "naver",
@@ -34,22 +50,6 @@
       "fetched": 176,
       "new": 150,
       "new_relevant": 59,
-      "err": null
-    },
-    {
-      "run_at": "2026-10-01 04:13",
-      "source": "naver",
-      "fetched": 371,
-      "new": 179,
-      "new_relevant": 81,
-      "err": null
-    },
-    {
-      "run_at": "2026-09-30 14:35",
-      "source": "google",
-      "fetched": 210,
-      "new": 79,
-      "new_relevant": 43,
       "err": null
     }
   ]
