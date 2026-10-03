@@ -1,8 +1,485 @@
 {
  "as_of": "2026-10-03",
- "generated_at": "2026-10-03T03:55:13.812994+00:00",
- "count": 81,
+ "generated_at": "2026-10-03T13:02:32.269960+00:00",
+ "count": 149,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 21:44",
+   "title": "[아주경제 오늘의 뉴스 종합] 北, 김여정 대남 비난 이튿날 동해상 탄도...",
+   "url": "https://www.ajunews.com/view/20261003214000645",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 21:19",
+   "title": "\"사우디-예멘 정부군, 후티 대공세 준비\"…美는 참전 거부(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20261003035751009?input=1195m",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 20:00",
+   "title": "G7, 비축유 1억 배럴 긴급 방출…이란전쟁에 치솟은 에너지가격 대응",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=394495",
+   "disrupt": "공급 차질",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 20:00",
+   "title": "이란 성직자 \"우리 원유 수출 막히면 걸프 해역 유조선도 못 지나가\" 위...",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=394494",
+   "disrupt": "",
+   "materials": "금;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 19:58",
+   "title": "트럼프 \"이란전쟁 매우 곧 끝날 것…종전되면 유가 급락\"",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=394512",
+   "disrupt": "급락",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 19:34",
+   "title": "\"호르무즈 해협 인근서 유조선 미상발사체에 피격…선원 무사\"",
+   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5222936",
+   "disrupt": "",
+   "materials": "사무;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 19:05",
+   "title": "트럼프 외교·안보 핵심 참모진, 캠프 데이비드 긴급 회동…대이란 작전...",
+   "url": "https://biz.chosun.com/international/international_general/2026/10/03/N6JTYJLZJNBGBCY3FE4BYGYPCA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 18:32",
+   "title": "[속보] 트럼프 행정부, 외교·안보 수뇌부 극비 회의 열어…대이란 작전...",
+   "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0400&key=20261003.99099000619",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 18:24",
+   "title": "사우디·예멘 정부군, 후티 대공세 준비…'바브엘만데브 탈환' 노린다",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2119179",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 18:15",
+   "title": "개천절 서울 도심 곳곳 대규모 집회…광화문·숭례문 수만명 운집",
+   "url": "https://www.munhwa.com/article/11621258?ref=naver",
+   "disrupt": "",
+   "materials": "금;방향",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:58",
+   "title": "터키·파키스탄도 무기 보탰다…사우디, 후티 반군에 10만 대공세 ‘초...",
+   "url": "https://www.seoul.co.kr/news/international/middleeast-africa/2026/10/03/20261003500031?wlog_tag3=naver",
+   "disrupt": "폐쇄",
+   "materials": "무기;수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:35",
+   "title": "\"트럼프 사단, 캠프데이비드 극비 회의...대이란 작전 논의\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610031735050994",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:24",
+   "title": "북극해 물동량 사상 최대…중동 대체수요에 해빙까지",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610030017",
+   "disrupt": "",
+   "materials": "길이",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:17",
+   "title": "후티의 급성장과 중국의 위험한 '양다리'",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610031717285109",
+   "disrupt": "",
+   "materials": "램프;비드",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:08",
+   "title": "\"사우디-예멘 정부군, 후티 대공세 준비…최대 10만 명 동원\"",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008781983&plink=ORI&cooper=NAVER",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:01",
+   "title": "세계식량가격 석 달째 상승…설탕 6.1%·곡물 5.1%↑",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02341926645609312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "",
+   "materials": "비료;연료",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:01",
+   "title": "“사우디, 후티 반군 공격 준비…10만명 이상 동원\"",
+   "url": "https://biz.chosun.com/international/international_general/2026/10/03/FNHR56XVFBH4RKUGX6A3LH4Q5U/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "disrupt": "",
+   "materials": "지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 17:00",
+   "title": "트럼프, G7, 비축유 방출 합의 이후 디젤 수출 금지 보류",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=675005",
+   "disrupt": "수출 금지",
+   "materials": "금;선박;수송;연료;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:58",
+   "title": "사우디·예멘 정부군, 후티 반군 겨냥 대규모 공세 임박…최대 10만 명 ...",
+   "url": "https://www.g-enews.com/view.php?ud=20261003165058799ea14faf6f5_1",
+   "disrupt": "",
+   "materials": "리브",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:42",
+   "title": "개천절 도심 대규모 집회·행진 잇달아…강남에선 축제 퍼레이드",
+   "url": "https://www.yna.co.kr/view/AKR20261003036700004?input=1195m",
+   "disrupt": "",
+   "materials": "금;방향",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:40",
+   "title": "\"사우디-예멘 정부군, 후티 공세 준비…10만 명 동원 가능성\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261003163954pcR",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:36",
+   "title": "\"사우디·예멘 정부군, 후티 대공세 준비…10만명 동원 가능성\"",
+   "url": "https://www.ajunews.com/view/20261003162847417",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:18",
+   "title": "트럼프 사단, 캠프데이비드 극비 회동... 대이란 군사작전 재개되나",
+   "url": "https://www.hidomin.com/news/articleView.html?idxno=723530",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:13",
+   "title": "“가자지구 학살 중단” vs “이스라엘 지지”…개천절 서울서 잇따라 ...",
+   "url": "https://www.mk.co.kr/article/12167795",
+   "disrupt": "",
+   "materials": "금;지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:12",
+   "title": "이란 작전 임박? 미군 수뇌부 비밀 회의",
+   "url": "https://www.chosun.com/international/international_general/2026/10/03/7XM2DBVYDVC2RJY4JZFHP2BWHA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:10",
+   "title": "트럼프 정부 수뇌부, 캠프 데이비드서 극비 회동...대이란 작전 논의",
+   "url": "https://www.munhwa.com/article/11621247?ref=naver",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:08",
+   "title": "사우디·예멘 정부군, 후티 반군 향해 대공세 준비…\"몇 주 내 실행\"",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000070709",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:06",
+   "title": "트럼프 참모진, 캠프 데이비드서 극비 회의…대이란 작전 논의",
+   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5222894",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:04",
+   "title": "“가자 집단학살 3년” 보신각 덮은 분노의 목소리…서울역선 “이스라...",
+   "url": "http://www.segyebiz.com/newsView/20261003505002?OutUrl=naver",
+   "disrupt": "",
+   "materials": "금;기와",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:03",
+   "title": "\"사우디-예멘 정부군, 후티 대공세 준비…최대 10만명 동원\"",
+   "url": "https://www.yna.co.kr/view/AKR20261003035700009?input=1195m",
+   "disrupt": "폐쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:02",
+   "title": "트럼프 사단, 캠프데이비드 극비 회의…대이란 작전 논의",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008781940&plink=ORI&cooper=NAVER",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 16:00",
+   "title": "월드 뉴스 브리프 (기준일시: 2026년 10월 02일 금요일 10:00)",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=globalnewsfocus&wr_id=482",
+   "disrupt": "가격 상승;공급 차질;관세",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:51",
+   "title": "트럼프 사단, 극비 회동…대이란 작전 논의",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02305846645609312&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:49",
+   "title": "\"집단학살 중단\" vs \"이스라엘 지지\"…개천절 서울서 잇따라 집회",
+   "url": "https://www.newsis.com/view/NISX20261003_0003813591",
+   "disrupt": "",
+   "materials": "금;지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:42",
+   "title": "트럼프 참모진, 캠프데이비드 비공개 회동…대이란 작전 논의",
+   "url": "https://www.ajunews.com/view/20261003153803393",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:34",
+   "title": "트럼프 사단, 캠프데이비드 극비 회의…대이란 작전 논의",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005931348",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:28",
+   "title": "트럼프, 이란 군사작전 재개 임박했나…안보수뇌부 극비 회동",
+   "url": "https://www.mk.co.kr/article/12167786",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:19",
+   "title": "트럼프 행정부 수뇌부, 대이란 작전 극비 회의 나서",
+   "url": "https://view.asiae.co.kr/article/2026100315193532929",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:15",
+   "title": "흑해 막히자 밀·옥수수값 뛰었다…세계 식량가격 전월比 1.5%↑",
+   "url": "https://www.news1.kr/economy/agri-food/6309817",
+   "disrupt": "",
+   "materials": "비료;연료;원료",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:10",
+   "title": "씨싸이트 75%·윈팩 67% 상승…HLB 계열주 눈길",
+   "url": "http://www.kjdaily.com/article.php?aid=1791006000688187276",
+   "disrupt": "수출 제한",
+   "materials": "리튬;어스",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:10",
+   "title": "\"트럼프 외교·안보, 캠프데이비드서 극비 회의…이란전 논의\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000338220?division=NAVER",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:10",
+   "title": "일본·카타르, 에너지 협력 강화… 호르무즈 안전 공조",
+   "url": "https://www.g-enews.com/view.php?ud=202610031508127681e7e8286d56_1",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 15:02",
+   "title": "트럼프 사단, 캠프데이비드 극비 회의…대이란 작전 논의",
+   "url": "https://www.yna.co.kr/view/AKR20261003033000009?input=1195m",
+   "disrupt": "재개",
+   "materials": "비드;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:52",
+   "title": "[여경 코멘토] 9월 넷째 주 3명 활동···무려 51건 지적·의견 무슨 내...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=259307",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:38",
+   "title": "중동 대체수요·해빙에…북극해 물동량 사상 최대",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005931332",
+   "disrupt": "",
+   "materials": "길이;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:23",
+   "title": "세계 식량가격 3년10개월 만에 최고…설탕 6.1%·곡물 5.1% 급등",
+   "url": "https://biz.heraldcorp.com/article/10892532?ref=naver",
+   "disrupt": "가격 상승;급등",
+   "materials": "비료;연료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:22",
+   "title": "전쟁에 가뭄·엘니뇨까지…세계식량가격 2022년 11월 이후 최고",
+   "url": "https://view.asiae.co.kr/article/2026100314225777634",
+   "disrupt": "",
+   "materials": "원자재",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:16",
+   "title": "삼성E&A, 3분기 영업익 2558억 전망…'글로벌 에너지 지도' 재편 수혜",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492459",
+   "disrupt": "불가항력",
+   "materials": "메탄;메탄올;받침",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 14:06",
+   "title": "북극해 물동량 사상 최대... 중동 대체수요에 해빙까지",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=882565",
+   "disrupt": "",
+   "materials": "길이;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 13:52",
+   "title": "\"호르무즈 해협 인근 유조선 피격...선원 무사\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610031352388649",
+   "disrupt": "",
+   "materials": "사무;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 13:51",
+   "title": "북극해 항로 통행량 4배 증가…미국·이란 전쟁 여파",
+   "url": "https://www.hankookilbo.com/news/article/A2026100313210001482?did=NA",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 13:16",
+   "title": "G7, 비축유 최대 1억배럴 방출… 첫 20일 경유 집중",
+   "url": "https://www.g-enews.com/view.php?ud=202610031315187043e7e8286d56_1",
+   "disrupt": "",
+   "materials": "기와",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-03 13:08",
+   "title": "중동 뱃길 불안에 북극항로 ‘북적’…9월 통항 133회 사상 최대",
+   "url": "https://www.kbmaeil.com/article/20261003500083",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-10-03 12:26",
@@ -346,6 +823,42 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-03 07:00",
+   "title": "단기 4359년 개천절, ‘애국투자펀드’ 성과는? [마켓시그널] - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hTUJ0UXNFY2ZTZWxpMDB4U0RqTmo3YVdzRU81bGhGbHpaZVJndG9ZWDM2d2E1aVdJaEVQc21OVEZzYnhHeEU2SkQzcGF1ZGYydmNz0gFTQVVfeXFMTWFNQnRRc0VjZlNlbGkwMHhTRGpOajdhV3NFTzVsaEZselplUmd0b1lYMzZ3YTVpV0loRVBzbU5URnNieEd4RTZKRDNwYXVkZjJ2Y3M?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 06:25",
+   "title": "게임 구성의 차이를 말로 풀어보는 토토 3.0.0.3 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PT1VuRHVueVNwcTVTSTRyc2tXQXoyTllpbm0wOHBFaGJQemp4YlVQNWQ4U1NpcndEZF9YVl9BNGFEZXd4OHVUNF9YLUgtRXdLS3ZnSUhkUkx5SUVudDVVR2pOazBYLWRaZHFhZTlZRE1aYjhLNDNRa3Q5SVk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 06:22",
+   "title": "흑해 물류 차질과 설탕 공급 위축으로 9월 세계식량가격지수 상승 - 2news.co.kr",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xY09EcWxNUWhpTHV4dFUzVWVwRUVYU3dWendsRk5sQ25maGVYa2g2NF9Ca1d0Mk80M2VNa3lGTjAxRWo5VUdoOGhHWXRuczZSM3JMOXpXZ2xDR3lLRG9NTUdsS1Yxc1hL?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 06:09",
+   "title": "일본·카타르, 에너지 협력 강화… 호르무즈 안전 공조 - 글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOEpGRjVZams4bkszV1F6bTR3b2E2WlVZUl9aa19QdjhCdTZBQUw1NEdoT2F1dmRTcUNaNUIyQ1MxdkhXX3ZHZG8wd29JbENJTUVlZnlWbGk2NFMwekp0ZHUxSGwzWmhOQk5yZWFyLU1zeWFSVzB1WUZwWXhVRnhrRDE3ZFp0ZXZm?oc=5",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-03 06:03",
    "title": "원전 확대해도 가동 막힐 판… ‘우라늄 공급난’ 경고 잇따라",
@@ -379,6 +892,15 @@
    "url": "https://www.mt.co.kr/world/2026/10/03/2026100215495461484",
    "disrupt": "",
    "materials": "수송;오일",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 05:47",
+   "title": "지난 한주 동안 호르무즈 해협서 유조선 6척 피격 - 해운의소리",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rVGJPNzlpUHpGMjV4ekVaWlJUOW0zOE9UcHc2cjNPUUVYNHZqUDN6ZXVpVTNBMjJQT3NQZjNmdGdNakd1VUhHNmF6UWdrb1lEblpDbGxjVnFiOTdnWGZmX2xkLVRaSjR6M0pLYVZSNNIBc0FVX3lxTE90VXkxT2NoOUdYc0otb0I5NUdoM0FhVUR0UFhCMVplM2VCdEdwWm1qa05NUkI3ZEpNZVk0eVpRb3c3WTBxRmI4RXVOcEtlS3UwNkV2ZXluZDd5UElhejdVZFNDYi15NGhFVUFURVJWeFc5Rm8?oc=5",
+   "disrupt": "",
+   "materials": "",
    "status": "NONE"
   },
   {
@@ -446,9 +968,27 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-03 03:10",
+   "title": "민형배 시장, 출범 100일 '산업 대전환' 선포...\"반도체 트라이앵글 구축\" | - 스트레이트뉴스",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pcDNLTTdJYTlYX3VtQUtqMWFwUEFGQ2RWb21LVTd4Y2loNmxCbFQ3MTJlRC1YaDY5YTctS2xkdVotbS1FVkxlYnlmZG4zX1ZCRllzRjZIV3BaMkpydXkxSzZsX09IZkM1QjZxUURSSnFHZzY3UWRZ?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-03 02:16",
    "title": "호르무즈 인근서 유조선 피격…선원 전원 무사 - v.daum.net",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mT05YOG5xaFBpeklyNFNnZm9FQXMzVUlMMThFSHFjRHVjQWFLd0pXUFpqOHFhNk5jUktOd0prWVZMVUdJSkJ1eWtZemJaQW8?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 02:14",
+   "title": "호르무즈 인근서 유조선 피격…선원 전원 무사 - 경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEMTZUamtqdDRlRVo0SEFPWlBMNTJYdVJCdEt2SXVJc1E4d1g1LVJUT3YtSjZJUmloMWU3bUhFcWc1cHF3WFB5OEl5WjJyeEJ6eWpVUFJIXzZWd1ljYWI40gFfQVVfeXFMUEQxNlRqa2p0NGVFWjRIQU9aUEw1Mlh1UkJ0S3ZJdUlzUTh3WDUtUlRPdi1KNklSaWgxZTdtSEVxZzVwcXdYUHk4SXlaMnJ4Qnp5alVQUkhfNlZ3WWNhYjg?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
@@ -488,6 +1028,60 @@
    "disrupt": "",
    "materials": "정제;현상",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:53",
+   "title": "호르무즈 또 유조선 피격…중동 원유 수출 회복세에 불안 변수 - 산경투데이",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9DeEEyaEFPRjlBMGtZTzBGQk1JRWh5OUQ2Z212cEZObXhPOUlrdGdqSjJ6Rm9HZzNCZGczb1BjczQ2ZnNzNS1jODlmYVVwNTA4VnBUZ2l2MG5lYU1oSXpGSnpBQTNSU1dPQWlHdDFUTXbSAXRBVV95cUxNOW83RXZGa25mYV9kX0tjSV8yTVRha1hod1FkV1Z5SVdwcjNRcW1UY2QtT3VmZ0p0OUF1OUFTVFlIcUwzbFR2d2tNZ2R4eUFsYVdoLVFLWXhtMkpMNlYxNUlUMDhLbmh4OHFYOER3bHNfYTJqVA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:44",
+   "title": "호르무즈 긴장 고조...유조선 피격 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WQ3ExSUxwN2VOUlREemtFam5RRjk4cDlxWnVfNmJieUZXSkJ5dHZQRTlFNFl1YS1jZUxEMzNkX1RKbzc4NlhQcENPbU9aUzhVTFFLdA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:36",
+   "title": "세계 곡물가격 1년 사이 17.2% 급등...밀과 옥수수가 주도 - thecommoditiesnews.com",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9xdzRVQUlNUFZNTDNYb2NFQXFlVW1ONC1WaEVZXzAtdkRndmR4SV9FMWVuc0wwNzJTaEZhMnVERzd4UHJfTVVOZEJrdkV4T05jTUhzRGtEV1BFdGZxbEtGQ3pjYkJqejllVTBpek1MXzFMNkd1dm1N?oc=5",
+   "disrupt": "공급 차질;급등",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:35",
+   "title": "게임 제목 옆 부가 표기를 읽는 토토 경찰서 비 타임 정보 해설 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBWTjJnY0pDVjBkeW5NWVhpaEszaDBOb1FUSFh5UmQ0NTJIRkpJZTdWUzVwQnlEQXhFZEhZZ2ZYWUFJTEpOS0VjMlFndlBtYWtqNzZwY3pjV3RtbXlCZVFRdF9TWDJyNGVhd0VEMTltZEc?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:21",
+   "title": "호르무즈서 유조선 피격…중동 원유 수출은 전쟁 전 98% 회복 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1VSXM2Q282S3Z2c3NRdE9KdmNPVWIxMlczZUFHUHNYYldocUNsWGkxUC1FUDlCTEY1S09rUmhIRU94S01icGNTZkVxOXZ1R29NU1dTQw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 01:21",
+   "title": "호르무즈서 유조선 피격…중동 원유 수출은 전쟁 전 98% 회복 - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1paWxtQVFqZ2VrMndScTU4T0FKX09VMjJPeUJzcmZOVU1UUG0zNmpYYlRnLXFIOS10cW1ORmhPNGcwQWRVZGxOWjhkTFFfTmM?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "GOOGLE",
@@ -608,6 +1202,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-03 00:46",
+   "title": "\"호르무즈 해협 인근서 유조선 미상 발사체에 피격‥선원 무사\" - v.daum.net",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE96dlhUNG9uR3pPQzBQd3pQdHduQUtrcEVQTnZhZnV5TkR5dkFpc2pFMHNvV2FfQmNlcGN6ajNKZHJlV2JxaVE3OEI4YUxrcmNwc0dxTA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-03 00:44",
    "title": "\"호르무즈 해협 인근서 유조선 미상 발사체에 피격‥선원 무사\" - MBC 뉴스",
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBfdWQ5NkltUWpLeURPbzVNelQ0cmdrTVZSTHo3cUdTNnNkN254UjRhQUNGS0hKeDI5MHd3dXlfU2Y2cWxzVExWaGw4V3Y5QzNKM0dhLVRCVnRBTVJRVERWZ0EyUjBEcTM4VnNtbWg2cTdSaVVa0gF0QVVfeXFMUF91ZDk2SW1Rakt5RE9vNU16VDRyZ2tNVlJMejdxR1M2c2Q3bnhSNGFBQ0ZLSEp4Mjkwd3d1eV9TZjZxbHNUTFZobDhXdjlDM0ozR2EtVEJWdEFNUlFURFZnQTJSMERxMzhWc21taDZxN1JpVVo?oc=5",
@@ -701,6 +1304,15 @@
    "published": "2026-10-03 00:17",
    "title": "\"호르무즈 해협 인근서 유조선 미상발사체에 피격…선원 무사\" - 연합뉴스",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pMmtfUUhQckY5TWpGNmo3eE90bkJLd1RBa2d2aU5TWnpKYVo1SWtVUUZ2bXpIeUZpbHZ5d3BhR1Y2TVdXY2ZLeXFZZVM4WFdGY1IzOTVNYlpZaTg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-03 00:17",
+   "title": "\"호르무즈 해협 인근서 유조선 미상발사체에 피격…선원 무사\" - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pMmtfUUhQckY5TWpGNmo3eE90bkJLd1RBa2d2aU5TWnpKYVo1SWtVUUZ2bXpIeUZpbHZ5d3BhR1Y2TVdXY2ZLeXFZZVM4WFdGY1IzOTVNYlpZaTjSAWBBVV95cUxNUGtYaHJRZWFkRkVma1ZjcHpwUTRaanRyYjRRcUVvYTYxV20yUDFQczBlM0E4V2VzZklXS1NtYTdFWV9iRldxN1l5U184c2hRUDZpaGtIODhDRTZseGFuaXo?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
