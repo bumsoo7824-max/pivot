@@ -1,8 +1,521 @@
 {
  "as_of": "2026-10-04",
- "generated_at": "2026-10-04T04:23:07.599895+00:00",
- "count": 61,
+ "generated_at": "2026-10-04T13:42:25.400688+00:00",
+ "count": 125,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 22:30",
+   "title": "OPEC+ 11월 원유 생산 목표 동결…공급 차질 증산 효과 제한",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89782",
+   "disrupt": "공급 차질;할당량",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 22:10",
+   "title": "이란의 벼랑 끝 전술…\"7대 조건 전면 수용 전까지 호르무즈 개방 없다...",
+   "url": "https://www.fnnews.com/news/202610042206246242",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 22:03",
+   "title": "미국에서도 “알래스카 LNG 고비용” 트럼프 ‘합의 안 하면 관세 2배’...",
+   "url": "https://www.khan.co.kr/article/202610042203005",
+   "disrupt": "관세",
+   "materials": "건설",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 21:58",
+   "title": "이란 \"7대 조건 충족 안되면 호르무즈 해협 재개방 불가\"(종합)",
+   "url": "https://www.news1.kr/world/middleeast-africa/6310278",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 21:24",
+   "title": "갈등 상황 ‘따옴표 중계’ 피로감…‘맥락 체크’ 역랑 키우길",
+   "url": "https://www.hani.co.kr/arti/society/media/1280882.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 21:10",
+   "title": "백악관이 AI 안전 서약과 ‘초지능’ 개명을 내놨지만, AI 사는 소비자는...",
+   "url": "https://www.wikitree.co.kr/articles/1163912",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 21:06",
+   "title": "적게, 나중에 먹는 건 ‘여성’…중동전쟁이 부른 식량 공급 불안",
+   "url": "https://www.khan.co.kr/article/202610042106005",
+   "disrupt": "봉쇄",
+   "materials": "비료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 21:06",
+   "title": "트럼프, ‘북핵 수치’ 오락가락…이란엔 ‘최종 결정’ 임박",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677420&ref=A",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 20:46",
+   "title": "울산항 8월 물동량 18%↓, \"중동 정세 여파\"",
+   "url": "https://www.ubc.co.kr/news/28237/",
+   "disrupt": "봉쇄",
+   "materials": "액체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:47",
+   "title": "이란 “7가지 조건 안 받으면 호르무즈 봉쇄”…美에 최후통첩",
+   "url": "https://www.kyeonggi.com/article/20261004580174",
+   "disrupt": "봉쇄",
+   "materials": "지지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:42",
+   "title": "이란 “7대 조건 충족 전 호르무즈 안 연다”…美와 협상 교착",
+   "url": "https://www.kbmaeil.com/article/20261004500135",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:10",
+   "title": "캠프 데이비드서 美 안보 수뇌부 극비 회동… 트럼프 “이란 문제 곧 결...",
+   "url": "https://www.seoul.co.kr/news/international/USA-amrica/2026/10/05/20261005012003?wlog_tag3=naver",
+   "disrupt": "재개",
+   "materials": "비드",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:08",
+   "title": "트럼프 협박에 비축유 푸는 유럽…'디젤 대란' 불씨 여전 [글로벌 리포...",
+   "url": "https://www.fnnews.com/news/202610041907094445",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:07",
+   "title": "이란 갈리바프 \"7개 조건 충족 전 호르무즈 해협 안 연다\"",
+   "url": "https://www.imaeil.com/page/view/2026100419033640757",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 19:02",
+   "title": "'이슈픽 쌤과 함께' 박원곤 교수가 제시하는 미·이란 전쟁 장기화 속 한...",
+   "url": "https://enter.etoday.co.kr/news/view/303270",
+   "disrupt": "봉쇄",
+   "materials": "고리;용해",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:58",
+   "title": "이란 \"7대조건 충족 안되면 호르무즈 재개방 안해\"…입장 재확인(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20261004031151009?input=1195m",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:44",
+   "title": "이란 \"美 7개 조건 수용 전엔 호르무즈 재개방 없어\"",
+   "url": "https://news.tf.co.kr/read/world/2372888.htm",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:38",
+   "title": "삼성전자 실적 앞둔 코스피, '7천피' 지킬까…美 금리·반도체가 변수",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752704",
+   "disrupt": "재개",
+   "materials": "금;반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:25",
+   "title": "이란, 美 제안에도 “7개 조건 충족 전 호르무즈 재개방 없다”",
+   "url": "https://www.joongang.co.kr/article/25467061",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:25",
+   "title": "이란 “7가지 조건 충족 전엔 호르무즈 안 연다”…美에 선이행 압박",
+   "url": "https://www.dt.co.kr/article/12087301?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:22",
+   "title": "이란 “호르무즈 ‘재개방’ 안해”",
+   "url": "https://www.kbmaeil.com/article/20261004500123",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:10",
+   "title": "중동 전쟁에 신규항로 개척…북극항로 통행 4년새 4배 늘어",
+   "url": "https://www.hankyung.com/article/2026100426881",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:10",
+   "title": "트럼프-시진핑 만남의 진짜 목적 [세계의 창]",
+   "url": "https://www.hani.co.kr/arti/opinion/column/1280867.html",
+   "disrupt": "",
+   "materials": "기와;목적;무기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:09",
+   "title": "트럼프 \"北 핵무기 112개… 김정은과 아주 잘 지낸다\"",
+   "url": "https://www.fnnews.com/news/202610041808343484",
+   "disrupt": "",
+   "materials": "무기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:06",
+   "title": "이란 협상단장 \"우리 요구 수용되기 전엔 호르무즈 재개방 안 한다\"",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008782753&plink=ORI&cooper=NAVER",
+   "disrupt": "재개",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 18:00",
+   "title": "이란 \"美 제안에 이미 답변…IAEA 핵 사찰단 복귀는 논의 안 해\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6310223",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:46",
+   "title": "[뉴욕채권-주간] '10월은 동결' 교통정리됐나…장기물은 프랑스 주목",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437727",
+   "disrupt": "",
+   "materials": "진단",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:40",
+   "title": "사우디 원유 수출 재개에 유가 진정…키움증권 \"상방 리스크 완화\"",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492607",
+   "disrupt": "급등;재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:29",
+   "title": "이란 \"7개 조건 충족 전 호르무즈 해협 재개방 없다\"",
+   "url": "http://www.inews24.com/view/2011737",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:11",
+   "title": "이란 “조건 수용 전까지 호르무즈 해협 개방 안해”",
+   "url": "https://www.newsis.com/view/NISX20261004_0003814013",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:10",
+   "title": "호르무즈 막히자 '바다 위 원유 인도'…이라크, 200만 배럴 우회 승부수",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=91181",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:09",
+   "title": "이란 “호르무즈 재개방 없다…7가지 조건 충족 먼저”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677399&ref=A",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:06",
+   "title": "이란 \"조건 충족 전엔 호르무즈 재개방 안해\"…미국 답변에 재 확인",
+   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5223012",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:05",
+   "title": "이란 “호르무즈 해협 재개방 없다”…미국 답변에도 기존 조건 고수",
+   "url": "https://www.sedaily.com/article/20098026?ref=naver",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:05",
+   "title": "미국 답변 받은 이란 \"호르무즈 재개방 안 한다\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000338254?division=NAVER",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:03",
+   "title": "이란 \"호르무즈 재개방 안 해\"…美 답변에도 기존 입장 고수",
+   "url": "https://view.asiae.co.kr/article/2026100417035852885",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:01",
+   "title": "‘좋은 무기’ 내세운 韓, ‘필요하고 사고 싶은 무기체계’ 내세운 獨",
+   "url": "https://shindonga.donga.com/3/all/13/6404926/1",
+   "disrupt": "공급망 안전",
+   "materials": "무기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:00",
+   "title": "\"7가지 조건 응하라\"…이란, 미국에 호르무즈 해협 재개방 배수진",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855565",
+   "disrupt": "봉쇄;재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 17:00",
+   "title": "이란 \"호르무즈 재개방 안 해\"‥미국 답변 받고 기존 입장 재확인",
+   "url": "https://imnews.imbc.com/news/2026/world/article/6855698_36925.html",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:48",
+   "title": "이란 \"호르무즈 재개방 없어\"…미국 답변받고 기존 입장 고수",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261004164754Fvr",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:47",
+   "title": "이란 \"호르무즈 재개방 안 해\"...미국 답변 받고 기존 입장 재확인",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610041647457509",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:39",
+   "title": "사우디, 후티에 ‘대공세’ 임박? 10만 병력 동원해 원유 수송로 탈환노...",
+   "url": "https://www.joongang.co.kr/article/25467038",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:33",
+   "title": "이란 \"미국 조건 충족 전엔 호르무즈 해협 안 연다\"",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000070826",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:32",
+   "title": "이란, 美 제안에도 “7개 조건 충족 전 호르무즈 재개방 없다”",
+   "url": "https://www.g-enews.com/view.php?ud=20261004162919883084322ec9_1",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:28",
+   "title": "중동 일촉즉발? 美·이란 벼랑 끝 신경전 속 사우디·후티 교전 격화",
+   "url": "https://www.hankookilbo.com/news/article/A2026100410430004432?did=NA",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:27",
+   "title": "이란 \"호르무즈 재개방 안해\"…미국 답변 받고 기존 입장 재확인",
+   "url": "https://www.yna.co.kr/view/AKR20261004031100009?input=1195m",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:16",
+   "title": "트럼프, 北 핵무기 \"112개\" 확대...이란 핵은 \"절대 불가\"",
+   "url": "https://www.fnnews.com/news/202610041521253472",
+   "disrupt": "",
+   "materials": "무기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 16:14",
+   "title": "호르무즈 기여, 어차피 할 거면 서둘러야 [사설]",
+   "url": "https://www.mk.co.kr/article/12168053",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 14:39",
+   "title": "중동 전쟁이 부른 식량 위기…여성 1170만명 굶주림 내몬다",
+   "url": "https://www.khan.co.kr/article/202610041439001",
+   "disrupt": "가격 상승;봉쇄",
+   "materials": "비료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 14:22",
+   "title": "[단독] 8년 된 소양함서 발전기 결함 8번…30년 된 군수지원함 3척은 7건",
+   "url": "https://www.segye.com/newsView/20261004505245?OutUrl=naver",
+   "disrupt": "",
+   "materials": "수지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 14:17",
+   "title": "[마켓 ING]7000선 안착 시도 코스피, 삼성전자 실적 주목",
+   "url": "https://view.asiae.co.kr/article/2026100414175270994",
+   "disrupt": "수출 제한",
+   "materials": "금;반도체;인공;전자;지지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 14:04",
+   "title": "테헤란 뒤덮은 ‘트럼프 조롱’ 광고판...AI까지 동원한 이란 선전전",
+   "url": "https://www.m-economynews.com/news/article.html?no=71331",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 14:00",
+   "title": "챗GPT 동원한 트럼프 조롱 벽화…\"선전전에 대응\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261004135917v9w",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 13:50",
+   "title": "\"8명이 단 며칠 만에 뚝딱\"…AI로 트럼프 조롱하는 이란",
+   "url": "https://www.hankyung.com/article/2026100424217",
+   "disrupt": "",
+   "materials": "유동",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 13:50",
+   "title": "트럼프 조롱하는 테헤란 대형 벽화…\"비결은 챗gpt 활용\"",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008782573&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "유동",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 13:50",
+   "title": "“LNG 사업 최대 위험은 추가 비용 상승”···알래스카 주의회 보고서...",
+   "url": "https://www.khan.co.kr/article/202610041350001",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 13:26",
+   "title": "트럼프 조롱하는 테헤란 대형벽화…\"비결은 챗gpt 활용\"",
+   "url": "https://www.yna.co.kr/view/AKR20261004019900009?input=1195m",
+   "disrupt": "",
+   "materials": "유동",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-10-04 13:14",
@@ -37,6 +550,15 @@
    "url": "https://sports.khan.co.kr/article/202610041225003?pt=nv",
    "disrupt": "",
    "materials": "막대",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-04 12:12",
+   "title": "오일머니 챙기면서 동시에 때린다...중국의 아슬아슬 '양다리' [자막뉴...",
+   "url": "https://www.ytn.co.kr/_ln/0134_202610041212423656",
+   "disrupt": "",
+   "materials": "램프;비드;오일",
    "status": "NONE"
   },
   {
@@ -328,6 +850,33 @@
    "status": "CANDIDATE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-04 06:56",
+   "title": "[국제] 이라크, 원유 200만 배럴 호르무즈해협 밖으로...새 인도 방식 도입 - 서울뉴스통신",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYRXpYcGRFa0o4LXMxTU9nZkN6Y3ZnWkJiNlV6WTVIcmZNdGhwQnZDb29VelJmYUotU3pxRV90V0lKYlRaN3EyN0JwLUhyaGMtcUs5b0ZiV0hUZU1FQ0NRQ2RvUnk5dEZuWG1F?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-04 06:33",
+   "title": "게임 설명과 실제 화면을 맞춰 보는 토토 더블 찬스 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRjREdlFiaUhvUEdPdTBHa0doaFJSSTlGb25mT2RfMXpqVXh5c0pFcl9yZVVzTnY0S213QkM3ZURvbmRXRlY4c01BUlBXUUFJRWd2Rm5RY243czk3ZWJRQUNDU01jaHliSXd6NmdjT1NpdG02aGh6cVRuUGMxRmx1djhpOG9WSXJHVER6NExhSnhOMVMzRHlqTm42QVBRYTN4YXVrX29COHEycmZpRUJfYk5CblUwMVM0V0tnVkRpT0hWQ1pD?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-04 06:28",
+   "title": "게임 구성의 차이를 말로 풀어보는 침 맞고 마사지 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUmVsbHVmd3p3RXZkWU1zc1RxVUIyRGtMX0Z3ZEdZRzd2ekhjMURfaTQzOG90cGJ0RjJ6NEVfVk1FSTZaWk9BaDlCSmpfTXdRQkZUc1dIbnlyazBibnFHZFhUTjRtRUg2VWRTdzdiOHhFcmJOWVF3WDlvSDdyc0R3VFJmNjFtVXFHdHQ0VzJCcVZrZHJUVmc5Z1J3MER0dGNIeUQ0QUZRS091cldoSWpGaEZySGh4WHRBX0lIRXJB?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-04 06:24",
    "title": "얼어붙은 북극해 뚫은 2758TEU 국적선…초고령 부산항 미래 뱃길 열다",
@@ -472,6 +1021,15 @@
    "status": "NONE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-04 02:07",
+   "title": "9월 수출 1천209억 달러…반도체 강세 속 비반도체 품목도 반등 - 산업일보",
+   "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5uWjM3SUJZX3lNT05nalp1aEVpM0xOY0dwSGZIcTBqVjU1aS0zbXZHRXM0c2w4b0xRSTZYbkhCMzRjWkNX?oc=5",
+   "disrupt": "강세;반등;수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-04 02:06",
    "title": "이란 \"호르무즈서 유조선 폭발\"",
@@ -500,6 +1058,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-04 01:33",
+   "title": "심벌이 아래로 내려오는 구조인가요? 피파 3터치 룰렛 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNlpVeGNLZGtHMmkzRHgzYUROejVQWjdyRm9WM3BnYXloYUNJQThuS3BNR1g2R3dISFlLTFh3NzBqMmNlM2o0UVFDSmZ0RjhEalhGcER5VDZYOUFtYmxvdldONUJNVlFvWDhqOVFhMkExdHp4OXNpUDRkWkFVemJycERsYlVfNTZMcFVySFFWNEs3WWJac2d6SU4tTXZCUFEwR0tZUXNJbjctTENaTVBBMk56bzRvaFc2ZGlBYjBVS0puWE9VaXR4RFJZZ2tjQU0wRFpic2tmZ0hQRDhtU1ZsXzlzMA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-04 00:59",
    "title": "코인시장 주말 반등…비트코인 8만4,000달러대 버텼지만 '고금리·고유가' 복병 - 코인리더스",
    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1wTTIzUkpQbkY1bXNvbmV0bUpjQlNtSE5tSHVfQ0VjeFpUemJESEJiWVNkSldLTkpDeTRieGZqcGxmWWVYTmt2bFlB?oc=5",
@@ -512,6 +1079,15 @@
    "published": "2026-10-04 00:37",
    "title": "[올댓차이나] 中, 침지형 DUV 노광장비 343대 확보…\"첨단 반도체 생산 활용\" - 뉴시스",
    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQU9qOGZ0eFRTcW9RQXNBNGZRTG9xczNZNzEtT2xVQm5CMmd4REtOYjluSi03NGZueEs1SUNRVk5tTFNkTHRlemx2SjBldlZYUzhfUV9Dand4M1ZzZkg5ZTdMQ3RHa0FuR29xNDB1cVFmS19TV1IwZNIBeEFVX3lxTE5WQU9qOGZ0eFRTcW9RQXNBNGZRTG9xczNZNzEtT2xVQm5CMmd4REtOYjluSi03NGZueEs1SUNRVk5tTFNkTHRlemx2SjBldlZYUzhfUV9Dand4M1ZzZkg5ZTdMQ3RHa0FuR29xNDB1cVFmS19TV1IwZA?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-04 00:37",
+   "title": "[올댓차이나] 中, 침지형 DUV 노광장비 343대 확보…\"첨단 반도체 생산 활용\" - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1OXlrR0RBaklWME50RzNkVjJGclVfRXVyVEdzUUIwVFJ3Y0laTVJwYXJJcXA1LVhvN0hFd3dya2FBalNtSzBMNjZzTFhFYTBIYnN0S0hNWnBEN1MybC15YtIBeEFVX3lxTE5WQU9qOGZ0eFRTcW9RQXNBNGZRTG9xczNZNzEtT2xVQm5CMmd4REtOYjluSi03NGZueEs1SUNRVk5tTFNkTHRlemx2SjBldlZYUzhfUV9Dand4M1ZzZkg5ZTdMQ3RHa0FuR29xNDB1cVFmS19TV1IwZA?oc=5",
    "disrupt": "수출통제",
    "materials": "반도체",
    "status": "RELEVANT"
