@@ -138,22 +138,38 @@
     "니치 B2B 산업뉴스 7건에 대한 별도 소스 카테고리 검토 여부 결정",
     "발표자료에 naver+google 결합·신호등 3단계 반영"
   ],
-  "generated_at": "2026-10-03T13:02:32+00:00",
+  "generated_at": "2026-10-04T04:23:07+00:00",
   "source": "supply_pivot_v2 세션(2026-09-25) — build_static_data.py(기존 9개 JSON)와 독립",
   "live": {
-    "as_of": "2026-10-03",
-    "generated_at": "2026-10-03T13:02:32+00:00",
+    "as_of": "2026-10-04",
+    "generated_at": "2026-10-04T04:23:07+00:00",
     "cumulative": {
-      "total_events": 4388,
-      "total_relevant": 2083,
-      "total_candidate": 889
+      "total_events": 4520,
+      "total_relevant": 2145,
+      "total_candidate": 903
     },
     "today": {
-      "new_events": 307,
-      "new_relevant": 100,
-      "new_candidate": 27
+      "new_events": 132,
+      "new_relevant": 62,
+      "new_candidate": 14
     },
     "last_runs": [
+      {
+        "run_at": "2026-10-04 04:23",
+        "source": "google",
+        "fetched": 105,
+        "new": 70,
+        "new_relevant": 26,
+        "err": null
+      },
+      {
+        "run_at": "2026-10-04 04:21",
+        "source": "naver",
+        "fetched": 137,
+        "new": 62,
+        "new_relevant": 36,
+        "err": null
+      },
       {
         "run_at": "2026-10-03 13:02",
         "source": "google",
@@ -176,22 +192,6 @@
         "fetched": 150,
         "new": 135,
         "new_relevant": 36,
-        "err": null
-      },
-      {
-        "run_at": "2026-10-03 03:53",
-        "source": "naver",
-        "fetched": 192,
-        "new": 63,
-        "new_relevant": 27,
-        "err": null
-      },
-      {
-        "run_at": "2026-10-02 14:27",
-        "source": "google",
-        "fetched": 190,
-        "new": 56,
-        "new_relevant": 21,
         "err": null
       }
     ]
