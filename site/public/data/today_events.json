@@ -1,8 +1,611 @@
 {
  "as_of": "2026-10-09",
- "generated_at": "2026-10-09T04:38:52.002064+00:00",
- "count": 155,
+ "generated_at": "2026-10-09T14:58:28.117956+00:00",
+ "count": 252,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:56",
+   "title": "[강천석 칼럼] 대통령, 휴대폰 끄고 국가 自尊과 品格 심사숙고를",
+   "url": "https://www.chosun.com/opinion/column/2026/10/09/MDD2FNMCTZDF5IDIT5LRIMFPRY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "disrupt": "",
+   "materials": "부분",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:53",
+   "title": "中, EU에 하이브리드차 수출 줄이기로…희토류 수출허가 편의(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20261009059851009?input=1195m",
+   "disrupt": "수출 제한;수출 허가;수출허가",
+   "materials": "자석;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:53",
+   "title": "EU·중국, 하이브리드차 수출 절반 감축 원칙적 합의… 희토류 수출 허...",
+   "url": "https://www.newspim.com/news/view/20261009000184",
+   "disrupt": "수출 제한",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:51",
+   "title": "호르무즈 해협서 선박 피격…혁명수비대 \"항로 위반시 처벌\"",
+   "url": "https://www.yna.co.kr/view/AKR20261009062800108?input=1195m",
+   "disrupt": "",
+   "materials": "사무;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:42",
+   "title": "중국산 자동차 막으려던 EU, 중국과 합의…한국차 경쟁구도 변수",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242768",
+   "disrupt": "수출통제;수출허가",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:12",
+   "title": "미 달러화 강보합…유가 하락에 상승 동력 약화",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438500",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:10",
+   "title": "[동아시론/양수영]알래스카 LNG, 참여 여부보다 ‘투자 조건’이 중요하...",
+   "url": "https://www.donga.com/news/Opinion/article/all/20261009/134816515/2",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:02",
+   "title": "뉴욕증시, 유가 하락에 상승 출발",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438499",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 23:00",
+   "title": "美, 이란 '사흘 집중 공습' 계획… 트럼프 일단 공격 유보",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3439108",
+   "disrupt": "",
+   "materials": "지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:50",
+   "title": "중국 “EU와 하이브리드차 무역 협의…희토류 수출허가 편의”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8682133&ref=A",
+   "disrupt": "수출 제한;수출 허가;수출허가",
+   "materials": "자석;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:50",
+   "title": "[심층] 빚 8조원 광해광업공단, 해외출장비 1억4000만원 부적정 집행…...",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610090025",
+   "disrupt": "공급망 안전",
+   "materials": "광물;기관",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:36",
+   "title": "월드 뉴스 브리프 (기준일시: 2026년 10월 09일 금요일 10:00)",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=globalnewsfocus&wr_id=489",
+   "disrupt": "관세;수출 제한",
+   "materials": "광물;금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:30",
+   "title": "[한국건설기술연구원 스마트건설지원센터 보육기업 CEO] 자재 이송과 반...",
+   "url": "https://magazine.hankyung.com/job-joy/article/202610093095d",
+   "disrupt": "공급망 안전",
+   "materials": "건설;공정",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:24",
+   "title": "대형마트에서 파는 새우… 거슬러 올라가니 악취가 진동했다",
+   "url": "https://www.chosun.com/international/us/2026/10/09/HIYR5GVGPZDENOFEPBK6JPUOC4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "disrupt": "공급망 안전",
+   "materials": "수산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:22",
+   "title": "이란 \"LPG 운반선 타격해 대형 화재…규정위반 선박 처벌할 것\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6315441",
+   "disrupt": "화재",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:21",
+   "title": "中 \"EU와 하이브리드차 무역 집중 협의…희토류 수출허가 편의 지속\"",
+   "url": "https://www.news1.kr/world/northeast-asia/6315440",
+   "disrupt": "관세;상계관세;수출통제;수출허가",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:14",
+   "title": "후티 반군, 사우디 리야드 공항 공격…3명 사망·중동 전쟁 확전",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90216",
+   "disrupt": "",
+   "materials": "부분;선박;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 22:02",
+   "title": "이란 혁명수비대, 호르무즈 밖 위반 선박도 처벌 예고",
+   "url": "https://www.tokenpost.kr/news/breaking/420495",
+   "disrupt": "",
+   "materials": "블록;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:53",
+   "title": "중국·EU, 하이브리드車 무역 합의…무역갈등 완화 신호",
+   "url": "https://www.sedaily.com/article/20099960?ref=naver",
+   "disrupt": "관세;수출 제한",
+   "materials": "신호;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:35",
+   "title": "트럼프 \"11월 3일 중간선거 전까지 이란 공격 안 할 것\"",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/10/09/2026100990228.html",
+   "disrupt": "",
+   "materials": "무기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:10",
+   "title": "달러 인덱스 4주 연속 상승…2025년 초 이후 최장 강세",
+   "url": "https://www.imaeil.com/page/view/2026100921052019664",
+   "disrupt": "강세;봉쇄;약세",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:10",
+   "title": "EU 고위험 AI 규제 2027년 12월로 미뤘지만…유럽 기업의 미국 추격엔 여...",
+   "url": "https://www.wikitree.co.kr/articles/1165058",
+   "disrupt": "공급망 안전",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:02",
+   "title": "트럼프, 선거전 공격 안해...튀르키예 방공지원",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1540019",
+   "disrupt": "",
+   "materials": "도자",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 21:00",
+   "title": "[월드 e-브리핑] WTO, 올해 상품무역 증가율 3.9%로 2배 상향",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1540025",
+   "disrupt": "가격 상승;공급 차질;관세",
+   "materials": "원자재;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 20:50",
+   "title": "원유 200만 배럴 운임 8000만달러…아시아 정유사 대체 조달 검토",
+   "url": "https://www.tokenpost.kr/news/economy/420462",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 20:27",
+   "title": "'쾅' 기장 등 3명 사망…트럼프, 일단 한 발 물러섰다",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790657&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "선박;타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 20:20",
+   "title": "4000톤급 대형 잠수함 앞세운 한화오션, 유럽 텃세 뚫고 그리스 해상 교...",
+   "url": "https://www.g-enews.com/view.php?ud=202610092007232019fbbec65dfb_1",
+   "disrupt": "수출통제",
+   "materials": "공기;리튬;배터리;수지;연료;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 20:16",
+   "title": "[미국 이란 전쟁] 美, 이란 3일 공습안 마련…전력 손실·미사일 소모 부...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242708",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 20:00",
+   "title": "KB증권, 10월 둘째주 HPSP 등 17종목 매수 추천",
+   "url": "https://www.bigtanews.co.kr/article/view/big202610090007",
+   "disrupt": "가격 상승;강세;수출 제한",
+   "materials": "구리;세로;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:50",
+   "title": "EU 가스 저장률 72.4%…IEEFA “겨울 수요 7% 감축 가능성”",
+   "url": "https://www.tokenpost.kr/news/economy/420439",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:46",
+   "title": "난징 웨이블렝스 회장 포함 5명, 이중용도 광학렌즈 밀수출 혐의 기소",
+   "url": "https://www.imaeil.com/page/view/2026100918141711905",
+   "disrupt": "수출 통제;수출통제;제재",
+   "materials": "갈륨;게르마늄;광학;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:36",
+   "title": "미래에셋증권, 10월 둘째주 LG이노텍 등 8종목 매수 추천",
+   "url": "https://www.bigtanews.co.kr/article/view/big202610090005",
+   "disrupt": "가격 상승;공급 차질;쿼터",
+   "materials": "광물;금;니켈;보크사이트;석탄;오일;전분",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:18",
+   "title": "\"중간선거 전 이란 공격 없다\"면서 미군은 '사흘 대공습' 준비",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2119496",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:14",
+   "title": "천주교인 2,812명 \"호르무즈 파병 반대\"…종교계, 평화 외교 촉구",
+   "url": "https://www.ngonews.kr/news/articleView.html?idxno=240214",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 19:00",
+   "title": "전쟁에 치솟는 곡물값… 비료난 겹쳐 내년 식량위기 우려",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3439094",
+   "disrupt": "수출 제한",
+   "materials": "비료;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 18:42",
+   "title": "4개 항만공사 노조 “검증 없는 강제통합 중단하라”…정부 통합안 정면...",
+   "url": "https://www.livesnews.com/news/article.html?no=64820",
+   "disrupt": "공급망 안전",
+   "materials": "받침;석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 18:32",
+   "title": "핵심 부품값이 짓누른 노트북 시장… 2027년 가격 올리면 출하량 꺾인다",
+   "url": "https://www.g-enews.com/view.php?ud=202610091819397033fbbec65dfb_1",
+   "disrupt": "공급 차질",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 18:13",
+   "title": "노벨평화상 타령하던 트럼프 올해도 못 받았다",
+   "url": "https://weekly.khan.co.kr/article/202610091813001",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 18:00",
+   "title": "정유 4사, 상반기 14.8조 벌었다…'공급 공백' 수혜 언제까지",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=675315",
+   "disrupt": "공급 차질;급등",
+   "materials": "나프타;오일;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:34",
+   "title": "82조원 품은 텍사스 벌판… 美 반도체 독립의 승부수 띄운 삼성의 명암",
+   "url": "https://www.g-enews.com/view.php?ud=20261009172704476fbbec65dfb_1",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "금;러스터;반도체;보조",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:34",
+   "title": "미군, 이란 '3일 집중 공습' 계획 세워…트럼프는 \"중간선거 전 공격 안...",
+   "url": "https://www.newsis.com/view/NISX20261009_0003820253",
+   "disrupt": "",
+   "materials": "지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:32",
+   "title": "트럼프, 이란 공격 유보했지만 … 유가는 4% 급등",
+   "url": "https://www.mk.co.kr/article/12172435",
+   "disrupt": "급등;봉쇄",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:31",
+   "title": "韓美, 경제·안보·정치 곳곳 파열음 … 野 \"李정부 입국 거부한셈\"",
+   "url": "https://www.mk.co.kr/article/12172432",
+   "disrupt": "",
+   "materials": "신호",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:28",
+   "title": "삼성, 베이스 다이까지 한 손에 쥐자… HBM4 판도 흔들리는 소리",
+   "url": "https://www.g-enews.com/view.php?ud=202610091721185234fbbec65dfb_1",
+   "disrupt": "공급 차질",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:26",
+   "title": "“미 국방부, 이란 ‘3일 집중공격’ 계획했지만 트럼프 일단 제동”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8682000&ref=A",
+   "disrupt": "재개",
+   "materials": "사진",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:18",
+   "title": "아마존, 안드로이드 태블릿 첫 출시…프리미엄 시장 도전",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216099",
+   "disrupt": "생산 중단",
+   "materials": "알루미늄;태블릿",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:13",
+   "title": "美 국방부, 이란 '3일 집중타격' 구상…선거 앞둔 트럼프는 주저",
+   "url": "https://www.news1.kr/world/usa-canada/6315349",
+   "disrupt": "",
+   "materials": "사무;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:13",
+   "title": "“미국, 이란에 ‘사흘 집중공습’ 계획 세워…항모·병력 중동 집결”",
+   "url": "https://www.sedaily.com/article/20099930?ref=naver",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:02",
+   "title": "전쟁에 치솟는 곡물가, 애그플레이션 우려 고조…국내 가공식품·서비스...",
+   "url": "https://www.segye.com/newsView/20261009505222?OutUrl=naver",
+   "disrupt": "수출 제한",
+   "materials": "비료;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:01",
+   "title": "3분기 실적시즌 개막…'깜짝 실적' 예상 종목은? [한경우의 케이스스터...",
+   "url": "https://www.hankyung.com/article/2026100812136",
+   "disrupt": "생산 중단",
+   "materials": "리튬;배터리;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 17:00",
+   "title": "[ESG 칼럼] 선언적 구호를 넘어 글로벌 거래의 현실적 요건! 인권경영 재...",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=394902",
+   "disrupt": "공급망 안전",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 16:49",
+   "title": "미 국방부, 이란 '3일 집중공습' 계획 수립…트럼프 \"중간선거 전엔 없...",
+   "url": "https://www.imaeil.com/page/view/2026100916465701962",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 16:29",
+   "title": "북중미 허리케인까지…기름값 오를까[주末머니]",
+   "url": "https://view.asiae.co.kr/article/2026100815590050682",
+   "disrupt": "공급 부족",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 16:21",
+   "title": "“선거 전 안 친다”더니… 美, 이란 ‘3일 초토화’ 작전 짰다",
+   "url": "https://www.dt.co.kr/article/12088193?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 15:58",
+   "title": "트럼프 \"중간선거 전 이란 공격 안 해…해상 봉쇄는 유지\"",
+   "url": "https://www.ajunews.com/view/20261009155335735",
+   "disrupt": "봉쇄",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 15:57",
+   "title": "\"美국방부, 이란 '3일 집중공격' 계획 수립…트럼프 일단 제동\"",
+   "url": "https://www.yna.co.kr/view/AKR20261009043900009?input=1195m",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 15:44",
+   "title": "트럼프 \"중간선거 전까지 이란 공격 안 할 것\"",
+   "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1539991",
+   "disrupt": "",
+   "materials": "무기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 15:38",
+   "title": "중동전쟁 불똥, 세계 식탁 덮친다…내년 ‘곡물값 폭탄’ 우려",
+   "url": "https://www.kbmaeil.com/article/20261009500105",
+   "disrupt": "공급 차질;봉쇄",
+   "materials": "비료;수송;식탁;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 15:00",
+   "title": "앤트로픽, 2028년 美 대선 앞두고 '후보 접촉 전담팀' 조직",
+   "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54351",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 14:38",
+   "title": "부산항만공사, 세계 해상물류 추적·유럽 진출 지원 강화",
+   "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=87269",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 14:36",
+   "title": "트럼프 \"11월 중간선거 전에는 이란 공격 안 한다\"",
+   "url": "http://www.inews24.com/view/2013433",
+   "disrupt": "봉쇄",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 14:13",
+   "title": "미국이 빠진 시리아, 튀르키예와 이스라엘의 각축장 됐다[구정은의 수상...",
+   "url": "https://weekly.khan.co.kr/article/202610091413001",
+   "disrupt": "",
+   "materials": "수송;정제",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 14:12",
+   "title": "브렌트유 102.83달러…호르무즈 유조선 통행 두 달 최저",
+   "url": "https://www.tokenpost.kr/news/breaking/420346",
+   "disrupt": "",
+   "materials": "오일",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 14:08",
+   "title": "이미 국제 곡물가격 올랐는데…“상승세 내년부터 본격화” 전망",
+   "url": "https://www.busan.com/view/busan/view.php?code=2026100914035911921",
+   "disrupt": "공급 차질;봉쇄",
+   "materials": "비료;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 13:54",
+   "title": "득표 불리한 이란전은 11월 3일까지 일단 ‘쉿’ [트럼프 스톡커]",
+   "url": "https://www.sedaily.com/article/20099908?ref=naver",
+   "disrupt": "",
+   "materials": "선박;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 13:51",
+   "title": "말 바꾼 트럼프 \"중간선거 전까지 이란 공격 안 해\"",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003273957&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 13:51",
+   "title": "국제 곡물값 1년 새 17.2% 급등…먹거리 물가 ‘비상’",
+   "url": "https://www.donga.com/news/Economy/article/all/20261009/134814182/1",
+   "disrupt": "가격 상승;급등",
+   "materials": "비료",
+   "status": "RELEVANT"
+  },
   {
    "source": "NAVER",
    "published": "2026-10-09 13:15",
@@ -433,6 +1036,15 @@
    "url": "https://www.bntnews.co.kr/article/view/bnt202610090109",
    "disrupt": "급등;폭발",
    "materials": "금;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-09 09:10",
+   "title": "중동 전쟁에 국제 곡물가 급등…내년 '애그플레이션' 충격 우려",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=745325",
+   "disrupt": "급등;수출 제한",
+   "materials": "비료;원료",
    "status": "RELEVANT"
   },
   {
@@ -949,12 +1561,30 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-09 06:38",
+   "title": "중동전쟁 불똥, 세계 식탁 덮친다…내년 ‘곡물값 폭탄’ 우려 - 경북매일",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oNGZpbkxpWXEteWY4cTkxXzQ4YTBUYXJ5cWpWckFfVW5IZXlXcE9SeTAwWVJ6UlJxV3FVc1Q2ZGRrcnJmYUtfQUtaYUhpdm1mcV9MTU5PU3VqZw?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "비료;식탁",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-09 06:35",
    "title": "\"중간선거 전 이란 공격 안 해\"…전력 손실 속 '숨 고르기'",
    "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790038&plink=ORI&cooper=NAVER",
    "disrupt": "봉쇄;재개",
    "materials": "수송;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 06:29",
+   "title": "게임별 기능 명칭을 비교해 읽는 침맞고 멍 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVlJzSUt1bEh5YURDdFY5aFNrckRRNEp3dTBXZXBJM3hmY0ZXMnVkcjFXc1BqSXEzbGFCVHp0SktrZEpXSWNkVTExNkF5WUoxX1pXRzQtc1llZHF0X1RiR2ZaRllPNFdSV0F3M05GbDQwbjE3dU1KNmpEUl9wVy1objlPTUpnbTEweE0xYnFwTFE4a2R2eFhIMW52QjR6VW1sR3IwblZ2N2hOb29WVmRQM0lCT3o3aFpzZV81ZWRhT2lfall4cDJpSERTODlZczdYeTY0Q2lQaElqbURqeWlES1d1eUxqUm56Wmt5RjJBTEFkOEpx?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;반도체",
    "status": "RELEVANT"
   },
   {
@@ -1012,6 +1642,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-09 06:00",
+   "title": "호르무즈 해협 수송 차질에… 이라크, 시리아 경유 원유 수출 추진 - 투데이타임즈",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtTGVnQllHTU5sbG9GdDBXaWYtUUxWSVVseUNFZGhjRjZtb0pvazgwT2NBaTMwZlJ5ZTlQck9WbnJmY3RVdGVDeEstX0hwU0U1Wnc?oc=5",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-09 05:58",
    "title": "국제유가, 美 이란 공격 우려·중동 유조선 피격에 급등",
@@ -1057,12 +1696,30 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-09 05:33",
+   "title": "이란, 호르무즈 해협 안전 항로에 대해 오만과 합의 - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS1AzZ0dsR0IwRlljbEhHdnU1a2FDVzBJSm0yZGRsYWZhdHhRLTMxUmFMMHVuTHNWTEVPanVaQWpBVGlsN2Y3UUJzcVdUaS1xQ29oNDhkUGdwY0JmU3BrQWhZaEVIbWgzX3lwcHNlLW80M25VMmpsWkJLTk56U1ROOXNyWmpFOEdQVVlFMlBwNA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-09 05:30",
    "title": "AI 투자 수익성 의문에 고유가까지…나스닥 1.3%↓[월스트리트in]",
    "url": "https://www.edaily.co.kr/News/Read?newsId=01449766645611280&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "disrupt": "",
    "materials": "금;사진;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 05:30",
+   "title": "미 중부사령부, 호르무즈 해협 ‘항해의 자유’… “원유 12억5천만 배럴 호송 완수” - https://www.newscenterkorea.com/",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBDNXVfa2tXTVM1V1Zxc2ZQRXplb0NsN2pJWlVTV3Bkc25qaF91T1ZqYWNManpIcG9wZUxuLXBNaDZxb2NvWGxsQ2hKUXRWQ2xzbkdvX0dHSVk1VDFfVmdNbGVuaUF2enA0M2Y5amRXWk50QQ?oc=5",
+   "disrupt": "",
+   "materials": "",
    "status": "NONE"
   },
   {
@@ -1073,6 +1730,24 @@
    "disrupt": "봉쇄",
    "materials": "유지",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 05:25",
+   "title": "호르무즈 해협을 건너는 위험을 무릅쓰는 선원들의 급여와 보너스가 급증했습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZ1FPTmdwOTFCLWd2Zi1scTNrRV9UQjRKRG5lWjFNeGVJVmNCUjlneUFQb1ZEcUFwSXd6WVZMX09leFp3U1FQbE04TVlmbk1Ka1hEV2s2M1JFcldmMlJRZkg1Wkl2RzdNb2p4OWZrc096T3RRV01zd2c0X3c2RXhpZnJmRWlUVGhCQ3BGRVNVOXVGem10QXkxWA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 05:24",
+   "title": "이란은 호르무즈 해협 재개방 계획에 대한 미국의 반응을 검토하고 있다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVHFpY2w3R0pVaFBZb3Y2U3U4N25XZGZtUHNobVMyMEN4NjUxb2RUUEYwVEktcUE4TERrMkNjUmNYcjd4eDJQNHVYNVpwMUNESk5ldERZRVo1TXh0cVQ5WHFpMG0yd1JWVWt2QWozb0k3eUdtSUg4clBlRUxCMktWU1VJT2pEOFRhWHNZWWxVRkIzdw?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "NAVER",
@@ -1090,6 +1765,15 @@
    "url": "https://www.edaily.co.kr/News/Read?newsId=01354646645611280&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "disrupt": "급등;급락",
    "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 05:07",
+   "title": "이미 국제 곡물가격 올랐는데…“상승세 내년부터 본격화” 전망 - 부산일보",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE04d054M3VfVWFTdDJGQTVsWXRDNFhwLU11YUNGVE5LSHFJUUwzRDVnbVdua0ZGT0NwaW41ZV92R1BsWlpWb3R5ODZ3Y1R5SUt4MTNfUDZyZUJ4NnJheng1SU8tR0lNRENrTHR4MEthdktxNUZyUldjeElYRDY?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "비료",
    "status": "RELEVANT"
   },
   {
@@ -1120,6 +1804,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-09 04:52",
+   "title": "입문 전에 알아둘 뉴 카지노 조작 범위 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOaFFYb2dvcjZ4UHZRcjRPbnBlRGxSOWNyVVRlV1E3N2FBdTFaRF9JVEo5cXBGTldMNTNsNkNvcmdoVVNjaUVTZVdaTnhfU2g3X2RJOUVsdGNpcGNPWURYWE40WEJHZ3RYMVlrR0E2YzdxYmRDaktJSV9SODVJZURxS1dYRDB4ZU04d3BNMWVKb2llLS1wbmozd3JMUXpUbUdCWHc3d2FVZlNjTHNtYkQ2UXJueXZPN19RYlFrNUw5ODJRbVl1M3d0dkdwRXdJc1NxZnZURnh4OGxKUEZjTG5jRlV3dl9sb1B2eldnSndhRnlZc1pwRjd6N0tMSUtoc055LVl0cU1QUi1CLU1uaFhTRHJuY04?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-09 04:40",
    "title": "[美증시 특징주] 삼전 압도적 실적전망 무용지물…반도체 조정 속 메모...",
@@ -1136,6 +1829,15 @@
    "disrupt": "",
    "materials": "",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 04:23",
+   "title": "연속 진행 기능의 중단 조건, 불법 도박 벌금 설정 해설 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjhoTm9CdGQwN1dZWVZqODU3Uk90VFRwV0VYQl9fTVJXTHduWUkxUzd3SUJFVFBHM2dNRmhYbktYLUdSOTR5SWx3RHBNd2VDZ3d6NWZlbXE3U245ZGNwdmdrTERWQ0VrTWl1eXR2VEd1RjZqdHJCbjE1UDc5WGE5VElDS2VmQ0lYbzRUMlJET1didEhhSGxWQw?oc=5",
+   "disrupt": "수출통제",
+   "materials": "금",
+   "status": "RELEVANT"
   },
   {
    "source": "NAVER",
@@ -1184,6 +1886,42 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 03:55",
+   "title": "유조선 공격에 호르무즈 통항 급감···국제유가 급등 - 시사주간",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13SWtBczAtc0JOZTFpa0Zzd0JFTEJyTzBBZUZ4LWx2THBlMTE0UXlhb2dhemtQbTduVnJDWDQySEg4MkU1WktOSG5VWmpzT3N0MU13bEVwUWV3RFROWHBxaFZWLXV6WUgtcFZMYQ?oc=5",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:51",
+   "title": "전쟁에 곡물가 들썩…내년 비료난 겹쳐 식량위기 우려 - 데일리굿뉴스",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhUXhVQXlaLWNtVXRZR3JRUlZ6bWVqQnE1QUppS2prQ0JhbVROWVd1YzNhUGllbFhpWm5TX0h3MmJPb0RYWlZJOWljWDVYRG1fdDF5WTZ1SlRkNGVXVGh6cEtWcEowM083VUsxSw?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "비료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:41",
+   "title": "호르무즈 해협 유조선 공격 역대 최다…국제유가 5% 급등 - 서울STV뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JSTlhY25fZGUwR2tXaDU4RDJ2eTh6WW5HUVA4VDN6MC11ZHVQRGdNc2otekJFQ25CZWFzQ2x2TzllYVlpaTF5eDNXYlF0SGcxaFl4b3RFSmREcm1mNUltaVBJZVE1dEU?oc=5",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:40",
+   "title": "유심 슬롯 수리 도움말 업데이트 여부 확인 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNekppMzd5amhkNW9TOVNiT2RTNVBXeFpGLWZWNjBnRkpSZzNkSm5uNXZsUEt6OWJvbjBJNXJVWDctY1AtR3JpQjdzRWt4cHZHSTZGa1lxVEdQbDJPUFdqY3dGVEhWUEd3dUlnQmxsRFlSdWNRRmZZRGRneVhjc3p3MFotcXVGVjB2blAxR09aeGVqcHF1d1FnT2REQzBQSENJZVE?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 03:33",
    "title": "중, 대유럽 하이브리드차 수출 제한 거부…EU ‘세이프가드’ 꺼내나 - 한겨레",
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vRWRaOVdReWI5dmk4MFFGYW5iRi1taWEybTNZQkV5ZHcxR2Nkb3ZJT0VQZDRLUEpJZGtOQjgwMmpVSHVoaGhiMTFRcUtQMjB6UW9FbnoweXdybEQ3ZVEtbHpRU0pTcU1SWENGNg?oc=5",
@@ -1193,10 +1931,55 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 03:23",
+   "title": "게임 정보를 비교표로 읽는 토토 뉴캐슬 유형 안내 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5zZnJNc2FpY1dOQk9LNzYtOUNySWZfNDFCMVdzZUd2cEJVNWVHMG9RM2dEV3J3aVljZWtPN1M4dFRTNlVQaXNBYkJkTDQ0TEc2QVR4STRrNGNVNUtJNWdDTVZubzRZLXhLdUlfd09BV1FVRnRFOUZN?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:16",
+   "title": "호르무즈서 또 유조선 피격, 목숨 건 운항에 인건비·용선료 6배 껑충 - JTBC",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjVDFDUGtIVFJEZUQyX0xBXzZQR0pKQXlZQm8yWTRfSF9EZ3NLUTlZd1RBNHhMbmhwcEJ3ZW1peW1nc3psd1RKWTJ4aVFXMndwRVE?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:14",
+   "title": "연속 진행 기능의 중단 조건, 더킹카지노 회원가입 설정 해설 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBoNEtISGh2eS1VV3h2a1lpLWhuYWpaaVd0aUJkZzMzQmZTamx5MTVVTno0REtKZHdsc0RSU3dEem5lNlFWSGtUSGVKdlpTVXVGVUd5RWdOa0JXMWthVnVpaTlqUW9GNDdCdFRCREFudHFfNllSRDQ0?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "강판;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 03:08",
    "title": "이란은 호르무즈 해협 재개방을 위한 미국의 \"7일 계획\"에 대한 미국의 반응을 검토하고 있다. - Vietnam.vn",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ21neFh6Nlc3TW12OFEycWFDY1RPSUJnUUp6LW41MldzQ0FqZzZhakNZYTl0RWdtZUEyV2dORXhtMTBHUEpkcTdYSFR6dnRFOWx6ZVBmeWJicFRkYkJMcTl3X2tnNWpwOXNiOGtWRWRzbTRzZDc5cnFSdENlRkpnZEVVZE1HMTRrTWpscGVMSFFzWXJsa18wMkE0dw?oc=5",
    "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 03:08",
+   "title": "토토 사이트 홍보 사이트 제로 시스템 아키텍처의 입문 가이드: 사상, 행동 및 결과 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yRXpqQWNTZG9tSnE4ZEpWV1B4dTBZVTFzSGE2TXJSX3BjWERMdFZDNHB1ZHh6UEtHSjFmNE1fUXdDakJMTDBjWGtkZUFtTEhFOUVXYzFhQ2w2dGIwVmU1emFSd2VqRGExTU9B?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 02:55",
+   "title": "호르무즈 해협에서 일련의 대규모 폭발이 발생했습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1CbEpKVmpDUzJQRmVUVnhOdldUWERrTHJha2JMd2RvZVB0UmpNc3RTbDd2SE5VU0JGRDNoYzB4Qy0xQThIelY3YTZDdnNONVl4RF9icnF4UVVTdmdVMWdQV0x5ekNUSWpYNWo2UjVFVmlfdw?oc=5",
+   "disrupt": "폭발",
    "materials": "",
    "status": "CANDIDATE"
   },
@@ -1238,11 +2021,47 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 01:56",
+   "title": "릴이 멈춘 뒤 이어지는 금감원 도박 결과 확인 단계 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSUJoQXhHZlp5aktBdm1ZbVp2eG5IaTZHMGplVjlLMnN5YW9DVV96d2sydXNSVXNtTHJ5Qmsyd2tQSUxfWGtCZXNTVGxBdUNlR2p1RTV1a2R3Zll2TndkRU5NcW1ncVJRX3J4RUJiZjluZnRnOGh1NXhzQnVxZjlVcWFyR2VtbGVNZVV5ZFJxX3BQZmxLMzdJa1ZZX2EzV0t6YjZIekZkc0xFMmVuaTc3bkFmWXZPWGE2N1hJbkVkWUtrUE11bjkweTB6WWlMUUpmUU45U1phd2VBV2xZY2k1ZGI0YVdyVjM2SEhPV3VWZUx0Ml9h?oc=5",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 01:52",
    "title": "[요즘투자]\"중국 '희토류 자석 족쇄' 끊는다\" BMW•르노 등 '희토류 0 전기차' 박차 - 저스트 이코노믹스",
    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01ODdGcVNtblduNFJMVmt5bXBGOF9aMVctQTQ5RG9RaU5TMnpaUTNKYk1ZWGN3ODUxQjN6bVZjaW1LVjdQQ0Z6WlJxWEk1cGZ2dkxkQ19TTFZ3U0NJY1RB?oc=5",
    "disrupt": "수출통제",
    "materials": "자석;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 01:46",
+   "title": "플레이가 멈춘 것처럼 보일 때, 올인 토토 | 카지노 상태 표시 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxON1U4V2F0c05Gbmpwc0NtaTJHbTFlWjZxNURRUm9nV21RMHFUeGdaYVhmZGdlZElOOXZLcVhINEM1UUt4c2hLd0M0VXBRekRnYXVrejF0allnSkp0NjN0U3VoaFNiTXQ2VmpleGEyMTBVREc1eVhGMVpnajRBUGFPZl9PQ1lqQ0YweXVrWG1vMktucWo5OEs2RW1hU3JTeGdfMzlaMFVJRnRENEVYWE43dmRJeTdta0JoMFU2MmZCSXVDTDdMNFlzVzRJTzVpbHU1QlF2WWNuZzhRYVk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 01:41",
+   "title": "뱃사공 '보트' 콘서트 부산 자동 진행 기능의 종료 설정 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZSkJRMmt2SUJaUUItRWZWVlNMaDZLZFpnOWc3c19DQWQ3eGZfNUZrNVcyM0RUcHd2cHBZOGVLbUFfT1pJRmg2ekZPdDBXSzA5aklUdzJYS0JXdUY0clNoU3U2X1cwc0d3TjFDemo5WW13NldMa0cxUWlNSFg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 01:39",
+   "title": "룰렛 저녁메뉴 추천 중단된 라운드 관련 도움말 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYW1aeEtPV0FUQkIxTGtHTWFYOUVFcHN4WFNhbm9VUDZGLXBtcExBdFJQdXozemlEQXVabC1Xd1pUOVRjY3hneC1scGJlZHJwRFd0Z1pWay14c3hKMzJpY24wak1TRk81NW9wZWNOemhmd3Jhc3R1SzkxbnBPOThndmlDQWJhYlJJVG5iXzF1NVpRYTNiZDluQUlxTVd5NXFCUVd6YVA3bHczb2oxMzB3bkdZaUFGZHhWdzV3aDVPX0t2bHY3Q3VPSlk5bVM?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
    "status": "RELEVANT"
   },
   {
@@ -1256,6 +2075,24 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 01:25",
+   "title": "숫자가 올라가는 연출과 최종 표시, 아프리카tv 룰렛 화면 해설 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1zZTNRajlGU0l2a0xyVkxGS19vS0pDVE54UmhBVmpHaWI3T1AxbDhGYmJIV1Q2X1VDdVdfMi1uSDBMeVNOdzF2YU5VVlBtek9xZTMzLWRBc2JTXzh3MEFYYktibjdXQmlXRWtUaHhJUHJ3SFFzVmJpNFF1UQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 01:22",
+   "title": "토토 경기 중단 놀이터 벳 로딩 완료를 알리는 화면 신호 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BMVZtZk9kMFdvY1ZTUTdKZTVIR3VFblg2alMzYTlEWWZia0s3SzhuU1M4N1ZVSXdPbmh3NUtpUGxxY0kwb0Z6RlBVUEVpV3ZoOEhnN2dZS2dEclBLcjVBZWpBRjVoY2xQLUFab3FnckJkdm91?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "강판;신호;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 01:14",
    "title": "중동발 공급 불안에 국제유가 급등…브렌트유 104달러 돌파 - 투데이신문",
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5MVU4tUUZZMzBJallwMDFnNTNYNG1pUUlNYkpSZ3dJaHpvbWJOeWhrTjZibVFkTFk4Z1RRMWdrSld2OGVUVm9qb1E2REo3VjY0UHR5RVBYY1AwOWJKSm0xZVBDdU9Ya1NpeXVkXzVjc9IBb0FVX3lxTE5MVU4tUUZZMzBJallwMDFnNTNYNG1pUUlNYkpSZ3dJaHpvbWJOeWhrTjZibVFkTFk4Z1RRMWdrSld2OGVUVm9qb1E2REo3VjY0UHR5RVBYY1AwOWJKSm0xZVBDdU9Ya1NpeXVkXzVjcw?oc=5",
@@ -1265,11 +2102,29 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 01:05",
+   "title": "장르에 익숙한 사용자도 읽어볼 홈카지노 먹튀 개별 규칙 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOExDUkNwYkpoQVhRVDJYNGx4Z3pWQVU2RlRBUWQ2N3hwMHRKSFgzaUI0ekM3czB0LVYwN0h0WEFHN0lDSGt1NnduUWpZRFlzNFF0V0xBLUl1NEFtVlltcU5lNmNqSzBOTHR4UE5lbmVIVTc0aXFPN3pWMGhDMnB5c19feGQ2dktIajNRWnpIalJHSXoxYVZSZ012WGVoWjNaUkxzX0pXVkdMMGJGREpEWG5DOWd0UjNDZGRvOEU3TTJWcnM?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 00:58",
    "title": "호르무즈 막히자 치솟는 곡물값⋯내년 식탁 물가 비상 - 브릿지경제",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43aU9GZmNjU3JROVZOUy1CN1Utc1Jkc0lCakluTzJ3ZzhKeWYxOGNqdmtUbE5OWXI4dm9YWEdyUmlfUEozYUxIenhCZXRsZWhfSkZkSlVSaDMzZw?oc=5",
    "disrupt": "공급 차질",
    "materials": "비료;식탁",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 00:46",
+   "title": "페이지마다 다른 용어를 맞춰 읽는 라비와 숲속 친구들 1: 토토를 찾아서 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5KNlBrdkxIcHE3Z0FBZDlfZi1Hd3VPeTZTTnJVa0xHTnBtN1F1bTVpckRQd3Z3UXlqVmFSTzRuQUJRaHhncURkcVFBQTF1S3VsdmlDaTdXcjdLV1BObTJUMm5mQUkyZFN6cWE5Zk9La2E1NGxRSzB0bk9Ydw?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
    "status": "RELEVANT"
   },
   {
@@ -1346,12 +2201,30 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-09 00:08",
+   "title": "테마부터 조작까지 이어지는 오징어게임8회 상세 탐색 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOQjdrNzFKU0hPOGU3Q2NiVkJIbzlkTG9RdU14eXgtQjBGS1ZJR2g3SnNsSmg4X0p6eGNfZGZIcm1nV19RMlhjUG9kT3FmQzZCSW5QVnFJSGhxZU9tMGFobHJSQTJMTzFqaFdHeWU1VU9pcE43bUxBOVYwQTZEWHFxXzdyd3FGVkJhODRlSmxGN0tteF9zend3bm00cE5KbTE0Z0xhMkxVNEtEbDlXcjZYanNFODV1VGtBNE5qYkpMU2pRZVNVS2FHbFlwVU9XRHQ0MFlEaVZyTy1ZWlM4enJ5eXdrZks?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-09 00:06",
    "title": "트럼프 “11월 3일 중간선거 전까지 이란 공격 안해···호르무즈 봉쇄는 유지” - 주간경향",
    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yNHVXby1IYXBTTDlyci1aVmNxemJJWHhaWlpWVDdPOEFHVnM2ME1jSGtqMzI4bHJCOHpCSExWd0JBTUlsV1p1dEthaUt4TVg3NnVlaHdIaGtDalJ6b1E?oc=5",
    "disrupt": "봉쇄",
    "materials": "유지",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-09 00:05",
+   "title": "기본 기능과 선택 기능을 나눠 읽는 네르 시온 블랙 잭 txt - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB5N01LcEpERmVEdFpNa2NZRjFUYkxHMVFkYk5QWjhWaHA1N0ItOFdHWi1ULWRvZHhyZUJtNUk1Q0EzeFJqRHg4UXdSVThNM0VKZ3BkVVlzbWN3T0pxb1AxRUdibTJCNkNhd29TbE9rQVR5cmpzU1E1Mg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "NAVER",
