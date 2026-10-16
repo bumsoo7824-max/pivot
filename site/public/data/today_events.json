@@ -1,8 +1,1124 @@
 {
  "as_of": "2026-10-16",
- "generated_at": "2026-10-16T03:12:42.628625+00:00",
- "count": 203,
+ "generated_at": "2026-10-16T13:02:51.695117+00:00",
+ "count": 367,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:46",
+   "title": "'해적 명분'에 작전범위 확대 검토…\"호르무즈 우회 파병\"",
+   "url": "https://www.sidae.com/article/2026101611323438536",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:31",
+   "title": "정부, 청해부대 작전범위 확대 추진…우회 파병?",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687815&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:26",
+   "title": "국방부, 청해부대 ‘호르무즈 우회 파병’ 지적에 “전쟁 불개입 원칙”",
+   "url": "https://www.kukinews.com/article/view/kuk202610160173",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:24",
+   "title": "스틸 美대사, 한미 관계 이상기류 속 저녁 외교부 비공개 방문",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829765",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:18",
+   "title": "'청해부대 우회 파병' 논란...정부 \"어떠한 경우에도 전쟁 불개입\"",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202610160088",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:06",
+   "title": "하늘길·바닷길 모두 차질…물류 위기에 청해부대 '작전 반경 확대' 검토",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/10/16/2026101690225.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:03",
+   "title": "정부, '우회 파병' 지적에 \"전쟁 불개입 원칙적 입장…역할 검토\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261016210303wT9",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:02",
+   "title": "호르무즈 '우회 파병' 논란에⋯국방부 \"어떤 경우에도 전쟁 개입 안 해...",
+   "url": "https://www.etoday.co.kr/news/view/2636870",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 21:00",
+   "title": "석유 최고가격 4주 더 동결… 1800원대 유지 전망",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3440911",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:58",
+   "title": "국방부, 청해부대 '호르무즈 우회 파병' 논란에 \"전쟁·전투 개입 안 해...",
+   "url": "https://www.ajunews.com/view/20261016205450780",
+   "disrupt": "",
+   "materials": "사진",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:56",
+   "title": "[단독] 수조원 들인 해외 원유 개발…\"비상 도입 실패\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261016205604FW5",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:48",
+   "title": "청해부대 작전범위 확대 추진 '꼼수 파병' 논란… 정부 \"전쟁 개입 없다...",
+   "url": "https://www.g-enews.com/view.php?ud=202610162042391801e207547429_1",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:46",
+   "title": "관광객 감소에 건설 부진까지…제주경제 먹구름",
+   "url": "https://www.newsjeju.net/news/articleView.html?idxno=427080",
+   "disrupt": "수출 제한",
+   "materials": "건설;광물;금;반도체;비금속;수산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:44",
+   "title": "청해부대 오만 해역 가나…작전 확대 검토",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801631&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:36",
+   "title": "국방부, 청해부대 '호르무즈 꼼수 파병' 지적에 \"전쟁 개입 없다\"",
+   "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6323019",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:36",
+   "title": "100달러대 고유가 속 석유 최고가 또 동결… 정부, 고물가 방어",
+   "url": "https://www.g-enews.com/view.php?ud=202610162027188885e207547429_1",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:34",
+   "title": "\"오만해에서 위치추적 장치 끈 유조선 화재\"...이란 해군 '경고'",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610162034109772",
+   "disrupt": "화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:34",
+   "title": "정부, 석유 최고가격 4주 추가 동결…정유업계 수출제한 완화 요구엔 신...",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026101620323846339",
+   "disrupt": "수출제한",
+   "materials": "석유;선박;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:30",
+   "title": "청해부대 작전 범위 넓히나…우회 파병 논란엔 \"전쟁 불개입\" 선 긋기",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072699",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:28",
+   "title": "청해부대 작전 범위 오만만 확대 검토‥'파병 논란' 우회로?",
+   "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6858588_37004.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:23",
+   "title": "이란 \"호르무즈서 위치 추적 끄고 통과하던 유조선 화재\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6323016",
+   "disrupt": "화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:23",
+   "title": "\"美 해상봉쇄에도 이란산 LPG·항공유 해외 반출\"",
+   "url": "https://www.news1.kr/world/middleeast-africa/6323017",
+   "disrupt": "봉쇄;재개;차단",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:22",
+   "title": "정부, 석유 최고가격 4주 더 동결…고유가에도 물가 부담 고려",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=873715",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:20",
+   "title": "군, 청해부대 임무 확대 검토...'우회 파병' 선택?",
+   "url": "https://www.ytn.co.kr/_ln/0101_202610162020087003",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:12",
+   "title": "이란 매체 \"오만해서 위치추적장치 끈 유조선 또 화재\"",
+   "url": "https://imnews.imbc.com/news/2026/world/article/6858580_36925.html",
+   "disrupt": "화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:10",
+   "title": "석유 최고가격 11차도 묶었다…휘발유 1784원 4주 더 유지",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=280979",
+   "disrupt": "급등",
+   "materials": "석유;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:07",
+   "title": "국방부, ‘우회 파병’ 논란에 “전쟁 불개입, 원칙적 입장…국민 보호...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687794&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:04",
+   "title": "이란 매체 \"오만해서 위치추적장치 끈 유조선 또 화재\"",
+   "url": "https://www.yna.co.kr/view/AKR20261016171600079?input=1195m",
+   "disrupt": "화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 20:02",
+   "title": "정부, '꼼수파병' 지적에 \"전쟁 불개입, 원칙적 입장…역할검토\"",
+   "url": "https://www.yna.co.kr/view/AKR20261016170200504?input=1195m",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:49",
+   "title": "석유 최고가 4주 더 동결...휘발유 1,784원·경유 1,773원",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202610160073",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:48",
+   "title": "정부, 11차 석유 최고가격 동결…휘발유 1784원·경유 1773원",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072693",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:44",
+   "title": "국제유가 100달러에도 석유 가격 동결…휘발유 1784원·경유 1773원",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1728180",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:34",
+   "title": "원료 직접생산 약가우대 \"기준 강화에 취지 퇴색\" 지적",
+   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=546602",
+   "disrupt": "공급망 안전",
+   "materials": "원료;의약품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:31",
+   "title": "'임무 확대'에 초계기까지…사실상 '우회 파병' 해석",
+   "url": "https://news.jtbc.co.kr/article/NB12323403?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "수지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:27",
+   "title": "청해부대, 호르무즈 길목까지 가나…\"곧 파견 연장 동의안 제출\"",
+   "url": "https://news.jtbc.co.kr/article/NB12323404?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:25",
+   "title": "정부, 공급망 안정화 기업 추가 발굴…\"사업계획·재무여건 검증\"",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=745975",
+   "disrupt": "수출 제한",
+   "materials": "금;반도체;섬유;세라믹;전자;전지;제련;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:24",
+   "title": "호르무즈 턱밑 오만만까지 확대…‘우회 파병’ 검토",
+   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000555470",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:17",
+   "title": "해적 잡던 청해부대, 공중 감시 전력 붙여 호르무즈 코앞까지",
+   "url": "http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=5225486",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:02",
+   "title": "軍, 청해부대 작전범위 오만만까지 확대 검토…\"어떤 경우에도 전쟁 개...",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829698",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 19:01",
+   "title": "[사설]청해부대 작전범위 확대, 호르무즈 ‘우회 파병’ 수순 아니길",
+   "url": "https://www.khan.co.kr/article/202610161901001",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:58",
+   "title": "11차 석유 최고가격 '동결'…8차부터 4회 연속",
+   "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229034",
+   "disrupt": "봉쇄",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:53",
+   "title": "석유 최고가격 다시 동결…휘발유 1784원·경유 1773원",
+   "url": "https://www.segye.com/newsView/20261016518312?OutUrl=naver",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:47",
+   "title": "[뉴스룸 오프닝] 공장 불…소방관 2명 '중상' / '임무' 넓힌 사실상 파병...",
+   "url": "https://news.jtbc.co.kr/article/NB12323399?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:46",
+   "title": "'11차 석유 최고가격'도 동결…고유가에도 물가 부담 고려",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=856763",
+   "disrupt": "급등",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:46",
+   "title": "[2026 국정감사] 농약안전 재평가부터 반도체 공장 폐수 직방류 논란 '집...",
+   "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=329897",
+   "disrupt": "수출통제",
+   "materials": "농약;반도체;사진",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:44",
+   "title": "기름값 4개월째 묶었지만 석유류 물가 15% 급등 … 정유사 손실 8조 '가...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/16/2026101600293.html",
+   "disrupt": "급등",
+   "materials": "석유;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:42",
+   "title": "석유 최고가격 동결…휘발유 1784원, 경유 1773원, 등유 1380원",
+   "url": "https://www.livebiz.today/news/articleView.html?idxno=205677",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:42",
+   "title": "[2026 국감] 국회 재경위, 지역경제 회복 주문...중소기업 금융·수출 지...",
+   "url": "https://www.news2day.co.kr/article/20261016500289",
+   "disrupt": "공급 차질",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:28",
+   "title": "휘발유 1784원·경유 1773원·등유 1380원···4주간",
+   "url": "https://www.thereport.co.kr/news/articleView.html?idxno=92392",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:24",
+   "title": "파병은 없는데 군은 강화? 청해부대 파병 현실되나",
+   "url": "https://newscham.net/130058/",
+   "disrupt": "봉쇄",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:21",
+   "title": "정부, 석유 최고가격제 4주 더 동결···휘발유 1784원·경유 1773원 유지",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2481266",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:20",
+   "title": "11차 석유 최고가격 10차 수준으로 동결",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610161659583930935",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:19",
+   "title": "석유 최고가격, 4주 더 유지…100달러대 고유가에도 서민 물가 고려",
+   "url": "https://biz.heraldcorp.com/article/10905492?ref=naver",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:18",
+   "title": "\"트럼프의 거래는 동맹을 가리지 않는다\"",
+   "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3078957",
+   "disrupt": "",
+   "materials": "지지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:14",
+   "title": "[속보] 11차 석유 최고가격 동결… 휘발유 1784원·경유 1773원",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3724008",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:12",
+   "title": "11차 석유 최고가격 동결…물가 부담에 넉달째 유지",
+   "url": "https://www.seoul.co.kr/news/economy/2026/10/16/20261016500280?wlog_tag3=naver",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:11",
+   "title": "석유 최고가격 네번째 동결…휘발유 1784원 경유 1773원",
+   "url": "https://news.jtbc.co.kr/article/NB12323425?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:09",
+   "title": "석유 최고가격 4주 더 동결…100달러대 고유가에도 물가 고려",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801576&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:08",
+   "title": "국제유가 100달러 넘어도…정부, 석유 최고가격 4주 더 동결",
+   "url": "https://www.hankyung.com/article/2026101671917",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:06",
+   "title": "휘발유 최고가격 ℓ당 1784원… 10차 때 액수 그대로 유지",
+   "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20261016.99099004747",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:06",
+   "title": "7개월 넘긴 석유최고가격제…이번에도 동결",
+   "url": "https://www.sedaily.com/article/20102674?ref=naver",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "[신지아의 산업예보] 기름값 넉 달째 묶였는데...정유사 손실보전 정산...",
+   "url": "https://www.ajunews.com/view/20261016163617361",
+   "disrupt": "수출통제",
+   "materials": "나프타;석유;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "석유 최고가격, 또 동결…물가 둔화·'100불 유가'에도 5개월째 유지",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439699",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "정부, 석유 최고가격 4주간 동결…휘발유 1784원·경유 1773원 유지",
+   "url": "https://www.viva100.com/article/20261016500754",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "국제유가 치솟아도 기름값 또 '동결'…정부는 '딜레마', 정유사는 '속앓...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04897046645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "국제유가 100달러대에도…석유 최고가격 4연속 동결",
+   "url": "https://www.etoday.co.kr/news/view/2636775",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "석유 최고가격 넉 달째 유지…휘발유 1784원·경유 1773원",
+   "url": "https://www.hani.co.kr/arti/economy/economy_general/1282801.html",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:02",
+   "title": "고유가·물가 부담에 석유 최고가격 4주 더 동결…휘발유 1784원·경유 1...",
+   "url": "https://www.ajunews.com/view/20261016155323194",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:01",
+   "title": "휘발유·경유 최고가격 또 동결… 4주간 적용",
+   "url": "https://www.hankookilbo.com/news/article/A2026101615420005636?did=NA",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:01",
+   "title": "석유 최고가격 동결… 휘발유 1784원 유지",
+   "url": "https://www.etnews.com/20261016000305",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:01",
+   "title": "11차 석유 최고가격 '동결'…휘발유 1784원·경유 1773원",
+   "url": "https://www.dailian.co.kr/news/view/1702574/?sc=Naver",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:01",
+   "title": "다시 뛰는 국제유가에도…정부, 석유 최고가격 4주 더 동결",
+   "url": "https://www.nocutnews.co.kr/news/6592748?utm_source=naver&utm_medium=article&utm_campaign=20261016060013",
+   "disrupt": "공급 차질",
+   "materials": "석유;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:01",
+   "title": "국제유가 100달러대 고공행진에도…정부, 석유 최고가격 동결",
+   "url": "https://www.khan.co.kr/article/202610161801001",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 최고가격 '동결'...휘발유 1,784원·경유 1,773원",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610160141&t=NN",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "산업부, 석유 최고가격 4주간 동결…국제유가 상승에 '고육지책'",
+   "url": "https://www.newspim.com/news/view/20261016001326",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "석유 최고가격 4주 더 동결…휘발유 소비자가 1800원대 유지 전망",
+   "url": "https://www.news1.kr/economy/trend/6322771",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 석유최고가격 동결…ℓ당 휘발유 1784원·경유 1773원",
+   "url": "https://news.tf.co.kr/read/economy/2377362.htm",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "정부, 11차 석유 최고가격 동결…휘발유 1784원·경유 1773원",
+   "url": "https://www.newsis.com/view/NISX20261016_0003829373",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 최고가격 또 동결...석유제품 수출제한 완화 모색",
+   "url": "http://www.e-platform.net/news/articleView.html?idxno=106177",
+   "disrupt": "수출제한",
+   "materials": "석유;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "석유 최고가격 또 동결…휘발유 1,784원 경유 1,773원",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687772&ref=A",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "석유 최고가격 다시 동결…100달러대 고유가에도 물가 고려",
+   "url": "https://www.yna.co.kr/view/AKR20261016147400003?input=1195m",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 석유 최고가격 '동결'…휘발유 1784원·경유 1773원",
+   "url": "https://view.asiae.co.kr/article/2026101615560342984",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "석유 최고가격 ‘휘발유 1784원·경유 1773원’ 유지",
+   "url": "https://biz.chosun.com/policy/policy_sub/2026/10/16/HHNKIBQT6FESHMBWJI4AHGG5WQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 석유 최고가격 '동결'…'휘발유 1784원' 유지",
+   "url": "http://www.newstomato.com/ReadNews.aspx?no=1317022&inflow=N",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 석유 최고가격, 10차 수준으로 동결",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/10/16/2026101690187.html",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "11차 최고가격 휘발유 1784원·경유 1773원…4개월 연속 동결",
+   "url": "https://www.mt.co.kr/economy/2026/10/16/2026101616534155127",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "석유 최고가격 동결…휘발유 1784원·경유 1773원 4주 더 유지",
+   "url": "https://www.fnnews.com/news/202610161546532238",
+   "disrupt": "",
+   "materials": "석유;선박;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 18:00",
+   "title": "2026 홍콩 추계전자전에서 본 CES 2027 프리뷰, 지능형 제품 집중 조명",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244702",
+   "disrupt": "공급망 안전",
+   "materials": "전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:58",
+   "title": "아시아 증시, 기술주 매도 충격 딛고 반등…한국 코스피 2.1% 상승",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90975",
+   "disrupt": "반등",
+   "materials": "수송;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:42",
+   "title": "11월 국제선 유류할증료 세 달 연속 '껑충'",
+   "url": "https://news.mtn.co.kr/article/2026101616373987241",
+   "disrupt": "반등",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:40",
+   "title": "호르무즈에 꽉 막힌 비료 수송길 … 하반기부터 식량가격 들썩",
+   "url": "https://www.mk.co.kr/article/12178071",
+   "disrupt": "공급 차질",
+   "materials": "비료;수송;암모니아;원료;유황",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:36",
+   "title": "중국에서 빠져나온 공장은 어디로 가는가?",
+   "url": "https://www.taxtimes.co.kr/news/article.html?no=277254",
+   "disrupt": "관세;수출통제",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:34",
+   "title": "오늘의 프리미엄9 콘텐츠 다이제스트 (10월 16일)",
+   "url": "https://www.hankyung.com/article/202610166935i",
+   "disrupt": "공급 차질",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:34",
+   "title": "대만 경제부 장관 \"중국에 AI 반도체 수출통제 강화, 미국과 동일하게 ...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449580",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:24",
+   "title": "IEA 경유 2천만배럴 추가 방출 합의",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=881730",
+   "disrupt": "공급 부족;봉쇄",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:23",
+   "title": "이란 전쟁에 中페트로차이나 '반사이익'…올 거래이익 4조원 전망",
+   "url": "https://www.news1.kr/world/northeast-asia/6322875",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:08",
+   "title": "호르무즈 해협 인근 선박 공격 보고 역대 최고...원유 수출은 둔화",
+   "url": "https://www.bbc.com/korean/articles/ck62y849n9n5o?xtor=AL-73-%5Bpartner%5D-%5Bnaver%5D-%5Bheadline%5D-%5Bkorean%5D-%5Bbizdev%5D-%5Bisapi%5D",
+   "disrupt": "",
+   "materials": "선박;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:03",
+   "title": "청해부대, 호르무즈 앞까지?‥작전 확대 검토",
+   "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6858538_36981.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:01",
+   "title": "[차이나워치] 북중관계 새 국면…中 군사훈련 확대·중일 갈등 고조",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261016170053wCF",
+   "disrupt": "수출 제한;제재",
+   "materials": "광물;섬유;수산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:01",
+   "title": "청해부대, 진짜 호르무즈해협 가나… '작전 범위 확대' 후 투입 유력 검...",
+   "url": "https://www.hankookilbo.com/news/article/A2026101611130002156?did=NA",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 17:00",
+   "title": "국제 경유값 강세에 수출물량 조정 논의…정부·정유업계 '수급 안정과...",
+   "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204136",
+   "disrupt": "강세",
+   "materials": "부분",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:57",
+   "title": "청해부대 호르무즈 앞까지?…'우회 파병' 논란 확산",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/10/16/2026101690193.html",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:50",
+   "title": "\"명백한 파병\"…軍 청해부대 작전 범위 확대 검토에 반발",
+   "url": "https://www.hankyung.com/article/202610166857H",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:48",
+   "title": "애플은 신규 수주 제한, 현대차는 2086곳 ESG 진단…2027년, 공급망 리스...",
+   "url": "https://www.impacton.net/news/articleView.html?idxno=30294",
+   "disrupt": "공급망 안전",
+   "materials": "진단",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:45",
+   "title": "청해부대, 아덴만 넘어 오만만으로… 해상초계기 투입은 '종전 후'",
+   "url": "https://www.newspim.com/news/view/20261016001289",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:44",
+   "title": "글로벌 해운운임 2주 연속 상승…호르무즈 선박 피격에 중동·유럽↑",
+   "url": "https://www.news1.kr/industry/general-industry/6322775",
+   "disrupt": "재개",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:39",
+   "title": "[D리포트] 청해부대 작전 지역 오만 해역으로 확대…초계기 추가 파견 ...",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801366&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:38",
+   "title": "[그래픽] 청해부대 작전범위 오만만까지 확대 검토",
+   "url": "https://www.newsis.com/view/NISI20261016_0002265571",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:32",
+   "title": "[이슈] 軍, 청해부대 작전범위 호르무즈 해협 인근 오만만까지 확대 검...",
+   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=745969",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:28",
+   "title": "IEA 회원국, 경유 가격 안정 위해 2천만 배럴 방출 합의",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8687742&ref=A",
+   "disrupt": "공급 부족;봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:26",
+   "title": "대만, 中 AI 반도체 수출 규제 강화…밀수출 땐 형사처벌",
+   "url": "https://view.asiae.co.kr/article/2026101616242905832",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:12",
+   "title": "[H.O.G. 랠리 2026] 태국 소다워터가 할리 라이더를 홀렸다… 싱하, 28회...",
+   "url": "https://kr.aving.net/news/articleView.html?idxno=1815606",
+   "disrupt": "수출 제한",
+   "materials": "소다;알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 16:00",
+   "title": "'기술 보호'가 해외 진출 발목…보툴리눔 톡신 국가핵심기술 해제 요구",
+   "url": "https://www.mt.co.kr/thebio/2026/10/16/2026101614353898381",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "공정",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 15:58",
+   "title": "'리튬' 과잉공급 우려에 가격 약세…배터리 불확실성 증폭",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=63809",
+   "disrupt": "공급 차질;약세",
+   "materials": "니켈;리튬;망간;배터리;산화물;양극;양극재;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 14:49",
+   "title": "울산항 나프타 공급망 ‘탈호르무즈’…인도·북미 등 대체 거점 부상",
+   "url": "https://www.sedaily.com/article/20102527?ref=naver",
+   "disrupt": "공급 차질",
+   "materials": "나프타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 14:32",
+   "title": "EU CBAM 대응, 배출량 산정만으로 충분할까?…i-DEA, 실무 교육 운영",
+   "url": "https://www.hellot.net/news/article.html?no=115541",
+   "disrupt": "공급망 안전",
+   "materials": "공정;금;철강;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 14:28",
+   "title": "EU, 중국산 화학·기계 등 추가 수입 규제 검토...수입품 차단 권한 강화...",
+   "url": "https://www.theguru.co.kr/news/article.html?no=108340",
+   "disrupt": "수출 제한;차단;쿼터",
+   "materials": "광물;자석",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 14:10",
+   "title": "[이영우 칼럼] 540억 달러 '알래스카 투자 잔혹사'",
+   "url": "https://www.goodnews1.com/news/articleView.html?idxno=465218",
+   "disrupt": "공급망 안전",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 14:06",
+   "title": "1~9월 흑자 9380억달러…중국산 받아줄 다음 시장은? [마켓프리즘]",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=577567&class=42&grp=",
+   "disrupt": "수출 제한",
+   "materials": "리튬;배터리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 13:34",
+   "title": "1~8월 글로벌 전기차 양극재 전재량 192만톤, 전년比 22% ↑",
+   "url": "http://amenews.kr/news/view.php?idx=68333",
+   "disrupt": "수출 통제;수출통제;재개",
+   "materials": "리튬;배터리;양극;양극재;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 13:23",
+   "title": "한화솔루션, 500kv급 HVAC 소재 기술검증 성공…글로벌 시장 공략",
+   "url": "https://www.etnews.com/20261016000171",
+   "disrupt": "공급 차질",
+   "materials": "막대;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 13:04",
+   "title": "12월은 ‘국제해운 탄소중립 이행’ 결정적 분수령될까",
+   "url": "https://www.naeil.com/news/read/605382?ref=naver",
+   "disrupt": "공급망 안전",
+   "materials": "선박;연료;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 12:54",
+   "title": "지아이텍, 발전소 수처리 부품 공급망 자립 나선다",
+   "url": "https://www.munhwa.com/article/11624079?ref=naver",
+   "disrupt": "생산 중단",
+   "materials": "반도체;아이;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-16 12:50",
+   "title": "세이프타임즈 정재용 논설위원 '지정학과 실리콘 방패' 출간",
+   "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=246548",
+   "disrupt": "수출통제",
+   "materials": "광물;반도체;실리콘;전자",
+   "status": "RELEVANT"
+  },
   {
    "source": "NAVER",
    "published": "2026-10-16 12:06",
@@ -1345,6 +2461,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:56",
+   "title": "'리튬' 과잉공급 우려에 가격 약세…배터리 불확실성 증폭 - 디일렉",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBLX3NkWS1EQVFKdEZhZ0MzTE1XUTJBOWNnbGtVb0M1RW1jazlaMnZTR1JweXFuZ1FQbGZ1REVlUnlVOHVLeC1rY0NIYzF6d2psM2ZzMXRqM0xzU05pb0hYZDNkSlRuQQ?oc=5",
+   "disrupt": "공급 차질;약세",
+   "materials": "리튬;배터리",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 06:55",
    "title": "청해부대 작전범위 '오만만'까지 확대 검토",
@@ -1399,6 +2524,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:39",
+   "title": "IEA, 비축유 방출 앞당긴다···2000만 배럴 조기 방출 결정 - 직썰",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE93MkdDNjJPRTkzdWxnb21rZ3BBYWJlTWREZVNFdXAyLTRMUk5ZaV9VM0hXNU9xNnZKTi1OUGhJX1VrM09oZDlnZmYyWWtFSk5ETUdhUUdUY1BBcmMxRXJQWDBBSUh0N2xU0gFsQVVfeXFMTjBiNFJfZ0o1YTI3UktRLURMb3ZLZGNsZGFGTXVRYkFGejNzV0FHVTY1bGZfM1BOZTF0TVBPMjA3SzYzeVZKWENPNmsxVlBmMll4Yjk5VkVXQW5jNEN0Z2lQU2lCSWR1UGlNdHNq?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 06:38",
    "title": "[한의사 이현효의 도서비평] 희토류의 시대, 한국은 어디로 가야 하나",
@@ -1415,6 +2549,42 @@
    "disrupt": "급등",
    "materials": "금;선박",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:35",
+   "title": "정부, 청해부대 작전범위 호르무즈 인근까지 확대 검토 - 샌드타임즈",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBXNDhzM083ZWpIdDkzNm1GTy1zY25xeTlZTGZCYWl0clFiWGhhUkF6LWthd251d2dxTGFGblN3OThUTlphTXJaazRHMHRrX2NyVjluU0wyWnNrS25oQjc5UmhhbDVTSmg0SnNsSw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:26",
+   "title": "IEA \"회원국, 경유 2천만배럴 조속히 방출 합의\" - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NYXBUR3gwVlVPRXNUZ0pwU0ZnaEF6X2xhQk1QVFF1Q0VzN0FsRGlybGRzVU01d084aFlmenI0bjRiMmNzZVMzUW5VelFndkNrekkyWlFMQTFoNEnSAWBBVV95cUxQYzRhMXdQMEswMFhiV1o0Z2dlXzY0cUFpdE9VT3ExajVnX1p2dFlKLThUdTVmQWVWWF9UWHZYMENlanZrWTJVUldncFF0UVhsZHd3NjNUZFdLTlIwLWVLT2Y?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:16",
+   "title": "호르무즈 앞까지?‥청해부대 작전 확대 검토 - MBC 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1IanVqUFU0TVJZcUVQZjc1ekxQNV9aM2xGVm05eFdBYV9GcXl5c1ZxNWZqSnltUFhDQUhNS1k4Rnpyczl3ZEVYSEpJemxUTGdjUUZUamJpYW9tbldpTjM1eWxCUEpoZzZBTW5GbUxZOHh1SjVYVDI3NNIBeEFVX3lxTE1IanVqUFU0TVJZcUVQZjc1ekxQNV9aM2xGVm05eFdBYV9GcXl5c1ZxNWZqSnltUFhDQUhNS1k4Rnpyczl3ZEVYSEpJemxUTGdjUUZUamJpYW9tbldpTjM1eWxCUEpoZzZBTW5GbUxZOHh1SjVYVDI3NA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 06:16",
+   "title": "경실련 “호르무즈 우회 파병 추진 중단하라” - 뉴스클레임",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DVXZLYXBtekltMzBGU0FPYnctYTlpX3pfMlUzNkFDX21USTJhU0VQSjZZMjdKSzlMeDZIZXhoREtPYUppTUd4N1ZkdmNwSlptSThmVVZQWUlzX0RmNUY4eTc4OGFROGh5bjJXa0FGdVVTaUZk0gF0QVVfeXFMTUNVdkthcG16SW0zMEZTQU9idy1hOWlfel8yVTM2QUNfbVRJMmFTRVBKNlkyN0pLOUx4NkhleGhES09hSmlNR3g3VmR2Y3BKWm1JOGZVVlBZSXNfRGY1Rjh5Nzg4YVE4aHluMldrQUZ1VVNpRmQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "NAVER",
@@ -1489,6 +2659,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:59",
+   "title": "큐브 카지노 정리 지속적 통합 핵심 전략 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWeWVncHBZT3RiMzE0bmFMM0xxaWIxRThRWlZLUWhkUTJPTldQLTFaYWV4ME0zUkE1Qm0yQUE1WFpqREhaZ2dBWFFTN1JzcExIQ2h1Yi1wQy0wVTEzZmc1MG82ZF9nZUxpSldoandOaTAwLWc?oc=5",
+   "disrupt": "",
+   "materials": "큐브",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 05:52",
    "title": "트럼프 대통령 그린란드 ‘대규모’ 석유 탐사 약속…그린란드는 법적...",
@@ -1498,6 +2677,33 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:50",
+   "title": "유황·황산 전문 미원화학, 519억 규모 신규 시설 투자 결정 - CNews",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0zR3Y3S1dWTzlNN0pTUWJzTkt3VTdqSGtwRm9IOGdaMTdEdkZlS29XSnppSGpvQzhSTmhoeFVkWXNJcFhRNzBCVWVfVTZLRFNFUHZVaUMwNjdCaHpIREJBdEdWMWNVcGlOY0RkUEdxMkpkZkl2a0t3?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;유황;황산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:48",
+   "title": "울산항 나프타 공급망 ‘탈호르무즈’…인도·북미 등 대체 거점 부상 - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1qcGx6amROWTNnZG1HTnI1NEhLM2FUZHhsdzdrclRoZlBzZEwtR2lHWFUzNENWcldEdnY2a3RTOER3ZWhOS2NuQ2RCQmFkNVQ0M3B30gFTQVVfeXFMTWpwbHpqZE5ZM2dkbUdOcjU0SEszYVRkeGx3N2tyVGhmUHNkTC1HaUdYVTM0Q1ZyV0R2djZrdFM4RHdlaE5LY25DZEJCYWQ1VDQzcHc?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "나프타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:48",
+   "title": "울산항 나프타 공급망 ‘탈호르무즈’…인도·북미 등 대체 거점 부상 - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VSmNLQXgxcm0xSE9ndG9jRmp0MFpHcVFPN3MwNGtOVHZ6R29LalpTQWVIVHlULVVmbnItS0FaNVkwbnZsTzZMWDF6U3kxUWdsaXfSAVNBVV95cUxNanBsempkTlkzZ2RtR05yNTRISzNhVGR4bHc3a3JUaGZQc2RMLUdpR1hVMzRDVnJXRHZ2Nmt0UzhEd2VoTktjbkNkQkJhZDVUNDNwdw?oc=5",
+   "disrupt": "",
+   "materials": "나프타",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 05:46",
    "title": "\"호르무즈 봉쇄에 LNG 대체 폭발\"… 석탄 가격 40% 급등, 톤당 150달러 돌...",
@@ -1505,6 +2711,24 @@
    "disrupt": "공급 차질;급등;봉쇄;폭발",
    "materials": "석탄;수송;원자재",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:41",
+   "title": "[코인시황] 비트코인, 8만1000달러선 강보합…호르무즈 공급 불안 지속 - 뉴스웍스",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wNWpXemZzTldTTXJIcFpGTFlPQ1E5VlhMZTJoNUNLQWRBN3ZwLVFnUmw1Sm5YaEJhamtlQmltUnl4TnRYRFpsci1CSFF5SXNqaDBKRXJua3YyeGt0MTZmSnNtc3BEaVNEb0pjWWprYlBNY1HSAXNBVV95cUxPMDVqV3pmc05XU01ySHBaRkxZT0NROVZYTGUyaDVDS0FkQTd2cC1RZ1JsNUpuWGhCYWprZUJpbVJ5eE50WERabHItQkhReUlzamgwSkVybmt2MnhrdDE2ZkpzbXNwRGlTRG9KY1lqa2JQTWNR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:35",
+   "title": "트럼프, 이란전 교착 속 선택의 기로…봉쇄·공습·지상전 득실은 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5PTUI0RzgwLTROUlpVeENiWnNUanp4UUtTQjcyUXh6WkdCTERsLUNUeXlvQ3QwYzVHRnoxU0dVa2xnYUpoQTNqcTQ2em5BNTh1UU9nVkE2bTZiTlR0azlSMnBGZVZVZjdUOTZRU2RvZ2FfN29XdEI3etIBeEFVX3lxTE5PTUI0RzgwLTROUlpVeENiWnNUanp4UUtTQjcyUXh6WkdCTERsLUNUeXlvQ3QwYzVHRnoxU0dVa2xnYUpoQTNqcTQ2em5BNTh1UU9nVkE2bTZiTlR0azlSMnBGZVZVZjdUOTZRU2RvZ2FfN29XdEI3eg?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "NAVER",
@@ -1525,12 +2749,102 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:12",
+   "title": "국방부, 청해부대 작전 범위 오만만 확대 검토…해상초계기 보강도 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBhTGFPUUhneUJjQTRWOFhxUkRWbVp1MUF1QzRwdU5fNjdSanpvYWxLNWRVWmdUWF9FVktkdVpWaXgwYy1NTkdGT291aExzU1NxVVFqZTBhcnLSAVhBVV95cUxQYUxhT1FIZ3lCY0E0VjhYcVJEVm1adTFBdUM0cHVOXzY3Ump6b2FsSzVkVVpnVFhfRVZLZHVaVml4MGMtTU5HRk9vdWhMc1NTcVVRamUwYXJy?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:11",
+   "title": "[국제동향] 러 정유시설·호르무즈 공격 격화…미 생산자물가 급등 - 산업종합저널",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XcUIzbkZqdG5jWkh4cWRsZWFKLVpBM2stRkN4UTFlWTAzakxUdXdMLVk2T0lSdGtxTHFtTFFJNXpMaGxxTGM2bTd5dFJ5RVRZMmhz?oc=5",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 05:10",
    "title": "'중국산 희토류' 피하는 EU, 베트남으로…LS에코에너지, 시장 확대 '기회...",
    "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072260",
    "disrupt": "수출 제한",
    "materials": "광물;금;보조;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 05:01",
+   "title": "요구 사항은 공급과 수요의 균형을 확보하고 필수 재화 및 서비스 가격을 안정시키는 것입니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQ2U0dEhOMVVrYk9LV201MF9haEozN18wc3hfMEdmSnF3Rnp4WG85WjhWLTJYeXVrWHF5dEJQRmlqVHNfOEdhTlV4c0lxNHBwZ2NzamRVNEpPZVI4aHR3eGdHSXE5cnhjei1uNmpneGl0cW1kaUQxXzlRVDJyQTFQNFpWcHByQ3FrNDdTb2xmaTZSVFFjZmtBQ3pGSXhEcl9QUnc?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:53",
+   "title": "호르무즈 기여 선택지는 '우회 파병'?…美 공감대 있었는진 불확실 - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wODNLNlUteWRJTjN4QzRGekNMMlpsa1p1Ym5rOWxCUjNKMEd3b05LcWdCMllfSVRrbjZhajZIOW0weGdIaF81VGFRMHNIQUI5VVFNdUpmaXR0X0RfZmN6TjRNU1dqck0?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:47",
+   "title": "김병주 “청해부대 변경, 호르무즈 파병 전혀 아냐…초계기 투입은 방어능력 보강 차원” - 경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03VEQxVUlaQkZYZ2xIUkpjd1dsZmRKcFczWVd5Q1hJSlNneTN6Z3lsVlNtU0daazF1WmZEOHREalpzUE9lUFFFVTRuVzBFUWk3WmJpclpzVUp0Z9IBX0FVX3lxTE4zYU1aQnNmUkFLZEFaS0hLQ3BtcWRfclNrWXR0MEFKXzJpMTVCRWVoWC1GMURCeDJ6blJvRVJFd1NkS1BTTkNGX0UtX0hRTW5CeVRDVFVCbGE2dkljMlFF?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:45",
+   "title": "식품 안전에 관한 법안 초안: 각 단계별 통제에서 전체 식품 가치 사슬 관리로의 전환. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcm1BRlV4c2c3WTVIRVFJaFVDWmZLLU5IRHMycjRFOUZpYW1PbWkzYjRqdkxseE9CenZub1F3U3cydGJMbEstYTM1MUpXXzNGVTVnUURzSUQzek8wS3hjZW16VW40MUthV1FBZ2tqclBzYUpscGVncXV2aFQ5MERsSEt4cmxpbmVGQ0xmTndwQ1ZOSGQwenNrRG9vTUpHcHdQS2hTSkh6ZXlZamxtVTNRM0VyRmxtWmN2eXlmNEhUMVRMS3VkX3FB?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:36",
+   "title": "경실련“청해부대 오만만 확대는 호르무즈 우회 파병”…정부에 중단 촉구 - 한국NGO신문",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZd2wzbW9tUXlIazlRdUZJNFV2NGY5UWlQbWdTa2hwbnlQWFpXaFhHbE1FMUVpTTRZelQwbGRSVTluMnpCbmppQXRoUlR6bERUS3NSSGc3eEVRb3B1S1ZhVUFqWjR3N1Ft?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:26",
+   "title": "이란은 컨테이너선이 기뢰에 부딪혀 침몰했다는 사실을 처음으로 확인했다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNUhncEdNazIwOWZVcXVla0dsaHc3d19mYXFwaHNlenU2OGthTGlXYnpuZWZxbmRyQWJGZWhiSDE4eFRKeFZhVWhjSkJmWTBqV1FiNUlGT2dycTlWM1RSTHRWdS1CX0tfbklSUHZWNVJoQ0tpamluaFpyQkE3ZmZFLU13di1TV3Rzc3d4VQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:22",
+   "title": "한화솔루션, 500kv급 HVAC 소재 기술검증 성공…글로벌 시장 공략 - 전자신문",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYUlFPRkRwdFZvbGNCRFNDeFB0R3BlUy1WYjJxSTNNRmdiTjY2c1pzUnUxcmVZcWJ0U08yRklVWjJxTFRHTVUtZHVKQmk4Zw?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:04",
+   "title": "숫자가 올라가는 연출과 최종 표시, 슬롯 사이다 화면 해설 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5LYTdYVk04Z1FaNURSbU1nT21yRWU0MlRiSGxQNEZ6ZkQwYy02ZU4tZFJkVE40RjVwZjBmSm9xR0RPbkxkSnpYTmtGazFvc0RuRHFiNU0tZk9TYXZUS2pSNXpyTDNqdVkzeXd1QnlxZ3hjLW8?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;반도체",
    "status": "RELEVANT"
   },
   {
@@ -1543,6 +2857,42 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-16 04:02",
+   "title": "식품 생산지에서의 식품 안전을 강화하고, 전체 공급망에 걸쳐 위험을 관리합니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZmFWamxnNWtOUXNFRDZMcnVISEpFTlVsS0l5ZF96SEFiaTFDWkdYUC1XN1NKQjMzcXl2LTBfNHB4NzJoY3NmSXcyTmRaeVFFVWNPZzlPUGdxN1lkNUFuQnhVTFdHbmdiaXc1TTljMWFneDk3REtydWdCQTdsc2haVlpqN21KLThZTGc4?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:53",
+   "title": "릴이 확장되는 기능이 있다면 읽어볼 불법 토토 사이트 이용 처벌 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZmtINXJKOVBBOERZQy1ZWnhndUdxT2FvOEhSVjc1LVM5RUJBYjk3LW9JQllnQjlhMlQzblZIbWNsb25HN3ZCM0ZCQ2JoR2ZXOEQ4LVlCc0N3UDZGenFvQzRENkROZFFwa2hSS01xTTdsUVYxWDNKSGdJWE52RXlKV2pDUWhMRXl1ekVLWllTMA?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:50",
+   "title": "청해부대 작전 범위, 아덴만에서 오만만까지 넓히는 방안을 검토하고 있어요. ⚓ - 뉴닉",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBZU1JBZ1gyV3diODBvRi1VcDlyU1hLR01tOU5hNW5BLS1MZ2dNOFpGb0VHbnpnR2Z4ZzItb1F1SFFkWjdELVp3RmtYVEZvVE4yN2d3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:48",
+   "title": "중국은 미국과의 무역 협정 시한에도 불구하고 유럽연합(EU)에 희토류 광물을 계속 공급하겠다고 약속했다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTXVfaHZpUUpJZ3pRa2ZpVGtEMW9scDhVZWtEMXkxOVhhdWJLYXVVdWxKWW1xcVl0YXpZMmI5WjBQbjJFUGF3N0xpcjFTT1NyQ19VTXFXY1dOSEl6bFlfT2lhRXNCdzByQmM2TExjOEFFNE9jSUVHcWF4QzdMeXByQTdTS085S1FUTDYyelF6akhfOTRUWEVRTmhZOEtwM1c1VGNOZllhaHA5TXhELXhENU85RUhYM0JlZU9pd1pLcXExMWs?oc=5",
+   "disrupt": "수출통제",
+   "materials": "광물;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-16 03:26",
    "title": "미국 군함도 못 막은 호르무즈 불길…기름값 치솟자 비축유마저 바닥났...",
@@ -1550,6 +2900,24 @@
    "disrupt": "가격 상승;공급 차질",
    "materials": "나프타;석유;소화;수송;원자재",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:12",
+   "title": "유가 급등에 수입물가 넉 달 만에 반등…환율 하락 효과 상쇄 - ER 이코노믹리뷰",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12S2hoR0ZkTm5iMDBuNllOZ1FQbjRxTzZ0SWpNdlo4V1R0c0hHb3hMMlZvaXZ1aW13dG1YTEZVaXlIeTZWaXoydEkteV9jVzdkaVZ0SGRtcnBhZXJtbFRDbDMzbFRkdFNUc3hZRA?oc=5",
+   "disrupt": "급등;반등;수출 금지",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:07",
+   "title": "호르무즈 앞까지?‥청해부대 작전 확대 검토 - MBC 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE52SXBDV0E1Rm52UTJKaFFBRzNEZXRfTVVsNkRrZmloYWN1VkJWZ1B0ZEhmQ2JFX0MyZE5EUXhWNUVUT3ZJU25oZFh3U3QyQ1U4Nm5RcUp4MlphT2lZNE5PYWxUMTZNeVMtSUlqRzgxdGliZVdJMF9wRw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "NAVER",
@@ -1580,6 +2948,42 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-16 03:00",
+   "title": "정부, 청해부대 해상초계기 추가 파견 검토…호르무즈 파병 연관성 주목 - 뉴스토마토",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PYWlPOFBDQllZa3VMUFJ3Q0pzUXpLNmpoNk1zMmJnRFpPWGJwYUw3bU5FRnVvOGhBVEQ1ejRFVjRjZjRoUHRNSndQU2JIQUJ3LTFWY0xBaU5DT0Q5UzMw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 03:00",
+   "title": "호르무즈 해협에서 4일간 선박 10척 공격받아, 미·이란 전쟁 이후 최다—싱가포르 언론 - Record China",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ULS1wallsSWJqVUp6MFpJZVdyUjFHTE1sYTNzUDN1V0pOMjVxaGI5N3VSVHhHSjFEUWlRaUU0YXdOQzE5VkNwbkVzbzVxTnMteHZBYWY5RDYzN2dNVUQ4RlMxanJnQQ?oc=5",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 02:57",
+   "title": "처음 이용하기 전 읽는 대구 마작 이용 제한 정보 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQemxTYjU1REwwWGVkNHBLRlJRQU5odXBtaloxcW42M3RMRGdwUERoVFFnc3dtbDF4NFF2MDUxbWx0YnF4TzlORkNmdkg3a1NTbmtMMzZna01Vc3dBMVRnRUNXVVp3eU1KQ3E4ZUJkRldzMEpyZUk5clZUQzhpSEcxaFcyZXN5WmNEQjR6VWk3VzdqVHhaV1NROWltUXNxRUQ1dW4xSU00VUdxMldXeEZIR1NqZExmNm9YdlFEV3NXZ29sa0ctLURDTFZRZ1EyZmNlWlJQNDVpS0lrbHlQYVFEcDNZWHMwVlUw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 02:38",
+   "title": "호르무즈 선박 침몰에 WTI 3% 급등…美 생산자물가 4년여 만에 최대 상승 [오늘 아침 글로벌시장 핫이슈] - 시티타임스 CityTimes",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA2V3R4a3hCS0R3R3htbEZaS2JvbURlWDJqUWZkWEZpVWpJVzdDMDliSUdHTFpjdFFFLVpSRFZ2cmhmUGp5eV9GS1VEajJNVzVrM09NRXJiLVcyOU1tMlVDT3VhWUtzMWR3R2EzMEE5VG1WZ9IBckFVX3lxTFA2V3R4a3hCS0R3R3htbEZaS2JvbURlWDJqUWZkWEZpVWpJVzdDMDliSUdHTFpjdFFFLVpSRFZ2cmhmUGp5eV9GS1VEajJNVzVrM09NRXJiLVcyOU1tMlVDT3VhWUtzMWR3R2EzMEE5VG1WZw?oc=5",
+   "disrupt": "급등",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-16 02:33",
    "title": "파병 대신 작전지역 확대…‘청해부대’ 호르무즈 해법 되나 - 헤럴드경제",
    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuNzlmeVFqdmVKYmRIb2xraXAwYlJfSnRWeXlaWWU4Y0VuYzhMR0t5alpqSEYwM2hlMHhDd0tyMkdRTkNMM1QzTkNtTmUwWlUyMDVJSzV3?oc=5",
@@ -1598,6 +3002,24 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-16 02:25",
+   "title": "日, 비상시 운항 선박 확대…日기업이 빌리면 '일본국적' 간주 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBONUZ1UFhWSUtteXlLX1NGTy1uX0JCZl92M0w2NVR5Z0JsLUIzUXlJZERPblVVNUZQMnZTNGJCUVk0d09pR3N4LTBveHZlWGpuY2l0a1NqZ0hCNHB4WXRoLVZqNTVPQXJobE85TS1jRTNUekdBOE9adNIBeEFVX3lxTFBONUZ1UFhWSUtteXlLX1NGTy1uX0JCZl92M0w2NVR5Z0JsLUIzUXlJZERPblVVNUZQMnZTNGJCUVk0d09pR3N4LTBveHZlWGpuY2l0a1NqZ0hCNHB4WXRoLVZqNTVPQXJobE85TS1jRTNUekdBOE9adA?oc=5",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 02:23",
+   "title": "에코디자인 규제, 전력기자재 경쟁력의 기준을 바꾼다 - 전기저널",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52eFVpQlVYaFp2UG1Ud3hVVl9SV0hMdGxkUHlhandzY0JGMk9tRjFMMk5ZYXk1bW90eTd6WDlPMlljR25TTWpDQ09hamRwS0hLQzRIbmJjWGVxQ19PUHE4RWRn?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-16 02:22",
    "title": "[성명] 정부는 호르무즈 우회 파병 추진을 중단하라 - 경제정의실천시민연합",
    "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1PNTV1a25kS1l3WlkwN3NkbXBFVDR6RDBqOEdQQ0EyWk1xa0NEUGxwdEZDemw4aUZaWGo0cW9WamNKZWo5WlhJ?oc=5",
@@ -1613,6 +3035,15 @@
    "disrupt": "",
    "materials": "",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 02:05",
+   "title": "미국, 4년 만에 벨라루스산 비료 수입 재개: 3만 톤 규모 수입의 배경 분석. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUmNQS3JhbXkybmN4REZIOV9NNlZhOHR3Y3NHVm1XRng4eW85QmlaeUVRRmVTZDFDLVdDTGhkQ25zU1ZzcjRCX18wMGVjb25RTUJ4WGdLS0pWWjJXYUQ3S1psNzNTRTk0ZjRHS1dyOVgtM0xKS1c0UmJ2dUljS18tU3dBVGM5SjExMnAxS2JxRFBINTVxZmFsM0RMNjVDUFdOQVlRcTlkZw?oc=5",
+   "disrupt": "수출 제한;재개",
+   "materials": "비료",
+   "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
@@ -1652,6 +3083,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-16 01:53",
+   "title": "정부, 중동 청해부대 작전범위 호르무즈 인근까지 확대 검토 - MBC 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5LRWo2ZGFhUVd6N3V5LVR6VzVvQ0xRTzF1V0V6MkhncXdVR3ZFUWRaTEEtYnoxcU53YklpWlVxUmRCNFR1R1lFel91a0Z6dmV5OHl2dDNRbmJvUW1kUlBmVHF3RDV3czZLMkNMS0xSTHFrUHhfbFY5MdIBeEFVX3lxTE5LRWo2ZGFhUVd6N3V5LVR6VzVvQ0xRTzF1V0V6MkhncXdVR3ZFUWRaTEEtYnoxcU53YklpWlVxUmRCNFR1R1lFel91a0Z6dmV5OHl2dDNRbmJvUW1kUlBmVHF3RDV3czZLMkNMS0xSTHFrUHhfbFY5MQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-16 01:44",
    "title": "LG엔솔, 벤틀리 첫 전기차 배터리 단독 공급…고수익 방어 - 리드경제",
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4zSm5jdGltUDlNQm1NZWRSdVJiYWF6aXVLcEJ5NmlsM1padU42empOQzVBQjJudUlOZlZ2eDZwN2VURUM1SGREVVZmam5uS2ZldzNpZzFtR3FxN2VoLXFqVmIzcHhfTTVCRElEV3cxaTY?oc=5",
@@ -1664,6 +3104,15 @@
    "published": "2026-10-16 01:43",
    "title": "“희토류 경쟁서 뒤처질라” … EU 내부 문건에 LS에코에너지 언급 왜? - 뉴데일리",
    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsY0FvMVVxNk9RUUFxTXlLcS1wdGJuVkpXMUs0NkZhUUVWbnhxbjhYeEpDRlc0R2lPNl8wOXprZ05OeGpUMG1VUzJ3OFEycXRBdWFMZU0zQS1fRGZnN3FKVngxMlFONTJzazJwZWdFSXFIWFFZQUpzZWpSSdIBgAFBVV95cUxQRW5FazZCdkIwTS12MUxjUy1uT3A0eksxR0RwcmxfVzRwSkcxQWxTZlkxQi1qMlJqS25WRzdta0IzWGc0aTl6bFVYb2ZSYWt0SEQwdkZRLWxYcVY5djNaelhtY1UyQ3hnb0tRenhRbGZvaGM3WkR1RlBuTUJfbWVYUQ?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 01:43",
+   "title": "“희토류 경쟁서 뒤처질라” … EU 내부 문건에 LS에코에너지 언급 왜? - 뉴데일리",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRW5FazZCdkIwTS12MUxjUy1uT3A0eksxR0RwcmxfVzRwSkcxQWxTZlkxQi1qMlJqS25WRzdta0IzWGc0aTl6bFVYb2ZSYWt0SEQwdkZRLWxYcVY5djNaelhtY1UyQ3hnb0tRenhRbGZvaGM3WkR1RlBuTUJfbWVYUdIBgAFBVV95cUxQRW5FazZCdkIwTS12MUxjUy1uT3A0eksxR0RwcmxfVzRwSkcxQWxTZlkxQi1qMlJqS25WRzdta0IzWGc0aTl6bFVYb2ZSYWt0SEQwdkZRLWxYcVY5djNaelhtY1UyQ3hnb0tRenhRbGZvaGM3WkR1RlBuTUJfbWVYUQ?oc=5",
    "disrupt": "수출통제",
    "materials": "희토;희토류",
    "status": "RELEVANT"
@@ -1691,6 +3140,15 @@
    "published": "2026-10-16 01:21",
    "title": "베트남 기업들은 새로운 EU 기준이라는 장벽에 직면해 있습니다. - Vietnam.vn",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTdqOUZlWk1uN21zYWx0dEZOSTc0TmpCaEkyOFdWR09oM0ZVSWo1ZkVtczlxUk8tU18waEVuaTNyY3BLbUM4OS1kZGxuMG5WY1RKcmJJNWdoaTdfaUlSaTZsMFNsMndoeHE5aTBGUXNpaGFxekcxSloyRHZqcVRqZWpyajZtVE0?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 01:18",
+   "title": "위험도가 높은 식품들은 더욱 엄격한 규제를 받게 될 것입니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDcHBuMXlTOTVfT0RnOTlYOUU5TWNBaTNCcngwSzJHc3R4amFwdGotUGhDcm9TZVFLSTgwREFvMG11RWlQdTVHd2NFd2FQWkVuNEltUXJtX1pXRFMxRjIwV2l4cUhMWXplaVRhQTNDdjY0WUdrYXZ1RVdrRjJyTUU?oc=5",
    "disrupt": "공급망 안전",
    "materials": "",
    "status": "CANDIDATE"
@@ -1742,6 +3200,15 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-16 00:55",
+   "title": "軍, 청해부대 호르무즈 인근까지 작전 범위 확대 검토 - 조선비즈 - Chosunbiz",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd2k2TzZiaGk3RzFObjFvV0xaMWt4Z3o2QVJjQ0JDYXZuUGY2LVQ2S1g4Mm5Bd0tVZTNPbVM3MVcyeHFtUmN5RDcyOUpkd0ZzelRjbDhwRm5QMFVmU2xjSkx0Ny1lUFA5ZXQyT01uRlRaM1A2cG1DRGNLZ3VkZmJSOFBLZ9IBlwFBVV95cUxPaUdDZW9tMjF4YllHclc2VEMwWUwzVDh0SjNHSFZ6WkhOTUVabzlkRlJYTVlGd2ZVYUdrMzRDQ3ZQZWoxM3N0ckVYSXdtbk81RmZQT3ZGQWNqZy1KV2FEQ1hjajF6VnFPVVpPSTgxZ0I1bV9zR2Q5WFdWSU50d01DZE53SS1FRzBuSGVseElNX3RRZkQ1WFVz?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-16 00:53",
    "title": "지아이텍, 발전소 폐수 재이용 설비 국산화 추진 - 디일렉",
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5c2k1LUxCcWJOaXlFTHN2VUF4VUdxTWZWYzhjX0FIVEJscFBPZE10WGNmVlhXMVg2TVEyQzlsdl9reGd5SS05c29mUDdxNlIzb0dHZmZCRk9oZ212dGp1bE9ISzNPQQ?oc=5",
@@ -1766,6 +3233,15 @@
    "disrupt": "생산 중단",
    "materials": "반도체;흑연",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-16 00:30",
+   "title": "청해부대, 호르무즈 인근까지 활동 넓히나…軍, 파병 연장 검토 - 민주신문",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YUFJxeWgzV215dGhnYzBqV0V1aWJEN0R3WEpTWnNwd3RDN3JIMGFjdHRHX3FnRVc5dHkxNnJPQ2EzN0M1RGEwZ0JjeS1iNmFZcTdQTXg1ZTZuM2tyaTB2VURUVWstWUXSAWtBVV95cUxPVlJnNmdHVjEweHA3M2tIZ05kZUdPLWt5aW1zR1lCY0p6WXgwblNTaWJFYVRhS044aVVNV0E1S1N3NDRORVhUOGxIdWdwSnRUajBQemdleGkxLWgwc3RUMHl4ZzlzYTd3OEFiRQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "GOOGLE",
