@@ -1,8 +1,350 @@
 {
  "as_of": "2026-10-17",
- "generated_at": "2026-10-17T03:07:11.532496+00:00",
- "count": 127,
+ "generated_at": "2026-10-17T11:59:55.582647+00:00",
+ "count": 179,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 20:50",
+   "title": "러 정유시설 가동차질 등에 10월16일 국제유가 상승",
+   "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229037",
+   "disrupt": "",
+   "materials": "선박;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 19:55",
+   "title": "주유소 기름값 22주 연속 내림세⋯휘발유·경유 1800원대",
+   "url": "http://www.inews24.com/view/2016117",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 19:24",
+   "title": "이란 혁명수비대 \"호르무즈 통과 유조선 폭발·화재\"…기뢰 충돌 주장",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=91011",
+   "disrupt": "폭발;화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 19:23",
+   "title": "[한반도브리핑] 한미, 전작권 전환 의견 충돌…호르무즈 '우회 파병' 검...",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261017192148fMN",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 19:02",
+   "title": "하다 하다 ‘트럼프海’까지… “이번엔 구글도 손사래 쳐”",
+   "url": "https://www.segye.com/newsView/20261017508615?OutUrl=naver",
+   "disrupt": "",
+   "materials": "세로",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 18:51",
+   "title": "美 전작권 조기 전환 신중론에 뿔난 시민단체들 \"즉각 환수하라\" 도심 ...",
+   "url": "https://www.news1.kr/society/incident-accident/6323341",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 18:44",
+   "title": "“전작권 환수 더는 미룰 수 없다”... 광화문서 울려 퍼진 ‘군사주권...",
+   "url": "https://vop.co.kr/A00001697193.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 18:34",
+   "title": "\"원료 자급화 취지 살려야\"…백선희 의원, 약가 가산 규제 완화 제기",
+   "url": "http://www.thefirstmedia.net/news/articleView.html?idxno=211122",
+   "disrupt": "공급망 안전",
+   "materials": "목적;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 18:08",
+   "title": "드론 공격에 결제·클라우드 흔들렸다…데이터센터가 전쟁 표적 된 이유",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249902",
+   "disrupt": "공급망 안전",
+   "materials": "금;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:44",
+   "title": "세계 최대 미군 기지도 침수 위기… 전선 바꾸는 기후변화 [S스토리-흔들...",
+   "url": "https://www.segye.com/newsView/20261012526232?OutUrl=naver",
+   "disrupt": "공급 차질",
+   "materials": "구리;다이아몬드;리튬;염과",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:37",
+   "title": "200만 배럴 싣고 가다 ‘쾅’…호르무즈·걸프만 유조선 잇단 화재",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02591206645613904&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "폭발;화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:32",
+   "title": "미국이 쏜 충격, 한국 증시에서 유독 크게 터졌다",
+   "url": "https://www.todayeconomic.com/news/article.html?no=32477",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:27",
+   "title": "호르무즈 해협 유조선 기뢰 충돌 화재…걸프만에선 로켓 피격",
+   "url": "https://www.newsis.com/view/NISX20261017_0003830049",
+   "disrupt": "폭발;화재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:27",
+   "title": "청해부대 작전 확대 검토에 공방…野 \"누구 말 믿나\" 與 \"불안 조장\"",
+   "url": "https://www.news1.kr/politics/assembly/6323304",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:22",
+   "title": "사우디·호르무즈 불안에 유가 재폭등…美 비축유 1700만 배럴 푼다",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=281002",
+   "disrupt": "공급 차질",
+   "materials": "사무;석유;용해;지연",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:02",
+   "title": "이란, 후티 반군에 사우디 공격 표적 등 정보 제공…이란은 부인",
+   "url": "https://www.newsis.com/view/NISX20261017_0003830036",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 17:01",
+   "title": "패권전쟁은 ‘남 얘기’ 아닌 우리의 미래 ‘예고편’이다",
+   "url": "https://shindonga.donga.com/3/all/13/6420412/1",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 16:57",
+   "title": "K-GX, 기후기술이 산업경쟁력이 되기 위한 조건",
+   "url": "https://zdnet.co.kr/view/?no=20261017162218",
+   "disrupt": "수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 16:46",
+   "title": "삼성증권 \"중국 광산 사고에 인도네시아 쿼터 조절까지…LX인터내셔널 ...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=496147",
+   "disrupt": "공급 차질;쿼터",
+   "materials": "석탄;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 15:56",
+   "title": "조희대 탄핵 추진? 경향신문도 \"국민이 공감하겠나\"",
+   "url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=337796",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 15:09",
+   "title": "“사우디 어떻게 때릴지 가르쳐 줄게”…후티에게 도움 준 이들의 정체",
+   "url": "https://www.mk.co.kr/article/12178468",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 15:05",
+   "title": "올해 3%대 성장하지만 4년 뒤 역성장? '반도체 호황'에 취할 때 아니다",
+   "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311939",
+   "disrupt": "",
+   "materials": "반도체",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 14:43",
+   "title": "WSJ “이란, 후티에 사우디 표적 선정·정보 제공·전술 지도”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8688192&ref=A",
+   "disrupt": "",
+   "materials": "사진",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 14:36",
+   "title": "다시 커지는 중동 포화 소리에 글로벌 해운운임 2주째 오름세",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=883865",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 14:29",
+   "title": "전쟁이 부른 공급 가뭄...전 세계 '경유 쟁탈전'",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610171429031299",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 14:16",
+   "title": "중국의 15W 극자외선 장비 시제품 공개, 한국 반도체의 기술 우위는 흔...",
+   "url": "https://www.g-enews.com/view.php?ud=202610171358298468fbbec65dfb_1",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 14:05",
+   "title": "기름값 22주째 내렸지만… 국제유가는 반등, 다시 오르나",
+   "url": "https://www.jibs.co.kr/news/articles/articlesDetail/66645?feed=na",
+   "disrupt": "반등",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:48",
+   "title": "\"이란, 후티에 정보 제공해 사우디 공격 도와\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261017134805ORy",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:46",
+   "title": "中 환구시보, 창신메모리 띄우며 韓 반도체 때리기… 머스크 발언 얹어...",
+   "url": "https://www.g-enews.com/view.php?ud=202610171328104182fbbec65dfb_1",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "공정;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:38",
+   "title": "CXMT 순익 26조원 충격…삼성전자·SK하이닉스 흔드는 중국 D램",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249749",
+   "disrupt": "수출통제",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:36",
+   "title": "\"혈우병 앓던 형제 6명 중 5명 사망\"…인도네시아, 혈장 의약품 공급망...",
+   "url": "https://www.hemophilia.co.kr/news/articleView.html?idxno=45101",
+   "disrupt": "공급망 안전",
+   "materials": "기관;원료;의약품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:34",
+   "title": "11월 국제선 유류할증료 3개월 연속 인상…\"연말 항공권 부담 상승\"",
+   "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=367486",
+   "disrupt": "반등;재개",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 13:27",
+   "title": "국내 기름값 22주 연속 하락…휘발유 1856.6원",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/10/17/2026101790046.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 12:54",
+   "title": "\"이란, 후티에 사우디 어디 어떻게 때릴지 가르쳐줬다\"",
+   "url": "https://www.yna.co.kr/view/AKR20261017026500009?input=1195m",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 12:40",
+   "title": "주유소 기름값 22주 연속 하락…휘발유 L당 1856.6원",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610170014",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 12:10",
+   "title": "11월 LPG가격 인상 쉽지 않을 듯…물가안정 부담에",
+   "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229035",
+   "disrupt": "가격 인상;공급차질;봉쇄",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 12:08",
+   "title": "국내 기름값 22주째 내리막…휘발유 1856.6원",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026101712064376029",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-17 12:06",
+   "title": "국내 주유소 기름값 22주 연속 내려... 휘발유 1,856원·경유 1,842원",
+   "url": "https://vop.co.kr/A00001697188.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-10-17 12:04",
@@ -976,6 +1318,15 @@
    "status": "CANDIDATE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-17 05:49",
+   "title": "슬롯 환수율조작 배당 조합의 표시 방향 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1EUW9lSjI0RGY2bVN6X2I3SWNTcDdsV0dXVW8tVmdFZkU0MzFDOFNzTGFxOTJpdjJrMkduLVVfNGpzNU00bGZqcGJlRmk1Tl9EM2Y3MEFKYVBvTDF0My02X0tHODJqT3JjM1FWVkVUYy0ycXVf?oc=5",
+   "disrupt": "수출통제",
+   "materials": "방향;조합;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-17 05:48",
    "title": "[핫이슈] 브렌트유 장중 110弗 '5개월來 최고'…호르무즈·사우디·러 '3...",
@@ -1021,6 +1372,15 @@
    "status": "NONE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-17 05:14",
+   "title": "중국의 15W 극자외선 장비 시제품 공개, 한국 반도체의 기술 우위는 흔들리지 않는다 - 글로벌이코노믹",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNEJqZHJFNXdGeHY4aVFCcUxBcUlra2ZaVWlvZklteXpMSDZJN0M4ZXQ5eWpFTlZWLUo2V0g1SWdCQWdGRkxkWEFVYTY2QmhVSnc5WURINU9wTHM5Ym85czFlb0pqRUdlNkh1X2hLVHg0cThuV194LS15YXVHYUtWc1dxd1FIUVE1?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-17 05:10",
    "title": "중동도 우크라도 불안…브렌트유 109달러대, 5개월 만에 최고",
@@ -1028,6 +1388,15 @@
    "disrupt": "수출 통제",
    "materials": "선박",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 05:09",
+   "title": "또 다른 초대형 유조선이 호르무즈 해협에서 제 유조선과 충돌하여 화재가 발생했습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeDk2MUM1aXd5RVg4YWdieHdxUjJtMFhfY2w2Y1JNUDZCYmw0RlR6SmJpeV9pam50TXgySGxwNTFFZFdPaUR4eUlYR256cnh0b21pSUU3MEZTRTN6LVp2Zlc2OXltUEtXcXZQc0Z4QnZnQmdjY0U2WEdvSUd3NE1zaUhPNDl5SkR3bG41clpzTVg3Zw?oc=5",
+   "disrupt": "화재",
+   "materials": "",
+   "status": "CANDIDATE"
   },
   {
    "source": "NAVER",
@@ -1048,6 +1417,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-10-17 05:00",
+   "title": "호르무즈 혼잡 속 선박 간 원유 환적, 인도 서부 해안으로 확산 - 뉴스 및 통계 - IndexBox",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZWFZXzUwX203RnlrNTVFeWZjQ0s2emt6c0J4cWxiUndPeGFFNlpfZzg0ekhGcXdJNDBOaGpyMWhoUlVtQkN4Q0Z0TVJReEZQUjhzZ3R4RjEwNExvWi1QbmtpQnhucGtYb1pmNUJwOUpQcnE3Y2x2WGdmMEpCMlRpU0JlWEFwaGxyV1d6aW1xcjF4bW42YXUybHFMVFNSb0xYSGU0S0Z4WnFrNDBjcS13YmZiOVc1QQ?oc=5",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-10-17 04:50",
    "title": "젠슨 황 “첨단 기술 수출 통제, 극도로 선별해야”",
@@ -1055,6 +1433,33 @@
    "disrupt": "수출 통제;수출통제",
    "materials": "무기;선별;희토;희토류",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 04:50",
+   "title": "유가 주간 상승: 호르무즈 공격·미국 재고 감소가 원유 가격 떠받쳐 - 뉴스 및 통계 - IndexBox",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQY0xieHBBblotMW1sc2N6ZEg4OG9uUVNvQXYwMkp1Zk9mY2tyWDY2QXAtbnZvT3ZyQ2N3T21XdnF6UmVIZDk5bHA3Vm1jblBHMHVrVDhVbjBxY09vNkpDbHE2NnlIcW5QS3I3azQ4dHluN092ck9BUVZYbUFiQS1Sc01OQ2k1bXRyNUM2MW5ZT0t4Ums2T2p0NDJpREhVeS1WLWdsa2NJUEVJc3djb2FGQjVLLUJWeEZkYVE?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 04:50",
+   "title": "이란의 유조선 공격 계획과 네타냐후·트럼프 관련 보도에 유가 상승 - 뉴스 및 통계 - IndexBox",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMjF4VGo1TEl1WXJlZVBCenp3clpDTzVSSC01eHV2WllNaExoR2JZYnF6TTZrU1F4aXJxOG1STy00STV4TkFSWC1TcFFkQ3k0ZFRmZlRkNTBpS1JHcVNzemlTSDcxWEZtczlHcFVMdmkwUnRPTVJSOTZ4dzcwd0g0aXptT080bEZDNUxpZVVoYnRMazdoZmRCTUgyNU9lX3l0cGE4?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 04:50",
+   "title": "호르무즈 LNG 통항 차질 지속에 파키스탄 겨울 가스 부족 우려 - 뉴스 및 통계 - IndexBox",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEdjdkZZLVlUaDhRMnBLYVVoTFJsVkYwQ01pTjlmQy1GdjRsVzkzeTcxUGFEQ3NIYm5IZVR1OENjRDd4WU9NaXpEZFB4dm9VQ2puN2lYQWlGQTZFVThucnVuTDR5M25DR2FDNS1JLWtpSnl4NldyZ2VTQ21kdWl4a2R6bl83RVlaWklfM21CM21TQlJ1bGdKaVoyU1I2czUzR2xHUWIzaEFjbTU1M2hwS2xB?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "NAVER",
@@ -1067,9 +1472,63 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-10-17 04:32",
+   "title": "로테르담항, 2026년 1~9월 처리량 0.9% 증가 - IndexBox",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdXc3WklXakgxb0RqcW1NcnAzcUtPSkRFWTBKeW10R1ozdllEOTJsMkh6Z1Vtc1NodW9KR19mSHBKY0hIOFlmWUVNbXotWlBxeG95T1h5RWx3WGlUZWJZS1hNM2dDSTVUdmRFVkl4T3M5NUVraDBqMXdiaW9COFBwQVhDajh3QTV0cWRKbDMyR3Nrd2NKX3ZVX0dWdFpDaTg3?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 03:55",
+   "title": "“이란 전쟁은 서방 제국주의의 일부”, 호르무즈 파병 논의 두고 강연 열려 - 서울대저널",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hTVI3VnBBS05PRWU4d1BrUzM1R01ZR1Etb2hMU2E0Y2hzSWRkcHdyT0FZbmpVSFM0MWRNZ3l4eFBzSzMwaUhoM20yNDR0US0waE1EcUFiblhuYXhONmZlVGtzR2tkUQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 03:13",
+   "title": "[성명] \"호르무즈 우회 파병 중단해야\" | - 논객닷컴",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PYV9oWjJJbWRyLW1jc3MxWVRHaVVHZDhZTnRDRUFkcDl4VVBySXJnM2VqeUZYMW1EMkttaWFGdjhMZTloWmM5RWtmZktKQWVNT1g0cm5QdjBXMzJDbUg2enRJQUpPdVhEaFMw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 03:11",
+   "title": "보건부는 식품 안전 위험 분석 시행을 준비하고 있습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeXl5TFEwNWt2RWs4Qnh4Z0N3OUNzVmpSa2JaQUljUzROTEpDVEk0VG5OX1hDYXgzZ2ZUYkg0NkJFR3ZBS1poR1JVWjBkM2RuWTJiX0VtbUFhQWZFajgtbk4tX3l1NmZCeTN0aHBVeVFHeXpwVl9PbjZ1VVFpb3hDZGVKb0NzOWNYSmxvdzNkN3dTLTQ?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 02:28",
+   "title": "중동지역 긴장감 고조에 국제유가 급등세···WTI 100달러 넘어서 - 투데이코리아",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82NGdNdno5Zy1hWFRrWlRiOUgzYUpxNlUtQUdGaUxxVFV5eUhkOUVwYmFfcFhQalNHSzlfaTZuWC1jYUhEQjBZZVRieGNFeURiVk9kNFdvU196UmxnMlVzZlMtYnpLRGhDbUhMZ2hTanI?oc=5",
+   "disrupt": "급등",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-10-17 02:27",
    "title": "이란군 “미국이 중동 떠나면 호르무즈 해협 재개방”…철수 거부 시 강제 축출 경고 - 파이낸스투데이",
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14eGZsTk1fZXppQXkzbTRXMUdrR2VJNTFibG0yQVU2ZUVKbWJTc09HaTB0elNJQnd3dEFDTUw3Rks4VWlLSUo5b0ZvUmctOVByUTJ6RHYyaG9DMVZhaHVWLVRkZW12NkxXUms4?oc=5",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 02:27",
+   "title": "이란군 “미국이 중동 떠나면 호르무즈 해협 재개방”…철수 거부 시 강제 축출 경고 - 파이낸스투데이",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5leU5GNjBjYkVuRFVieEFYSXRwOG1WdjJvbmdCRk5lLVhhbGlPdUs5dTBtVXdtX1BWY3JNSDRGWjdkNVVWTEZxMldqeFFXY3B0bmFNb09QTUlWTk5mZ09waTc0dHFxeXM?oc=5",
    "disrupt": "재개",
    "materials": "",
    "status": "CANDIDATE"
@@ -1127,6 +1586,15 @@
    "disrupt": "",
    "materials": "",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-17 00:31",
+   "title": "숫자 표시의 단위를 읽는 포커 4장 화면 가이드 - Calgary Roughnecks",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbnV4NXVEdU5CRHhWdEJrajIwZ2Z4bVZzQmpIOEwtVnRJZFhJa1JpaVdHNGpLZVdXd3FQZnlQY0x5UVpycFN0c2NEYmNHX1dScEM2VTd1MmVtRW9TOHJrckZOM2g3LU0wZWlxbEhyOFV5bllfczNuaDVRd2xVR0E3UkFMYUxGOWJEWERkczdlaHNEN0ptU3lNak9Cczhia3B1d1dLbm5vbm5fSHVCX2ZCOS1GdU1CV1lMelJaaHFUZ1hsYUxuVm8waVBHUjdlQzVPQm1pQmhPYW5UVnkzT3NB?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
