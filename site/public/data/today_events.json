@@ -1,1204 +1,1492 @@
 {
- "as_of": "2026-10-25",
- "generated_at": "2026-10-25T13:01:45.709241+00:00",
- "count": 133,
+ "as_of": "2026-10-26",
+ "generated_at": "2026-10-26T03:17:55.023597+00:00",
+ "count": 165,
  "events": [
   {
    "source": "NAVER",
-   "published": "2026-10-25 21:46",
-   "title": "[아주경제 오늘의 뉴스 종합] 반도체만 '맑음'…내수 부진·비용 상승에...",
-   "url": "https://www.ajunews.com/view/20261025213615566",
-   "disrupt": "수출통제",
+   "published": "2026-10-26 12:10",
+   "title": "中企수출 역대 3분기 최고…“K-뷰티, 온·오프 수출 쌍끌이”",
+   "url": "https://www.dt.co.kr/article/12091224?ref=naver",
+   "disrupt": "봉쇄",
    "materials": "반도체",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 21:41",
-   "title": "이란 외무 \"새 전쟁 일어나도 호르무즈 정책 그대로\"",
-   "url": "http://www.inews24.com/view/2018701",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 21:32",
-   "title": "이란 외무장관 \"美 재타격에도 정책 불변…호르무즈 관리 과거와 달라\"",
-   "url": "https://www.ajunews.com/view/20261025212936559",
-   "disrupt": "",
-   "materials": "수송;유지",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:36",
-   "title": "트럼프 재타격 시사에 이란 외무 “전쟁 다시 벌어져도 호르무즈 정책 ...",
-   "url": "https://biz.chosun.com/international/international_general/2026/10/25/SGRW777JR5EETNYPGQWV3X72ZU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "disrupt": "",
-   "materials": "수송",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:22",
-   "title": "오바마 \"관세, 물가만 올리고 재정적자 못 줄여\" 미시간 유세서 비판",
-   "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=620745",
-   "disrupt": "관세",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:18",
-   "title": "美 재타격 시사에도 이란 외무 “새 전쟁해도 호르무즈 정책 안 바꿀것...",
-   "url": "https://www.sedaily.com/article/20105885?ref=naver",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:15",
-   "title": "이란, 미국 재타격 시사에도 “호르무즈 해협 정책 바뀌지 않을 것”",
-   "url": "https://biz.heraldcorp.com/article/10914027?ref=naver",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:01",
-   "title": "또 ‘장대한 분노’ 꺼낸 트럼프…이란 “호르무즈 정책 안 바꾼다”",
-   "url": "https://www.joongang.co.kr/article/25472629",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 20:00",
-   "title": "이란 외무장관 \"美와 전쟁 재개돼도 호르무즈 정책 불변\"",
-   "url": "https://www.news1.kr/world/usa-canada/6331218",
-   "disrupt": "재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:45",
-   "title": "호르무즈보다 위험한 흑해...\"올해 570척 이상 피격\"",
-   "url": "https://www.ytn.co.kr/_ln/0104_202610251945160639",
-   "disrupt": "",
-   "materials": "선박",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:43",
-   "title": "이란 외무 \"새 전쟁 일어나도 호르무즈 정책 그대로\"",
-   "url": "https://www.ytn.co.kr/_ln/0104_202610251943413704",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:36",
-   "title": "[사설]고유가 임시방편 벗어나 안정적 에너지 수급책 짜야",
-   "url": "https://www.fnnews.com/news/202610251935115554",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:26",
-   "title": "이란 외무 \"미국 재타격에도 호르무즈 정책 변함없어\"",
-   "url": "https://view.asiae.co.kr/article/2026102519264657504",
+   "published": "2026-10-26 12:03",
+   "title": "K-뷰티·반도체 날았다…3분기 중소기업 수출 334억달러 ‘역대 최고’",
+   "url": "https://www.hani.co.kr/arti/economy/startup/1284145.html",
    "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:25",
-   "title": "이란 외무 \"새 전쟁 일어나도 호르무즈 정책 안 바뀌어\"",
-   "url": "https://imnews.imbc.com/news/2026/world/article/6860581_36925.html",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:12",
-   "title": "지역 기름값 하락세 지속…최고가격제 장기화 우려",
-   "url": "http://www.kjdaily.com/article.php?aid=1792923039690181004",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 19:08",
-   "title": "이란 외무 \"새 전쟁 일어나도 호르무즈 정책 안 바뀌어\"",
-   "url": "https://www.yna.co.kr/view/AKR20261025044500099?input=1195m",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:56",
-   "title": "“진퇴양난” 7개월 넘은 석유 최고가격제 ‘출구 딜레마’",
-   "url": "https://www.seoul.co.kr/news/economy/2026/10/25/20261025500088?wlog_tag3=naver",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:48",
-   "title": "반도체·군공항 현안대책 요구 봇물···광주특별시의회, 국가 지원 촉...",
-   "url": "http://www.mdilbo.com/detail/tohfpC/759976",
-   "disrupt": "공급 차질",
-   "materials": "러스터;반도체;받침;조성",
+   "materials": "반도체;전지;축전지",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 18:46",
-   "title": "부채 장사, 우산 장사 [헬로, 크립토]",
-   "url": "https://www.hani.co.kr/arti/opinion/column/1284073.html",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:44",
-   "title": "트럼프, 정말 이란 재타격?...\" 美항모 벙커버스터 폭탄 가득 탑재\"",
-   "url": "https://www.ngonews.kr/news/articleView.html?idxno=241400",
+   "published": "2026-10-26 12:02",
+   "title": "K-뷰티 앞세운 중소기업 수출 ‘역대 최대’… 3분기 334억달러",
+   "url": "https://www.viva100.com/article/20261026500509",
    "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:36",
-   "title": "트럼프發 중동전쟁 재점화 우려에…유가 117달러 돌파",
-   "url": "https://www.hankyung.com/article/2026102535241",
-   "disrupt": "",
-   "materials": "석유;점화",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:18",
-   "title": "미국·이란 전쟁 다시 격화되나…트럼프 공습 위협과 호르무즈 협상 충...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16257432",
-   "disrupt": "봉쇄;재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:06",
-   "title": "확전 치닫는 중동 전쟁… 트럼프, 선거 전 이란공습 가능성",
-   "url": "https://www.fnnews.com/news/202610251805347879",
-   "disrupt": "봉쇄;재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:04",
-   "title": "포스코 노조, 임협 결렬에 내달 2일부터 '무기한 파업' 예고",
-   "url": "https://news.tf.co.kr/read/economy/2380454.htm",
-   "disrupt": "생산 중단;파업",
-   "materials": "강판;공정;무기;철강",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 18:04",
-   "title": "“미 항공모함, 벙커버스터 보충”…이란 재타격 ‘카운트다운?’ [이런...",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694539&ref=A",
-   "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:58",
-   "title": "DS투자증권 \"포스코퓨처엠, 연평균 10만t 수주 기반 확보…2028년 가동률...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498251",
-   "disrupt": "공급 차질",
-   "materials": "리튬;배터리;양극;양극재;인산",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:57",
-   "title": "“이란 ‘美 해상봉쇄 해제→호르무즈 재개방’ 제안 파키스탄 전달”...",
-   "url": "https://www.dt.co.kr/article/12091117?ref=naver",
-   "disrupt": "봉쇄;재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:44",
-   "title": "“계약했던 금액으론 이제 어림 없습니다”...공사비 40%씩 오른 서울 재...",
-   "url": "https://www.mk.co.kr/article/12185267",
-   "disrupt": "공급 차질;급등",
-   "materials": "금;원자재;조합",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:20",
-   "title": "올해 흑해 선박 570척 피격·40명 사망… 호르무즈보다 피해 커",
-   "url": "https://biz.chosun.com/international/international_general/2026/10/25/756ZDU7OQJA57KEATZHCNFDLFY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "disrupt": "",
-   "materials": "선박;수송",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:08",
-   "title": "[르포] 사랑 듬뿍 과학 영재, 국가 초석으로 화답 중국과기대, 소년반·...",
-   "url": "http://www.hellodd.com/news/articleView.html?idxno=113534",
-   "disrupt": "봉쇄",
-   "materials": "고리;반도체",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:07",
-   "title": "계약때보다 40% '쑥'… 재건축 공사비 쇼크",
-   "url": "https://www.mk.co.kr/article/12185151",
-   "disrupt": "공급 차질;급등",
-   "materials": "건축;원자재;조합",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:02",
-   "title": "국제유가 급등에...항공·해운·車 또 고비용 ‘몸살’",
-   "url": "https://www.etoday.co.kr/news/view/2639445",
-   "disrupt": "급등",
-   "materials": "연료",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 17:02",
-   "title": "또 110달러 넘나드는 국제유가…기름값 잡은 최고가격제, 출구전략 고심",
-   "url": "https://www.ajunews.com/view/20261025162450265",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:49",
-   "title": "올해 ‘선원 사망 1위’ 해상은 흑해…“호르무즈보다도 위험”",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694524&ref=A",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:44",
-   "title": "난방자재 19%, 전기보일러 21% 올라...중동발 고물가 위협 커진다",
-   "url": "https://www.joongang.co.kr/article/25472610",
-   "disrupt": "공급 차질;급등;봉쇄",
-   "materials": "비료;현상",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:36",
-   "title": "[기고] 제품 결함에 3배 배상 있는데···집단소송까지 더하려는 국회",
-   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=260189",
-   "disrupt": "생산 중단",
-   "materials": "반도체;배터리",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:36",
-   "title": "오바마 “이란에 호르무즈 통제권 줬다”⋯트럼프와 지원유세 격돌",
-   "url": "https://www.etoday.co.kr/news/view/2639768",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:29",
-   "title": "\"호르무즈보다도 위험\"…흑해, 전세계 가장 치명적 항로",
-   "url": "https://www.yna.co.kr/view/AKR20261025035400009?input=1195m",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:22",
-   "title": "내년 산업별 희비 교차… 반도체 웃고 車·조선·석화는 부담",
-   "url": "https://www.newscj.com/news/articleView.html?idxno=3442916",
-   "disrupt": "수출 제한",
-   "materials": "리튬;반도체",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:18",
-   "title": "중동 확전 위기에 국제유가 다시 들썩⋯ 120달러 넘보나",
-   "url": "https://www.viva100.com/article/20261025500397",
-   "disrupt": "",
-   "materials": "석유;수송",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 16:00",
-   "title": "중동 떠날 고객 잡는다…SK엔무브, 공급 안정성 부각",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=676539",
-   "disrupt": "급등;봉쇄;불가항력",
-   "materials": "원료;타르",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 15:59",
-   "title": "공습 재개냐 협상 타결이냐... 이란 둘러싼 긴장 재고조",
-   "url": "https://www.fnnews.com/news/202610251545149491",
-   "disrupt": "봉쇄;재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 15:40",
-   "title": "인니, 싱가포르 가스 공급 감축…산불 연무 갈등 속 '보복' 의구심",
-   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261025010008447",
-   "disrupt": "수출 제한",
-   "materials": "광물",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:59",
-   "title": "WSJ “미 워싱턴함, 벙커버스터 보충…공격 감행 준비 태세”",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694510&ref=A",
-   "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:48",
-   "title": "이란 재타격 관측속 벙커버스터 가득 보충한 美항모...\"준비됐다“",
-   "url": "https://www.m-economynews.com/news/article.html?no=72081",
-   "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:35",
-   "title": "미 항모 워싱턴함, 대규모 무기 보급 중…\"이란 재타격 움직임\"",
-   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5226967",
-   "disrupt": "봉쇄",
-   "materials": "무기",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:12",
-   "title": "이란 재타격 관측 속 벙커버스터 가득 보충한 미 항모…\"준비됐다\"",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008813864&plink=ORI&cooper=NAVER",
-   "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:06",
-   "title": "환율 부담에도 성장세 이어간다… 심텍, SOCAMM·FC-CSP 주목",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498212",
-   "disrupt": "수출 제한",
-   "materials": "반도체;형태",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:03",
-   "title": "중간선거 앞두고 트럼프 ‘이란 재타격’ 감행할까",
-   "url": "https://www.mk.co.kr/article/12185028",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:00",
-   "title": "[주간 증시 전망] AI 수익성 우려에 발목…빅테크 실적·美FOMC '분수령'",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=900595",
-   "disrupt": "수출 제한",
-   "materials": "반도체;전지",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:00",
-   "title": "인도네시아, '산불 갈등' 싱가포르에 가스 공급 감축",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008813863&plink=ORI&cooper=NAVER",
-   "disrupt": "수출 제한",
-   "materials": "광물",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 14:00",
-   "title": "[해운 호황의 수명②] 같은 VLCC, 다른 계산···팬오션·장금상선, 운...",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=640886",
-   "disrupt": "봉쇄",
-   "materials": "계산;금;선박",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 13:58",
-   "title": "10만 톤 친환경 메탄올 쏜다…미쓰비시가스화학의 탄소 승부수",
-   "url": "https://www.g-enews.com/view.php?ud=202610251355412199e7e8286d56_1",
-   "disrupt": "가동 중단;생산 중단",
-   "materials": "길이;메탄;메탄올;탄소;튜브",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 13:37",
-   "title": "對이란 교체투입 美항모 워싱턴호, 폭탄·물자 가득 실었다…군사옵션...",
-   "url": "https://www.dt.co.kr/article/12091071?ref=naver",
-   "disrupt": "봉쇄;재개",
-   "materials": "기와",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 13:30",
-   "title": "세아제강, 美 강관값 올랐지만…원가·환율에 수익성 '발목'",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=676620",
-   "disrupt": "관세;수출 제한",
-   "materials": "강판;지지;철강",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 13:13",
-   "title": "인도네시아, '산불 갈등' 싱가포르에 가스 공급 감축",
-   "url": "https://www.yna.co.kr/view/AKR20261025026500084?input=1195m",
-   "disrupt": "수출 제한",
-   "materials": "광물",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 12:56",
-   "title": "'게임오버' 트럼프의 충격적인 계획...전 세계는 다시 '초긴장' [자막뉴...",
-   "url": "https://www.ytn.co.kr/_ln/0134_202610251256385643",
-   "disrupt": "폭발",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 12:55",
-   "title": "이란 재타격 관측속 벙커버스터 가득 보충한 美항모…\"준비됐다\"",
-   "url": "https://www.yna.co.kr/view/AKR20261025026000009?input=1195m",
-   "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 12:08",
-   "title": "“선거 끝나면 가만 안 둔다”…트럼프, 이란 대규모 공습 준비하나 [이...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261025021000861",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 11:41",
-   "title": "AI보다 이익 두 배 빨리 는다…월가가 주목한 에너지주 [GMC]",
-   "url": "https://www.joongang.co.kr/article/25472560",
-   "disrupt": "",
-   "materials": "석유;수송",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 11:32",
-   "title": "대선조선, 3년 만에 워크아웃 졸업… 조선기자재 업체 'SB선보' 품으로",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=282352",
-   "disrupt": "가격 상승;공급 차질",
-   "materials": "건조;금;선박;연료;용접;원자재;지연",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 11:26",
-   "title": "[경제칼럼] 수출 1조 달러 시대, 그 다음을 준비할 때",
-   "url": "https://www.idaegu.com/news/articleView.html?idxno=666459",
-   "disrupt": "수출통제",
    "materials": "반도체",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 11:16",
-   "title": "美정보수장 \"이란, 미국인 살해 음모 진전\"…중동서 인력 철수",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01466166645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "disrupt": "봉쇄;제재",
-   "materials": "유지",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:50",
-   "title": "러시아가 28억짜리 미사일 대신 ‘3D프린터 미사일’ 띄운 숨은 이유",
-   "url": "https://www.g-enews.com/view.php?ud=202610251043252862fbbec65dfb_1",
-   "disrupt": "수출통제",
-   "materials": "고리;공정;반도체",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:42",
-   "title": "오바마, “캐나다가 악의 제국인가”… 디트로이트 유세서 트럼프 대외...",
-   "url": "https://www.segye.com/newsView/20261025503636?OutUrl=naver",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:39",
-   "title": "트럼프, 중간선거 뒤 이란 공습 재개 위협…이란은 보복 준비",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01387446645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "disrupt": "재개",
-   "materials": "높이;선박",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:31",
-   "title": "석유 최고가격제 언제 끝나나…재정 부담 우려도",
-   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261025103040F4m",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:14",
-   "title": "중동발 에너지 리스크 상시화...석유·가스 공급선 다변화 시급",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=228809",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:12",
-   "title": "테일러에 장비 밀어 넣는 삼성… 2나노 승부수로 파운드리 판 흔든다",
-   "url": "https://www.g-enews.com/view.php?ud=202610251003281288fbbec65dfb_1",
-   "disrupt": "공급 차질",
-   "materials": "금;반도체;보조",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:06",
-   "title": "도쿄가스, 후쿠시마 해상풍력 포기…日재생에너지 정책 어쩌나",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01351366645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "disrupt": "공급 차질",
-   "materials": "건설;방향;원자재",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 10:02",
-   "title": "11월 제조업 회복 기대 꺾였다…반도체 ‘웃고’ 휴대폰 ‘울고’",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01331686645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "disrupt": "공급 차질;파업",
-   "materials": "반도체;차량",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:40",
-   "title": "석유 최고가격제 장기화 딜레마…재정부담에 출구전략 고민",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008813647&plink=ORI&cooper=NAVER",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:30",
-   "title": "[글로벌 주간 브리핑] 투자 늘려도 주가는 하락…AI·반도체·자동차의...",
-   "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=319530",
-   "disrupt": "수출 통제;수출통제",
-   "materials": "반도체;희토;희토류",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:30",
-   "title": "원유는 돌아오는데 LNG는 막혔다…겨울 앞둔 국내 에너지 수급 '긴장'",
-   "url": "https://www.mediapen.com/news/view/1132116",
-   "disrupt": "",
-   "materials": "사진;석유;수송",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:24",
-   "title": "금시세·금값 25일",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202610240125",
-   "disrupt": "",
-   "materials": "금;선박",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:16",
-   "title": "‘입으로 싸우는’ 트럼프 “‘장대한 분노’ 작전, 한 번 더”…다음 ...",
-   "url": "https://nownews.seoul.co.kr/news/newsView.php?id=20261025601002&wlog_tag3=naver",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:10",
-   "title": "해킹 능력 스스로 줄인 中 문샷 AI, '안전'과 '개방' 두 토끼 잡을 수 있...",
-   "url": "https://www.g-enews.com/view.php?ud=202610250734002948fda4f5ab74_1",
-   "disrupt": "공급망 안전",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 09:00",
-   "title": "중동발 원유 흔들리자 AI가 구리 삼켰다…글로벌 자원 전쟁에 한국 전선...",
-   "url": "https://www.g-enews.com/view.php?ud=202610250856125747fbbec65dfb_1",
-   "disrupt": "공급 차질;관세;품귀",
-   "materials": "구리;리튬;인공",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:58",
-   "title": "사우디·후티, 석유시설ㆍ군사기지 맞불⋯“예멘서 16명 사망”",
-   "url": "https://www.etoday.co.kr/news/view/2639690",
+   "published": "2026-10-26 12:02",
+   "title": "K뷰티가 역대 최대 中企 수출 이끌었다…북미·유럽→중남미 수출국가 ...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02833926645616856&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "disrupt": "봉쇄",
-   "materials": "석유;유지",
+   "materials": "반도체;인공",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 08:58",
-   "title": "수급 공백·AI 신용 불안에 갇힌 코스피…이번 주 ‘실적 슈퍼위크’가...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261025021520838",
-   "disrupt": "",
-   "materials": "선박",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:54",
-   "title": "트럼프, 이란 추가 군사작전 시사…중간선거 앞두고 브렌트유 116달러 돌...",
-   "url": "https://www.g-enews.com/view.php?ud=202610240902352362fda4f5ab74_1",
+   "published": "2026-10-26 12:02",
+   "title": "K-뷰티·반도체 날았다…中企 3분기 수출 334억달러 '역대 최대'",
+   "url": "https://www.nocutnews.co.kr/news/6596964?utm_source=naver&utm_medium=article&utm_campaign=20261026120111",
    "disrupt": "봉쇄",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:26",
-   "title": "노르웨이 700억 톤 인광석, 장밋빛 환상 걷어낸 '냉정한 채산성 성적표...",
-   "url": "https://www.g-enews.com/view.php?ud=2026102508240469240c8c1c064d_1",
-   "disrupt": "수출 통제;수출통제",
-   "materials": "리튬;배터리;비료;원료;인산;인산염",
+   "materials": "반도체;유지;전지;축전지",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 08:25",
-   "title": "[인사이트 뉴스] 국가 위상 커진 한국, 그늘도 짙어졌다…반도체 호황을...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7624",
-   "disrupt": "수출 제한",
-   "materials": "반도체;지지",
+   "published": "2026-10-26 12:02",
+   "title": "'K뷰티·반도체'가 이끈 성장세…3분기 中企 수출 '역대 최대'",
+   "url": "https://news.mtn.co.kr/article/2026102610042532823",
+   "disrupt": "봉쇄",
+   "materials": "반도체;전지;축전지",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 08:06",
-   "title": "비트코인 또 폭락하나? AI 부채 위기·유가 114달러에 '이중 경고'",
-   "url": "http://coinreaders.com/265077",
-   "disrupt": "",
-   "materials": "선박;수송;신호",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:02",
-   "title": "에코프로 이동채 “삼원계 배터리 미래 열린다”…불황 속 성장동력 모...",
-   "url": "https://www.sentv.co.kr/article/view/sentv202610230118",
-   "disrupt": "공급 차질",
-   "materials": "니켈;망간;배터리;알루미늄;코발트",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:02",
-   "title": "국제유가 급등에 해제 조건 멀어져…석유 최고가격제 언제 끝날까",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498179",
-   "disrupt": "급등",
-   "materials": "석유;수송",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:01",
-   "title": "게르마늄값 2배 ‘껑충’…재조명받는 고려아연의 ‘선견지명’ [비즈3...",
-   "url": "https://biz.heraldcorp.com/article/10913286?ref=naver",
-   "disrupt": "수출통제",
-   "materials": "갈륨;게르마늄;광물;아연;안티모니;인듐",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:01",
-   "title": "밖에선 '귀한 몸'이라는데…한국서만 헐값 된 '이것' 정체 [프라이스&]",
-   "url": "https://www.hankyung.com/article/202610231575i",
-   "disrupt": "공급 차질",
-   "materials": "고철;원자재;철강",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 08:00",
-   "title": "AI 반도체 무한경쟁시대 시험대 오른 소부장 산업 [비즈앤피플]",
-   "url": "https://www.busan.com/view/busan/view.php?code=2026102218075252719",
-   "disrupt": "수출 통제;수출통제",
+   "published": "2026-10-26 12:01",
+   "title": "K뷰티·반도체 수출 호조…中企 수출 334억달러 '역대 분기 최대'",
+   "url": "https://www.etnews.com/20261026000121",
+   "disrupt": "봉쇄",
    "materials": "반도체",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 07:52",
-   "title": "석유 생산 늘어도 안심 못 한다…한국 에너지 정책 바꿔야 하는 이유 보...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=498177",
-   "disrupt": "",
-   "materials": "사진;석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:48",
-   "title": "[K-방산 AtoZ] 이란 미사일 막아낸 '천궁-II'…중동이 K-방공망 택한 이...",
-   "url": "https://www.theguru.co.kr/news/article.html?no=108746",
-   "disrupt": "",
-   "materials": "무기",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:40",
-   "title": "\"지정학적 리스크 속 에너지 공급망 위기, 한국의 생존 전략은?\"",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=882610",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:40",
-   "title": "석유 최고가격제 7개월째, 유지와 종료 사이의 갈등 속에서 정부의 고민...",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=882612",
-   "disrupt": "",
-   "materials": "석유;유지",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:36",
-   "title": "[AI칩 지정학] ㉑ 삼성·YMTC와 싸워야 하는데···SK하닉 주주환원하다...",
-   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=260187",
-   "disrupt": "생산 중단",
+   "published": "2026-10-26 12:01",
+   "title": "화장품·반도체가 이끈 中企 수출…3분기 334억달러 ‘역대 최대’",
+   "url": "https://biz.chosun.com/industry/business-venture/2026/10/26/MQEZZ6K7WNAHFNXFPFNQC5HQAQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "disrupt": "봉쇄",
    "materials": "반도체",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 07:21",
-   "title": "석유·가스 상시 수급불안…\"저비용 넘어 공급 회복력 확보해야\"",
-   "url": "https://www.yna.co.kr/view/AKR20261023120200003?input=1195m",
+   "published": "2026-10-26 12:00",
+   "title": "K-뷰티가 이끈 中企 수출…3분기 '역대 최대'",
+   "url": "https://biz.sbs.co.kr/article_hub/20000342066?division=NAVER",
+   "disrupt": "봉쇄",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "K-뷰티·반도체가 이끈 中企 수출...334억달러로 역대 3분기 최고치",
+   "url": "https://www.newspim.com/news/view/20261026000274",
+   "disrupt": "봉쇄",
+   "materials": "반도체;용기;전지;축전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "3분기 中企 수출 334억달러 '역대 최대'…K뷰티·반도체 호조",
+   "url": "https://www.yna.co.kr/view/AKR20261026047000030?input=1195m",
+   "disrupt": "봉쇄",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "K-뷰티 '또 일냈다', 수출 상승세 지속…中企 수출 역대 3분기 최고치",
+   "url": "https://www.mt.co.kr/economy/2026/10/26/2026102610440152874",
+   "disrupt": "봉쇄",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "\"K-뷰티·반도체 덕\"…3분기 중기 수출 '역대최고'",
+   "url": "https://www.newsis.com/view/NISX20261026_0003840751",
+   "disrupt": "봉쇄",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "3분기 중소기업 수출액 역대 최고치…화장품·반도체가 견인",
+   "url": "https://view.asiae.co.kr/article/2026102610505243777",
+   "disrupt": "봉쇄",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "中企 수출 334억달러 '역대 3분기 최대'…K-뷰티·반도체 견인",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=2010110",
+   "disrupt": "봉쇄",
+   "materials": "반도체;전지;축전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 12:00",
+   "title": "뷰티 28.6%·반도체 68.8%↑…中企 3Q 수출액 334억 달러 '역대 최대'",
+   "url": "https://www.news1.kr/industry/sb-founded/6331489",
+   "disrupt": "봉쇄",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:56",
+   "title": "유럽, 무기 살 돈은 넘치는데 국민에 쓸 돈은 없다?",
+   "url": "https://vop.co.kr/A00001697314.html",
    "disrupt": "",
-   "materials": "석유",
+   "materials": "금;무기;연료",
    "status": "NONE"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 07:20",
-   "title": "中 덤핑·수요 침체·노조 파업 삼중고…포스코 등 철강업계 승부수는?",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=282339",
-   "disrupt": "공급 차질;파업",
-   "materials": "강판;소화;열연;철강",
+   "published": "2026-10-26 11:48",
+   "title": "트럼프 “이란 문제 결정 임박”...네타냐후는 27일 이전 공격 지시설",
+   "url": "https://www.sedaily.com/article/20106071?ref=naver",
+   "disrupt": "",
+   "materials": "선박;용해",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:46",
+   "title": "AI에 밀린 車 메모리...더해지는 원가압박",
+   "url": "https://dealsite.co.kr/articles/171308",
+   "disrupt": "가격 상승;공급 차질;급등",
+   "materials": "반도체;보드;전자",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 07:15",
-   "title": "오바마 \"이란 전쟁·관세로 물가 폭등…트럼프, 백악관 금칠만 몰두\"",
-   "url": "https://www.news1.kr/world/usa-canada/6330855",
-   "disrupt": "관세",
-   "materials": "금;세로",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:14",
-   "title": "정연태의 전문지식 GPT 혁명 ⑧ | 엔비디아가 설계하는 AI 산업혁명의 미...",
-   "url": "https://www.koreaittimes.com/news/articleView.html?idxno=158481",
-   "disrupt": "공급망 안전",
-   "materials": "건설;공정",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 07:02",
-   "title": "[단독] 美 규제에 백기' 中 롱바이, 충주 양극재 공장 임대…韓사업 재...",
-   "url": "https://www.theguru.co.kr/news/article.html?no=108738",
+   "published": "2026-10-26 11:46",
+   "title": "월성원전을 둘러보며 생각한 대한민국 원자력의 미래",
+   "url": "http://www.breaknews.com/1245594",
    "disrupt": "공급 차질",
-   "materials": "니켈;망간;양극;양극재;코발트",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 06:53",
-   "title": "무인 항공기는 항공 기술 생태계 발전을 주도하고 있습니다. - Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZHdnSUhKcUI1dlNiem9FVmdnOWtwSXZuRVVZQ2lUSng5dXFDZ0I1NE1idm5tUGhXQVNuNXJROFgtT01sWUQwVzdUbjBFdGV2LWJDdFdfRFdreVZNbVdYVmdWYjNiNFBnNnJZSkVhUEFCdDdxakpQQi00WmI3ZlVlY2Fn?oc=5",
-   "disrupt": "수출통제",
-   "materials": "공기;항공기",
+   "materials": "건설;금;반도체;전자",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 06:45",
-   "title": "석유 최고가격제 장기화 딜레마…재정부담에 출구전략 고민",
-   "url": "https://www.yna.co.kr/view/AKR20261023186900003?input=1195m",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 06:36",
-   "title": "\"中 덤핑 피해 인도로\"… 日 JFE 스틸, 인도 JSW와 대형 고로 신설해 생...",
-   "url": "https://www.g-enews.com/view.php?ud=2026102422551181880c8c1c064d_1",
+   "published": "2026-10-26 11:38",
+   "title": "[아시아라운드업 20261026] \"총선 접전 네타냐후, 트럼프에 공개지지 요...",
+   "url": "http://kor.theasian.asia/archives/419744",
    "disrupt": "수출 제한",
-   "materials": "strip;강판;공정;철강;코일",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 06:20",
-   "title": "트럼프 “내일이라도 이란 공격”…걸프지역 미국인 출국 명령 - 한겨레",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcThEZEVpRGZMZVFzUWtIVVdZaV9ZLTZOcXhQZkxObXk2eXJwOXhHeDljeHRDN1dfS3Q1bUtyNWFXMlpzSEJlMmlPUkYwQnE1VVBvSy1SVjhsRDY5X2V1cjBxc0NwODM1al83cWFQN1JPU3llNWc2WjhSYXJfV1RFTExR?oc=5",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 06:03",
-   "title": "이더리움 투자자가 26,974 이더리움 매수 후 84만 달러 수익 기록 (ETH, 26974, 63.88M, 842K) - 민심뉴스",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iUjE3N19SVkd0ZEJLT3hYMXNQemdGTy1tVzhXZWxtLTh4TGZaNDV0Y2VLLXdrRmY0dHlhWXNsWFRSNGVpbXBtbE5DMDBWS1lHSFF2QTlrUUZDZUVGX1l2T0hWMGV2SThrVUpUag?oc=5",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 06:01",
-   "title": "[인터뷰] K-라디오 통합 플랫폼 추진하는 방송통신전파진흥원… 이상훈...",
-   "url": "https://biz.chosun.com/it-science/ict/2026/10/25/VJPETIX5FVFFDKVAB5BBUIUU4E/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "disrupt": "공급 차질",
-   "materials": "광물;희토;희토류",
+   "materials": "광물;지지",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 06:00",
-   "title": "26년 만에 만든 'CHIP' 전시관…'반도체 굴기' 다시 힘주는 중국?",
-   "url": "https://www.mt.co.kr/world/2026/10/25/2026102310271946840",
-   "disrupt": "수출통제",
-   "materials": "공업;공정;반도체",
+   "published": "2026-10-26 11:28",
+   "title": "[포커스] 원·달러 환율 1320원선 수급 공방… 2년만에 '強원화' 격세지...",
+   "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=817029",
+   "disrupt": "강세;수출 제한",
+   "materials": "반도체",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 06:00",
-   "title": "\"AI 투자 거품 붕괴 경고…글로벌 경제 충격, 한국도 예외 아냐\"",
-   "url": "https://www.mt.co.kr/world/2026/10/25/2026102313455310948",
+   "published": "2026-10-26 11:24",
+   "title": "[개장 시황] 코스피, 전장 대비 소폭 내린 5499.05로 출발…반도체 대장...",
+   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279631",
    "disrupt": "수출 제한",
    "materials": "반도체;전자",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 06:00",
-   "title": "롯데케미칼 3분기 영업수지 적자 전환 확실, 이영준 체질 개선 속도 시...",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449929",
+   "published": "2026-10-26 11:24",
+   "title": "광양 2고로 21년 만의 대수술 나선 포스코…미래 경쟁력 위한 승부수",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=282465",
    "disrupt": "공급 차질",
-   "materials": "나프타;석유;수지",
+   "materials": "강판;철강",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 06:00",
-   "title": "[박근종 칼럼] 시장 왜곡과 재정 부담 우려 키우는 '석유 최고가격제', ...",
-   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=765760",
+   "published": "2026-10-26 11:12",
+   "title": "룰라 4선, 한-브라질 협력 탄력 기대",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=365174",
+   "disrupt": "수출 제한",
+   "materials": "광물;비중;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:12",
+   "title": "국제유가 120弗 육박…겨울 에너지물가 ‘비상’",
+   "url": "https://biz.heraldcorp.com/article/10914650?ref=naver",
+   "disrupt": "공급 차질",
+   "materials": "나프타;연탄;유연탄;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:08",
+   "title": "미래 전장 대응 기술 한자리에, 미 육군협회 연례 방산전시회 AUSA 2026 참...",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244837",
+   "disrupt": "공급망 안전",
+   "materials": "안구;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:06",
+   "title": "중국 전기차 韓 시장 급속 잠식..\"전방위 대책 시급\"",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2120405",
+   "disrupt": "수출 제한",
+   "materials": "니켈;망간;배터리;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:02",
+   "title": "[프랑스 위기] 불안 확산…유럽 재정위기 재연되나",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441076",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 11:02",
+   "title": "기후총회 개최국 튀르키예, 회의 개최 앞두고 석유 운송망 확대 협의 나...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=450240",
    "disrupt": "봉쇄",
    "materials": "석유",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 05:52",
-   "title": "한국 기술산업 광물 수입 95% 의존, 칠레가 핵심 공급 파트너로 부상",
-   "url": "https://www.g-enews.com/view.php?ud=2026102505465484452bd56fbc3c_1",
-   "disrupt": "수출 제한",
-   "materials": "광물;구리;니켈;리튬;흑연;희토;희토류",
+   "published": "2026-10-26 11:02",
+   "title": "에이빙 뉴스, CRRE 2026 공식 미디어 파트너로 글로벌 홍보 지원",
+   "url": "https://kr.aving.net/news/articleView.html?idxno=1815990",
+   "disrupt": "공급망 안전",
+   "materials": "carbon;정제;탄소;폐기물",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 05:52",
-   "title": "[북한 주간브리핑 10.18~24] 접경 긴장 고조 속 김정은 방중…군사·외교...",
-   "url": "http://kor.theasian.asia/archives/419575",
+   "published": "2026-10-26 11:00",
+   "title": "[김성우 시평] 에너지전환의 공급망 리스크",
+   "url": "https://www.ekn.kr/web/view.php?key=20261026020323494",
+   "disrupt": "수출통제",
+   "materials": "양극;양극재;흑연",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:56",
+   "title": "[中企 현장 목소리] 예측 가능한 인건비, 가공단가에 반영은 요원",
+   "url": "http://www.kbiznews.co.kr/news/articleView.html?idxno=115048",
+   "disrupt": "공급망 안전",
+   "materials": "계산;금;전용",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:53",
+   "title": "전력수요 늘어나는 캐나다, 송변전∙저장장치 시장에 주목",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=244862",
+   "disrupt": "공급망 안전",
+   "materials": "분리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:52",
+   "title": "국제유가 117달러 돌파…겨울철 난방비 폭탄 우려",
+   "url": "https://biz.heraldcorp.com/article/10914585?ref=naver",
    "disrupt": "공급 차질",
+   "materials": "나프타;연탄;유연탄;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:50",
+   "title": "패색 짙은 트럼프...이란에 '화풀이 공습' 나서나",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610261050544085",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:48",
+   "title": "스리랑카, 미국 제재로 귀국 못 하던 이란 선원 40명 구조·송환",
+   "url": "https://www.khan.co.kr/article/202610261048001",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:46",
+   "title": "4.8조 투자해 100억 버는 포스코 … 시험대 오른 리튬 승부수",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/26/2026102600096.html",
+   "disrupt": "가격 상승;생산 중단",
+   "materials": "리튬;수산;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:44",
+   "title": "삼일PwC \"중국 반도체 굴기 본격화…삼성전자·SK하이닉스 차세대 기술...",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=558168",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:42",
+   "title": "룰라의 귀환 아닌 장기집권…트럼프와 중남미 주도권 충돌하나",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=2010185",
+   "disrupt": "수출 제한",
+   "materials": "광물;메타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:41",
+   "title": "스리랑카, 미국 제재로 발 묶인 이란 선원 40명 응급치료 후 송환",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694967&ref=A",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "치료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:36",
+   "title": "[단독] 현대차증권, 반도체 담당 연구원 공석…삼전·닉스 리포트 두 달...",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5075829",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:36",
+   "title": "석유·LNG 공급 확대 전망에도···해상운송 편중에 리스크 여전",
+   "url": "https://www.todaykorea.co.kr/news/articleView.html?idxno=407623",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:34",
+   "title": "\"전기차·바이오·철강 빠져…韓판 IRA 실효성 높이려면 대상 넓히고 환...",
+   "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60796",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "금;높이;반도체;전지;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:34",
+   "title": "이찬일의 글로벌 경제 브리프 238-1",
+   "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92102",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:26",
+   "title": "美 \"6개월간 호르무즈 3000척 통항 지원…원유 15억배럴 수출\"",
+   "url": "https://www.news1.kr/world/usa-canada/6331540",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:23",
+   "title": "트럼프 선거 패배 '유력'...탄핵 절차 가능성도 [자막뉴스]",
+   "url": "https://www.ytn.co.kr/_ln/0134_202610261023160400",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:22",
+   "title": "'대만 유사시' 발언 1년…日국민 55% \"중국과 대화해야\"",
+   "url": "https://www.news1.kr/world/asia-australia/6331536",
+   "disrupt": "수출 제한",
+   "materials": "반도체;용해;이트륨;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:20",
+   "title": "하나증권 \"반도체주 낙폭 과도..실적 발표 후 추정치 상향 유력\"",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2120388",
+   "disrupt": "수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:06",
+   "title": "유가 117달러 돌파에 연말 물가 '비상'…에너지발 인플레이션 우려 확대",
+   "url": "http://www.queen.co.kr/news/articleView.html?idxno=465224",
+   "disrupt": "공급 차질;급등",
+   "materials": "나프타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:04",
+   "title": "스리랑카, 美 제재로 발 묶인 이란 선원 40명 응급치료 후 송환",
+   "url": "https://www.yna.co.kr/view/AKR20261026051400104?input=1195m",
+   "disrupt": "봉쇄;재개;제재",
+   "materials": "치료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 10:00",
+   "title": "[르포] 연두색 동체에 깃든 기술…KAI가 만드는 국산 헬리콥터의 진화",
+   "url": "https://www.ekn.kr/web/view.php?key=20261026020200950",
+   "disrupt": "공급 차질",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:58",
+   "title": "금(금값, 금시세) 10월 26일",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=619189",
+   "disrupt": "",
+   "materials": "금;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:58",
+   "title": "대선조선, 워크아웃 3년 만에 졸업…'SB대선'으로 재도약",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=323524",
+   "disrupt": "가격 상승;공급 차질",
+   "materials": "공정;선박;연료;원자재;유동",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:56",
+   "title": "[신윤우의 외환분석] 중동 들썩여도 묵직한 상단",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441053",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:51",
+   "title": "미국 컴퓨터 부품 시장동향",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=190&CONTENTS_NO=2&bbsGbn=254&bbsSn=254&pNttSn=244840",
+   "disrupt": "공급망 안전",
+   "materials": "반도체;전자;전자부품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:50",
+   "title": "[류제승 칼럼] 전작권 전환, '언제'보다 '이길 수 있나'가 먼저다",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=92402",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:46",
+   "title": "전남광주시의회, 반도체 국가 지원 촉구…동복댐·탄약고·군공항 대책...",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=900689",
+   "disrupt": "공급 차질",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:46",
+   "title": "\"창사 58년 만의 고로 가동 중단 위기\"… 포스코 노조, 11월 2일 '무기한...",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313908",
+   "disrupt": "가동 중단;생산 중단;파업",
+   "materials": "강판;무기;부분;전기강판;철강;후판",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:46",
+   "title": "[잠든 사이 월가] 트럼프 '이란 결정의 시간'…비트코인 8만달러 붕괴",
+   "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38220",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:43",
+   "title": "미, 선거 후 이란 공격 '만지작'…전면전 위험↑",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261026094216c5c",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:43",
+   "title": "트럼프 \"관세 50%까지 인상\"...이란엔 \"끝장낼 수도\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610260943333154",
+   "disrupt": "관세",
+   "materials": "지지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:40",
+   "title": "[로드픽] 트럼프, 네타냐후 재선에 '이란전 완수' 내걸어…총선 뒤 이란...",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=66435",
+   "disrupt": "",
+   "materials": "유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:37",
+   "title": "North Korea strengthens ties as U.S.-Korea alliance strains (KOR)",
+   "url": "https://www.koreajoongangdaily.com/bilingual-news/north-korea-strengthens-ties-as-uskorea-alliance-strains-kor/12937602",
+   "disrupt": "",
+   "materials": "rain",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:36",
+   "title": "중동 불안 여전한데 빅테크·연준 '슈퍼위크' … 코스피, 눈치보기 속 약...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/26/2026102600049.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:26",
+   "title": "쉼 없이 달려온 구광모 회장의 8년...LG를 미래 기업으로 이끌다",
+   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53947",
+   "disrupt": "생산 중단",
+   "materials": "반도체;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:26",
+   "title": "【데일리 ESG 정책 브리핑】녹색기업 호주 진출·항만 공급망 대응",
+   "url": "https://www.impacton.net/news/articleView.html?idxno=30389",
+   "disrupt": "생산 중단",
+   "materials": "건설;반도체;배터리;분리;소화;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:26",
+   "title": "[원자재 시황] 떨어지는 금·코인…뉴욕증시 '슈퍼위크' 주목",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729093",
+   "disrupt": "급등;재개",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:26",
+   "title": "[위클리오늘] 트럼프, 한국 등 외국 기업에 또 '협박?'",
+   "url": "http://www.weeklytoday.com/news/articleView.html?idxno=799406",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:22",
+   "title": "[현장] 해군3함대, 선박통제 및 보호 협업회의",
+   "url": "https://kookbang.dema.mil.kr/newsWeb/20261026/4/ATCE_CTGR_0010040000/view.do",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:20",
+   "title": "기고/ 자원안보위기 시대, 해운업 연료비 지원 확대 필요성",
+   "url": "https://www.ksg.co.kr/news/main_newsView.jsp?pNum=148326",
+   "disrupt": "봉쇄",
+   "materials": "석유;수송;연료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:19",
+   "title": "공급망 사슬에 침투한 트로이 목마",
+   "url": "https://kookbang.dema.mil.kr/newsWeb/20261026/1/ATCE_CTGR_0020010020/view.do",
+   "disrupt": "공급망 안전",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:18",
+   "title": "“이란 끝장내는 건 쉬워”…트럼프 최후통첩, 국제유가 150달러 찍나",
+   "url": "https://www.ekn.kr/web/view.php?key=20261026029271019",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:18",
+   "title": "중동전쟁으로 돌아본 국가안보",
+   "url": "https://kookbang.dema.mil.kr/newsWeb/20261022/4/ATCE_CTGR_0050010000/view.do",
+   "disrupt": "",
+   "materials": "석유;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:16",
+   "title": "금시세·금값 26일",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610260154",
+   "disrupt": "",
+   "materials": "금;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:14",
+   "title": "[동북아 정세브리핑] 중국 5중전회 개막과 권력 재편, 미일 연합훈련·대...",
+   "url": "http://kor.theasian.asia/archives/419701",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:13",
+   "title": "DB하이텍, 차량용 품질경영시스템 'IATF 16949' 인증 갱신",
+   "url": "https://view.asiae.co.kr/article/2026102609133695680",
+   "disrupt": "공급망 안전",
+   "materials": "반도체;예방;유지;차량",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:07",
+   "title": "트럼프 억장 무너지는 예고...\"관세 50%까지 올릴 수 있다\" [자막뉴스]",
+   "url": "https://www.ytn.co.kr/_ln/0134_202610260907534536",
+   "disrupt": "관세",
+   "materials": "지지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:06",
+   "title": "안상훈, 국내생산세액공제 대상에 전기차·저탄소철강·항공유·백신 추...",
+   "url": "https://www.sejungilbo.com/news/articleView.html?idxno=60789",
+   "disrupt": "수출 제한",
+   "materials": "반도체;인공;전지;철강;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:06",
+   "title": "[경제 전망] 국제금융센터, 2027년 세계경제성장률 반등…인플레이션 둔...",
+   "url": "http://www.sisacast.kr/news/articleView.html?idxno=101291",
+   "disrupt": "반등;재개",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:00",
+   "title": "'호남 반도체 클러스터' 국가 균형발전과 첨단 제조업의 대도약 [지식용...",
+   "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=248301",
+   "disrupt": "공급 차질",
+   "materials": "러스터;반도체;석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 09:00",
+   "title": "'사망설' 돌던 북 김정은, '당일치기' 방중 이유는? [뉴스UP]",
+   "url": "https://www.ytn.co.kr/_ln/0101_202610260900002193",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:50",
+   "title": "바닷길·하늘길 이어 육로까지 막혔다…이란 경제 '고사 위기'",
+   "url": "https://www.hankyung.com/article/202610264200i",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:38",
+   "title": "10월 23일 주식시장 주요공시",
+   "url": "https://www.catchnews.kr/news/articleView.html?idxno=129735",
+   "disrupt": "생산 중단",
+   "materials": "금;리튬",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:34",
+   "title": "“美 항모, 벙커버스터 가득 실었다”…트럼프, ‘이란 재타격’ 준비 ...",
+   "url": "https://nownews.seoul.co.kr/news/newsView.php?id=20261026601001&wlog_tag3=naver",
+   "disrupt": "봉쇄;재개",
+   "materials": "무기",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:30",
+   "title": "\"美, 선거 후 이란 공습 재개 가능성\"…전면전 위험 고조",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261026082931mby",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:28",
+   "title": "[오늘의 신문] 코스피 한 달 새 18.8% 급락…반도체 호황 속 금융시장 불...",
+   "url": "http://kor.theasian.asia/archives/419687",
+   "disrupt": "급락;수출 제한",
+   "materials": "금;반도체;수지;지지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:22",
+   "title": "'정유 = 국가 안보자산' 美 국방생산법 발동·獨, 新 정유산업 전략 수립",
+   "url": "http://www.e-platform.net/news/articleView.html?idxno=106398",
+   "disrupt": "급등;운임 급등",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:14",
+   "title": "하나證 “반도체 낙폭 과도⋯실적 발표 뒤 추정치 상향 유력”",
+   "url": "https://www.etoday.co.kr/news/view/2639823",
+   "disrupt": "수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:12",
+   "title": "[굿모닝! 글로벌 뉴욕증시] 브렌트유 116달러…중동 확전 공포에 3대 지...",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=303353",
+   "disrupt": "급등",
+   "materials": "선박;수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:06",
+   "title": "[속보] 삼전닉스, 확정 실적 앞두고 프리마켓 소폭 상승 … 유가·빅테크...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/26/2026102600014.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:04",
+   "title": "호르무즈보다 위험한 '흑해'…선박 570척 피격·40명 사망",
+   "url": "https://www.hankyung.com/article/202610264038i",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:03",
+   "title": "트럼프 \"미국 이용하면 관세 50%\"...선거 앞두고 이란 거듭 위협",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610260803277977",
+   "disrupt": "관세",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:02",
+   "title": "<김삼기의 시사펀치> 북핵 진화하는데 과거에 갇힌 우리 정치",
+   "url": "https://www.ilyosisa.co.kr/news/article.html?no=258441",
+   "disrupt": "생산 중단",
+   "materials": "무기;흑연",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:01",
+   "title": "이란 \"미국과 메시지 소통중\" 트럼프는 \"오늘은 공격 안해\"--AP",
+   "url": "https://www.newsis.com/view/NISX20261026_0003840317",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 08:00",
+   "title": "[최민화의 OT보안 인사이트] AI 해킹 시대, '가용성' 딜레마 빠진 제조 ...",
+   "url": "https://www.datanet.co.kr/news/articleView.html?idxno=215327",
+   "disrupt": "공급망 안전",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:57",
+   "title": "[글로벌 마켓시황] FOMC에 빅테크 실적까지…선물 일제히 오름세",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008814179&plink=ORI&cooper=NAVER",
+   "disrupt": "공급 차질",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:56",
+   "title": "페로타임즈 손바닥뉴스 10월26일(월)",
+   "url": "http://www.ferrotimes.com/news/articleView.html?idxno=51107",
+   "disrupt": "수출 제한",
+   "materials": "구리;철강;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:50",
+   "title": "미국 대규모 공격 예고...트럼프 \"공습 승인 대기 중\" [자막뉴스]",
+   "url": "https://www.ytn.co.kr/_ln/0134_202610260750272762",
+   "disrupt": "재개",
+   "materials": "석유;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:48",
+   "title": "[비즈 나우] AI '빚투' 우려 증폭…월가 픽은?",
+   "url": "https://biz.sbs.co.kr/article_hub/20000342005?division=NAVER",
+   "disrupt": "",
+   "materials": "높이;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:48",
+   "title": "트럼프 \"이란 끝장낼지, 합의할지 결정\"…후티, 재개장 리야드 공항 또...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01918806645616856&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "봉쇄;재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:38",
+   "title": "상품의 국적보다 생산의 실질이 중요해지고 있다",
+   "url": "https://www.taxtimes.co.kr/news/article.html?no=277379",
+   "disrupt": "수출통제",
+   "materials": "광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:34",
+   "title": "포스코퓨처엠, 내달 LFP 양산 본격화 '주목'…ESS에서 EV까지 글로벌 기...",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=752232",
+   "disrupt": "공급 차질",
+   "materials": "리튬;양극;양극재;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:31",
+   "title": "美 중간선거 앞 위협·공포 고조…이란 전면전 위험",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261026073015XvL",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:30",
+   "title": "\"11월 증시 조심하세요\"…투자 전문가가 주목한 '4가지 업종'",
+   "url": "https://www.newsis.com/view/NISX20261023_0003837882",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:18",
+   "title": "[KFT 모닝 브리프] 2026.10.26 — 오늘 꼭 알아야 할 국내외 경제뉴스",
+   "url": "https://www.fntimes.com/html/view.php?ud=202610260651513275141825007d_18",
+   "disrupt": "재개",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:08",
+   "title": "트럼프 \"이란과 합의할까, 끝장낼까…오늘은 공습 없어\"",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=776252",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:07",
+   "title": "트럼프 \"이란 문제, 결정 내려야한다\"…중간선거 후 공습 가능성",
+   "url": "https://news.tf.co.kr/read/world/2380467.htm",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:06",
+   "title": "트럼프 \"미국 이용하면 관세 50%\"...선거 앞두고 이란 거듭 위협",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610260706304625",
+   "disrupt": "관세",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:00",
+   "title": "[Who Is ?] 박문덕 하이트진로그룹 회장",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449630",
+   "disrupt": "수출 제한;폐쇄",
+   "materials": "높이;뚜껑;알루미늄;용기;코일",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 07:00",
+   "title": "[Issue+] 흔들리는 국제정세, 국제곡물 향방은",
+   "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=330298",
+   "disrupt": "",
+   "materials": "비료;연료;원료",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:59",
+   "title": "'10조' 베팅하더니…호르무즈 원유 37% 운송, 한국 기업 일냈다 [굿모닝...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610260005&t=NN",
+   "disrupt": "",
+   "materials": "금;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:57",
+   "title": "미·이란 긴장 고조에 유가 폭등…뉴욕증시 일제히 하락-[글로벌 마감 시...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610260007&t=NN",
+   "disrupt": "봉쇄;재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:38",
+   "title": "트럼프 “이란 문제 결정 임박”…“내달 초~연말 가장 위험”[이태규의...",
+   "url": "https://www.sedaily.com/article/20105919?ref=naver",
+   "disrupt": "",
+   "materials": "선박;용해",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:28",
+   "title": "미 중부사령부, 호르무즈 기뢰 제거 공언...시장 불안 잠재우고 수로 통...",
+   "url": "https://www.g-enews.com/view.php?ud=20261026052823742520990b2dc5_1",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:24",
+   "title": "미국, 헬륨 핵심물질 지정…반도체 생산 압박 현실화",
+   "url": "https://www.g-enews.com/view.php?ud=20261026032047649320990b2dc5_1",
+   "disrupt": "수출통제",
+   "materials": "공정;반도체;웨이퍼;헬륨",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:24",
+   "title": "\"중간선거 뒤 이란 공격 검토\"…트럼프·오바마 '충돌'",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008814216&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:22",
+   "title": "중국, 아프리카 무기 시장 장악 가속... 대륙 전역 군수 공급망 선점",
+   "url": "https://www.g-enews.com/view.php?ud=20261026031418337420990b2dc5_1",
+   "disrupt": "공급 차질",
+   "materials": "광물;구리;리튬;무기;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:22",
+   "title": "[중동戰 8개월…글로벌 석유 비상] ② 설비 타격에 재건도 시차…내년에...",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610231408490440887",
+   "disrupt": "봉쇄;재개",
+   "materials": "석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:17",
+   "title": "美 현지 생산으로도 부족? 트럼프 “우리 이용하면 관세 50%”",
+   "url": "https://www.joongang.co.kr/article/25472745",
+   "disrupt": "관세",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:16",
+   "title": "현대차그룹 CEO 경영성적 희비…이보룡·이규석 '우등생', 호세 무뇨스·...",
+   "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=766671",
+   "disrupt": "공급 차질;관세;화재",
+   "materials": "건설;공업;원자재;철강;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:12",
+   "title": "[김태형의 AI 트렌드맵 <1> 앤트로픽 속도 조절 제안의 이면] 값싼 지능...",
+   "url": "https://economychosun.com/site/data/html_dir/2026/10/17/2026101700011.html",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체;배터리;의약품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:12",
+   "title": "[특별기고] 박기순 성균관대 중국대학원 교수 | 반도체 흑자는 보너스 ...",
+   "url": "https://economychosun.com/site/data/html_dir/2026/10/17/2026101700004.html",
+   "disrupt": "수출통제",
+   "materials": "금;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:12",
+   "title": "\"이란 공격안 보고\"‥\"호르무즈 정책 안 변해\"",
+   "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6860637_37012.html",
+   "disrupt": "",
+   "materials": "유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:12",
+   "title": "美 중간선거 누가 이겨도 한국 경제 부정 영향",
+   "url": "https://economychosun.com/site/data/html_dir/2026/10/17/2026101700015.html",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:12",
+   "title": "[해외 칼럼] 이란에 찾아온 기회의 순간",
+   "url": "https://economychosun.com/site/data/html_dir/2026/10/17/2026101700013.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:01",
+   "title": "ESS 질주하는데… 5개월 만에 ‘반토막’ 난 리튬값에 웁니다",
+   "url": "https://www.kmib.co.kr/article/20261025501425",
+   "disrupt": "공급 차질",
+   "materials": "니켈;리튬;망간;양극;양극재;인산;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:01",
+   "title": "트럼프 \"미국 이용하면 관세 50%\"...선거 앞두고 이란 거듭 위협",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610260601584427",
+   "disrupt": "관세",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:00",
+   "title": "원유 수입가 이미 50% 뛰었는데…국제유가 117달러 돌파, 연말 물가 '비...",
+   "url": "https://www.news1.kr/economy/trend/6324871",
+   "disrupt": "수출 제한",
+   "materials": "나프타;비중;석유;연탄;유연탄;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:00",
+   "title": "[추천주 직썰] \"바닥 다졌나\"…롯데케미칼·금호석유·대한유화, 주가 반...",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=150541",
+   "disrupt": "공급 차질;약세",
+   "materials": "금;나프타;석유;세로;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 06:00",
+   "title": "현대차 파업에 발목 잡힌 사이 기아 '바짝'…3분기 영업익 격차 1000억원...",
+   "url": "https://www.dailian.co.kr/news/view/1705399/?sc=Naver",
+   "disrupt": "공급 차질;파업",
    "materials": "원자재",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 05:31",
-   "title": "[2027 산업] 반도체만 웃는다…불확실성 증폭에 업종기상도 '극과 극'",
-   "url": "https://www.yna.co.kr/view/AKR20261023166400003?input=1195m",
-   "disrupt": "구조조정;수출 제한",
-   "materials": "높이;리튬;반도체;석유",
+   "published": "2026-10-26 05:56",
+   "title": "세계 3위로 밀린 일본 조선, 1조 8000억 원 들여 도크부터 다시 짓는다",
+   "url": "https://www.g-enews.com/view.php?ud=20261026055312453fbbec65dfb_1",
+   "disrupt": "",
+   "materials": "건조;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:48",
+   "title": "[한컷세상] 드론 든 다윗, 방패 뚫린 골리앗",
+   "url": "https://www.bigtanews.co.kr/article/view/big202610260001",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:46",
+   "title": "\"배보다 배꼽이 더 크다\"… 이란發 유조선 운임 10배 폭등에 美 원유 亞...",
+   "url": "https://www.g-enews.com/view.php?ud=2026102516221949400c8c1c064d_1",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:26",
+   "title": "\"美 규제 비웃는 해외 클라우드 우회\"… 中 AI 연산력 65% 여전히 '미국...",
+   "url": "https://www.g-enews.com/view.php?ud=2026102516142725550c8c1c064d_1",
+   "disrupt": "수출통제",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:09",
+   "title": "미 중부사령관, 호르무즈 해협 방문…“원유 15억 배럴 수출 지원”",
+   "url": "https://www.voakorea.com/a/8215060.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:05",
+   "title": "7개월 넘은 석유 최고가격제… 정부, 출구전략 고민",
+   "url": "https://www.seoul.co.kr/news/economy/2026/10/26/20261026031006?wlog_tag3=naver",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 05:02",
+   "title": "[데스크 시각] 반도체 강국의 마지막 퍼즐, 소부장",
+   "url": "https://www.etoday.co.kr/news/view/2639592",
+   "disrupt": "수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 04:54",
+   "title": "트럼프 \"이란과 합의할지 끝장낼지 결정할 때 임박\"",
+   "url": "https://www.newspim.com/news/view/20261026000006",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 04:36",
+   "title": "\"이란 재타격 승인 대기\" vs \"공격할 테면 해보라\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610260436380400",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 04:00",
+   "title": "[출근길 포인트] 28·29일 확정 실적 발표 삼전닉스, 3분기 영업익 183조...",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=323489",
+   "disrupt": "생산 중단",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 03:32",
+   "title": "트럼프 \"이란 공격 재개 여부 결정할 때 다가와…오늘은 공격 안 해\"(상...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440998",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 03:10",
+   "title": "K-푸드 수출길 '환경규제' 장벽…식품업계, 포장재·공급망 관리 비상",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=323447",
+   "disrupt": "공급망 안전",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 02:42",
+   "title": "트럼프 \"이란과 합의냐 공격 재개냐…결정할 때 다가와\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440996",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 02:08",
+   "title": "[국제동향] 美 헬륨 핵심소재 지정…유럽의회, 영구자석 폐기물 수출 제한 요구 - 산업종합저널",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1RHhEV0xjcHRqd3VwaWFQT0duX09KRWg2Y0lwS2tsN1B6emlnSEpsNE9QU0M0dFdYR0NBN3ZqQWVuWUh4Q3l3Vl9Ba3BIa0s1UWJj?oc=5",
+   "disrupt": "수출 금지;수출 제한",
+   "materials": "금;반도체;자석;폐기물;헬륨",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 02:00",
+   "title": "경제가 안보인 시대, 정보기관의 역할[MT시평/배정석]",
+   "url": "https://www.mt.co.kr/opinion/2026/10/26/2026102209555126307",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "광물;기관;반도체;정석",
    "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 05:02",
-   "title": "중간선거 앞두고 트럼프 ‘이란 재타격’ 감행할까 - 매일경제",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MMXZqdUY2b1hvZWZxeWNobTNyN28wZjJnSnBJdU1ZVHhfckR4UkgxV3dnSUZWd09ndWNRS3ByWEdSVDVWb0ZnV0tVcy13UQ?oc=5",
+   "published": "2026-10-26 01:47",
+   "title": "호르무즈 막혔는데 유조선 운임지수 계속 발표?…발틱해운거래소 피소 - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBSdnZJdjlqYzFwZm5oWnRaUV96MUEtb0J0a19nMTFjay1leDNLZlhQUlVmX3hyaGVENEVYc1BRUnRxQ1JwbDYzWW44bmVUblc5azNpUXctU0dra1U0MUpKVnpFa1lvSFlzdno4?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 05:00",
-   "title": "[해운 호황의 수명②] 같은 VLCC, 다른 계산···팬오션·장금상선, 운임 하락기에 엇갈릴까 - 서울파이낸스",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5heE9KMDFITVFQeGdEOUVST19Lb053YzI5aUdIbTFXblJha1Rra1VSY3Z3akxhM0tWTTNkQUNMTE1pR3RaZUFTb2xrSWsxaHNlcDZucnRQR1BxQXoxWGg5VEY1N1BOQ01PRUE?oc=5",
+   "published": "2026-10-26 01:43",
+   "title": "세계 뉴스 10월 26일: 젤렌스키 대통령, 3자 회담 확정; 미국, 호르무즈 해협을 통한 15억 배럴 석유 수송 지원. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbDJhWVlXaEd3Vlcyc2VKbFl1SFhxS2V3YjFBRkNVNldfX0M4eGdSeVNhbHUtclJ0cUZTajhmNldvVDVsY19uYWNxZzZUeU53Z1pQcVFxbTdBVmNuNmFZSkgxTnVsbWtBZXBYcC0zM1o2VHBDdVFqU2Zod3dETkJJYS1tZllDZWtoS24yNzU0SzhEV3kzbFltaXV5cTRTakRUNmFjNElsaF9vQmpTX1hyMjJIRGZMbGpFSGF5NQ?oc=5",
    "disrupt": "",
-   "materials": "계산;금",
+   "materials": "석유;수송",
    "status": "NONE"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 04:52",
-   "title": "베트남, 한·일과 핵심 광물 공급망 연결 - VOV World",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNLUhQRGpLbEtzdW9ibzl6SGV1bzkzdXhiU3ZPNm9hQjBtOUl6eFd2VXpOcFZaVlBBbmNqaTYzY2lLc1lWYXh4STlzZkhPaXRYQlhmTFFTcG8xTnhlR2dBcUF0WVVhd1RQanhqTzJFdENnaDhlYXB0S0YydFMtNTZTeXJnVjVqOFBHd2JabHMtQWR0a1dxNzJKTHhGM0FVQ0ZLQ0tucmtMa09XdU4wZEdISlFuWWxJcDZodUJoV3VlNUVPZVZla0RmeGVR?oc=5",
+   "published": "2026-10-26 01:26",
+   "title": "美 \"6개월간 호르무즈 3000척 통항 지원…원유 15억배럴 수출\" - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Kdnl2TGFMZnhlNlB2dXBfaUVVMktXOVV6RlZfVkxKQTJtUjJzaTQyV2tsaFRheFpZNDZxOHNsRFd2SmNmakdCeVFYRzc3d2tEalJ3akxUanM?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 01:24",
+   "title": "LS에코에너지, 베트남서 'AIDC' 울트라캐패시터 생산 준비 - 지디넷코리아",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kLXpwN1pKYU95RTBLenl6SWR6Ml9ZNTdpWS15Qm1pNjJiQlFDbjlGZTdram5RTzUyU1pwcWpZaGZQNEpmUVZsOVBoOXVsTWlRS01haWNB?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 01:22",
+   "title": "'대만 유사시' 발언 1년…日국민 55% \"중국과 대화해야\" - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54Um9iSDVscGlxUzJTTzVYSU9QUlViZGFQOTRIcWdSWFNXSVJ6VjhNUDlLaVIyb1JjSW5FLUZHRF81NE5hSEE0MklwdGs0LWY5YVRqeVJtMnVhQXNxTlE?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 01:18",
+   "title": "[美 중간선거 D-7] 중국의 득실계산…무역협상 유리, 대만문제 불안 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA2VTc1MnZ0cWZqVTZRcnhkT3pJQmd2V0h5d3U5NXhVQmxiUGpqanU2TkdqX1RyVjB5Vkw4S2J1MlU4V2lCU3lEdE9KTjVjNWtxX0Z0TklpNkzSAVhBVV95cUxQNlU3NTJ2dHFmalU2UXJ4ZE96SUJndldIeXd1OTV4VUJsYlBqamp1Nk5Hal9UclYweVZMOEtidTJVOFdpQlN5RHRPSk41YzVrcV9GdE5JaTZM?oc=5",
+   "disrupt": "수출통제",
+   "materials": "계산;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 01:08",
+   "title": "日 국민 55% “중국과 대화 늘려야”…방일 중국인 56% 급감 - 알파경제",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAxMmFUUWZvMTFvQUlLSnA2R3AxT3NxN0xRSlhJb2MxLXZqR0laY1FnZDZNTHI4dHlXcE1ZUFNHVEpCcHJXMkV4LXJGUXMxeTF2OFBtZ2JPQjhic1RsazlMOG9rUk54VTlYOVJNQjlB?oc=5",
+   "disrupt": "수출통제",
+   "materials": "알파;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 01:04",
+   "title": "[사설] 중·러와 밀착하는 北…핵무장 공고화·제재 위반 방치 안 돼",
+   "url": "https://www.hankyung.com/article/2026102534991",
+   "disrupt": "수출 금지;제재",
+   "materials": "광물;금;섬유;정제",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 00:55",
+   "title": "미국은 호르무즈 해협을 통해 15억 배럴 이상의 석유 수출을 지원했다고 주장합니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV3VOMGQtOGdwbmNnNzNOcVJISlZtQWFMdnh4VE13ZG1WS3VuVktweWI4dFFZNTJPS2cwci1yM21QUGtXM1lSaTZzRmk2WXBsVHI3NzFEUUNlUEQ4dURUUWx1X3U0WU5JdDV1a0M4QXdubTNOcU0xX2Q0SHlrcUdVSzhvbDFtd0MwT0l3Q1VFc1ljZjRaTXBnc2VCZDlRQQ?oc=5",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 00:54",
+   "title": "중국공산당 5중전회 오늘 개막…내년 당대회 정지작업 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2ZkpPRl9RczB6TEtKX01nSnAzQVprb1R5cWF1RnhqRlBXMXhSbDdvZmRiWVVGM0hQazQzVFRYaVFILWNHcjJyZFU3aFF6OVJDTGwwRlpyM3HSAVhBVV95cUxQdmZKT0ZfUXMwekxLSl9NZ0pwM0Faa29UeXFhdUZ4akZQVzF4Umw3b2ZkYllVRjNIUGs0M1RUWGlRSC1jR3IycmRVN2hRejlSQ0xsMEZacjNx?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-10-26 00:36",
+   "title": "EU 탄소국경세, 철강서 車부품·가전까지 확대…2028년부터 적용 - ESG경제",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1VTlBPa09feUtQX0JoMzZuQlJEMWlwQVBfVVdadDd2Mno5dUZOMjNWRzFlSGxQYmd2d0pDV3kxbXZQWkRVU1JhaVVoLWEtLVV5WUNjcXg1Y1EyNmNxR19Oc1RvY3AxRDRzM1NrYw?oc=5",
    "disrupt": "수출 금지",
-   "materials": "광물;금;희토;희토류",
+   "materials": "금;알루미늄;철강;탄소",
    "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 04:21",
-   "title": "식품 안전 관리를 위한 단일 관리 체계를 구축하십시오. - Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkh5WEo1R2prX2dCZU5TQzIxWWIzaHluX05BRlJwdXdlVGRZRVd2RGhjdHJldGkxZHVMZVFQS2RIeUpsaVZLTHhSZS1FSEQ4WjVmZkIxdWpWUmZCamZ5cHRPMzN3eDF2MFBtSGhjWjc2bGxzWDlTR3NWSENBTDV4MDU3bw?oc=5",
-   "disrupt": "공급망 안전",
+   "published": "2026-10-26 00:35",
+   "title": "중국 남부지역 전력시장 통합...토큰 가격 더 낮아진다 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZTGZzSHAyQTVBVkh5TDdhY3BfX0twS1NVcXc2LTRfOGVNZ21McWhaYXdjT2pYcl9La0NaWWFYbktCVko5UzVVd1pWdUZpUEg2UzdEb2xHa1LSAVhBVV95cUxNWUxmc0hwMkE1QVZIeUw3YWNwX19LcEtTVXF3Ni00XzhlTWdtTHFoWmF3Y09qWHJfS2tDWllhWG5LQlZKOVM1VXdaVnVGaVBINlM3RG9sR2tS?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 00:28",
+   "title": "[사설] 안러경중 다지는 북한, 흔들리는 한·미 동맹",
+   "url": "https://www.joongang.co.kr/article/25472692",
+   "disrupt": "",
    "materials": "",
-   "status": "CANDIDATE"
+   "status": "NONE"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 04:14",
-   "title": "식품 관리에서 보건과 농업 간의 책임 범위를 명확히 정의해야 합니다. - Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSDNVUzFHNkY3emZJV1A2X3lWUWNjTDhRQTgzUlRpV0c0MWJITHdiVjE5ZjUyMWtPX2VUS1MwMjRvYU9oLWpDMEd5UzNJVEt0WEFXLVBabTRnQlN3MmFsTkpwVF9wRG1VTTFIZ3owUUMxZWYtazNUOXhCdDV0LUt0SW03NGpvV3FiQ2p4dXg1VDVLTXNQYjY4bjAzMF81dE5YMTVtNlZ3Yw?oc=5",
-   "disrupt": "공급망 안전",
-   "materials": "",
-   "status": "CANDIDATE"
+   "published": "2026-10-26 00:25",
+   "title": "[원자재 시황] 떨어지는 금·코인…뉴욕증시 '슈퍼위크' 주목 - www.ebn.co.kr",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBKTTd4SXV4RHRuSXBHeVFVMC1sVEtxQVdpZ0pPQ1ZBT2trc3U4WXBiRTl0eFhqbmszeFhXS1hIbXVTNXB2clh6NHQzZEdsdTlwalZPc0JPSzJ4ZFdYemhzZnJwRm5EcHN3?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-10-26 00:19",
+   "title": "‘석유 최고가격제’ 재정 부담·시장 왜곡 우려 고조… 출구전략 과제...",
+   "url": "https://www.kmib.co.kr/article/20261025501706",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 04:13",
-   "title": "인도네시아, '산불 갈등' 싱가포르에 가스 공급 감축 - 연합뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84WE94LXpCeDlnNzl6OF9YV19nSWxDX25QQ2FucmFJekx0LVBXVjVqcThzNU0xQ0U5ZUtrRWM4UnFVcXltMTlpbVpXLV9TNVpmNkg2Yi1mRWFQVmRKczJJX9IBYEFVX3lxTE84WE94LXpCeDlnNzl6OF9YV19nSWxDX25QQ2FucmFJekx0LVBXVjVqcThzNU0xQ0U5ZUtrRWM4UnFVcXltMTlpbVpXLV9TNVpmNkg2Yi1mRWFQVmRKczJJXw?oc=5",
+   "published": "2026-10-26 00:05",
+   "title": "인니, 싱가포르행 천연가스 14% 감축…‘산불 갈등’ 속 공급 제한 - 인니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92cVJBRUhKaHM0dUpDaTlCaUg2TkgzQWYzbWQtR0kzeUZCajRFSkpURk1kM19LVlFrMTV0SmdpX25pNTVTNktOUVFoeER0M0QwbmpheFk5OTdJYmY5T0toYmFFaTJqdEU?oc=5",
    "disrupt": "수출 금지",
    "materials": "광물;금",
    "status": "RELEVANT"
   },
   {
    "source": "GOOGLE",
-   "published": "2026-10-25 04:13",
-   "title": "인도네시아, '산불 갈등' 싱가포르에 가스 공급 감축 - 매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52ODVCQ1ZCdUZYcmVCck5FdXZVQmN2MGVoOUh4b1V5YzJ0azJTSGlGR0IxcklKQ0pveFVaNFlEbHBfNlJlLXE4UHFSOXJYZGpxMEE?oc=5",
+   "published": "2026-10-26 00:03",
+   "title": "[표] 일일 철강 원료 가격 동향(10월 23일) - 철강금속신문",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82eVE1eVBjSmdWMjg1bm1YMHdiYXUtQV9PUmVqQU9aWFQycDF6UDFZV2RFXzBVMXJ3UGZEWUF0VWFFdC1fVmJYc3FZbDFrOThkaWdOTVRERk9VWG14ampCSG5KZTBVbW9INHc?oc=5",
    "disrupt": "수출 제한",
-   "materials": "광물",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 03:52",
-   "title": "이란 최고 지도자, 미국-이스라엘에 손해 배상 요구 - Laodong.vn",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMktXYjZWM0RzTEJrRlBvQm1QSDZJUmFsei0xMXZjYmhDdWxBYlJZWnY3NXNnWERqZ0ZISVJPdk1wcjZCcHhTbHRxTTUxZ0xRWTN2aTdld0FQVGttQ0ZBcm1veDVoN1ZmM2dJekZ4MFZCVEpRUmd6WHJyS04xdEp0Nmxrb09oY1dFdmpkTFdabnM4eXNxLUY5b05xTE9rQ3JnT3R3VA?oc=5",
-   "disrupt": "",
-   "materials": "도자",
-   "status": "NONE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 03:41",
-   "title": "미국과 이란 간의 갈등이 재개될 경우 세계에는 얼마나 많은 석유 매장량이 남게 될까요? - Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZW5mbmlzODAtS1Z6dktRREpmZThkMmIwWE5acm14TzJNVDE3djhVeUQ3NkY4ZkV6djJMYTZpZHZwQ2RUQ0dILVBfZXhEUkVEQ1NZdTNuNlhuSkZYVzVqd1RpLVRvWkdyUXZ1LTltelZyaFRIM3FKWkJfTU5uam9WZXZSNjdFQWktdF9ISHJjMnlKeTQ?oc=5",
-   "disrupt": "재개",
-   "materials": "석유",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 03:13",
-   "title": "[에너지 공급망 재편] 중동전쟁이 바꾼 에너지 전략…“싼 석유보다 끊기지 않는 공급망” - 코리아포스트 한글판",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PQmRFZWhISkFMRERaeG5IdS1wNWlTNjNNNHlmVHhnOTJlWDFocW9hNGgycktJV1Via0JYU092NXI3MV80b0RoM3ptdnJTQThpQ1JYVjdKQ25DWXNzRkNuSTBCbGZsZTAtQkNvc1ZR?oc=5",
-   "disrupt": "",
-   "materials": "석유",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 03:02",
-   "title": "트럼프·워시 금리 갈등 재점화 우려…AI 투자에 먹구름",
-   "url": "https://www.g-enews.com/view.php?ud=2026102421223464649a1f309431_1",
-   "disrupt": "봉쇄",
-   "materials": "금;석유;점화",
+   "materials": "강판;금;원료;철강",
    "status": "RELEVANT"
   },
   {
    "source": "NAVER",
-   "published": "2026-10-25 03:02",
-   "title": "국제 금값 4000달러 붕괴…UBS \"저가 매수 기회\"",
-   "url": "https://www.g-enews.com/view.php?ud=2026102419211033509a1f309431_1",
-   "disrupt": "공급 차질",
-   "materials": "금;원자재",
+   "published": "2026-10-26 00:02",
+   "title": "난방자재 19%, 전기보일러 21% 껑충…석유 최고가격제 딜레마",
+   "url": "https://www.joongang.co.kr/article/25472660",
+   "disrupt": "공급 차질;급등;봉쇄",
+   "materials": "비료;석유;현상",
    "status": "RELEVANT"
   },
   {
-   "source": "GOOGLE",
-   "published": "2026-10-25 02:33",
-   "title": "반도체 산단 인허가·보상·설계 동시 추진…13개 규제 개선 - 경기매일",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jYldSTnM3ekluUkgyTFdfVHl0Q3licHRrMXJoN2hyVGt3RHo2Q3ltVFZxRVF1OWV0N3JrUVNsd1I1TUFwR0VJVmV6bUp4UjVmVm5ZLTBMMVpKT2I0QjR0VnFabXVFdXc?oc=5",
-   "disrupt": "수출 금지",
-   "materials": "금;반도체",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 02:31",
-   "title": "[이슈&논란] 벙커버스터 실은 美 항모…이란 압박, ‘해상 봉쇄’서 ‘지하 타격’으로 번지나 - 뉴스스페이스",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvc1pIbzdhcFd0SVgtODVZMGhDTThiNGlqdGJxQ013d2ZSZFRQcktJYTdBSUl0endWTGhIdy1FSmJvU0RHcEMwTm5MZjd3WUVmdUJSdGNmQ0U0anFVeXB3dg?oc=5",
-   "disrupt": "봉쇄",
+   "source": "NAVER",
+   "published": "2026-10-26 00:00",
+   "title": "우리기술 주가 3.40% 하락한 9,390원…미국·이란 전쟁 양상 속 방산주 ...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=618996",
+   "disrupt": "제재",
    "materials": "",
    "status": "CANDIDATE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 02:28",
-   "title": "내연기관 차 몰락 가속… 중국 신차 3대 중 2대는 ‘전기차’ - ESG비즈니스리뷰",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MM1QwNjhiSnl1ZFVXQmhHb0ZKeXNJX21QWk1lVy1xU1JMQkk2cy0yWTNJdWFUZUs2N3k4S1RvZVYwX1FILTFXMktXRFlSSXgxX2Z6YUtnb1Iyc3FidDhGejBzV055LW9TZFpyT0NUY3Fyanc?oc=5",
-   "disrupt": "",
-   "materials": "기관",
-   "status": "NONE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 02:14",
-   "title": "이란, 미국 봉쇄 해제 대가로 호르무즈 해협 재개방 제안 - Laodong.vn",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUUpBbTVIbHM3NWNyYVBob3ZTREsxcVY3Yl9aQjlUNTJ4Yk9JRXhwT3JwMTlTMktwWXhWQ0hhMDJ2SllhckNOcW5Zc2hQc3Q1akVmRzJqb3k2dF8xaGtnd3p6MExJTURkU3lnRzd4OFBJM3pDQ2VJcVJPVkowYmVkd2VwM3RtcXhsNV9KQjVsclViRWhGNURETm5sdW55TWlPeTVPUUZraHJrQQ?oc=5",
-   "disrupt": "봉쇄;재개",
-   "materials": "",
-   "status": "CANDIDATE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 02:00",
-   "title": "이란, 페르시아만 해저 케이블 공격 계획 수립 - IDNFinancials",
-   "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOVU5SM0NLNFBaYXAwaDBkbjA0WVBENzVZempxckI3Uk1xbFpUTEZKZm81ZkRYZ0taOUFMTE5pVUJPX09XR2RFbVBBM1d2b0NxUUYyZjdiSWtwYjg5OEwwQ0pBQ21BZDlWQnUzU1F0c1hXM3dPZnJLVF94RzB0Z0FYd3hrX2hwOWRRTWFoTDV1ajFjQTZVUXVCM2VqNURhQXZWM1p2OHd6QVdSWlRqemRJQlN5X0Z1MjZSVnZxZzJOVE5CNENxWFVfNXh2R25pNnZWeGpwakFuMXFJUFZqUWt2SW5KQUo4Q1VqMW1CYVpfZkZXUzY1cHRBakF3NHRUN05DcFlESklZMGlNUl93amdtOGRBWXFzckdfQnFZdU44SXpONGhjT0UwdXJnZl80QWtMenJaZ3c4RQ?oc=5",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 01:00",
-   "title": "중동 원유 공급 불안 확산…미국·독일 비축유 방출 대응",
-   "url": "https://www.g-enews.com/view.php?ud=2026102418592339999a1f309431_1",
-   "disrupt": "",
-   "materials": "선박",
-   "status": "NONE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 00:30",
-   "title": "원유는 돌아오는데 LNG는 막혔다…겨울 앞둔 국내 에너지 수급 '긴장' - 미디어펜",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5sc0lXbmxvc29mVXlrck5ZNWctdm1TQURhWENfUmU2VkV4Y0VnMl9NOG1JbXFGdl80cGhGYm04RERSTGp4OTF4MkR1X1V1NFJvdV9oWDBjWUnSAVhBVV95cUxObHNJV25sb3NvZlV5a3JOWTVnLXZtU0FEYVhDX1JlNlZFeGNFZzJfTThtSW1xRnZfNHBoRmJtOEREUkxqeDkxeDJEdV9VdTRSb3VfaFgwY1lJ?oc=5",
-   "disrupt": "",
-   "materials": "",
-   "status": "NONE"
-  },
-  {
-   "source": "GOOGLE",
-   "published": "2026-10-25 00:28",
-   "title": "[글로벌 주간 브리핑] 투자 늘려도 주가는 하락…AI·반도체·자동차의 불편한 현실 - 월요신문",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0ydkJaUzVVOXYxVlVHUFRkZmFEblNWazNpeVJwWWNIOThKQ21YLVZTT2tQOTBLMTlGZktqSVdYWk8wcEduNHNMVEwyQV9rdkZReGQ0WU5ITVRpTDJ3UGkxMVRZNWt3elp0VEE?oc=5",
-   "disrupt": "수출통제",
-   "materials": "반도체;희토;희토류",
-   "status": "RELEVANT"
-  },
-  {
-   "source": "NAVER",
-   "published": "2026-10-25 00:00",
-   "title": "[한준호의 모시모시] 일본 철강은 왜 인도로 향하는가",
-   "url": "https://www.ajunews.com/view/20261024193342431",
-   "disrupt": "공급 차질",
-   "materials": "강판;건설;철강",
-   "status": "RELEVANT"
   }
  ]
 }
