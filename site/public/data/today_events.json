@@ -1,8 +1,2420 @@
 {
  "as_of": "2026-11-05",
- "generated_at": "2026-11-04T15:59:44.434406+00:00",
- "count": 6,
+ "generated_at": "2026-11-05T05:11:36.040110+00:00",
+ "count": 285,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:07",
+   "title": "美전문가들 \"이란전쟁·관세… 외교가 민생을 직격한 결과\"",
+   "url": "https://www.hankookilbo.com/news/article/A2026110512330000497?did=NA",
+   "disrupt": "관세",
+   "materials": "기와;뇌관",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:04",
+   "title": "LG화학, 3분기 영업이익 5612억원...석유화학 적자 전환",
+   "url": "https://www.womentimes.co.kr/news/articleView.html?idxno=107636",
+   "disrupt": "수출 제한",
+   "materials": "나프타;반도체;석유;치료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:04",
+   "title": "LG화학, 매출 늘었지만 영업익 뒷걸음…석화 적자 전환",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1422157",
+   "disrupt": "공급 차질",
+   "materials": "나프타;니켈;반도체;배터리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:04",
+   "title": "LG화학, 3분기 영업익 5612억…석유화학 적자에 전년比 17%↓",
+   "url": "https://www.etoday.co.kr/news/view/2644627",
+   "disrupt": "공급 차질",
+   "materials": "나프타;반도체;배터리;석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:02",
+   "title": "슈퍼마켓 냉장고 털더니 혈액 보관시설까지…유럽 덮친 '냉장고 해킹'",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=712926",
+   "disrupt": "공급망 안전;화재",
+   "materials": "기와",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:01",
+   "title": "한·IEA, '라이즈 아시아 이니셔티브' 본격화…민관 협력 확대",
+   "url": "https://www.etnews.com/20261105000242",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:01",
+   "title": "한국 대기업은 왜 중국산 나트륨배터리를 직접 시험하기 시작했나",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003281747&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "공급망 안전",
+   "materials": "나트륨;배터리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:00",
+   "title": "LG화학, 3분기 매출 34% 증가…석유화학 적자에 영업익 17% 감소",
+   "url": "https://biz.sbs.co.kr/article_hub/20000344481?division=NAVER",
+   "disrupt": "공급 차질",
+   "materials": "나프타;배터리;석유",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:00",
+   "title": "美 민주당 양원 장악에 대미투자 지연 가능성…트럼프 관세정책은 유지...",
+   "url": "http://www.segyebiz.com/newsView/20261105510745?OutUrl=naver",
+   "disrupt": "관세;생산 중단",
+   "materials": "알루미늄;유지;지연;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 14:00",
+   "title": "청해부대 임무 구역 확대…초계기 추가 투입",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704844&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:58",
+   "title": "美 민주당 의회 장악…삼성·SK하이닉스, 반도체 35% 세액공제 연장 주목",
+   "url": "https://www.newspim.com/news/view/20261105000677",
+   "disrupt": "수출통제",
+   "materials": "반도체;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:56",
+   "title": "LG화학, 3Q 영업익 17% ↓ 5612억원…석화 적자전환(종합)",
+   "url": "https://www.news1.kr/industry/general-industry/6344234",
+   "disrupt": "공급 차질",
+   "materials": "나프타;배터리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:56",
+   "title": "정부 \"청해부대 75명 추가 파견...작전지역도 확대\"",
+   "url": "https://www.ytn.co.kr/_ln/0101_202611051356303788",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:50",
+   "title": "청해부대 임무구역 오만 남방까지 확대",
+   "url": "https://www.thereport.co.kr/news/articleView.html?idxno=93084",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:49",
+   "title": "청해부대, 호르무즈 인근까지 작전구역 확대…초계기·소해전력 추가 파...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8108",
+   "disrupt": "폭발",
+   "materials": "기와;부분",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:46",
+   "title": "광양 이차전지 특화단지, 핵심 기반시설 구축 속도",
+   "url": "https://www.namdonews.com/news/articleView.html?idxno=928282",
+   "disrupt": "공급 차질",
+   "materials": "니켈;리튬;배터리;양극;양극재;원료;원자재;전지;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:44",
+   "title": "MBK·영풍, 장형진 재수사·김병주 책임론에도 고려아연 790억원 투자 의...",
+   "url": "https://www.upkoreanews.kr/news/articleView.html?idxno=100995",
+   "disrupt": "생산 중단",
+   "materials": "광물;금;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:43",
+   "title": "청해부대 작전구역 넓힌다…\"공격 대비 감시망 늘려야\"",
+   "url": "https://www.sidae.com/article/2026110509423941384",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:42",
+   "title": "청해부대, 호르무즈 가까워졌다…작전지역 확대·초계기 추가 투입",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5080126",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:41",
+   "title": "정부 \"청해부대 임무 강화\"…초계기 파견·'오만 남방' 확대",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105134042TSe",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:37",
+   "title": "기후부, IEA와 추진하는 '라이즈 아시아'에 민간 참여 확대 논의",
+   "url": "https://www.fnnews.com/news/202611051334258147",
+   "disrupt": "",
+   "materials": "인공",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:36",
+   "title": "삼성, 中 누적 투자 79조 원 공개… 반도체·배터리 90% 체질 전환",
+   "url": "https://www.g-enews.com/view.php?ud=202611051328096527fbbec65dfb_1",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "공정;반도체;배터리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:36",
+   "title": "청해부대 임무 호르무즈 인근까지 확대...전력도 강화",
+   "url": "https://www.etoday.co.kr/news/view/2644605",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:34",
+   "title": "에코프로비엠 \"조 단위 수주 임박…LFP 시장도 진출\"",
+   "url": "https://zdnet.co.kr/view/?no=20261105121846",
+   "disrupt": "생산 중단;재개",
+   "materials": "리튬;배터리;인산;전분",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:33",
+   "title": "美 ‘블루 웨이브’ 후폭풍…시진핑의 패권 시계 빨라지나",
+   "url": "https://www.dailian.co.kr/news/view/1711202/?sc=Naver",
+   "disrupt": "수출통제",
+   "materials": "반도체;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:31",
+   "title": "'이란 전쟁도 원인' 인정한 트럼프, 종전 기대할 수 있을까",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003282017&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "봉쇄;제재",
+   "materials": "부분",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:25",
+   "title": "[이시각헤드라인] 11월 5일 뉴스현장",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105132436tEg",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:15",
+   "title": "[종합] 에코프로비엠, 대규모 양극재 수주 가시화…LFP 증설로 성장동력...",
+   "url": "https://www.ddaily.co.kr/page/view/2026110512585559893",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "리튬;양극;양극재;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:10",
+   "title": "[대체불가 K-에너지] \"가스는 곧 전기다\"… AI 시대 에너지 플랫폼으로...",
+   "url": "http://www.metroseoul.co.kr/article/20261105500192",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:06",
+   "title": "美 민주당 승리에 엇갈리는 증시…반도체·방산·친환경 등 업종별 영향...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=146693",
+   "disrupt": "수출통제",
+   "materials": "무기;반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:06",
+   "title": "트럼프 선거참패에 시장은 환호, 세계는 긴장",
+   "url": "https://www.naeil.com/news/read/607659?ref=naver",
+   "disrupt": "제재",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:06",
+   "title": "“불확실성 제거”",
+   "url": "https://www.bigtanews.co.kr/article/view/big202611050017",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 13:00",
+   "title": "진보당 “청해부대 호르무즈 우회 파병 철회하라” 위성락 경질 촉구",
+   "url": "https://vop.co.kr/A00001697470.html",
+   "disrupt": "",
+   "materials": "경질",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:54",
+   "title": "메타도카, 선인장 추출물 함유 ‘노팔릭스 1.5’ 국내 출시...공식몰 선...",
+   "url": "http://www.beyondpost.co.kr/view.php?ud=202611051128515719aeda69934_30",
+   "disrupt": "공급 차질",
+   "materials": "메타;원료;원자재;지연;추출물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:44",
+   "title": "'불똥 튈까' 국제사회 예의주시…유가는 '뚝' 주가는 '쑥'",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105124346hvK",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:42",
+   "title": "美 '블루 쓰나미'에 AI 산업 긴장…데이터센터 투자·빅테크 성장 전략...",
+   "url": "https://www.aitimes.kr/news/articleView.html?idxno=42602",
+   "disrupt": "공급망 안전;수출허가",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:32",
+   "title": "“민주 압승에도 미중관계 영향 제한적…대만·티베트 문제는 변수”[정...",
+   "url": "https://www.sedaily.com/article/20110619?ref=naver",
+   "disrupt": "수출통제",
+   "materials": "광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:28",
+   "title": "‘ESS로 수익 방어’ 에코프로비엠, 3Q 영업익 120억 ‘7분기 연속 흑자...",
+   "url": "https://www.fntimes.com/html/view.php?ud=2026110512252147107492587736_18",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "건설;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:22",
+   "title": "정부 \"청해부대 75명 추가 파견...작전지역도 확대\"",
+   "url": "https://www.ytn.co.kr/_ln/0101_202611051222057484",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:20",
+   "title": "미 의회 덮친 '블루 쓰나미'...트럼프 남은 2년 험로 [뉴스나우]",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611051220312951",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:18",
+   "title": "청해부대 작전구역 호르무즈 인근까지 확대…기뢰제거 전력도 파견 추진",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=319246",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:13",
+   "title": "청해부대 작전 구역 오만 남방까지 확대…초계기 추가",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008832070&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:07",
+   "title": "'항행 자유' 첫 임무‥오만 남쪽까지 작전 확대",
+   "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6863384_36967.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:02",
+   "title": "청해부대 임무 구역 확대…초계기 추가 투입",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704783&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:01",
+   "title": "美 분석기관 “호르무즈 봉쇄에도 中은 에틸렌 생산 유지…韓·日 석화...",
+   "url": "https://biz.heraldcorp.com/article/10926849?ref=naver",
+   "disrupt": "공급 차질;봉쇄",
+   "materials": "기관;나프타;석유;에틸렌;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:00",
+   "title": "[분석] 엘앤에프 1조 LFP 수주 ··· 국산 '양극재' 中 독주 깰까",
+   "url": "https://www.datasom.co.kr/news/articleView.html?idxno=210668",
+   "disrupt": "생산 중단",
+   "materials": "양극;양극재;유지;흑연",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 12:00",
+   "title": "청해부대, 美 파병 요구에 화답…호르무즈 작전영역 2배로 확대",
+   "url": "https://www.munhwa.com/article/11629041?ref=naver",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:58",
+   "title": "[아시아라운드업 20261105] 네타냐후 재집권 먹구름, 우군 이탈·아랍계...",
+   "url": "http://kor.theasian.asia/archives/420900",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:58",
+   "title": "청해부대 작전구역 '호르무즈 인근 해역'까지 확대 추진",
+   "url": "https://www.newsverse.kr/news/articleView.html?idxno=11849",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:58",
+   "title": "미 민주 의회, 트럼프 관세·주한미군 감축 견제…한국 핵잠·전작권은...",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261105010002015",
+   "disrupt": "관세",
+   "materials": "농축",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:57",
+   "title": "태국 메모리반도체 시장동향",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=190&CONTENTS_NO=2&bbsGbn=254&bbsSn=254&pNttSn=244973",
+   "disrupt": "수출 금지",
+   "materials": "금;반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:56",
+   "title": "전기차 시장 성장에도…현대차·기아 등 완성차 6곳 전동화 목표 조정",
+   "url": "https://www.impacton.net/news/articleView.html?idxno=30544",
+   "disrupt": "생산 중단",
+   "materials": "광물;기관;배터리;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:56",
+   "title": "초계기·무인수상정, 호르무즈 문앞까지… ‘전쟁 불개입 4원칙’ 아래...",
+   "url": "https://www.munhwa.com/article/11629022?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:56",
+   "title": "英 270명 기뢰제거 등 임무… 日은 “파병없다” 선그어",
+   "url": "https://www.munhwa.com/article/11629023?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:56",
+   "title": "조국혁신당 “전쟁의 바다로 보내나”…민주 “파병과는 달라”",
+   "url": "https://www.munhwa.com/article/11629020?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:54",
+   "title": "고려아연, 자사주 절반 내년 소각…액면분할 재추진",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=190489",
+   "disrupt": "생산 중단",
+   "materials": "건설;광물;금;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:53",
+   "title": "청해부대, 오만 남방까지 작전구역 확대… 해상초계기 추가 파견",
+   "url": "https://biz.chosun.com/policy/politics/2026/11/05/U4IDL2Z6X5D2HMW4EQWQDBC4BU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:53",
+   "title": "與 \"청해부대 작전구역 확대, 해적 급증 탓…호르무즈 파병 아냐\"",
+   "url": "https://www.news1.kr/politics/assembly/6344098",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:52",
+   "title": "민주당 양원 장악에 대미투자 지연 가능성…트럼프 관세정책은 유지될...",
+   "url": "http://www.segyebiz.com/newsView/20261105508861?OutUrl=naver",
+   "disrupt": "관세;생산 중단",
+   "materials": "알루미늄;유지;지연;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:52",
+   "title": "‘술 마시고 비행 취소’ 공군총장 지시에…국방부 “규정 고칠 부분 검...",
+   "url": "https://biz.heraldcorp.com/article/10927024?ref=naver",
+   "disrupt": "",
+   "materials": "부분",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:49",
+   "title": "미 중간선거, 공화당이 참패한 5가지 이유",
+   "url": "https://www.bbc.com/korean/articles/crkg7w1n3pgno?xtor=AL-73-%5Bpartner%5D-%5Bnaver%5D-%5Bheadline%5D-%5Bkorean%5D-%5Bbizdev%5D-%5Bisapi%5D",
+   "disrupt": "봉쇄",
+   "materials": "수송;연료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:47",
+   "title": "청해부대, 호르무즈 650㎞ 앞까지 작전 확대…초계기 추가 투입(종합)",
+   "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6344049",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:46",
+   "title": "11월의 기도편지 [ 아프리카 남아프리카공화국 변동식 선교사 ]",
+   "url": "https://www.cts.tv/mission300/detail_mission//323/11693",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:45",
+   "title": "“민주당 압승 美, 첨단 반도체 수출 완화 반대 대중 강경 법안 나올 수...",
+   "url": "https://www.newsis.com/view/NISX20261105_0003856189",
+   "disrupt": "수출통제",
+   "materials": "반도체;주석;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:44",
+   "title": "[중간선거] 90달러 밑으로 떨어진 유가…\"종전 기대에 추가 하락 가능성...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443218",
+   "disrupt": "공급 차질;반등",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:42",
+   "title": "정부 \"청해부대 임무 강화\"…초계기 파견·해역 '오만 남방' 확대",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105114106ucw",
+   "disrupt": "",
+   "materials": "금",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:40",
+   "title": "트럼프, 더 ‘독한 관세’ 꺼낼 수도…대미투자, 州정부가 변수",
+   "url": "https://biz.heraldcorp.com/article/10926982?ref=naver",
+   "disrupt": "관세;생산 중단",
+   "materials": "건설;금;반도체;보조;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:40",
+   "title": "청해부대 작전 확대안 의결…국회 제출은 국무회의 뒤",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=400880",
+   "disrupt": "",
+   "materials": "목적",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:40",
+   "title": "청해부대 작전구역, 오만 남방까지 2배 확대…P-8A·소해 전력 전진 배치",
+   "url": "https://www.suwonilbo.kr/view.html?id=L26110511314075be",
+   "disrupt": "",
+   "materials": "기와",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:37",
+   "title": "정부, 청해부대 임무구역 확대",
+   "url": "https://biz.heraldcorp.com/article/10926971?ref=naver",
+   "disrupt": "폭발",
+   "materials": "기와",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:37",
+   "title": "민주 \"청해부대 작전구역 확대, 호르무즈 우회 파병 아냐\"",
+   "url": "https://www.ytn.co.kr/_ln/0101_202611051137252262",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:35",
+   "title": "[이시각헤드라인] 11월 5일 뉴스센터",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105113428Myk",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:34",
+   "title": "청해부대, 호르무즈 해협 650km 인근까지 작전범위 확대",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261105010002000",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:33",
+   "title": "국방부 \"청해부대 관련 오해 없도록 이란 등 주요국과 소통 예정\"",
+   "url": "https://www.dailian.co.kr/news/view/1711176/?sc=Naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:29",
+   "title": "중동 해역 감시·정찰 나서는 P-8A 포세이돈…하늘의 ‘잠수함 킬러’",
+   "url": "https://www.munhwa.com/article/11628982?ref=naver",
+   "disrupt": "",
+   "materials": "무수",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:28",
+   "title": "에코프로비엠 “LFP라인 5만톤 규모 증설 추진…글로벌 완성車 수조원대...",
+   "url": "https://biz.heraldcorp.com/article/10926933?ref=naver",
+   "disrupt": "가동 중단;공급 차질",
+   "materials": "리튬",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:28",
+   "title": "與 \"청해부대 작전 지역 확대, 곧 국회서 논의…'우회 파병' 아냐\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR202611051127198BG",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:28",
+   "title": "국방부 '청해부대 작전구역 2배 확대' 동의안 제출… 첨단전력 대폭 증...",
+   "url": "https://www.fnnews.com/news/202611051004049719",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:26",
+   "title": "청해부대 구역 두큼항 남단까지··· 해적 급증 대응에 EOD·소해장비 추...",
+   "url": "https://www.dkilbo.com/news/articleView.html?idxno=559710",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:24",
+   "title": "[美중간선거] 참패에도 이란전 '출구' 불투명…트럼프, 종전·확전 갈림...",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3446130",
+   "disrupt": "급등",
+   "materials": "유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:24",
+   "title": "한국 정부, 청해부대 작전 범위 확대·초계기 추가 파견..”전쟁 관여·...",
+   "url": "https://www.voakorea.com/a/korean-peninsula-11-05-26/8219205.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:24",
+   "title": "與 \"청해부대 작전구역 확대, 호르무즈 우회 파병 아냐\" 선 긋기",
+   "url": "https://www.mt.co.kr/politics/2026/11/05/2026110511104374368",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:23",
+   "title": "청해부대 작전구역 확대·초계기 투입…호르무즈 650km 거리까지(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20261104118351504?input=1195m",
+   "disrupt": "폭발",
+   "materials": "기와",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:22",
+   "title": "[美 중간선거] 민주당 승리에 핵잠·전작권 변수…軍, 청해부대 확대로...",
+   "url": "https://www.ajunews.com/view/20261105110354413",
+   "disrupt": "",
+   "materials": "농축;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:21",
+   "title": "[실적분석] \"너무 다른 3분기실적\" 에코프로비엠과 롯데에너지머티리얼...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=8099",
+   "disrupt": "생산 중단",
+   "materials": "반도체;배터리;부착;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:21",
+   "title": "'기름값 심판' 받은 트럼프…이란 전쟁이 부메랑 됐다",
+   "url": "https://www.newsis.com/view/NISX20261105_0003856009",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:20",
+   "title": "미·중 '현상 관리' 재확인…2라운드 예고",
+   "url": "https://www.yonhapmidas.com/news/articleView.html?idxno=10712",
+   "disrupt": "관세;수출통제",
+   "materials": "주석;현상;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:20",
+   "title": "우클릭 다카이치 정권 1년…경제정책 시험대",
+   "url": "https://www.yonhapmidas.com/news/articleView.html?idxno=10711",
+   "disrupt": "수출 제한",
+   "materials": "광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:20",
+   "title": "김민석, '민주당 신천지 논란'에 \"당원께 죄송… 전면 공개해도 문제 생...",
+   "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=249141",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:20",
+   "title": "민주당 \"청해부대 작전 지역 확대, 호르무즈 우회 파병 절대 아니다\"",
+   "url": "https://www.newspim.com/news/view/20261105000636",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:20",
+   "title": "하메네이 \"美 선거로 변화 기대는 큰 착각\"… 재공격 땐 전쟁 확대 경고",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=561433",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:19",
+   "title": "에코프로비엠, 3분기 영업익 전년比 76% 급감…순이익 적자전환",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=578986&class=17&grp=",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "리튬;양극;양극재;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:18",
+   "title": "청해부대 작전구역, 호르무즈 인근 오만 남방까지 확대되나",
+   "url": "https://news.cpbc.co.kr/article/1176842?division=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:18",
+   "title": "정부, 청해부대 임무 호르무즈 650㎞ 해역까지 확대…\"직접 투입은 NO\"",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=392957",
+   "disrupt": "폭발",
+   "materials": "기와",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:17",
+   "title": "민주당 “청해부대 작전구역 확대는 호르무즈 파병 아냐…국회 동의도...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704674&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:16",
+   "title": "호르무즈 피했더니 홍해도 불안…정유업게, 원유 수송 '딜레마'",
+   "url": "https://www.mediapen.com/news/view/1135380",
+   "disrupt": "",
+   "materials": "석유;수송;유기",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:14",
+   "title": "에코프로비엠, ESS 수요 확대 대응..LFP 양극재 투자 본격화",
+   "url": "https://www.mt.co.kr/industry/2026/11/05/2026110510524566877",
+   "disrupt": "생산 중단",
+   "materials": "니켈;망간;반도체;양극;양극재;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:14",
+   "title": "호르무즈에 더 가까워진 청해부대",
+   "url": "https://view.asiae.co.kr/article/2026110510490653765",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:13",
+   "title": "與, 청해부대 임무 확대에 “호르무즈 파병 절대 아니야”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04552646645642768&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:12",
+   "title": "캐나다 \"美의회 바뀌어도 무역 다변화 계속\"",
+   "url": "https://www.newsis.com/view/NISX20261105_0003855813",
+   "disrupt": "생산 중단",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:12",
+   "title": "전쟁·고사작전에 치솟는 이란 물가",
+   "url": "https://www.yonhapmidas.com/news/articleView.html?idxno=10703",
+   "disrupt": "재개",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:12",
+   "title": "트럼프 '러시아 경유 수입' 무산되나…\"유조선 3척 중 2척 회항\"",
+   "url": "https://www.mt.co.kr/world/2026/11/05/2026110510045330350",
+   "disrupt": "공급 차질;제재",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:11",
+   "title": "청해부대 임무구역 확대...해상초계기 등 전력 추가",
+   "url": "https://www.ytn.co.kr/_ln/0101_202611051111101934",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:11",
+   "title": "국방부 \"청해부대 호르무즈 파병 전제 아냐... 전쟁 개입 절대 없다\"",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003281991&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:08",
+   "title": "美 중간선거 민주당 압승…트럼프 광업 정책 재검토 압박 고조",
+   "url": "https://www.theguru.co.kr/news/article.html?no=109310",
+   "disrupt": "공급 차질",
+   "materials": "광물;비드",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:08",
+   "title": "與 “청해부대 확대, 호르무즈 우회파병 아냐”…혁신당 주장 반박",
+   "url": "https://www.kukinews.com/article/view/kuk202611050069",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:08",
+   "title": "진보당 “호르무즈 파병 철회하고 위성락 국가안보실장 경질해야”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704666&ref=A",
+   "disrupt": "",
+   "materials": "경질",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:08",
+   "title": "청해부대 임무 오만 남방까지 확대… 초계기·폭발물처리반 추가 파견",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3446119",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:08",
+   "title": "조국혁신당 \"왜 전쟁에 발 들이려 하나...주권 지켜야\"",
+   "url": "https://www.ytn.co.kr/_ln/0101_202611051108267378",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:06",
+   "title": "미 의회 다수당 바뀌어도 관세는 그대로…코트라 \"조선·반도체·전력은...",
+   "url": "https://platum.kr/archives/297835",
+   "disrupt": "관세;수출통제",
+   "materials": "구리;반도체;알루미늄;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:06",
+   "title": "[美 중간선거] ① '블루 쓰나미' 몰고온 민주당, 어떻게 보수 텃밭을 삼...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=146687",
+   "disrupt": "가격 상승;급등",
+   "materials": "고온",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:04",
+   "title": "트럼프의 ‘스피드볼 경제’는 끝났나: 중간선거 이후 미국의 선택",
+   "url": "https://newscham.net/130134/",
+   "disrupt": "",
+   "materials": "무기;유지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:04",
+   "title": "與, 청해부대 작전구역 확대에 \"호르무즈 파병 아냐…국회 동의 필요\"",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5080058",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:04",
+   "title": "2400억원 투입한 전주 탄소산단…진입도로 연내 조기 개통",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=501528",
+   "disrupt": "공급 차질",
+   "materials": "원자재;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:02",
+   "title": "에코프로비엠 \"중단한 헝가리 2번 라인, 지난달 말 가동 재개\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443199",
+   "disrupt": "생산 중단;재개",
+   "materials": "리튬;양극;양극재;인산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:02",
+   "title": "청해부대, 호르무즈 650km 앞까지 확대…초계기 추가 투입",
+   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00006&news_seq_no=5229164",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:01",
+   "title": "청해부대 작전지역 오만 남방 외해까지 확대…75명 추가 파견",
+   "url": "https://www.mt.co.kr/politics/2026/11/05/2026110509354411642",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:01",
+   "title": "韓, 고심 끝에 청해부대 임무 호르무즈 해역 확대·초계기 등 증강",
+   "url": "https://biz.heraldcorp.com/article/10926823?ref=naver",
+   "disrupt": "폭발",
+   "materials": "기와",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 11:00",
+   "title": "아이의 약물 직구, 부모가 막아 달라고 할 때 방법은",
+   "url": "https://www.taxwatch.co.kr/article/tax/2026/11/05/0002/naver",
+   "disrupt": "공급망 안전",
+   "materials": "아이;의약품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:56",
+   "title": "[美 중간선거] 이란 \"공화당 참패에 우리가 한몫\"…민주당 '전쟁 종식' ...",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=902024",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:56",
+   "title": "美 중간선거 '블루 쓰나미'에 AI 인프라 급제동…데이터센터 1000곳 건설...",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=302937",
+   "disrupt": "공급망 안전",
+   "materials": "건설;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:55",
+   "title": "정부, '청해부대 작전범위' 확대…김준형 \"우회 꼼수 파병\"",
+   "url": "https://news.jtbc.co.kr/article/NB12326588?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "방향",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:54",
+   "title": "선거 대패한 트럼프, 이란 전쟁 재개할까?",
+   "url": "https://www.newsis.com/view/NISX20261105_0003855965",
+   "disrupt": "재개",
+   "materials": "사무",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:54",
+   "title": "시지메드텍, 美 FDA 인체조직 현장 실사 '지적사항 없음' 종결",
+   "url": "https://www.pharmnews.com/news/articleView.html?idxno=307655",
+   "disrupt": "공급망 안전",
+   "materials": "인체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:53",
+   "title": "에코프로비엠, 3분기 영업익 120억…전년比 76% 감소",
+   "url": "https://www.sedaily.com/article/20110563?ref=naver",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "건설;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:52",
+   "title": "“미국은 ‘대악마’” 이란 모즈타바, 트럼프 중간 선거 패배하자 말폭...",
+   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000558501",
+   "disrupt": "",
+   "materials": "도자",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:51",
+   "title": "청해부대 임무, 호르무즈서 650㎞까지 확대…“해협 작전은 아냐”",
+   "url": "https://www.kmib.co.kr/article/20261105500301",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:51",
+   "title": "북극항로, 지금 준비해야 하는 이유",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003281983&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "",
+   "materials": "금;길이;선박;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:50",
+   "title": "트럼프 '참패'에 美 'AI 규제' 쏟아질까?…전력·환경문제 쟁점될듯",
+   "url": "https://www.newstree.kr/newsView/ntr202611050002",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:47",
+   "title": "청해부대 임무 구역 확대…초계기 투입",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704640&ref=A",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:47",
+   "title": "청해부대 작전구역 오만 남방까지 넓힌다… P-8 첫 파견에도 '독자 지휘...",
+   "url": "https://www.newspim.com/news/view/20261105000562",
+   "disrupt": "봉쇄",
+   "materials": "선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:46",
+   "title": "청해부대 작전구역 오만 남방까지 확대…초계기도 투입",
+   "url": "https://news.tf.co.kr/read/ptoday/2385137.htm",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:45",
+   "title": "美 중간선거 직후 '호르무즈 기여' 시동 건 정부…'압박 강화' 대비",
+   "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6343770",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:44",
+   "title": "“숨쉬기 힘들다”는 말 남기고 사망한 뚜안···“구조적 원인, 단속추...",
+   "url": "https://www.newsmin.co.kr/news/138630/",
+   "disrupt": "공급망 안전;단속",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:43",
+   "title": "與 \"청해부대 작전구역 확대, 호르무즈 우회 파병 아냐…국회 동의 논의...",
+   "url": "https://www.newsis.com/view/NISX20261105_0003855988",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:42",
+   "title": "청해부대, 호르무즈 인근까지 작전 반경 '두 배'로…초계기 추가 투입",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202611050024",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:41",
+   "title": "청해부대 임무 호르무즈 650㎞ 해역까지 확대",
+   "url": "https://biz.sbs.co.kr/article_hub/20000344412?division=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:40",
+   "title": "코트라 \"美 관세 압박 지속…조선·반도체는 기회\"",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=365732",
+   "disrupt": "관세;수출통제",
+   "materials": "구리;반도체;알루미늄;의약품;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:40",
+   "title": "아덴만 감시 나서는 P-8A 포세이돈…하늘의 '잠수함 킬러'",
+   "url": "https://www.yna.co.kr/view/AKR20261104155400504?input=1195m",
+   "disrupt": "",
+   "materials": "무수",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:38",
+   "title": "청해부대, 호르무즈 해협 인근까지 작전구역 확대…초계기·기뢰제거 전...",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=779230",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:33",
+   "title": "'청해부대 파견 확대'…정부, 파견동의안 수정안 확정",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008831821&plink=ORI&cooper=NAVER",
+   "disrupt": "봉쇄",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:32",
+   "title": "영국 총리 \"미 민주당 압승, 생활비 문제로 세계가 단합할 기회\"",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003281919&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "disrupt": "",
+   "materials": "방향",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:31",
+   "title": "민주 \"청해부대 작전 확대, 해적 급증 때문…호르무즈 우회 파병 아냐\"",
+   "url": "https://news.tf.co.kr/read/ptoday/2385121.htm",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:30",
+   "title": "美민주 압승 '이란전 종식' 기대에 국제유가 폭락…WTI 8.29%↓",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=news_board&wr_id=57561",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:28",
+   "title": "고려아연, 매출 6조에도 '어닝쇼크'…영업이익 반토막",
+   "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=623177",
+   "disrupt": "생산 중단",
+   "materials": "건설;게르마늄;광물;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:22",
+   "title": "[로펌 iN] 김앤장-King & Wood, '중국 공급망 규제 대응방안' 세미나 개최",
+   "url": "http://www.legaltimes.co.kr/news/articleView.html?idxno=96811",
+   "disrupt": "수출통제;제재",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:14",
+   "title": "미국 민주당 의회 장악, 기후·탄소 정책의 복귀인가, 프레임의 전환인...",
+   "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17244",
+   "disrupt": "수출 제한",
+   "materials": "건설;알루미늄;철강;탄소;프레임",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:12",
+   "title": "[두 개의 미국, 한국의 2년(1부)] 중간선거 진 트럼프, 선전 APEC 앞으로...",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=93091",
+   "disrupt": "수출통제",
+   "materials": "무기;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:12",
+   "title": "주택시장 기준선 된 사업 안정성… 공정률·현장 진행 파악하는 수요자...",
+   "url": "https://www.apnews.kr/news/articleView.html?idxno=3052806",
+   "disrupt": "공급 차질",
+   "materials": "공정;금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:11",
+   "title": "삼전 6%·하닉 8% 급락…美증시 뛰었는데 반도체는 왜? [칩칩폭폭]",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=578967&class=17&grp=",
+   "disrupt": "급락;수출 제한",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:07",
+   "title": "몽골, 인플레이션 12.9% 속 2027년 투자환경 변화 전망",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=100&CONTENTS_NO=1&bbsGbn=322&bbsSn=322&pNttSn=244910",
+   "disrupt": "수출 제한",
+   "materials": "광물;구리",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:02",
+   "title": "[동북아정세 브리핑] 美 의회 권력 교체, 中 해군력 확대…한반도·대만...",
+   "url": "http://kor.theasian.asia/archives/420868",
+   "disrupt": "수출통제",
+   "materials": "높이;반도체;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:02",
+   "title": "최윤범 고려아연 회장 '주주환원 행보' 가속... 자사주 절반 소각에 배...",
+   "url": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=524637",
+   "disrupt": "생산 중단",
+   "materials": "건설;광물;금;목적;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:01",
+   "title": "국가 돈 퍼부어 탈중국 막기… 전기차·반도체 넘어 ‘모든 것’ 지배[...",
+   "url": "https://www.munhwa.com/article/11628952?ref=naver",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:01",
+   "title": "美 중간선거에 출렁인 코스피…외국인 하루 2.5조 순매도",
+   "url": "https://www.sedaily.com/article/20110484?ref=naver",
+   "disrupt": "강세;수출 금지",
+   "materials": "금;리튬;코어",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:00",
+   "title": "왜 지금 북극항로인가…대한민국의 새로운 길 준비",
+   "url": "https://www.korea.kr/news/contributePolicyView.do?newsId=148975004&call_from=naver_news",
+   "disrupt": "수출 금지",
+   "materials": "광물;금;길이;사진;석유;수산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 10:00",
+   "title": "AI 데이터센터 ESS 수요에 7분기 연속 흑자..에코프로비엠, 3분기 영업익...",
+   "url": "https://www.dailycar.co.kr/content/news.html?type=view&autoId=63077",
+   "disrupt": "공급 차질",
+   "materials": "건설;반도체;양극;양극재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:54",
+   "title": "고려아연, 자사주 24만주 소각·액면분할 재추진…주주환원 강화",
+   "url": "https://www.cnbizm.com/news/articleView.html?idxno=320440",
+   "disrupt": "생산 중단",
+   "materials": "건설;게르마늄;광물;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:54",
+   "title": "장성민 전 의원 \"미 트럼피즘 종언?…공화당 참패 원인은 경제·전쟁·이...",
+   "url": "http://www.breaknews.com/1248572",
+   "disrupt": "봉쇄",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:50",
+   "title": "친환경 배 1942척 나오는데 급유항 태부족…선주들 발주 숨고르기 들어...",
+   "url": "https://www.g-enews.com/view.php?ud=202611050947578239fbbec65dfb_1",
+   "disrupt": "공급 차질",
+   "materials": "건조;메탄;메탄올;연료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:48",
+   "title": "내 집 마련 수요자, 분양가 넘어 공정률·사업 안정성까지 살핀다",
+   "url": "https://biz.heraldcorp.com/article/10926578?ref=naver",
+   "disrupt": "공급 차질",
+   "materials": "공정;금;부분;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:29",
+   "title": "美민주당 압승에 데이터센터 차질 전망…AI 투자 위축 우려",
+   "url": "https://www.news1.kr/world/usa-canada/6343620",
+   "disrupt": "공급 차질",
+   "materials": "반도체;전자",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:29",
+   "title": "\"국산 부품 수입가 적용 의무화\" 등 방산 원가 개혁 '산정체계' 개편 나...",
+   "url": "https://www.fnnews.com/news/202611050849511737",
+   "disrupt": "공급망 안전",
+   "materials": "조성",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:28",
+   "title": "美 '블루웨이브'에 다우 3%↑…반도체 3%↓",
+   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=200375",
+   "disrupt": "공급 차질;관세",
+   "materials": "반도체;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:24",
+   "title": "[해외브리핑] 선진국 기후적응 지원, 개도국 필요액 10분의 1도 안돼",
+   "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17242",
+   "disrupt": "생산 중단",
+   "materials": "금;메탄;메탄올;암모니아;용해;철강;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:18",
+   "title": "美 민주당 의회 장악에 긴장하는 中… “대만·반도체 압박 거세질 것”",
+   "url": "https://www.chosun.com/international/international_general/2026/11/05/YJ2OPKNDFVHRDIS6ANSVH2XSGM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "disrupt": "수출통제;제재",
+   "materials": "반도체;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 09:00",
+   "title": "고려아연, 자사주 소각·액면분할 재추진…3분기 매출 6조 돌파",
+   "url": "https://www.handmk.com/news/articleView.html?idxno=44783",
+   "disrupt": "가격 하락;생산 중단",
+   "materials": "광물;귀금속;금;아연;제련",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:47",
+   "title": "트럼프 '러시아 경유 수입' 차질…\"유조선 3척 중 2척 미국행 포기\"",
+   "url": "https://www.news1.kr/world/usa-canada/6343594",
+   "disrupt": "공급 차질",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:46",
+   "title": "두바이유 하루 11% 급락…정유·화학·태양광 '엇갈린 셈법'",
+   "url": "https://www.thepowernews.co.kr/view.php?ud=202611041748411636de3f0aa1be_7",
+   "disrupt": "급락;수출 제한",
+   "materials": "나프타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:46",
+   "title": "[원자재 시황] 금·뉴욕증시 급등…WTI 80달러선",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1730526",
+   "disrupt": "가격 하락;공급 부족;공급 차질;급등",
+   "materials": "금;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:30",
+   "title": "군 보위국 비리 보고서 넘겨 받은 내각, 사회안전성과 합동 검열",
+   "url": "https://www.dailynk.com/20261105-1",
+   "disrupt": "공급 차질",
+   "materials": "건설;신발;원료;원자재;지방",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:28",
+   "title": "[굿모닝 마켓] '블루 쓰나미' 현실화…뉴욕증시 일제히 급등세",
+   "url": "https://biz.sbs.co.kr/article_hub/20000344368?division=NAVER",
+   "disrupt": "공급 차질;급등",
+   "materials": "건설;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:26",
+   "title": "美 선거 종료…국내 증시, 정책 수혜·실적 장세로 급속 전환",
+   "url": "https://www.newsis.com/view/NISX20261105_0003855543",
+   "disrupt": "수출 제한",
+   "materials": "마찰;반도체;세로",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:25",
+   "title": "2026 하반기 캐나다 토론토 취업박람회 개최기",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=245036",
+   "disrupt": "공급망 안전;관세",
+   "materials": "배터리;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:22",
+   "title": "반도체 정말 무너지나? 민주당 압승 후폭풍",
+   "url": "https://www.g-enews.com/view.php?ud=202611050818197887906806b77b_1",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:20",
+   "title": "고려아연, 3분기 매출 6조861억원...자사주 절반 소각·액면분할 재추진",
+   "url": "https://www.eroun.net/news/articleView.html?idxno=94440",
+   "disrupt": "생산 중단",
+   "materials": "광물;귀금속;금;높이;아연;유동",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:14",
+   "title": "[개장 전 주요 공시] SK·한진칼·다우기술·핸즈코퍼레이션·피노·고려...",
+   "url": "https://www.g-enews.com/view.php?ud=202611050758286969923c501012_1",
+   "disrupt": "생산 중단",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:12",
+   "title": "강문성 특별시의원, 여수산단 소재산업 연계 강조…NCC 감축 따른 공급...",
+   "url": "http://www.netongs.com/news/articleView.html?idxno=336264",
+   "disrupt": "가동 중단;생산 중단",
+   "materials": "반도체;수산;원료",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 08:06",
+   "title": "SK㈜, SK에코플랜트 완전 자회사화 추진… IPO 접고 반도체·AI 사업 통합...",
+   "url": "https://www.jemin.com/news/articleView.html?idxno=846213",
+   "disrupt": "생산 중단",
+   "materials": "건설;반도체;사진",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 07:54",
+   "title": "\"산일전기, 단기 실적 쇼크 덮는 사상 최대 수주…4분기 실적 반등\"-유안...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03145526645642768&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "강세;공급 차질;반등;약세",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 07:34",
+   "title": "[마켓 브리핑] '블루 쓰나미' 현실화…뉴욕증시 일제히 급등세",
+   "url": "https://biz.sbs.co.kr/article_hub/20000344354?division=NAVER",
+   "disrupt": "공급 차질;급등",
+   "materials": "건설;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 07:30",
+   "title": "3Q 주요 선사, 화종 불문...'전쟁·관세' 특수 함박웃음",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879902",
+   "disrupt": "공급 차질;관세",
+   "materials": "원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 07:18",
+   "title": "한국 기업의 생산기지 전략을 다시 짜야 한다",
+   "url": "https://www.taxtimes.co.kr/news/article.html?no=277581",
+   "disrupt": "관세;수출통제",
+   "materials": "알루미늄;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 07:00",
+   "title": "11월 5일 개장 전 주요 공시",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=641936",
+   "disrupt": "생산 중단",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 06:32",
+   "title": "[N2 모닝 경제 브리핑-11월 5일] 美 증시, 민주당 압승에 다우 3% 급등…...",
+   "url": "https://www.news2day.co.kr/article/20261104500426",
+   "disrupt": "공급 차질;급등",
+   "materials": "알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 06:04",
+   "title": "삼성 협력사 루마니아 RAAL, 또 250명 대규모 감원…올해만 세 번째 구조...",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=93066",
+   "disrupt": "공급 차질",
+   "materials": "금;알루미늄",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 06:02",
+   "title": "“철강 흔들리면 제조업 무너진다”… 철강업계, ‘한국판 IRA’ 포함 호...",
+   "url": "https://www.kmib.co.kr/article/20261104501523",
+   "disrupt": "생산 중단",
+   "materials": "금;반도체;인공;전지;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 05:46",
+   "title": "中 고철·재활용업계, 중동 전쟁發 원자재 폭등에 순익 63% 급증",
+   "url": "https://www.g-enews.com/view.php?ud=2026110415493672190c8c1c064d_1",
+   "disrupt": "봉쇄;수출 제한",
+   "materials": "고철;구리;나프타;원료;원자재;정제;황산",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 05:08",
+   "title": "청해부대 임무 해역 ‘오만 남방’ 확대…기뢰제거 전력 추가 파견 - 인디포커스",
+   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1MQ1VfY2RoUXJwZE1SaW1lTDItb2pZdklEMkFoSTBoNmR4cVB3YVFYY2dVdU5kaWZ4Y3FSbDNVYVNqM1E?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 05:04",
+   "title": "진보당, 호르무즈 우회 파병안 차관회의 통과에 철회 요구 - 한국사회복지저널",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE51cUVGSkJHTjM4NzltWklIWEpTaXZtcmRJOWd4S2pkUGliYi1OcF9HQ0JlVWxZVmJ0NzNzR2xuZU5QZHU0NTlOdVI4S25mbmdoWU9GOXRmRnB6SHR1RFdmcnk3SEJiNEhCOXBR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 05:00",
+   "title": "[열린송현] 기술 규제장벽 넘어서려면",
+   "url": "https://www.sedaily.com/article/20110183?ref=naver",
+   "disrupt": "관세;수출 통제;수출통제;화재",
+   "materials": "반도체;세로;인공;탄소",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 04:56",
+   "title": "정부 \"청해부대 75명 추가 파견...작전지역도 확대\" - YTN",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zWC1vYzJhVUxENV9vanpOUzctQ3V1cUYtWDFWVDVPc29qRVUyNUJiUVVKUDl0OUN1OXBNLW8yTzdwMHVZdnNGT2xrSy1Ma01FZTUyV3M4ZGpMWGpFdkE?oc=5",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 04:44",
+   "title": "[글로벌 비즈 브리핑] \"중간선거 최대 패배자는 머스크\" 外",
+   "url": "https://biz.sbs.co.kr/article_hub/20000344327?division=NAVER",
+   "disrupt": "공급 차질",
+   "materials": "건설;기관;반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 04:34",
+   "title": "트럼프, 입법 필요없는 ‘표적관세’ 강행 우려… 민주 견제에 알래스카...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261105/134968794/2",
+   "disrupt": "관세;수출 통제;수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 04:34",
+   "title": "청해부대 임무 호르무즈 인근까지 확대...전력도 강화 - 이투데이",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0OTQtYWN4Y0lITGlZbW5NZ2wtT21PQ204Y2ZrSXlSeTFRYWgyM2hEcGlPZFhqaFU1cVhxLWZpMEd0bTJ3bGVaRWZJaGpjM0xodkp1MFJmem8zRFZjYnZqak1LaS1YektrbFBLVl9n?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-05 04:12",
+   "title": "코스피 하루 406포인트 '롤러코스터'…외국인 2조5000억 팔아도 상승 마...",
+   "url": "https://www.geconomy.co.kr/news/article.html?no=325297",
+   "disrupt": "반등;수출 제한",
+   "materials": "건설;반도체;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:55",
+   "title": "광해광업공단, 제4회 핵심광물 재자원화 포럼 정기총회 개최 - 투데이에너지",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ReS0temMzVlNsMEZJY25fMXl6cDdBN3MzeVdvU3VLanAzSlZwSmx6ak9Obi1ia1l1NWloVGRCQjRfTUNDc0ZKSkp3Y0R2aVBuNUU4T2tnQ1hzbWFxWE8wdG9tamZmdnA4b2FadQ?oc=5",
+   "disrupt": "수출 제한",
+   "materials": "광물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:44",
+   "title": "호르무즈에 더 가까워진 청해부대 - 아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9waHpuZ01EMURaMGVZUjVlQURJZDlYTlZMcTdfN0MxVzB3aXk5MktBU2hBMHlETWtNLWhzTV9QSHF3ekh0cjByOE5ScDdRWHdQQWIza2pwVF85U3FsN1MyRA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:33",
+   "title": "청해부대, 호르무즈 가까워졌다…작전지역 확대·초계기 추가 투입 - 신아일보",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5RZUVfaHlJaUVoVUNTNWVQVXV3UjZrYWU3OHJWYnBaVDU2elhGaUN1YkMtUE5zTVU3R3JpQktsMWtPYkR2WHY1Sm45M20zZTI2T2hxNzVRT0ZiMU50Z3Znd2ViZW9kMDFUdDFlUm4zQWQ?oc=5",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:31",
+   "title": "“민주 압승에도 미중관계 영향 제한적…대만·티베트 문제는 변수”[정다은의 차이나코어] - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5lVmdlRm9RT1lCMGNmVHhSNWl5V1pRUDBzMm5lZDcwQ3hzSE1SNUp2cThuY3hHZktDbV9kMlFtTGxMM2xwMFU5TGNvTm53LV9HcUHSAVNBVV95cUxNUmsyaTRtWkdWcW1uZ1VrNksxek1PNHl4bzlxZ1MzNFpHMWc4RHV2OTlBWmVuejhaV01Xc1hTc1BkcVBaSUtCWVlPQS1JZk5kRVlsUQ?oc=5",
+   "disrupt": "수출통제",
+   "materials": "광물;코어",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:27",
+   "title": "한국, 곧 군함 파견, 호르무즈 해협 인근 작전 범위 확대 - Laodong.vn",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQemI3NDhvcWdoOFlrV2RBcHNjQWlhOWhIb3FrNTlXMEVOcU5RNWpFX2VON2p3MUJFR0x1UUNpY045c19FakJfbG1aNmpHX3VZRzlzeHVfNzRQU1Rla2FNN0hpTGhSaGF1ckcwMTliS2hlc2l4VWc2VnAwaFNqNnBRbWgyay1Db1F1T2ItTmllbVZPYnlZc1Q3TTN0dDdMX1JqbzI0cGdiaklmenNpcG5FS3NBR2FBZw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:18",
+   "title": "청해부대 작전구역 호르무즈 인근까지 확대…기뢰제거 전력도 파견 추진 - https://www.ppss.kr/",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBZVmdaTFpUUDZNUGpHR0lwUjdaZnU5cjNZNHlOc1FEa2s5QUlUUXA5NHJ2UDlvdzZhZG53a2F2ZHhXYUhvUmp4U29DQW9BaXduTU5Dd0FrNTVwRGhRMzhXSDRBeHk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 03:00",
+   "title": "美 분석기관 “호르무즈 봉쇄에도 中은 에틸렌 생산 유지…韓·日 석화 최대 타격” [비즈360] - 헤럴드경제",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ab2daaDc2cDlXYVVyU0ZlYXBObXlmWElUUHdwelk2X21wLTh6YjBTSVp5QkoyTUxsVzJveG42TDAtcWl0OW5KUm9BM19Qdkc0bUp5a3BR?oc=5",
+   "disrupt": "봉쇄",
+   "materials": "기관;나프타;에틸렌;유지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:59",
+   "title": "청해부대, 美 파병 요구에 화답…호르무즈 작전영역 2배로 확대 - 문화일보",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DZmNPR3FENE01YWdjZGtWMi16ZlNlbE9UeXJfUWlmbThvVEJIaXNfOC1xcXpfVnpNMUlWNWNEZHFXcjhVRTdoam1xMVMtaTJO?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:58",
+   "title": "청해부대 작전구역 ‘호르무즈 인근 해역’까지 확대 추진 - 뉴스버스",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBseXpPUWxhODBDWlk0Rjl2ZVlQZ2NWaWtHYkNnWGhzd25XTEIzV0F3Uk9qOFJ2eS1sQ1hZT0E5alJEdlZJN3RKT0U4cjBLUWYyUW5qVEZkQ3JSM3BEUzFkWkhwc21fOHpGYmc?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:57",
+   "title": "정부, 청해부대 작전 범위 확대 의결… 미국 압박 수용한 위험한 꼼수 - 자주시보",
+   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9sc2hBT2JaOURZY0kxdW5ORkN4MzRIR2p3R1dLNFhQTVQ3S05NeHI2U0JRVnpwYV9JMS1icEJFRTZqRDA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:56",
+   "title": "與, 청해부대 작전구역 확대에 “호르무즈 우회 파병 절대 아니다” - 서울뉴스통신",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mQUpILWR2c29kTWNyb0xtSFhfTzFTNTNLMUN4b3Bja1JpQ3NDNmYtVkk0SzhCOXlfNlQxZXNSWlVUbFR5MlVGNE5ZUVoxTmxuYXV1eFB1NXlUZm5LdjljT1FuNW50SGRnY25F?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:55",
+   "title": "초계기·무인수상정, 호르무즈 문앞까지… ‘전쟁 불개입 4원칙’ 아래 작전 - 문화일보",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBNbWk1dUNJRzhUODFsNXhTc2lvS2V5ZEtaMFBKWG10TWtWTHhGdkZyVkQwVFdpejY4TF94ZUZUcUt2NExMenZhS08zbTk4MXZj?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:53",
+   "title": "與 \"청해부대 작전구역 확대, 해적 급증 탓…호르무즈 파병 아냐\" - 파이낸셜뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDVVA4em84MUdTMjlHSlJZcHdLc01fdjc4QTJJb3pqQkF6Yi0tc21sRlEwaXF2R1hLenVHZHNXdnVKdWdUM3N1MzBDeEFnMERrMjlEY1dqWkRsdw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:52",
+   "title": "청해부대, 오만 남방까지 작전구역 확대… 해상초계기 추가 파견 - Chosunbiz",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSFBhWkRaRTkyNXhwV29aUWVQRVJZdkFSN0pua2R4NmlnOVNUSk5yMW9CMkJDczIxOHp5aWJTaG1lR2JlcnRWSXAzMHVHeU4wUEdtWDFBY084MWVNdmFITmVRUnVlRnVNTjZBdDVyM19MUGE1eDdKbHlrQ05jblZGVTlfWQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:47",
+   "title": "청해부대, 호르무즈 650㎞ 앞까지 작전 확대…초계기 추가 투입(종합) - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5uZFZTcmxQTTI2dnJBWVZhaGN6bGxPRTNraXBVbGhkQm5WdGItMnExbVZBcUJscWVubjZpY1NRM2FxMlEzYnJ4LV84M2lBSFA4dGVZNmM0Ti1QSk5kNmtyd1NRVU5YaWc?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:45",
+   "title": "“민주당 압승 美, 첨단 반도체 수출 완화 반대 대중 강경 법안 나올 수도” - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE55Uk1VRVhYNTBxb0sxZFhWN2NUQk41MTBaM2h3QUZaWDVlVDRzQ25HSms3T1lTdEJqWm9WVm1TSjhmTTZueTdBRUc1dFRwUTVlMEw4VnQzU0loamhjNkZhZnN3RlFnZmpwS1RTUTQ1eGJUM3ZnQlBmc9IBeEFVX3lxTE55Uk1VRVhYNTBxb0sxZFhWN2NUQk41MTBaM2h3QUZaWDVlVDRzQ25HSms3T1lTdEJqWm9WVm1TSjhmTTZueTdBRUc1dFRwUTVlMEw4VnQzU0loamhjNkZhZnN3RlFnZmpwS1RTUTQ1eGJUM3ZnQlBmcw?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:40",
+   "title": "[SF 이슈] 아덴만 넘어 호르무즈로…청해부대, '잠수함 킬러' P-8A 첫 파병 - 시큐리티팩트",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BYVduX1NzYmZ3Mk4tamI1ajdYTXpVeGNoWENJTE9rQXhzM2ZRbUQ1MVRZVTVSdnhBSF9nNlVJMkdhaEZCc0k2VHQtVjBRdTl4LWRia2xoMlZGY3IzSmVwcg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:34",
+   "title": "청해부대 호르무즈 인근으로 작전 확대…‘상선 보호’인가 ‘우회 파병’인가 - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XVTJHUUZyS3c4LXpnRWZIY3pKNElFRUtGSnVEdGJDc2w1dng1dzFtZTZ4TzliREYyLW5OczFNMmJrbEd2X0F3YU9qWDZraHVNdWVkaFBDOVg3NTJublpmYUMzWW1icUM3a2xF?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:32",
+   "title": "청해부대, 호르무즈 해협 650km 인근까지 작전범위 확대 - 아시아투데이",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MdFl1N1RWTXpQRlJtTTVQYm5iZXprdW55ZkRzZ210WmEwcUpRUUZ1SmlpWTBpb0I3X0NYRlFTbWRtTE9ZRktQbkRVSzNWaHM3WXhpaXVFQkdJakJMRWNrRE5tRE9fZkxNdGRaSnZ3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:31",
+   "title": "청해부대 작전구역 호르무즈까지 확대, 초계기·EOD 추가 파견 - 스페셜타임스",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rOUUxTFFCeEQtMUlONFVDWlVwZ3lNOG9ORlRiRjJuVkgxZ0JNS21JMWY4OFBWb2x5Yk1YR2dfWmM0VElEd0IxQ3U4dVRyR3ZxeUhkd0JsMDBwX0hXX1FZOU5KVDRNRHl2OVdUYm45dG5MOU0?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:25",
+   "title": "청해부대 임무구역, 호르무즈 해협 인근까지 확대…초계기·잠수정도 투입 - 한겨레",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IMlVZbGxqaU5VMWFYWmI2N0J5TkFIR2pRQ0haSklFOWR5N0RsOXFVOTNtODFOcDVWTjdHNnljcmZyN0xpMGdQd0xtZmxLcUxnbVhsWU1ZZ0o3QWtxN1lHUEZDZUNibFBI?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:24",
+   "title": "與 \"청해부대 작전구역 확대, 호르무즈 우회 파병 아냐\" 선 긋기 - 머니투데이 - 머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jMnRibFZ4WVFkTXZRekhweEJXRDlhOXM5c09IcV9RSzZ4bEs2V3VCMWZIVFYxQ0dOQ20wMEFycjdzNWcwQ3Bwb0FZaWtQTlQwOUJaTTZ0YnFkbHZaSUVIQ2RiTFhUSmlvZEVXWdIBckFVX3lxTE02Zkt5YWVJWGpWVHlpZndpbUdHSGFqN0cwbU1GbXlEa0dUbGdhcWxrNFJiR0lBdHhCT0s4aFcwRmVZazc4a01TdEFmbmtiYVcwRXhXMi1HR3RGWWE2TU51T1lEdXdnVmY1eThROTU4UFladw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:22",
+   "title": "정부, 청해부대 임무 호르무즈 650㎞ 해역까지 확대…“직접 투입은 NO” - 시사저널",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11T09oc09QWC1VTUJPWWRPWTJDbVFaMlB4d1VsOVYtTXVMakpqWl9GSmJOVDl6bWVzbEVET0R0Y1BLWm85ZlFFdS1pTkJuSFNrTEhMY0FNYkNpN19aQkNhUFl4LU1INFF3SE50eEllS18xVkHSAXNBVV95cUxNdU9PaHNPUFgtVU1CT1lkT1kyQ21RWjJQeHdVbDlWLU11TGpKalpfRkpiTlQ5em1lc2xFRE9EdGNQS1pvOWZRRXUtaU5CbkhTa0xITGNBTWJDaTdfWkJDYVBZeC1NSDRRd0hOdHhJZUtfMVZB?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:21",
+   "title": "[美 중간선거] 민주당 승리에 핵잠·전작권 변수…軍, 청해부대 확대로 호르무즈 기여 준비 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Mb3RXZmlzMmJjVXFwdTNnRmNseS16SUtMMTE0NFpnNVh4RHl4REtuQllzM2FsanNyN0Y3STJfNkJqWjVtTVRMUWN3aUlpa3RDZV9aUlpkNHhBQdIBWEFVX3lxTFA1Qml6ZzFIdTdKTmRSOG5jeVU0UjFsSmdlUTE4RUNFUXVuU1BQQlprUFk5VVZsTTk3aXNQY3MtSjB0OGg1Z1FxdVZjUFdHdnlWODRsQ2VBSEk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:20",
+   "title": "민주당 \"청해부대 작전 지역 확대, 호르무즈 우회 파병 절대 아니다\" - 뉴스핌",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWTVFnMFJFYWRNckdTQ3FLQ2dYenkxcW9CeWJIQkRuVFJ0cS12MDZrVzZxSGF6N1lvNWk1Vl9jcDFyZzBuY0NaVDhEazRyVm04TnA3U2Jnd0wxazRv?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:18",
+   "title": "청해부대 강화, 대미 설득 카드 될까…대이란 관계는 리스크↑ - 울산종합일보",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55U3d6QWJBSDBKNW1LdXNzWjVEVmVSRzB3Tm5kNDVoX1ptY3VlMVV1NWJYLXdiMmlfRUtGVjE0TFNZVjdGS0NJQWdyZml6bXBDR2gxQzdHSlBpZHRwa3VpOWhQakxfUVY1NlZLcEl3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:17",
+   "title": "민주당 “청해부대 작전구역 확대는 호르무즈 파병 아냐…국회 동의도 필요” - KBS 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hOVBTZDNyb3FzNFNSY3BORm5aWEpJeFhWQ1F1UWtsYTA0R0xlR0w2bEZSVTZrSmg3azlJbjlJd29CRmFZY2Mxc25MN1ViMmJBUkUxOHJza2VxVUk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:15",
+   "title": "호르무즈 피했더니 홍해도 불안…정유업게, 원유 수송 '딜레마' - 미디어펜",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95MHE1U29iYlg0QkRyTl9DZFV2VGRYYWlXVG0taVB0YWZCLUdaMFdscl9xeVZBaDhEN19vS0EtS1BIWmNSdTN6bVNsZE9QUjFHNVNWVNIBWEFVX3lxTE9qcjlTV2ZLdGRrT0w5LVhoNmR5T3lIQ3pObTJNOTlrWjdlMlM0NFJvOUJIT0tzZ0dBTGItWVNSOXVlUFNMR3VDS1lZZkVoc0lLOTVNX3Uyb3E?oc=5",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:14",
+   "title": "에코프로비엠, ESS 수요 확대 대응..LFP 양극재 투자 본격화 - 머니투데이 - 머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFbzJwQ2pCaXM3VVpNRGRhTEhuVjZ0aTd1dm1Bb0Vwby0wV3N0aC1QU0swaW1LODhRaWxNaXpqT1NVSnlFN1FYcnV0Y3dFOW1PQUFKbFk3bnZMTzRpUGlGYkllNnNfbVRNWjl2RHExa0g0Z9IBckFVX3lxTFBFbzJwQ2pCaXM3VVpNRGRhTEhuVjZ0aTd1dm1Bb0Vwby0wV3N0aC1QU0swaW1LODhRaWxNaXpqT1NVSnlFN1FYcnV0Y3dFOW1PQUFKbFk3bnZMTzRpUGlGYkllNnNfbVRNWjl2RHExa0g0Zw?oc=5",
+   "disrupt": "생산 중단",
+   "materials": "니켈;양극;양극재;코발트",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:11",
+   "title": "與, 청해부대 임무 확대에 “호르무즈 파병 절대 아니야” - 이데일리",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSDZQVGJxbzlYejRKZ3lKUDd5aVdpMjc4QjlEUUF5QVB1a3NiNURNSmRzYzAtYlRJMGpDZkRTUDdKWWNfNk9uT3NGWjdkM1JyQ2ZvM2lBUTQ2U2wtbFlsdVk1dUpvRmlQYWxUNnJMdzBZeFZnZWZ4T2ZWOXZpaDFQdA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:08",
+   "title": "진보당 “호르무즈 파병 철회하고 위성락 국가안보실장 경질해야” - KBS 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnWktGakRRb0dORTZQSUV2cS1BQndIUVFnY2JoY0N0eV9GR2ZOWGYtZldZbDhvdXRaUkhMVHVfSWpTbFlUaURNRXJrVjk4aFdxRnZpTWtSWGFWOUE?oc=5",
+   "disrupt": "",
+   "materials": "경질",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:07",
+   "title": "與 “청해부대 확대, 호르무즈 우회파병 아냐”…혁신당 주장 반박 - 쿠키뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ETHNlQ00xRmRFcDF5MFZxbE5zcFVlWjR2dFlFUjRzTXhlNF9FR0NBeXRqUGctYjBHNlNBWmtuREJ6N1dLZXFsby02NVhJYkdienc2ZzRWb3JTcnllR3VqTHpjdw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:04",
+   "title": "에코프로비엠 \"중단한 헝가리 2번 라인, 지난달 말 가동 재개\" | - 연합인포맥스",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5naUk0RkFzOEhrbzdKaEtnY2ZHLXUxWVNWZzJqODNNQlh6ZXBaWURvcGdVT1NJekFMV1h6cGtTb0F5ZzRZSmc2Qms3U0RIeGlHQXlKWnMtb2ZUZGl5VG5lamlKdHdlNWZoSXZ0YjJEemJMU3lV?oc=5",
+   "disrupt": "생산 중단;재개",
+   "materials": "리튬",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:03",
+   "title": "與, 청해부대 작전구역 확대에 \"호르무즈 파병 아냐…국회 동의 필요\" - 신아일보",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpcWt0Y2hrOUpqSm5YODZSenVhOVBhUm84SWhUMV9zSzVRdDZEYVpDZmpwRVMweEVBQzI4T2pTMi1LQVNlQjhpUGJCRlM2QzZPeFdncEJQakdwTURDZkdFeDUxMmdSLW4wZHV3QS0wMm4?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:02",
+   "title": "국방부 \"청해부대 호르무즈 파병 전제 아냐... 전쟁 개입 절대 없다\" - OhmyNews",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9sUXJEbWVzOFpmRHVZWk9zOXdHZUlFdVUzZHRwZ0pIX3BBR2I2Qk5nSTk3cy01dV9yLVpRWjVSRmhNcjVKWV9idTA0YURBZWVjVmM2ckRNWjdyNkRyU1lLaUxDS3BIeS1vV3RjQV9Za3pJY1l0QW0w?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 02:00",
+   "title": "韓, 고심 끝에 청해부대 임무구역 확대·초계기 등 증강키로 - 헤럴드경제",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96azlNQkdWNHlJdFdPbURrLVVjeUozMjhEUHVVLUlwUDFON3JBLXFwcVh2TDRTX0tONVhLQ1pLTEVaaUFXQUpOMEsxZlFGYVRldjNoNmVR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:56",
+   "title": "청해부대 75명 추가 파병 추진 … 호르무즈 군사작전 대비에 정치권 논란 - 한국뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9VX0FDZG9IRzRVaTh2VEl4RVN3TTduLWY5RVppOEFCSWQ0cnRqVEJ0d0tKcFlEdENUOHVEZVNSS25GWFZ3QndFYWJmNFpGZ0w3dVpaSFkzS0hidnVYdk12T3pUUlBfd2fSAWtBVV95cUxNanpTSzRqMnBMZklNUHE1TUxWaVEzRmg1Wk9KOUZCRUo4Ql95bDdrTXhxcnpVZEhsNFM5TWEySmQyUks5WGljZVlSenFWTFpvNU9kQ29mVzVPWDF0Xzc1Q3BkRGltSzRIZTVCUQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:50",
+   "title": "청해부대 임무, 호르무즈서 650㎞까지 확대⋯“해협 작전은 아냐” - 국민일보",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE94YUJIMlZpM3ZjdHJ6TzhfTjZLQVZnRUgyTDd2RWYxX08yeWEwQlBBN1BhaGthZFRpRkJ0aEpKLTBmU1dCdkdjRFhBbGdoRkdNbDZvV19RcV8?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:45",
+   "title": "美 중간선거 직후 '호르무즈 기여' 시동 건 정부…'압박 강화' 대비 - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Qbm5yUUd1dHd1eGRlazlhOFg2STNSOUhPLXNtS1VXVTZMeU85UDBCanBXLUNkRFlnRmVNQXRuUER3WlZCeUZwRWFtMHFmcG1ULVRzdEtmWWg3MER2Yzk5eW40V2hXNG8?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:43",
+   "title": "與 \"청해부대 작전구역 확대, 호르무즈 우회 파병 아냐…국회 동의 논의\" - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1UNnpMY3VPYXJHME5kWHpvSXNCdGZzd0YyNXhBR3pVVUxVaGQwY0Z1ZFpKRjdWZjZsRWo3Wk8wdWhlS1MtcUZTSi00ZDI5NW1LbWRreHVaUUNNZnVqVnVkc28xV0FIWUdaZW1IcnJZX1dsekkxeWV5etIBeEFVX3lxTE1UNnpMY3VPYXJHME5kWHpvSXNCdGZzd0YyNXhBR3pVVUxVaGQwY0Z1ZFpKRjdWZjZsRWo3Wk8wdWhlS1MtcUZTSi00ZDI5NW1LbWRreHVaUUNNZnVqVnVkc28xV0FIWUdaZW1IcnJZX1dsekkxeWV5eg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:41",
+   "title": "[속보]청해부대, 호르무즈 인근까지 작전 반경 '두 배'로…초계기 추가 투입 - KBC광주방송",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TLW90clJCWHlJLXlnMF9sVTY4SzQyVlJ3ZE52SWgzNjVOZERPN0lBTEhxNmpNcGJ3VVhJTmRWOWVJQTJKWXJSZzJfU1d3Mjh5Yl8yM0xNQm03bzVJZDQ0WQ?oc=5",
+   "disrupt": "",
+   "materials": "주방",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:36",
+   "title": "청해부대, 호르무즈 해협 인근까지 작전구역 확대…초계기·기뢰제거 전력 투입 - 싱글리스트",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sT2N1SlJzWWdYcHBuYmFxTXFpTmtQZHRnejJuRnA1MldTNWpGRUZuWmZLaE1Ob3UydkdCRElMUWN1MDRiNktaUFRDQ1hnOVdfVWpXOU5XQUdKSWlXemN2dURFck9pZw?oc=5",
+   "disrupt": "",
+   "materials": "싱글",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:30",
+   "title": "민주 \"청해부대 작전 확대, 해적 급증 때문…호르무즈 우회 파병 아냐\" - 더팩트",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jTnpUV2NmZzBHTHBFSWtoMmdZa19rZDBRbmp3TGpNdzdKNFJycGdrcG9OX050VkRlSFdyQzZVbVJrV0dsXzBnb3RteUluTERWTko3WFZUdGTSAVNBVV95cUxNR1BzTHlBX19WTGp0dTk4M0R2YnVJMVlWMkhUYVBwdEt0OFFIdl90SERRUWd1b2FSTFh0Qnk1YldRV2hVVV9obFJ6TUxZZVZIQ3gzaw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:22",
+   "title": "독일은 필수 원자재 부족 위험을 우려하고 있다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTkVHZk03WU1xQjluNkcyZUVkN1A3dWlzbWZ5ZW93ZmlsNVdCRnlabEViOUZZWHZyV09KT1NGMVFzOGhMLUFJV09EMkxVNzlfVHZNWExqc2U3bThfN2FaYk1xYzIyZnpzcjIwcWRsNjNKZVFvbV9XTGlLYzlIazEzRnVPTjBfUzlT?oc=5",
+   "disrupt": "수출통제",
+   "materials": "원자재;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:22",
+   "title": "이란은 유조선 3척이 호르무즈 해협에서 기뢰에 부딪혔다고 밝혔습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORER1elMyS2JyTjFNWXFuTzNnNzRKV0FfbHJrS1hVcnVtLV9OXzdrUnl6Nkh6Q1FTcS1lZXJ3cGdyclRycFlxVUNnVVEtRk9rUk84MGFHUGNDdlM4N0J1ZUsyMjJxOXpnNllYMy03WVl6M2YtOVgwUlNUSVZ4NUdEcU43R2lRRGVWeWd5Z2x4djE?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:21",
+   "title": "[로펌 iN] 김앤장-King & Wood, '중국 공급망 규제 대응방안' 세미나 개최 - 리걸타임즈",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBtSldRTmtHSDdzNnE1SV9ueU9veVROem9SX01NVVl2UUc5aHd0a2lGSElZNktyZFdZYm1Wd2pYZXd1bFBId2VtLVJ0cHVqdHhaMGQ2Ymo3d0k5TnpLeTdoeVJFUUJTa0dSSGVvYmpEMA?oc=5",
+   "disrupt": "수출통제",
+   "materials": "희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:21",
+   "title": "청해부대, 호르무즈 650㎞ 앞까지 간다…초계기·기뢰제거전력 추가 투입 - 미주중앙일보",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXMW1HVmJDX3N2TzlJS2M0cHFUbHdVLWVXbk1fVy12cmc2Y1ZlS3V6M1doRXZNN1RDa3gtaEF0ckwxZXhSdEZIWE5jMk5VZzk5UzNwRmFNUTdwWEw1UjZiMVh3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:16",
+   "title": "정부, 청해부대 작전 범위 2배 확대…호르무즈 인근 오만 해역까지 진출 - 뉴스21 통신",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wcXVPVTJoQXk4YmlXek04VFNXV3hMZDBsYlVaYnBuMml2UmEtRVcwbDUtYjdCSWNCaW9aVDNMQnNsUGotbWxVWm55T19PQjNHUjMtX0xR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:12",
+   "title": "정부, 청해부대 임무 호르무즈 650㎞ 해역까지 확대…초계기 추가 투입 - 글로벌경제신문",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNdllMWWJRQUxGZ3NMLW9uY2tfZUtxZDRhVzFrMHR0LXpCWVhKOGJRZ3RfZ2lHN1d1enlMbWVCMjROVjFnTDlmQXkybEtRUC0yMTVtOExiUXIwQ0s5LUUwZXZmUkV0VVBhRXlmLdIBcEFVX3lxTE01UUtxT3FMRkZ3QjBEdmxOTVA1X19QTVU2QlZ0Y3lUMklHZmN0WnlYekJhdEhYMFVpbnZQSU11aFVsVTJFdDJKMEFMVmdvdnRCcDdxelI4REZnXzJBN0lhZWF3VzAxdFQ1QUQ4NEFzOGI?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:09",
+   "title": "청해부대, 호르무즈 650㎞ 앞까지 작전 확대 추진...초계기·병력 추가 파견 - 위키리크스한국",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBORWxGU3hQSnJpTVpUMTlaUzZhVUlTTnpMZDljOHR1QjFzVF9RRWN0Z3k1TDdaU1c1VWp0TUV4cmtIOFliazZhU0xsQVNBZVFJcEVwNmZ1anM0YmFkVU14emF3LU9oR1RJOTc3TDFrTHk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:03",
+   "title": "청해부대 임무 호르무즈 650㎞ 해역까지 확대…초계기·EOD 추가 투입 - 연합뉴스TV",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5WG1OX2cteVhHeTFXNFk4M0s1UDQ5TmNrTElzb3pYTndtTVZKeXhPVnJjd0xIX1JZSTBVZU8zVVllWWl1aWhmZVRrMldIZFlJTjgteWFmSHNnWVlIQ2NrOWRxbmxiVzA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:01",
+   "title": "청해부대 강화, 대미 설득 카드 될까…대이란 관계는 리스크↑ - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12eVZESlFVUXZhTXQzQTFjWDN2cmpiNXJvTWFkVVZ1eUdPOUF6VXo0TUtGYUNyN2VpQ0g1bkdndkZKYmxQSE5CYkZVTGUzTG1pWklQWFFOUEFjTDjSAWBBVV95cUxOMnNBbkpGYUtWMFFGeG1nNUNzNVFzWS0ta2MyLW9abmJGR1FLdTdJamd6WXFiX3lOV1RfQ3lwcjB4Y2M2Vm9zbW5hU3RJdlFYLW9DQU5kcWF4TWxRZ25rZFk?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 01:00",
+   "title": "국가 돈 퍼부어 탈중국 막기… 전기차·반도체 넘어 ‘모든 것’ 지배[차이나 쇼크 3.0] - 문화일보",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GT0UtTHpKOHpBdkJLV0NWM1hpcDBvcUFDWmdnWHRMWHNjVHhVX1VKVTZ5NzdmaV9GX2JwTkhlYnFsT3p3bHZFU29GUHhia0RI?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:56",
+   "title": "청해부대 임무 호르무즈 650㎞ 해역까지 확대…75명 추가 파견 - 부산일보",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Sb1JwcTlwOV9XX0otYUpNeVUtaFFmUXZFTzljMkUzMXQzTFcyMUlCT0V4cFM1NU5JWFI0eWFjTlVCOW9iYnRLTm5IOVQ4SmZtbmFjR2VDaGJhV1NzVHpaVE83WjAwMmtlOUVYZlJCS3NWYW0tZy1fdU80RQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:56",
+   "title": "청해부대 임무 호르무즈 해역까지 확대…초계기 추가 투입 - 중앙신문",
+   "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQVWVFbThWeTJKODdoNTNJZkxMNktkLVlkSzZWMnh2NWxfVTlGMnhYYXRXc3BzNzNjZEN5TC1pc01pb2cxRnZ0X0NvSmRQWXU2ZDkxT3VCVGZXYTlKOE0wdHduN3JMbFpmdnMyREk4T0ZmemxjTElwblhtQzdORGp3UXV6Qm9RQnZrNjg1VWlXeXJHWVZyOUdtbm96VlVJWGU0a3pQeHV2TlNFbGhFbFVsUEdFWlNRQzg5bXFYdUJ6ZHN2N3JTemtDMldETGN6Z3FSdEZQQnJmQi1IM1g1LVI3cnNjbFlHM2I3UTZUZU81WC1FMzVPQXdNOXpyTDhHbnZJeHBPTzRMRXBkMzJPMUlZU2pfX04wNWhGeFQwTlVaWnZoZFhMZFh2RmEyX0xobC16a2t1WWpULTlLMFlaZ00wVXhrRVVUNEx6c0hXdmMtNE4tbHp6MmFFQmV2eTJpQQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:53",
+   "title": "[속보] 국방부, 청해부대 작전 반경 넓힌다…'전쟁 불개입' 원칙 하에 호르무즈 진입 안해 - 프레시안",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE44dllKTko0Z0lwVnVNNWN3REgyZFdyVl9IeTJLa3ZIUVFvdjNXenV6YkR1anBZdTd1NXBZTGhXcUgtaWFTaW92aWtZWHBJVTF0UVMwY2FuaGxxRHItU1p5bm9pV0pFZExTa2hTSFNRaVBfVHFHcVZ3Y1Nxbw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:51",
+   "title": "[속보]청해부대 임무 해역 오만 남쪽까지 확대…초계기 추가 투입 - 동아일보",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5EbjNmZ2taczY2WUxBS3lrQzdLUEhDSnY4czRXSHM5amJYMXItZUJYc1V2ZlpueHNaSzFiM2RsNTRJVUNON24wWXVwalZIcnNxR1JReS1YU05MZ29iSDJEWFZKNWlhc1R2NVZJUzQ2TzlzdFdGTmVr0gFmQVVfeXFMUEFlYlJ6ZFo5aHRMc1BZTC03VkVyNGY4anlqLUJWcjVrTThVSDRoWDN2SE1TdFpGT2swZUtocUNTcDNzVUFFWklKaGR5MWkxcU8yeEYtTnduS21GOTBTN1RoT0pUN2VR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:50",
+   "title": "청해부대 임무 호르무즈 인근으로 확대…초계기도 투입 - 한겨레",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNLUROdVlZSlRVb3JpbEMxc0pvNFJDY3VaN2VYTDVHYzNITEFoWU51LXhnT19QYlloOVIyU1BNM1psRHBEbEx6NWViV3BncEYwTVBBUG1TbzJGeG1WeFNUQ2l0SGluUC1r?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:49",
+   "title": "[속보]청해부대 임무 호르무즈 650㎞ 해역까지 확대 - 서울신문",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtRHF4N0JWTHZuNW5XclROODVKUXIyTEtGckJNYUZid1JNSjhvODNkcXBSTUZtUWFKeUNkSTQ3VUMxNlpDRzc3ZG9sZ1lFTUtoYTJPLVNlemtmaEVLNG5haFJlOVdabXJ2YnlIaWZybEI?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:49",
+   "title": "[속보]정부 “청해부대 인원 추가 파견…작전지역도 호르무즈 인근으로 확대” - 채널A",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8wYUltNkQ2VlVtQzFOaHIzYVNGOUJfTlFlVFVqdFdLQUtJN3NSd1ZmdEk1OUo0OHBlbXV6Z3FiSzJ1WHdFTlJtczdvNG1RYTdqMWItc0pOY0JMX1pEU09jX1VFd9IBY0FVX3lxTE8wYUltNkQ2VlVtQzFOaHIzYVNGOUJfTlFlVFVqdFdLQUtJN3NSd1ZmdEk1OUo0OHBlbXV6Z3FiSzJ1WHdFTlJtczdvNG1RYTdqMWItc0pOY0JMX1pEU09jX1VFdw?oc=5",
+   "disrupt": "",
+   "materials": "전지",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:49",
+   "title": "호르무즈 650㎞ 앞까지 간다…청해부대, 초계기·기뢰제거 전력 보강 - 매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10ekxGRzVYMzBlM3BKc20xMnQzNzRnTWpISGhwT1h1SVZtVzRORnh0bkxvX212bmRwMlZrT2pZNkhhY3hlZmoyU0JLdVA4ZmkyMm5IbHpR?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:49",
+   "title": "청해부대, 호르무즈에 더 가까워졌다…작전 구역 확대·초계기 투입 - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83MDJxOEdPOERpZG9YdVlIa1VvZnktN19scEFpT2kxMWhUSURqOEEwU2pXMjZCVUotaTVXQ3Y1MlJJZHhMRjloQmliN3lRTExuM2tFcDdfTGpIeE5UYzN3dFVjeVVVNDQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:49",
+   "title": "청해부대 임무구역 오만 남방까지 확대…호르무즈 인근 해상안보 강화 - 전국매일신문",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fVU9QQ0ZDQ204eTNiNkxhRm81MTNwakVZYXlnRWFDNEx4Z2xoVDEzMGtwT2p6c2FjTWZ6R19Pc2wxRGZmUzRwV3Q1d1dLdlRRdTJoNnQ5MXA0WHFEVlNGcmdvQ2hVVHo1ei1wVEV3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:47",
+   "title": "청해부대 임무 호르무즈 인근까지 확대...초계기·소해전력 투입 - 조선일보",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZGl1R0VOUzJ5N0N0QW1hb1l2bkhtQzFtb2Q3LXdxM0dZQi1xVWUwWDlIVW9zemtITnpjZ29Zd085cUpGR3RfdTc4UGcwb2RNb2FlV0NnSmVEUjJfQzltM0dmLTV5X3FmWEFiZWh5MGFzOUJhN3BUTDctcGZkVVFxdndDZE9KcE5LR00zTWxrYlRjZw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:47",
+   "title": "청해부대 임무구역 호르무즈 인근까지 확대…P-8A·소해전력 추가 투입 : 정치 - 재경일보",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE53b0hFRTVzVVMtN0Y2UU9SY0NRZ1J3a3d4SFJFTTZuaDNHMTJMN1R5WkdaNmVCX2FMd09PRVBTcE0xZ2h5cFI1ZHFLQQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:46",
+   "title": "호르무즈 650㎞ 앞까지 간다…청해부대, 초계기도 투입 - 중앙일보",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyYV9Ha3NUUkViRkt3V1pGczdMRFR2aW1oOW1BazFmenlaSXQzZXlqSUg2dWlvUzN0ZFlrcXVhWTk4djQxRmg5MGRnQnBzSWY2ZElJMGx3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:46",
+   "title": "청해부대 임무 오만 남방까지 확대...호르무즈 기뢰제거 대비 - 티제이비",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1YSDR2YnBTeWpZb3BvQXFjV2ZiTEZNYXZ5UGVpbXEyS2FWaXJyUnk0YnItVzA5TlVxYkVUZVc2b0lfT1RUYmJCcEVuQURGWC1tdW9nT0pFSmR6LTNi?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:45",
+   "title": "청해부대 작전구역, 호르무즈 650㎞인 오만 남방까지 확대…초계기·기뢰제거 전력 추가 - 뉴시스",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5McDFnN1M4NTlCT1hUdF9veU0tSHNZakNZRld0THhXQzloQ1FDQzA4ZFI3eld5aXZEcUhERDJhS3U1d0NaVWlhd2U4bDJvUFp4YVdvWXFZM3VwcWFTbm1LatIBeEFVX3lxTFBFQnVjN29sRVVNTzIzM0h0NFBWelIzNnlaNmFrc1U5QURmTnBYQ1NaNnZta0pZel9sV3QzMDF2eVdJTDBiNzVNbmFfR09YcWJOVThyRGZ0SzVkSGM1LWR6c095cHYzOGJzLWtMR2RWd2ZsRkpzN2RldA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:42",
+   "title": "[속보]정부, 청해부대 작전범위 호르무즈 인근 확대···해상초계기 1대·기뢰제거 전력 파견 - 경향신문",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FdlBJdUVEM0tVNXBtMk1qWUQtS3NVMTBKTU9ES08zMTBrYTE0d0NielJDQ3UyYnVBcG9GMGlQaWVBMnRUaC13VlMyaWZBZUxfRloydG93T2IxZ9IBX0FVX3lxTE5YdFdwMWdLOXpvSDJJTk9VUVk1ekotbnJWa3hLMlNrM3EybE56STJOUHpPZkJuazA4eFBPY2NGUXJSSUdTMXVjQ1NqY0RxdVY5SWI2M2lGMTJvNzdVNWww?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:42",
+   "title": "[속보] 청해부대 작전구역, 호르무즈 해협 인근으로 확대…초계기도 투입 - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA1ZmU1Si1LMi1fSUZVcU9PVEJsWEtYMTlqdTlKTjBzMEpVSERHQzlOdW8tdDhSN1l0M1ZkQS1Wb19fMHVyNndVV1YwVGJVZ2k1cmfSAVNBVV95cUxPSzJsYUtCUmwtYVZHS01pRm5KbW9wWFYwaW5zVGU5RXc1OWg3Rk5QM3ZwR2tuaEtGUmVYSnVDenk0cFFxNnJtNmhkTkdVQmhWQ211bw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:41",
+   "title": "인니 “가격 안 맞으면 전력 수출 안 해”…싱가포르와 갈등 심화 - 인니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4ZTBSb09Ja19GU1RQTEh1enEwZXVzaDFSNEdCRWFEOHl0V2ZFREpNRENMSFdmV0F6VjlZYXBMdjFLX1hVY2RDN05GeFp5SVZaQURad1FxcDg3Z3AxYzVFWXpFZ0ZNRm8?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "광물;금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:41",
+   "title": "청해부대, 해상초계기 추가 투입…임무는 호르무즈 650㎞ 해역까지 확대[이현호의 밀리터리!톡] - 서울경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12YlVpUDJCZHBhc3VtaWtEbGZ4ZDBNd3dHMURBY2dOTlV5VGRRYnA0ZE5QS1pyTVhFQzdPSmIwMDNsN0ZGOWxfMHhRMHJxdndYTlHSAVNBVV95cUxNZnFlQWVDVTJlcHVrSmtYUHc1dTlCQTA1dXE5akxWZzUxNnlFWmV0bm5QTEFuWHloVHRIYWFzemljU2xGZFZCeUpCX0FNSWlGYU5Ibw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-11-05 00:38",
@@ -10,6 +2422,69 @@
    "url": "http://www.yonhapnewstv.co.kr/news/MYH20261105003736s4K",
    "disrupt": "",
    "materials": "도자",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:37",
+   "title": "청해부대, 오만만 남방까지 작전 확대 추진…초계기·기뢰제거 전력 증파 - 이데일리",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbUhpWTVBNVAxb3VpV3F1c2dGcmVpdVdOZG4tQzJBaFltd0dFYnh2a18tUGx4Y3phV0VVR3Y0ZUJhX1dvRk45bTR1RGV3cGo5THV3M2lVc2kzRVZEMGxxN19EcHQzZjRCTm5lX3V1YkEyOVVETjJGVlE0MXljbGI5Mg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:36",
+   "title": "청해부대 작전구역, 호르무즈 해협 인근으로 확대…초계기도 투입 - 한국경제",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXNkM0d1V5SzB1QlBzZlNYQTNzU3hqUnN2REc4TDlOa3BDQ2kyampGQUotMmNPQWdtcWhKczN4ZEdiQ2ROQ281dzhDSnZMZHgwRGdKX2xoRkFrQQ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:35",
+   "title": "청해부대, 초계기 투입 임무 확대…호르무즈 650㎞ 인근 해역까지 - KBS 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1NMHV0SmM0NU92UkZvQWg0WDFDLXFXRlhCR29VeTJRdHhkUmtNSVFULWZYRldZNXRhM21hLXdLVlRsVW5tUFdFXzdEd0xjbFBLcHQyNUVsNzFTbE0?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:35",
+   "title": "호르무즈 항행기여에 첫발…'허용적 환경' 대비 기뢰제거작전 준비 - 연합뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nQW45STZvamtaU1Z6YjlPRVZ5YlRqTlFmNGx6N3dDelVKT3JFa3BhMHlYd09fYUJtVVhoXzRON2lsMXh1cHd4cGlNTXNHMTVxMFlCb0drTUFTa0hVTl9vRNIBYEFVX3lxTE1nQW45STZvamtaU1Z6YjlPRVZ5YlRqTlFmNGx6N3dDelVKT3JFa3BhMHlYd09fYUJtVVhoXzRON2lsMXh1cHd4cGlNTXNHMTVxMFlCb0drTUFTa0hVTl9vRA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:35",
+   "title": "[속보] 정부, 청해부대 임무 호르무즈 650㎞ 해역까지 확대…초계기 추가 투입 - 연합뉴스TV",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KT1JQTEh3V1o2LVlIdGM4THFfek5Fc3Jpc0FXdmFRdUh1ODB2TmdqbXNrc0h2M3pjZTlsYjJEM0ZpbDlsN2czV1VGSGtlc3pRd2hMVUZiSVVMcnBHMUNJcjBnMVZsQXM?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:35",
+   "title": "청해부대 임무 호르무즈 650㎞ 해역까지 확대...초계기, 소해전력 추가 - 한국일보",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zcTVZeUNNUmoyVmtVdXVUQV9iOVhrbUtuRTNFX3YwNDB4SWtCeTlmYWgxUU9YNlllV2ZWWmVIYW50RDBtUm01NTlWLVEwMFNHRWxfdi1fd3JBTUJxZ19ndTJUaDNqNXVEc0hOa0FrQXZpNWfSAXNBVV95cUxPc3E1WXlDTVJqMlZrVXV1VEFfYjlYa21LbkUzRV92MDQweElrQnk5ZmFoMVFPWDZZZVdmVlplSGFudEQwbVJtNTU5Vi1RMDBTR0VsX3YtX3dyQU1CcWdfZ3UyVGgzajV1RHNITmtBa0F2aTVn?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:35",
+   "title": "[속보] 청해부대 작전구역, 호르무즈 해협 인근으로 확대…초계기도 투입 - 뉴스1",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xOEpHZTVRVVZmSmdFejNRcXQxTE1qS0ZGOVJ5a19BSHN1RHI1bFhNTnVUYTlWSmdIYzlxNW9sUUxGR1NUREFwMVctNUNQQUJ5czhzbHVFYWQzaHgzNldKQkk3TVcwaFk?oc=5",
+   "disrupt": "",
+   "materials": "",
    "status": "NONE"
   },
   {
@@ -31,6 +2506,15 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:30",
+   "title": "청해부대 작전 구역 오만 남방까지 확대‥해상초계기 추가 투입 - MBC 뉴스",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GZ241NTM2QWJ3WGJqMkZXc0c4TmQyMVFRdE9SQ0lPd2llQzVVZ0tDQ3kyQWlpc0tDRUVkMjVoT21WbTZMNWlERTlqcm5HOFN2N2t0X1Q2UEtNbGd3MC05Y0Z1UmNjOFE2YW1nNGQ1LUs0c19EMFp0cNIBeEFVX3lxTE5FTGtqeXNVNkhrejd2OEZZOExxeWZxaE1WTUhldmpZVDREWG5kVWtuSUVjb2ZNWlRCRi15ZTdKSFVlLU5GdndST296YzZJNm5XV1czMDA3U3Q2NVA4RWdtZlpSU2Zlc29CbUwzMDI3dFQ0VkVQc18zbg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-05 00:26",
    "title": "이란 최고지도자 \"美 민주당 압승에도 대이란 적대정책 불변\"",
@@ -38,6 +2522,33 @@
    "disrupt": "",
    "materials": "금;도자",
    "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:26",
+   "title": "청해부대 작전구역 호르무즈 650㎞ 해역까지 확대 … 초계기·EOD·무인 소해장비 추가 파견 - 뉴데일리",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5acmdOeWpmcThWd2E5eXN4ZnVLUEthcTFvY21WR3Nrc2ZaaXJzclBRSktPY3QzeGp4Rm5kSE5KTHpTRHl6SU1CSld4TWN2cldVbTFVS2ZfRUZtQkZ0bXI3eGd0dnNZV3ZnblpaMmQtb18yRHo5dkY4TWpPONIBgAFBVV95cUxPcWhDZDZzcWdEQ0NwT0dBbnZTa2ZIRHNDWG10MlhUeU1pa3QtT2ZnZlctSUhKeFlTbEJ2SF9GYzF1bTFhT25NemFFc0V4aEpHdlU3Tm41T0dMTlNpNXFlX1NldHkyd3NDLTF2cl9aTTFuM0tYdFVjMUd2cG5PMUdwbg?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:21",
+   "title": "국제유가 8%대 급락, 민주 양원 장악에 이란전 종식 기대 - https://www.kmjournal.net/",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KUFBMOWdXMGlOZWEwRENuc3NGS3R5SHJiLTNLVHp5SG5zSU00LXVzM3hKMHpuWXAtV3NEQW1HSEt3NDE1aVJaa0dtZVJ0UmhINm1SalZxOThqd0N4a3BNY25RaGI5eDdCMHlz?oc=5",
+   "disrupt": "급락",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-05 00:10",
+   "title": "【데일리 ESG 정책 브리핑】외국기업 3조원 투자 신고·중소기업 녹색금융 확대 논의·EU 탄소국경규제 대응 - 임팩트온",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBocU1IdzFNbnZwclJYX3dJU2xfUUFhWjlnOHJpWDY5M3ZqUm1mN0lYa2RLemtiTTBLazIzaUlJMk13dzBmVjV4cEhZV0Y1WG9zX0x5YVFLY2MzdjlPcmNHdmk3LUMzT1Z6SEE?oc=5",
+   "disrupt": "수출 금지",
+   "materials": "금;반도체;탄소",
+   "status": "RELEVANT"
   },
   {
    "source": "NAVER",
