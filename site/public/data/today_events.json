@@ -1,8 +1,674 @@
 {
  "as_of": "2026-11-07",
- "generated_at": "2026-11-07T04:43:57.180262+00:00",
- "count": 134,
+ "generated_at": "2026-11-07T14:41:23.667963+00:00",
+ "count": 236,
  "events": [
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 23:06",
+   "title": "[김남현의 채권썰] 블루웨이브에 내달린 채권, 미 물가도 버틸까",
+   "url": "https://www.etoday.co.kr/news/view/2645337",
+   "disrupt": "관세",
+   "materials": "금",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 22:42",
+   "title": "FT \"미국 정부, 젠슨 황 엔비디아 CEO가 '중국 스파이 의혹' 여성과 연인...",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261107010002714",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 22:38",
+   "title": "브렌트유 97.97달러…AP, 민주당 양원 승리 판정",
+   "url": "https://www.tokenpost.kr/news/international/434513",
+   "disrupt": "",
+   "materials": "석유;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 22:23",
+   "title": "밴스, '중간선거 패배는 이란전 탓' 트럼프에 미리 알렸다",
+   "url": "https://www.newsis.com/view/NISX20261107_0003859060",
+   "disrupt": "봉쇄;재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 22:17",
+   "title": "FT \"미, 젠슨 황 '스파이 의혹' 여성과 연인 관계 판단\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611072217307259",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 22:15",
+   "title": "\"달빛 없는 9일 유리\"...공격 재개설에 트럼프는 \"대화 중\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611072215326287",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 21:05",
+   "title": "백악관 비서실장 전격 교체…민주당 “악성종양” 맹비난",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8706734&ref=A",
+   "disrupt": "재개",
+   "materials": "높이",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 21:01",
+   "title": "시험대 선 K방산, 다음 승부처는",
+   "url": "https://www.mk.co.kr/article/12191283",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 20:10",
+   "title": "FT \"美, 젠슨 황과 中 스파이 여성 연인 관계로 판단\" 보도",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03739206645643424&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 20:09",
+   "title": "새 비서실장에 '강경파' 밀러…우리에 어떤 영향?",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008835376&plink=ORI&cooper=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 20:08",
+   "title": "케빈 오리어리 “토큰화 때문에 CLARITY법 2027년 통과”…49대 50 부결에...",
+   "url": "https://www.wikitree.co.kr/articles/1172706",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 19:53",
+   "title": "휴전 협상 중이라더니…미국, 또 호르무즈서 미사일 발사",
+   "url": "http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=5229602",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 19:50",
+   "title": "코오로이(KORLOY), 미래산업 대응 절삭 솔루션 강화…공급망 다변화 추진",
+   "url": "https://www.mfgkr.com/news/articleView.html?idxno=28454",
+   "disrupt": "생산 중단",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 19:29",
+   "title": "美, 이란 게슘섬 미사일 공격…해저 케이블 주변 이란 선박 포착",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/11/07/2026110790104.html",
+   "disrupt": "",
+   "materials": "선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 19:18",
+   "title": "젠슨 황과 중국 여성의 수상한 만남…AI 패권전쟁에 등장한 '미인계'",
+   "url": "https://www.dongponews.net/news/articleView.html?idxno=61526",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 19:16",
+   "title": "호르무즈 동쪽서 유조선 화재…이란 해군 '규정 위반' 주장",
+   "url": "https://www.tokenpost.kr/news/breaking/434468",
+   "disrupt": "화재",
+   "materials": "선박;용해",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:49",
+   "title": "\"대화 잘 된다\"더니 이란 공습…'달빛 없는 9일' 추가 공격설",
+   "url": "https://news.jtbc.co.kr/article/NB12326989?influxDiv=NAVER",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:45",
+   "title": "백악관 비서실장 전격 교체…후임에 ‘강경파’ 밀러",
+   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000558878",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:42",
+   "title": "트럼프 “이란 방공시설 소규모 공습”…중간선거 후 첫 공습",
+   "url": "https://www.kukinews.com/article/view/kuk202611070029",
+   "disrupt": "폭발",
+   "materials": "목적;수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:39",
+   "title": "미 중간선거 '참패' 트럼프 \"이란에 소규모 공격 실시\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611071839345699",
+   "disrupt": "",
+   "materials": "금;석유;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:38",
+   "title": "[한반도브리핑] 軍, 청해부대 작전 확대…北, 집속탄 연속 시험발사",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261107183659Rgl",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:22",
+   "title": "두산, 中 창수에 5500억 원 투자협약…CCL 생산라인 증설",
+   "url": "http://www.thefirstmedia.net/news/articleView.html?idxno=212947",
+   "disrupt": "공급 차질",
+   "materials": "반도체;전자;전자부품",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:17",
+   "title": "“젠슨 황 ‘스파이 의혹’ 중국 여성과 연인 관계”···미 정보당국 ...",
+   "url": "https://weekly.khan.co.kr/article/202611071817001",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 18:02",
+   "title": "미국 이란 전쟁, 평화협상 중 또 공습한 트럼프…카타르 중재에도 이란...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16270743",
+   "disrupt": "봉쇄",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 17:46",
+   "title": "美, 이란 방공시설 공습…중간선거 후 첫 군사행동",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443605",
+   "disrupt": "폭발",
+   "materials": "석유;수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 17:46",
+   "title": "트럼프 “이란에 소규모 타격”…호르무즈 인근 미사일 보도",
+   "url": "https://www.tokenpost.kr/news/breaking/434448",
+   "disrupt": "공급 차질",
+   "materials": "수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 17:27",
+   "title": "美, 이란과 간접대화 중 또 호르무즈 제한공습",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261107172617XwG",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 17:01",
+   "title": "‘귀한 몸’ 된 알루미늄…이젠 ‘스크랩 전쟁’ 온다",
+   "url": "https://www.mk.co.kr/article/12200501",
+   "disrupt": "수출 제한",
+   "materials": "금;스크랩;알루미늄;폐기물",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:47",
+   "title": "디지털 공격 위협하더니…이란 연계 선박, 해저 케이블 위 배회",
+   "url": "https://www.newsis.com/view/NISX20261107_0003858945",
+   "disrupt": "",
+   "materials": "기관;선박",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:36",
+   "title": "美 중간선거 민주당 상·하원 장악… 한국 기계·제조업, 관세·설비투자...",
+   "url": "https://www.mtnews.net/news/articleView.html?idxno=26464",
+   "disrupt": "관세;수출통제",
+   "materials": "반도체;알루미늄;유지;철강",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:36",
+   "title": "월드 뉴스 브리프 (기준일시: 2026년 11월 07일 토요일 10:00)",
+   "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=globalnewsfocus&wr_id=522",
+   "disrupt": "",
+   "materials": "석유",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:24",
+   "title": "英 FT \"미국 정부, 젠슨 황 '中스파이 의혹' 여성과 연인 관계로 판단\"",
+   "url": "https://www.jasm.co.kr/news/view/324531/?sc=Naver",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:14",
+   "title": "트럼프 \"이란 방공시설 소규모 공습\"…중간선거 참패 후 처음",
+   "url": "https://news.tf.co.kr/read/world/2386042.htm",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:12",
+   "title": "[국제유가] 중동 긴장 속 WTI 90달러…글로벌 초과 공급이 유가 발목 잡...",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=285395",
+   "disrupt": "재개",
+   "materials": "석유;선박",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 16:11",
+   "title": "\"달빛 없는 9일 유리\"...공격 재개설에 트럼프는 \"대화 중\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611071611447120",
+   "disrupt": "재개",
+   "materials": "타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:56",
+   "title": "협상 중 이란 때린 트럼프 …중간 선거 참패 후 처음",
+   "url": "https://www.munhwa.com/article/11629538?ref=naver",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:48",
+   "title": "미, 트럼프 선거 참패 뒤 첫 호르무즈 공습…“경미한 것”",
+   "url": "https://www.hani.co.kr/arti/international/international_general/1286232.html",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:42",
+   "title": "美중간선거 끝나고 첫 이란 공격…핵 시설 제보에는 273억 원 포상금 걸...",
+   "url": "https://www.hankookilbo.com/news/article/A2026110715130001495?did=NA",
+   "disrupt": "폭발",
+   "materials": "금;석유;수송",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:40",
+   "title": "세계 식량값 석 달 만에 꺾였지만…설탕은 1년 새 28.8% 뛰었다",
+   "url": "https://www.khan.co.kr/article/202611071540001",
+   "disrupt": "공급 차질",
+   "materials": "신호;원자재",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:29",
+   "title": "\"젠슨 황, 中 스파이와 연인 관계였나…美 정보당국 판단\"",
+   "url": "https://www.newsis.com/view/NISX20261107_0003858921",
+   "disrupt": "수출 통제;수출통제",
+   "materials": "반도체;인공",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:20",
+   "title": "협상 중에도 호르무즈 '일촉즉발'···美·이란 무력 시위",
+   "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424870",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:20",
+   "title": "美, 종전 협상 중 호르무즈 이란 방공시설 공습…트럼프 \"방공시설 무력...",
+   "url": "http://www.inews24.com/view/2023698",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:16",
+   "title": "“美당국, 젠슨 황과 ‘中스파이 의혹’ 여성 연인관계로 판단”…FT 보...",
+   "url": "https://www.kyeonggi.com/article/20261107580090",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:14",
+   "title": "'제재 먼저' vs '핵 협상부터'…이란, 카타르 거쳐 美에 핵 협상안",
+   "url": "http://www.metroseoul.co.kr/article/20261107500032",
+   "disrupt": "제재",
+   "materials": "무기;타르",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:13",
+   "title": "트럼프, 중간선거 참패 사흘 만에 이란 공습…“방공시설 무력화”",
+   "url": "https://www.sedaily.com/article/20111451?ref=naver",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:10",
+   "title": "'중국 스파이'가 젠슨 황과 연인 관계였다고...FT 보도",
+   "url": "https://economist.co.kr/article/view/ecn202611070007",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:10",
+   "title": "[AI 이슈트렌드] 강호동 구속영장 1위…미 중간선거·바이낸스 해킹 뒤...",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=217129",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:04",
+   "title": "“미국, 젠슨 황과 中스파이 의심 여성 연인관계로 판단”-FT",
+   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000558856",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 15:04",
+   "title": "미국, 중간선거 후 첫 이란 공습⋯트럼프 “방공시설 파괴”",
+   "url": "https://www.etoday.co.kr/news/view/2645307",
+   "disrupt": "",
+   "materials": "석유;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:58",
+   "title": "미국 정부, 젠슨 황과 중국 스파이 의심녀는 연인",
+   "url": "https://www.thereport.co.kr/news/articleView.html?idxno=93139",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:57",
+   "title": "美, 호르무즈 요충지 게슘섬 또 공습…미·이란 긴장 고조",
+   "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2312011",
+   "disrupt": "",
+   "materials": "석유;수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:54",
+   "title": "김정기 박사, 중국 칭화대학교 쯔징학원 특별강연 질의응답<전문>",
+   "url": "http://www.breaknews.com/1249149",
+   "disrupt": "수출 제한",
+   "materials": "반도체;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:38",
+   "title": "미·중 패권전쟁과 21세기 세계질서의 대전환",
+   "url": "http://www.breaknews.com/1249148",
+   "disrupt": "수출통제",
+   "materials": "기와;무기;배터리;원자재;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:33",
+   "title": "美, 종전협상 진행 중에도 게슘섬 또 공격",
+   "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0400&key=20261107.99099002108",
+   "disrupt": "",
+   "materials": "높이;타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:33",
+   "title": "美, 선거 사흘만에 이란 게슘섬 첫 공습... 트럼프 “방공시설 무력화”",
+   "url": "https://www.chosun.com/international/international_general/2026/11/07/OWW4OZVDNJBCXPIBEHGSALXVHQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:28",
+   "title": "트럼프 \"이란 방공시설에 소규모 공격 실시\"…중간선거 참패 후 처음",
+   "url": "https://www.newsis.com/view/NISX20261107_0003858887",
+   "disrupt": "폭발",
+   "materials": "",
+   "status": "CANDIDATE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:24",
+   "title": "FT “美정부, 젠슨 황 ‘中스파이 의혹’ 여성과 연인 판단”",
+   "url": "https://biz.heraldcorp.com/article/10929215?ref=naver",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:22",
+   "title": "[속보] “美, 젠슨 황 ‘中스파이 의혹’ 여성과 연인 관계였다고 판단...",
+   "url": "https://www.munhwa.com/article/11629528?ref=naver",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:22",
+   "title": "FT \"美, 젠슨 황 '中스파이 의혹' 여성과 연인 사이였다고 판단\"",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=779783",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:16",
+   "title": "미국, 이란과 협상 중 호르무즈 또 공습…트럼프 \"방공시설 무력화\"",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR202611071416020Bo",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:14",
+   "title": "국제유가, 美·이란 긴장 완화 기대에도 보합권 마감",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=880882",
+   "disrupt": "",
+   "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:10",
+   "title": "미·이란 핵협상 앞당기나…중재국, '협상 즉시 착수' 제안",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261107140933kS4",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:08",
+   "title": "美, 이란 호르무즈 해협 요충지 재차 공습…트럼프 \"경미한 것\"",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=393209",
+   "disrupt": "",
+   "materials": "높이",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:06",
+   "title": "[인문자의 AI 반도체 이야기 | 인간.문화.자연] 반도체를 만드는 기계, ...",
+   "url": "https://www.ajunews.com/view/20261107135908884",
+   "disrupt": "수출 제한;수출 통제;수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:06",
+   "title": "美, 이란 호르무즈 또 때렸다···트럼프, 중간선거 참패 후 첫 군사행...",
+   "url": "https://www.mk.co.kr/article/12201446",
+   "disrupt": "",
+   "materials": "높이",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:06",
+   "title": "[심양섭의 정론직격] 청해부대 파견 연장 및 확대를 한미동맹 신뢰 회복...",
+   "url": "https://www.pennmike.com/news/articleView.html?idxno=131232",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:02",
+   "title": "미국, 이란과 종전 협상 중에도 호르무즈 공습…\"방공시설 무력화\"",
+   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00008&news_seq_no=5229556",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:00",
+   "title": "유가 내린다고 생존할까…K-석화, 설비 25% 감축 '분수령'",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=902157",
+   "disrupt": "급락;수출 제한",
+   "materials": "나프타",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 14:00",
+   "title": "[분석] 中 소프트웨어도 美 GPU서 못 돌린다···오라클 9조원 계약 취...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=260802",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:56",
+   "title": "FT “미 정부, 젠슨 황 엔비디아 CEO·中 스파이 의혹 여성 연인 관계로...",
+   "url": "https://www.viva100.com/article/20261107500116",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:53",
+   "title": "FT \"미, 젠슨 황 '스파이 의혹' 여성과 연인 관계 판단\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202611071353050609",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:47",
+   "title": "\"젠슨 황, 중국 스파이 의심 여성과 연인관계\"…美정보당국 메모 파장",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611070027&t=NN",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:46",
+   "title": "젠슨 황, 중국 스파이 의심 여성과 연인 관계였나···미 정보당국 메모...",
+   "url": "https://www.khan.co.kr/article/202611071346001",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:45",
+   "title": "美, 이란과 종전 대화 중 게슘섬 공습 “방공시설 무력화”",
+   "url": "https://biz.heraldcorp.com/article/10929203?ref=naver",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
   {
    "source": "NAVER",
    "published": "2026-11-07 13:30",
@@ -71,6 +737,24 @@
    "published": "2026-11-07 13:18",
    "title": "미, 협상 중 이란 공습…걸프국 \"핵협상 즉시 착수\" 중재",
    "url": "https://www.nocutnews.co.kr/news/6603561?utm_source=naver&utm_medium=article&utm_campaign=20261107131710",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:18",
+   "title": "트럼프, 일축했지만...헤그세스 '손절' 움직임 [자막뉴스]",
+   "url": "https://www.ytn.co.kr/_ln/0134_202611071318266910",
+   "disrupt": "",
+   "materials": "타르",
+   "status": "NONE"
+  },
+  {
+   "source": "NAVER",
+   "published": "2026-11-07 13:18",
+   "title": "미, 협상 중 이란 공습…걸프국 \"핵협상 즉시 착수\" 중재",
+   "url": "https://www.nocutnews.co.kr/news/6603561?utm_source=naver&utm_medium=article&utm_campaign=20261107135811",
    "disrupt": "",
    "materials": "타르",
    "status": "NONE"
@@ -670,6 +1354,24 @@
    "status": "NONE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 07:32",
+   "title": "美 정보당국 \"젠슨 황, 중국 스파이 의심 여성과 연인 관계\" | - 법치뉴스",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE45M1M0NXkyMUk5S0c2alN5cWZ4M3ZNZF93UGhzbG8yS1JiV3NvY2gzOGJMS1FVVExycU1fWGV0MV9WS25oQTQtTHZvUzRabmRmNFZiQTVqb0xBLVVLZ1NrUlBwcHNDWmlo?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 07:28",
+   "title": "포스코VST, 베트남 반덤핑 관세 재도입 추진…종료 2년 만에 조사 - 토요경제",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqWWNaTW9aZlNnNUJRRFRTanE0NFVhVFRFQXh3NVp1alBGOTQwaUpoVXZycklmQnlEZVV4QVZhWlY5UEpDaVM2YmFQV3l3TmoxVUE0TkM5ZGNJWnE3b1J0bdIBb0FVX3lxTE83YWxGYV9veXA4dGNoNDh1ZGRjQWwyU1ZWNXJfWlRJX0drUC1pZTZ5d3o1MHRHeXZ3WEtVRWI1T0FIQ1ptc0NlczZwYjhLa1ctbUU0VjdZYy1fd2FmMUUtQmJGemNuSmRpeHMxbjhJYw?oc=5",
+   "disrupt": "관세;반덤핑;수출통제",
+   "materials": "강판;철강",
+   "status": "RELEVANT"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 07:27",
    "title": "이란 매체 \"호르무즈 해협 게슘섬에 미사일 2발 떨어져\"",
@@ -715,6 +1417,15 @@
    "status": "CANDIDATE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 07:00",
+   "title": "미, 트럼프 선거 참패 뒤 첫 호르무즈 공습…“경미한 것” - 한겨레",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUkZHTl9tdGtnTmNhWjhxd282VDhhVVlXeHZuVGhrbFcxeDl0dlg4V3JfUFg2aXItd1ZWMnRGakRLUURza1NIUG9mdkVTbzVrUWZvcVBmeUdOaUVucUlYVjY0UUEtSGlXeDNzMEtxRk5qd2xjOHdSazNZLW5lLXlhMzN3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 06:50",
    "title": "[국제유가] 불안 지속에 강보합 마감…주간 단위 16% 넘게 급락",
@@ -731,6 +1442,15 @@
    "disrupt": "반등",
    "materials": "",
    "status": "CANDIDATE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:42",
+   "title": "한화오션 - 재래식 추진 잠수함의 게임 체인저 리튬이온 ESS 탑재와 전력 밀도 혁신 > 공기불요추진 연료전지와 통합 스텔스 기술이 창출하는 심해 생존성 프리미엄 | - 데일리머니",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE55dXVnN05YY1B1LW1zN1lidkdNOWdUYm1SUmlDUzg1TnBhVjlKUm9FcEQ3aWxBOUVKZ2N6MjVUOFFORUNmMWpfbzdvUm9OXzA1NkpSNllwVnhIcTBYVmUyU0poT0tpTl9zWFBrcFVNMlBxTTJrdnc?oc=5",
+   "disrupt": "수출통제",
+   "materials": "공기;리튬;연료;전지",
+   "status": "RELEVANT"
   },
   {
    "source": "NAVER",
@@ -760,6 +1480,24 @@
    "status": "NONE"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:23",
+   "title": "협상 중에도 호르무즈 ‘일촉즉발’···美·이란 무력 시위 - 시사저널e",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tM0phTjd6Zy1neGdqODBpaldfcDB0VC02M1dWLUFmWm5CSlZFeDFzODU1REVKQ1VJOTFXcjlheGRHRXFScGhUb1JBdzIzUUQzNkFDY1lROTZlaE5mclNyR3BrRmV2Qzl6QVVrNms5UE1Jdi1vMHfSAXZBVV95cUxPbTNKYU43emctZ3hnajgwaWpXX3AwdFQtNjNXVi1BZlpuQkpWRXgxczg1NURFSkNVSTkxV3I5YXhkR0VxUnBoVG9SQXcyM1FEMzZBQ2NZUTk2ZWhOZnJTckdwa0ZldkM5ekFVazZrOVBNSXYtbzB3?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:19",
+   "title": "美, 종전 협상 중 호르무즈 이란 방공시설 공습…트럼프 \"방공시설 무력화\" - 아이뉴스24",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1RRHloME9fV1dHaWNlRzBiT2czZHdaSlZGNHNWaERldE5tZWVHdnRkc04xQUJRNDM3NHlQRGNQOVEwNzljNk1hVWthNA?oc=5",
+   "disrupt": "",
+   "materials": "아이",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 06:18",
    "title": "트럼프 “이란 관련 조만간 결정”…카타르는 외교적 해결 강조",
@@ -769,12 +1507,39 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:18",
+   "title": "유엔은 호르무즈 해협에서 사망한 선원 수를 발표했습니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOam1zUE9UUU04Skk4RkZtTVY4dTZ6aHUzUUwzel9NM3hiMFJxVmVpMjBoeThvTDltZTljNHJDSi05dUV3YzFXWURkM2xEOTdtOElYdVhwcGFrbFY1VDRSc1B2eVVPRm42bjF2SFBOcmlkS2ZOMjc5MXpIOS1zN0RiUC1vcw?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:16",
+   "title": "美, 이란 전략 요충지 게슘섬 또 공습…'종전 협상' 속 군사 주도권 겨루기 - 위키리크스한국",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXS1Y4Y2ZRTDdoNG9pem5RMkZTQTh4cDdMVE8yYzlYLUtQRWJXbnoxRFQwd2ZITjJ5eWp2SFdCanBkNE5FLXRTQW9FSDctQkdhX1hzYWlIc3JBZWtjQi1pVVFEQVplT1VDSWF0VnlEWlo?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 06:02",
    "title": "미·이란 긴장 완화 기대에 유가 상승폭 제한…WTI·브렌트유 강보합",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=502014",
    "disrupt": "",
    "materials": "수송",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 06:02",
+   "title": "“선거 참패 사흘 만에 이란 또 때렸다”…트럼프 “방공시설 5분 만에 파괴” - 데일리25",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9RS2JLbVM5WUFfVnVSNGN0dlJLdG12Tm5PYUNzWnEwV0R3Y2pEakhmUHd1ZWp1OFVQWE5JNzQyNTRwcUlOVDA0VnB4U0FBYS05anhubVcxMjBoa0ZtNzZlQ2lxOFZTMHk1RlNTcw?oc=5",
+   "disrupt": "",
+   "materials": "",
    "status": "NONE"
   },
   {
@@ -805,12 +1570,39 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:56",
+   "title": "미국 정부, 젠슨 황과 중국 스파이 의심녀는 연인 - 더리포트",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9JU3dYdDhJNFllRkRhbkNPbmtvYXlBNTdacGdRNzNiRVpTNm5mNF9uRlpmeE9WcDNwVzdsQ1kzQ0V1UnpSYTRxNzZ3Wm1UU1AzemRLMTZUOE9fTmg0Y05vNjdtb3RDWUlEQWNrbmh3?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:56",
+   "title": "美, 호르무즈 요충지 게슘섬 또 공습…미·이란 긴장 고조 - 대전일보",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8yUmFONWhxMVNHVGtBWWstUDhvZjVyTktqX3E2UTBYbHlYd2VjRnhKbUJGaTFXZHROaVZsYktoVWxQUzljQ1l1YnU4cDBySlFwdnhRMG1Qb001UGV5Zy1KUnpsSER2YXNZLV9mdUNEa9IBc0FVX3lxTE1Ga2Q4elE5dHVOSkJ0Z1JkZ2puMjVaMEtJVE9uT3doZ3VycnN6RGJLaGxocG5xMjNaaG5aRWtjMGVydzlGcEx1QlBocVJVNHozaGIyVUxDZURGNWkxYXV1SVduVklEZ1FKblNmZlJ4X01Hb0U?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 05:54",
    "title": "[단독] 솔루스첨단소재 헝가리 전지박 1공장 전면 셧다운…SK온·삼성SD...",
    "url": "https://www.the-today.com/news/articleView.html?idxno=93213",
    "disrupt": "공급 차질",
    "materials": "리튬;배터리;용해;전지",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:54",
+   "title": "빈푹 유치원이 보육 프로그램에 대해 9개월 치 요금을 부과하는 것은 현실적인 이유에 부합합니다. - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeGZ0cTRqWTRkZm5rVjFibjdXUEZjdHpRLXV0T2QzckMxSE1rUldKX01vcUF0OEhsZkF1cWZPemNBZFJMQVhwd3ZfUUhsUXVHb1NVOXotQ3RXZmFSaXJzcVdRS1MzOGNZRmt6OE81UzQyUTAzQWttWGUwWF9EQ05Cdll2S19tVUV4YnFnRzBFVUI1RG9lMkNXSTRCTERmWmszc0hia2Ntaw?oc=5",
+   "disrupt": "공급망 안전",
+   "materials": "금",
    "status": "RELEVANT"
   },
   {
@@ -832,6 +1624,24 @@
    "status": "RELEVANT"
   },
   {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:18",
+   "title": "이란 “호르무즈서 유조선 2척 기뢰 충돌”…이틀 연속 피해 주장 - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xZkZZZzc4Qjh4dW9SX3FlcmdBUlNWNFVocGkwZ2pzWnRNYXJXXzNFNnBTakVfc1FUTVFfNGpVSlREMVU1X0NVc0NpdzhzTk9ERTBCU2RMY3F3YW1wa1FmTTJtX1JFc0d2YXNj?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:16",
+   "title": "미국, 이란과 협상 중 호르무즈 또 공습…트럼프 \"방공시설 무력화\" - 연합뉴스TV",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9yc2tETUJUaWlNU1JZUERFXzZHNlRwVnZMX3NjTWZzT3liMm95NmxnSll5ZDVMQ2VZUHlKMU9ZMWpqd01IOXVEdEZEaGtEZjFnOHEyZUd5Sm9VSGFXS0ZDNDZsd3VjdVU?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
    "source": "NAVER",
    "published": "2026-11-07 05:12",
    "title": "“데이터센터 멈추나” 쪼개진 AI주… 그래도 반도체는 간다? [블루쓰나...",
@@ -839,6 +1649,78 @@
    "disrupt": "수출 제한",
    "materials": "건설;높이;반도체",
    "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:09",
+   "title": "[인문자의 AI 반도체 이야기 | 인간.문화.자연] 반도체를 만드는 기계, 세계를 움직이는 권력 - 아주경제",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9YNXotTHcwS1RHUmZLbFhHU19UQk01MXB3WDJPYVM3RXEwMl9KTUVJT0E1NFQzMEptQXRSQlNLLVpQdnctWFRBS1RFdGhvbzB1SmlreVlqY2TSAVhBVV95cUxPWDV6LUx3MEtUR1JmS2xYR1NfVEJNNTFwd1gyT2FTN0VxMDJfSk1FSU9BNTRUMzBKbUF0UkJTSy1aUHZ3LVhUQUtURXRob28wdUppa3lZamNk?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:07",
+   "title": "美, 이란 호르무즈 해협 요충지 재차 공습…트럼프 “경미한 것” - 시사저널",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95aWhtcVVvYnN5d2M0ZE9QNlA4bC01RlY1VXE4dWVudU9oOTZ3LU9PSmZfNHd6NU1FdnRTaUd0ZHNSRmxvamZ6Zk5mSXp3SXBTLTN3R096T1dTWXRNZTZMSTV3NWRFeWxyU0I3TjB0SdIBc0FVX3lxTE5Yb01FWWNYUHE0ZzJVSjcxc2IxZE5kVGVmR0V5c09GdmRxbi1VVkNaRkdHNEtpcTVCZmV6T1RuRFhUVU1OUFZsbVpmaExkWXZpdWRnLXpEalFoT1ZTZG9Ec3l2MGFxd3pPdmQyYnFxc0VrU0k?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 05:05",
+   "title": "美, 이란 호르무즈 또 때렸다···트럼프, 중간선거 참패 후 첫 군사행동 - 매일경제",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vU1N2cU9wdmZLMU1HczF1Rzk0NmFnbHFjaFdzMWdkdTRMQS02dEpjXzdldHRJZURwc09kbU1zWHBtRnBQdWVaWjVCMXVLUXE5VFE?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:56",
+   "title": "美, 호르무즈 해협 이란 방공시설 공습…트럼프 \"15분 만에 파괴\" - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ3E4MmFPVFZGOERRSDBBaGZEdUlYdFJXZURPVVh0VzMzRy1pRjhOM3JvTkJBNTBRZ0JSVVNrS3czUTV3T1ZGNUp5WXBYTEhrbzJnV0pxc2dRX1ltU3hWU3JCRlp3elBiWFdN?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:54",
+   "title": "오만·이란, 호르무즈 통항 정상화 협의…‘무장 긴장 완화→지속가능 합의’ 추진 - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lUU5fTldFaVZMUWpOdXd3akVpYkxVOFBfSFYtNi11SFlWX2FheTZuUUQ1Q1YyMDRZREJ5Mm52RXRQWEFiS3dSalJZeGN4WjAzbV9rd3EzUml5Mk9yYVRvMmNOSnhzb21TMXJJ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:53",
+   "title": "FT \"미, 젠슨 황 '스파이 의혹' 여성과 연인 관계 판단\" - YTN",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1INUR1bkdIS05pYzFPSFFham5KMFI4UzRjdThzMkp4X01VbXJwMUpCWmlqbTlnN0h6V0FCWGpoZzlFdVRqT0VrTDVyTVZHWHdJSFBmR0hEVy1hdERLelBPTlFEMmN0QjN2d2tHT0dzQTVHM0JDWFE?oc=5",
+   "disrupt": "수출통제",
+   "materials": "반도체",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:46",
+   "title": "호르무즈·아라비아만서 일주일간 11건 공격…상선 3척 침몰 - 해사신문",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1aODFZa0l5aDhwUXdXRHZrSWQ2Q2dYUkN3SzdNSlBNWGt2XzhmcUR2VGVHNWdNSTZ6b0JLXzNodDRwbDc1c2g3aVhxNlpZUlBMWkxQZnRHcEhySGtyS1lMbGp0QmsyTmxjdnZZ?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:39",
+   "title": "트럼프, 이란 평화 협상 진전 시사…호르무즈 공격으로 긴장 고조 - Investing.com 한국어",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNRXdZbjFUczZJRFhuOHRjdVdYZUkwZm9HTTh2UHR0a3VRR0lUaVdJVHczWTRuQlk2aEdjbUpVSFpNbGYyQ0hvUU9KSE91SmZ6ekZ3bDlqZzgxb29iTTRaa19oYjZIb0tDbnc?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
   },
   {
    "source": "NAVER",
@@ -854,6 +1736,15 @@
    "published": "2026-11-07 04:29",
    "title": "美 호르무즈 게슘섬 제한 공습…방공시설 무력화 : 국제 - 재경일보",
    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tMlJVMU5PbFN0VzdqZ3JlYVpkR0hNaGM5aTg5SzluV1d4dmJGWmUtdVo3OFZHTE90Y1Q4UDFEMHl0TnFpVXJWY3BsOA?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:24",
+   "title": "美, 또 호르무즈 공습…중간선거 참패 후 첫 군사행동 - SBS Biz",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52M0pRODNWR0xOMXJzVjNITElhSHFVRlBQc3BHb1VYcG4tdjFRYllCbUNtMTRfSkh1dHlqeV9WRE5RQUZEbDJ1OURVelQ4b2ZFdTl4TjBFNnfSAVhBVV95cUxOdjNKUTgzVkdMTjFyc1YzSExJYUhxVUZQUHNwR29VWHBuLXYxUWJZQm1DbTE0X0pIdXR5anlfVkROUUFGRGwydTlEVXpUOG9mRXU5eE4wRTZ3?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
@@ -914,9 +1805,27 @@
   },
   {
    "source": "GOOGLE",
+   "published": "2026-11-07 04:08",
+   "title": "[에너지 오디세이](18)석유 다음은 희토류…중국에 쏠린 공급망 '경고등' - 아시아경제",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMZ1VseHFFbnNNUl9XSnJoeFJWX2ZUOERkcGJrV2tiTTlmcmU1eTlzQzcxSnpVMXdfaWZjOWs4emVGN1pTTUtndTd5MEUxQnRLWk9DamUyU2xSVGhrWk11cDFnOFFFZFNlTi12VkZNNUlEZUZSYXMw?oc=5",
+   "disrupt": "공급 차질",
+   "materials": "석유;희토;희토류",
+   "status": "RELEVANT"
+  },
+  {
+   "source": "GOOGLE",
    "published": "2026-11-07 04:02",
    "title": "호르무즈 해협 이란 섬에 미사일 2발…트럼프 “방공시설 무력화” - 중앙신문",
    "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxPQWdlUDZLTk1KRndVb0x3TkdybUdGbTFZYVM1SF9Qc3M5QWVkNEtoNEJ2QjNLNlE1UC1kSUZnc1A1c1lvNGFydncxMnBWVHNRc1g4ZGoyWDc1NVZqemxYSkNQLVVreGg4Y2xtdjZKMTVMRXY1SmZjdFRRcURkb1VSS2NNSFpxajN3cGdBVVJhRG1QREpkT2R4Qml6NFNidllnQ2JMYlBROGZ6bnVGZGRwYjUtNVFTOFFSd21NTHhIOGhnX3piMTRrNmJLNmdRTER3ZllhMGl2NUc4VUdScHFobnpyWUlWel9CUkI5cUVicUFZQnJiTklkaVlpOUpKQ25vUHc1UUlVUjZXekM3Y2hxYkRZWVNtQ1NNaFlxNzB6NVNJVDZCWG9zWTN6Vko4eFFleXUzTWxZaXVuSVl5S0c1eW95bUtBT3VoakVZRUZfQVd3cS1RTThUTms4eGkzQnhJSGR3OGJlMFcxZHlaTWRnTDRnQ1JIanRhdlJPSnljZ2FmMGlr?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 04:02",
+   "title": "호르무즈 해협 이란 섬에 미사일 2발…트럼프 “방공시설 무력화” - 중앙신문",
+   "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNa19hY280NWVDWnVqSVRfRHZDODJrV054RjNVckcxOFMtdS00OE55emM5QWxxNW1DWXpKbHdjdGtNTVhDb01wZkxvM09kNHhsTk5VSzlHS2JZVUJ2cThLb2dFcTlrX2VwUlVGOHgta196VmhOVkJCd1gtSXNrMVp4OTZ6LUZESjdHSnRwSHVjek1KdHBkblR5VVctUUxjTTY4SDhHdGtJS0hudUxUdDBKT1pMVFpsZlRVN2JfdU9LN0R6bmRPUEo2MkY5aGgxTTJZQ1VOWjA5d29aZGU3V3dqTXpsQjk0R1JJQU9LTXM1SDFURzh6djhfTV9PXzVRV05KcjctUjhxdFhUVjYxTlZOTUtTX3RfLXgtQ0s5S1JmNFRGR3pQU0dhaW1NWEdMbmpZVkxYRWkxaU5KUDdyVW9aNmJZcFpfaWJzUlZ5T1VWcURlQ2ZlX2pEbnl0cFk1Qi1Ta2c3T2ExdWtSSUN1cmxTeHdIcm5KNUdSZHJYZUNOdEpEMW56?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
@@ -1124,6 +2033,15 @@
    "published": "2026-11-07 01:00",
    "title": "호르무즈 해협 게슘섬 미사일 사건, 국제 무역 긴장 고조 - 공감신문",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15dFVyWC01SlJ0ZWJyWTF2NmVDVUZhUUw3TUdNU1R2cjczaEtMS0hrd1VOQU5WREd3VVZ3QTZVb09UbVp2emFsMW9MRmlpUjRDaHhJYzYyLUNpSk9CTUdFb0x4b2Qyd1k?oc=5",
+   "disrupt": "",
+   "materials": "",
+   "status": "NONE"
+  },
+  {
+   "source": "GOOGLE",
+   "published": "2026-11-07 01:00",
+   "title": "호르무즈 해협 게슘섬 미사일 사건, 국제 무역 긴장 고조 - 공감신문",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yM2FGUW1lYzU3M1l2OFFaU0lfM0FpT3hTakJYWkRpazJJRVM3ZHBwRldEcVVZSDZxWVprYWlwWW9pSnJvS01CQlg0aGZWZzFhUzF0YzVBeWJFQkctSjRfT3JLSjc5eFQ4?oc=5",
    "disrupt": "",
    "materials": "",
    "status": "NONE"
